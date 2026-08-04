@@ -24,3 +24,4 @@
 ## [2026-08-04] validate | Proline × 3 культуры | 3 PMID + 3 DOI, L1 ✅ | verdict: partial/moderate (эффективен фолиарно: клубника +23-32%; seed priming CSV не подтверждён; огурец no_data) → [[wiki/substances/Proline]]
 ## [2026-08-04] validate | Silicon × 3 культуры | 19 PMID + 18 DOI, L1 ✅ (1 type-fix: mechanistic→effect) | verdict: corrected/strong (taxonomy: mechanism → antioxidant_defense; дозы 30-75 мг Si/л; fallback Europe PMC: PPR 766746) → [[wiki/substances/Silicon]]
 ## [2026-08-04] pilot2 | 5 сабагентов (Paclobutrazol, MeJA, Glycine Betaine, Proline, Silicon) — 5 артефактов v1.4, L1 все ✅; контракт v1.4 проверен в бою (taxonomy_check: 2 corrections применены)
+## [2026-08-04] skill | session-audit-report — навык Copilot (.github/copilot-skills/) для создания репорта сессии для внешнего аудита (старт: ревью/предыдущий репорт; структура; правила честности; процедура + чек-лист)
