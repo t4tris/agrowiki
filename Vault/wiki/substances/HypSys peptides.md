@@ -6,7 +6,7 @@ cas:
 formula: 
 class: Peptide
 class_family: peptides_proteins
-mechanism: growth_regulation
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 application_csv: Apply 1-10 ppm foliar spray
 efficacy_csv: LOW

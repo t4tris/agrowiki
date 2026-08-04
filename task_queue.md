@@ -278,6 +278,11 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: ZCN8 × 3 культуры
 - [ ] VALIDATE: p-Coumaric acid × 3 культуры
 
+## 🔵 TECHNICAL DEBT
+- [ ] AUDIT_TAXONOMY: перепроверить mechanism для спорных веществ (назначен дефолтом семейства, не оверрайд/MoA; список из `_scripts/gen_synonyms.py`, сейчас 77). Явно спорные кандидаты: CLE RALF CEP PSK peptides, CLE peptides, CLE25/40/41-44, CLV3, Florigen FT protein, Hd3a, Mobile miRNAs, Ascophyllum extract, Laminarin oligomers, Leonardite extract, Dandelion, Echinacea, Molasses, Isoprene, Monoterpenes, Hexanal, Diosgenin, 5-Azacytidine, NHP, Azelaic acid (уже исправлены через OVERRIDES: GSH→antioxidant_defense, Methyl Salicylate→jasmonate_sar_defense, Carbonic Anhydrase→photosynthesis_enhancement, HypSys→jasmonate_sar_defense, L-carnitine→nutrition_metabolism)
+- [ ] TAXONOMY_CHECK: с контракта v1.4 каждый сабагент подтверждает/исправляет class_family/mechanism карточки; оркестратор применяет corrections и фиксирует в notes; при правке маппинга — `python _scripts/gen_taxonomy.py --refresh`
+- [ ] SYNONYMS: обновлять `raw/normalization/synonyms.json` после каждой валидации (`python _scripts/gen_synonyms.py` — генерирует из aliases карточек)
+
 ## ✅ COMPLETED
 - [x] INGEST: CSV → 267 черновиков карточек
 - [x] PILOT (2026-08-04): GA3, IBA, Triacontanol (+TRIA), Artemisinin, Chitosan (+Chitooligosaccharides) — 5 сабагентов, 7 карточек, L1-проверка всех артефактов

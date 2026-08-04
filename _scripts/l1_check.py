@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""L1 autocheck: schema + type-check + PMID esummary + DOI Crossref for contract v1.3 report."""
+"""L1 autocheck: schema + type-check + PMID esummary + DOI Crossref for contract v1.4 report."""
 import json
 import sys
 import time
@@ -8,7 +8,7 @@ import urllib.parse
 
 REQUIRED_TOP = ['contract_version', 'substance', 'searches', 'identity', 'mode_of_action',
                 'crops', 'toxicity_window', 'phi_mrl', 'contraindications', 'conflicts',
-                'verdict', 'sources_index']
+                'verdict', 'taxonomy_check', 'sources_index']
 STATUSES = {'found_verified', 'found_unverified', 'no_data'}
 CLAIM_TYPES = {'dosage', 'effect', 'method', 'efficacy'}
 RELEVANCE = {'directly_supports', 'directly_contradicts', 'partially_relevant', 'irrelevant'}
@@ -27,11 +27,32 @@ def main(path):
     errors = []
 
     # --- schema ---
-    if d.get('contract_version') != '1.3':
-        errors.append(f'contract_version != 1.3: {d.get("contract_version")}')
+    if d.get('contract_version') != '1.4':
+        errors.append(f'contract_version != 1.4: {d.get("contract_version")}')
     for k in REQUIRED_TOP:
         if k not in d:
             errors.append(f'отсутствует поле: {k}')
+
+    # --- v1.4 taxonomy_check: сабагент подтверждает/исправляет class_family/mechanism ---
+    tc = d.get('taxonomy_check')
+    if tc is not None:
+        if not isinstance(tc, dict):
+            errors.append(f'taxonomy_check: должен быть объектом, получено {type(tc).__name__}')
+        else:
+            for fld in ('class_family_confirmed', 'mechanism_confirmed'):
+                if not isinstance(tc.get(fld), bool):
+                    errors.append(f'taxonomy_check.{fld} должен быть bool')
+            corr = tc.get('corrections', [])
+            if not isinstance(corr, list):
+                errors.append('taxonomy_check.corrections должен быть массивом')
+            else:
+                for i, c in enumerate(corr):
+                    if not isinstance(c, dict):
+                        errors.append(f'taxonomy_check.corrections[{i}]: элемент не объект')
+                        continue
+                    for req in ('field', 'from', 'to', 'reason'):
+                        if req not in c:
+                            errors.append(f'taxonomy_check.corrections[{i}]: отсутствует "{req}"')
 
     # --- searches.failed: retry_by_orchestrator (v1.3) ---
     for i, f in enumerate(d.get('searches', {}).get('failed', [])):

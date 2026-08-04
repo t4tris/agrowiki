@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Bootstrap: CSV -> 267 draft substance cards + 3 crop hubs + index/log/task_queue/validation.
-Run once at Phase 2. Idempotent: regenerates drafts from raw CSV (raw layer is the source of truth).
+"""Bootstrap: CSV -> substance cards (+ crop hubs + index/log/task_queue/validation on --full).
 
-Safe re-run (default): cards with validation_status != unverified are SKIPPED;
-pass --force to regenerate them too. Use --cards-only to patch only substance
-cards without touching crops/index/task_queue/validation/log/README.
+DEFAULT (safe): regenerates ONLY substance cards (SKIPs cards with validation_status
+!= unverified unless --force). Pass --full to also overwrite crops/index.md/
+task_queue.md/validation.md/log.md/README.md (requires confirmation or --yes).
 """
 import argparse
 import csv
@@ -46,8 +45,11 @@ def code_priority(groups, code):
 
 def main():
     parser = argparse.ArgumentParser(description='Bootstrap substance cards from CSV')
-    parser.add_argument('--cards-only', action='store_true',
-                        help='только карточки веществ; не перезаписывать crops/index/task_queue/validation/log/README')
+    parser.add_argument('--full', action='store_true',
+                        help='ПОЛНЫЙ запуск: карточки + crops/index/task_queue/validation/log/README '
+                             '(перезаписывает ручные правки; требует подтверждения или --yes)')
+    parser.add_argument('--yes', action='store_true',
+                        help='подтвердить --full без интерактивного prompt')
     parser.add_argument('--force', action='store_true',
                         help='перегенерировать и не-unverified карточки (по умолчанию они пропускаются)')
     args = parser.parse_args()
@@ -164,9 +166,15 @@ phi_mrl: {{}}
         with open(card_path, 'w', encoding='utf-8') as f:
             f.write(page)
 
-    if args.cards_only:
-        print(f'DONE (cards only): substances={len(codes)}')
+    if not args.full:
+        print(f'DONE (cards only, default): substances={len(codes)}')
         return
+    if not args.yes:
+        ans = input('WARNING: полный запуск перезапишет index.md, task_queue.md, validation.md, '
+                    'log.md, README.md и страницы культур (ручные правки будут потеряны). Продолжить? [y/N] ')
+        if ans.strip().lower() != 'y':
+            print('Отменено.')
+            return
 
     # ---- crop hubs ----
     crops_dir = os.path.join(VAULT, 'wiki', 'crops')

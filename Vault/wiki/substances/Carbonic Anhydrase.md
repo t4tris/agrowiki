@@ -6,7 +6,7 @@ cas:
 formula: 
 class: Enzyme
 class_family: peptides_proteins
-mechanism: growth_regulation
+mechanism: photosynthesis_enhancement
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
 application_csv: Apply Zn foliar 0.5-1%
 efficacy_csv: MEDIUM

@@ -2,7 +2,7 @@
 type: handoff
 created: 2026-08-04
 from_session: "Пилот валидации → подготовка к Фазе 3"
-contract_version: 1.3
+contract_version: 1.4
 ---
 
 # Handoff следующей сессии

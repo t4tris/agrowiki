@@ -10,3 +10,5 @@ __pycache__/
 # Obsidian
 Vault/.obsidian/workspace*
 Vault/.obsidian/graph.json
+# Плагины Obsidian (код переустанавливается из Community Plugins; community-plugins.json остаётся в git)
+Vault/.obsidian/plugins/

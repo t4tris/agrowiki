@@ -6,7 +6,7 @@ cas:
 formula: 
 class: Related
 class_family: other
-mechanism: growth_regulation
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: Apply 100-500 ppm foliar spray
 efficacy_csv: LOW

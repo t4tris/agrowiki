@@ -148,6 +148,12 @@ OVERRIDES = {
     'Ascorbic Acid': 'antioxidant_defense', 'Alpha-lipoic acid': 'antioxidant_defense',
     'Silicon': 'nutrition_metabolism', 'Cobalt': 'nutrition_metabolism',
     'Magnesium': 'nutrition_metabolism', 'DMSO': 'growth_regulation',
+    # Правки по итогам аудита AUDIT_TAXONOMY (2026-08-04): дефолты семейств уточнены
+    'GSH': 'antioxidant_defense',               # глутатион — главный антиоксидант
+    'Methyl Salicylate': 'jasmonate_sar_defense',  # MeSA — летучий сигнал защиты/SAR
+    'Carbonic Anhydrase': 'photosynthesis_enhancement',  # карбоангидраза — CO2-фиксация
+    'HypSys peptides': 'jasmonate_sar_defense',  # системин-подобные пептиды защиты
+    'L-carnitine': 'nutrition_metabolism',      # карнитин — метаболизм/энергетика
 }
 
 # ---------- page metadata ----------
@@ -292,11 +298,19 @@ def pick_mechanism(code, moas, family):
     return DEFAULT_MECHANISM.get(fam, 'growth_regulation')
 
 
-def insert_frontmatter(path, family, mechanism):
+def insert_frontmatter(path, family, mechanism, refresh=False):
     with open(path, encoding='utf-8') as f:
         text = f.read()
     if 'class_family:' in text:
-        return False
+        if not refresh:
+            return False
+        new_text = re.sub(r'^(class_family: .*)$', f'class_family: {family}', text, count=1, flags=re.M)
+        new_text = re.sub(r'^(mechanism: .*)$', f'mechanism: {mechanism}', new_text, count=1, flags=re.M)
+        if new_text == text:
+            return False
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(new_text)
+        return True
     # insert after the `class:` line inside frontmatter
     new_text = re.sub(r'^(class: .*)$', r'\1\nclass_family: %s\nmechanism: %s' % (family, mechanism),
                       text, count=1, flags=re.M)
@@ -316,6 +330,13 @@ def write_page(path, content):
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description='Build taxonomy (categories/classes/mechanisms pages + card fields)')
+    parser.add_argument('--refresh', action='store_true',
+                        help='обновить class_family/mechanism в карточках до вычисленных значений '
+                             '(по умолчанию существующие поля не перезаписываются — уважать ручные правки)')
+    args = parser.parse_args()
+
     with open(CSV, encoding='utf-8-sig') as f:
         rows = list(csv.DictReader(f))
     by_code = {}
@@ -337,7 +358,7 @@ def main():
         for fn in os.listdir(SUBST_DIR):
             if fn.lower().startswith(code.lower() + '.'):
                 path = os.path.join(SUBST_DIR, fn)
-                if insert_frontmatter(path, family, mechanism):
+                if insert_frontmatter(path, family, mechanism, refresh=args.refresh):
                     patched += 1
                 break
         else:

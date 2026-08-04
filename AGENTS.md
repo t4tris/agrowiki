@@ -111,7 +111,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 Структура: ответ → доказательства с цитатами → противоречия → вывод.
 
 ## Нормализация
-- **Синонимы веществ:** перед поиском PubChem по `csv_name` → `synonyms` + `iupac_name`; все синонимы в запросы (OR). Реестр: `raw/normalization/synonyms.json`.
+- **Синонимы веществ:** перед поиском PubChem по `csv_name` → `synonyms` + `iupac_name`; все синонимы в запросы (OR). Реестр: `raw/normalization/synonyms.json` (генерируется `_scripts/gen_synonyms.py` из frontmatter карточек; **обновлять после валидации**, когда в карточку добавлены aliases).
 - **Русские синонимы:** `aliases_ru` в frontmatter карточки (MeJA → Метилжасмонат, GA3 → Гибберелловая кислота, IBA → Индолилмасляная кислота) — русский поиск по вики работает, граф не ломается.
 - **Конверсия единиц:** ppm ≈ mg/L (водные растворы); µM/mM конвертируются через молярную массу из PubChem, конверсия записывается в `dosage_normalized` с источником. Без молярной массы (не найдена) — единицы не сравнивать, пометить в notes.
 - **Фенофазы BBCH:** при валидации искать ключи BBCH / growth stage / phenological / anthesis / fruit set / veraison; фаза применения указывается в `conditions.bbch_stages` (BBCH 61 = 10% цветков открыто, BBCH 73 = зелёная ягода).
@@ -120,7 +120,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - **Единицы:** ppm/mg/L/µM не конвертировать, писать как в источнике + в CSV.
 - **Классы:** 89 CSV-классов → 24 семейства (страницы `wiki/classes/`, маппинг в `_scripts/gen_taxonomy.py`). Поле `class_family` в карточке — slug семейства, `mechanism` — slug механизма (страницы `wiki/mechanisms/`, 15 механизмов). При генерации новых карточек запускать `python _scripts/gen_taxonomy.py` (идемпотентно).
 
-## Контракт отчёта сабагента поиска (JSON v1.3)
+## Контракт отчёта сабагента поиска (JSON v1.4)
 Один запуск = одно вещество × 3 культуры. Схема (обязательные поля, enum'ы строгие):
 
 **Правки v1.3 (по итогам пилота 2026-08-04):**
@@ -128,9 +128,13 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - Добавлено поле **`related_evidence`** в `crops.<культура>` — для статуса `no_data`: ближайшие работы по веществу ВНЕ целевой культуры (чтобы «нет данных» было обосновано, а не голословно).
 - `contraindications` и `conflicts` — **только массивы объектов**; пусто → `[]`, **запрещены** null-заглушки и строки вместо dict (L1 это проверяет).
 - **Europe PMC** часто недоступен в среде сабагента (IPv6-блок) → сабагент помечает в `searches.failed`, а **оркестратор сам выполняет Europe PMC-запрос** в своей среде и дополняет артефакт перед записью карточки.
+
+**Правки v1.4 (по итогам внешнего аудита 2026-08-04):**
+- Добавлено поле **`taxonomy_check`** — сабагент обязан подтвердить или исправить таксономию карточки: в промпт передаются текущие `class_family` и `mechanism` из frontmatter карточки; сабагент сверяет их с литературой и сообщает `class_family_confirmed` / `mechanism_confirmed` (bool). При исправлении — заполняет `corrections` (массив `{field, from, to, reason}`). L1 проверяет обязательность и типы.
+- Оркестратор применяет `corrections` к frontmatter карточки (поле `mechanism`/`class_family`), фиксирует в `notes`; обратные изменения в `_scripts/gen_taxonomy.py` (OVERRIDES) — только через `--refresh` после правки маппинга (по умолчанию скрипт ручные правки не перезаписывает).
 ```json
 {
-  "contract_version": "1.3",
+  "contract_version": "1.4",
   "substance": {"code": "IBA", "csv_name": "...", "queried_name": "..."},
   "searches": {
     "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "openalex", "pubchem"],
@@ -183,6 +187,10 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
   "verdict": {"evidence_level": "strong|moderate|weak|unverified",
               "status_suggested": "verified|corrected|partial|insufficient_data|conflicting",
               "reason": "..."},
+  "taxonomy_check": {"class_family_confirmed": true, "mechanism_confirmed": true,
+                     "corrections": [{"field": "mechanism", "from": "pesticide_action",
+                                      "to": "antioxidant_defense", "reason": "..."}],
+                     "notes": "..."},
   "sources_index": ["PMID:...", "DOI:..."]
 }
 ```
@@ -230,6 +238,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 
 ### Validation (ядро работы)
 Цикл на вещество: поиск по 3 культурам (сабагент) → сабагент возвращает JSON в финальном сообщении → **оркестратор извлекает и сохраняет артефакт** (`_scripts/extract_report.py` → `raw/evidence/{A-Z}/<код>/search_*.json`) → при `searches.failed` с europepmc оркестратор сам дополняет запрос → L1/L2 проверка → карточка + crop_evidence → corrected_dosages → task_queue.md + validation.md + log.md.
+**Синхронизация дашбордов:** при обновлении `validation.md` ОБЯЗАТЕЛЬНО проверить `Vault/index.md` (живой Dataview-дашборд) — оба должны отражать одно состояние.
 Критерий готовности: `validation_status ≠ unverified` И ≥1 источник по любой из трёх культур.
 Приоритет: 4 дубликата → HIGH (46) → MEDIUM (146) → LOW (83).
 

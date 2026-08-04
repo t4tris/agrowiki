@@ -6,7 +6,7 @@ cas:
 formula: 
 class: Phenolic
 class_family: phenolics_polyphenols
-mechanism: antioxidant_defense
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 application_csv: Apply 100-300 ppm foliar spray
 efficacy_csv: MEDIUM

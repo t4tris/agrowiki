@@ -1,0 +1,2251 @@
+{
+  "generated": "2026-08-04",
+  "source": "frontmatter карточек Vault/wiki/substances (обновлять после валидации: aliases/aliases_ru)",
+  "usage": "перед поиском литературы: все синонимы в запросы (OR); русские — для fallback",
+  "substances": {
+    "1-MCP": {
+      "csv_name": [
+        "1-Methylcyclopropene"
+      ],
+      "name_en": "1-Methylcyclopropene",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "14-Hydroxylated brassinosteroid": {
+      "csv_name": [
+        "14-Hydroxylated brassinosteroid"
+      ],
+      "name_en": "14-Hydroxylated brassinosteroid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "2,4,5-T": {
+      "csv_name": [
+        "2,4,5-Trichlorophenoxyacetic acid"
+      ],
+      "name_en": "2,4,5-Trichlorophenoxyacetic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "2,4-D": {
+      "csv_name": [
+        "2,4-Dichlorophenoxyacetic acid"
+      ],
+      "name_en": "2,4-Dichlorophenoxyacetic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "22,23,24-Trisepibrassinolide": {
+      "csv_name": [
+        "22,23,24-Trisepibrassinolide"
+      ],
+      "name_en": "22,23,24-Trisepibrassinolide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "24-Epibrassinolide (EBR)": {
+      "csv_name": [
+        "24-Epibrassinolide (EBR)"
+      ],
+      "name_en": "24-Epibrassinolide (EBR)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "2iP": {
+      "csv_name": [
+        "N6-Isopentenyladenine"
+      ],
+      "name_en": "N6-Isopentenyladenine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "3-Bromopyruvate": {
+      "csv_name": [
+        "3-Bromopyruvate (3-BrPA)"
+      ],
+      "name_en": "3-Bromopyruvate (3-BrPA)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "3-CPA": {
+      "csv_name": [
+        "3-Chlorophenoxyacetic acid"
+      ],
+      "name_en": "3-Chlorophenoxyacetic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "4-CPA": {
+      "csv_name": [
+        "4-Chlorophenoxyacetic Acid"
+      ],
+      "name_en": "4-Chlorophenoxyacetic Acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "5-ALA": {
+      "csv_name": [
+        "5-Aminolevulinic Acid"
+      ],
+      "name_en": "5-Aminolevulinic Acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "5-Azacytidine": {
+      "csv_name": [
+        "5-Azacytidine (AZA)"
+      ],
+      "name_en": "5-Azacytidine (AZA)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "5-Deoxystrigol": {
+      "csv_name": [
+        "5-Deoxystrigol"
+      ],
+      "name_en": "5-Deoxystrigol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "6-BA": {
+      "csv_name": [
+        "Benzyladenine (6-BA)"
+      ],
+      "name_en": "Benzyladenine (6-BA)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "6-BAP": {
+      "csv_name": [
+        "6-Benzylaminopurine"
+      ],
+      "name_en": "6-Benzylaminopurine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "ABA + Sucrose": {
+      "csv_name": [
+        "Abscisic Acid + Sucrose"
+      ],
+      "name_en": "Abscisic Acid + Sucrose",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Acetamiprid": {
+      "csv_name": [
+        "Acetamiprid"
+      ],
+      "name_en": "Acetamiprid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Alanine": {
+      "csv_name": [
+        "Alanine"
+      ],
+      "name_en": "Alanine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Alpha-lipoic acid": {
+      "csv_name": [
+        "Alpha-Lipoic Acid"
+      ],
+      "name_en": "Alpha-Lipoic Acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ancymidol": {
+      "csv_name": [
+        "Ancymidol"
+      ],
+      "name_en": "Ancymidol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Arachidonic acid": {
+      "csv_name": [
+        "Arachidonic acid"
+      ],
+      "name_en": "Arachidonic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Arginine": {
+      "csv_name": [
+        "Arginine"
+      ],
+      "name_en": "Arginine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Artemisinin": {
+      "csv_name": [
+        "Artemisinin"
+      ],
+      "name_en": "Artemisinin",
+      "aliases": [
+        "Artemisinin",
+        "Qinghaosu",
+        "Arteannuin"
+      ],
+      "aliases_ru": [
+        "артемизинин",
+        "цинхаосу (Qinghaosu)",
+        "артеаннуин (Arteannuin)"
+      ]
+    },
+    "Artichoke leaf": {
+      "csv_name": [
+        "Artichoke extract"
+      ],
+      "name_en": "Artichoke extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ascophyllum extract": {
+      "csv_name": [
+        "Seaweed extract"
+      ],
+      "name_en": "Seaweed extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ascorbic Acid": {
+      "csv_name": [
+        "Vitamin C"
+      ],
+      "name_en": "Vitamin C",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Asparagine": {
+      "csv_name": [
+        "Asparagine"
+      ],
+      "name_en": "Asparagine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Aviglycine": {
+      "csv_name": [
+        "Aviglycine"
+      ],
+      "name_en": "Aviglycine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Azelaic acid": {
+      "csv_name": [
+        "Azelaic acid"
+      ],
+      "name_en": "Azelaic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "B9": {
+      "csv_name": [
+        "Daminozide"
+      ],
+      "name_en": "Daminozide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "BABA": {
+      "csv_name": [
+        "²-aminobutyric acid"
+      ],
+      "name_en": "²-aminobutyric acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "BNOA": {
+      "csv_name": [
+        "2-Naphthoxyacetic acid"
+      ],
+      "name_en": "2-Naphthoxyacetic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Bamboo leaf": {
+      "csv_name": [
+        "Bamboo extract"
+      ],
+      "name_en": "Bamboo extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Benomyl": {
+      "csv_name": [
+        "Benomyl"
+      ],
+      "name_en": "Benomyl",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Biotin": {
+      "csv_name": [
+        "Biotin (B7)"
+      ],
+      "name_en": "Biotin (B7)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Brassinazole": {
+      "csv_name": [
+        "Brassinazole (BZ)"
+      ],
+      "name_en": "Brassinazole (BZ)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Brassinolide": {
+      "csv_name": [
+        "24-Epibrassinolide"
+      ],
+      "name_en": "24-Epibrassinolide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CLE RALF CEP PSK peptides": {
+      "csv_name": [
+        "CLE/RALF/CEP/PSK peptides"
+      ],
+      "name_en": "CLE/RALF/CEP/PSK peptides",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CLE peptides": {
+      "csv_name": [
+        "CLAVATA3/ESR peptides"
+      ],
+      "name_en": "CLAVATA3/ESR peptides",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CLE25": {
+      "csv_name": [
+        "CLE25"
+      ],
+      "name_en": "CLE25",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CLE40": {
+      "csv_name": [
+        "CLE40"
+      ],
+      "name_en": "CLE40",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CLE41-44": {
+      "csv_name": [
+        "CLE41-44"
+      ],
+      "name_en": "CLE41-44",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CLV3": {
+      "csv_name": [
+        "CLV3"
+      ],
+      "name_en": "CLV3",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "CPPU": {
+      "csv_name": [
+        "Forchlorfenuron"
+      ],
+      "name_en": "Forchlorfenuron",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Caffeic acid": {
+      "csv_name": [
+        "Caffeic acid"
+      ],
+      "name_en": "Caffeic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Carbendazim": {
+      "csv_name": [
+        "Carbendazim"
+      ],
+      "name_en": "Carbendazim",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Carbon monoxide": {
+      "csv_name": [
+        "Carbon Monoxide"
+      ],
+      "name_en": "Carbon Monoxide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Carbonic Anhydrase": {
+      "csv_name": [
+        "Zn-containing enzyme"
+      ],
+      "name_en": "Zn-containing enzyme",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Carbonic acid": {
+      "csv_name": [
+        "Carbonic acid (H2CO3)"
+      ],
+      "name_en": "Carbonic acid (H2CO3)",
+      "aliases": [
+        "H2CO3",
+        "Carbonic acid",
+        "Bicarbonate"
+      ],
+      "aliases_ru": [
+        "угольная кислота",
+        "бикарбонат"
+      ]
+    },
+    "Castasterone": {
+      "csv_name": [
+        "Castasterone"
+      ],
+      "name_en": "Castasterone",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Chelated titanium": {
+      "csv_name": [
+        "Chelated titanium"
+      ],
+      "name_en": "Chelated titanium",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Chitooligosaccharides": {
+      "csv_name": [
+        "Chitooligosaccharides"
+      ],
+      "name_en": "Chitooligosaccharides (COS/CHOS)",
+      "aliases": [
+        "COS",
+        "CHOS",
+        "Chitooligosaccharides",
+        "Chitosan oligosaccharide"
+      ],
+      "aliases_ru": [
+        "хитозан-олигосахариды",
+        "олигомеры хитозана"
+      ]
+    },
+    "Chitosan nanoparticles": {
+      "csv_name": [
+        "Chitosan nanoparticles"
+      ],
+      "name_en": "Chitosan nanoparticles",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Chitosan": {
+      "csv_name": [
+        "Chitosan"
+      ],
+      "name_en": "Chitosan",
+      "aliases": [
+        "Chitosan",
+        "Chitosan from shrimp shells",
+        "Poly(D-glucosamine)",
+        "COS",
+        "CHOS",
+        "Chitooligosaccharides"
+      ],
+      "aliases_ru": [
+        "хитозан",
+        "поли(D-глюкозамин)",
+        "деацетилированный хитин",
+        "хитозан низкомолекулярный (50 000–190 000 Да)",
+        "олигомеры хитозана (COS/CHOS)"
+      ]
+    },
+    "Chlormequat Chloride": {
+      "csv_name": [
+        "CCC"
+      ],
+      "name_en": "CCC",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Chlorogenic acid": {
+      "csv_name": [
+        "Chlorogenic acid"
+      ],
+      "name_en": "Chlorogenic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Chlorothalonil": {
+      "csv_name": [
+        "Chlorothalonil"
+      ],
+      "name_en": "Chlorothalonil",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cholecalciferol": {
+      "csv_name": [
+        "Cholecalciferol (D3)"
+      ],
+      "name_en": "Cholecalciferol (D3)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Choline chloride": {
+      "csv_name": [
+        "Choline chloride"
+      ],
+      "name_en": "Choline chloride",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Chromosaponin I": {
+      "csv_name": [
+        "Chromosaponin I"
+      ],
+      "name_en": "Chromosaponin I",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cis-jasmone": {
+      "csv_name": [
+        "Cis-jasmone"
+      ],
+      "name_en": "Cis-jasmone",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Citric Acid": {
+      "csv_name": [
+        "Citric acid"
+      ],
+      "name_en": "Citric acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Citrulline": {
+      "csv_name": [
+        "Citrulline"
+      ],
+      "name_en": "Citrulline",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Clothianidin": {
+      "csv_name": [
+        "Clothianidin"
+      ],
+      "name_en": "Clothianidin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cobalt": {
+      "csv_name": [
+        "Cobalt (CoO NPs)"
+      ],
+      "name_en": "Cobalt (CoO NPs)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Copper fungicides": {
+      "csv_name": [
+        "Copper-based fungicides"
+      ],
+      "name_en": "Copper-based fungicides",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cyanamide": {
+      "csv_name": [
+        "Hydrogen cyanamide"
+      ],
+      "name_en": "Hydrogen cyanamide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cyanocobalamin": {
+      "csv_name": [
+        "Cyanocobalamin (B12)"
+      ],
+      "name_en": "Cyanocobalamin (B12)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cyclanilide": {
+      "csv_name": [
+        "Cyclanilide"
+      ],
+      "name_en": "Cyclanilide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Cyprodinil": {
+      "csv_name": [
+        "Cyprodinil"
+      ],
+      "name_en": "Cyprodinil",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "DA-6": {
+      "csv_name": [
+        "Diethylaminoethyl hexanoate"
+      ],
+      "name_en": "Diethylaminoethyl hexanoate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "DCPTA": {
+      "csv_name": [
+        "DCPTA"
+      ],
+      "name_en": "DCPTA",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "DMSO": {
+      "csv_name": [
+        "Dimethyl sulfoxide"
+      ],
+      "name_en": "Dimethyl sulfoxide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Dandelion": {
+      "csv_name": [
+        "Dandelion extract"
+      ],
+      "name_en": "Dandelion extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Decylglucoside": {
+      "csv_name": [
+        "Decylglucoside"
+      ],
+      "name_en": "Decylglucoside",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Dicamba": {
+      "csv_name": [
+        "Dicamba"
+      ],
+      "name_en": "Dicamba",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Dihydrozeatin": {
+      "csv_name": [
+        "Dihydrozeatin"
+      ],
+      "name_en": "Dihydrozeatin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Dimethylethanolamine": {
+      "csv_name": [
+        "Dimethylethanolamine"
+      ],
+      "name_en": "Dimethylethanolamine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Dinotefuran": {
+      "csv_name": [
+        "Dinotefuran"
+      ],
+      "name_en": "Dinotefuran",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Diosgenin": {
+      "csv_name": [
+        "Diosgenin"
+      ],
+      "name_en": "Diosgenin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Echinacea": {
+      "csv_name": [
+        "Purple coneflower extract"
+      ],
+      "name_en": "Purple coneflower extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ecklonia maxima": {
+      "csv_name": [
+        "Ecklonia maxima extract"
+      ],
+      "name_en": "Ecklonia maxima extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Epibrassinolide (BL)": {
+      "csv_name": [
+        "Epibrassinolide (BL)"
+      ],
+      "name_en": "Epibrassinolide (BL)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ethephon": {
+      "csv_name": [
+        "Ethephon"
+      ],
+      "name_en": "Ethephon",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ethychlozate": {
+      "csv_name": [
+        "Ethylchlozate (Figaron)"
+      ],
+      "name_en": "Ethylchlozate (Figaron)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ethylene": {
+      "csv_name": [
+        "Ethylene gas"
+      ],
+      "name_en": "Ethylene gas",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ferulic acid": {
+      "csv_name": [
+        "Ferulic acid"
+      ],
+      "name_en": "Ferulic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Florigen FT protein": {
+      "csv_name": [
+        "Florigen FT protein"
+      ],
+      "name_en": "Florigen FT protein",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Fludioxonil": {
+      "csv_name": [
+        "Fludioxonil"
+      ],
+      "name_en": "Fludioxonil",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Flurprimidol": {
+      "csv_name": [
+        "Flurprimidol"
+      ],
+      "name_en": "Flurprimidol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Folic acid": {
+      "csv_name": [
+        "Folic Acid (B9)"
+      ],
+      "name_en": "Folic Acid (B9)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Fuberidazole": {
+      "csv_name": [
+        "Fuberidazole"
+      ],
+      "name_en": "Fuberidazole",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Fulvic Acid": {
+      "csv_name": [
+        "Fulvic acid"
+      ],
+      "name_en": "Fulvic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Fumaric acid": {
+      "csv_name": [
+        "Fumaric acid"
+      ],
+      "name_en": "Fumaric acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "GA1": {
+      "csv_name": [
+        "Gibberellin A1"
+      ],
+      "name_en": "Gibberellin A1",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "GA20": {
+      "csv_name": [
+        "Gibberellin A20"
+      ],
+      "name_en": "Gibberellin A20",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "GA3": {
+      "csv_name": [
+        "Gibberellic Acid"
+      ],
+      "name_en": "Gibberellic Acid",
+      "aliases": [
+        "Gibberellic Acid",
+        "Gibberellin A3",
+        "GA3"
+      ],
+      "aliases_ru": [
+        "Гибберелловая кислота",
+        "Гиббереллин A3",
+        "Гиббереллин X"
+      ]
+    },
+    "GA4": {
+      "csv_name": [
+        "Gibberellin A4"
+      ],
+      "name_en": "Gibberellin A4",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "GA7": {
+      "csv_name": [
+        "Gibberellin A7"
+      ],
+      "name_en": "Gibberellin A7",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "GABA": {
+      "csv_name": [
+        "GABA"
+      ],
+      "name_en": "GABA",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "GSH": {
+      "csv_name": [
+        "Reduced glutathione"
+      ],
+      "name_en": "Reduced glutathione",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Gallic acid": {
+      "csv_name": [
+        "Gallic acid"
+      ],
+      "name_en": "Gallic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Glucose": {
+      "csv_name": [
+        "Glucose"
+      ],
+      "name_en": "Glucose",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Glutamic Acid": {
+      "csv_name": [
+        "L-Glutamate"
+      ],
+      "name_en": "L-Glutamate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Glutamine": {
+      "csv_name": [
+        "Glutamine"
+      ],
+      "name_en": "Glutamine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Glycine Betaine": {
+      "csv_name": [
+        "Betaine"
+      ],
+      "name_en": "Betaine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Glycine": {
+      "csv_name": [
+        "Glycine"
+      ],
+      "name_en": "Glycine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Grape seed extract": {
+      "csv_name": [
+        "Proanthocyanidins"
+      ],
+      "name_en": "Proanthocyanidins",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Green Leaf Volatiles": {
+      "csv_name": [
+        "Z-3-hexenol/hexenal"
+      ],
+      "name_en": "Z-3-hexenol/hexenal",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Green tea": {
+      "csv_name": [
+        "Green tea extract"
+      ],
+      "name_en": "Green tea extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "HOCl": {
+      "csv_name": [
+        "Hypochlorous acid"
+      ],
+      "name_en": "Hypochlorous acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Hd3a": {
+      "csv_name": [
+        "Hd3a (rice)"
+      ],
+      "name_en": "Hd3a (rice)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Hexaconazole": {
+      "csv_name": [
+        "Hexaconazole"
+      ],
+      "name_en": "Hexaconazole",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Hexanal": {
+      "csv_name": [
+        "Hexanal"
+      ],
+      "name_en": "Hexanal",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Histidine": {
+      "csv_name": [
+        "Histidine"
+      ],
+      "name_en": "Histidine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Humic Acid": {
+      "csv_name": [
+        "Humic substances"
+      ],
+      "name_en": "Humic substances",
+      "aliases": [
+        "Potassium Humate",
+        "Humic substances",
+        "Humic acid"
+      ],
+      "aliases_ru": [
+        "гуминовые вещества",
+        "гумат калия",
+        "гуминовая кислота"
+      ]
+    },
+    "Hydrogen Sulfide donor": {
+      "csv_name": [
+        "NaHS"
+      ],
+      "name_en": "NaHS",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Hydroxycinnamic Acids": {
+      "csv_name": [
+        "Hydroxycinnamic Acids"
+      ],
+      "name_en": "Hydroxycinnamic Acids",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "HypSys peptides": {
+      "csv_name": [
+        "HypSys peptides"
+      ],
+      "name_en": "HypSys peptides",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "IBA": {
+      "csv_name": [
+        "Indole-3-butyric Acid"
+      ],
+      "name_en": "Indole-3-butyric Acid",
+      "aliases": [
+        "Indole-3-butyric Acid",
+        "Indolebutyric acid",
+        "IBA",
+        "4-(1H-Indol-3-yl)butanoic acid"
+      ],
+      "aliases_ru": [
+        "Индолил-3-масляная кислота (ИМК)",
+        "Индолилмасляная кислота",
+        "β-индолилмасляная кислота"
+      ]
+    },
+    "Imidacloprid": {
+      "csv_name": [
+        "Imidacloprid"
+      ],
+      "name_en": "Imidacloprid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Inositol": {
+      "csv_name": [
+        "myo-Inositol"
+      ],
+      "name_en": "myo-Inositol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Iodine": {
+      "csv_name": [
+        "Iodine (KIO3)"
+      ],
+      "name_en": "Iodine (KIO3)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Iodoacetamide": {
+      "csv_name": [
+        "Iodoacetamide (IAM)"
+      ],
+      "name_en": "Iodoacetamide (IAM)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Isoleucine": {
+      "csv_name": [
+        "Isoleucine"
+      ],
+      "name_en": "Isoleucine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Isoprene": {
+      "csv_name": [
+        "Isoprene"
+      ],
+      "name_en": "Isoprene",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "JA-Ile": {
+      "csv_name": [
+        "Jasmonic acid-isoleucine"
+      ],
+      "name_en": "Jasmonic acid-isoleucine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Jasmonic acid": {
+      "csv_name": [
+        "Jasmonic acid"
+      ],
+      "name_en": "Jasmonic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "KAR2": {
+      "csv_name": [
+        "Karrikin-2"
+      ],
+      "name_en": "Karrikin-2",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "KAR3": {
+      "csv_name": [
+        "Karrikin-3"
+      ],
+      "name_en": "Karrikin-3",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Karrikin-1": {
+      "csv_name": [
+        "KAR1"
+      ],
+      "name_en": "KAR1",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Kinetin": {
+      "csv_name": [
+        "6-Furfurylaminopurine"
+      ],
+      "name_en": "6-Furfurylaminopurine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Kresoxim-methyl": {
+      "csv_name": [
+        "Kresoxim-methyl"
+      ],
+      "name_en": "Kresoxim-methyl",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "L-carnitine": {
+      "csv_name": [
+        "L-carnitine"
+      ],
+      "name_en": "L-carnitine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "L-tryptophan": {
+      "csv_name": [
+        "L-Tryptophan"
+      ],
+      "name_en": "L-Tryptophan",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Lactic acid": {
+      "csv_name": [
+        "Lactic acid"
+      ],
+      "name_en": "Lactic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Laminarin oligomers": {
+      "csv_name": [
+        "Laminarin oligosaccharides"
+      ],
+      "name_en": "Laminarin oligosaccharides",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Lecithin": {
+      "csv_name": [
+        "Lecithin"
+      ],
+      "name_en": "Lecithin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Leonardite extract": {
+      "csv_name": [
+        "Humic substances"
+      ],
+      "name_en": "Humic substances",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Leucine": {
+      "csv_name": [
+        "Leucine"
+      ],
+      "name_en": "Leucine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Lysine": {
+      "csv_name": [
+        "Lysine"
+      ],
+      "name_en": "Lysine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "MCPA": {
+      "csv_name": [
+        "MCPA"
+      ],
+      "name_en": "MCPA",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "MCPB": {
+      "csv_name": [
+        "MCPB"
+      ],
+      "name_en": "MCPB",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Magnesium": {
+      "csv_name": [
+        "Mg-EDTA"
+      ],
+      "name_en": "Mg-EDTA",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Maleic Hydrazide": {
+      "csv_name": [
+        "MH"
+      ],
+      "name_en": "Maleic hydrazide",
+      "aliases": [
+        "MH",
+        "Maleic hydrazide",
+        "1",
+        "2-Dihydropyridazine-3",
+        "6-dione"
+      ],
+      "aliases_ru": [
+        "малеиновый гидразид"
+      ]
+    },
+    "Malic Acid": {
+      "csv_name": [
+        "L-Malic acid"
+      ],
+      "name_en": "L-Malic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Maltose": {
+      "csv_name": [
+        "Maltose"
+      ],
+      "name_en": "Maltose",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "MeJA (Methyl Jasmonate)": {
+      "csv_name": [
+        "Methyl Jasmonate (MeJA)"
+      ],
+      "name_en": "Methyl Jasmonate (MeJA)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Melatonin": {
+      "csv_name": [
+        "Melatonin"
+      ],
+      "name_en": "N-acetyl-5-methoxytryptamine",
+      "aliases": [
+        "Melatonin",
+        "N-acetyl-5-methoxytryptamine"
+      ],
+      "aliases_ru": [
+        "мелатонин",
+        "N-ацетил-5-метокситриптамин"
+      ]
+    },
+    "Meta-topolin": {
+      "csv_name": [
+        "Meta-topolin"
+      ],
+      "name_en": "Meta-topolin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Metal nanoparticles (ZnO, FeO, CuO, Se, TiO2, Ag, CeO2)": {
+      "csv_name": [
+        "Nanoparticles"
+      ],
+      "name_en": "Nanoparticles",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Methionine": {
+      "csv_name": [
+        "Methionine"
+      ],
+      "name_en": "Methionine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Methyl Jasmonate": {
+      "csv_name": [
+        "MeJA"
+      ],
+      "name_en": "MeJA",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Methyl Salicylate": {
+      "csv_name": [
+        "MeSA"
+      ],
+      "name_en": "MeSA",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Milk whey": {
+      "csv_name": [
+        "Milk whey"
+      ],
+      "name_en": "Milk whey",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Mobile miRNAs": {
+      "csv_name": [
+        "Mobile miRNAs"
+      ],
+      "name_en": "Mobile miRNAs",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Molasses": {
+      "csv_name": [
+        "Molasses"
+      ],
+      "name_en": "Molasses",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Monoterpenes": {
+      "csv_name": [
+        "Monoterpenes"
+      ],
+      "name_en": "Monoterpenes",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Myclobutanil": {
+      "csv_name": [
+        "Myclobutanil"
+      ],
+      "name_en": "Myclobutanil",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "N-acetylglucosamine": {
+      "csv_name": [
+        "N-acetylglucosamine"
+      ],
+      "name_en": "N-acetylglucosamine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "NAA": {
+      "csv_name": [
+        "Naphthaleneacetic Acid"
+      ],
+      "name_en": "Naphthaleneacetic Acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "NAD": {
+      "csv_name": [
+        "Naphthyl Acetamide"
+      ],
+      "name_en": "Naphthyl Acetamide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "NATCA": {
+      "csv_name": [
+        "N-Acetyl-thiazolidine-4-carboxylic Acid"
+      ],
+      "name_en": "N-Acetyl-thiazolidine-4-carboxylic Acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "NHP": {
+      "csv_name": [
+        "N-hydroxy-pipecolic acid"
+      ],
+      "name_en": "N-hydroxy-pipecolic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "NPA": {
+      "csv_name": [
+        "N-Phenylphthalamic acid"
+      ],
+      "name_en": "N-Phenylphthalamic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Niacin": {
+      "csv_name": [
+        "Niacin (B3)"
+      ],
+      "name_en": "Niacin (B3)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Nickel": {
+      "csv_name": [
+        "Nickel (NiCl2)"
+      ],
+      "name_en": "Nickel (NiCl2)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Nitric Oxide donor": {
+      "csv_name": [
+        "SNP/GSNO"
+      ],
+      "name_en": "SNP/GSNO",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Organic Acids": {
+      "csv_name": [
+        "Citric acid blend"
+      ],
+      "name_en": "Citric acid blend",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Orobanchol": {
+      "csv_name": [
+        "Orobanchol"
+      ],
+      "name_en": "Orobanchol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Orotic acid": {
+      "csv_name": [
+        "Orotic acid"
+      ],
+      "name_en": "Orotic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Oxalic acid": {
+      "csv_name": [
+        "Oxalic acid"
+      ],
+      "name_en": "Oxalic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "P-Ca ProCa": {
+      "csv_name": [
+        "Prohexadione-calcium"
+      ],
+      "name_en": "Prohexadione-calcium",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "PAA": {
+      "csv_name": [
+        "Phenylacetic acid"
+      ],
+      "name_en": "Phenylacetic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "PABA": {
+      "csv_name": [
+        "Para-aminobenzoic acid (PABA)"
+      ],
+      "name_en": "Para-aminobenzoic acid (PABA)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "PCIB": {
+      "csv_name": [
+        "p-Chlorophenoxyisobutyric acid"
+      ],
+      "name_en": "p-Chlorophenoxyisobutyric acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "PDJ": {
+      "csv_name": [
+        "Propyl dihydrojasmonate"
+      ],
+      "name_en": "Propyl dihydrojasmonate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "PIX": {
+      "csv_name": [
+        "Mepiquat chloride"
+      ],
+      "name_en": "Mepiquat chloride",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "PQQ": {
+      "csv_name": [
+        "PQQ (Pyrroloquinoline quinone)"
+      ],
+      "name_en": "PQQ (Pyrroloquinoline quinone)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Paclobutrazol": {
+      "csv_name": [
+        "Paclobutrazol"
+      ],
+      "name_en": "Paclobutrazol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Pantothenic acid": {
+      "csv_name": [
+        "Pantothenic Acid (B5)"
+      ],
+      "name_en": "Pantothenic Acid (B5)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Phenylalanine": {
+      "csv_name": [
+        "Phenylalanine"
+      ],
+      "name_en": "Phenylalanine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Phosphite": {
+      "csv_name": [
+        "Phosphorous acid"
+      ],
+      "name_en": "Phosphorous acid",
+      "aliases": [
+        "Phosphorous acid",
+        "Phosphite",
+        "Phosphonate"
+      ],
+      "aliases_ru": [
+        "фосфористая кислота",
+        "фосфит",
+        "фосфонаты"
+      ]
+    },
+    "Phylloquinone": {
+      "csv_name": [
+        "Phylloquinone (K1)"
+      ],
+      "name_en": "Phylloquinone (K1)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Picloram": {
+      "csv_name": [
+        "Picloram"
+      ],
+      "name_en": "Picloram",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Picoxystrobin": {
+      "csv_name": [
+        "Picoxystrobin"
+      ],
+      "name_en": "Picoxystrobin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Pipecolic acid": {
+      "csv_name": [
+        "Pipecolic acid"
+      ],
+      "name_en": "Pipecolic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Plantain leaf": {
+      "csv_name": [
+        "Plantain extract"
+      ],
+      "name_en": "Plantain extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Polyaspartic Acid": {
+      "csv_name": [
+        "PASP"
+      ],
+      "name_en": "PASP",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Polyglutamic acid": {
+      "csv_name": [
+        "Polyglutamic acid (³-PGA)"
+      ],
+      "name_en": "Polyglutamic acid (³-PGA)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Polyhexamethylene guanidine": {
+      "csv_name": [
+        "Polyhexamethylene guanidine (PHMG)"
+      ],
+      "name_en": "Polyhexamethylene guanidine (PHMG)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Proline": {
+      "csv_name": [
+        "L-Proline"
+      ],
+      "name_en": "L-Proline",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Propiconazole": {
+      "csv_name": [
+        "Propiconazole"
+      ],
+      "name_en": "Propiconazole",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Protocatechuic acid": {
+      "csv_name": [
+        "Protocatechuic acid"
+      ],
+      "name_en": "Protocatechuic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Putrescine": {
+      "csv_name": [
+        "Putrescine"
+      ],
+      "name_en": "Putrescine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Pyraclostrobin": {
+      "csv_name": [
+        "Pyraclostrobin"
+      ],
+      "name_en": "Pyraclostrobin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Pyridoxine": {
+      "csv_name": [
+        "Vitamin B6"
+      ],
+      "name_en": "Vitamin B6",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Pyrimethanil": {
+      "csv_name": [
+        "Pyrimethanil"
+      ],
+      "name_en": "Pyrimethanil",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Retinol": {
+      "csv_name": [
+        "Retinol (A)"
+      ],
+      "name_en": "Retinol (A)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Riboflavin": {
+      "csv_name": [
+        "Vitamin B2"
+      ],
+      "name_en": "Vitamin B2",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Riboprine": {
+      "csv_name": [
+        "6-(3,3-Dimethylallylaminopurine) riboside"
+      ],
+      "name_en": "6-(3,3-Dimethylallylaminopurine) riboside",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Rosmarinic acid": {
+      "csv_name": [
+        "Rosmarinic acid"
+      ],
+      "name_en": "Rosmarinic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Rutin": {
+      "csv_name": [
+        "Rutin"
+      ],
+      "name_en": "Rutin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "S-ABA": {
+      "csv_name": [
+        "S-Abscisic acid"
+      ],
+      "name_en": "S-Abscisic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "STS": {
+      "csv_name": [
+        "Silver thiosulfate"
+      ],
+      "name_en": "Silver thiosulfate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Salicylic Acid": {
+      "csv_name": [
+        "Salicylic acid"
+      ],
+      "name_en": "Salicylic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sargassum extracts": {
+      "csv_name": [
+        "Sargassum extract"
+      ],
+      "name_en": "Sargassum extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Selenium": {
+      "csv_name": [
+        "Selenium (Na2SeO3)"
+      ],
+      "name_en": "Selenium (Na2SeO3)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Serine": {
+      "csv_name": [
+        "Serine"
+      ],
+      "name_en": "Serine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Serotonin": {
+      "csv_name": [
+        "Serotonin (5-HT)"
+      ],
+      "name_en": "Serotonin (5-HT)",
+      "aliases": [
+        "5-HT",
+        "5-Hydroxytryptamine",
+        "Serotonin"
+      ],
+      "aliases_ru": [
+        "серотонин",
+        "5-гидрокситриптамин"
+      ]
+    },
+    "Silicon": {
+      "csv_name": [
+        "Silicon (Si)"
+      ],
+      "name_en": "Silicon (Si)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sinapic acid": {
+      "csv_name": [
+        "Sinapic acid"
+      ],
+      "name_en": "Sinapic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium 2-nitrophenolate": {
+      "csv_name": [
+        "Sodium 2-nitrophenolate"
+      ],
+      "name_en": "Sodium 2-nitrophenolate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium 4-nitrophenolate": {
+      "csv_name": [
+        "Sodium 4-nitrophenolate"
+      ],
+      "name_en": "Sodium 4-nitrophenolate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium Alginate": {
+      "csv_name": [
+        "Alginate oligosaccharide"
+      ],
+      "name_en": "Alginate oligosaccharide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium Salicylate": {
+      "csv_name": [
+        "Sodium salicylate"
+      ],
+      "name_en": "Sodium salicylate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium hydrosulfide": {
+      "csv_name": [
+        "Sodium hydrosulfide (NaHS)"
+      ],
+      "name_en": "Sodium hydrosulfide (NaHS)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium hypochlorite": {
+      "csv_name": [
+        "Sodium hypochlorite"
+      ],
+      "name_en": "Sodium hypochlorite",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium nitroprusside": {
+      "csv_name": [
+        "Sodium nitroprusside (SNP)"
+      ],
+      "name_en": "Sodium nitroprusside (SNP)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium ortho-nitrophenolate": {
+      "csv_name": [
+        "Sodium ortho-nitrophenolate"
+      ],
+      "name_en": "Sodium ortho-nitrophenolate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sodium para-nitrophenolate": {
+      "csv_name": [
+        "Sodium para-nitrophenolate"
+      ],
+      "name_en": "Sodium para-nitrophenolate",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Solanacol": {
+      "csv_name": [
+        "Solanacol"
+      ],
+      "name_en": "Solanacol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Spermidine": {
+      "csv_name": [
+        "Spermidine"
+      ],
+      "name_en": "Spermidine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Spermine": {
+      "csv_name": [
+        "Spermine"
+      ],
+      "name_en": "Spermine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Strigol": {
+      "csv_name": [
+        "Strigol"
+      ],
+      "name_en": "Strigol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Strigolactone analog": {
+      "csv_name": [
+        "rac-GR24"
+      ],
+      "name_en": "rac-GR24",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Strobilurins": {
+      "csv_name": [
+        "Azoxystrobin"
+      ],
+      "name_en": "Azoxystrobin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Succinic Acid": {
+      "csv_name": [
+        "Succinic acid"
+      ],
+      "name_en": "Succinic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Sucrose": {
+      "csv_name": [
+        "Sucrose"
+      ],
+      "name_en": "Sucrose",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Syringic acid": {
+      "csv_name": [
+        "Syringic acid"
+      ],
+      "name_en": "Syringic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Systemin": {
+      "csv_name": [
+        "18-amino acid peptide"
+      ],
+      "name_en": "18-amino acid peptide",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "TDIF CLE4144": {
+      "csv_name": [
+        "TDIF CLE4144"
+      ],
+      "name_en": "TDIF CLE4144",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "TIBA": {
+      "csv_name": [
+        "2,3,5-Triiodobenzoic acid"
+      ],
+      "name_en": "2,3,5-Triiodobenzoic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Taurine": {
+      "csv_name": [
+        "Taurine"
+      ],
+      "name_en": "Taurine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Tebuconazole": {
+      "csv_name": [
+        "Tebuconazole"
+      ],
+      "name_en": "Tebuconazole",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Thiabendazole": {
+      "csv_name": [
+        "Thiabendazole"
+      ],
+      "name_en": "Thiabendazole",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Thiacloprid": {
+      "csv_name": [
+        "Thiacloprid"
+      ],
+      "name_en": "Thiacloprid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Thiamethoxam": {
+      "csv_name": [
+        "Thiamethoxam"
+      ],
+      "name_en": "Thiamethoxam",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Thiamine B1": {
+      "csv_name": [
+        "Thiamine"
+      ],
+      "name_en": "Thiamine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Thidiazuron": {
+      "csv_name": [
+        "TDZ"
+      ],
+      "name_en": "TDZ",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Thiophanate-methyl": {
+      "csv_name": [
+        "Thiophanate-methyl"
+      ],
+      "name_en": "Thiophanate-methyl",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Threonine": {
+      "csv_name": [
+        "Threonine"
+      ],
+      "name_en": "Threonine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Tocopherol": {
+      "csv_name": [
+        "Vitamin E"
+      ],
+      "name_en": "Vitamin E",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Trans-jasmone": {
+      "csv_name": [
+        "Trans-jasmone"
+      ],
+      "name_en": "Trans-jasmone",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Trehalose": {
+      "csv_name": [
+        "Trehalose"
+      ],
+      "name_en": "Trehalose",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Triacontanol (TRIA)": {
+      "csv_name": [
+        "Triacontanol"
+      ],
+      "name_en": "Triacontanol",
+      "aliases": [
+        "1-Triacontanol",
+        "Melissyl alcohol",
+        "TRIA"
+      ],
+      "aliases_ru": [
+        "1-триаконтапол",
+        "триаконтановый спирт",
+        "мелиссиловый спирт"
+      ]
+    },
+    "Triacontanol": {
+      "csv_name": [
+        "1-Triacontanol"
+      ],
+      "name_en": "1-Triacontanol",
+      "aliases": [
+        "1-Triacontanol",
+        "Melissyl alcohol",
+        "Myricyl alcohol",
+        "TRIA"
+      ],
+      "aliases_ru": [
+        "1-триаконтапол",
+        "триаконтановый спирт",
+        "мелиссиловый спирт",
+        "мирициловый спирт"
+      ]
+    },
+    "Triadimefon": {
+      "csv_name": [
+        "Triadimefon"
+      ],
+      "name_en": "Triadimefon",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Triclopyr": {
+      "csv_name": [
+        "Triclopyr"
+      ],
+      "name_en": "Triclopyr",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Trifloxystrobin": {
+      "csv_name": [
+        "Trifloxystrobin"
+      ],
+      "name_en": "Trifloxystrobin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Trinexapac-ethyl": {
+      "csv_name": [
+        "Trinexapac"
+      ],
+      "name_en": "Trinexapac",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Tryptophan": {
+      "csv_name": [
+        "L-Tryptophan"
+      ],
+      "name_en": "L-Tryptophan",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Typhasterol": {
+      "csv_name": [
+        "Typhasterol"
+      ],
+      "name_en": "Typhasterol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Tyrosine": {
+      "csv_name": [
+        "Tyrosine"
+      ],
+      "name_en": "Tyrosine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Ulvan oligomers": {
+      "csv_name": [
+        "Ulvan oligosaccharides"
+      ],
+      "name_en": "Ulvan oligosaccharides",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Uniconazole": {
+      "csv_name": [
+        "Uniconazole"
+      ],
+      "name_en": "Uniconazole",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Valine": {
+      "csv_name": [
+        "Valine"
+      ],
+      "name_en": "Valine",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Vanadium": {
+      "csv_name": [
+        "Vanadium (VOSO4)"
+      ],
+      "name_en": "Vanadium (VOSO4)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Vanillic acid": {
+      "csv_name": [
+        "Vanillic acid"
+      ],
+      "name_en": "Vanillic acid",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Willow bark": {
+      "csv_name": [
+        "Willow extract"
+      ],
+      "name_en": "Willow extract",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Yeast broth": {
+      "csv_name": [
+        "Yeast culture broth"
+      ],
+      "name_en": "Yeast culture broth",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Z-3-hexenal": {
+      "csv_name": [
+        "Z-3-hexenal"
+      ],
+      "name_en": "Z-3-hexenal",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Z-3-hexenol": {
+      "csv_name": [
+        "Z-3-hexenol"
+      ],
+      "name_en": "Z-3-hexenol",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "ZCN8": {
+      "csv_name": [
+        "ZCN8 (maize)"
+      ],
+      "name_en": "ZCN8 (maize)",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Zeatin riboside": {
+      "csv_name": [
+        "Zeatin riboside"
+      ],
+      "name_en": "Zeatin riboside",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "Zeatin": {
+      "csv_name": [
+        "Trans-zeatin"
+      ],
+      "name_en": "Trans-zeatin",
+      "aliases": [],
+      "aliases_ru": []
+    },
+    "p-Coumaric acid": {
+      "csv_name": [
+        "p-Coumaric acid"
+      ],
+      "name_en": "p-Coumaric acid",
+      "aliases": [],
+      "aliases_ru": []
+    }
+  }
+}

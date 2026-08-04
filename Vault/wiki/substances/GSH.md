@@ -6,7 +6,7 @@ cas:
 formula: 
 class: Tripeptide
 class_family: peptides_proteins
-mechanism: growth_regulation
+mechanism: antioxidant_defense
 action_category: FRUIT_MANAGEMENT
 application_csv: Fruit injection 0.5 mL of 100 mM
 efficacy_csv: MEDIUM
