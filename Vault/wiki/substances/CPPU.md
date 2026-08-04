@@ -5,6 +5,8 @@ name_en: Forchlorfenuron
 cas: 
 formula: 
 class: Synthetic cytokinin
+class_family: cytokinins
+mechanism: cytokinin_signaling
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Z-3-hexenol/hexenal
 cas: 
 formula: 
 class: Volatile compounds
+class_family: voc_volatiles
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

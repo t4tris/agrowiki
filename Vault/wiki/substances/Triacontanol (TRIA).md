@@ -5,6 +5,8 @@ name_en: Triacontanol
 cas: 593-50-0
 formula: C30H62O
 class: Long-chain alcohol
+class_family: terpenoids_saponins_lipids
+mechanism: photosynthesis_enhancement
 action_category: GROWTH_REGULATION
 application_csv: Foliar spray 1-150 ppm; 50 µM for fruit coloration
 efficacy_csv: MEDIUM

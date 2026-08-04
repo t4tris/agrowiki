@@ -5,6 +5,8 @@ name_en: Maltose
 cas: 
 formula: 
 class: Disaccharide
+class_family: carbohydrates
+mechanism: osmoprotection
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

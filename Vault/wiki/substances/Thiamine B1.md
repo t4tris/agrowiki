@@ -5,6 +5,8 @@ name_en: Thiamine
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: nutrition_metabolism
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: MEDIUM

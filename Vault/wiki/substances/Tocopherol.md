@@ -5,6 +5,8 @@ name_en: Vitamin E
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: antioxidant_defense
 action_category: STRESS_TOLERANCE
 application_csv: 
 efficacy_csv: MEDIUM

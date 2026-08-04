@@ -5,6 +5,8 @@ name_en: Ethylchlozate (Figaron)
 cas: 
 formula: 
 class: Ethylene releaser
+class_family: ethylene
+mechanism: ethylene_signaling
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: MEDIUM

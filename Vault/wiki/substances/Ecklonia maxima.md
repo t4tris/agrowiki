@@ -5,6 +5,8 @@ name_en: Ecklonia maxima extract
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

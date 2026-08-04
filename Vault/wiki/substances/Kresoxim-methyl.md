@@ -5,6 +5,8 @@ name_en: Kresoxim-methyl
 cas: 
 formula: 
 class: Strobilurin fungicide
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

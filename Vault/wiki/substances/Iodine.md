@@ -5,6 +5,8 @@ name_en: Iodine (KIO3)
 cas: 
 formula: 
 class: Beneficial element
+class_family: elements_minerals
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

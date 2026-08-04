@@ -5,6 +5,8 @@ name_en: Polyhexamethylene guanidine (PHMG)
 cas: 
 formula: 
 class: Polymeric guanidine
+class_family: synthetic_growth_regulators
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

@@ -5,6 +5,8 @@ name_en: Chitosan nanoparticles
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

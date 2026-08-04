@@ -5,6 +5,8 @@ name_en: PQQ (Pyrroloquinoline quinone)
 cas: 
 formula: 
 class: Vitamin-like
+class_family: vitamins_cofactors
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

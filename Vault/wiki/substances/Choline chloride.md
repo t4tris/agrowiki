@@ -5,6 +5,8 @@ name_en: Choline chloride
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: osmoprotection
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: MEDIUM

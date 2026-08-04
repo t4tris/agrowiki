@@ -5,6 +5,8 @@ name_en: Valine
 cas: 
 formula: 
 class: Amino Acid
+class_family: amino_acids_polyamines
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

@@ -5,6 +5,8 @@ name_en: Mg-EDTA
 cas: 
 formula: 
 class: Chelated nutrient
+class_family: elements_minerals
+mechanism: nutrition_metabolism
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
 application_csv: 
 efficacy_csv: HIGH

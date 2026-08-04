@@ -5,6 +5,8 @@ name_en: ²-aminobutyric acid
 cas: 
 formula: 
 class: SAR Signal
+class_family: sar_signals_elicitors
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

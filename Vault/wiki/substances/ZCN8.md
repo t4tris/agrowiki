@@ -5,6 +5,8 @@ name_en: ZCN8 (maize)
 cas: 
 formula: 
 class: Peptide
+class_family: peptides_proteins
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

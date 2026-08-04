@@ -5,6 +5,8 @@ name_en: Proanthocyanidins
 cas: 
 formula: 
 class: Polyphenol
+class_family: phenolics_polyphenols
+mechanism: antioxidant_defense
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: MEDIUM

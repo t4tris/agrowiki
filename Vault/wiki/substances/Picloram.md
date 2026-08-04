@@ -5,6 +5,8 @@ name_en: Picloram
 cas: 
 formula: 
 class: Synthetic auxin
+class_family: auxins
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

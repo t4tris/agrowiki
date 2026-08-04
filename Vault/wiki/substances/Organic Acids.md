@@ -5,6 +5,8 @@ name_en: Citric acid blend
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

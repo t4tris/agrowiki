@@ -56,6 +56,8 @@ name_en: Indole-3-butyric acid
 cas: "133-32-4"
 formula: C12H13NO2
 class: Auxins
+class_family: auxins              # семейство хим. класса (страница wiki/classes/<slug>.md)
+mechanism: auxin_signaling        # механизм действия (страница wiki/mechanisms/<slug>.md)
 action_category: ROOT_DEVELOPMENT
 application_csv: "..."          # как в CSV (исходно)
 efficacy_csv: HIGH              # MEDIUM | LOW | HIGH | EMPTY
@@ -115,7 +117,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - **Совпадение CAS** у двух кодов CSV → объединить в одну страницу, коды в `aliases`.
 - **Культуры:** Томат = Solanum lycopersicum, Огурец = Cucumis sativus, Клубника = Fragaria × ananassa. Синонимы использовать в fallback-запросах.
 - **Единицы:** ppm/mg/L/µM не конвертировать, писать как в источнике + в CSV.
-- **Классы:** 89 CSV-классов → ~20 семейств (страницы `wiki/classes/`).
+- **Классы:** 89 CSV-классов → 24 семейства (страницы `wiki/classes/`, маппинг в `_scripts/gen_taxonomy.py`). Поле `class_family` в карточке — slug семейства, `mechanism` — slug механизма (страницы `wiki/mechanisms/`, 15 механизмов). При генерации новых карточек запускать `python _scripts/gen_taxonomy.py` (идемпотентно).
 
 ## Контракт отчёта сабагента поиска (JSON v1.3)
 Один запуск = одно вещество × 3 культуры. Схема (обязательные поля, enum'ы строгие):

@@ -5,6 +5,8 @@ name_en: Glucose
 cas: 
 formula: 
 class: Monosaccharide
+class_family: carbohydrates
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

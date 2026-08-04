@@ -5,6 +5,8 @@ name_en: MCPA
 cas: 
 formula: 
 class: Synthetic auxin
+class_family: auxins
+mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: HIGH

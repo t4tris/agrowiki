@@ -5,6 +5,8 @@ name_en: Yeast culture broth
 cas: 
 formula: 
 class: Organic extract
+class_family: biostimulants_extracts
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

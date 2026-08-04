@@ -5,6 +5,8 @@ name_en: Brassinazole (BZ)
 cas: 
 formula: 
 class: Triazole
+class_family: fungicides
+mechanism: brassinosteroid_signaling
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: LOW

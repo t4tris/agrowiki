@@ -5,6 +5,8 @@ name_en: Gibberellic Acid
 cas: 77-06-5
 formula: C19H22O6
 class: Gibberellin
+class_family: gibberellins
+mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 application_csv: Apply 25-200 ppm foliar; 100 mg/L best vegetative; 1.0 mM weekly ~13 runners; 200 mg/L + long photoperiod → flower abortion; 0.5 mM in citric buffer/DMSO to fruit
 efficacy_csv: MEDIUM

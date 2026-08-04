@@ -5,6 +5,8 @@ name_en: Chitosan
 cas: 9012-76-4
 formula: C56H103N9O39 (фрагмент; полимер 50 000–375 000 Да)
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
 application_csv: 400 mg/L foliage sprayed 5x (15/40/85/110/135 DAT); 1-5 kg/ha soil incorporation
 efficacy_csv: MEDIUM

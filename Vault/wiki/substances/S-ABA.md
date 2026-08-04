@@ -5,6 +5,8 @@ name_en: S-Abscisic acid
 cas: 
 formula: 
 class: ABA
+class_family: aba_strigolactones_karrikins
+mechanism: aba_stress_signaling
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: HIGH

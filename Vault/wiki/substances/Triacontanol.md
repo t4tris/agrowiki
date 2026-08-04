@@ -5,6 +5,8 @@ name_en: 1-Triacontanol
 cas: 593-50-0
 formula: C30H62O
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
 application_csv: Apply 0.05-0.2 ppm foliar spray
 efficacy_csv: HIGH

@@ -5,6 +5,8 @@ name_en: Zn-containing enzyme
 cas: 
 formula: 
 class: Enzyme
+class_family: peptides_proteins
+mechanism: growth_regulation
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
 application_csv: 
 efficacy_csv: MEDIUM

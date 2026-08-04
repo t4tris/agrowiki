@@ -5,6 +5,8 @@ name_en: Salicylic acid
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: antioxidant_defense
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: MEDIUM

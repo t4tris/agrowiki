@@ -5,6 +5,8 @@ name_en: Lactic acid
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

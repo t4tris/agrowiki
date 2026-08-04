@@ -5,6 +5,8 @@ name_en: PASP
 cas: 
 formula: 
 class: Synthetic polymer
+class_family: synthetic_growth_regulators
+mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
 application_csv: 
 efficacy_csv: HIGH

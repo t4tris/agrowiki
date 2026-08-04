@@ -5,6 +5,8 @@ name_en: Sodium ortho-nitrophenolate
 cas: 
 formula: 
 class: Nitrophenolate
+class_family: synthetic_growth_regulators
+mechanism: auxin_signaling
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: 3-Bromopyruvate (3-BrPA)
 cas: 
 formula: 
 class: Halogenated pyruvate
+class_family: synthetic_growth_regulators
+mechanism: pesticide_action
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: LOW

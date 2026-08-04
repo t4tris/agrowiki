@@ -5,6 +5,8 @@ name_en: Mobile miRNAs
 cas: 
 formula: 
 class: RNA
+class_family: peptides_proteins
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

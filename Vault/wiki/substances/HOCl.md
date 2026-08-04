@@ -5,6 +5,8 @@ name_en: Hypochlorous acid
 cas: 
 formula: 
 class: Oxidant
+class_family: other
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

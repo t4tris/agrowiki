@@ -5,6 +5,8 @@ name_en: Typhasterol
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: brassinosteroid_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

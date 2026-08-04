@@ -5,6 +5,8 @@ name_en: Azoxystrobin
 cas: 
 formula: 
 class: Fungicide/Biostimulant
+class_family: biostimulants_extracts
+mechanism: photosynthesis_enhancement
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Benzyladenine (6-BA)
 cas: 
 formula: 
 class: Synthetic cytokinin
+class_family: cytokinins
+mechanism: cytokinin_signaling
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: MEDIUM

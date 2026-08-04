@@ -5,6 +5,8 @@ name_en: Pantothenic Acid (B5)
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

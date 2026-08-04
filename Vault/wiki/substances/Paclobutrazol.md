@@ -5,6 +5,8 @@ name_en: Paclobutrazol
 cas: 
 formula: 
 class: Triazole
+class_family: fungicides
+mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: HIGH

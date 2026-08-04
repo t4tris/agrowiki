@@ -5,6 +5,8 @@ name_en: Betaine
 cas: 
 formula: 
 class: Osmoprotectant
+class_family: amino_acids_polyamines
+mechanism: osmoprotection
 action_category: STRESS_TOLERANCE
 application_csv: 
 efficacy_csv: HIGH

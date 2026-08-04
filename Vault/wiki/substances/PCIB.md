@@ -5,6 +5,8 @@ name_en: p-Chlorophenoxyisobutyric acid
 cas: 
 formula: 
 class: Aryloxy acid
+class_family: auxins
+mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: LOW

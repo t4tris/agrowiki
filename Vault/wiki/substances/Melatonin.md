@@ -5,6 +5,8 @@ name_en: N-acetyl-5-methoxytryptamine
 cas: 
 formula: 
 class: Indolamine; Indoleamine
+class_family: indolamines
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION, FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: MEDIUM

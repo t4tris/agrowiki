@@ -5,6 +5,8 @@ name_en: Decylglucoside
 cas: 
 formula: 
 class: Surfactant
+class_family: other
+mechanism: growth_regulation
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: MEDIUM

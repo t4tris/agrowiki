@@ -5,6 +5,8 @@ name_en: Succinic acid
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: nutrition_metabolism
 action_category: ROOT_DEVELOPMENT
 application_csv: 
 efficacy_csv: MEDIUM

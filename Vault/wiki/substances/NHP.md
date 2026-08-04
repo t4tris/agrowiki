@@ -5,6 +5,8 @@ name_en: N-hydroxy-pipecolic acid
 cas: 
 formula: 
 class: SAR Signal
+class_family: sar_signals_elicitors
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: HIGH

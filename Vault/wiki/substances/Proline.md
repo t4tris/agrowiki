@@ -5,6 +5,8 @@ name_en: L-Proline
 cas: 
 formula: 
 class: Amino Acid
+class_family: amino_acids_polyamines
+mechanism: osmoprotection
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: HIGH

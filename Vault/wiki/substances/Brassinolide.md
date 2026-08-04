@@ -5,6 +5,8 @@ name_en: 24-Epibrassinolide
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: aba_stress_signaling
 action_category: STRESS_TOLERANCE
 application_csv: 
 efficacy_csv: MEDIUM

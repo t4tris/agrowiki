@@ -5,6 +5,8 @@ name_en: 18-amino acid peptide
 cas: 
 formula: 
 class: Peptide hormone
+class_family: peptides_proteins
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

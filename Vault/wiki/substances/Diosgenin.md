@@ -5,6 +5,8 @@ name_en: Diosgenin
 cas: 
 formula: 
 class: Saponin
+class_family: terpenoids_saponins_lipids
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

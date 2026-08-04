@@ -5,6 +5,8 @@ name_en: Seaweed extract
 cas: 
 formula: 
 class: Marine biostimulant
+class_family: biostimulants_extracts
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

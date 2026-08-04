@@ -5,6 +5,8 @@ name_en: Sodium hypochlorite
 cas: 
 formula: 
 class: Oxidant
+class_family: other
+mechanism: pesticide_action
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: MEDIUM

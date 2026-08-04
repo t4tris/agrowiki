@@ -5,6 +5,8 @@ name_en: Prohexadione-calcium
 cas: 
 formula: 
 class: GA inhibitor
+class_family: gibberellins
+mechanism: growth_regulation
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: MEDIUM

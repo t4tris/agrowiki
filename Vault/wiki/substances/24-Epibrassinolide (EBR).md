@@ -5,6 +5,8 @@ name_en: 24-Epibrassinolide (EBR)
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: brassinosteroid_signaling
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Bamboo extract
 cas: 
 formula: 
 class: Polysaccharide
+class_family: carbohydrates
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

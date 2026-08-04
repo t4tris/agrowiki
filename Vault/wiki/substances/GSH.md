@@ -5,6 +5,8 @@ name_en: Reduced glutathione
 cas: 
 formula: 
 class: Tripeptide
+class_family: peptides_proteins
+mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: MEDIUM

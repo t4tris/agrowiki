@@ -5,6 +5,8 @@ name_en: 5-Deoxystrigol
 cas: 
 formula: 
 class: Strigolactone
+class_family: aba_strigolactones_karrikins
+mechanism: auxin_signaling
 action_category: ROOT_DEVELOPMENT
 application_csv: 
 efficacy_csv: LOW

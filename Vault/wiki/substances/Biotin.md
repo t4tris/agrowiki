@@ -5,6 +5,8 @@ name_en: Biotin (B7)
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

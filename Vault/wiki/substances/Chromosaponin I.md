@@ -5,6 +5,8 @@ name_en: Chromosaponin I
 cas: 
 formula: 
 class: Saponin
+class_family: terpenoids_saponins_lipids
+mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

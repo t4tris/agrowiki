@@ -5,6 +5,8 @@ name_en: Isoprene
 cas: 
 formula: 
 class: VOC
+class_family: voc_volatiles
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

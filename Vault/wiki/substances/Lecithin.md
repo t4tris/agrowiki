@@ -5,6 +5,8 @@ name_en: Lecithin
 cas: 
 formula: 
 class: Phospholipid
+class_family: terpenoids_saponins_lipids
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

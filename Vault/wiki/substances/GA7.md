@@ -5,6 +5,8 @@ name_en: Gibberellin A7
 cas: 
 formula: 
 class: Gibberellin
+class_family: gibberellins
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

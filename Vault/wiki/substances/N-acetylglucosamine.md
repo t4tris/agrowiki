@@ -5,6 +5,8 @@ name_en: N-acetylglucosamine
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Green tea extract
 cas: 
 formula: 
 class: Polyphenol
+class_family: phenolics_polyphenols
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

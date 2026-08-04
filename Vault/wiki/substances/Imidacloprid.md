@@ -5,6 +5,8 @@ name_en: Imidacloprid
 cas: 
 formula: 
 class: Neonicotinoid
+class_family: insecticides
+mechanism: pesticide_action
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: LOW

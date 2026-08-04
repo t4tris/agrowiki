@@ -5,6 +5,8 @@ name_en: Methyl Jasmonate (MeJA)
 cas: 
 formula: 
 class: Jasmonate
+class_family: jasmonates
+mechanism: jasmonate_sar_defense
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: N-Acetyl-thiazolidine-4-carboxylic Acid
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: auxin_signaling
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: MEDIUM

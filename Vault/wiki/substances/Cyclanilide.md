@@ -5,6 +5,8 @@ name_en: Cyclanilide
 cas: 
 formula: 
 class: Defoliant/regulator
+class_family: synthetic_growth_regulators
+mechanism: ethylene_signaling
 action_category: GROWTH_REGULATION
 application_csv: 
 efficacy_csv: MEDIUM

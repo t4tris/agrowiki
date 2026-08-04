@@ -5,6 +5,8 @@ name_en: N6-Isopentenyladenine
 cas: 
 formula: 
 class: Cytokinin
+class_family: cytokinins
+mechanism: cytokinin_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Orobanchol
 cas: 
 formula: 
 class: Strigolactone
+class_family: aba_strigolactones_karrikins
+mechanism: growth_regulation
 action_category: ROOT_DEVELOPMENT
 application_csv: 
 efficacy_csv: MEDIUM

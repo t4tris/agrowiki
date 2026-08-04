@@ -5,6 +5,8 @@ name_en: Gibberellin A4
 cas: 
 formula: 
 class: Gibberellin
+class_family: gibberellins
+mechanism: gibberellin_action
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: HIGH

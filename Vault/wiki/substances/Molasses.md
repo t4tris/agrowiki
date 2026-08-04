@@ -5,6 +5,8 @@ name_en: Molasses
 cas: 
 formula: 
 class: Carbohydrate source
+class_family: carbohydrates
+mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

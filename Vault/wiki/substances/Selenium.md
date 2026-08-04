@@ -5,6 +5,8 @@ name_en: Selenium (Na2SeO3)
 cas: 
 formula: 
 class: Beneficial element
+class_family: elements_minerals
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

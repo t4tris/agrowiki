@@ -5,6 +5,8 @@ name_en: Cyprodinil
 cas: 
 formula: 
 class: Anilinopyrimidine fungicide
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

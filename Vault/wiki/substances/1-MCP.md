@@ -5,6 +5,8 @@ name_en: 1-Methylcyclopropene
 cas: 
 formula: 
 class: Ethylene inhibitor
+class_family: ethylene
+mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: HIGH

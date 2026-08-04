@@ -5,6 +5,8 @@ name_en: Silicon (Si)
 cas: 
 formula: 
 class: Beneficial element
+class_family: elements_minerals
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: HIGH

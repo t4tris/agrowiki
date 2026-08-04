@@ -5,6 +5,8 @@ name_en: Dimethyl sulfoxide
 cas: 
 formula: 
 class: Solvent
+class_family: other
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: HIGH

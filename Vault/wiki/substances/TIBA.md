@@ -5,6 +5,8 @@ name_en: 2,3,5-Triiodobenzoic acid
 cas: 
 formula: 
 class: Auxin transport inhibitor
+class_family: auxins
+mechanism: auxin_signaling
 action_category: ROOT_DEVELOPMENT
 application_csv: 
 efficacy_csv: LOW

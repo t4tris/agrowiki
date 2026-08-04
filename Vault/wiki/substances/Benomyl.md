@@ -5,6 +5,8 @@ name_en: Benomyl
 cas: 
 formula: 
 class: Benzimidazole fungicide
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

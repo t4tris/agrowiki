@@ -5,6 +5,8 @@ name_en: Solanacol
 cas: 
 formula: 
 class: Strigolactone
+class_family: aba_strigolactones_karrikins
+mechanism: aba_stress_signaling
 action_category: ROOT_DEVELOPMENT
 application_csv: 
 efficacy_csv: LOW

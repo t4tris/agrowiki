@@ -5,6 +5,8 @@ name_en: L-carnitine
 cas: 
 formula: 
 class: Related
+class_family: other
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

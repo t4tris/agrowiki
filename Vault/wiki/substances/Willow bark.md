@@ -5,6 +5,8 @@ name_en: Willow extract
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Sucrose
 cas: 
 formula: 
 class: Disaccharide
+class_family: carbohydrates
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

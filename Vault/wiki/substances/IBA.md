@@ -5,6 +5,8 @@ name_en: Indole-3-butyric Acid
 cas: 133-32-4
 formula: C12H13NO2
 class: Auxin
+class_family: auxins
+mechanism: auxin_signaling
 action_category: SEED_TREATMENT
 application_csv: Apply 100-1000 ppm solution for seed soaking 2-6 hours
 efficacy_csv: HIGH

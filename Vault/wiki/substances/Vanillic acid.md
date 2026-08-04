@@ -5,6 +5,8 @@ name_en: Vanillic acid
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: aba_stress_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: LOW

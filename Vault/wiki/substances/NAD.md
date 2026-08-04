@@ -5,6 +5,8 @@ name_en: Naphthyl Acetamide
 cas: 
 formula: 
 class: Auxin
+class_family: auxins
+mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: HIGH

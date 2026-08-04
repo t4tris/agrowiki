@@ -5,6 +5,8 @@ name_en: 4-Chlorophenoxyacetic Acid
 cas: 
 formula: 
 class: Auxin
+class_family: auxins
+mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: HIGH

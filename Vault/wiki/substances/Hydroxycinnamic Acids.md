@@ -5,6 +5,8 @@ name_en: Hydroxycinnamic Acids
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

@@ -5,6 +5,8 @@ name_en: Rutin
 cas: 
 formula: 
 class: Vitamin-like
+class_family: vitamins_cofactors
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 application_csv: 
 efficacy_csv: MEDIUM

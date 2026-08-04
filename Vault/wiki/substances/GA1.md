@@ -5,6 +5,8 @@ name_en: Gibberellin A1
 cas: 
 formula: 
 class: Gibberellin
+class_family: gibberellins
+mechanism: gibberellin_action
 action_category: SEED_TREATMENT
 application_csv: 
 efficacy_csv: HIGH

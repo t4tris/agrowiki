@@ -5,6 +5,8 @@ name_en: Iodoacetamide (IAM)
 cas: 
 formula: 
 class: Alkylating agent
+class_family: synthetic_growth_regulators
+mechanism: pesticide_action
 action_category: FRUIT_MANAGEMENT
 application_csv: 
 efficacy_csv: LOW

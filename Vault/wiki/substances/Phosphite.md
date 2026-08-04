@@ -5,6 +5,8 @@ name_en: Phosphorous acid
 cas: 
 formula: 
 class: Phosphonate fungicide/biostimulant
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
 application_csv: 
 efficacy_csv: HIGH
