@@ -242,6 +242,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 
 ### Validation (ядро работы)
 Цикл на вещество: поиск по 3 культурам (сабагент) → сабагент возвращает JSON в финальном сообщении → **оркестратор извлекает и сохраняет артефакт** (`_scripts/extract_report.py` → `raw/evidence/{A-Z}/<код>/search_*.json`) → при `searches.failed` с europepmc оркестратор сам дополняет запрос → L1/L2 проверка → карточка + crop_evidence → corrected_dosages → task_queue.md + validation.md + log.md.
+**Обработка exit code extract_report.py (аудит 2026-08-04):** после каждого запуска проверять `$LASTEXITCODE` И stdout: `0` = ок (JSON извлечён); `2` = `RETRY_NEEDED` → выполнить повторный запуск сабагента (до 2 попыток), новые файлы ответа передать как `[src2] [src3]`; после 2 неудач → карточка `insufficient_data`, очередь не блокируется. RETRY-строки логируются скриптом в task_queue.md автоматически.
 **Синхронизация дашбордов:** при обновлении `validation.md` ОБЯЗАТЕЛЬНО проверить `Vault/index.md` (живой Dataview-дашборд) — оба должны отражать одно состояние.
 Критерий готовности: `validation_status ≠ unverified` И ≥1 источник по любой из трёх культур.
 Приоритет: 4 дубликата → HIGH (46) → MEDIUM (146) → LOW (83).
