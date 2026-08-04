@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""L1 autocheck: schema + PMID esummary + DOI Crossref for a contract v1.2 report."""
+"""L1 autocheck: schema + type-check + PMID esummary + DOI Crossref for contract v1.3 report."""
 import json
 import sys
 import time
@@ -13,6 +13,7 @@ STATUSES = {'found_verified', 'found_unverified', 'no_data'}
 CLAIM_TYPES = {'dosage', 'effect', 'method', 'efficacy'}
 RELEVANCE = {'directly_supports', 'directly_contradicts', 'partially_relevant', 'irrelevant'}
 EQ = {'direct_abstract', 'title_only', 'inferred'}
+SEVERITY = {'high', 'medium', 'low'}
 
 
 def fetch(url, timeout=30):
@@ -26,14 +27,32 @@ def main(path):
     errors = []
 
     # --- schema ---
-    if d.get('contract_version') != '1.2':
-        errors.append(f'contract_version != 1.2: {d.get("contract_version")}')
+    if d.get('contract_version') != '1.3':
+        errors.append(f'contract_version != 1.3: {d.get("contract_version")}')
     for k in REQUIRED_TOP:
         if k not in d:
             errors.append(f'отсутствует поле: {k}')
+
+    # --- v1.3 type-check: conflicts/contraindications = массивы объектов, без null-заглушек ---
+    for field in ('conflicts', 'contraindications'):
+        val = d.get(field)
+        if not isinstance(val, list):
+            errors.append(f'{field}: должен быть массивом, получено {type(val).__name__}')
+            continue
+        for i, item in enumerate(val):
+            if not isinstance(item, dict):
+                errors.append(f'{field}[{i}]: элемент не объект (строка вместо dict?)')
+            elif any(v is None for v in item.values()):
+                errors.append(f'{field}[{i}]: содержит null-заглушку — заменить на пустой массив/убрать')
+            if field == 'contraindications' and item.get('severity') not in SEVERITY:
+                errors.append(f'{field}[{i}].severity невалиден: {item.get("severity")}')
+
     for crop, cv in d.get('crops', {}).items():
         if cv.get('status') not in STATUSES:
             errors.append(f'crops.{crop}.status невалиден: {cv.get("status")}')
+        # v1.3: no_data-культуры должны иметь related_evidence
+        if cv.get('status') == 'no_data' and not cv.get('related_evidence'):
+            errors.append(f'crops.{crop}: status=no_data, но related_evidence пуст/отсутствует')
         for c in cv.get('claims', []):
             if c.get('type') not in CLAIM_TYPES:
                 errors.append(f'crops.{crop}.claims type невалиден: {c.get("type")}')
