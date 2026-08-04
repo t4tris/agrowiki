@@ -5,7 +5,7 @@ last_updated: 2026-08-04
 
 # Task Queue
 
-## 🔴 HIGH PRIORITY (43)
+## 🔴 HIGH PRIORITY (38)
 - [ ] VALIDATE: 1-MCP × 3 культуры
 - [ ] VALIDATE: 4-CPA × 3 культуры
 - [ ] VALIDATE: 6-BAP × 3 культуры
@@ -52,7 +52,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Uniconazole × 3 культуры
 - [ ] VALIDATE: Zeatin × 3 культуры
 
-## 🟡 MEDIUM PRIORITY (134)
+## 🟡 MEDIUM PRIORITY (133)
 - [ ] VALIDATE: 2,4-D × 3 культуры
 - [ ] VALIDATE: 22,23,24-Trisepibrassinolide × 3 культуры
 - [ ] VALIDATE: 24-Epibrassinolide (EBR) × 3 культуры
@@ -134,7 +134,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Lecithin × 3 культуры
 - [ ] VALIDATE: MCPB × 3 культуры
 - [ ] VALIDATE: Malic Acid × 3 культуры
-- [ ] VALIDATE: MeJA (Methyl Jasmonate) × 3 культуры
+- [x] VALIDATE: MeJA (Methyl Jasmonate) × 3 культуры → [[wiki/substances/Methyl Jasmonate]] (corrected/strong, 2026-08-04; объединено с Methyl Jasmonate)
 - [ ] VALIDATE: Melatonin × 3 культуры
 - [ ] VALIDATE: Meta-topolin × 3 культуры
 - [ ] VALIDATE: Metal nanoparticles (ZnO, FeO, CuO, Se, TiO2, Ag, CeO2) × 3 культуры
@@ -181,7 +181,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Tocopherol × 3 культуры
 - [ ] VALIDATE: Trans-jasmone × 3 культуры
 - [ ] VALIDATE: Trehalose × 3 культуры
-- [x] VALIDATE: Triacontanol (TRIA) × 3 культуры → [[wiki/substances/Triacontanol (TRIA)]] (partial/moderate, 2026-08-04)
+- [x] VALIDATE: Triacontanol (TRIA) × 3 культуры → [[wiki/substances/Triacontanol]] (partial/moderate, 2026-08-04; объединено с Triacontanol)
 - [ ] VALIDATE: Triadimefon × 3 культуры
 - [ ] VALIDATE: Tryptophan × 3 культуры
 - [ ] VALIDATE: Typhasterol × 3 культуры

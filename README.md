@@ -19,8 +19,8 @@
 | Показатель | Значение |
 |---|---|
 | Веществ в базе | 267 |
-| Валидировано карточек | **12** (HIGH-приоритет, контракт v1.4) |
-| Очередь | HIGH 38 · MEDIUM 134 · LOW 83 |
+| Валидировано карточек | **11** (HIGH-приоритет, контракт v1.4; MeJA и TRIA объединены в Methyl Jasmonate и Triacontanol) |
+| Очередь | HIGH 38 · MEDIUM 133 · LOW 83 |
 | Уровень доказательности | strong / moderate / weak / unverified |
 | Статусы валидации | verified · corrected · partial · insufficient_data · conflicting |
 | Источники | PMID + DOI (проверяются автоматически L1) + препринты PPR |
@@ -43,7 +43,7 @@ f:\agrowiki\
 └── Vault/               ← Obsidian vault (только контент)
     ├── index.md         ← каталог + дашборд статусов (Dataview)
     └── wiki/
-        ├── substances/  ← 267 карточек веществ
+        ├── substances/  ← 265 страниц (267 кодов CSV, 2 пары объединены)
         ├── categories/  ← 8 категорий применения
         ├── classes/     ← 24 семейства химических классов
         ├── mechanisms/  ← 15 механизмов действия

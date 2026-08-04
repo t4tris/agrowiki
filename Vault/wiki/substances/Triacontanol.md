@@ -8,7 +8,7 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 0.05-0.2 ppm foliar spray
+application_csv: Apply 0.05-0.2 ppm foliar spray; Foliar spray 1-150 ppm; 50 µM for fruit coloration
 efficacy_csv: HIGH
 validation_status: partial
 evidence_level: moderate
@@ -25,7 +25,7 @@ crops:
   tomato: found_verified
   cucumber: found_verified
   strawberry: found_verified
-aliases: ["1-Triacontanol", "Melissyl alcohol", "Myricyl alcohol", "TRIA"]
+aliases: ["1-Triacontanol", "Melissyl alcohol", "Myricyl alcohol", "TRIA", "Triacontanol (TRIA)"]
 aliases_ru: ["1-триаконтапол", "триаконтановый спирт", "мелиссиловый спирт", "мирициловый спирт"]
 eppo_code: null
 regulatory_status: null
@@ -52,6 +52,7 @@ fallback_status: orchestrator
 | Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
 |---|---|---|---|---|---|
 | FOLIAR_APPLICATION | Growth enhancement | Apply 0.05-0.2 ppm foliar spray | Increased photosynthesis and yield | HIGH | All crops, especially in vegetative stage |
+| GROWTH_REGULATION | Growth & ripening | Foliar spray 1-150 ppm; 50 µM for fruit coloration | Enhanced vegetative growth, fruit size/weight; accelerated fruit coloration and ripening; raised ABA/ethylene, lowered IAA | MEDIUM | Strawberry, fruit crops |
 
 ## crop_evidence
 

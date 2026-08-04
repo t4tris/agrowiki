@@ -22,7 +22,7 @@ contract_version: 1.4
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
 | `AGENTS.md` | Схема вики, контракт отчёта **v1.4**, правила честности 1–14, L1–L4 |
 | `README.md` | **Человекочитаемый хаб проекта** (этот README) |
-| `task_queue.md` | Очередь VALIDATE (HIGH 38 / MEDIUM 134 / LOW 83) + TECHNICAL DEBT (6 задач) + RETRY LOG |
+| `task_queue.md` | Очередь VALIDATE (HIGH 38 / MEDIUM 133 / LOW 83) + TECHNICAL DEBT (6 задач) + RETRY LOG |
 | `validation.md` | Трекер валидации для LLM (Dataview не рендерится — дашборд в `Vault/index.md`) |
 | `log.md` | Хронология (append-only) |
 | `raw/sources/papers_to_fetch.md` | **Очередь статей на скачивание человеком** (Proline ×3, PBZ-этикетки ×2) |
@@ -33,7 +33,7 @@ contract_version: 1.4
 | `_scripts/gen_synonyms.py` | `raw/normalization/synonyms.json` из aliases карточек (267 веществ) |
 | `_scripts/bootstrap.py` | Черновики из CSV (**по умолчанию — только карточки**; `--full` перезаписывает служебные файлы!) |
 | `raw/evidence/{A,C,G,I,M,P,S,T}/…/search_*.json` | 12 артефактов (5 пилот v1.2 + 5 v1.4 + fallback'и) |
-| `Vault/wiki/substances/*.md` | **12 валидированных карточек** + 255 черновиков |
+| `Vault/wiki/substances/*.md` | **11 валидированных карточек** + 254 черновика (265 страниц; MeJA→Methyl Jasmonate, TRIA→Triacontanol) |
 
 ---
 
@@ -42,7 +42,7 @@ contract_version: 1.4
 **Конвейер работает и прошёл 3 цикла внешнего аудита** (все рекомендации выполнены).
 Контракт — **v1.4** (включая `taxonomy_check`, `supersedes`, авто-retry, PHI/REI-правило 14).
 
-### Валидировано: 12 / 267 карточек
+### Валидировано: 11 / 265 страниц (267 кодов CSV — 2 пары объединены: MeJA→Methyl Jasmonate, TRIA→Triacontanol)
 
 | Вещество | Статус | Evidence | Ключевой вывод |
 |---|---|---|---|
@@ -75,7 +75,7 @@ contract_version: 1.4
 - ✅ PHI/MRL Paclobutrazol — собран (EU 0.01\* LOD); PHI/REI — очередь на этикетки (papers_to_fetch)
 
 ### 1. Полный цикл валидации
-Порядок приоритетов (в `task_queue.md`): **HIGH (38)** → MEDIUM (134) → LOW (83).
+Порядок приоритетов (в `task_queue.md`): **HIGH (38)** → MEDIUM (133) → LOW (83).
 
 **Рабочий цикл на вещество** (пакетами по 10–20 за сессию):
 1. Запустить research-сабагент (stateless; промпт: CSV-строка + текущая таксономия карточки + контракт **v1.4**).

@@ -8,7 +8,7 @@ class: Jasmonate
 class_family: jasmonates
 mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 100-500 ppm foliar spray
+application_csv: Apply 100-500 ppm foliar spray; Fruit spray 230 µM
 efficacy_csv: HIGH
 validation_status: corrected
 evidence_level: strong
@@ -21,11 +21,12 @@ notes:
   - "Контраиндикация (high): MeJA ПОВЫШАЕТ восприимчивость клубники к антракнозу Colletotrichum (гемибиотроф) — PMID 41388739"
   - "Летучесть: обработки вечером при T<25°C; плоды томата обрабатывать на свету (ликопин, PMID 41770901)"
   - "На 'Camarosa' фенотипического снижения серой гнили не отмечено (PMID 32252456) — сорт-зависимость"
+  - "CSV-строка MeJA (Methyl Jasmonate) (FRUIT_MANAGEMENT, Fruit spray 230 µM ≈ 51.6 ppm) объединена в эту карточку 2026-08-04: доза входит в верифицированный диапазон 5.6-112 ppm; «shelf life» частично согласуется с постхарвест-эффектами (PMID 35691062) и снижением серой гнили (PMID 28671619)"
 crops:
   tomato: found_verified
   cucumber: found_verified
   strawberry: found_verified
-aliases: ["Methyl jasmonate", "Jasmonic acid methyl ester", "Methyl cis-jasmonate", "(-)-Methyl jasmonate", "MeJA"]
+aliases: ["Methyl jasmonate", "Jasmonic acid methyl ester", "Methyl cis-jasmonate", "(-)-Methyl jasmonate", "MeJA", "MeJA (Methyl Jasmonate)"]
 aliases_ru: ["метилжасмонат", "метиловый эфир жасмоновой кислоты"]
 eppo_code: null
 regulatory_status: null
@@ -50,6 +51,7 @@ phi_mrl: {}
 | Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
 |---|---|---|---|---|---|
 | FOLIAR_APPLICATION | Defense signaling | Apply 100-500 ppm foliar spray | Enhanced herbivore and pathogen resistance; reduce gray mold after harvest; Promotes strawberry fruit maturation; Increase stress tolerance, reduces chilling injury | HIGH | All crops prone to pest damage |
+| FRUIT_MANAGEMENT | Ripening & shelf-life | Fruit spray 230 µM | Prolonged strawberry shelf life; promotes maturation and stress tolerance | MEDIUM | Strawberry, fruits |
 
 ## crop_evidence
 
