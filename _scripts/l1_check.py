@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """L1 autocheck: schema + type-check + PMID esummary + DOI Crossref for contract v1.4 report."""
 import json
+import os
 import sys
 import time
 import urllib.request
@@ -32,6 +33,13 @@ def main(path):
     for k in REQUIRED_TOP:
         if k not in d:
             errors.append(f'отсутствует поле: {k}')
+
+    # --- v1.4 supersedes: новый артефакт вместо правки иммутабельного ---
+    sup = d.get('supersedes')
+    if sup:
+        sup_path = os.path.join(os.path.dirname(os.path.abspath(path)), sup)
+        if not os.path.exists(sup_path):
+            errors.append(f'supersedes: файл не найден рядом: {sup}')
 
     # --- v1.4 taxonomy_check: сабагент подтверждает/исправляет class_family/mechanism ---
     tc = d.get('taxonomy_check')
