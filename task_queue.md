@@ -1,0 +1,282 @@
+---
+type: task_queue
+last_updated: 2026-08-04
+---
+
+# Task Queue
+
+## 🔴 HIGH PRIORITY (45)
+- [ ] VALIDATE: 1-MCP × 3 культуры
+- [ ] VALIDATE: 4-CPA × 3 культуры
+- [ ] VALIDATE: 6-BAP × 3 культуры
+- [ ] VALIDATE: BNOA × 3 культуры
+- [ ] VALIDATE: Carbendazim × 3 культуры
+- [ ] VALIDATE: Chlormequat Chloride × 3 культуры
+- [ ] VALIDATE: Cyanamide × 3 культуры
+- [ ] VALIDATE: DA-6 × 3 культуры
+- [ ] VALIDATE: DMSO × 3 культуры
+- [ ] VALIDATE: Ethephon × 3 культуры
+- [ ] VALIDATE: Ethylene × 3 культуры
+- [ ] VALIDATE: Fulvic Acid × 3 культуры
+- [ ] VALIDATE: GA1 × 3 культуры
+- [ ] VALIDATE: GA4 × 3 культуры
+- [ ] VALIDATE: Glycine Betaine × 3 культуры
+- [ ] VALIDATE: IBA × 3 культуры
+- [ ] VALIDATE: Kinetin × 3 культуры
+- [ ] VALIDATE: Leonardite extract × 3 культуры
+- [ ] VALIDATE: MCPA × 3 культуры
+- [ ] VALIDATE: Magnesium × 3 культуры
+- [ ] VALIDATE: Maleic Hydrazide × 3 культуры
+- [ ] VALIDATE: Methyl Jasmonate × 3 культуры
+- [ ] VALIDATE: NAD × 3 культуры
+- [ ] VALIDATE: NHP × 3 культуры
+- [ ] VALIDATE: PDJ × 3 культуры
+- [ ] VALIDATE: PIX × 3 культуры
+- [ ] VALIDATE: Paclobutrazol × 3 культуры
+- [ ] VALIDATE: Phosphite × 3 культуры
+- [ ] VALIDATE: Polyaspartic Acid × 3 культуры
+- [ ] VALIDATE: Polyglutamic acid × 3 культуры
+- [ ] VALIDATE: Proline × 3 культуры
+- [ ] VALIDATE: Propiconazole × 3 культуры
+- [ ] VALIDATE: Pyraclostrobin × 3 культуры
+- [ ] VALIDATE: S-ABA × 3 культуры
+- [ ] VALIDATE: STS × 3 культуры
+- [ ] VALIDATE: Silicon × 3 культуры
+- [ ] VALIDATE: Tebuconazole × 3 культуры
+- [ ] VALIDATE: Thiabendazole × 3 культуры
+- [ ] VALIDATE: Thidiazuron × 3 культуры
+- [ ] VALIDATE: Thiophanate-methyl × 3 культуры
+- [ ] VALIDATE: Triacontanol × 3 культуры
+- [ ] VALIDATE: Trifloxystrobin × 3 культуры
+- [ ] VALIDATE: Trinexapac-ethyl × 3 культуры
+- [ ] VALIDATE: Uniconazole × 3 культуры
+- [ ] VALIDATE: Zeatin × 3 культуры
+
+## 🟡 MEDIUM PRIORITY (139)
+- [ ] VALIDATE: 2,4-D × 3 культуры
+- [ ] VALIDATE: 22,23,24-Trisepibrassinolide × 3 культуры
+- [ ] VALIDATE: 24-Epibrassinolide (EBR) × 3 культуры
+- [ ] VALIDATE: 2iP × 3 культуры
+- [ ] VALIDATE: 3-CPA × 3 культуры
+- [ ] VALIDATE: 5-ALA × 3 культуры
+- [ ] VALIDATE: 5-Azacytidine × 3 культуры
+- [ ] VALIDATE: 6-BA × 3 культуры
+- [ ] VALIDATE: ABA + Sucrose × 3 культуры
+- [ ] VALIDATE: Alanine × 3 культуры
+- [ ] VALIDATE: Alpha-lipoic acid × 3 культуры
+- [ ] VALIDATE: Ancymidol × 3 культуры
+- [ ] VALIDATE: Arginine × 3 культуры
+- [ ] VALIDATE: Artemisinin × 3 культуры
+- [ ] VALIDATE: Artichoke leaf × 3 культуры
+- [ ] VALIDATE: Ascophyllum extract × 3 культуры
+- [ ] VALIDATE: Ascorbic Acid × 3 культуры
+- [ ] VALIDATE: Asparagine × 3 культуры
+- [ ] VALIDATE: Azelaic acid × 3 культуры
+- [ ] VALIDATE: BABA × 3 культуры
+- [ ] VALIDATE: Bamboo leaf × 3 культуры
+- [ ] VALIDATE: Benomyl × 3 культуры
+- [ ] VALIDATE: Brassinolide × 3 культуры
+- [ ] VALIDATE: CPPU × 3 культуры
+- [ ] VALIDATE: Caffeic acid × 3 культуры
+- [ ] VALIDATE: Carbonic Anhydrase × 3 культуры
+- [ ] VALIDATE: Carbonic acid × 3 культуры
+- [ ] VALIDATE: Castasterone × 3 культуры
+- [ ] VALIDATE: Chitooligosaccharides × 3 культуры
+- [ ] VALIDATE: Chitosan × 3 культуры
+- [ ] VALIDATE: Chlorogenic acid × 3 культуры
+- [ ] VALIDATE: Choline chloride × 3 культуры
+- [ ] VALIDATE: Chromosaponin I × 3 культуры
+- [ ] VALIDATE: Cis-jasmone × 3 культуры
+- [ ] VALIDATE: Citric Acid × 3 культуры
+- [ ] VALIDATE: Cobalt × 3 культуры
+- [ ] VALIDATE: Cyclanilide × 3 культуры
+- [ ] VALIDATE: Cyprodinil × 3 культуры
+- [ ] VALIDATE: DCPTA × 3 культуры
+- [ ] VALIDATE: Decylglucoside × 3 культуры
+- [ ] VALIDATE: Dihydrozeatin × 3 культуры
+- [ ] VALIDATE: Diosgenin × 3 культуры
+- [ ] VALIDATE: Echinacea × 3 культуры
+- [ ] VALIDATE: Ecklonia maxima × 3 культуры
+- [ ] VALIDATE: Ethychlozate × 3 культуры
+- [ ] VALIDATE: Ferulic acid × 3 культуры
+- [ ] VALIDATE: Fludioxonil × 3 культуры
+- [ ] VALIDATE: Flurprimidol × 3 культуры
+- [ ] VALIDATE: Folic acid × 3 культуры
+- [ ] VALIDATE: GA20 × 3 культуры
+- [ ] VALIDATE: GA3 × 3 культуры
+- [ ] VALIDATE: GA7 × 3 культуры
+- [ ] VALIDATE: GABA × 3 культуры
+- [ ] VALIDATE: GSH × 3 культуры
+- [ ] VALIDATE: Gallic acid × 3 культуры
+- [ ] VALIDATE: Glutamic Acid × 3 культуры
+- [ ] VALIDATE: Glutamine × 3 культуры
+- [ ] VALIDATE: Glycine × 3 культуры
+- [ ] VALIDATE: Grape seed extract × 3 культуры
+- [ ] VALIDATE: Green Leaf Volatiles × 3 культуры
+- [ ] VALIDATE: Green tea × 3 культуры
+- [ ] VALIDATE: HOCl × 3 культуры
+- [ ] VALIDATE: Hexaconazole × 3 культуры
+- [ ] VALIDATE: Hexanal × 3 культуры
+- [ ] VALIDATE: Humic Acid × 3 культуры
+- [ ] VALIDATE: Hydrogen Sulfide donor × 3 культуры
+- [ ] VALIDATE: Hydroxycinnamic Acids × 3 культуры
+- [ ] VALIDATE: Inositol × 3 культуры
+- [ ] VALIDATE: Iodine × 3 культуры
+- [ ] VALIDATE: JA-Ile × 3 культуры
+- [ ] VALIDATE: Jasmonic acid × 3 культуры
+- [ ] VALIDATE: KAR2 × 3 культуры
+- [ ] VALIDATE: KAR3 × 3 культуры
+- [ ] VALIDATE: Karrikin-1 × 3 культуры
+- [ ] VALIDATE: Kresoxim-methyl × 3 культуры
+- [ ] VALIDATE: L-tryptophan × 3 культуры
+- [ ] VALIDATE: Lactic acid × 3 культуры
+- [ ] VALIDATE: Laminarin oligomers × 3 культуры
+- [ ] VALIDATE: Lecithin × 3 культуры
+- [ ] VALIDATE: MCPB × 3 культуры
+- [ ] VALIDATE: Malic Acid × 3 культуры
+- [ ] VALIDATE: MeJA (Methyl Jasmonate) × 3 культуры
+- [ ] VALIDATE: Melatonin × 3 культуры
+- [ ] VALIDATE: Meta-topolin × 3 культуры
+- [ ] VALIDATE: Metal nanoparticles (ZnO, FeO, CuO, Se, TiO2, Ag, CeO2) × 3 культуры
+- [ ] VALIDATE: Methionine × 3 культуры
+- [ ] VALIDATE: Methyl Salicylate × 3 культуры
+- [ ] VALIDATE: Milk whey × 3 культуры
+- [ ] VALIDATE: Molasses × 3 культуры
+- [ ] VALIDATE: Myclobutanil × 3 культуры
+- [ ] VALIDATE: N-acetylglucosamine × 3 культуры
+- [ ] VALIDATE: NAA × 3 культуры
+- [ ] VALIDATE: NATCA × 3 культуры
+- [ ] VALIDATE: Niacin × 3 культуры
+- [ ] VALIDATE: Nickel × 3 культуры
+- [ ] VALIDATE: Nitric Oxide donor × 3 культуры
+- [ ] VALIDATE: Organic Acids × 3 культуры
+- [ ] VALIDATE: Orobanchol × 3 культуры
+- [ ] VALIDATE: P-Ca ProCa × 3 культуры
+- [ ] VALIDATE: Phenylalanine × 3 культуры
+- [ ] VALIDATE: Picoxystrobin × 3 культуры
+- [ ] VALIDATE: Pipecolic acid × 3 культуры
+- [ ] VALIDATE: Plantain leaf × 3 культуры
+- [ ] VALIDATE: Putrescine × 3 культуры
+- [ ] VALIDATE: Pyrimethanil × 3 культуры
+- [ ] VALIDATE: Riboflavin × 3 культуры
+- [ ] VALIDATE: Rutin × 3 культуры
+- [ ] VALIDATE: Salicylic Acid × 3 культуры
+- [ ] VALIDATE: Sargassum extracts × 3 культуры
+- [ ] VALIDATE: Selenium × 3 культуры
+- [ ] VALIDATE: Serotonin × 3 культуры
+- [ ] VALIDATE: Sodium 2-nitrophenolate × 3 культуры
+- [ ] VALIDATE: Sodium 4-nitrophenolate × 3 культуры
+- [ ] VALIDATE: Sodium Alginate × 3 культуры
+- [ ] VALIDATE: Sodium Salicylate × 3 культуры
+- [ ] VALIDATE: Sodium hypochlorite × 3 культуры
+- [ ] VALIDATE: Sodium ortho-nitrophenolate × 3 культуры
+- [ ] VALIDATE: Sodium para-nitrophenolate × 3 культуры
+- [ ] VALIDATE: Spermidine × 3 культуры
+- [ ] VALIDATE: Strigol × 3 культуры
+- [ ] VALIDATE: Strigolactone analog × 3 культуры
+- [ ] VALIDATE: Strobilurins × 3 культуры
+- [ ] VALIDATE: Succinic Acid × 3 культуры
+- [ ] VALIDATE: Sucrose × 3 культуры
+- [ ] VALIDATE: Thiamine B1 × 3 культуры
+- [ ] VALIDATE: Tocopherol × 3 культуры
+- [ ] VALIDATE: Trans-jasmone × 3 культуры
+- [ ] VALIDATE: Trehalose × 3 культуры
+- [ ] VALIDATE: Triacontanol (TRIA) × 3 культуры
+- [ ] VALIDATE: Triadimefon × 3 культуры
+- [ ] VALIDATE: Tryptophan × 3 культуры
+- [ ] VALIDATE: Typhasterol × 3 культуры
+- [ ] VALIDATE: Ulvan oligomers × 3 культуры
+- [ ] VALIDATE: Vanadium × 3 культуры
+- [ ] VALIDATE: Willow bark × 3 культуры
+- [ ] VALIDATE: Yeast broth × 3 культуры
+- [ ] VALIDATE: Z-3-hexenal × 3 культуры
+- [ ] VALIDATE: Z-3-hexenol × 3 культуры
+- [ ] VALIDATE: Zeatin riboside × 3 культуры
+
+## 🟢 LOW PRIORITY (83)
+- [ ] VALIDATE: 14-Hydroxylated brassinosteroid × 3 культуры
+- [ ] VALIDATE: 2,4,5-T × 3 культуры
+- [ ] VALIDATE: 3-Bromopyruvate × 3 культуры
+- [ ] VALIDATE: 5-Deoxystrigol × 3 культуры
+- [ ] VALIDATE: Acetamiprid × 3 культуры
+- [ ] VALIDATE: Arachidonic acid × 3 культуры
+- [ ] VALIDATE: Aviglycine × 3 культуры
+- [ ] VALIDATE: B9 × 3 культуры
+- [ ] VALIDATE: Biotin × 3 культуры
+- [ ] VALIDATE: Brassinazole × 3 культуры
+- [ ] VALIDATE: CLE RALF CEP PSK peptides × 3 культуры
+- [ ] VALIDATE: CLE peptides × 3 культуры
+- [ ] VALIDATE: CLE25 × 3 культуры
+- [ ] VALIDATE: CLE40 × 3 культуры
+- [ ] VALIDATE: CLE41-44 × 3 культуры
+- [ ] VALIDATE: CLV3 × 3 культуры
+- [ ] VALIDATE: Carbon monoxide × 3 культуры
+- [ ] VALIDATE: Chelated titanium × 3 культуры
+- [ ] VALIDATE: Chitosan nanoparticles × 3 культуры
+- [ ] VALIDATE: Chlorothalonil × 3 культуры
+- [ ] VALIDATE: Cholecalciferol × 3 культуры
+- [ ] VALIDATE: Citrulline × 3 культуры
+- [ ] VALIDATE: Clothianidin × 3 культуры
+- [ ] VALIDATE: Copper fungicides × 3 культуры
+- [ ] VALIDATE: Cyanocobalamin × 3 культуры
+- [ ] VALIDATE: Dandelion × 3 культуры
+- [ ] VALIDATE: Dicamba × 3 культуры
+- [ ] VALIDATE: Dimethylethanolamine × 3 культуры
+- [ ] VALIDATE: Dinotefuran × 3 культуры
+- [ ] VALIDATE: Epibrassinolide (BL) × 3 культуры
+- [ ] VALIDATE: Florigen FT protein × 3 культуры
+- [ ] VALIDATE: Fuberidazole × 3 культуры
+- [ ] VALIDATE: Fumaric acid × 3 культуры
+- [ ] VALIDATE: Glucose × 3 культуры
+- [ ] VALIDATE: Hd3a × 3 культуры
+- [ ] VALIDATE: Histidine × 3 культуры
+- [ ] VALIDATE: HypSys peptides × 3 культуры
+- [ ] VALIDATE: Imidacloprid × 3 культуры
+- [ ] VALIDATE: Iodoacetamide × 3 культуры
+- [ ] VALIDATE: Isoleucine × 3 культуры
+- [ ] VALIDATE: Isoprene × 3 культуры
+- [ ] VALIDATE: L-carnitine × 3 культуры
+- [ ] VALIDATE: Leucine × 3 культуры
+- [ ] VALIDATE: Lysine × 3 культуры
+- [ ] VALIDATE: Maltose × 3 культуры
+- [ ] VALIDATE: Mobile miRNAs × 3 культуры
+- [ ] VALIDATE: Monoterpenes × 3 культуры
+- [ ] VALIDATE: NPA × 3 культуры
+- [ ] VALIDATE: Orotic acid × 3 культуры
+- [ ] VALIDATE: Oxalic acid × 3 культуры
+- [ ] VALIDATE: PAA × 3 культуры
+- [ ] VALIDATE: PABA × 3 культуры
+- [ ] VALIDATE: PCIB × 3 культуры
+- [ ] VALIDATE: PQQ × 3 культуры
+- [ ] VALIDATE: Pantothenic acid × 3 культуры
+- [ ] VALIDATE: Phylloquinone × 3 культуры
+- [ ] VALIDATE: Picloram × 3 культуры
+- [ ] VALIDATE: Polyhexamethylene guanidine × 3 культуры
+- [ ] VALIDATE: Protocatechuic acid × 3 культуры
+- [ ] VALIDATE: Pyridoxine × 3 культуры
+- [ ] VALIDATE: Retinol × 3 культуры
+- [ ] VALIDATE: Riboprine × 3 культуры
+- [ ] VALIDATE: Rosmarinic acid × 3 культуры
+- [ ] VALIDATE: Serine × 3 культуры
+- [ ] VALIDATE: Sinapic acid × 3 культуры
+- [ ] VALIDATE: Sodium hydrosulfide × 3 культуры
+- [ ] VALIDATE: Sodium nitroprusside × 3 культуры
+- [ ] VALIDATE: Solanacol × 3 культуры
+- [ ] VALIDATE: Spermine × 3 культуры
+- [ ] VALIDATE: Syringic acid × 3 культуры
+- [ ] VALIDATE: Systemin × 3 культуры
+- [ ] VALIDATE: TDIF CLE4144 × 3 культуры
+- [ ] VALIDATE: TIBA × 3 культуры
+- [ ] VALIDATE: Taurine × 3 культуры
+- [ ] VALIDATE: Thiacloprid × 3 культуры
+- [ ] VALIDATE: Thiamethoxam × 3 культуры
+- [ ] VALIDATE: Threonine × 3 культуры
+- [ ] VALIDATE: Triclopyr × 3 культуры
+- [ ] VALIDATE: Tyrosine × 3 культуры
+- [ ] VALIDATE: Valine × 3 культуры
+- [ ] VALIDATE: Vanillic acid × 3 культуры
+- [ ] VALIDATE: ZCN8 × 3 культуры
+- [ ] VALIDATE: p-Coumaric acid × 3 культуры
+
+## ✅ COMPLETED
+- [x] INGEST: CSV → 267 черновиков карточек

@@ -1,0 +1,8 @@
+﻿# Secrets (API keys) — plain text, low value, but keep out of git
+.secrets/
+# OS junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+# Obsidian
+.obsidian/workspace*
