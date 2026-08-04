@@ -1,0 +1,446 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Proline",
+    "csv_name": "L-Proline",
+    "queried_name": "proline"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato_drought",
+      "pubmed_tomato_salt",
+      "pubmed_tomato_priming",
+      "pubmed_tomato_exogenous",
+      "pubmed_tomato_foliar",
+      "pubmed_tomato_germination",
+      "pubmed_cucumber_salt",
+      "pubmed_cucumber_priming",
+      "pubmed_cucumber_exogenous",
+      "pubmed_cucumber_relevance",
+      "pubmed_strawberry_stress",
+      "pubmed_strawberry_priming",
+      "pubmed_strawberry_exogenous",
+      "pubmed_strawberry_salinity",
+      "pubmed_priming_any_crop",
+      "pubchem_properties",
+      "pubchem_synonyms",
+      "europepmc_tomato",
+      "europepmc_cucumber",
+      "europepmc_strawberry",
+      "europepmc_seed_priming_tomato"
+    ],
+    "failed": [],
+    "queries_used": [
+      "proline AND tomato AND drought",
+      "proline AND tomato AND salt stress",
+      "proline AND \"seed priming\" AND tomato",
+      "exogenous proline AND tomato",
+      "proline AND tomato AND salinity AND foliar",
+      "proline AND \"foliar application\" AND tomato",
+      "proline AND \"seed germination\" AND tomato",
+      "proline AND cucumber AND salt stress",
+      "proline AND priming AND cucumber",
+      "exogenous proline AND cucumber",
+      "proline AND cucumber AND (salt OR drought)",
+      "exogenous proline AND \"Cucumis sativus\" AND NaCl",
+      "proline AND strawberry AND (stress OR salinity)",
+      "proline AND priming AND strawberry",
+      "exogenous proline AND strawberry",
+      "proline AND strawberry AND salinity",
+      "proline AND \"seed priming\" AND (salt OR drought)",
+      "Europe PMC: proline AND tomato AND (salt OR drought) | proline AND cucumber AND salt | proline AND strawberry AND salinity | proline AND \"seed priming\" AND tomato",
+      "PubChem: name/proline/property + synonyms"
+    ],
+    "fallback_tries": [
+      {
+        "query": "proline AND priming AND cucumber",
+        "results": 3
+      },
+      {
+        "query": "exogenous proline AND \"Cucumis sativus\" AND NaCl",
+        "results": 7
+      },
+      {
+        "query": "proline AND priming AND strawberry",
+        "results": 1
+      }
+    ]
+  },
+  "identity": {
+    "cas": "147-85-3",
+    "cid": "145742",
+    "formula": "C5H9NO2",
+    "iupac": "(2S)-pyrrolidine-2-carboxylic acid",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:38478428",
+      "PMID:34969963"
+    ],
+    "synonyms": [
+      "L-proline",
+      "proline",
+      "L-(-)-Proline",
+      "(2S)-pyrrolidine-2-carboxylic acid",
+      "2-pyrrolidinecarboxylic acid",
+      "PRO"
+    ],
+    "synonyms_ru": [
+      "пролин",
+      "L-пролин"
+    ],
+    "molar_mass_g_mol": 115.13,
+    "notes": "PubChem CID 145742 = L-proline (CAS 147-85-3 подтверждён через synonyms). Конверсия: 100 ppm ≈ 0.87 mM; 500 ppm ≈ 4.34 mM (115.13 г/моль). Класс 'Amino Acid' из CSV подтверждён — протеиногенная аминокислота."
+  },
+  "mode_of_action": {
+    "summary": "Классический осмопротектор (осмолит): накапливается при засухе, засолении, жаре и холоде, стабилизирует белки и мембраны, участвует в антиоксидантной защите. Синтез через P5CS/P5CR (активируется NO при стрессе), деградация через PDH. Экзогенное применение усиливает стрессоустойчивость: у клубники повышает урожай при дефиците орошения, у томата — термотолерантность (транспирационное охлаждение), без прироста биомассы.",
+    "evidence": [
+      "PMID:38478428",
+      "PMID:34969963",
+      "PMID:36645928",
+      "PMID:42452200"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 469,
+        "europe_pmc": 8394,
+        "culture_mentioned": 1
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Фолиарный пролин повышал термотолерантность томата при 43°C (транспирация и испарительное охлаждение), но НЕ увеличивал биомассу; ответ сортоспецифичен ('Cherry' — метаболическая пластичность, 'Tres Cantos' — консервативная стратегия с накоплением защитных N-соединений)",
+          "context": "Тепловой стресс 43°C, два сорта томата, взаимодействие формы азота (NO3-/NH4+) и фолиарного пролина",
+          "dosage_normalized": {
+            "original": "foliar proline (концентрация не указана в аннотации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 115.13,
+            "conversion_source": "не применимо — доза не раскрыта в аннотации",
+            "note": "Дозу необходимо извлечь из полного текста (Plants 15:1993)"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "фолиарное опрыскивание",
+            "ph": null,
+            "stress": "тепловой (43°C)",
+            "stage": "не уточнено",
+            "bbch_stages": [],
+            "temperature_range": "43°C (heat stress)",
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "нет прироста биомассы; повышенная термотолерантность"
+          },
+          "sources": [
+            {
+              "pmid": "42452200",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants15131993",
+              "oa_url": null
+            }
+          ],
+          "quote": "While exogenous proline failed to increase biomass, it significantly enhanced heat tolerance by driving transpiration and evaporative cooling."
+        },
+        {
+          "type": "effect",
+          "value": "Совместное применение Se и H2S при PEG-засухе защищало фотосинтетический аппарат томата через модуляцию метаболизма пролина и антиоксидантной системы — подтверждает роль пролина как медиатора засухоустойчивости",
+          "context": "PEG-индуцированная засуха (20-30% PEG), Se (почвенно) + H2S (фолиарно)",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 115.13,
+            "conversion_source": null,
+            "note": "экзогенный пролин не применялся — пролин исследован как эндогенный маркер/медиатор"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "Se в почву, NaHS фолиарно",
+            "ph": null,
+            "stress": "засуха (PEG)",
+            "stage": "рассада",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "улучшение фотосинтеза и роста при стрессе"
+          },
+          "sources": [
+            {
+              "pmid": "42531627",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.chemosphere.2026.145048",
+              "oa_url": null
+            }
+          ],
+          "quote": "Co-application of selenium and hydrogen sulfide confers PEG-induced drought stress tolerance in tomato plants by safeguarding photosynthetic apparatus and modulating proline metabolism and antioxidant systems."
+        }
+      ],
+      "gap": "Прямых исследований ПРАЙМИНГА СЕМЯН пролином у томата в PubMed не найдено (запросы 'proline AND \"seed priming\" AND tomato' и 'proline AND \"seed germination\" AND tomato': прайминг-работы используют JA, протеиновые гидролизаты, KNO3, ZnO-NPs). CSV-доза 100-500 ppm для прайминга не подтверждена и не опровергнута. Концентрацию фолиарного пролина (Barrios 2026) нужно взять из полного текста.",
+      "related_evidence": [
+        {
+          "pmid": "41663929",
+          "year": 2026,
+          "claim": "Прайминг семян KNO3 улучшает архитектуру корневой системы и метаболизм томата (концепция seed priming у томата)",
+          "note": "не пролин, но подтверждает метод прайминга как таковой"
+        },
+        {
+          "pmid": "35974188",
+          "year": 2022,
+          "claim": "Прайминг семян гидролизатом белка улучшает прорастание томата при PEG-засухе через мобилизацию резервов, накопление осмолитов и антиоксидантную систему",
+          "note": "не пролин; осмолит-механизм"
+        },
+        {
+          "pmid": "39337579",
+          "year": 2024,
+          "claim": "Экзогенная аскорбиновая кислота повышает холодостойкость томата, увеличивая содержание пролина",
+          "note": "пролин как маркер"
+        },
+        {
+          "pmid": "39409129",
+          "year": 2024,
+          "claim": "Экзогенная SA и прививка при засолении повышали содержание пролина в томате на >259%",
+          "note": "пролин как маркер"
+        }
+      ]
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 145,
+        "europe_pmc": 3314,
+        "culture_mentioned": 0
+      },
+      "claims": [],
+      "gap": "Прямых исследований экзогенного пролина (фолиарно, корнево или прайминг семян) на огурце (Cucumis sativus) в PubMed НЕ найдено: топ-15 по релевантности по 'proline AND cucumber AND (salt OR drought)', 'exogenous proline AND cucumber', 'exogenous proline AND \"Cucumis sativus\" AND NaCl' содержат только работы, где пролин — измеряемый маркер при действии ДРУГИХ веществ (Se, кремний, спермидин, GR24, EBR, мелатонин). Литература по экзогенному пролину у огурца, вероятно, есть в журналах вне PubMed (CNKI, иранские журналы).",
+      "related_evidence": [
+        {
+          "pmid": "41299263",
+          "year": 2025,
+          "claim": "Прайминг семян экстрактом рыбных отходов (FWE) ослаблял PEG-засуху у огурца, усиливая накопление пролина и активность антиоксидантных ферментов",
+          "note": "прайминг усиливает пролин-аккумуляцию — косвенная поддержка концепции"
+        },
+        {
+          "pmid": "23990108",
+          "year": 2020,
+          "claim": "Кремний повышает солеустойчивость огурца через регуляцию пролина и цитокининов",
+          "note": "только заголовок прочитан; пролин как медиатор"
+        },
+        {
+          "pmid": "34969963",
+          "year": 2014,
+          "claim": "Метаболизм пролина (P5CS/P5CR/PDH) в клеточных культурах огурца при акклимации к 150 mM NaCl",
+          "note": "in vitro, механистическое, не экзогенное применение"
+        },
+        {
+          "pmid": "33801884",
+          "year": 2021,
+          "claim": "Связь антиоксидантной системы и метаболизма пролина в листьях огурца, акклимированного к солевому стрессу",
+          "note": "эндогенный пролин"
+        },
+        {
+          "pmid": "19434374",
+          "year": 2009,
+          "claim": "Se (5-10 µM) повышал солеустойчивость огурца, увеличивая содержание пролина в листьях",
+          "note": "не экзогенный пролин"
+        },
+        {
+          "pmid": "18242770",
+          "year": 2008,
+          "claim": "Экзогенный спермидин повышал солеустойчивость огурца; пролин в корнях — маркер устойчивости сорта Changchun mici",
+          "note": "не экзогенный пролин"
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 58,
+        "europe_pmc": 974,
+        "culture_mentioned": 1
+      },
+      "claims": [
+        {
+          "type": "efficacy",
+          "value": "Экзогенный пролин при 4 режимах орошения (IR125/100/75/50) повышал урожай ягод клубники на 23% в среднем (до +32% при сильном дефиците IR50), увеличивал SSC на 6.4% и IWUE на 3.5 кг/м3; лучший cost-benefit ratio — PIR125",
+          "context": "Полевой/туннельный эксперимент, Средиземноморье (Турция), Fragaria × ananassa, 4 режима орошения × пролин, экономический анализ",
+          "dosage_normalized": {
+            "original": "exogenous proline treatment (концентрация не указана в аннотации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 115.13,
+            "conversion_source": "не применимо — доза не раскрыта в аннотации",
+            "note": "Дозу и способ внесения (фолиарно/полив) необходимо извлечь из полного текста (Plant Physiol Biochem 195:238-246)"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "не уточнено в аннотации (обработка раствором аминокислоты)",
+            "ph": null,
+            "stress": "дефицит орошения (IR50-IR125)",
+            "stage": "плодоношение (berry production)",
+            "bbch_stages": [],
+            "temperature_range": "Средиземноморский климат (high tunnel)",
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "+23% урожай (до +32% при IR50); SSC +6.4%"
+          },
+          "sources": [
+            {
+              "pmid": "36645928",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.plaphy.2023.01.011",
+              "oa_url": null
+            }
+          ],
+          "quote": "The use of proline significantly increased berry production by 23%. Under the IR50 conditions, the treatment of proline yielded a 32% higher than the control. Moreover, proline significantly increased fruit soluble solids content (SSC) by 6.4%."
+        }
+      ],
+      "gap": "Прайминг семян пролином у клубники не найден (strawberry_priming: 1 результат — химический прайминг др. агентами). Доза пролина в Celiktopuz 2023 не указана в аннотации — нужен полный текст. Нет данных по засолению с экзогенным пролином.",
+      "related_evidence": [
+        {
+          "pmid": "41326523",
+          "year": 2025,
+          "claim": "Химический прайминг растений клубники при дефицитном орошении повышал эффективность урожая и физиологическую устойчивость (cv. 'Red Sayma 1075')",
+          "note": "агенты прайминга не уточнены в прочитанной части аннотации — проверить, входит ли пролин"
+        },
+        {
+          "pmid": "36970252",
+          "year": 2018,
+          "claim": "Длительное засоление снижало рост клубники; накопление пролина — маркер солевого стресса у сортов Kurdistan и Queen elisa",
+          "note": "эндогенный пролин"
+        },
+        {
+          "pmid": "30150858",
+          "year": 2020,
+          "claim": "Транскрипционный фактор FaNAC2 клубники повышает устойчивость к абиотическому стрессу через регуляцию метаболизма пролина",
+          "note": "генетический, не экзогенный"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Пролин — эндогенная протеиногенная аминокислота; данных об ED50/TD50 в агрономической литературе по фокусным культурам не найдено. Токсичность не является значимым фактором риска (нет источников из литературы — не выдумываю)."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy",
+    "notes": "Не пестицид — натуральная аминокислота (биостимулятор); PHI/MRL не применимы, в базах пестицидных остатков (EU Pesticides Database, Codex) не значится."
+  },
+  "contraindications": [
+    {
+      "condition": "Ожидание прироста биомассы/урожая у томата при тепловом стрессе",
+      "effect": "Фолиарный пролин не увеличивал биомассу томата при 43°C — эффект ограничивался термотолерантностью (транспирационное охлаждение); ответ сортоспецифичен (у 'Tres Cantos' — консервативная стратегия без явного выигрыша)",
+      "severity": "low",
+      "sources": [
+        "PMID:42452200"
+      ]
+    },
+    {
+      "condition": "Слепое применение CSV-дозы 100-500 ppm для прайминга без локальной валидации",
+      "effect": "Для фокусных культур (томат/огурец/клубника) дозовых исследований прайминга пролином не найдено; подтверждённые исследования — фолиарное внесение с дозами, не раскрытыми в аннотациях",
+      "severity": "medium",
+      "sources": [
+        "PMID:42452200",
+        "PMID:36645928"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "application method (cat=SEED_TREATMENT)",
+      "csv_value": "seed priming (замачивание семян)",
+      "literature_summary": "В PubMed по томату, огурцу и клубнике прямых исследований прайминга семян пролином не найдено (5 целевых запросов, топ-15 по релевантности). Подтверждённые исследования экзогенного пролина — ФОЛИАРНОЕ применение (томат при 43°C: PMID 42452200; клубника при дефиците орошения: PMID 36645928). Прайминг-исследования у этих культур используют другие агенты (KNO3, гидролизаты, JA, ZnO-NPs).",
+      "severity": "medium",
+      "sources": [
+        "PMID:42452200",
+        "PMID:36645928",
+        "PMID:41663929"
+      ]
+    },
+    {
+      "csv_field": "dosage",
+      "csv_value": "100-500 ppm (≈0.87-4.3 mM) для прайминга семян",
+      "literature_summary": "Диапазон CSV не подтверждён и не опровергнут для фокусных культур: в аннотациях подтверждённых работ (42452200, 36645928) концентрации пролина не указаны (нужен полный текст); дозовых исследований именно прайминга нет. Конверсия ppm↔mM выполнена через молярную массу PubChem (115.13 г/моль): 100 ppm = 0.87 mM, 500 ppm = 4.34 mM.",
+      "severity": "medium",
+      "sources": [
+        "PMID:42452200",
+        "PMID:36645928"
+      ]
+    },
+    {
+      "csv_field": "efficacy / crops",
+      "csv_value": "HIGH / 'All crops in stress conditions'",
+      "literature_summary": "HIGH подтверждено ЧАСТИЧНО: клубника — +23-32% урожая при дефиците орошения (36645928); томат — термотолерантность БЕЗ прироста биомассы (42452200); огурец — данных нет (no_data). Утверждение 'все культуры' не подтверждено.",
+      "severity": "low",
+      "sources": [
+        "PMID:36645928",
+        "PMID:42452200"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Класс (аминокислота) и механизм (осмопротекция) подтверждены. Эффективность экзогенного пролина подтверждена для ФОЛИАРНОГО применения: клубника +23-32% урожая при дефиците орошения (PMID 36645928, verified), томат — термотолерантность без прироста биомассы (PMID 42452200, verified). Огурец — no_data. Метод seed priming и доза 100-500 ppm для фокусных культур прямыми исследованиями не подтверждены (PubMed); требуется извлечение доз из полных текстов (Celiktopuz 2023, Barrios 2026) и поиск не-PubMed литературы по праймингу. Карточку вести со статусом partial; в Corrected Dosages — без правки дозы (нет verified-источника), с пометкой 'не подтверждено'."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family 'amino_acids_polyamines' — корректно (протеиногенная аминокислота). mechanism 'osmoprotection' — корректно: пролин — канонический осмопротектор/осмолит (P5CS/P5CR-синтез при стрессе, PMID 38478428, 34969963; экзогенное применение — PMID 36645928, 42452200)."
+  },
+  "sources_index": [
+    "PMID:42452200",
+    "PMID:36645928",
+    "PMID:42531627",
+    "PMID:38478428",
+    "PMID:41663929",
+    "PMID:35974188",
+    "PMID:41299263",
+    "PMID:23990108",
+    "PMID:34969963",
+    "PMID:33801884",
+    "PMID:19434374",
+    "PMID:18242770",
+    "PMID:39337579",
+    "PMID:39409129",
+    "PMID:41326523",
+    "PMID:36970252",
+    "PMID:30150858"
+  ]
+}

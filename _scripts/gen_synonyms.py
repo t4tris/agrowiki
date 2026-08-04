@@ -84,7 +84,7 @@ def main():
     for code, info in sorted(by_code.items()):
         if code in gt.OVERRIDES:
             continue
-        family = gt.pick_family(info['classes'])
+        family = gt.pick_family(code, info['classes'])
         text = ' '.join(info['moas']).lower()
         matched = any(kw in text for kw, _ in gt.MOA_RULES)
         if not matched:

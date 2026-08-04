@@ -146,7 +146,7 @@ OVERRIDES = {
     'B9': 'gibberellin_action', 'Brassinazole': 'brassinosteroid_signaling',
     'Melatonin': 'antioxidant_defense', 'Serotonin': 'growth_regulation',
     'Ascorbic Acid': 'antioxidant_defense', 'Alpha-lipoic acid': 'antioxidant_defense',
-    'Silicon': 'nutrition_metabolism', 'Cobalt': 'nutrition_metabolism',
+    'Cobalt': 'nutrition_metabolism',
     'Magnesium': 'nutrition_metabolism', 'DMSO': 'growth_regulation',
     # Правки по итогам аудита AUDIT_TAXONOMY (2026-08-04): дефолты семейств уточнены
     'GSH': 'antioxidant_defense',               # глутатион — главный антиоксидант
@@ -154,6 +154,13 @@ OVERRIDES = {
     'Carbonic Anhydrase': 'photosynthesis_enhancement',  # карбоангидраза — CO2-фиксация
     'HypSys peptides': 'jasmonate_sar_defense',  # системин-подобные пептиды защиты
     'L-carnitine': 'nutrition_metabolism',      # карнитин — метаболизм/энергетика
+    # Коррекции taxonomy_check (контракт v1.4, валидация 2026-08-04)
+    'Silicon': 'antioxidant_defense',           # основной механизм — антиоксидантная защита
+}
+
+# Ручные правки class_family по итогам валидации (taxonomy_check v1.4); применяются до маппинга классов
+FAMILY_OVERRIDES = {
+    'Paclobutrazol': 'synthetic_growth_regulators',  # триазольный ретардант, НЕ фунгицид по применению
 }
 
 # ---------- page metadata ----------
@@ -279,7 +286,9 @@ MECHANISMS = [
 ]
 
 # ---------- helpers ----------
-def pick_family(classes):
+def pick_family(code, classes):
+    if code in FAMILY_OVERRIDES:
+        return FAMILY_OVERRIDES[code]
     fams = [CLASS_FAMILY[c] for c in classes if c in CLASS_FAMILY]
     if not fams:
         return 'other'
@@ -352,7 +361,7 @@ def main():
 
     patched = 0
     for code, info in sorted(by_code.items()):
-        family = pick_family(info['classes'])
+        family = pick_family(code, info['classes'])
         mechanism = pick_mechanism(code, info['moas'], family)
         # find card file: name matches code
         for fn in os.listdir(SUBST_DIR):

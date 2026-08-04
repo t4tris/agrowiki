@@ -20,28 +20,28 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Fulvic Acid × 3 культуры
 - [ ] VALIDATE: GA1 × 3 культуры
 - [ ] VALIDATE: GA4 × 3 культуры
-- [ ] VALIDATE: Glycine Betaine × 3 культуры
+- [x] VALIDATE: Glycine Betaine × 3 культуры → [[wiki/substances/Glycine Betaine]] (partial/moderate, 2026-08-04)
 - [x] VALIDATE: IBA × 3 культуры → [[wiki/substances/IBA]] (corrected/moderate, 2026-08-04)
 - [ ] VALIDATE: Kinetin × 3 культуры
 - [ ] VALIDATE: Leonardite extract × 3 культуры
 - [ ] VALIDATE: MCPA × 3 культуры
 - [ ] VALIDATE: Magnesium × 3 культуры
 - [ ] VALIDATE: Maleic Hydrazide × 3 культуры
-- [ ] VALIDATE: Methyl Jasmonate × 3 культуры
+- [x] VALIDATE: Methyl Jasmonate × 3 культуры → [[wiki/substances/Methyl Jasmonate]] (corrected/strong, 2026-08-04)
 - [ ] VALIDATE: NAD × 3 культуры
 - [ ] VALIDATE: NHP × 3 культуры
 - [ ] VALIDATE: PDJ × 3 культуры
 - [ ] VALIDATE: PIX × 3 культуры
-- [ ] VALIDATE: Paclobutrazol × 3 культуры
+- [x] VALIDATE: Paclobutrazol × 3 культуры → [[wiki/substances/Paclobutrazol]] (partial/strong, 2026-08-04)
 - [ ] VALIDATE: Phosphite × 3 культуры
 - [ ] VALIDATE: Polyaspartic Acid × 3 культуры
 - [ ] VALIDATE: Polyglutamic acid × 3 культуры
-- [ ] VALIDATE: Proline × 3 культуры
+- [x] VALIDATE: Proline × 3 культуры → [[wiki/substances/Proline]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Propiconazole × 3 культуры
 - [ ] VALIDATE: Pyraclostrobin × 3 культуры
 - [ ] VALIDATE: S-ABA × 3 культуры
 - [ ] VALIDATE: STS × 3 культуры
-- [ ] VALIDATE: Silicon × 3 культуры
+- [x] VALIDATE: Silicon × 3 культуры → [[wiki/substances/Silicon]] (corrected/strong, 2026-08-04)
 - [ ] VALIDATE: Tebuconazole × 3 культуры
 - [ ] VALIDATE: Thiabendazole × 3 культуры
 - [ ] VALIDATE: Thidiazuron × 3 культуры

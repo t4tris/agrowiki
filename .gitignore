@@ -10,6 +10,5 @@ __pycache__/
 # Obsidian
 Vault/.obsidian/workspace*
 Vault/.obsidian/graph.json
-Vault/.obsidian/community-plugins.json
-# Плагины Obsidian (код и список включённых плагинов пересоздаются при установке; репозиторий не раздувается)
+# Плагины Obsidian (код переустанавливается из Community Plugins; community-plugins.json остаётся в git)
 Vault/.obsidian/plugins/

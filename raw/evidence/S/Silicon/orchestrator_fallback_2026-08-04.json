@@ -1,0 +1,773 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-04",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Silicon",
+    "csv_name": "Silicon (Si)"
+  },
+  "searches": [
+    {
+      "query": "silicon AND tomato AND drought",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 1088,
+      "results": [
+        {
+          "id": "42359417",
+          "source": "MED",
+          "title": "DDCANet for SiO&lt;sub&gt;2&lt;/sub&gt;-mediated drought regulation research: high-precision segmentation and phenotypic detection of cucumber point clouds.",
+          "first_author": "Xia Y",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1848132",
+          "pmid": "42359417"
+        },
+        {
+          "id": "42122827",
+          "source": "MED",
+          "title": "Nanoparticle-Induced Cross-Tolerance: A Review of Mechanisms for Concurrent Biotic and Abiotic Stress Mitigation in Crops.",
+          "first_author": "Abdulraheem MI",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091334",
+          "pmid": "42122827"
+        },
+        {
+          "id": "41930998",
+          "source": "MED",
+          "title": "Physiological and transcriptomic analyses reveal that exogenous silicon alleviate the response of tomato to salt stress.",
+          "first_author": "Wang Y",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2652178",
+          "pmid": "41930998"
+        },
+        {
+          "id": "PMC12987150",
+          "source": "PMC",
+          "title": "Silicon Enhances Rice Tolerance to Drought and Blast Disease Through Modulating ROS Accumulation and Stress-Related Genes",
+          "first_author": "Du H",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42131744",
+          "source": "MED",
+          "title": "Silicon-mediated drought resilience mechanisms in crops: from physiology to molecular insights.",
+          "first_author": "Ogedengbe O",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1788106",
+          "pmid": "42131744"
+        },
+        {
+          "id": "41681661",
+          "source": "MED",
+          "title": "Silicon Modulates the Chloroplast Proteome to Enhance Drought Tolerance in Soybean.",
+          "first_author": "Kaur A",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15030497",
+          "pmid": "41681661"
+        },
+        {
+          "id": "PMC12943862",
+          "source": "PMC",
+          "title": "Overexpression of SlANT1 Enhances Drought Tolerance in Tomato Through Anthocyanin-Mediated Antioxidant Protection and Metabolic Reprogramming",
+          "first_author": "Liu J",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41064765",
+          "source": "MED",
+          "title": "Impact of pyrogenic carbon on tomato root architecture and metabolites (ABA and proline) under drought stress.",
+          "first_author": "Zhang Y",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1634455",
+          "pmid": "41064765"
+        },
+        {
+          "id": "40916354",
+          "source": "MED",
+          "title": "Strategies for Enhancing Resilience in Horticultural Crops Against Combined Abiotic Stresses.",
+          "first_author": "Padilla Y",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70502",
+          "pmid": "40916354"
+        },
+        {
+          "id": "42187782",
+          "source": "MED",
+          "title": "Silicon Dioxide Nanoparticles and Biochar to Suppress Leaf Blight and Fruit Rot in Eggplant.",
+          "first_author": "Khan M",
+          "pub_year": "2026",
+          "doi": "10.3390/jof12050300",
+          "pmid": "42187782"
+        },
+        {
+          "id": "41258352",
+          "source": "MED",
+          "title": "Mechanistic insights into micro and nanosilicon for environmental stress mitigation in plant.",
+          "first_author": "Panigrahi LL",
+          "pub_year": "2025",
+          "doi": "10.1186/s11671-025-04387-4",
+          "pmid": "41258352"
+        },
+        {
+          "id": "41584665",
+          "source": "MED",
+          "title": "Beyond essentiality: silicon as a systems regulator of photosynthesis under stress scenarios.",
+          "first_author": "Mukarram M",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1690421",
+          "pmid": "41584665"
+        },
+        {
+          "id": "41375376",
+          "source": "MED",
+          "title": "Soil Ca&lt;sub&gt;2&lt;/sub&gt;SiO&lt;sub&gt;4&lt;/sub&gt; Supplying Increases Drought Tolerance of Young Arabica Coffee Plants.",
+          "first_author": "Rakocevic M",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14233666",
+          "pmid": "41375376"
+        },
+        {
+          "id": "41551680",
+          "source": "MED",
+          "title": "Recent advances in plant stress analysis using chlorophyll &lt;i&gt;a&lt;/i&gt; fluorescence.",
+          "first_author": "Chang KW",
+          "pub_year": "2025",
+          "doi": "10.32615/ps.2025.037",
+          "pmid": "41551680"
+        },
+        {
+          "id": "40200726",
+          "source": "MED",
+          "title": "Optimizing SiO&lt;sub&gt;2&lt;/sub&gt; Nanoparticle Structures to Enhance Drought Resistance in Tomato (&lt;i&gt;Solanum lycopersicum&lt;/i&gt; L.): Insights into Nanoparticle Dissolution and Plant Stress Response.",
+          "first_author": "Wang L",
+          "pub_year": "2025",
+          "doi": "10.1021/acs.jafc.5c03048",
+          "pmid": "40200726"
+        },
+        {
+          "id": "41470641",
+          "source": "MED",
+          "title": "Advances in Potassium Silicate-Induced Drought Tolerance in Tropical Tree Seedlings: Effects on Morphological Traits, Physiological Responses, and Biochemical Regulation.",
+          "first_author": "Henintsoa Nomenaharinaivo S",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243760",
+          "pmid": "41470641"
+        },
+        {
+          "id": "41096915",
+          "source": "MED",
+          "title": "Special Issue \"Plant Responses to Abiotic and Biotic Stresses\".",
+          "first_author": "Tao L",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26199651",
+          "pmid": "41096915"
+        },
+        {
+          "id": "41603328",
+          "source": "MED",
+          "title": "Exploiting Laminaria digitata L. Aqueous Extract for Tomato Biostimulation: A Physiological and Metabolomic Approach.",
+          "first_author": "Circuncisão AR",
+          "pub_year": "2026",
+          "doi": "10.1111/ppl.70762",
+          "pmid": "41603328"
+        },
+        {
+          "id": "40868941",
+          "source": "MED",
+          "title": "Antioxidant Defense Systems in Plants: Mechanisms, Regulation, and Biotechnological Strategies for Enhanced Oxidative Stress Tolerance.",
+          "first_author": "Cannea FB",
+          "pub_year": "2025",
+          "doi": "10.3390/life15081293",
+          "pmid": "40868941"
+        },
+        {
+          "id": "41629659",
+          "source": "MED",
+          "title": "Mitigating drought stress in bitter gourd (Momordica charantia L.) through foliar application of potassium, zinc, calcium, and silicon.",
+          "first_author": "Hatamian Z",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-38336-7",
+          "pmid": "41629659"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "42345779",
+          "source": "MED",
+          "title": "Genetically Modified Plants in Agriculture.",
+          "first_author": "Ogienko AA",
+          "pub_year": "2026",
+          "doi": "10.3390/biology15120923",
+          "pmid": "42345779"
+        },
+        {
+          "id": "42359393",
+          "source": "MED",
+          "title": "Rapid preliminary screening of Tomato brown rugose fruit virus based on surface-enhanced Raman spectroscopy and machine learning.",
+          "first_author": "Xu Y",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1866144",
+          "pmid": "42359393"
+        },
+        {
+          "id": "41898835",
+          "source": "MED",
+          "title": "DNA Methylation Dynamics in Plant Abiotic Stress Response: Mechanisms, Memory, and Breeding Applications.",
+          "first_author": "Huang H",
+          "pub_year": "2026",
+          "doi": "10.3390/genes17030301",
+          "pmid": "41898835"
+        },
+        {
+          "id": "40720564",
+          "source": "MED",
+          "title": "Harbingers of bloom: Identifying the molecular mechanisms controlling fruit bloom formation in cucumbers.",
+          "first_author": "Fattorini R.",
+          "pub_year": "2025",
+          "doi": "10.1093/plcell/koaf187",
+          "pmid": "40720564"
+        }
+      ]
+    },
+    {
+      "query": "silicon AND tomato AND drought AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR766746",
+          "source": "PPR",
+          "title": "The effects of Arbuscular Mycorrhizal Fungi and Silicon on Tomato growth in normal and arid conditions through different water regulation mechanisms",
+          "first_author": "ÇELİK Y",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-3671784/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "silicon AND cucumber AND powdery mildew",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 154,
+      "results": [
+        {
+          "id": "41998488",
+          "source": "MED",
+          "title": "Comprehensive analysis of the GeBP gene family in cucumber highlights functional divergence in fruit development and stress tolerance.",
+          "first_author": "Wang X",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08774-6",
+          "pmid": "41998488"
+        },
+        {
+          "id": "41440721",
+          "source": "MED",
+          "title": "Harnessing Nanoparticles and Nanosuspensions to Combat Powdery Mildew: A Frontier in Vegetable and Fruit Protection.",
+          "first_author": "Geremew A",
+          "pub_year": "2025",
+          "doi": "10.3390/jof11120896",
+          "pmid": "41440721"
+        },
+        {
+          "id": "41777356",
+          "source": "MED",
+          "title": "Evolutionary and Functional Characterization of an Auxin Methyltransferase (&lt;i&gt;CsIAMT&lt;/i&gt;) in Cucumber Reveals Its Role in Stress Adaptation and Development.",
+          "first_author": "Zhang X",
+          "pub_year": "2026",
+          "doi": "10.1002/ece3.73178",
+          "pmid": "41777356"
+        },
+        {
+          "id": "40725133",
+          "source": "MED",
+          "title": "L-Lysine from &lt;i&gt;Bacillus subtilis&lt;/i&gt; M320 Induces Salicylic-Acid-Dependent Systemic Resistance and Controls Cucumber Powdery Mildew.",
+          "first_author": "Kim JY",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26146882",
+          "pmid": "40725133"
+        },
+        {
+          "id": "39639480",
+          "source": "MED",
+          "title": "Control of Cucumber Powdery Mildew Using Resistant Cultivars and Organic Agricultural Materials.",
+          "first_author": "Kim MJ",
+          "pub_year": "2024",
+          "doi": "10.4014/jmb.2409.09030",
+          "pmid": "39639480"
+        },
+        {
+          "id": "40332458",
+          "source": "MED",
+          "title": "Genome-Wide Reidentification and Expression Analysis of &lt;i&gt;MADS-Box&lt;/i&gt; Gene Family in Cucumber.",
+          "first_author": "Wang Z",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26083800",
+          "pmid": "40332458"
+        },
+        {
+          "id": "PPR971125",
+          "source": "PPR",
+          "title": "Genome-Wide Reidentification and Transcriptome Analysis of Mads-Box Gene Family in Cucumber",
+          "first_author": "Wang Z",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202501.1983.v1",
+          "pmid": null
+        },
+        {
+          "id": "41987041",
+          "source": "MED",
+          "title": "Silica nanoparticles enhance resistance of Vitis vinifera to downy mildew.",
+          "first_author": "Alfonso E",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08718-0",
+          "pmid": "41987041"
+        },
+        {
+          "id": "39285374",
+          "source": "MED",
+          "title": "Identification of MYC genes in four Cucurbitaceae species and their roles in the response to temperature stress.",
+          "first_author": "Liu T",
+          "pub_year": "2024",
+          "doi": "10.1186/s12864-024-10771-8",
+          "pmid": "39285374"
+        },
+        {
+          "id": "39726419",
+          "source": "MED",
+          "title": "Unlocking the role of silicon against biotic stress in plants.",
+          "first_author": "Verma KK",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1430804",
+          "pmid": "39726419"
+        },
+        {
+          "id": "40941901",
+          "source": "MED",
+          "title": "Suppressing Symptomless Nonhost Resistance of Barley to &lt;i&gt;Tobacco mosaic virus&lt;/i&gt; by Short-Term Heat Stress-Role of Superoxide in Resistance.",
+          "first_author": "Király L",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14172736",
+          "pmid": "40941901"
+        },
+        {
+          "id": "40284092",
+          "source": "MED",
+          "title": "Silicon-Mediated Interactions Between Plant Antagonists.",
+          "first_author": "Denarié ME",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14081204",
+          "pmid": "40284092"
+        },
+        {
+          "id": "41424621",
+          "source": "MED",
+          "title": "Selenium phytofortification: enhanced stress resistance and nutraceutical enrichment in horticultural crops.",
+          "first_author": "Shangguan Y",
+          "pub_year": "2025",
+          "doi": "10.1093/hr/uhaf236",
+          "pmid": "41424621"
+        },
+        {
+          "id": "40326667",
+          "source": "MED",
+          "title": "The silicon efflux transporter BEC1 is essential for bloom formation and stress tolerance in cucumber.",
+          "first_author": "Xia C",
+          "pub_year": "2025",
+          "doi": "10.1111/jipb.13917",
+          "pmid": "40326667"
+        },
+        {
+          "id": "38003030",
+          "source": "MED",
+          "title": "β-Aminobutyric Acid and Powdery Mildew Infection Enhanced the Activation of Defense-Related Genes and Salicylic Acid in Cucumber (<i>Cucumis sativus</i> L.).",
+          "first_author": "Kim JY",
+          "pub_year": "2023",
+          "doi": "10.3390/genes14112087",
+          "pmid": "38003030"
+        },
+        {
+          "id": "41972539",
+          "source": "MED",
+          "title": "Soil and Foliar Applications of Silicon Mitigate Biotic Stress in Cape Gooseberry Plants Caused by Fusarium Vascular Wilt.",
+          "first_author": "Chitiva-Sánchez DS",
+          "pub_year": "2026",
+          "doi": "10.3390/biology15070536",
+          "pmid": "41972539"
+        },
+        {
+          "id": "38002948",
+          "source": "MED",
+          "title": "Genome-Wide Identification and Expression Analysis of the Cucumber FKBP Gene Family in Response to Abiotic and Biotic Stresses.",
+          "first_author": "Yang D",
+          "pub_year": "2023",
+          "doi": "10.3390/genes14112006",
+          "pmid": "38002948"
+        },
+        {
+          "id": "37031433",
+          "source": "MED",
+          "title": "Functions of silicon and phytolith in higher plants.",
+          "first_author": "Xu R",
+          "pub_year": "2023",
+          "doi": "10.1080/15592324.2023.2198848",
+          "pmid": "37031433"
+        },
+        {
+          "id": "37686228",
+          "source": "MED",
+          "title": "Genome-Wide Identification and Expression Patterns of Cucumber Invertases and Their Inhibitor Genes.",
+          "first_author": "Qi C",
+          "pub_year": "2023",
+          "doi": "10.3390/ijms241713421",
+          "pmid": "37686228"
+        },
+        {
+          "id": "41225940",
+          "source": "MED",
+          "title": "Climate Change Impacts on Greenhouse Horticulture in the Mediterranean Basin: Challenges and Adaptation Strategies.",
+          "first_author": "Fanourakis D",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14213390",
+          "pmid": "41225940"
+        },
+        {
+          "id": "PMC11200688",
+          "source": "PMC",
+          "title": "Molecular Basis of Plant–Pathogen Interactions in the Agricultural Context",
+          "first_author": "Ijaz U",
+          "pub_year": "2024",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "39765681",
+          "source": "MED",
+          "title": "The Good, the Bad, and the Fungus: Insights into the Relationship Between Plants, Fungi, and Oomycetes in Hydroponics.",
+          "first_author": "Laevens GCS",
+          "pub_year": "2024",
+          "doi": "10.3390/biology13121014",
+          "pmid": "39765681"
+        },
+        {
+          "id": "36430503",
+          "source": "MED",
+          "title": "Silicon Mediated Plant Immunity against Nematodes: Summarizing the Underline Defence Mechanisms in Plant Nematodes Interaction.",
+          "first_author": "Yu J",
+          "pub_year": "2022",
+          "doi": "10.3390/ijms232214026",
+          "pmid": "36430503"
+        },
+        {
+          "id": "PMC13226507",
+          "source": "PMC",
+          "title": "Enhancing papaya resistance to ringspot virus through CRISPR/Cas9-mediated gene editing of eIF4E",
+          "first_author": "Le N",
+          "pub_year": null,
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "40733428",
+          "source": "MED",
+          "title": "The Emerging Roles of Nanoparticles in Managing the Environmental Stressors in Horticulture Crops-A Review.",
+          "first_author": "Abou El-Nasr MK",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14142192",
+          "pmid": "40733428"
+        }
+      ]
+    },
+    {
+      "query": "silicon AND cucumber AND powdery mildew AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR971125",
+          "source": "PPR",
+          "title": "Genome-Wide Reidentification and Transcriptome Analysis of Mads-Box Gene Family in Cucumber",
+          "first_author": "Wang Z",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202501.1983.v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "silicon AND strawberry AND botrytis",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 126,
+      "results": [
+        {
+          "id": "42079716",
+          "source": "MED",
+          "title": "Investigating potassium silicate efficacy and mechanisms for improving the strawberry agronomic traits and gray mold fungal resistance.",
+          "first_author": "Vennapusa AR",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.21151",
+          "pmid": "42079716"
+        },
+        {
+          "id": "41249803",
+          "source": "MED",
+          "title": "Encapsulated citrus peel essential oil in pegylated mesoporous silica nanoparticles for postharvest control of Botrytis cinerea in strawberry.",
+          "first_author": "Jokarshourijeh F",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-23911-1",
+          "pmid": "41249803"
+        },
+        {
+          "id": "42187782",
+          "source": "MED",
+          "title": "Silicon Dioxide Nanoparticles and Biochar to Suppress Leaf Blight and Fruit Rot in Eggplant.",
+          "first_author": "Khan M",
+          "pub_year": "2026",
+          "doi": "10.3390/jof12050300",
+          "pmid": "42187782"
+        },
+        {
+          "id": "42211489",
+          "source": "MED",
+          "title": "Dissolved oxygen limitation and &lt;i&gt;Pythium&lt;/i&gt; root rot in strawberry NFT systems: mechanisms, research gaps, and prospects for substrate-free production.",
+          "first_author": "Scott S",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1829367",
+          "pmid": "42211489"
+        },
+        {
+          "id": "40422005",
+          "source": "MED",
+          "title": "Aptamer-Based Microfluidic Assay for In-Field Detection of Salicylic Acid in &lt;i&gt;Botrytis cinerea&lt;/i&gt;-Infected Strawberries.",
+          "first_author": "Domingues C",
+          "pub_year": "2025",
+          "doi": "10.3390/bios15050266",
+          "pmid": "40422005"
+        },
+        {
+          "id": "40573815",
+          "source": "MED",
+          "title": "Alternative Plant Protection Strategies Using Bacteria and Thyme to Improve Strawberry (cv. Elsanta) Yield and Quality.",
+          "first_author": "Rasiukevičiūtė N",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14121827",
+          "pmid": "40573815"
+        },
+        {
+          "id": "39765681",
+          "source": "MED",
+          "title": "The Good, the Bad, and the Fungus: Insights into the Relationship Between Plants, Fungi, and Oomycetes in Hydroponics.",
+          "first_author": "Laevens GCS",
+          "pub_year": "2024",
+          "doi": "10.3390/biology13121014",
+          "pmid": "39765681"
+        },
+        {
+          "id": "39458862",
+          "source": "MED",
+          "title": "Chitosan, Methyl Jasmonate, and Silicon Induce Resistance to Angular Leaf Spot in Common Bean, Caused by <i>Pseudocercospora griseola</i>, with Expression of Defense-Related Genes and Enzyme Activities.",
+          "first_author": "Palacıoğlu G.",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13202915",
+          "pmid": "39458862"
+        },
+        {
+          "id": "40941040",
+          "source": "MED",
+          "title": "Light-Emitting Diode [LED]-Driven Mechanisms for Postharvest Decay Control and Functional Quality Improvement in Fruits and Vegetables.",
+          "first_author": "Obajuluwa AO",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14172924",
+          "pmid": "40941040"
+        },
+        {
+          "id": "41581110",
+          "source": "MED",
+          "title": "Applications of nanoparticles in plant disease identification and control for sustainable crop production.",
+          "first_author": "Kalu CM",
+          "pub_year": "2026",
+          "doi": "10.1186/s11671-026-04440-w",
+          "pmid": "41581110"
+        },
+        {
+          "id": "39716903",
+          "source": "MED",
+          "title": "Real-Time Monitoring of Volatile Organic Compound-Mediated Plant Intercommunication Using Surface-Enhanced Raman Scattering Nanosensor.",
+          "first_author": "Choi YS",
+          "pub_year": "2024",
+          "doi": "10.1002/advs.202412732",
+          "pmid": "39716903"
+        },
+        {
+          "id": "39726419",
+          "source": "MED",
+          "title": "Unlocking the role of silicon against biotic stress in plants.",
+          "first_author": "Verma KK",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1430804",
+          "pmid": "39726419"
+        },
+        {
+          "id": "38222640",
+          "source": "MED",
+          "title": "Discovery of Novel Compounds for Combating Rising Severity of Plant Diseases Caused by Fungi and Viruses.",
+          "first_author": "Pan N",
+          "pub_year": "2024",
+          "doi": "10.1021/acsomega.3c07820",
+          "pmid": "38222640"
+        },
+        {
+          "id": "39319142",
+          "source": "MED",
+          "title": "A comprehensive review on biochar against plant pathogens: Current state-of-the-art and future research perspectives.",
+          "first_author": "Bhatt B",
+          "pub_year": "2024",
+          "doi": "10.1016/j.heliyon.2024.e37204",
+          "pmid": "39319142"
+        },
+        {
+          "id": "40724292",
+          "source": "MED",
+          "title": "Recent Advances in the Application Technologies of Surface Coatings for Fruits.",
+          "first_author": "Dai L",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14142471",
+          "pmid": "40724292"
+        },
+        {
+          "id": "40733428",
+          "source": "MED",
+          "title": "The Emerging Roles of Nanoparticles in Managing the Environmental Stressors in Horticulture Crops-A Review.",
+          "first_author": "Abou El-Nasr MK",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14142192",
+          "pmid": "40733428"
+        },
+        {
+          "id": "39904926",
+          "source": "MED",
+          "title": "The potential of Paraburkholderia species to enhance crop growth.",
+          "first_author": "Rojas-Rojas FU",
+          "pub_year": "2025",
+          "doi": "10.1007/s11274-025-04256-3",
+          "pmid": "39904926"
+        },
+        {
+          "id": "38606077",
+          "source": "MED",
+          "title": "Silicon nanoparticles in sustainable agriculture: synthesis, absorption, and plant stress alleviation.",
+          "first_author": "Yan G",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1393458",
+          "pmid": "38606077"
+        },
+        {
+          "id": "41353329",
+          "source": "MED",
+          "title": "Multi-omics dissection of CO&lt;sub&gt;2&lt;/sub&gt;-induced metabolic reprogramming in broccoli: key regulators of growth and nutritional quality.",
+          "first_author": "Shi S",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07706-0",
+          "pmid": "41353329"
+        },
+        {
+          "id": "36559576",
+          "source": "MED",
+          "title": "Strawberry Biostimulation: From Mechanisms of Action to Plant Growth and Fruit Quality.",
+          "first_author": "Garza-Alonso CA",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11243463",
+          "pmid": "36559576"
+        },
+        {
+          "id": "38475460",
+          "source": "MED",
+          "title": "The Roles of Plant-Growth-Promoting Rhizobacteria (PGPR)-Based Biostimulants for Agricultural Production Systems.",
+          "first_author": "Sun W",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13050613",
+          "pmid": "38475460"
+        },
+        {
+          "id": "38875493",
+          "source": "MED",
+          "title": "Recent Advances in Microfluidics for the Early Detection of Plant Diseases in Vegetables, Fruits, and Grains Caused by Bacteria, Fungi, and Viruses.",
+          "first_author": "Zhao X",
+          "pub_year": "2024",
+          "doi": "10.1021/acs.jafc.4c00454",
+          "pmid": "38875493"
+        },
+        {
+          "id": "40647993",
+          "source": "MED",
+          "title": "Leveraging Biochar Amendments to Enhance Food Security and Plant Resilience Under Climate Change.",
+          "first_author": "Korai SK",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14131984",
+          "pmid": "40647993"
+        },
+        {
+          "id": "38928507",
+          "source": "MED",
+          "title": "Challenges and Opportunities Arising from Host-<i>Botrytis cinerea</i> Interactions to Outline Novel and Sustainable Control Strategies: The Key Role of RNA Interference.",
+          "first_author": "Spada M",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25126798",
+          "pmid": "38928507"
+        },
+        {
+          "id": "37765626",
+          "source": "MED",
+          "title": "Chitosan Coatings Modified with Nanostructured ZnO for the Preservation of Strawberries.",
+          "first_author": "García-García DJ",
+          "pub_year": "2023",
+          "doi": "10.3390/polym15183772",
+          "pmid": "37765626"
+        }
+      ]
+    },
+    {
+      "query": "silicon AND strawberry AND botrytis AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR766746",
+      "source": "PPR",
+      "title": "The effects of Arbuscular Mycorrhizal Fungi and Silicon on Tomato growth in normal and arid conditions through different water regulation mechanisms",
+      "first_author": "ÇELİK Y",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-3671784/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR971125",
+      "source": "PPR",
+      "title": "Genome-Wide Reidentification and Transcriptome Analysis of Mads-Box Gene Family in Cucumber",
+      "first_author": "Wang Z",
+      "pub_year": "2025",
+      "doi": "10.20944/preprints202501.1983.v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

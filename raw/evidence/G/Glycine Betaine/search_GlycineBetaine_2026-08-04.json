@@ -1,0 +1,804 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Glycine Betaine",
+    "csv_name": "Betaine",
+    "queried_name": "glycine betaine"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_esearch_tomato_drought",
+      "pubmed_esearch_tomato_salt",
+      "pubmed_esearch_lycopersicum",
+      "pubmed_esearch_tomato_heat",
+      "pubmed_esearch_tomato_chilling",
+      "pubmed_esearch_foliar",
+      "pubmed_esearch_cucumber",
+      "pubmed_esearch_cucumber_salt",
+      "pubmed_esearch_cucumber_drought",
+      "pubmed_esearch_cucumber_chilling",
+      "pubmed_esearch_strawberry",
+      "pubmed_esearch_fragaria",
+      "pubmed_esearch_strawberry_stress",
+      "esummary",
+      "efetch_abstracts",
+      "pubchem_property",
+      "pubchem_synonyms",
+      "pubchem_registryid",
+      "openalex_title_search",
+      "europepmc_cucumber_salt",
+      "europepmc_cucumber_exogenous",
+      "europepmc_tomato_drought",
+      "europepmc_strawberry"
+    ],
+    "failed": [],
+    "queries_used": [
+      "glycine betaine AND tomato AND drought",
+      "glycine betaine AND tomato AND salt",
+      "betaine AND Solanum lycopersicum",
+      "glycine betaine AND heat stress AND tomato",
+      "glycine betaine AND chilling AND tomato",
+      "glycine betaine AND (foliar OR spray) AND tomato",
+      "glycine betaine AND cucumber",
+      "glycine betaine AND cucumber AND salt",
+      "glycine betaine AND cucumber AND drought",
+      "glycine betaine AND cucumber AND chilling",
+      "glycine betaine AND Cucumis sativus",
+      "glycine betaine AND strawberry",
+      "glycine betaine AND Fragaria",
+      "betaine AND Fragaria AND (salt OR salinity OR drought)",
+      "glycine betaine AND drought AND (tomato OR cucumber OR strawberry)",
+      "OpenAlex: title.search glycine betaine",
+      "EPMC: \"glycine betaine\" AND cucumber AND salt",
+      "EPMC: \"glycine betaine\" AND cucumber AND exogenous",
+      "EPMC: \"glycine betaine\" AND tomato AND drought",
+      "EPMC: \"glycine betaine\" AND strawberry"
+    ],
+    "fallback_tries": [
+      {
+        "query": "glycine betaine AND cucumber AND chilling",
+        "results": 0
+      },
+      {
+        "query": "betaine AND Fragaria AND (salt OR salinity OR drought)",
+        "results": 0
+      }
+    ]
+  },
+  "identity": {
+    "cas": "107-43-7",
+    "cid": "247",
+    "formula": "C5H11NO2",
+    "iupac": "2-(trimethylazaniumyl)acetate",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:40772049 (GB — derivative of methylated glycine)",
+      "PubChem CID 247"
+    ],
+    "synonyms": [
+      "betaine",
+      "glycine betaine",
+      "oxyneurine",
+      "Trimethylglycine",
+      "lycine",
+      "Abromine",
+      "Trimethylglycocoll",
+      "Glycocoll betaine",
+      "Glycylbetaine",
+      "N,N,N-trimethylglycine",
+      "Trimethylaminoacetic acid",
+      "GLYCINEBETAINE",
+      "Cystadane",
+      "Betafin",
+      "CHEBI:17750",
+      "FEMA 4223"
+    ],
+    "synonyms_ru": [
+      "глицин-бетаин",
+      "триметилглицин",
+      "бетаин"
+    ],
+    "molar_mass_g_mol": 117.15,
+    "notes": "Томат не накапливает GB естественно (PMID:16608869, 35150305) — экзогенное применение обоснованно; GB — пищевая добавка/лекарство (Cystadane), входит в синонимы PubChem; CAS подтверждён RegistryID PubChem."
+  },
+  "mode_of_action": {
+    "summary": "Совместимый осмолит (compatible solute) и стабилизатор макромолекул: защищает PSII/Rubisco и мембраны (PMID:40772049, 35150305). Индуцирует H2O2-опосредованные антиоксидантные механизмы (каталаза/CAT1, PMID:16608869, 15500464). При соли повышает фотосинтез и синтез хлорофилла (PMID:42121052), поддерживает K+/Na+ гомеостаз (снижает K+ efflux, PMID:28224920). Эффективен при соли, chilling, жаре, засухе и вирусном стрессе; генотип-зависимость отмечена (PMID:30388672).",
+    "evidence": [
+      "PMID:16608869",
+      "PMID:15500464",
+      "PMID:19336390",
+      "PMID:42121052",
+      "PMID:28224920",
+      "PMID:35150305",
+      "PMID:40772049"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 60,
+        "europe_pmc": 1278,
+        "culture_mentioned": 20
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "5 mM GB (претретмент) снимает ингибирование роста томата при солевом стрессе; повышает хлорофилл, фотосинтез (стоматы, ферменты цикла Кальвина), регулирует m6A-метилтрансферазы",
+          "context": "Солевой стресс в защищённом грунте (засоление субстрата); рассада томата",
+          "dosage_normalized": {
+            "original": "5 mM",
+            "ppm_equivalent": 585.75,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": "PubChem CID 247 (MW 117.15)",
+            "note": "ppm ≈ mg/L для водных растворов; 5 mM × 117.15 = 585.75 mg/L ≈ 586 ppm — в пределах CSV-диапазона 100-1000 ppm"
+          },
+          "conditions": {
+            "stage": "seedlings (претретмент)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "претретмент раствором GB",
+            "stress": "salt (засоление почвы/субстрата)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "рост восстановлен; хлорофилл и фотосинтез повышены"
+          },
+          "sources": [
+            {
+              "pmid": "42121052",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12870-026-08861-8",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13339322/"
+            }
+          ],
+          "quote": "5 mM GB pretreatment alleviated the inhibitory effect of salt stress on the growth of tomato plants."
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный GB снимает солевое ингибирование роста проростков томата (cv. Patio, F144); протеомные сети PSII, Rubisco, SOD",
+          "context": "Проростки 7 дней, солевой стресс",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "доза в аннотации не указана"
+          },
+          "conditions": {
+            "stage": "7-d-old seedlings",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "экзогенное нанесение GB",
+            "stress": "salt"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "ингибирование роста частично снято; 6 белков Patio / 2 белка F144 изменены >2×"
+          },
+          "sources": [
+            {
+              "pmid": "19336390",
+              "year": 2009,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1093/jxb/erp075",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2682497/"
+            }
+          ],
+          "quote": "GB could alleviate the inhibition of tomato growth induced by salt stress through changing the expression abundance of six proteins in Patio and two proteins in 'F144' more than twice."
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный GB фолиарно повышает устойчивость томата (Moneymaker) к chilling: каталаза/CAT1, H2O2-сигналинг; эффект сильнее у молодых растений и ослабевает через ~1 неделю после обработки",
+          "context": "Chilling-стресс; фолиарный спрей",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "доза в аннотации не указана (в полном тексте — спрей; GB определяется в цитозоле, 0.6-22% в хлоропластах)"
+          },
+          "conditions": {
+            "stage": "young plants (эффект у молодых сильнее)",
+            "bbch_stages": [],
+            "temperature_range": "chilling (<10°C по PMID:15500464)",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "stress": "chilling"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "каталаза и CAT1 выше; H2O2 ниже в течение 2 дней chilling"
+          },
+          "sources": [
+            {
+              "pmid": "16608869",
+              "year": 2006,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1093/pcp/pcj041",
+              "oa_url": null
+            },
+            {
+              "pmid": "35150305",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1007/s00299-022-02839-0",
+              "oa_url": null
+            }
+          ],
+          "quote": "Although its effect was most pronounced in younger plants, this benefit was diminished 1 week after GB application."
+        },
+        {
+          "type": "effect",
+          "value": "codA-трансгенные томаты (эндогенный GB) устойчивее к соли И водному стрессу: выше RWC, хлорофилл, пролин; после chilling — на 10-30% больше плодов; K+/Na+ гомеостаз улучшен и экзогенным GB",
+          "context": "Трансгенные линии (Moneymaker, Micro-Tom): доказательство роли GB при drought+salt; экзогенный GB также снижал NaCl-индуцированный K+ efflux в WT",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "GB в листьях трансгенных линий 1.9-3.4 μmol/g FW (PMID:32860517); достаточно 0.1 μmol/g FW (PMID:15500464)"
+          },
+          "conditions": {
+            "stage": "whole plants (от прорастания до плодоношения)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "генетическая инженерия (codA/BADH) + экзогенный GB",
+            "stress": "salt + water stress (drought), chilling"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 4,
+            "p_value": null,
+            "effect_size": "10-30% больше урожая после chilling; RWC/хлорофилл/пролин выше при соли и засухе"
+          },
+          "sources": [
+            {
+              "pmid": "21342716",
+              "year": 2011,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1016/j.jplph.2011.01.010",
+              "oa_url": null
+            },
+            {
+              "pmid": "28224920",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1016/j.plantsci.2017.01.012",
+              "oa_url": null
+            },
+            {
+              "pmid": "15500464",
+              "year": 2004,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/j.1365-313X.2004.02237.x",
+              "oa_url": null
+            },
+            {
+              "pmid": "23402752",
+              "year": 2013,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1016/j.bbrc.2013.02.001",
+              "oa_url": null
+            }
+          ],
+          "quote": "Mature leaves of codA-transgenic plants revealed higher levels of relative water content, chlorophyll content, and proline content than those of wild-type plants under salt and water stresses."
+        },
+        {
+          "type": "effect",
+          "value": "При засухе томата нано-ZnO, примированные бетаином (ZnOBt, 50-100 mg/kg почвы), повышали хлорофилл до 87%, урожай и ликопин; накопление бетаина в плодах",
+          "context": "In vitro (горшечный) эксперимент, засуха; бетаин в составе наноудобрения, не чистый GB — частично релевантно",
+          "dosage_normalized": {
+            "original": "50-100 mg/kg soil (ZnOBt NPs)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "доза бетаина в наночастицах не эквивалентна фолиарным ppm"
+          },
+          "conditions": {
+            "stage": "whole plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "нано-ZnO NPs, примированные betaine/proline, в почву",
+            "stress": "drought"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "хлорофилл +86-87%; урожай до 204 г/растение; ликопин +2.01%"
+          },
+          "sources": [
+            {
+              "pmid": "38906183",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1016/j.chemosphere.2024.142671",
+              "oa_url": null
+            }
+          ],
+          "quote": "ZnOP and ZnOBt also improved the chlorophyll content up to 86% and 87.16%, respectively."
+        },
+        {
+          "type": "efficacy",
+          "value": "GB повышает термотолерантность: codA-/BADH-трансгенные томаты (GB 1.9-3.4 μmol/g FW) — выше CO2-ассимиляция и активность PSII при жаре, ниже ROS/MDA; экзогенный GB защищает PSII при chilling и photoinhibition",
+          "context": "Высокотемпературный стресс и photoinhibition PSII",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "GB в листьях трансгенных линий 1.9-3.4 μmol/g FW (PMID:32860517)"
+          },
+          "conditions": {
+            "stage": "whole plants",
+            "bbch_stages": [],
+            "temperature_range": "high temperature (heat stress)",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "трансгенные линии + экзогенный GB",
+            "stress": "heat"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "PSII-активность и CO2-ассимиляция устойчивее к жаре у трансгенных линий"
+          },
+          "sources": [
+            {
+              "pmid": "32860517",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s00299-020-02581-5",
+              "oa_url": null
+            },
+            {
+              "pmid": "33394352",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s11120-020-00810-2",
+              "oa_url": null
+            }
+          ],
+          "quote": "The enhanced thermotolerance in transgenic plants is due to the positive role of GB in response to heat stress."
+        },
+        {
+          "type": "effect",
+          "value": "GB-предобработка семян при 14°C повышает всхожесть (GR, GI), жизнеспособность; снижает MDA/H2O2; повышает SOD/POD/CAT, пролин; регулирует GA/ABA",
+          "context": "Холодной стресс при прорастании (14°C)",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "доза в аннотации не указана"
+          },
+          "conditions": {
+            "stage": "seed germination (предобработка семян)",
+            "bbch_stages": [],
+            "temperature_range": "14°C",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "предобработка семян GB",
+            "stress": "cold (chilling)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "GR/GI и жизнеспособность семян повышены при 14°C"
+          },
+          "sources": [
+            {
+              "pmid": "36142386",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms231810474",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9502054/"
+            },
+            {
+              "pmid": "38584954",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2024.1332583",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10995342/"
+            }
+          ],
+          "quote": "Exogenous GB as a positive regulator effectively alleviated the inhibition of tomato seed germination under cold stress by different signal pathways."
+        }
+      ],
+      "gap": "Прямых полевых испытаний экзогенного GB на томате именно при засухе не найдено — засуха покрыта трансгенными codA-линиями (PMID:21342716) и нано-формами бетаина (PMID:38906183); дозы выше ~586 ppm (5 mM) на томате не проверены; BBCH-стадии в литературе не указаны."
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 25,
+        "europe_pmc": 829,
+        "culture_mentioned": 6
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Фолиарный спрей GB (отдельно или с хитозаном) на огурце снижает тяжесть и накопление CMV; повышает антиоксиданты (SOD, POD, CAT, APX, GR), осмопротекторы (пролин, сахара, GB), экспрессию PR1/PAL1",
+          "context": "Вирусный стресс (Cucumber mosaic virus) — единственное найденное прямое испытание экзогенного GB на огурце",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "доза GB в аннотации не указана"
+          },
+          "conditions": {
+            "stage": "vegetative (листья)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray (GB и/или хитозан)",
+            "stress": "biotic (CMV)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "снижение severity и титра CMV; рост антиоксидантов и защитных генов"
+          },
+          "sources": [
+            {
+              "pmid": "32429524",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/molecules25102341",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7288169/"
+            }
+          ],
+          "quote": "A significant reduction in disease severity and CMV accumulation in plants treated with GB and CHT, either alone or in combination, compared to untreated plants."
+        },
+        {
+          "type": "effect",
+          "value": "При засухе огурца фолиарные ZnO-NPs (25-100 mg/L) повышают эндогенный glycine betaine наряду с пролином, сахарами, аминокислотами — GB как индикатор/маркер стресс-толерантности, а не экзогенное применение",
+          "context": "Горшечный эксперимент, засуха; GB измерен как эндогенный осмолит",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "экзогенный GB не применялся"
+          },
+          "conditions": {
+            "stage": "seedlings",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарно ZnO-NPs (25 и 100 mg/L)",
+            "stress": "drought"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "GB, пролин, сахара повышены при ZnO-NPs в норме и при засухе"
+          },
+          "sources": [
+            {
+              "pmid": "34890613",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.chemosphere.2021.133202",
+              "oa_url": null
+            }
+          ],
+          "quote": "The content of proline, glycine betaine, free amino acids, and sugars increased due to ZnO NPs under normal and drought conditions."
+        },
+        {
+          "type": "effect",
+          "value": "При соли (50 mM NaCl) у проростков огурца накапливаются GB и пролин (эндогенно); GB — маркер осморегуляции при солевом стрессе",
+          "context": "Солевой стресс 50 mM NaCl; GB измерен как метаболит (в тексте — 'glutamate betaine')",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "эндогенный GB, не экзогенная обработка"
+          },
+          "conditions": {
+            "stage": "seedlings",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": null,
+            "stress": "salt (50 mM NaCl)"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "GB и пролин повышены при NaCl"
+          },
+          "sources": [
+            {
+              "pmid": "35804328",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1186/s12870-022-03717-3",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9264505/"
+            }
+          ],
+          "quote": "These treatments induced an increase in membrane lipid oxidation, as well as enhancement of anti-oxidase activities, proline content, and glutamate betaine."
+        }
+      ],
+      "gap": "Прямых испытаний экзогенного GB на огурце при засухе/засолении/жаре в PubMed и Europe PMC (первые страницы, ~1200 результатов) не найдено; подтверждено только применение при CMV (PMID:32429524) и роль GB как эндогенного осмолита (PMID:34890613, 35804328, 37631129, 37047175).",
+      "related_evidence": [
+        {
+          "pmid": "41299263",
+          "year": 2025,
+          "claim": "Fish waste priming ослабляет засуху у проростков огурца через повышение осмопротекторов (вкл. GB), антиоксидантов",
+          "note": "работа по огурцу при засухе, но GB — эндогенный маркер, не экзогенный"
+        },
+        {
+          "pmid": "41634573",
+          "year": 2026,
+          "claim": "Аллаntoin-citrulline синергия при соли огурца: GB среди метаболитов стресс-ответа",
+          "note": "GB как метаболит, не обработка"
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 7,
+        "europe_pmc": 385,
+        "culture_mentioned": 2
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "GB 1 mM (дип плодов 5 мин при 20°C, затем хранение 4°C 12 дней) повышает каталазу и антиоксидантную способность, снижает утечку электролитов и H2O2; CTS-GB-NPs (0.1%) дают лучшую твёрдость, антоцианы и меньшую гниль",
+          "context": "Постхарвест клубники (сохранность плодов при холодном хранении)",
+          "dosage_normalized": {
+            "original": "1 mM (дип 5 мин)",
+            "ppm_equivalent": 117.15,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": "PubChem CID 247 (MW 117.15)",
+            "note": "ppm ≈ mg/L; 1 mM × 117.15 = 117 ppm — в нижней части CSV-диапазона 100-1000 ppm"
+          },
+          "conditions": {
+            "stage": "postharvest fruit",
+            "bbch_stages": [],
+            "temperature_range": "20°C дип / 4°C хранение 12 дней",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "дип GB, CTS (0.1%), хитозан-обёрнутые GB NPs (0.1%)",
+            "stress": "холодное хранение (chilling injury postharvest)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "каталаза и антиоксидантная ёмкость выше, утечка электролитов и H2O2 ниже vs контроль"
+          },
+          "sources": [
+            {
+              "pmid": "38674545",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants13081136",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11054076/"
+            }
+          ],
+          "quote": "GB, CTS, and CTS-GB NPs treatments demonstrated elevated catalase activity and antioxidant capacity, coupled with lower electrolyte leakage and hydrogen peroxide levels."
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный GB (консервант холодного хранения) изменяет метаболом холодохранимой клубники (1H NMR): влияние на качество-связанные метаболиты",
+          "context": "Постхарвест, холодное хранение; метаболомный анализ",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 117.15,
+            "conversion_source": null,
+            "note": "доза в аннотации не указана"
+          },
+          "conditions": {
+            "stage": "postharvest fruit (cold storage)",
+            "bbch_stages": [],
+            "temperature_range": "cold storage (4°C-типичный режим)",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "экзогенная обработка GB",
+            "stress": "холодное хранение"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "метаболический профиль изменён при обработке GB"
+          },
+          "sources": [
+            {
+              "pmid": "35751219",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.foodchem.2022.133452",
+              "oa_url": null
+            }
+          ],
+          "quote": "The effects of exogenous application of GB on quality-related metabolites of cold-stored strawberries were investigated by NMR-based metabolomics."
+        }
+      ],
+      "gap": "Полевых испытаний GB при засухе/соли/жаре на клубнике не найдено (PubMed: 'betaine AND Fragaria AND (salt OR salinity OR drought)' = 0 результатов; Europe PMC strawberry — только постхарвест/нерелевантные); вся литература по клубнике ограничена постхарвестом и холодным хранением.",
+      "related_evidence": [
+        {
+          "pmid": "40943652",
+          "year": 2025,
+          "claim": "Экзогенный GB смягчает засуху у Passiflora edulis (два способа размножения) — аналогичный механизм возможен у клубники",
+          "note": "работа по GB при засухе, но культура вне фокуса"
+        },
+        {
+          "pmid": "40594885",
+          "year": 2025,
+          "claim": "GB-обработка продлевает срок хранения шампиньонов (снижение потемнения) — GB как универсальный консервант",
+          "note": "не ягодная культура, постхарвест-аналогия"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "ED50/TD50/therapeutic index и стойкость в почве для фокусных культур в прочитанной литературе не найдены. GB — природный метаболит растений и человека, пищевая добавка (FEMA 4223, PubChem CID 247; лекарство Cystadane), томат не накапливает его естественно (PMID:16608869). Фитотоксические дозы в прочитанных аннотациях не обсуждаются — не выдумывать."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy"
+  },
+  "contraindications": [
+    {
+      "condition": "Эффект однократной обработки GB ослабевает ~через 1 неделю (быстрое метаболизирование/транслокация)",
+      "effect": "Для длительной защиты требуются повторные обработки; однократное применение может быть недостаточно эффективным",
+      "severity": "medium",
+      "sources": [
+        "PMID:16608869"
+      ]
+    },
+    {
+      "condition": "Генотип-зависимость: у части генотипов томата (Marmande RAF) GB-путь при соли подавлен, а синтез GB может продуцировать H2O2",
+      "effect": "Солеустойчивость через GB улучшается не у всех генотипов; эффективность нужно проверять на конкретном сорте",
+      "severity": "medium",
+      "sources": [
+        "PMID:30388672"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "dosage",
+      "csv_value": "100-1000 ppm foliar spray",
+      "literature_summary": "Подтверждённые литературные дозы: 5 mM ≈ 586 ppm при соли томата (PMID:42121052) и 1 mM ≈ 117 ppm на клубнике постхарвест (PMID:38674545) — нижняя и средняя часть CSV-диапазона. Верхняя граница 1000 ppm (≈8.5 mM) и кратность обработок на фокусных культурах не проверены; частота: эффект однократной обработки ослабевает через ~1 неделю (PMID:16608869).",
+      "severity": "low",
+      "sources": [
+        "PMID:42121052",
+        "PMID:38674545",
+        "PMID:16608869"
+      ]
+    },
+    {
+      "csv_field": "crops",
+      "csv_value": "All crops in water stress",
+      "literature_summary": "Для томата водный стресс покрыт трансгенными codA-линиями (PMID:21342716) и нано-ZnO с бетаином (PMID:38906183); для огурца прямых испытаний экзогенного GB при засухе не найдено; для клубники литература — только постхарвест (PMID:38674545, 35751219). Утверждение «все культуры при засухе» переоценено.",
+      "severity": "medium",
+      "sources": [
+        "PMID:21342716",
+        "PMID:38906183",
+        "PMID:38674545"
+      ]
+    },
+    {
+      "csv_field": "moa",
+      "csv_value": "Stress protector (drought)",
+      "literature_summary": "GB-защита подтверждена при соли, chilling, жаре и вирусном стрессе, но роль именно при засухе на фокусных культурах подтверждена слабо (трансгенные линии/наноформы); у части генотипов томата GB не работает как совместимый осмолит при соли (PMID:30388672).",
+      "severity": "low",
+      "sources": [
+        "PMID:30388672",
+        "PMID:21342716"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Экзогенный GB надёжно подтверждён на томате (соль 5 mM ≈ 586 ppm, chilling, жара; verified-аннотации) и на клубнике (постхарвест, 1 mM ≈ 117 ppm); CSV-диапазон 100-1000 ppm частично подтверждён (117-586 ppm). Но заявленное применение «при засухе на всех культурах» покрыто слабо: засуха томата — только трансгенные/нано-формы, огурец при засухе/соли — нет прямых испытаний экзогенного GB, клубника — только постхарвест. Высокие дозы (>586 ppm) и кратность обработок не проверены. Отмечена генотип-зависимость (PMID:30388672)."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "Класс подтверждён: GB — N,N,N-триметилглицин, метилированное производное глицина ('derivative of methylated glycine', PMID:40772049) — семейство amino_acids_polyamines уместно. Механизм подтверждён: совместимый осмолит/стабилизатор макромолекул (osmoprotection). Нюанс: у части генотипов томата GB-путь при соли подавлен и возможна H2O2-продукция (PMID:30388672), а также показан H2O2-сигнальный компонент действия (PMID:16608869, 15500464) — вторично связан с antioxidant_defense; правок таксономии не требуется."
+  },
+  "sources_index": [
+    "PMID:42121052",
+    "PMID:19336390",
+    "PMID:30388672",
+    "PMID:38584954",
+    "PMID:36142386",
+    "PMID:35150305",
+    "PMID:33394352",
+    "PMID:32860517",
+    "PMID:28224920",
+    "PMID:21342716",
+    "PMID:23402752",
+    "PMID:38906183",
+    "PMID:16608869",
+    "PMID:15500464",
+    "PMID:17617827",
+    "PMID:40772049",
+    "PMID:32429524",
+    "PMID:34890613",
+    "PMID:35804328",
+    "PMID:37047175",
+    "PMID:37631129",
+    "PMID:38674545",
+    "PMID:35751219",
+    "PMID:41299263",
+    "PMID:41634573",
+    "DOI:10.1186/s12870-026-08861-8",
+    "DOI:10.1093/jxb/erp075",
+    "DOI:10.1093/pcp/pcj041"
+  ]
+}

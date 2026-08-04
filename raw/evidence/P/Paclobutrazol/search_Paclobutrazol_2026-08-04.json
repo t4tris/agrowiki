@@ -1,0 +1,703 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Paclobutrazol",
+    "csv_name": "Paclobutrazol",
+    "queried_name": "paclobutrazol"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "pubmed_fragaria",
+      "europepmc_strawberry_runner",
+      "pubchem"
+    ],
+    "failed": [],
+    "queries_used": [
+      "paclobutrazol AND tomato",
+      "paclobutrazol AND cucumber",
+      "paclobutrazol AND strawberry",
+      "paclobutrazol AND Fragaria",
+      "europepmc: paclobutrazol AND strawberry AND runner",
+      "pubchem: name/paclobutrazol/property + synonyms"
+    ],
+    "fallback_tries": []
+  },
+  "identity": {
+    "cas": "76738-62-0",
+    "cid": "73671",
+    "formula": "C15H20ClN3O",
+    "iupac": "(2S,3S)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1,2,4-triazol-1-yl)pentan-3-ol",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PubChem CID 73671 (триазольное кольцо в структуре; Chemical_Class=Triazole подтверждён)"
+    ],
+    "synonyms": [
+      "Bonzi",
+      "Cultar",
+      "Trimmit",
+      "Parlay",
+      "Clipper",
+      "PP 333",
+      "ICI-PP 333",
+      "(2RS,3RS)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1H-1,2,4-triazol-1-yl)pentan-3-ol",
+      "UNII-6PLV42R3ZA"
+    ],
+    "synonyms_ru": [
+      "паклобутразол"
+    ],
+    "molar_mass_g_mol": 293.79,
+    "notes": "CAS 76738-62-0, CID 73671, формула и масса подтверждены PubChem; хиральный препарат (2R,3R)/(2S,3S)-энантиомеры."
+  },
+  "mode_of_action": {
+    "summary": "Паклобутразол — синтетический триазольный ретардант, ингибитор биосинтеза гиббереллинов (блокирует энт-кауреноксидазу, цитохром P450), что снижает уровень биоактивных ГК и приводит к карликовости, укорочению эпикотиля, компактности рассады; у клубники подавляет рост усов, конвертируя их в коронки.",
+    "evidence": [
+      "PMID:41225862",
+      "PMID:41834248",
+      "PMID:33890635",
+      "PMID:37084381"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 12,
+        "europe_pmc": 0,
+        "culture_mentioned": 4
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "200 мг/л (200 ppm) фолиарно, стадия двух настоящих листьев → значительное уменьшение длины эпикотиля и размера клеток, карликовость",
+          "context": "Опрыскивание проростков томата (инбредная линия DH) 200 мг/л PBZ; транскриптомно-метаболомный анализ выявил пути флавоноидов, фенилпропаноидов, гормонов и сахарозы",
+          "dosage_normalized": {
+            "original": "200 mg·L-1",
+            "ppm_equivalent": 200,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": "ppm ≈ mg/L для водных растворов",
+            "note": "фолиарная обработка"
+          },
+          "conditions": {
+            "stage": "two-leaf stage (BBCH 12)",
+            "bbch_stages": [
+              "BBCH 12"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "stress": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "значительное сокращение эпикотиля"
+          },
+          "sources": [
+            {
+              "pmid": "41225862",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants14213311",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12608322/"
+            }
+          ],
+          "quote": "Опрыскивание 200 мг/л паклобутразола проростков томата на стадии двух листьев привело к значительному сокращению длины эпикотиля, увеличению числа клеток и уменьшению их размера."
+        },
+        {
+          "type": "dosage",
+          "value": "25–100 мг/л фолиарно (теплица) → повышение качества рассады, устойчивость к Alternaria solani, рост хлорофилла, утолщение кутикулы, компактность, продление хранения рассады",
+          "context": "Оценка PBZ против ранней пятнистости томата в теплице; рассада зелёнее, компактнее, с лучшей корневой системой; переносимость задержки пересадки",
+          "dosage_normalized": {
+            "original": "25, 50, 100 mg L-1",
+            "ppm_equivalent": "25–100",
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": "ppm ≈ mg/L для водных растворов",
+            "note": "фолиарно, теплица"
+          },
+          "conditions": {
+            "stage": "seedling (nursery)",
+            "bbch_stages": [
+              "BBCH 12"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "stress": "Alternaria solani (early blight)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "снижение болезни; рост хлорофилла и активности ферментов"
+          },
+          "sources": [
+            {
+              "pmid": "35161406",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants11030425",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8840709/"
+            }
+          ],
+          "quote": "Фолиарное применение PBZ в дозах 25, 50 и 100 мг/л повышало качество рассады томата и индуцировало устойчивость к ранней пятнистости через 7, 14 и 21 день после инокуляции."
+        },
+        {
+          "type": "effect",
+          "value": "PBZ (ингибитор биосинтеза ГК) усиливает регенерацию побегов (cut-budding) у томата",
+          "context": "Экзогенная ГК подавляла, а обработка PBZ стимулировала инициацию побегов через SlGRF1 (отрицательная регуляция ГК->SlGRF1); механистическое подтверждение ГК-пути",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "shoot regeneration (cut-dip-budding)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous treatment",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41834248",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/jipb.70219",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13326998/"
+            }
+          ],
+          "quote": "Обработка паклобутразолом (ингибитором биосинтеза ГК) оказывала противоположный эффект и стимулировала регенерацию побегов."
+        },
+        {
+          "type": "method",
+          "value": "PBZ применялся для снижения уровня салициловой кислоты в клетках томата в опытах по индукции устойчивости к нематодам",
+          "context": "Исследование ризосферного микробиома и устойчивости к Meloidogyne; PBZ как инструмент подавления SA-сигналинга",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "potted plants, glasshouse",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "soil/root treatment",
+            "stress": "root-knot nematodes, water stress"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "37895095",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms242015416",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10607013/"
+            }
+          ],
+          "quote": "Добавление паклобутразола, снижающего уровень салициловой кислоты в клетках, полностью устраняло подавляющий эффект Myco на заражение нематодами."
+        }
+      ],
+      "gap": "Данных о поливе в почву (soil drench 0.25–2 г/л) и о применении на 35-й день после посадки для томата не найдено; верхняя граница 300 мг/л превышает проверенные дозы (25–200 мг/л); эффект на цветение (задержка, уменьшение размера цветков) не подтверждён и не опровергнут.",
+      "related_evidence": []
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 12,
+        "europe_pmc": 0,
+        "culture_mentioned": 3
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Остатки PBZ в огурцах: энантиоселективная деградация при засолке, T1/2 изомеров 9.24 и 16.6 сут, межэнантиомерная конверсия",
+          "context": "Риски хиральных остатков PBZ в процессе переработки огурцов; влияние (2R,3R)-PBZ на микробное сообщество системы засолки",
+          "dosage_normalized": {
+            "original": "не указано в аннотации (остаточные концентрации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "post-harvest (pickling)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "pickling process",
+            "stress": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "T1/2 9.24 vs 16.6 сут (энантиомеры)"
+          },
+          "sources": [
+            {
+              "pmid": "31884369",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.jhazmat.2019.121882",
+              "oa_url": null
+            }
+          ],
+          "quote": "Период полураспада изомеров паклобутразола при засолке огурцов значительно различался (9.24 и 16.6 сут), при этом наблюдалась конверсия между двумя энантиомерами."
+        },
+        {
+          "type": "effect",
+          "value": "Мобильность PBZ в огурце: основная часть остатков концентрируется в кожуре (отношение пульпа/кожура < 0.8)",
+          "context": "Распределение 7 пестицидов (вкл. PBZ) в мякоти и кожуре огурца, яблока и черри-томата; сорбция 0.02–89.3%",
+          "dosage_normalized": {
+            "original": "не указано в аннотации (лабораторный тест со стандартными растворами)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "post-harvest",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "residue distribution test",
+            "stress": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "Q (пульпа/кожура) < 0.8"
+          },
+          "sources": [
+            {
+              "pmid": "27936707",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1021/acs.jafc.6b03084",
+              "oa_url": null
+            }
+          ],
+          "quote": "Для всех пестицидов, включая паклобутразол, отношение концентраций мякоть/кожура составляло <0.8, что подтверждает максимальное содержание остатков в кожуре."
+        },
+        {
+          "type": "effect",
+          "value": "Ген CsPRE4 (PACLOBUTRAZOL-RESISTANCE4) регулирует растяжение клеток и удлинение усиков огурца; ГК действует выше по каскаду",
+          "context": "Молекулярный механизм: CsPRE4-CsPAR1-CsBEE1-CsEXPA12; экспрессия CsPRE4 индуцируется экзогенной ГК — подтверждение ГК-зависимости роста огурца, с которой конкурирует PBZ",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "tendril development (4 stages)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": null,
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "37084381",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1093/plphys/kiad245",
+              "oa_url": null
+            }
+          ],
+          "quote": "Гиббереллин стимулировал удлинение усиков, модулируя растяжение клеток, а экспрессия CsPRE4 индуцировалась экзогенной обработкой ГК."
+        }
+      ],
+      "gap": "Агрономических дозировок PBZ для огурца (ретардантный эффект, схемы применения) в выборке нет — найдены только работы по остаткам и молекулярной биологии; влияние на вегетативный рост огурца напрямую не документировано.",
+      "related_evidence": []
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 7,
+        "europe_pmc": 8,
+        "culture_mentioned": 5
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "PBZ предотвращает формирование усов и увеличивает число коронок у земляники лесной (Fragaria vesca, H4)",
+          "context": "GA — ключевой гормон роста усов; ингибитор биосинтеза ГК PBZ подавлял усы и повышал продукцию коронок; транскриптомный анализ пазушных почек (FveNAC43, FveMYB46, FveCESA7/8)",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "axillary bud development (4 stages)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous PBZ treatment",
+            "stress": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "усы → коронки"
+          },
+          "sources": [
+            {
+              "pmid": "40780106",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1016/j.plaphy.2025.110347",
+              "oa_url": null
+            }
+          ],
+          "quote": "Применение ингибитора биосинтеза гиббереллинов паклобутразола предотвращало образование усов и увеличивало продукцию коронок у земляники H4."
+        },
+        {
+          "type": "effect",
+          "value": "Обработка PBZ конвертирует усы в коронки у лесной земляники (F. vesca)",
+          "context": "Ген LAM (GRAS) необходим для образования усов и тычинок; ГК индуцировала рост усов из остаточных почек, PBZ — обратное превращение усов в коронки",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "axillary meristem initiation",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous PBZ treatment",
+            "stress": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "усы → коронки"
+          },
+          "sources": [
+            {
+              "pmid": "33890635",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1093/plphys/kiab184",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8331164/"
+            }
+          ],
+          "quote": "Обработка ингибитором биосинтеза гиббереллинов паклобутразолом конвертировала усы в коронки."
+        },
+        {
+          "type": "effect",
+          "value": "PBZ и GA3 не оказывали значимого эффекта на созревание земляники (неклимактерический тип)",
+          "context": "Профиль гормонов (IAA, ABA, GA1, кастастерон) от антезиса до полного созревания Fragaria × ananassa; NAA задерживал созревание, PBZ — нет",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "fruit development to ripening",
+            "bbch_stages": [
+              "BBCH 71-89"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous application",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "без значимого эффекта"
+          },
+          "sources": [
+            {
+              "pmid": "22791823",
+              "year": 2012,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1093/jxb/ers147",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3428006/"
+            }
+          ],
+          "quote": "Применение GA3, ингибитора биосинтеза гиббереллинов паклобутразола и АБК не оказало значимого эффекта на созревание."
+        },
+        {
+          "type": "effect",
+          "value": "PBZ обнаруживается в остатках регуляторов роста в плодах: 15.6% образцов (n=96) содержали ПГР, включая паклобутразол",
+          "context": "Валидированный метод QuEChERS-UHPLC-MS/MS для 28 ПГР в клубнике, винограде, мандаринах, яблоках, киви; мониторинг остатков",
+          "dosage_normalized": {
+            "original": "не указано в аннотации (остаточные концентрации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "post-harvest",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "residue monitoring",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "15.6% образцов с остатками ПГР"
+          },
+          "sources": [
+            {
+              "pmid": "31755653",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1002/jssc.201900771",
+              "oa_url": null
+            }
+          ],
+          "quote": "Анализ образцов показал, что 15.6% проб (n=96) содержали один или два вида регуляторов роста, включая паклобутразол."
+        },
+        {
+          "type": "efficacy",
+          "value": "Обзор: ПГР (ГК, НУК, триаконтанол, хлормекват) играют ключевую роль в росте, развитии и урожайности земляники; PBZ упоминается в контексте ретардантов",
+          "context": "Обзорное подтверждение применения ПГР на Fragaria × ananassa (созревание, качество плодов, контроль высоты) — контекст для ретардантного применения PBZ",
+          "dosage_normalized": {
+            "original": "не указано в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 293.79,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": null,
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "36466575",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "review",
+              "doi": "10.1016/j.heliyon.2022.e11959",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9712129/"
+            }
+          ],
+          "quote": "Регуляторы роста растений, такие как гиббереллин, НУК, триаконтанол и хлормекват, являются важными факторами, определяющими созревание, показатели зрелости и качество плодов земляники."
+        }
+      ],
+      "gap": "Нет литературы по влиянию PBZ на фотосинтетическую способность именно клубники (заявлено в CSV); дозировки PBZ для клубники в проверенных аннотациях не указаны.",
+      "related_evidence": [
+        {
+          "pmid": "35161406",
+          "year": 2022,
+          "claim": "PBZ повышает содержание хлорофилла у томата (25–100 мг/л)",
+          "note": "косвенная поддержка CSV-утверждения об усилении фотосинтетической способности, но культура — томат, а не клубника"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "ED50/TD50/терапевтический индекс из литературы не извлечены (не выдумывать). Узкий рабочий диапазон (CSV: 75 vs 300 ppm) подтверждается частично: эффекты у томата при 25–200 мг/л (PMID 35161406, 41225862), фитотоксичность при 300 мг/л проверенными источниками не документирована. Персистентность в почве (CSV: до 3 лет) источниками сессии не подтверждена; ближайшие данные — T1/2 энантиомеров 9.24/16.6 сут при засолке огурцов (PMID 31884369) и обнаружение остатков PBZ в плодах (PMID 31755653, 27936707)."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy"
+  },
+  "contraindications": [
+    {
+      "condition": "Вегетативное размножение клубники усами (получение дочерних растений)",
+      "effect": "PBZ подавляет образование усов и конвертирует усы в коронки — не применять на маточниках, предназначенных для размножения",
+      "severity": "medium",
+      "sources": [
+        "PMID:40780106",
+        "PMID:33890635"
+      ]
+    },
+    {
+      "condition": "Переработка огурцов (ферментация/засолка)",
+      "effect": "Остатки PBZ энантиоселективно нарушают микробное сообщество системы засолки и ингибируют метаболическую функцию микроорганизмов — риск для качества ферментированных продуктов",
+      "severity": "medium",
+      "sources": [
+        "PMID:31884369"
+      ]
+    },
+    {
+      "condition": "Потребление плодов с остатками",
+      "effect": "Остатки PBZ концентрируются в кожуре (пульпа/кожура < 0.8) — удаление кожуры снижает экспозицию",
+      "severity": "low",
+      "sources": [
+        "PMID:27936707",
+        "PMID:31755653"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "dosage",
+      "csv_value": "75–300 mg/l sprayed 35 days after planting",
+      "literature_summary": "В проверенной литературе по томату PBZ применялся фолиарно в 25–100 мг/л (рассада, устойчивость к Alternaria, PMID 35161406) и 200 мг/л на стадии двух листьев (карликовость эпикотиля, PMID 41225862); верхняя граница 300 мг/л и срок 35 дней после посадки источниками не подтверждены",
+      "severity": "medium",
+      "sources": [
+        "PMID:35161406",
+        "PMID:41225862"
+      ]
+    },
+    {
+      "csv_field": "result",
+      "csv_value": "delay flower development and reduce flower size",
+      "literature_summary": "У клубники PBZ не оказывал значимого эффекта на репродуктивные процессы (созревание, PMID 22791823); данных о задержке развития цветков и уменьшении их размера у целевых культур (томат/огурец/клубника) не найдено",
+      "severity": "low",
+      "sources": [
+        "PMID:22791823"
+      ]
+    },
+    {
+      "csv_field": "crops",
+      "csv_value": "Cereals, ornamentals, fruit trees",
+      "literature_summary": "Целевые культуры (томат, огурец, клубника) в CSV не указаны, однако для всех трёх найдена подтверждающая литература; дозировки CSV, вероятно, перенесены из культур, не входящих в фокус вики, что объясняет расхождение диапазонов",
+      "severity": "low",
+      "sources": [
+        "PMID:35161406",
+        "PMID:31884369",
+        "PMID:40780106"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "partial",
+    "reason": "Механизм (ингибирование биосинтеза ГК) и ключевые эффекты подтверждены сильными источниками 2012–2026 на всех трёх культурах: ретардантный эффект на томате (25–200 мг/л), подавление усов и стимуляция коронок у клубники, остаточность и распределение в огурце. Однако CSV-дозировки для целевых культур не проверены (soil drench 0.25–2 г/л, 75–300 мг/л, срок 35 дней), верхняя граница 300 мг/л противоречит проверенному диапазону, утверждение об усилении фотосинтеза клубники и персистентность в почве до 3 лет требуют дополнительных источников."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": false,
+    "mechanism_confirmed": true,
+    "corrections": [
+      {
+        "field": "class_family",
+        "from": "gibberellins",
+        "to": "synthetic_growth_regulators",
+        "reason": "Паклобутразол — синтетический триазольный ретардант (Chemical_Class=Triazole), ингибитор биосинтеза гиббереллинов (блокирует энт-кауреноксидазу, цитохром P450), а не гиббереллин; по семейству относится к синтетическим регуляторам роста"
+      }
+    ],
+    "notes": "Механизм gibberellin_action корректен: все проверенные работы подтверждают действие через подавление биосинтеза ГК (PMID 41834248, 37084381, 33890635, 41225862); классовая принадлежность требует исправления с 'gibberellins' на 'synthetic_growth_regulators'"
+  },
+  "sources_index": [
+    "PMID:41225862",
+    "DOI:10.3390/plants14213311",
+    "PMID:35161406",
+    "DOI:10.3390/plants11030425",
+    "PMID:41834248",
+    "DOI:10.1111/jipb.70219",
+    "PMID:37895095",
+    "DOI:10.3390/ijms242015416",
+    "PMID:31884369",
+    "DOI:10.1016/j.jhazmat.2019.121882",
+    "PMID:37084381",
+    "DOI:10.1093/plphys/kiad245",
+    "PMID:27936707",
+    "DOI:10.1021/acs.jafc.6b03084",
+    "PMID:40780106",
+    "DOI:10.1016/j.plaphy.2025.110347",
+    "PMID:33890635",
+    "DOI:10.1093/plphys/kiab184",
+    "PMID:22791823",
+    "DOI:10.1093/jxb/ers147",
+    "PMID:31755653",
+    "DOI:10.1002/jssc.201900771",
+    "PMID:36466575",
+    "DOI:10.1016/j.heliyon.2022.e11959",
+    "PubChem CID 73671"
+  ]
+}

@@ -1,0 +1,1180 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Methyl Jasmonate",
+    "csv_name": "MeJA",
+    "queried_name": "methyl jasmonate"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "pubmed_fragaria",
+      "pubmed_graymold",
+      "pubmed_botrytis",
+      "europepmc",
+      "openalex",
+      "pubchem"
+    ],
+    "failed": [],
+    "queries_used": [
+      "\"methyl jasmonate\"[Title/Abstract] AND tomato[Title/Abstract]",
+      "\"methyl jasmonate\"[Title/Abstract] AND cucumber[Title/Abstract]",
+      "\"methyl jasmonate\"[Title/Abstract] AND strawberry[Title/Abstract]",
+      "MeJA[Title/Abstract] AND Fragaria[Title/Abstract]",
+      "\"methyl jasmonate\"[Title/Abstract] AND \"gray mold\"[Title/Abstract]",
+      "\"methyl jasmonate\"[Title/Abstract] AND Botrytis[Title/Abstract]",
+      "Europe PMC: \"methyl jasmonate\" AND tomato|cucumber|strawberry",
+      "OpenAlex: methyl jasmonate tomato",
+      "PubChem: methyl jasmonate (property + synonyms)"
+    ],
+    "fallback_tries": []
+  },
+  "identity": {
+    "cas": "1211-29-6",
+    "cid": "5281929",
+    "formula": "C13H20O3",
+    "iupac": "methyl 2-[(1R,2R)-3-oxo-2-[(Z)-pent-2-enyl]cyclopentyl]acetate",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:11158538",
+      "PMID:35325290",
+      "PMID:41388739"
+    ],
+    "synonyms": [
+      "Methyl jasmonate",
+      "Jasmonic acid methyl ester",
+      "Methyl cis-jasmonate",
+      "(-)-Methyl jasmonate",
+      "(-)-Jasmonic acid methyl ester",
+      "3-oxo-2-(2-pentenyl)cyclopentaneacetic acid methyl ester"
+    ],
+    "synonyms_ru": [
+      "метилжасмонат"
+    ],
+    "molar_mass_g_mol": 224.3,
+    "notes": "CAS 1211-29-6 подтверждён PubChem (synonyms, CID 5281929). MeJA — летучий метиловый эфир жасмоновой кислоты; конверсия µM→ppm: 1 mM = 224.3 mg/L ≈ 224 ppm."
+  },
+  "mode_of_action": {
+    "summary": "MeJA — летучий сигнальный эфир жасмоновой кислоты (JA), проникает в лист через устьица (PMID:32033119). Индуцирует JA-сигналинг: H2O2 как вторичный мессенджер (PMID:11158538), MYC2-зависимые каскады, прайминг защитных генов (хитиназы, β-1,3-глюканазы, PGIP — PMID:28671619, PMID:32252456), фенольный метаболизм/PAL (PMID:31117506), терпенсинтазы FaTPS1/SlJIG (PMID:35325290, PMID:35293128), антоцианы/проантоцианидины (PMID:29899259, PMID:32457779). Усиливает устойчивость к некротрофам (Botrytis) и насекомым, повышает устойчивость к абиотическим стрессам (холод, жара, Cd, бор).",
+    "evidence": [
+      "PMID:11158538",
+      "PMID:32033119",
+      "PMID:35325290",
+      "PMID:32252456",
+      "PMID:31117506"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 255,
+        "europe_pmc": 5093,
+        "culture_mentioned": 255
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "MeJA повышает устойчивость плодов томата к Botrytis cinerea через синергизм JA-этилен-путей и активацию фенольного метаболизма (PAL, C4H, 4CL, POD)",
+          "context": "Постхарвест обработка плодов; блокирование этилен-перцепции 1-MCP ослабляет индуцированную MeJA устойчивость",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": "доза в полном тексте"
+          },
+          "conditions": {
+            "stage": "postharvest fruit",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "vapor/dip, не уточнено",
+            "stress": "Botrytis cinerea inoculation"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "31117506",
+              "year": 2019,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1021/acs.jafc.9b02135",
+              "oa_url": null
+            }
+          ],
+          "quote": "exogenous MeJA enhanced disease resistance, accompanied by the induction of endogenous JA biosynthesis and ethylene production, which led to the activation of the phenolic metabolism pathway"
+        },
+        {
+          "type": "efficacy",
+          "value": "Se в почву + фолиарный MeJA снижают серую гниль томата: инфекция листьев с 42.19% до 25.00%, витамин C +22.14%; рекрутинг антагонистов Bacillus subtilis/velezensis",
+          "context": "Полевое/теплично-лабораторное исследование, комбинированная обработка",
+          "dosage_normalized": {
+            "original": "foliar MeJA (доза в полном тексте)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "vegetative/fruiting plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "stress": "Botrytis cinerea"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "infection rate -40.7% relative"
+          },
+          "sources": [
+            {
+              "pmid": "35887486",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/jof8070731",
+              "oa_url": "https://www.mdpi.com/2309-608X/8/7/731"
+            }
+          ],
+          "quote": "Selenium application in soil combined with foliar spraying of methyl jasmonate could reduce Botrytis cinerea infection in tomato fruits and leaves... The infection rate of leaves decreased from 42.19% to 25.00%"
+        },
+        {
+          "type": "dosage",
+          "value": "0.25 mM MeJA (≈56 ppm) снижает вес личинок Helicoverpa armigera на томате; эффект 0.25 mM MeJA > 0.5 mM BTH",
+          "context": "Обработка растений томата экзогенными элиситорами, взвешивание личинок 3-7 дней после заражения",
+          "dosage_normalized": {
+            "original": "0.25 mM",
+            "ppm_equivalent": 56.1,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": "PubChem CID 5281929, MW 224.30; ppm ≈ mg/L для водных растворов",
+            "note": "0.25 mM × 224.3 = 56.1 mg/L ≈ 56 ppm"
+          },
+          "conditions": {
+            "stage": "вегетативные растения",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar, не уточнено",
+            "stress": "Helicoverpa armigera infestation"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "larval weight decline vs control"
+          },
+          "sources": [
+            {
+              "pmid": "42537888",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.gene.2026.150332",
+              "oa_url": null
+            }
+          ],
+          "quote": "The 0.25 mM MeJA resulted in a significantly greater reduction compared with 0.5 mM BTH"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA на breaker-стадии подавляет эндогенные JAs (JA-Ile −13%) и этилен (−33%), снижает 6 этилен-регулируемых летучих (geranyl acetone, 1-penten-3-one, 6-methyl-5-hepten-2-one и др.) — модуляция постхарвестного аромата",
+          "context": "Постхарвест, красные плоды 'FL 47' на стадии breaker",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": "доза в полном тексте"
+          },
+          "conditions": {
+            "stage": "breaker",
+            "bbch_stages": [
+              "BBCH 85"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "vapor/immersion, не уточнено",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "ethylene −33%, JA-Ile −13%"
+          },
+          "sources": [
+            {
+              "pmid": "41404138",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2025.1712703",
+              "oa_url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1712703/full"
+            }
+          ],
+          "quote": "MeJA treatment suppressed endogenous JAs (JA-Ile by 13%) and ethylene production by 33%"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA усиливает синтез ликопина у томата на СВЕТУ (SlMYC2→SlPSY1) и подавляет в ТЕМНОТЕ (SlPIF1a ингибирует SlMYC2)",
+          "context": "Постхарвест плоды; свет-зависимая регуляция",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "postharvest ripening",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": "light: эффект положительный; dark: подавление ликопина",
+            "formulation": "не уточнено",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41770901",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1002/advs.202513249",
+              "oa_url": null
+            }
+          ],
+          "quote": "In light, MeJA enhances lycopene synthesis by directly activating the expression of the SlPSY1 gene through the SlMYC2 transcription factor... In dark conditions, the accumulated SlPIF1a interacts with SlMYC2 inhibiting its activation"
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный MeJA повышает холодостойкость томата (SlMYB13→SlHSP17.7, через SlMYC2); восстанавливает холодоустойчивость даже у SlMYB13-нокаутов",
+          "context": "Проростки T2, обработка при 4°C",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "seedlings",
+            "bbch_stages": [],
+            "temperature_range": "4°C stress",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous application, не уточнено",
+            "stress": "cold stress"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "40545701",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/pce.70030",
+              "oa_url": null
+            }
+          ],
+          "quote": "exogenous MeJA application significantly increased cold resistance in the knockout plant"
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный MeJA восстанавливает термотолерантность JA-дефицитного мутанта spr2 (путь MYC2-JMJC3-HSP)",
+          "context": "Генетический/биохимический анализ теплового стресса",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "seedlings",
+            "bbch_stages": [],
+            "temperature_range": "heat stress",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous application",
+            "stress": "heat stress"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41355201",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/nph.70816",
+              "oa_url": null
+            }
+          ],
+          "quote": "The JA biosynthetic mutant spr2 exhibited reduced thermotolerance, which was rescued by exogenous methyl jasmonate"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA-индуцируемый фактор SlJIG (мишень MYC2) усиливает защиту томата от Phthorimaea absoluta и Helicoverpa armigera (α-томатин, каемпферол, терпены TPS12/α-гумулен) и от Botrytis cinerea",
+          "context": "Молекулярно-генетические исследования на растениях томата",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": "механистические работы, дозы MeJA для индукции в полном тексте"
+          },
+          "conditions": {
+            "stage": "plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous MeJA treatment",
+            "stress": "pest infestation, B. cinerea"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41355216",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/nph.70797",
+              "oa_url": null
+            },
+            {
+              "pmid": "35293128",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/jipb.13248",
+              "oa_url": null
+            }
+          ],
+          "quote": "SlJIG is a direct target of MYC2, forms a MYC2-SlJIG module, and functions in terpene biosynthesis and resistance against cotton bollworm and B. cinerea"
+        },
+        {
+          "type": "method",
+          "value": "H2O2 — вторичный мессенджер MeJA-индукции защитных генов томата (классическая модель)",
+          "context": "Классическая работа по JA/MeJA-сигналингу в томате",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": null,
+            "stress": "wounding/systemin"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "11158538",
+              "year": 2001,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1105/tpc.13.1.179",
+              "oa_url": "https://academic.oup.com/plcell/article-pdf/13/1/179/35422791/plcell_v13_1_179.pdf"
+            }
+          ],
+          "quote": "Hydrogen Peroxide Acts as a Second Messenger for the Induction of Defense Genes in Tomato Plants in Response to Wounding, Systemin, and Methyl Jasmonate"
+        }
+      ],
+      "gap": "Прямые полевые испытания дозировок MeJA в ppm (100-500 ppm как в CSV) для томата не найдены в проверенных абстрактах; большинство работ — постхарвест плодов или молекулярные. Нет работ по BBCH-фазам цветения томата с MeJA-обработками в проверенной выборке (запрос по flowering-фазам отдельно не проводился)."
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 30,
+        "europe_pmc": 1288,
+        "culture_mentioned": 30
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "MeJA 0.1/0.25/0.5 mM (≈22-112 ppm) на огурце: слабое влияние на половую экспрессию и урожай; менее эффективен, чем спермидин; при низких дозах эффект минимален",
+          "context": "Эксперимент с экзогенными регуляторами роста (весна/осень), оценка соотношения женских/мужских цветков, хлорофилл, антиоксиданты, урожай",
+          "dosage_normalized": {
+            "original": "0.1-0.5 mmol L-1",
+            "ppm_equivalent": 112.2,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": "PubChem CID 5281929, MW 224.30; 0.5 mM × 224.3 = 112 mg/L ≈ 112 ppm",
+            "note": "диапазон 22.4-112.2 ppm"
+          },
+          "conditions": {
+            "stage": "вегетативная фаза/цветение",
+            "bbch_stages": [
+              "BBCH 50-65"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не уточнено",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "менее эффективен, чем 0.75 mM Spd (+246% женских цветков, +125% урожай)"
+          },
+          "sources": [
+            {
+              "pmid": "41136943",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12870-025-07245-8",
+              "oa_url": "https://bmcplantbiol.biomedcentral.com/articles/10.1186/s12870-025-07245-8"
+            }
+          ],
+          "quote": "methyl jasmonate was less effective, particularly at lower dosages"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA вовлечён в H2S-облегчение кадмиевого стресса проростков огурца: снижение ROS (H2O2, O2·−), восстановление аскорбат-глутатионового цикла, хлорофилла и фотосинтеза; ингибиторы биосинтеза MeJA снимают положительный эффект H2S",
+          "context": "Проростки огурца при Cd-стрессе, обработки NaHS (донор H2S) и MeJA",
+          "dosage_normalized": {
+            "original": "optimal MeJA concentration (в полном тексте)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "seedlings",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не уточнено",
+            "stress": "cadmium stress"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "39859190",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms26020475",
+              "oa_url": "https://www.mdpi.com/1422-0067/26/2/475"
+            }
+          ],
+          "quote": "Both H2S and MeJA decreased the reactive oxygen species (ROS) level and ameliorated the negative effects of Cd stress"
+        },
+        {
+          "type": "effect",
+          "value": "Фолиарный MeJA восстанавливает жаростойкость огурца при подавленном JA-пути (CsNPF4.4 ингибирует JA; экзогенный MeJA снимает негативный эффект)",
+          "context": "Высокотемпературный стресс проростков огурца, трансгенные линии",
+          "dosage_normalized": {
+            "original": "foliar application (доза в полном тексте)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "seedlings",
+            "bbch_stages": [],
+            "temperature_range": "high temperature stress",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "stress": "heat stress"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "35574100",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.3389/fpls.2022.883876",
+              "oa_url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.883876/full"
+            }
+          ],
+          "quote": "CsNPF4.4 overexpression plants decreased high temperature tolerance accompanied by reducing the content of jasmonic acid (JA), but alleviated by foliar application of methyl jasmonate"
+        },
+        {
+          "type": "dosage",
+          "value": "MeJA 0.2-50 mM: бифазная, дозозависимая эмиссия стрессовых летучих (LOX-соединения, метанол, моно-/сесквитерпены) у огурца; дозы ≥ высоких подавляют ассимиляцию; 50 mM — летальная",
+          "context": "Лабораторные газообменные исследования (PTR-TOF-MS), листья Cucumis sativus; проникновение через устьица, темнота усиливает отклик",
+          "dosage_normalized": {
+            "original": "0.2-50 mM",
+            "ppm_equivalent": 11215.0,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": "PubChem CID 5281929, MW 224.30",
+            "note": "50 mM ≈ 11215 ppm — верхняя граница летальна; рабочие исследовательские дозы 0.2-5 mM"
+          },
+          "conditions": {
+            "stage": "leaves (vegetative)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": "darkness усиливает стресс-отклик",
+            "formulation": "vapor exposure",
+            "stress": "biotic stress simulation"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 3,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "28981785",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1093/jxb/erx244",
+              "oa_url": "https://academic.oup.com/jxb/article/68/16/4679/4079826"
+            },
+            {
+              "pmid": "32033119",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.3390/ijms21031018",
+              "oa_url": "https://www.mdpi.com/1422-0067/21/3/1018"
+            },
+            {
+              "pmid": "33879022",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "review",
+              "doi": "10.1080/15592324.2021.1917169",
+              "oa_url": "https://www.tandfonline.com/doi/full/10.1080/15592324.2021.1917169"
+            }
+          ],
+          "quote": "Treatments with exogenous MeJA concentrations ranging from mild (0.2 mM) to lethal (50 mM)... biphasic kinetics of elicitation of volatiles"
+        },
+        {
+          "type": "effect",
+          "value": "CsZAT10 (индуцируется MeJA) положительно регулирует устойчивость огурца к Bemisia tabaci через JA/SA/ROS-пути защиты",
+          "context": "Молекулярное исследование устойчивости к белокрылке",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": "MeJA как индуктор экспрессии гена"
+          },
+          "conditions": {
+            "stage": "plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": null,
+            "stress": "Bemisia tabaci infestation"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41876383",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1002/ps.70747",
+              "oa_url": null
+            }
+          ],
+          "quote": "The expression of CsZAT10 was significantly induced by infestation with B. tabaci and by defense-related signaling molecules such as salicylic acid, methyl jasmonate, and hydrogen peroxide"
+        }
+      ],
+      "gap": "По огурцу нет работ по защите от Botrytis с MeJA в проверенной выборке; большинство исследований — физиологические отклики (летучие, стресс) и молекулярные механизмы. Агрономическая эффективность MeJA на огурце изучена слабее, чем на томате/клубнике."
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 33,
+        "europe_pmc": 1171,
+        "culture_mentioned": 33
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Прехарвестные полевые обработки MeJA 250 µmol/L (≈56 ppm) от цветения: M3 (цветение + крупная зелёная ягода + спелая ягода) максимально повышают антоцианы, проантоцианидины, аскорбиновую кислоту и CAT при постхарвестном хранении; твёрдость и масса плодов не меняются",
+          "context": "Fragaria × ananassa 'Camarosa', 3 схемы обработок (M1/M2/M3) на разных фенофазах, оценка при хранении 0-72 ч",
+          "dosage_normalized": {
+            "original": "250 µmol L-1",
+            "ppm_equivalent": 56.1,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": "PubChem CID 5281929, MW 224.30; 250 µM × 224.3 = 56.1 mg/L ≈ 56 ppm",
+            "note": "ниже нижней границы CSV (100 ppm)"
+          },
+          "conditions": {
+            "stage": "цветение (M3), крупная зелёная ягода (M2/M3), красная спелая ягода (M1/M2/M3)",
+            "bbch_stages": [
+              "BBCH 60-65",
+              "BBCH 71-73",
+              "BBCH 85"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray (полевые обработки)",
+            "stress": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "32457779",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2020.00538",
+              "oa_url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2020.00538/full"
+            }
+          ],
+          "quote": "an increasing number of MeJA applications (M3 treatment) improve anthocyanin, PA, AAC, and CAT activity"
+        },
+        {
+          "type": "effect",
+          "value": "Прехарвестные обработки MeJA или хитозаном снижают заболеваемость серой гнилью (Botrytis cinerea) Fragaria chiloensis при постхарвестном хранении (48-72 ч после инокуляции) через прайминг PR-генов (β-1,3-глюканазы, хитиназы, PGIP)",
+          "context": "Плоды F. chiloensis, инокуляция B. cinerea, экспрессия генов 0-72 hpi",
+          "dosage_normalized": {
+            "original": "preharvest MeJA (доза в полном тексте)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "preharvest → postharvest storage",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "preharvest application",
+            "stress": "Botrytis cinerea"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "lower incidence at 48-72 hpi"
+          },
+          "sources": [
+            {
+              "pmid": "28671619",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms18071420",
+              "oa_url": "https://www.mdpi.com/1422-0067/18/7/1420"
+            },
+            {
+              "pmid": "26212995",
+              "year": 2016,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.foodchem.2015.05.107",
+              "oa_url": null
+            }
+          ],
+          "quote": "MeJA- and chitosan-treated fruit exhibited a lower incidence of B. cinerea infection than the control-treated at 48 and 72 hpi"
+        },
+        {
+          "type": "effect",
+          "value": "Прехарвест MeJA от цветения праймирует защиту (FaMYC2, FaJAZ1, хитиназы, β-1,3-глюканазы, PGIP) после инокуляции Botrytis, НО без значимых различий в заболеваемости серой гнилью vs контроль на 'Camarosa'",
+          "context": "Три полевые схемы MeJA (M1/M2/M3), постхарвест инокуляция B. cinerea",
+          "dosage_normalized": {
+            "original": "прехарвестные обработки (250 µmol L-1, по протоколу группы)",
+            "ppm_equivalent": 56.1,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": "PubChem CID 5281929; протокол как в PMID:32457779",
+            "note": "молекулярный прайминг подтверждён, фенотипический эффект не значим"
+          },
+          "conditions": {
+            "stage": "flowering (M3) → large green (M2/M3) → red ripe (M1/M2/M3)",
+            "bbch_stages": [
+              "BBCH 60-65",
+              "BBCH 71-73",
+              "BBCH 85"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar field applications",
+            "stress": "Botrytis cinerea inoculation"
+          },
+          "relevance": "directly_contradicts",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "no difference in gray mold incidence"
+          },
+          "sources": [
+            {
+              "pmid": "32252456",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants9040447",
+              "oa_url": "https://www.mdpi.com/2223-7747/9/4/447"
+            }
+          ],
+          "quote": "Although we did not find differences in gray mold incidence between the MeJA treatments and control, these results suggest that preharvest MeJA treatment from the flowering stage onwards (M3) primes defense responses"
+        },
+        {
+          "type": "dosage",
+          "value": "Постхарвест MeJA (16 ч при 20°C, затем 3°C 12 дней) повышает фитохимикаты (антоцианы, фенолы, антиоксиданты), активность PAL и GABA-шунта, снижает распад и заболеваемость",
+          "context": "Собранные плоды клубники, обработка паром/раствором",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": "доза в полном тексте"
+          },
+          "conditions": {
+            "stage": "postharvest",
+            "bbch_stages": [],
+            "temperature_range": "20°C 16h, затем 3±0.5°C",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не уточнено",
+            "stress": "cold storage senescence"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "lower decay incidence rate"
+          },
+          "sources": [
+            {
+              "pmid": "35691062",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.foodchem.2022.133418",
+              "oa_url": null
+            }
+          ],
+          "quote": "Treated fruit showed higher levels of total acids, anthocyanins, total phenolics, antioxidants, and phenylalanine ammonia-lyase activity, and lower levels of... decay incidence rate"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA повышает устойчивость клубники к Botrytis cinerea через индукцию FaTPS1 (терпенсинтаза) и эмиссию сесквитерпенов (гермакрен D) по пути FaMYC2→FaTPS1",
+          "context": "Плоды клубники, обработка MeJA, сверхэкспрессия/нокдаун FaTPS1",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "fruit",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous MeJA",
+            "stress": "Botrytis cinerea infection"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "35325290",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s00299-022-02854-1",
+              "oa_url": null
+            }
+          ],
+          "quote": "In strawberry fruits, methyl jasmonate (MeJA) induced FaTPS1 expression and quickly increased the terpene content... improved strawberry resistance against Botrytis cinerea infection"
+        },
+        {
+          "type": "dosage",
+          "value": "Фолиарный MeJA 25-100 µM (≈5.6-22.4 ppm) на клубнике 'Albion' при бор-токсичности: 50 µM оптимально (антиоксиданты, осмолиты, питание, качество плодов), 100 µM — слабее и непоследовательно при сильной токсичности",
+          "context": "Гидропоника, 4 уровня B (23-323 µM) × 4 концентрации MeJA (0-100 µM)",
+          "dosage_normalized": {
+            "original": "25-100 µM",
+            "ppm_equivalent": 22.4,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": "PubChem CID 5281929, MW 224.30; 100 µM × 224.3 = 22.4 mg/L ≈ 22 ppm",
+            "note": "диапазон 5.6-22.4 ppm — значительно ниже CSV 100-500 ppm"
+          },
+          "conditions": {
+            "stage": "vegetative/fruiting plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "stress": "boron toxicity"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41136892",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12870-025-07457-y",
+              "oa_url": "https://bmcplantbiol.biomedcentral.com/articles/10.1186/s12870-025-07457-y"
+            }
+          ],
+          "quote": "MeJA application—particularly at 50 µM—partially alleviated these adverse effects... higher MeJA concentration (100 µM) produced weaker or inconsistent effects under severe toxicity"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA каждые 3 недели в питомнике/культурообороте тепличной клубники снижает повреждения трипсами и размножение клещей, белокрылки и тли; индукция флавоноидных/фенольных гликозидов; без потери урожайности и качества",
+          "context": "Нейтральнодневная (everbearer) клубника в теплице, повторные обработки",
+          "dosage_normalized": {
+            "original": "повторные обработки каждые 3 недели (концентрация в полном тексте)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "nursery → cropping cycle",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не уточнено (spray)",
+            "stress": "thrips, spider mites, whitefly, aphids"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "34276745",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2021.695908",
+              "oa_url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2021.695908/full"
+            }
+          ],
+          "quote": "Thrips damage and reproduction by spider mites, whitefly and aphids were strongly reduced upon elicitor treatment... growth during production was not affected by MeJA application, as were fruit yield and quality"
+        },
+        {
+          "type": "effect",
+          "value": "MeJA повышает красноту кожицы и антоцианы (FaANS, FaUFGT) при созревании плодов клубники in vitro (48 ч); эндогенные MeJA/JMT-уровни снижаются в ходе созревания — MeJA как неактивное производное JA вовлечён в ранние этапы развития плода",
+          "context": "Система созревания in vitro, обработка MeJA и ингибитором биосинтеза JA-Ile (jarin-1)",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "fruit ripening (in vitro)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не уточнено",
+            "stress": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "29899259",
+              "year": 2018,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.3390/molecules23061433",
+              "oa_url": "https://www.mdpi.com/1420-3049/23/6/1433"
+            },
+            {
+              "pmid": "25046752",
+              "year": 2014,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1016/j.jplph.2014.06.004",
+              "oa_url": null
+            }
+          ],
+          "quote": "a higher redness of strawberry fruit skin and anthocyanin content in MeJA-treated fruits... In accordance with MeJA levels, JMT transcript levels decreased steadily during strawberry fruit ripening"
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный MeJA облегчает осмотический стресс клубники (PEG-засуха) подобно ALA: ↑ относительное содержание воды, развитие корней, антиоксиданты; JAs — необходимые сигналы в сети ALA-устойчивости",
+          "context": "Листья и корни клубники при 20% PEG 6000",
+          "dosage_normalized": {
+            "original": "не указана в абстракте",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 224.3,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "exogenous application",
+            "stress": "osmotic stress (PEG)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "39794713",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12870-025-06068-x",
+              "oa_url": "https://bmcplantbiol.biomedcentral.com/articles/10.1186/s12870-025-06068-x"
+            }
+          ],
+          "quote": "exogenous methyl jasmonate (MeJA) alleviated osmotic stress damages similarly to ALA"
+        }
+      ],
+      "gap": "Нет прямых испытаний доз 100-500 ppm как в CSV на клубнике: литературные эффективные дозы 25-250 µM (≈5.6-56 ppm). Данные по сортам ограничены ('Camarosa', 'Albion', F. chiloensis); для F. × ananassa 'Camarosa' фенотипический эффект на серую гниль не значим (PMID:32252456)."
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "ED50/TD50 в литературе не публиковались. Качественные ориентиры: 50 mM (≈11.2 g/L) MeJA летальна для листьев огурца (PMID:28981785); высокие дозы подавляют ассимиляцию и вызывают длительное закрытие устьиц (PMID:32033119); на клубнике 100 µM (≈22 ppm) даёт слабые/непоследовательные эффекты при сильном стрессе (PMID:41136892). MeJA — летучее соединение (T>25°C испаряется), остаточность в почве не документирована в проверенной литературе. Не выдумывать: данных по ED50/TD50 нет."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy",
+    "notes": "MeJA — природный растительный метаболит и сигнальная молекула, не пестицид; MRL/PHI не установлены и не найдены в проверенной литературе (EU Pesticides Database/OpenFoodTox/Codex не проверялись — нет подтверждённого статуса регулятора в абстрактах)."
+  },
+  "contraindications": [
+    {
+      "condition": "Антракноз клубники (Colletotrichum spp., гемибиотроф)",
+      "effect": "Экзогенный MeJA и повышенный эндогенный MeJA ПОВЫШАЮТ восприимчивость к антракнозу через петлю положительной обратной связи SnRK2.1-WRKY50-JAZ5 (усиление биосинтеза MeJA при инфекции); нокаут FveWRKY50 и сверхэкспрессия FveJAZ5 дают устойчивость",
+      "severity": "high",
+      "sources": [
+        "PMID:41388739"
+      ]
+    },
+    {
+      "condition": "Высокие дозы MeJA (≥100 µM на клубнике; ≥5 mM на огурце)",
+      "effect": "Слабые/непоследовательные эффекты при сильном стрессе (клубника, 100 µM); подавление ассимиляции, длительное закрытие устьиц и фитотоксичность при высоких дозах (огурец, 50 mM летальна)",
+      "severity": "medium",
+      "sources": [
+        "PMID:41136892",
+        "PMID:28981785",
+        "PMID:32033119"
+      ]
+    },
+    {
+      "condition": "Тёмное хранение постхарвестных плодов томата",
+      "effect": "В темноте MeJA подавляет накопление ликопина (SlPIF1a ингибирует SlMYC2→SlPSY1) — обработку постхарвестных плодов проводить на свету",
+      "severity": "low",
+      "sources": [
+        "PMID:41770901"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "dosage",
+      "csv_value": "Apply 100-500 ppm foliar spray",
+      "literature_summary": "Эффективные литературные дозы ниже: клубника прехарвест 250 µmol/L ≈ 56 ppm (PMID:32457779), бор-стресс 25-100 µM ≈ 5.6-22 ppm (PMID:41136892), томат 0.25 mM ≈ 56 ppm против H. armigera (PMID:42537888), огурец 0.1-0.5 mM ≈ 22-112 ppm (PMID:41136943). Верхняя граница CSV (500 ppm ≈ 2.2 mM) превышает типичные эффективные дозы и приближается к диапазонам с фитотоксичностью (высокие дозы подавляют ассимиляцию у огурца, PMID:28981785, PMID:32033119)",
+      "severity": "medium",
+      "sources": [
+        "PMID:32457779",
+        "PMID:41136892",
+        "PMID:42537888",
+        "PMID:41136943",
+        "PMID:28981785"
+      ]
+    },
+    {
+      "csv_field": "result",
+      "csv_value": "reduce the occurrence of gray mold after harvest",
+      "literature_summary": "Подтверждено для F. chiloensis (прехарвест MeJA: ниже заболеваемость B. cinerea при хранении, PMID:28671619, PMID:26212995), постхарвест клубники (PMID:35691062) и томата (PMID:31117506, PMID:35887486). Однако на F. × ananassa 'Camarosa' прехарвестные MeJA-схемы не дали значимых различий в заболеваемости серой гнилью, несмотря на прайминг защитных генов (PMID:32252456) — эффект зависит от сорта/протокола",
+      "severity": "low",
+      "sources": [
+        "PMID:28671619",
+        "PMID:26212995",
+        "PMID:35691062",
+        "PMID:31117506",
+        "PMID:35887486",
+        "PMID:32252456"
+      ]
+    },
+    {
+      "csv_field": "result",
+      "csv_value": "Promotes the maturation and development of strawberry fruit during ripening",
+      "literature_summary": "Эндогенные MeJA и JMT снижаются по мере созревания клубники — MeJA как неактивное производное JA участвует в ранних этапах развития плода (PMID:25046752). Экзогенный MeJA повышает антоцианы/проантоцианидины и качество (PMID:32457779, PMID:29899259), но прямых данных об ускорении/усилении самого процесса созревания нет",
+      "severity": "low",
+      "sources": [
+        "PMID:25046752",
+        "PMID:32457779",
+        "PMID:29899259"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "corrected",
+    "reason": "CSV-утверждения (защита от вредителей и Botrytis, стрессоустойчивость, холодостойкость, созревание клубники) подтверждены многочисленными прочитанными аннотациями на всех трёх фокусных культурах (≥8 работ на культуру, прямые экзогенные обработки). Требуются корректировки: (1) дозы — литературные эффективные 5.6-112 ppm, верхняя граница CSV 500 ppm рискованна; (2) контраиндикация — MeJA повышает восприимчивость клубники к антракнозу (PMID:41388739); (3) нюанс — на 'Camarosa' нет фенотипического снижения серой гнили (PMID:32252456); (4) летучесть — обработки вечером при T<25°C, плоды томата обрабатывать на свету (PMID:41770901). PHI/MRL не применимы (природный метаболит)."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family=jasmonates подтверждён (MeJA — метиловый эфир жасмоновой кислоты, PubChem CID 5281929; класс Jasmonates). mechanism=jasmonate_sar_defense подтверждён с оговоркой: MeJA действует через JA-сигналинг (MYC2/JAZ) и прайминг (ISR-подобный путь), строго не SAR (SA-зависимый); название условно объединяет JA-сигналинг и индуцированную защиту. Важная поправка для карточки: для гемибиотрофных патогенов (Colletotrichum — антракноз клубники) JA-путь может повышать восприимчивость (PMID:41388739)."
+  },
+  "sources_index": [
+    "PMID:11158538",
+    "PMID:28671619",
+    "PMID:26212995",
+    "PMID:31117506",
+    "PMID:35887486",
+    "PMID:41404138",
+    "PMID:41770901",
+    "PMID:42537888",
+    "PMID:41355216",
+    "PMID:41355201",
+    "PMID:40545701",
+    "PMID:35293128",
+    "PMID:41136943",
+    "PMID:39859190",
+    "PMID:35574100",
+    "PMID:28981785",
+    "PMID:32033119",
+    "PMID:33879022",
+    "PMID:41876383",
+    "PMID:32457779",
+    "PMID:32252456",
+    "PMID:35691062",
+    "PMID:35325290",
+    "PMID:41136892",
+    "PMID:34276745",
+    "PMID:29899259",
+    "PMID:25046752",
+    "PMID:39794713",
+    "PMID:41388739"
+  ]
+}

@@ -1,0 +1,1079 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Silicon",
+    "csv_name": "Silicon (Si)",
+    "queried_name": "silicon"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato_drought",
+      "pubmed_tomato_disease",
+      "pubmed_cucumber_pm",
+      "pubmed_cucumber_disease",
+      "pubmed_strawberry",
+      "pubmed_k_silicate_tomato",
+      "pubchem"
+    ],
+    "failed": [
+      {
+        "endpoint": "europepmc",
+        "reason": "соединение не установлено (нет ответа, exit code 1; вероятно IPv6-блокировка в среде сабагента)",
+        "query": "silicon AND tomato AND drought",
+        "retry_by_orchestrator": true
+      },
+      {
+        "endpoint": "openalex",
+        "reason": "timeout/соединение не установлено (2 попытки: python urllib и PowerShell Invoke-RestMethod)",
+        "query": "silicon tomato cucumber drought",
+        "retry_by_orchestrator": false
+      }
+    ],
+    "queries_used": [
+      "silicon AND tomato AND drought",
+      "silicon AND tomato AND disease",
+      "silicon AND tomato AND foliar",
+      "potassium silicate AND tomato",
+      "silicon AND cucumber AND powdery mildew",
+      "silicon AND cucumber AND disease",
+      "silicon AND strawberry",
+      "silicon AND strawberry AND disease",
+      "PubChem name=silicon property=MolecularFormula,MolecularWeight,IUPACName"
+    ],
+    "fallback_tries": []
+  },
+  "identity": {
+    "cas": "7440-21-3",
+    "cid": "5461123",
+    "formula": "Si",
+    "iupac": "silicon",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:26941762",
+      "PMID:30812924",
+      "PMID:36311065"
+    ],
+    "synonyms": [
+      "silicon",
+      "Si",
+      "silicium",
+      "potassium silicate (K2SiO3)",
+      "sodium silicate",
+      "silicic acid",
+      "SiO2 nanoparticles"
+    ],
+    "synonyms_ru": [
+      "кремний",
+      "силикат калия",
+      "силикат натрия",
+      "кремниевая кислота"
+    ],
+    "molar_mass_g_mol": 28.085,
+    "notes": "Элемент Si (CID 5461123). В агропрактике применяется в виде силикатов K/Na, кремниевой кислоты, стабилизированного Si и SiO2-наночастиц. Si — beneficial/quasi-essential element: не токсичен в агрономических дозах, MRL/PHI неприменимы (не пестицид)."
+  },
+  "mode_of_action": {
+    "summary": "Si повышает устойчивость к абиотическим (засуха, засоление) и биотическим (бактериальное/фузариозное увядание, альтернариоз, мучнистая роса, Botrytis, Tuta absoluta) стрессам через: (1) укрепление клеточных стенок и накопление лигнина в корнях (PMID:38161004); (2) усиление антиоксидантной защиты — SOD/CAT/APX, снижение ROS/MDA (PMID:26941762, PMID:24607576, PMID:31811389); (3) повышение корневой гидравлической проводимости и водного статуса при засухе (PMID:26941762, PMID:28536765); (4) прайминг защитных путей SA/JA/ET и PTI (PMID:30754671, PMID:41425612); (5) прямое подавление вирулентности патогена — EPS/биоплёнка и гены вирулентности R. solanacearum (PMID:35805970); (6) накопление фитоалексинов (рамнетин у огурца против мучнистой росы, PMID:18944917).",
+    "evidence": [
+      "PMID:26941762",
+      "PMID:38161004",
+      "PMID:35805970",
+      "PMID:18944917",
+      "PMID:30754671",
+      "PMID:31811389"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 30,
+        "europe_pmc": 0,
+        "culture_mentioned": 15
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "2.5 mM силиката (корневое внесение) повышает засухоустойчивость",
+          "context": "Томат 'Zhongza No.9', водный стресс 10% PEG-6000; Si улучшил корневую гидравлическую проводимость, водный статус и фотосинтез",
+          "dosage_normalized": {
+            "original": "2.5 mM added silicate",
+            "ppm_equivalent": 70.2,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "PubChem CID 5461123",
+            "note": "ppm ≈ mg/L; 2.5 мМ Si = 70.2 мг Si/л"
+          },
+          "conditions": {
+            "stage": "рассада/вегетация (PEG-стресс в гидропонике)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "силикат (корневое), питательный раствор",
+            "stress": "засуха (PEG-6000 10%)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "улучшение водного статуса и роста при стрессе"
+          },
+          "sources": [
+            {
+              "pmid": "26941762",
+              "year": 2016,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2016.00196",
+              "oa_url": null
+            }
+          ],
+          "quote": "Si addition ameliorated the inhibition in tomato growth and photosynthesis, and improved water status under water stress. The root hydraulic conductance of tomato plants was significantly increased by added Si."
+        },
+        {
+          "type": "dosage",
+          "value": "0.5 мМ Si улучшает прорастание семян и антиоксидантную защиту при водном дефиците",
+          "context": "4 сорта томата, стресс 10% PEG-6000; повышение SOD/CAT, снижение O2- и H2O2 в проростках",
+          "dosage_normalized": {
+            "original": "0.5 mM exogenous silicon",
+            "ppm_equivalent": 14.0,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "PubChem CID 5461123",
+            "note": "0.5 мМ Si = 14 мг Si/л"
+          },
+          "conditions": {
+            "stage": "семена/проростки (bud seedlings)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "экзогенный Si в среде проращивания",
+            "stress": "водный дефицит (PEG-6000 10%)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "существенное улучшение всхожести при стрессе"
+          },
+          "sources": [
+            {
+              "pmid": "24607576",
+              "year": 2014,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.plaphy.2014.02.009",
+              "oa_url": null
+            }
+          ],
+          "quote": "The seed germination percentage was notably decreased in the four cultivars under water stress, and it was significantly improved by added silicon."
+        },
+        {
+          "type": "effect",
+          "value": "Si 0.5–2 мМ снижает индекс бактериального увядания (Ralstonia solanacearum) на 46.3–72.2%",
+          "context": "Корневое внесение Si; подавление EPS-синтеза, биоплёнки и генов вирулентности патогена",
+          "dosage_normalized": {
+            "original": "0.5-2 mM Si application",
+            "ppm_equivalent": 56.2,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "PubChem CID 5461123",
+            "note": "диапазон 0.5–2 мМ = 14–56 мг Si/л; ppm ≈ mg/L"
+          },
+          "conditions": {
+            "stage": "вегетация (почвенное заражение)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "корневое (питательный раствор/почва)",
+            "stress": "бактериальное увядание (R. solanacearum)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "снижение индекса болезни на 46.31–72.23%"
+          },
+          "sources": [
+            {
+              "pmid": "35805970",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms23136965",
+              "oa_url": null
+            }
+          ],
+          "quote": "Si application (0.5-2 mM) significantly reduces tomato bacterial wilt index by 46.31-72.23%."
+        },
+        {
+          "type": "effect",
+          "value": "2.0 мМ Si снижает индекс увядания на 19.2–52.7% (пот-эксперимент)",
+          "context": "Si-амендмент увеличил поглощение Si (больше в корнях), изменил структуру почвенного микробного сообщества",
+          "dosage_normalized": {
+            "original": "2.0 mM Si",
+            "ppm_equivalent": 56.2,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "PubChem CID 5461123",
+            "note": "2 мМ Si = 56.2 мг Si/л"
+          },
+          "conditions": {
+            "stage": "вегетация, пот-эксперимент",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "почвенный амендмент (корневое)",
+            "stress": "бактериальное увядание"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "снижение индекса болезни на 19.18–52.7%"
+          },
+          "sources": [
+            {
+              "pmid": "23371799",
+              "year": 2013,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1007/s12011-013-9611-1",
+              "oa_url": null
+            }
+          ],
+          "quote": "Exogenous 2.0 mM Si treatment reduced the disease index of bacterial wilt by 19.18% to 52.7% compared with non-Si-treated plants."
+        },
+        {
+          "type": "effect",
+          "value": "Si-прайминг (SA-JA crosstalk) усиливает системную устойчивость к Alternaria solani",
+          "context": "Сорт 'Karoon'; снижение тяжести болезни и экспансии поражений, сохранение фотосинтеза, усиление антиоксидантной защиты",
+          "dosage_normalized": {
+            "original": "доза не указана в аннотации (Si supplementation)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "молекулярный механизм, дозировка не приведена"
+          },
+          "conditions": {
+            "stage": "вегетация",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "корневое/субстрат (не уточнено в аннотации)",
+            "stress": "ранняя пятнистость (Alternaria solani)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "значимое снижение тяжести болезни и поражения"
+          },
+          "sources": [
+            {
+              "pmid": "41425612",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s12298-025-01682-3",
+              "oa_url": null
+            }
+          ],
+          "quote": "Si supplementation significantly reduced disease severity and lesion expansion, preserved photosynthetic function, and mitigated oxidative damage in infected plants."
+        },
+        {
+          "type": "effect",
+          "value": "Si-добавки улучшают устойчивость к ранней пятнистости (A. solani): задержка симптомов, снижение тяжести",
+          "context": "Экспрессия PR-генов и JA-маркеров (PR3, LOXD, JERF3) повышена; усиление активности SOD, CAT, APX, GR, POD",
+          "dosage_normalized": {
+            "original": "доза не указана в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "метод внесения не уточнён в аннотации"
+          },
+          "conditions": {
+            "stage": "вегетация",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не уточнено",
+            "stress": "Alternaria solani (ранняя пятнистость)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "задержка симптомов и снижение тяжести болезни"
+          },
+          "sources": [
+            {
+              "pmid": "33968576",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1007/s13205-021-02789-6",
+              "oa_url": null
+            }
+          ],
+          "quote": "Si-treated tomato plants showed improved resistance to Alternaria solani as there was delay in symptoms and reduced disease severity than non-Si-treated plants."
+        },
+        {
+          "type": "effect",
+          "value": "Фолиарные силикаты Ca/K подавляют Tuta absoluta и повышают урожайность томата в поле",
+          "context": "Полевой опыт: развитие вредителя 26.4–28.4 дня vs 22.8 контроль; плодовитость 106.5/63.3 vs 197 яиц; урожайность 18.7 (K) и 23.6 (Ca) т/га vs 13.3 контроль",
+          "dosage_normalized": {
+            "original": "дозы не указаны в аннотации",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "концентрации внесения не приведены в аннотации"
+          },
+          "conditions": {
+            "stage": "полевой цикл",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "кальций- и калий-силикаты (полевое внесение)",
+            "stress": "Tuta absoluta (вредитель)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "урожайность +41–78% vs контроль"
+          },
+          "sources": [
+            {
+              "pmid": "42106400",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-026-51521-y",
+              "oa_url": null
+            }
+          ],
+          "quote": "Both treatments reduced leaf mines, increased fruit weight, and enhanced yield to 18.73 t/ha (potassium) and 23.61 t/ha (calcium), compared with 13.26 t/ha in the control."
+        },
+        {
+          "type": "method",
+          "value": "Фолиарное внесение силиката калия в гидропонике томата: улучшает vigor и качество плодов, но менее эффективно, чем Ca-нитрат",
+          "context": "Томат 'Isabella', тепличная гидропоника; фолиарные K2SiO3 и Ca(NO3)2 в двух уровнях (дозы не указаны в аннотации); Si повысил WUE и структуру листа",
+          "dosage_normalized": {
+            "original": "два уровня фолиарного K2SiO3 (не указаны в аннотации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "концентрация фолиарного силиката не раскрыта"
+          },
+          "conditions": {
+            "stage": "вегетация–плодоношение (гидропоника)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарный спрей K2SiO3",
+            "stress": "без стресса (питание)"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "улучшение vigor и качества плодов"
+          },
+          "sources": [
+            {
+              "pmid": "41184311",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-025-22220-x",
+              "oa_url": null
+            }
+          ],
+          "quote": "Calcium nitrate foliar sprays were more effective than potassium silicate in promoting most growth and physiological traits... both calcium and silicon sprays improved plant vigor and fruit quality."
+        }
+      ],
+      "gap": "Фолиарное внесение Si на томате изучено мало (41184311 — фолиарный K2SiO3 без указания доз); доминируют корневые/гидропонные схемы (0.5–2.5 мМ). BBCH-коды в литературе не приводятся (фазы: семена/проростки, рассада, вегетация). Эффект Si при засухе ослабевает при длительности стресса >3–5 дней (PMID:28536765).",
+      "related_evidence": [
+        {
+          "pmid": "42295362",
+          "year": 2026,
+          "claim": "Модуль SlCBL-SlCML24 опосредует Si-усиленную устойчивость томата к бактериальному увяданию (только заголовок)",
+          "note": "аннотация не прочитана"
+        },
+        {
+          "pmid": "40543150",
+          "year": 2025,
+          "claim": "Si-модифицированный биочар повышает устойчивость томата к бактериальному увяданию через доступность Si в почве (только заголовок)",
+          "note": "аннотация не прочитана"
+        },
+        {
+          "pmid": "40200726",
+          "year": 2025,
+          "claim": "Оптимизация структуры SiO2-наночастиц усиливает засухоустойчивость томата (только заголовок)",
+          "note": "наночастицы SiO2, не растворимый Si"
+        }
+      ]
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 14,
+        "europe_pmc": 0,
+        "culture_mentioned": 12
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Калийный силикат 100–200 мг/л в гидропонном растворе слабо подавляет мучнистую росу (Sphaerotheca fuliginea); эффект максимален при 20°C",
+          "context": "49-дневный тепличный опыт, сорта Corona/Cilla/Farbio/Toska; при 100/150/200 мг/л — статистически значимое, но небольшое снижение МР; при 25–30°C подавление значительно слабее; урожайность не выросла",
+          "dosage_normalized": {
+            "original": "potassium silicate at 100, 150, or 200 mg/L (гидропонный раствор)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "концентрация указана в мг/л препарата K2SiO3, не в мг Si/л — конверсия без плотности/состава препарата некорректна"
+          },
+          "conditions": {
+            "stage": "вегетация (49 дней)",
+            "bbch_stages": [],
+            "temperature_range": "20–32°C (максимум эффекта при 20°C)",
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "гидропоника, K2SiO3 в питательном растворе",
+            "stress": "мучнистая роса (S. fuliginea)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "небольшое, но статистически значимое снижение МР; коммерчески незначимое"
+          },
+          "sources": [
+            {
+              "pmid": "30812924",
+              "year": 2003,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1094/PDIS.2003.87.2.177",
+              "oa_url": null
+            }
+          ],
+          "quote": "Susceptible cultivars irrigated with potassium silicate at 100, 150, or 200 mg/liter exhibited a slight but statistically significant reduction in PM over the course of a 49-day trial."
+        },
+        {
+          "type": "dosage",
+          "value": "Силикат натрия 1.0 и 1.7 мМ Si снижает тяжесть корневой гнили (Phytophthora melonis)",
+          "context": "Сорта 'Dominus' и 'Super Dominus'; повышение CAT/APX, отрицательная корреляция между Si и тяжестью болезни",
+          "dosage_normalized": {
+            "original": "1.0 and 1.7 mM Si (sodium silicate)",
+            "ppm_equivalent": 47.7,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "PubChem CID 5461123",
+            "note": "1.7 мМ Si = 47.7 мг Si/л; ppm ≈ mg/L"
+          },
+          "conditions": {
+            "stage": "вегетация",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "силикат натрия (корневое/субстрат)",
+            "stress": "Phytophthora melonis (корневая гниль)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "значимое снижение тяжести болезни при обеих концентрациях"
+          },
+          "sources": [
+            {
+              "pmid": "30743339",
+              "year": 2011,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1094/PDIS-05-10-0379",
+              "oa_url": null
+            }
+          ],
+          "quote": "Silicon nutrition at either concentration significantly reduced disease severity relative to the treatment that received no silicon."
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный Si (3 мМ — лучшая in vitro концентрация) даёт 69.3% эффективности контроля фузариозного увядания",
+          "context": "Fusarium oxysporum f. sp. cucumerinum; в почвенной культуре Si+Fo: +39.5% высоты, +94.9% диаметра стебля; повышение POD/CAT/APX и фотосинтеза",
+          "dosage_normalized": {
+            "original": "3 mmol·L-1 Si (in vitro оптимум); экзогенный Si в почвенной культуре",
+            "ppm_equivalent": 84.3,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "PubChem CID 5461123",
+            "note": "3 мМ Si = 84.3 мг Si/л (in vitro); почвенная доза в аннотации не уточнена"
+          },
+          "conditions": {
+            "stage": "рассада/вегетация (почвенная культура)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "корневое (почва); in vitro — 3 мМ Si в PDA",
+            "stress": "Fusarium oxysporum f. sp. cucumerinum"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "контроль эффективности 69.31% vs Fo"
+          },
+          "sources": [
+            {
+              "pmid": "36311065",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2022.1011859",
+              "oa_url": null
+            }
+          ],
+          "quote": "The control efficiency of Si+Fo was 69.31% compared with that of Fo treatment."
+        },
+        {
+          "type": "effect",
+          "value": "Гидропонное снабжение Si снижает индекс болезни мучнистой росы сеянцев огурца и повышает SiO2 в листьях",
+          "context": "Восприимчивый сорт; Si+инокуляция S. fuliginea: снижение O2-, H2O2, MDA; повышение CAT/POD; индекс болезни значительно снижен",
+          "dosage_normalized": {
+            "original": "soluble silicon supply (гидропоника; концентрация не указана в аннотации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "концентрация не приведена в аннотации (китайская статья)"
+          },
+          "conditions": {
+            "stage": "сеянцы (гидропоника)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "гидропоника, растворимый Si",
+            "stress": "Sphaerotheca fuliginea (мучнистая роса)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "значимое снижение индекса болезни"
+          },
+          "sources": [
+            {
+              "pmid": "15707331",
+              "year": 2004,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": null,
+              "oa_url": null
+            }
+          ],
+          "quote": "The disease index was significantly decreased by Si-supply."
+        },
+        {
+          "type": "effect",
+          "value": "Si-опосредованное накопление флавоноидного фитоалексина рамнетина — механизм устойчивости огурца к мучнистой росе",
+          "context": "Повышенная противогрибная активность инфицированных листьев; первый фитоалексин группы флавонолов в Cucurbitaceae",
+          "dosage_normalized": {
+            "original": "не применимо (механизм)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "фундаментальное исследование механизма"
+          },
+          "conditions": {
+            "stage": "вегетация",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "не применимо",
+            "stress": "Sphaerotheca fuliginea"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "выраженная противогрибная активность листовых экстрактов"
+          },
+          "sources": [
+            {
+              "pmid": "18944917",
+              "year": 1998,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1094/PHYTO.1998.88.5.396",
+              "oa_url": null
+            }
+          ],
+          "quote": "Conclusive evidence is presented that silicon is involved in the increased resistance of cucumber to powdery mildew by enhancing the antifungal activity of infected leaves."
+        }
+      ],
+      "gap": "Данные по засухе огурца с Si в PubMed отсутствуют (запрос 'silicon AND cucumber AND drought' дал 0 релевантных работ — результаты касаются ZnO NPs и др.). BBCH-коды не приводятся. Фолиарные схемы Si на огурце не найдены — преобладает гидропонное/корневое внесение. Эффективность против МР сильно зависит от температуры (максимум при 20°C).",
+      "related_evidence": [
+        {
+          "pmid": "27141739",
+          "year": 2015,
+          "claim": "Si влияет на транскрипты, связанные с инфекцией вируса огуречной мозаики (CMV) у огурца (только заголовок, без аннотации)",
+          "note": "статья в Commun Agric Appl Biol Sci, DOI отсутствует"
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 35,
+        "europe_pmc": 0,
+        "culture_mentioned": 11
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Фолиарный K2SiO3 2 мл/галлон (≈0.53 мл/л) — оптимальная доза: рост, урожайность и подавление серой гнили (Botrytis cinerea)",
+          "context": "Высокотуннельные полевые условия, сорта Flavorfest и Rutgers Scarlet; дозы 0/2/3/4 мл на галлон; 2 мл/галлон: максимум Si в листьях и фитолитов, значимое увеличение ширины куста и товарной урожайности; снижение роста B. cinerea in vitro и поражения плодов после уборки",
+          "dosage_normalized": {
+            "original": "2 mL potassium silicate (K2SiO3) per gallon of water",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "2 мл/галлон ≈ 0.53 мл/л жидкого препарата K2SiO3; конверсия в ppm Si невозможна без плотности/состава препарата; дозы 3–4 мл/галлон не давали дополнительного эффекта"
+          },
+          "conditions": {
+            "stage": "вегетация–плодоношение",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарный спрей K2SiO3",
+            "stress": "Botrytis cinerea (серая гниль) + постхарвест"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "значимое повышение урожайности; снижение инфекции B. cinerea"
+          },
+          "sources": [
+            {
+              "pmid": "42079716",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.7717/peerj.21151",
+              "oa_url": null
+            }
+          ],
+          "quote": "The 2 mL per gallon treatment showed the highest silicon concentration in leaves and phytolith formation... significantly increased plant width and marketable yield... reduced B. cinerea growth under in vitro conditions and lowered infection on postharvest-treated fruits."
+        },
+        {
+          "type": "dosage",
+          "value": "Фолиарный спрей 75 мг Si/л (K2SiO3) перед черенкованием повышает устойчивость дочерних растений к мучнистой росе",
+          "context": "Маточные растения 'Sulhyang', 'Maehyang', 'Kuemsil' с естественной инфекцией PM; K2SiO3 75 мг Si/л (дренч в среду, спрей маточных/дочерних растений, или растворимый Si-фертилизатор); прямое фолиарное опрыскивание дочерних растений рекомендовано",
+          "dosage_normalized": {
+            "original": "potassium silicate (K2SiO3) at a final concentration of 75 mg·L-1 Si (foliar spray)",
+            "ppm_equivalent": 75.0,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "концентрация уже указана как мг Si/л в источнике",
+            "note": "75 мг Si/л = 75 ppm Si (ppm ≈ mg/L)"
+          },
+          "conditions": {
+            "stage": "маточные/дочерние растения перед черенкованием (летнее размножение)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарный спрей K2SiO3 (также дренч/фертилизация)",
+            "stress": "Podosphaera aphanis (мучнистая роса)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "снижение поражённой площади листьев, подавление гиф"
+          },
+          "sources": [
+            {
+              "pmid": "35409165",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms23073803",
+              "oa_url": null
+            }
+          ],
+          "quote": "Direct foliar Si spray to the 'daughter' plants before cutting propagation is recommended to increase their resistance to powdery mildew."
+        },
+        {
+          "type": "effect",
+          "value": "Корневое внесение Si (фертигация) снижает поражение мучнистой росой и численность паутинного клеща",
+          "context": "2 полевых опыта на коммерческой ферме UK (2014–2015); AUDPC 152.7 vs 217.5 (без Si); T. urticae 1.43/1.83 vs 8.82/6.69 на лист",
+          "dosage_normalized": {
+            "original": "силикатный препарат через фертигацию (доза не указана в аннотации)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "концентрация не приведена; эффект на 2 сортах в 2 сезона"
+          },
+          "conditions": {
+            "stage": "полевой цикл",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фертигация (корневое)",
+            "stress": "Podosphaera aphanis + Tetranychus urticae"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "снижение AUDPC на ~30%; снижение численности клеща в 4–6 раз"
+          },
+          "sources": [
+            {
+              "pmid": "33290389",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1371/journal.pone.0241151",
+              "oa_url": null
+            }
+          ],
+          "quote": "The silicon treatments decreased the severity of both P. aphanis and T. urticae in two consecutive years on different cultivars."
+        },
+        {
+          "type": "dosage",
+          "value": "Фолиарные SiO2/Se/SiO2-наночастицы 50–100 мг/л восстанавливают клубнику при засухе; оптимум Se/SiO2 100 мг/л",
+          "context": "Стресс 30/60/100% FC; Se/SiO2 100 мг/л: сохранение пигментов, RWC, MSI, WUE, повышение CAT/APX/GPX/SOD, качества плодов (антоцианы, витамин C)",
+          "dosage_normalized": {
+            "original": "spraying SiO2, Se, Se/SiO2 nanoparticles at 50 and 100 mg L-1",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "наночастицы (не растворимый Si); ppm-эквивалент для наночастиц не рассчитывается"
+          },
+          "conditions": {
+            "stage": "вегетация–плодоношение",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарный спрей наночастиц",
+            "stress": "почвенная засуха (30/60/100% FC)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "улучшение RWC, WUE, антиоксидантной активности"
+          },
+          "sources": [
+            {
+              "pmid": "33077742",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-020-74273-9",
+              "oa_url": null
+            }
+          ],
+          "quote": "Plants treated with Se/SiO2 (100 mg L-1) preserved more of their photosynthetic pigments... presented higher levels of key osmolytes... increased relative water content (RWC), membrane stability index (MSI) and water use efficiency (WUE)."
+        },
+        {
+          "type": "dosage",
+          "value": "Фолиарные источники Si при засолении (50 мМ NaCl): оптимум стабилизированная кремниевая кислота и K2SiO3 при 30 мг Si/л",
+          "context": "Сравнение nano-silica, organic silica, K2SiO3, stabilized silicic acid при 0/10/30 мг Si/л; 30 мг/л повышает хлорофилл, снижает окислительный стресс, улучшает урожайность",
+          "dosage_normalized": {
+            "original": "foliar Si at 0, 10, 30 mg Si L-1 (4 источника)",
+            "ppm_equivalent": 30.0,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": "концентрация указана как мг Si/л в источнике",
+            "note": "30 мг Si/л = 30 ppm Si"
+          },
+          "conditions": {
+            "stage": "вегетация",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарный спрей (4 источника Si)",
+            "stress": "засоление 50 мМ NaCl"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "значимое улучшение пигментов и урожайности при 30 мг Si/л"
+          },
+          "sources": [
+            {
+              "pmid": "41457109",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-025-34089-x",
+              "oa_url": null
+            }
+          ],
+          "quote": "Stabilized silicic acid and potassium silicate at 30 mg L-1 significantly enhanced photosynthetic pigment concentrations, reduced oxidative stress, and improved yield under salt stress."
+        },
+        {
+          "type": "method",
+          "value": "Фолиарный Si-аминохелат 4 мл/л + P 15 кг/га даёт максимум урожайности (+68%) и антиоксидантных свойств",
+          "context": "Карбонатные почвы с дефицитом P; Si-аминохелат 0/2/4 мл/л при P 0/7.5/15/30 кг/га; повышение листового P и Si, фенолов, флавоноидов, витамина C",
+          "dosage_normalized": {
+            "original": "Si-aminochelate 0, 2, 4 mL/L foliar",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 28.085,
+            "conversion_source": null,
+            "note": "коммерческий препарат; конверсия в ppm Si невозможна без состава"
+          },
+          "conditions": {
+            "stage": "вегетация–плодоношение (теплица)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "photoperiod": null,
+            "formulation": "фолиарный спрей Si-аминохелата",
+            "stress": "дефицит P (карбонатная почва)"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "урожайность +68.33% vs контроль"
+          },
+          "sources": [
+            {
+              "pmid": "41366309",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12870-025-07735-9",
+              "oa_url": null
+            }
+          ],
+          "quote": "The highest yield content (599.93 g) was obtained by foliar application of 4 mL/L of Si-aminochelate combined with 15 kg/h P, which showed an increase of 68.33% compared to the control treatment."
+        }
+      ],
+      "gap": "Прямых исследований по засухе клубники с растворимым Si (не наночастицами) в PubMed нет — есть только SiO2-наночастицы (PMID:33077742). BBCH-коды не приводятся. Данные по устойчивости к полеганию отсутствуют.",
+      "related_evidence": [
+        {
+          "pmid": "38140519",
+          "year": 2023,
+          "claim": "Биостимулятор на основе Si-хелатов улучшает рост и физиологические параметры микроразмноженной клубники (in vitro/рассадный этап)",
+          "note": "in vitro-этап, не полевые условия"
+        },
+        {
+          "pmid": "42075357",
+          "year": 2026,
+          "claim": "Si в комбинации с активированным углём повышает солеустойчивость клубники (только заголовок)",
+          "note": "аннотация не прочитана"
+        },
+        {
+          "pmid": "36556327",
+          "year": 2022,
+          "claim": "Si и гуминовая кислота снижают кадмиевый стресс у клубники",
+          "note": "тяжёлые металлы, не фокусная тема"
+        },
+        {
+          "pmid": "33975211",
+          "year": 2021,
+          "claim": "Si смягчает негативное действие сульфаметоксазола в почве на рост клубники",
+          "note": "загрязнитель почвы"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Si — beneficial element, не токсичен в агрономических дозах; ED50/TD50/therapeutic index для культур в отобранной литературе не приводятся. Зафиксированы не токсические, а технологические ограничения: ослабление эффекта при высоких температурах (PMID:30812924) и снижение отдачи при превышении оптимальной фолиарной дозы K2SiO3 (PMID:42079716)."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy",
+    "note": "Si не является пестицидом — PHI/MRL не применимы; ограничений остатков нет (источник: характер вещества, не требует EU Pesticides Database)"
+  },
+  "contraindications": [
+    {
+      "condition": "Высокая температура теплицы (24–32°C)",
+      "effect": "Подавление мучнистой росы огурца кремнием значительно ослабевает (максимум эффекта при 20°C); в жарких условиях Si сам по себе коммерчески неэффективен против МР",
+      "severity": "low",
+      "sources": [
+        "PMID:30812924"
+      ]
+    },
+    {
+      "condition": "Превышение оптимальной фолиарной дозы K2SiO3 (3–4 мл/галлон vs 2 мл/галлон у клубники)",
+      "effect": "Дополнительный эффект отсутствует — оптимальна умеренная доза (2 мл/галлон); избыточные дозы не усиливают накопление Si и урожайность",
+      "severity": "low",
+      "sources": [
+        "PMID:42079716"
+      ]
+    },
+    {
+      "condition": "Длительная засуха (сверх 3–5 дней исчерпания саморегуляции растения)",
+      "effect": "Митигирующее действие Si на томат ослабевает при слишком длительном стрессе",
+      "severity": "low",
+      "sources": [
+        "PMID:28536765"
+      ]
+    },
+    {
+      "condition": "Si не заменяет фунгициды при сильном фоне мучнистой росы огурца",
+      "effect": "Снижение МР статистически значимо, но не повысило урожайность плодов в условиях Флориды — нужна интеграция с другими мерами",
+      "severity": "low",
+      "sources": [
+        "PMID:30812924"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "dosage",
+      "csv_value": "1-2 g/L foliar spray",
+      "literature_summary": "В литературе по фокусным культурам преобладает КОРНЕВОЕ/гидропонное внесение Si: 0.5–2.5 мМ силиката ≈ 14–70 мг Si/л (PMID:26941762, PMID:35805970, PMID:23371799), 1.0–1.7 мМ натриевого силиката у огурца (PMID:30743339), 100–200 мг/л K2SiO3 в гидропонном растворе (PMID:30812924). Фолиарные дозы исследованы в основном на КЛУБНИКЕ и составляют 30–75 мг Si/л (PMID:41457109, PMID:35409165), 2 мл/галлон K2SiO3 ≈ 0.5–1 г/л препарата (PMID:42079716), Si-аминохелат 2–4 мл/л (PMID:41366309), SiO2 NPs 50–100 мг/л (PMID:33077742). Формулировка '1–2 г/л' реалистична для ЖИДКОГО препарата K2SiO3 (0.5–1 г/л ≈ диапазон), но 1–2 г/л элементарного Si эквивалентны ~36–71 мМ — вне исследованного диапазона; единицы необходимо уточнить (г/л препарата, а не г/л Si)",
+      "severity": "medium",
+      "sources": [
+        "PMID:26941762",
+        "PMID:35805970",
+        "PMID:23371799",
+        "PMID:30743339",
+        "PMID:30812924",
+        "PMID:41457109",
+        "PMID:35409165",
+        "PMID:42079716",
+        "PMID:41366309",
+        "PMID:33077742"
+      ]
+    },
+    {
+      "csv_field": "result",
+      "csv_value": "lodging resistance",
+      "literature_summary": "Прямых свидетельств устойчивости к полеганию у томата, огурца и клубники в отобранной литературе нет — классический эффект Si против полегания документирован для риса/злаков, а не для фокусных культур. Подтверждены 'drought tolerance' (PMID:26941762, PMID:24607576, PMID:33077742) и 'pathogen defense' (PMID:35805970, PMID:36311065, PMID:30812924, PMID:42079716)",
+      "severity": "low",
+      "sources": [
+        "PMID:26941762",
+        "PMID:35805970"
+      ]
+    },
+    {
+      "csv_field": "efficacy",
+      "csv_value": "HIGH",
+      "literature_summary": "Высокая эффективность подтверждается для засухи и болезней (снижение индекса бактериального увядания томата на 46–72%, контроль фузариоза огурца 69%), НО для мучнистой росы огурца эффект при 25–30°C слабый и коммерчески незначимый — эффективность сильно зависит от условий (температура, способ внесения)",
+      "severity": "low",
+      "sources": [
+        "PMID:35805970",
+        "PMID:36311065",
+        "PMID:30812924"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "corrected",
+    "reason": "Сильные доказательства по всем трём культурам (томат: засуха 6 работ + бактериальное увядание/альтернариоз 6 работ; огурец: МР, фузариоз, Phytophthora; клубника: МР, клещи, Botrytis, засоление, засуха через NPs). Требуется корректировка: (1) дозировка CSV '1-2 г/л фолиарно' — уточнить единицы (г/л препарата vs мг Si/л; фолиарные дозы в литературе 30–75 мг Si/л, корневые 0.5–2.5 мМ); (2) claim 'lodging resistance' не подтверждён для фокусных культур; (3) таксономия: mechanism следует заменить с nutrition_metabolism на antioxidant_defense."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": false,
+    "corrections": [
+      {
+        "field": "mechanism",
+        "from": "nutrition_metabolism",
+        "to": "antioxidant_defense",
+        "reason": "В отобранной литературе основной документированный механизм Si — усиление антиоксидантной защиты и водного статуса при стрессе (SOD/CAT/APX, снижение ROS/MDA, корневая гидравлическая проводимость, лигнин клеточных стенок, PMID:26941762, PMID:24607576, PMID:31811389, PMID:38161004) плюс прайминг защитных путей SA/JA/PTI при болезнях (PMID:30754671, PMID:41425612, PMID:35805970). Nutrition_metabolism не отражает основной механизм действия."
+      }
+    ],
+    "notes": "class_family=elements_minerals подтверждена (Si — beneficial element, класс 'Beneficial element' в CSV). Альтернативные кандидаты для mechanism: jasmonate_sar_defense / elicitor_immunity — для фитопатогенного аспекта; при выборе одного механизма рекомендован antioxidant_defense как наиболее полно охватывающий абиотический (засуха) и биотический (окислительный стресс при инфекции) компоненты."
+  },
+  "sources_index": [
+    "PMID:40200726",
+    "PMID:38161004",
+    "PMID:31811389",
+    "PMID:30349552",
+    "PMID:28536765",
+    "PMID:26941762",
+    "PMID:24607576",
+    "PMID:42295362",
+    "PMID:41425612",
+    "PMID:40543150",
+    "PMID:35805970",
+    "PMID:33968576",
+    "PMID:33368045",
+    "PMID:30754671",
+    "PMID:23371799",
+    "PMID:42106400",
+    "PMID:41184311",
+    "PMID:36311065",
+    "PMID:30812924",
+    "PMID:30743339",
+    "PMID:15707331",
+    "PMID:18944917",
+    "PMID:27141739",
+    "PMID:42079716",
+    "PMID:35409165",
+    "PMID:33290389",
+    "PMID:33077742",
+    "PMID:41457109",
+    "PMID:41366309",
+    "PMID:38140519",
+    "PMID:36556327",
+    "PMID:33975211",
+    "PMID:42075357",
+    "DOI:10.1016/j.ijbiomac.2023.129075",
+    "DOI:10.3389/fpls.2016.00196",
+    "DOI:10.1016/j.plaphy.2014.02.009",
+    "DOI:10.3390/ijms23136965",
+    "DOI:10.1007/s12011-013-9611-1",
+    "DOI:10.1007/s12298-025-01682-3",
+    "DOI:10.1007/s13205-021-02789-6",
+    "DOI:10.1038/s41598-026-51521-y",
+    "DOI:10.1038/s41598-025-22220-x",
+    "DOI:10.3389/fpls.2022.1011859",
+    "DOI:10.1094/PDIS.2003.87.2.177",
+    "DOI:10.1094/PDIS-05-10-0379",
+    "DOI:10.1094/PHYTO.1998.88.5.396",
+    "DOI:10.7717/peerj.21151",
+    "DOI:10.3390/ijms23073803",
+    "DOI:10.1371/journal.pone.0241151",
+    "DOI:10.1038/s41598-020-74273-9",
+    "DOI:10.1038/s41598-025-34089-x",
+    "DOI:10.1186/s12870-025-07735-9"
+  ]
+}
