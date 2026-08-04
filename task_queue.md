@@ -281,3 +281,4 @@ last_updated: 2026-08-04
 ## ✅ COMPLETED
 - [x] INGEST: CSV → 267 черновиков карточек
 - [x] PILOT (2026-08-04): GA3, IBA, Triacontanol (+TRIA), Artemisinin, Chitosan (+Chitooligosaccharides) — 5 сабагентов, 7 карточек, L1-проверка всех артефактов
+- [x] DEDUP (2026-08-04): Phosphite, Maleic Hydrazide, Serotonin, Humic Acid, Melatonin, Carbonic acid — дубли-строки объединены в одну карточку (claims в секции «Применение (CSV)», aliases + notes заполнены); валидация — по объединённым карточкам

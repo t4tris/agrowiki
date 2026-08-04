@@ -15,13 +15,14 @@ evidence_level: unverified
 last_checked: 
 next_review: 
 sources: []
-notes: []
+notes:
+  - "CSV-код Humic Acid встречается дважды с разными названиями: 'Humic substances' (ROOT_DEVELOPMENT, 2-5% drench/foliar) и 'Potassium Humate' (SOIL_APPLICATION, 2-10 кг/га) — объединены в одну карточку; при валидации уточнить CAS (гуминовые кислоты — смесь олигомеров, PubChem-идентичность условная)"
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: []
-aliases_ru: []
+aliases: ["Potassium Humate", "Humic substances", "Humic acid"]
+aliases_ru: ["гуминовые вещества", "гумат калия", "гуминовая кислота"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null

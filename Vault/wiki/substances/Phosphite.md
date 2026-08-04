@@ -15,13 +15,14 @@ evidence_level: unverified
 last_checked: 
 next_review: 
 sources: []
-notes: []
+notes:
+  - "CSV-код Phosphite встречается дважды (FOLIAR 0.5-1 кг/га HIGH + SOIL 2-4 кг/га MEDIUM) — обе строки объединены в одну карточку; при валидации проверять оба протокола"
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: []
-aliases_ru: []
+aliases: ["Phosphorous acid", "Phosphite", "Phosphonate"]
+aliases_ru: ["фосфористая кислота", "фосфит", "фосфонаты"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null

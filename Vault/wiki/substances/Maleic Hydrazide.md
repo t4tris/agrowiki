@@ -15,13 +15,14 @@ evidence_level: unverified
 last_checked: 
 next_review: 
 sources: []
-notes: []
+notes:
+  - "CSV-код Maleic Hydrazide встречается дважды (GROWTH_REGULATION 2000-8000 ppm HIGH + SOIL 2-8 кг/га постхарвест HIGH) — обе строки объединены; проверять оба протокола (антипрорастатель для картофеля/лука — основной claim)"
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: []
-aliases_ru: []
+aliases: ["MH", "Maleic hydrazide", "1,2-Dihydropyridazine-3,6-dione"]
+aliases_ru: ["малеиновый гидразид"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null

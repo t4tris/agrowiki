@@ -15,13 +15,14 @@ evidence_level: unverified
 last_checked: 
 next_review: 
 sources: []
-notes: []
+notes:
+  - "CSV-код Serotonin встречается дважды (FOLIAR 10-50 ppm + SEED 10-50 ppm) — объединены; проверять оба протокола"
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: []
-aliases_ru: []
+aliases: ["5-HT", "5-Hydroxytryptamine", "Serotonin"]
+aliases_ru: ["серотонин", "5-гидрокситриптамин"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null

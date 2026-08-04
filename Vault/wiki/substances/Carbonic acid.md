@@ -15,13 +15,14 @@ evidence_level: unverified
 last_checked: 
 next_review: 
 sources: []
-notes: []
+notes:
+  - "CSV-код Carbonic acid встречается дважды (FOLIAR 0.5-1% CO2-обогащённый раствор + SOIL 1-2 г/л бикарбонат в полив) — объединены; проверять оба протокола (физиологическая роль H2CO3/бикарбоната в фотосинтезе — основной вопрос валидации)"
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: []
-aliases_ru: []
+aliases: ["H2CO3", "Carbonic acid", "Bicarbonate"]
+aliases_ru: ["угольная кислота", "бикарбонат"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null

@@ -15,13 +15,14 @@ evidence_level: unverified
 last_checked: 
 next_review: 
 sources: []
-notes: []
+notes:
+  - "CSV-код Melatonin встречается дважды (FOLIAR 10-100 ppm + FRUIT 100 µM на клубнике) — объединены; claim '100 µM, клубника, задержка созревания' — приоритетный для валидации (культура в фокусе)"
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: []
-aliases_ru: []
+aliases: ["Melatonin", "N-acetyl-5-methoxytryptamine"]
+aliases_ru: ["мелатонин", "N-ацетил-5-метокситриптамин"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null
