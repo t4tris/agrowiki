@@ -33,19 +33,42 @@ def main(path):
         if k not in d:
             errors.append(f'отсутствует поле: {k}')
 
+    # --- searches.failed: retry_by_orchestrator (v1.3) ---
+    for i, f in enumerate(d.get('searches', {}).get('failed', [])):
+        if not isinstance(f, dict):
+            errors.append(f'searches.failed[{i}]: элемент не объект')
+            continue
+        if f.get('retry_by_orchestrator', False) is not False and not isinstance(f.get('retry_by_orchestrator'), bool):
+            errors.append(f'searches.failed[{i}].retry_by_orchestrator должен быть bool')
+
     # --- v1.3 type-check: conflicts/contraindications = массивы объектов, без null-заглушек ---
+    # Дефект 1/2: строки вместо dict и null-заглушки L1 отклоняет.
+    conflicts_req = ('csv_field', 'csv_value', 'literature_summary', 'severity', 'sources')
     for field in ('conflicts', 'contraindications'):
         val = d.get(field)
+        if val is None:
+            errors.append(f'{field}: null — должен быть пустым массивом []')
+            continue
         if not isinstance(val, list):
             errors.append(f'{field}: должен быть массивом, получено {type(val).__name__}')
             continue
         for i, item in enumerate(val):
             if not isinstance(item, dict):
                 errors.append(f'{field}[{i}]: элемент не объект (строка вместо dict?)')
-            elif any(v is None for v in item.values()):
+                continue
+            if any(v is None for v in item.values()):
                 errors.append(f'{field}[{i}]: содержит null-заглушку — заменить на пустой массив/убрать')
-            if field == 'contraindications' and item.get('severity') not in SEVERITY:
-                errors.append(f'{field}[{i}].severity невалиден: {item.get("severity")}')
+            if field == 'conflicts':
+                for req in conflicts_req:
+                    if req not in item:
+                        errors.append(f'conflicts[{i}]: отсутствует обязательное поле "{req}"')
+                if item.get('severity') not in SEVERITY:
+                    errors.append(f'conflicts[{i}].severity невалиден: {item.get("severity")}')
+                if not isinstance(item.get('sources', []), list):
+                    errors.append(f'conflicts[{i}].sources должен быть массивом')
+            elif field == 'contraindications':
+                if item.get('severity') not in SEVERITY:
+                    errors.append(f'contraindications[{i}].severity невалиден: {item.get("severity")}')
 
     for crop, cv in d.get('crops', {}).items():
         if cv.get('status') not in STATUSES:

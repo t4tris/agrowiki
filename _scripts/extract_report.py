@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Извлечь JSON-отчёт сабагента из output-файла и сохранить в vault."""
+"""Извлечь JSON-отчёт сабагента из output-файла и сохранить в vault (идемпотентно, с checksum)."""
+import hashlib
 import json
 import os
 import sys
@@ -34,9 +35,20 @@ if parsed is None:
     sys.exit(1)
 
 os.makedirs(os.path.dirname(dst), exist_ok=True)
+payload = json.dumps(parsed, ensure_ascii=False, indent=2)
+checksum = hashlib.md5(payload.encode('utf-8')).hexdigest()
+
+# Идемпотентность: если файл уже есть с тем же checksum — пропускаем
+if os.path.exists(dst):
+    existing = open(dst, encoding='utf-8').read()
+    if hashlib.md5(existing.encode('utf-8')).hexdigest() == checksum:
+        print(f'SKIP: {dst} уже извлечён (checksum совпал, {checksum[:8]})')
+        sys.exit(0)
+    print(f'ОБНОВЛЕНИЕ: {dst} существует, но содержимое отличается (новый checksum {checksum[:8]})')
+
 with open(dst, 'w', encoding='utf-8') as f:
-    json.dump(parsed, f, ensure_ascii=False, indent=2)
-print(f'Сохранено: {dst}')
+    f.write(payload)
+print(f'Сохранено: {dst}  [checksum {checksum[:8]}]')
 
 # Краткая сводка
 print('Культуры:', {c: v.get('status') for c, v in parsed['crops'].items()})

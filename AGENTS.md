@@ -121,7 +121,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
   "substance": {"code": "IBA", "csv_name": "...", "queried_name": "..."},
   "searches": {
     "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "openalex", "pubchem"],
-    "failed": [{"endpoint": "europepmc", "reason": "IPv6 blocked", "query": "..."}],
+    "failed": [{"endpoint": "europepmc", "reason": "IPv6 blocked", "query": "...", "retry_by_orchestrator": true}],
     "queries_used": ["..."],
     "fallback_tries": [{"query": "...", "results": 0}]
   },
@@ -184,7 +184,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 7. **Единицы:** без молярной массы из PubChem единицы (µM/mM vs ppm) не сравнивать; конверсию записывать в `dosage_normalized` с источником. Токсичность/PHI/MRL — только реальные данные из литературы, иначе null.
 8. Лимиты API: PubMed ≤3 запроса/сек, паузы 0.5–1 с, 1 повтор при ошибке, таймауты.
 9. **Типы (v1.3):** `conflicts` и `contraindications` — массивы объектов или пустые `[]`. Строки вместо dict, null-заглушки и placeholders **запрещены** — L1 падает на type-check.
-10. **Europe PMC:** если у сабагента `searches.failed` содержит europepmc → оркестратор сам выполняет запрос в своей среде и дополняет артефакт.
+10. **Europe PMC:** если у сабагента `searches.failed` содержит `{endpoint: "europepmc", retry_by_orchestrator: true}` → оркестратор сам выполняет запрос в своей среде, дополняет отчёт как `orchestrator_fallback` (файл `raw/evidence/{A-Z}/<код>/orchestrator_fallback_<дата>.json`) и логирует в log.md. Если и оркестратор не может → `europepmc_unavailable`, не блокирует валидацию.
 
 ## Принцип «тонкий агент — толстый артефакт»
 - Агент stateless: читает артефакт → одно действие → пишет новый артефакт. Памяти между вызовами нет.
@@ -194,6 +194,13 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - `raw/evidence/{A-Z}/<код>/validation_*.md` — отчёт валидации vs CSV.
 - Wiki-карточка — обновляемое представление артефактов (история в git).
 - Оркестратор (главный агент) — финальный арбитр task_queue.md и log.md.
+
+## Europe PMC Fallback
+Если сабагент сообщает о недоступности Europe PMC (`searches.failed` с `endpoint: "europepmc"`, `retry_by_orchestrator: true`):
+1. **Оркестратор повторяет запрос в своей среде** (у него Europe PMC работает).
+2. Найденные результаты добавляются в отчёт как `orchestrator_fallback` и сохраняются в `raw/evidence/{A-Z}/<код>/orchestrator_fallback_<дата>.json`.
+3. Если и оркестратор не может → статус `europepmc_unavailable` в `searches.failed[].status`, **не блокирует валидацию** (PubMed/OpenAlex/Crossref всё равно работают).
+4. Запись в log.md: `## [дата] europepmc_fallback | <вещество> | N результатов`.
 
 ## Проверка отчётов (4 уровня)
 - **L1 Автопроверка (`_scripts/l1_check.py`):** JSON по схеме; **type-check** обязательных полей — `conflicts`/`contraindications` должны быть массивами объектов (не строки, не null); каждый PMID через esummary (существует, заголовок матчит); DOI через Crossref.

@@ -37,6 +37,14 @@ FROM "wiki/substances"
 WHERE validation_status = "insufficient_data"
 ```
 
+## 🔄 Требуют Europe PMC-повторного запроса (orchestrator_fallback)
+Вещества, у сабагентов которых Europe PMC был недоступен (IPv6) — оркестратор должен выполнить запрос сам и дополнить артефакт (`raw/evidence/{A-Z}/<код>/orchestrator_fallback_<дата>.json`).
+```dataview
+TABLE searches_failed AS "Failed", fallback_status AS "Fallback"
+FROM "wiki/substances"
+WHERE contains(fallback_status, "orchestrator") OR contains(fallback_status, "europepmc_unavailable")
+```
+
 ## 📊 Прогресс
 ```dataview
 TABLE length(rows) AS "Всего"
