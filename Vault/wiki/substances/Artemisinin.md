@@ -91,4 +91,4 @@ phi_mrl: {}
 - [PMID 35908798](https://pubmed.ncbi.nlm.nih.gov/35908798/) — 20 мг/л, ячмень, SOD снижалась (2022)
 - [PMID 36805532](https://pubmed.ncbi.nlm.nih.gov/36805532/) — могрозиды в огурце, нерелевантно (2023)
 - [PMID 20815879](https://pubmed.ncbi.nlm.nih.gov/20815879/) — ложное совпадение «strawberry» (2010)
-- Артефакт: [[raw/evidence/A/Artemisinin/search_Artemisinin_2026-08-04.json]]
+- Артефакт: [search_Artemisinin_2026-08-04.json](../../../raw/evidence/A/Artemisinin/search_Artemisinin_2026-08-04.json)

@@ -76,4 +76,4 @@ ED50/TD50 — нет данных. COS — пищевые олигосахари
 - [PMID 37047175](https://pubmed.ncbi.nlm.nih.gov/37047175/) — COS 50 мг/л, холодовой стресс огурца (2023)
 - [PMID 24770723](https://pubmed.ncbi.nlm.nih.gov/24770723/) — CHOS DPn 15-40 против B. cinerea (2014)
 - [PMID 27095400](https://pubmed.ncbi.nlm.nih.gov/27095400/) — COS-OGA, мучнистая роса томата (2016)
-- Артефакт: [[raw/evidence/C/Chitosan/search_Chitosan_2026-08-04.json]]
+- Артефакт: [search_Chitosan_2026-08-04.json](../../../raw/evidence/C/Chitosan/search_Chitosan_2026-08-04.json)

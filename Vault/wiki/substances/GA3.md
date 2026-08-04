@@ -100,4 +100,4 @@ ED50/TD50/терапевтический индекс — **нет данных*
 - [PMID 39260050](https://pubmed.ncbi.nlm.nih.gov/39260050/) — GA3 1 µM при засолении (2024)
 - [PMID 17503074](https://pubmed.ncbi.nlm.nih.gov/17503074/) — GA20ox1 и завязывание плодов томата (2007)
 - [PMID 29146357](https://pubmed.ncbi.nlm.nih.gov/29146357/) — GA4+7 партенокарпия огурца (2018)
-- Артефакт: [[raw/evidence/G/GA3/search_GA3_2026-08-04.json]]
+- Артефакт: [search_GA3_2026-08-04.json](../../../raw/evidence/G/GA3/search_GA3_2026-08-04.json)

@@ -217,29 +217,33 @@ raw/evidence/{код вещества}/
 - **Нормализация синонимов:** перед поиском — PubChem по csv_name → `synonyms` + `iupac_name`; все синонимы включаются в запросы (OR-логика); одинаковый CAS у двух веществ → одна страница с aliases; реестр `raw/normalization/synonyms.json`
 - **index.md-иерархия:** index.md = хаб; под-индексы `index_foliar/seed/fruit…`, `index_tomato/cucumber/strawberry`, `index_verified/conflicting/unverified` — каждый через Dataview
 
-Структура vault:
+Структура проекта (после реструктуризации 2026-08-04; служебный слой — вне vault):
 ```
-vault/
-├── README.md          (домашняя страница-хаб)
+f:\agrowiki/           ← корень проекта (git repo, НЕ Obsidian)
 ├── AGENTS.md          (схема — правит LLM)
-├── index.md           (хаб; под-индексы index_*.md через Dataview)
 ├── log.md             (хронологический журнал)
 ├── task_queue.md      (очередь задач оркестратора: VALIDATE: вещество × культура)
-├── validation.md      (дашборд статусов валидации, Dataview)
+├── validation.md      (трекер статусов валидации для LLM; дашборд — в Vault/index.md)
+├── _meta/             (plan.md, handoff.md)
+├── _scripts/          (bootstrap.py, extract_report.py, l1_check.py, digest.py)
 ├── raw/               (слой 1: источники, иммутабельны)
 │   ├── Complete_Action_Oriented_Agronomic_Substances_CLEANED_v6.csv
 │   ├── assets/        (картинки)
 │   ├── sources/<код вещества>/   (PDF, клипы статей по каждому веществу)
 │   ├── normalization/synonyms.json  (реестр синонимов и CAS)
 │   └── evidence/{A-Z}/<код вещества>/  (артефакты: search_*.json, facts_*.md, validation_*.md; коды с цифр — в 0-9/)
-└── wiki/              (слой 2: вики, пишет LLM)
-    ├── substances/    (271 валидируемая карточка вещества)
-    ├── categories/    (8 страниц категорий действий)
-    ├── classes/       (~20 страниц семейств химических классов)
-    ├── mechanisms/    (страницы механизмов действия)
-    ├── crops/         (3 фокусные культуры: Томат, Огурец, Клубника)
-    ├── syntheses/     (сравнения, обзоры, ответы-страницы)
-    └── overview.md    (обзор всей базы)
+└── Vault/             ← Obsidian vault (только контент вики)
+    ├── index.md       (хаб + дашборд статусов, Dataview)
+    ├── README.md      (домашняя страница-хаб)
+    ├── _templates/    (шаблоны Templater)
+    └── wiki/          (слой 2: вики, пишет LLM)
+        ├── substances/    (271 валидируемая карточка вещества)
+        ├── categories/    (8 страниц категорий действий)
+        ├── classes/       (~20 страниц семейств химических классов)
+        ├── mechanisms/    (страницы механизмов действия)
+        ├── crops/         (3 фокусные культуры: Томат, Огурец, Клубника)
+        ├── syntheses/     (сравнения, обзоры, ответы-страницы)
+        └── overview.md    (обзор всей базы)
 ```
 
 ### Фаза 2. Bootstrap ingest CSV (2–4 часа, черновой статус)

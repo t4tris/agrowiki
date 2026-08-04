@@ -108,4 +108,4 @@ ED50/TD50 — нет данных. Ориентиры: MIC in vitro против
 - [PMID 26256331](https://pubmed.ncbi.nlm.nih.gov/26256331/) — прехарвест-опрыскивания клубники, −30% гнилей (2015)
 - [PMID 35241695](https://pubmed.ncbi.nlm.nih.gov/35241695/) — CNPs, серой гнили до 3%, негатив при 50 мг/мл (2022)
 - [PMID 41600063](https://pubmed.ncbi.nlm.nih.gov/41600063/) — 2.5 мг/мл против Meloidogyne на черри-томате (2026)
-- Артефакт: [[raw/evidence/C/Chitosan/search_Chitosan_2026-08-04.json]]
+- Артефакт: [search_Chitosan_2026-08-04.json](../../../raw/evidence/C/Chitosan/search_Chitosan_2026-08-04.json)

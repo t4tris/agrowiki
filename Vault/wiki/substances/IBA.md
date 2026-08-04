@@ -94,4 +94,4 @@ ED50/TD50/терапевтический индекс — **нет данных*
 - [PMID 29354371](https://pubmed.ncbi.nlm.nih.gov/29354371/) — 1.5 мг/л IBA укоренение огурца 96.2% (2018)
 - [PMID 16231183](https://pubmed.ncbi.nlm.nih.gov/16231183/) — TDZ+IBA регенерация клубники (2006)
 - [PMID 37194800](https://pubmed.ncbi.nlm.nih.gov/37194800/) — 0.01 мг/л IBA микроразмножение (2023)
-- Артефакт: [[raw/evidence/I/IBA/search_IBA_2026-08-04.json]]
+- Артефакт: [search_IBA_2026-08-04.json](../../../raw/evidence/I/IBA/search_IBA_2026-08-04.json)

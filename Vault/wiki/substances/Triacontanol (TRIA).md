@@ -75,4 +75,4 @@ ED50/TD50 — нет данных. PMID 32290080: «non-toxic, pollution-free, l
 ## Источники
 - [PMID 32290080](https://pubmed.ncbi.nlm.nih.gov/32290080/) — 50 µM на плоды клубники (2020)
 - [PMID 35893617](https://pubmed.ncbi.nlm.nih.gov/35893617/) — 0.5/1 ppm, +12.7% урожая (2022)
-- Артефакт: [[raw/evidence/T/Triacontanol/search_Triacontanol_2026-08-04.json]]
+- Артефакт: [search_Triacontanol_2026-08-04.json](../../../raw/evidence/T/Triacontanol/search_Triacontanol_2026-08-04.json)

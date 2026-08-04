@@ -9,31 +9,41 @@
 По каждому веществу из CSV собрать актуальные научные данные и провалидировать CSV-утверждения.
 Фокус литературы: **три культуры — томат, огурец, клубника**. Все 271 вещество в вики, но поиск ограничен этими культурами; нет литературы по культуре → честный статус `no_data`.
 
-## Структура vault
+## Структура проекта
 ```
-f:\agrowiki\
-├── AGENTS.md          (этот файл — схема)
-├── README.md          (хаб для человека)
-├── index.md           (каталог; под-индексы index_*.md через Dataview)
-├── log.md             (хронология, append-only)
-├── task_queue.md      (очередь задач оркестратора)
-├── validation.md      (дашборд валидации, Dataview)
-├── _templates/        (шаблоны Templater)
-├── raw/               (слой 1: ИСТОЧНИКИ, ИММУТАБЕЛЬНЫ)
+f:\agrowiki\           ← КОРЕНЬ ПРОЕКТА (git repo, НЕ часть Obsidian)
+├── AGENTS.md          (этот файл — схема для LLM, ВНЕ vault)
+├── log.md             (хронология, append-only, ВНЕ vault)
+├── task_queue.md      (очередь задач оркестратора, ВНЕ vault)
+├── validation.md      (трекер валидации для LLM; Dataview в нём не рендерится — дашборд живёт в Vault/index.md)
+├── _meta/             (plan.md, handoff.md — служебные документы)
+├── _scripts/          (bootstrap.py, extract_report.py, l1_check.py, digest.py)
+├── .secrets/          (API-ключи, в git НЕ попадает)
+├── raw/               (слой 1: ИСТОЧНИКИ, ИММУТАБЕЛЬНЫ, ВНЕ vault)
 │   ├── Complete_Action_Oriented_Agronomic_Substances_CLEANED_v6.csv
 │   ├── assets/
 │   ├── normalization/synonyms.json   (реестр синонимов, CAS → один код)
 │   ├── sources/<код>/                (PDF, веб-клипы статей)
 │   └── evidence/{A-Z}/<код>/         (артефакты: search_*.json, facts_*.md, validation_*.md; коды с цифр — в 0-9/)
-└── wiki/              (слой 2: вики, пишет LLM)
-    ├── substances/    (271 карточка вещества)
-    ├── categories/    (8 категорий действий)
-    ├── classes/       (~20 семейств хим. классов)
-    ├── mechanisms/    (механизмы действия)
-    ├── crops/         (3 культуры: Томат, Огурец, Клубника)
-    ├── syntheses/     (сравнения и ответы-страницы)
-    └── overview.md
+└── Vault/             ← OBSIDIAN VAULT (только контент вики!)
+    ├── .obsidian/     (настройки Obsidian, плагины)
+    ├── index.md       (каталог + дашборд статусов, Dataview)
+    ├── README.md      (хаб для человека)
+    ├── _templates/    (шаблоны Templater)
+    └── wiki/          (слой 2: вики, пишет LLM)
+        ├── substances/    (271 карточка вещества)
+        ├── categories/    (8 категорий действий)
+        ├── classes/       (~20 семейств хим. классов)
+        ├── mechanisms/    (механизмы действия)
+        ├── crops/         (3 культуры: Томат, Огурец, Клубника)
+        ├── syntheses/     (сравнения и ответы-страницы)
+        └── overview.md
 ```
+
+## Правила ссылок (после выноса служебного слоя из vault)
+- **Внутри vault:** только вики-ссылки `[[...]]` (страницы, wiki/подпапки). Dataview `FROM "wiki/..."` — относительно корня vault.
+- **На файлы ВНЕ vault** (`AGENTS.md`, `log.md`, `task_queue.md`, `validation.md`, `raw/`, `_meta/`, `_scripts/`) — **обычные markdown-ссылки с относительными путями**, напр. `[AGENTS.md](../AGENTS.md)`, `[search_IBA_2026-08-04.json](../../../raw/evidence/I/IBA/search_IBA_2026-08-04.json)` (из `wiki/substances/`). Obsidian не резолвит `[[...]]` за пределы vault — такие ссылки будут «мёртвыми».
+- Служебные файлы в корне (log.md, task_queue.md и т.д.) могут ссылаться на vault-страницы **только текстом/путями** (например, `Vault/wiki/substances/IBA.md` или `[[wiki/substances/IBA]]` для человека-читателя) — Obsidian их не отрендерит, это нормально.
 
 ## Типы страниц и frontmatter
 

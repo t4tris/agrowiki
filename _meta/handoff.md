@@ -11,19 +11,21 @@ contract_version: 1.3
 
 ## Где что лежит
 
+> Пути — от корня проекта `f:\agrowiki` (после реструктуризации 2026-08-04 служебный слой ВНЕ vault).
+
 | Файл | Назначение |
 |---|---|
 | `_meta/plan.md` | Мастер-план (фазы 0–5) + секция «Результаты пилота» |
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
 | `AGENTS.md` | Схема вики, контракт отчёта **v1.3**, правила честности, L1–L4 |
 | `task_queue.md` | Очередь VALIDATE (HIGH 43 / MEDIUM 134 / LOW 83) |
-| `validation.md` | Дашборд статусов валидации (Dataview) + секция orchestrator_fallback |
+| `validation.md` | Трекер валидации для LLM (Dataview в нём не рендерится — дашборд в `Vault/index.md`) |
 | `log.md` | Хронология (append-only) |
 | `_scripts/extract_report.py` | Извлечение JSON из ответа сабагента (raw_decode) + **идемпотентность (MD5-checksum)** |
 | `_scripts/l1_check.py` | L1-проверка: схема + **type-check v1.3** + PMID esummary + DOI Crossref |
 | `_scripts/digest.py` | Компактный дайджест отчётов |
 | `raw/evidence/{A,C,G,I,T}/…/search_*_2026-08-04.json` | 5 иммутабельных артефактов пилота |
-| `wiki/substances/*.md` | 7 валидированных карточек + 260 черновиков |
+| `Vault/wiki/substances/*.md` | 7 валидированных карточек + 260 черновиков |
 
 ---
 

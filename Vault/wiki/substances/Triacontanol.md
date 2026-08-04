@@ -103,4 +103,4 @@ phi_mrl: {}
 - [PMID 24226183](https://pubmed.ncbi.nlm.nih.gov/24226183/) — TRIM-механизм, блокировка октакозанолом (1988)
 - [PMID 24302317](https://pubmed.ncbi.nlm.nih.gov/24302317/) — C3-специфичность, сухая масса томата (1981)
 - [PMID 15128037](https://pubmed.ncbi.nlm.nih.gov/15128037/) — антагонизм с JA (2004)
-- Артефакт: [[raw/evidence/T/Triacontanol/search_Triacontanol_2026-08-04.json]]
+- Артефакт: [search_Triacontanol_2026-08-04.json](../../../raw/evidence/T/Triacontanol/search_Triacontanol_2026-08-04.json)

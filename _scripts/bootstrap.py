@@ -7,7 +7,7 @@ import os
 import re
 from collections import defaultdict
 
-CSV = r'f:\agrowiki\Vault\raw\Complete_Action_Oriented_Agronomic_Substances_CLEANED_v6.csv'
+CSV = r'f:\agrowiki\raw\Complete_Action_Oriented_Agronomic_Substances_CLEANED_v6.csv'
 VAULT = r'f:\agrowiki\Vault'
 
 CROP_KEYWORDS = {

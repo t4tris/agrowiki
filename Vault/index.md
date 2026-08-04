@@ -1,9 +1,15 @@
 # Index — Агрономическая вики
 
 База валидированных агрономических веществ (267 веществ, 3 фокусные культуры).
-Схема: [[AGENTS.md]] · Журнал: [[log]] · Очередь: [[task_queue]] · Дашборд: [[validation]]
+Схема: [AGENTS.md](../AGENTS.md) · Журнал: [log.md](../log.md) · Очередь: [task_queue.md](../task_queue.md) · Трекер: [validation.md](../validation.md)
 
-## По статусу валидации
+## 📊 Статус валидации (дашборд)
+```dataview
+TABLE length(rows) AS "Всего"
+FROM "wiki/substances"
+GROUP BY validation_status
+```
+
 ```dataview
 TABLE efficacy_csv AS "Эффективность (CSV)", evidence_level AS "Доказательность"
 FROM "wiki/substances"
