@@ -1,0 +1,1117 @@
+{
+  "contract_version": "1.2",
+  "substance": {
+    "code": "GA3",
+    "csv_name": "Gibberellic Acid",
+    "queried_name": "Gibberellic Acid"
+  },
+  "searches": {
+    "performed": [
+      "pubchem_pug_property: name=Gibberellic Acid -> Title,MolecularFormula,MolecularWeight,CanonicalSMILES,IUPACName (CID 6466)",
+      "pubchem_pug_xrefs: name=Gibberellic Acid -> RegistryID (CAS 77-06-5 found in list)",
+      "pubchem_pug_synonyms: name=Gibberellic Acid (full synonym list, GA3, Gibberellin A3, Berelex, etc.)",
+      "pubmed_esearch: 'gibberellic acid strawberry flower abortion photoperiod' -> 0 results",
+      "pubmed_esearch: 'gibberellin strawberry runner production' -> 3 PMIDs (40780106, 38337908, 29288326)",
+      "pubmed_esearch: 'gibberellic acid strawberry runner' -> 1 PMID (33890635)",
+      "pubmed_esearch: 'gibberellic acid strawberry flower' -> 4 PMIDs (38905729, 38498457, 36200851, 33890635)",
+      "pubmed_esearch: 'gibberellic acid strawberry fruit malformation' -> 0 results",
+      "pubmed_esearch: 'gibberellic acid tomato fruit set' -> 8 PMIDs (42340497, 40853749, 39119498, 33274492, 23581527, 22153898, 17883372, 17503074)",
+      "pubmed_esearch: 'gibberellin tomato growth' -> 368 results (too broad, used only as stat; first attempt HTTP 429, retried OK)",
+      "pubmed_esearch: 'gibberellic acid tomato foliar' -> 12 PMIDs (41225064, 40866815, 40646460, 39260050, 36774421, 35790780, 35722521, 28482334, 19001430, 18943196, 11539775, 24470243)",
+      "pubmed_esearch: 'gibberellic acid cucumber' -> 47 PMIDs (top 20 retrieved)",
+      "pubmed_esearch: 'gibberellin cucumber parthenocarpic fruit' -> 7 PMIDs (41769268, 40957257, 37323228, 36092914, 29146357, 24733865, 20653892)",
+      "pubmed_esummary: 3 batches (strawberry 3 IDs; tomato 8 IDs; cucumber 10 IDs)",
+      "pubmed_efetch abstract: strawberry 40780106,29288326,38337908; 33890635; 38905729,38498457,36200851",
+      "pubmed_efetch abstract: tomato 17503074,39119498,33274492; 41225064,40866815,40646460,39260050,36774421; 24470243,28482334,11539775",
+      "pubmed_efetch abstract: cucumber 40957257,37201922,29146357; 41769268,37323228,36092914",
+      "openalex_works: search='gibberellic acid strawberry runner' (1678 hits; found Thompson&Guttridge 1959 Nature, HortScience 1996)",
+      "openalex_works: filter=title.search:'gibberellic acid strawberry' (74 hits; found 1994 J Plant Growth Regul ripening study)",
+      "openalex_works: search='gibberellic acid tomato fruit set application' and 'gibberellic acid foliar spray tomato yield' (noise-dominated, discarded)",
+      "europepmc_rest: strawberry query -> BLOCKED (see failed)"
+    ],
+    "failed": [
+      "europepmc_rest 'gibberellic acid strawberry flower abortion photoperiod': WebFetchBlockedUrlError - URL resolves to blocked NAT64 IPv6 address 64:ff9b::c13e:c150 (www.ebi.ac.uk); Europe PMC REST unavailable in this environment, all europe_pmc stats = blocked; orchestrator should retry",
+      "pubmed_esearch 'gibberellin tomato growth' first attempt: HTTP 429 (rate limit); retried after pause, OK"
+    ],
+    "queries_used": [
+      "gibberellic acid strawberry flower abortion photoperiod (0)",
+      "gibberellin strawberry runner production (3)",
+      "gibberellic acid strawberry runner (1)",
+      "gibberellic acid strawberry flower (4)",
+      "gibberellic acid strawberry fruit malformation (0)",
+      "gibberellic acid tomato fruit set (8)",
+      "gibberellin tomato growth (368, too broad)",
+      "gibberellic acid tomato foliar (12)",
+      "gibberellic acid cucumber (47)",
+      "gibberellin cucumber parthenocarpic fruit (7)",
+      "openalex: gibberellic acid strawberry runner; title.search:gibberellic acid strawberry; gibberellic acid tomato fruit set application; gibberellic acid foliar spray tomato yield"
+    ],
+    "fallback_tries": [
+      "strawberry: query1 (flower abortion photoperiod) gave 0 -> replaced with 'gibberellin strawberry runner production' and 'gibberellic acid strawberry runner'; synonyms GA3 / gibberellin A3 / Fragaria vesca surfaced in MeSH translations and retrieved records",
+      "strawberry: 'gibberellic acid strawberry fruit malformation' -> 0; OpenAlex title.search used as secondary source (Europe PMC blocked)",
+      "tomato: 'gibberellin tomato growth' (368) too broad -> narrowed to 'gibberellic acid tomato foliar' (12)",
+      "cucumber: no fallback needed (47 + 7 results); GA4+7 trial (29146357) found as closest GA-form evidence for parthenocarpy"
+    ]
+  },
+  "identity": {
+    "cas": "77-06-5",
+    "cid": "6466",
+    "formula": "C19H22O6",
+    "iupac": "(1R,2R,5S,8S,9S,10R,11S,12S)-5,12-dihydroxy-11-methyl-6-methylidene-16-oxo-15-oxapentacyclo[9.3.2.15,8.01,10.02,8]heptadec-13-ene-9-carboxylic acid",
+    "molar_mass_g_mol": 346.4,
+    "class_confirmed": true,
+    "class_evidence": [
+      "PubChem CID 6466 lists synonym 'Gibberellin A3' and 'GA3 gibberellin' (gibberellin class)",
+      "PubChem RegistryID contains '77-06-5' (classic gibberellin A3 CAS number); synonym list contains 'CAS-77-06-5' and 'Gibberellic acid [BSI:ISO]'",
+      "PubMed MeSH translation maps 'gibberellic acid' to '\"gibberellins\"[Supplementary Concept]' (class gibberellins)",
+      "PubChem ConnectivitySMILES CC12C(C=CC3(C1C(C45C3CCC(C4)(C(=C)C5)O)C(=O)O)OC2=O)O consistent with gibbane skeleton"
+    ],
+    "synonyms": [
+      "Gibberellin A3",
+      "GA3",
+      "Gibberellic acid GA3",
+      "Gibberellin X",
+      "Berelex",
+      "Brellin",
+      "Gib-Sol",
+      "Gibreskol",
+      "Cekugib",
+      "Gib-Tabs",
+      "Pro-Gibb",
+      "Pro-Gibb Plus",
+      "Grocel",
+      "Ryzup",
+      "Gibefol",
+      "Regulex",
+      "Activol GA",
+      "Gibrel",
+      "Gibberellins A4A7",
+      "Gibberellate"
+    ],
+    "synonyms_ru": [
+      "Гибберелловая кислота",
+      "Гиббереллин A3",
+      "Гиббереллин X"
+    ],
+    "notes": "CAS 77-06-5 extracted from PubChem RegistryID list (entry '77-06-5') and synonym 'CAS-77-06-5'; title in PubChem is '(+)-Gibberellic Acid'. MW 346.4 g/mol used for all molar->ppm conversions (0.5 mM = 173.2 mg/L ~ 173 ppm; 1.0 mM = 346.4 mg/L ~ 346 ppm)."
+  },
+  "mode_of_action": {
+    "summary": "Gibberellin A3 (GA3) is a diterpenoid plant growth regulator acting through the GA signaling pathway: GA binding triggers degradation of DELLA repressor proteins (e.g., FveRGA1 in strawberry), releasing growth-promoting transcription programs; it induces expression of GA-biosynthesis genes (GA20ox) and promotes cell elongation, runner/stolon outgrowth, flowering-related processes and fruit set/parthenocarpy via crosstalk with auxin and cytokinin.",
+    "evidence": [
+      "40780106: 'Gibberellin (GA) is the key hormone promoting runner outgrowth' (strawberry, Fragaria vesca)",
+      "29288326: 'Exogenous applications of optimum concentration gibberellins (GAs) promote runner formation in strawberry cultivation and GA can accelerate the degradation of DELLA proteins'",
+      "33890635: 'Gibberellic acid (GA) application induced runner outgrowth from the remaining buds in lam' (Fragaria vesca)",
+      "17503074: 'transcriptional regulation of GA20ox1 mediates pollination-induced fruit set in tomato and that parthenocarpy in pat results from the mis-regulation of this mechanism'",
+      "33274492: 'Fruit set transpires after fertilization and is associated with auxin and gibberellic acid (GA) signaling' (tomato-focused review)",
+      "40957257: 'Auxin, gibberellic acid (GA), and cytokinin treatments successfully induced fruit formation in cucumber'",
+      "37201922: 'CsPhyB-CsPIF3-CsGA20ox-2-DELLA ... mediate CsPhyB-regulated hypocotyl elongation through GA' (cucumber, cell elongation)",
+      "39260050: 'Exogenous GA3 enhanced plant growth irrespective of the genotype, AMF, and salinity conditions' (tomato)"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": "8 (fruit set) + 12 (foliar) hits screened; 11 abstracts read; 368 for broad 'gibberellin tomato growth'",
+        "europe_pmc": "blocked",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Foliar GA3 25/50/75 mg/L sprayed at 14, 28 and 42 days after transplanting (before flowering); 75 mg/L gave best growth/yield response",
+          "context": "Greenhouse yellow cherry tomato (Solanum lycopersicum var. cerasiforme); GA3 vs BAP comparison",
+          "dosage_normalized": {
+            "original": "GA3 25-75 mg/L foliar",
+            "ppm_equivalent": "25-75",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "mg/L = ppm (1:1); molar conversion not needed for mg/L",
+            "note": "Within CSV range 25-200 ppm; 75 mg/L raised yield by 93.8% over control; 25 mg/L maximized fruit N/protein"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray (aqueous)",
+            "ph": null,
+            "stress": null,
+            "stage": "vegetative, before flowering stage; applications at 14/28/42 DAT",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "yield +93.8% at 75 mg/L vs control"
+          },
+          "sources": [
+            {
+              "pmid": "41225064",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-025-27667-6",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12612272/"
+            }
+          ],
+          "quote": "Treatments included foliar applications of GA3 (25, 50, and 75 mgL-1) and BAP (50 and 100 mgL-1), sprayed on plant leaves at 14, 28, and 42 days after transplanting, before the flowering stage. GA3 at 75 mgL-1 enhanced stem diameter (11.31 mm), branch number (22), and fruit biomass (1.13 g/fruit), raising yield by 93.8% over control"
+        },
+        {
+          "type": "effect",
+          "value": "Foliar GA3 (1e-6 M) enhances growth of tomato, especially under salinity (100 mM NaCl), alone and with AMF inoculation",
+          "context": "Micro-Tom and cv. TT-115 tomato; GA3 application during 2-4 weeks; growth improved via hormonal balance",
+          "dosage_normalized": {
+            "original": "1e-6 M (1 uM) GA3 foliar",
+            "ppm_equivalent": "0.35",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "1 uM x 346.4 mg/mmol = 0.3464 mg/L ~ 0.35 ppm",
+            "note": "Very low dose; below CSV 25-200 ppm range"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "ph": null,
+            "stress": "salinity 100 mM NaCl",
+            "stage": "young plants (seedling/vegetative)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "39260050",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.jplph.2024.154336",
+              "oa_url": null
+            },
+            {
+              "pmid": "28482334",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.jplph.2017.04.012",
+              "oa_url": null
+            }
+          ],
+          "quote": "Exogenous GA3 enhanced plant growth irrespective of the genotype, AMF, and salinity conditions, while an additional effect on growth by AMF was only found in the ET-overproducer (Epi) mutant under control and salinity conditions (39260050)"
+        },
+        {
+          "type": "effect",
+          "value": "GA3 application increases photosynthesis and vegetative growth (leaf area, dry weight) at micromolar root/solution doses",
+          "context": "Hydroponic tomato: 1.4 uM GA3 to roots -> +40-50% photosynthetic rate within 5 h (up to +90% at low light); 15 uM GA3 in nutrient solution -> increased leaf area and dry weight, stronger at 15C root-zone",
+          "dosage_normalized": {
+            "original": "1.4 uM root pulse; 15 uM nutrient solution",
+            "ppm_equivalent": "0.49 (1.4 uM); 5.2 (15 uM)",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "uM x 346.4 mg/mmol / 1000 = mg/L ~ ppm",
+            "note": "Root/nutrient-solution routes, not foliar; doses far below CSV 25-200 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "root application / nutrient solution",
+            "ph": null,
+            "stress": null,
+            "stage": "young vegetative plants (first weeks of growth)",
+            "bbch_stages": [],
+            "temperature_range": "root-zone 15-30 C (Bugbee 1984)",
+            "time_of_day": null,
+            "light_sensitivity": "stimulation more dramatic at low light (80 uE m-2 s-1: ~90% increase) (Arteca 1981)",
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "photosynthesis +40-50% within 5 h; +90% at 80 uE m-2 s-1"
+          },
+          "sources": [
+            {
+              "pmid": "24470243",
+              "year": 1981,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1007/BF00056261",
+              "oa_url": null
+            },
+            {
+              "pmid": "11539775",
+              "year": 1984,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": null,
+              "oa_url": null
+            }
+          ],
+          "quote": "Photosynthetic rates (mg CO2/dm(2)/hr) determined using an open infrared CO2 gas exchange system showed a 40-50% increase within 5 hr after treatment with a 1.4 uM gibberellic acid (GA3) to their roots (24470243); Addition of 15 micromoles GA3 to solutions increased specific leaf area, total leaf area, and dry weight production of plants in both temperature treatments (11539775)"
+        },
+        {
+          "type": "method",
+          "value": "GA3 100 mg/L seed priming mitigates mercury stress in tomato seedlings (combined with 200 uM spermine foliar)",
+          "context": "Hg 20 uM stress; GA3 priming + Spm foliar alleviated decline in growth, photosynthesis, nitrogen metabolism, increased proline and antioxidants",
+          "dosage_normalized": {
+            "original": "GA3 100 mg/L priming",
+            "ppm_equivalent": "100",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "mg/L = ppm (1:1)",
+            "note": "Matches CSV '100 mg/L' point but in stress-mitigation context, not vegetative growth per se"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "seed priming",
+            "ph": null,
+            "stress": "mercury 20 uM",
+            "stage": "seedling",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "40866815",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12870-025-06674-9",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12382030/"
+            }
+          ],
+          "quote": "role of gibberellic acid (GA3; 100 mg L-1) priming and the foliar spray of spermine (Spm; 200 uM) in mitigating the effects of mercury (Hg; 20 uM) stress on growth, photosynthesis, nitrogen metabolism and nutrient uptake were studied in tomato"
+        },
+        {
+          "type": "efficacy",
+          "value": "GA3 ranked most effective growth elicitor (GA3 > sorbic acid > 6-BAP > IBA) for tomato root length / fresh and dry weight; soil drench > foliar",
+          "context": "Fusarium wilt management context; elicitor-induced defense and growth",
+          "dosage_normalized": {
+            "original": "not stated (mg/L doses not specified in abstract)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": null,
+            "note": "No dose in abstract; effect ranking only"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "soil drench vs foliar",
+            "ph": null,
+            "stress": "Fusarium oxysporum f. sp. lycopersici",
+            "stage": "seedling/young plant",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "36774421",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-023-29033-w",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9922316/"
+            }
+          ],
+          "quote": "The elicitors can be arranged based on their effectiveness, gibberellic acid (GA3) > sorbic acid > cytokinin (6-benzylaminopurine) > indole-3-butyric acid"
+        },
+        {
+          "type": "effect",
+          "value": "Fruit set in tomato is mediated by GA biosynthesis (GA20ox1 up-regulation after pollination); parthenocarpic pat mutant has constitutively high GA; reviews confirm GA+auxin association with fruit set and external GA application for parthenocarpy",
+          "context": "Mechanistic/endogenous GA evidence; no exogenous GA3 field dosing for fruit set",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": "anthesis / fruit set (ovary)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 3,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "17503074",
+              "year": 2007,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s00425-007-0533-z",
+              "oa_url": null
+            },
+            {
+              "pmid": "33274492",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "review",
+              "doi": "10.1111/tpj.15112",
+              "oa_url": null
+            },
+            {
+              "pmid": "39119498",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "review",
+              "doi": "10.3389/fpls.2024.1404980",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11306060/"
+            }
+          ],
+          "quote": "the data indicate that transcriptional regulation of GA20ox1 mediates pollination-induced fruit set in tomato and that parthenocarpy in pat results from the mis-regulation of this mechanism (17503074); Fruit set transpires after fertilization and is associated with auxin and gibberellic acid (GA) signaling (33274492)"
+        }
+      ],
+      "gap": "Tomato is NOT in CSV Target_Crops ('Strawberry, fruit crops'); extension is justified by literature but CSV entries for tomato are absent. No PubMed trial found on exogenous GA3 for fruit-set improvement in tomato at 25-200 ppm foliar; fruit-set evidence is endogenous/mechanistic. Screened-out tomato PMIDs (42340497 blueberry BR6OX1 transgenics, 40853749 floral initiation review, 23581527 anther ablation, 22153898 apple MhGAI1, 17883372 DELLA silencing, 40646460 Fe nanocomplex/Atonik) were tangential and not used."
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": "47 ('gibberellic acid cucumber') + 7 (parthenocarpic) hits; 6 abstracts read",
+        "europe_pmc": "blocked",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Exogenous gibberellic acid (GA) treatment induces parthenocarpic fruit formation in cucumber; GA and auxin play central roles in parthenocarpic fruit set",
+          "context": "Yangzhou Univ. study; auxin, GA and cytokinin treatments each induced fruit formation in unpollinated cucumber; cell-size increase from 1 day after anthesis (critical fruit-set stage); endogenous IAA and GA elevated in parthenocarpic fruit",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "phytohormone treatment (application route/dose not specified in abstract)",
+            "ph": null,
+            "stress": null,
+            "stage": "anthesis; 1 day after anthesis = critical stage for fruit set",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "40957257",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.plaphy.2025.110492",
+              "oa_url": null
+            }
+          ],
+          "quote": "Auxin, gibberellic acid (GA), and cytokinin treatments successfully induced fruit formation in cucumber. ... Inner indole-3-acetic acid (IAA) and GA levels were enhanced in parthenocarpic fruit"
+        },
+        {
+          "type": "dosage",
+          "value": "100 mg/L GA4+7 applied to female cucumber flowers 1 day before anthesis and at anthesis produced parthenocarpic fruits with weights/sizes/shapes similar to pollinated fruits",
+          "context": "GA4+7 (gibberellin A4+A7, NOT GA3); decreased flesh firmness, increased total flavonoids and protein after storage",
+          "dosage_normalized": {
+            "original": "GA4+7 100 mg/L, flower application (1 day before anthesis and at anthesis)",
+            "ppm_equivalent": "100",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "mg/L = ppm (1:1); NOTE: substance is GA4+7 (mixture, MW differs from GA3); conversion to GA3-ppm not valid without molar mass of GA4/GA7",
+            "note": "Closest published GA dosage trial in cucumber, but GA4+7, not GA3; dose 100 mg/L coincides with CSV '100 mg/L best for vegetative results' only numerically"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "flower application (dip/spray on female flowers)",
+            "ph": null,
+            "stress": null,
+            "stage": "1 day before anthesis and at anthesis",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "parthenocarpic fruit weight/size/shape similar to pollinated fruits"
+          },
+          "sources": [
+            {
+              "pmid": "29146357",
+              "year": 2018,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.foodchem.2017.09.150",
+              "oa_url": null
+            }
+          ],
+          "quote": "100 mg/L N-(2-chloro-4-pyridyl)-N'-phenylurea (CPPU), naphthaleneacetic acid (NAA) or gibberellin A4+A7 (GA4+7) was applied to the female cucumber flowers 1 day before anthesis and at anthesis. The CPPU, NAA and GA4+7 treatments resulted in parthenocarpic fruits with similar weights, sizes and shapes as the pollinated fruits"
+        },
+        {
+          "type": "effect",
+          "value": "Floral-dip treatment induces parthenocarpy in cucumber; CsGA20OX1 is a positive regulator of GA-mediated parthenocarpy; endogenous GA4 elevated in parthenocarpic fruit",
+          "context": "Non-parthenocarpic inbred 'MT'; treated ovaries: fruit length/diameter 3.02x/3.12x of control; multi-omics",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "floral dip agent (composition not disclosed in abstract)",
+            "ph": null,
+            "stress": null,
+            "stage": "unpollinated ovary / flower dip",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "fruit length 3.02x, diameter 3.12x vs control"
+          },
+          "sources": [
+            {
+              "pmid": "41769268",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s11032-026-01635-y",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12949208/"
+            }
+          ],
+          "quote": "Unpollinated ovaries were treated with a floral dip agent to induce parthenocarpy ... The results demonstrated that the treated ovaries exhibited substantial swelling, with fruit length and diameter reaching 3.02 and 3.12 times that of the control, respectively ... confirmed the positive regulatory role of CsGA20OX1 in cucumber parthenocarpy"
+        },
+        {
+          "type": "effect",
+          "value": "Endogenous gibberellin is significantly higher in parthenocarpic cucumber genotypes; GA biosynthesis genes up-regulated in parthenocarpic fruit set (exogenous zeatin/IAA, not GA, induced fruit in non-parthenocarpic line)",
+          "context": "Slicing (PPC-6) and pickling (DG-8) parthenocarpic vs non-parthenocarpic IMPU-1; CK-AUX-GA network crosstalk",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": "flowering/fruit set (different developmental stages)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "36092914",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.3389/fgene.2022.957360",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9459115/"
+            }
+          ],
+          "quote": "Endogenous auxin and gibberellin were significantly higher in parthenocarpic than non-parthenocarpic genotypes, whereas the concentration of cytokinins varied among the genotypes at different developmental stages"
+        },
+        {
+          "type": "effect",
+          "value": "GA controls cell elongation in cucumber hypocotyls via CsPhyB-CsPIF3-CsGA20ox-2-DELLA module (light-dependent growth)",
+          "context": "Mechanistic (lh1/lh2 mutants); supports 'cell elongation' mechanism from CSV; no exogenous GA3 dosing",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": "red/far-red and UV-B light responses involved",
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": "seedling hypocotyl (climbing stage)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": "phytochrome B and UV-B mediated",
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "37201922",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1093/jxb/erad181",
+              "oa_url": null
+            }
+          ],
+          "quote": "two modules, CsPhyB-CsPIF3-CsGA20ox-2-DELLA and CsPIF3-auxin response factor 18 (CsARF18), mediate CsPhyB-regulated hypocotyl elongation through GA and auxin pathways"
+        }
+      ],
+      "gap": "Cucumber is NOT in CSV Target_Crops. No PubMed-indexed trial with GA3 (gibberellic acid) itself on cucumber; closest is GA4+7 100 mg/L flower application (29146357, different GA form - do not substitute as GA3 dose). 37323228 (melon CPPU->GA biosynthesis, Cucumis melo) is related genus, cited as supporting context only. Screened-out cucumber PMIDs (42430926 biostimulants/herbicide, 41983327 CsaGASA tendrils, 41629778 melon GA3 blossom-end scar, 39354350/35987604 CO2/grafting drought, 38842600 melon CmERF1, 36362172 fruit-shape QTL, 35163740 heat stress) not used."
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": "3 (runner production) + 1 (runner) + 4 (flower) hits; 0 for 'flower abortion photoperiod' and 0 for 'fruit malformation'",
+        "europe_pmc": "blocked",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Exogenous GA3 application induces runner production in strawberry; GA-biosynthesis inhibitor paclobutrazol prevents runners and increases branch crowns",
+          "context": "Woodland strawberry (Fragaria vesca) 'Yellow Wonder' (non-runnering) vs 'Hawaii 4'; FveGA20ox4 mutation determines bud fate; transcriptome of axillary buds",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "exogenous GA3 treatment (dose not specified in abstract)",
+            "ph": null,
+            "stress": null,
+            "stage": "axillary bud development stages 1-4 (branch crown vs runner identity)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "40780106",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1016/j.plaphy.2025.110347",
+              "oa_url": null
+            }
+          ],
+          "quote": "we found that exogenous GA3 treatment of YW resulted in runner production, whereas application of the GA biosynthesis inhibitor paclobutrazol (PBZ) could prevent the runners and increase branch crown production in H4"
+        },
+        {
+          "type": "effect",
+          "value": "Exogenous gibberellins promote runner formation in strawberry; DELLA protein FveRGA1 negatively regulates runner production (GA relieves DELLA repression)",
+          "context": "Fragaria vesca 'Yellow Wonder'/'Ruegen'; RNAi of FveRGA1 produced many runners in non-runnering genotypes",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "exogenous GA application ('optimum concentration', dose not specified)",
+            "ph": null,
+            "stress": null,
+            "stage": "vegetative (runner formation)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "29288326",
+              "year": 2018,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s00425-017-2839-9",
+              "oa_url": null
+            }
+          ],
+          "quote": "Exogenous applications of optimum concentration gibberellins (GAs) promote runner formation in strawberry cultivation and GA can accelerate the degradation of DELLA proteins"
+        },
+        {
+          "type": "effect",
+          "value": "GA application induces runner outgrowth from axillary buds in strawberry (LAM/GRAS required for bud initiation; GA acts sequentially after bud initiation)",
+          "context": "Fragaria vesca lam mutant (EMS) and CRISPR lamCR; GA application induced runner outgrowth from remaining buds but not from empty axils",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "exogenous GA application (dose not specified in abstract)",
+            "ph": null,
+            "stress": null,
+            "stage": "axillary meristem initiation -> runner outgrowth",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "33890635",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1093/plphys/kiab184",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8331164/"
+            }
+          ],
+          "quote": "Gibberellic acid (GA) application induced runner outgrowth from the remaining buds in lam, but failed to do so at the empty axils of lam"
+        },
+        {
+          "type": "effect",
+          "value": "Photoperiod controls flowering vs GA-pathway-mediated runnering trade-off in seasonal strawberry; long-day and blue light (especially night-interrupting, 20 umol m-2 s-1) promote runnering via GA-pathway genes FaGRAS32 and FaGA20ox4",
+          "context": "Fragaria x ananassa 'Sulhyang'; SD10 vs LD14 with supplemental/night-interrupting blue light; no GA3 applied - light-driven GA pathway",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": "SD10 (10 h) vs LD14 (14 h); 4 h S-BL or NI-BL at 0/10/20/30/40 umol m-2 s-1; BL(20) most promotive for runnering in both LD and SD",
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": "vegetative (runnering) and flowering phases; ~45 days after photoperiodic treatment",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": "night-interrupting light treatment",
+            "light_sensitivity": "blue light 20 umol m-2 s-1 optimal; LD14 + NI-BL(20) max inflorescences+runners",
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "38337908",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants13030375",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10857185/"
+            }
+          ],
+          "quote": "There is a trade-off between photoperiod-controlled flowering and gibberellin (GA) signaling pathway-mediated runnering. ... The SD runnering was caused by BL in non-runnering SD conditions associated with the stimulation of two key genes that regulate runner formation in the GA pathway, FaGRAS32 and FaGA20ox4"
+        },
+        {
+          "type": "dosage",
+          "value": "CSV claim: '1.0 mM GA3 applied once a week for one week, third week after transplanting yielding nearly 13 runners per plant; once a week more effective than twice-a-week' - NOT VERIFIED in literature",
+          "context": "Claim from CSV Expected_Result; no PubMed/OpenAlex record found with this protocol or runner count for strawberry",
+          "dosage_normalized": {
+            "original": "1.0 mM GA3 weekly x 1 week, 3rd week after transplanting",
+            "ppm_equivalent": "346",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "1.0 mM x 346.4 mg/mmol = 346.4 mg/L ~ 346 ppm (computed from PubChem MW)",
+            "note": "No literature source located; conversion for reference only"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar (per CSV)",
+            "ph": null,
+            "stress": null,
+            "stage": "third week after transplanting",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "irrelevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": 0,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "No quote available - claim not found in any retrieved abstract (searched: 'gibberellin strawberry runner production', 'gibberellic acid strawberry runner', OpenAlex 'gibberellic acid strawberry runner')"
+        },
+        {
+          "type": "dosage",
+          "value": "CSV claim: '200 mg/L GA3 + long photoperiod: increased flower abortion and malformed fruits' - NOT VERIFIED; PubMed queries returned 0 results",
+          "context": "Claim from CSV Expected_Result; potential contradiction/growth-risk note",
+          "dosage_normalized": {
+            "original": "200 mg/L GA3 + long photoperiod",
+            "ppm_equivalent": "200",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "mg/L = ppm (1:1)",
+            "note": "No literature source located in PubMed ('gibberellic acid strawberry flower abortion photoperiod' = 0; 'gibberellic acid strawberry fruit malformation' = 0)"
+          },
+          "conditions": {
+            "photoperiod": "long photoperiod (per CSV; not specified in any retrieved source)",
+            "formulation": "foliar (per CSV)",
+            "ph": null,
+            "stress": null,
+            "stage": "flowering",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "irrelevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": 0,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "No quote available - no supporting or contradicting abstract found"
+        },
+        {
+          "type": "dosage",
+          "value": "CSV claim: '0.5 mM GA3 in 0.053 M citric buffer pH 4.5 with 2% DMSO applied to whole fruit' - NOT VERIFIED for strawberry; protocol resembles grape-cluster application studies",
+          "context": "Claim from CSV Expected_Result; whole-fruit application with DMSO/citrate buffer is atypical for strawberry agronomy in retrieved literature",
+          "dosage_normalized": {
+            "original": "0.5 mM GA3 in 0.053 M citric buffer pH 4.5 + 2% DMSO, whole-fruit application",
+            "ppm_equivalent": "173",
+            "molar_mass_used_g_mol": 346.4,
+            "conversion_source": "0.5 mM x 346.4 mg/mmol = 173.2 mg/L ~ 173 ppm (computed from PubChem MW)",
+            "note": "No strawberry literature source located; likely extrapolated from grape/fruit-bunch protocols - treat as unverified for strawberry"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "0.053 M citric buffer pH 4.5, 2% DMSO, whole-fruit application",
+            "ph": "4.5 (buffer)",
+            "stress": null,
+            "stage": "fruit (whole-fruit application)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "irrelevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": 0,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "No quote available - no strawberry source found for this protocol"
+        }
+      ],
+      "gap": "Runner-production mechanism (GA3 -> runners; DELLA/GA20ox pathway; photoperiod trade-off) is well verified by 4 abstracts. CSV dosage specifics (25-200 ppm foliar; 100 mg/L 'best for vegetative results'; 1.0 mM weekly -> ~13 runners; 200 mg/L + long photoperiod -> flower abortion/malformed fruits; 0.5 mM citric buffer/DMSO fruit application) could NOT be corroborated in PubMed/OpenAlex and remain unverified/inferred. Classic OpenAlex hits (Thompson & Guttridge 1959 Nature 10.1038/184072a0b - 'Effect of Gibberellic Acid on the Initiation of Flowers and Runners in the Strawberry'; HortScience 1996 10.21273/hortsci.31.7.1190 'Benzyladenine and Gibberellic Acid Increase Runner Production in Dayneutral Strawberries') are title_only (no abstract read). Screened-out strawberry PMIDs: 38905729 (Cd stress, no GA3 application), 38498457 (Hydrangea paniculata 'Vanilla Strawberry' - NOT Fragaria, excluded), 36200851 (FveFDM1 methylation, tangential)."
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "No ED50/TD50/therapeutic-index data in any retrieved abstract. GA3 is a plant growth regulator (not a pesticide); PubMed hits do not include toxicological dose-response studies for plants. Phytotoxicity window cannot be established from retrieved literature; CSV Efficacy=MEDIUM is not contradicted. The only risk-related claim (200 mg/L + long photoperiod -> flower abortion/malformed fruits) is unverified."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": "No PHI/MRL data present in retrieved literature (PubMed abstracts + OpenAlex records reviewed); no regulatory residue assessment performed. Set to null per honesty rules."
+  },
+  "contraindications": [
+    {
+      "claim": "High GA3 (200 mg/L) combined with long photoperiod increases flower abortion and malformed fruits in strawberry",
+      "source": "CSV Expected_Result (unverified)",
+      "verified": false,
+      "note": "0 PubMed hits for strawberry flower abortion/malformation with GA3; do not propagate as verified warning"
+    },
+    {
+      "claim": "Whole-fruit application of 0.5 mM GA3 in citric buffer/DMSO",
+      "source": "CSV Expected_Result (unverified)",
+      "verified": false,
+      "note": "No strawberry source; protocol resembles grape studies; likely misattributed to strawberry"
+    }
+  ],
+  "conflicts": [
+    "CSV Target_Crops='Strawberry, fruit crops' does not include tomato or cucumber, yet pilot requires 3 crops; tomato/cucumber evidence is provided as extension, not CSV validation (status found_verified for mechanism/effect; CSV dosing claims for these crops absent).",
+    "CSV mechanism 'cell elongation/flowering': cell elongation verified in cucumber hypocotyls (37201922) and tomato growth trials; 'flowering' mechanism verified only indirectly (floral initiation reviews 40853749; strawberry flowering-runnering trade-off 38337908); CSV strawberry claims are about runner/vegetative responses, which are confirmed.",
+    "CSV '100 mg/L best for vegetative results' - closest corroboration is tomato (41225064: 25-75 mg/L foliar yield trial; 40866815: 100 mg/L priming under stress). No strawberry-specific 100 mg/L confirmation found.",
+    "Cucumber parthenocarpy dosage evidence uses GA4+7 (29146357), not GA3; not substitutable for GA3 dose claims.",
+    "CSV '0.5 mM GA3 in 0.053 M citric buffer pH 4.5 with 2% DMSO applied to whole fruit' and '1.0 mM weekly -> ~13 runners' could not be traced to any indexed publication; flagged inferred/unverified.",
+    "Europe PMC unavailable (network block) - PubMed + OpenAlex used instead; an independent Europe PMC re-run by orchestrator is recommended."
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Core CSV claims for strawberry (GA3 promotes vegetative growth and runner production; gibberellin class; CAS/formula correct) are VERIFIED by 4 read abstracts (40780106, 29288326, 33890635, 38337908). Tomato and cucumber extensions verified for growth/parthenocarpy effects. However, all CSV-specific dosage numbers (25-200 ppm, 100 mg/L optimum, 1.0 mM weekly ~13 runners/plant, 200 mg/L + long photoperiod -> flower abortion/malformed fruits, 0.5 mM citric-buffer/DMSO fruit application) are UNVERIFIED - no PubMed/OpenAlex source found; efficacy 'MEDIUM' neither confirmed nor refuted by dose-response data. Target_Crops mismatch (tomato, cucumber not listed) requires editorial decision. Recommended: mark entry 'partial', keep verified mechanism claims, flag dosage claims as inferred with source='CSV', and re-run Europe PMC + grey-literature (horticultural journals not indexed in PubMed) for the dosage claims."
+  },
+  "sources_index": [
+    {
+      "pmid": "40780106",
+      "year": 2025,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1016/j.plaphy.2025.110347",
+      "oa_url": null,
+      "crop": "strawberry",
+      "note": "Feng et al., Plant Physiol Biochem - GA3 -> runners in F. vesca YW; PBZ -> branch crowns"
+    },
+    {
+      "pmid": "29288326",
+      "year": 2018,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1007/s00425-017-2839-9",
+      "oa_url": null,
+      "crop": "strawberry",
+      "note": "Li et al., Planta - FveRGA1 DELLA negatively regulates runner production"
+    },
+    {
+      "pmid": "33890635",
+      "year": 2021,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1093/plphys/kiab184",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8331164/",
+      "crop": "strawberry",
+      "note": "Feng et al., Plant Physiol - LAM (GRAS) + GA sequential control of runner outgrowth"
+    },
+    {
+      "pmid": "38337908",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/plants13030375",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10857185/",
+      "crop": "strawberry",
+      "note": "Yang et al., Plants - photoperiod/blue light vs GA-pathway runnering trade-off; FaGRAS32, FaGA20ox4"
+    },
+    {
+      "pmid": "41225064",
+      "year": 2025,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1038/s41598-025-27667-6",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12612272/",
+      "crop": "tomato",
+      "note": "Eissa et al., Sci Rep - foliar GA3 25/50/75 mg/L; 75 mg/L yield +93.8%"
+    },
+    {
+      "pmid": "40866815",
+      "year": 2025,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1186/s12870-025-06674-9",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12382030/",
+      "crop": "tomato",
+      "note": "Qin et al., BMC Plant Biol - GA3 100 mg/L priming under Hg stress"
+    },
+    {
+      "pmid": "39260050",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.jplph.2024.154336",
+      "oa_url": null,
+      "crop": "tomato",
+      "note": "Khalloufi et al., J Plant Physiol - foliar GA3 1e-6 M, salinity x AMF x ethylene mutants"
+    },
+    {
+      "pmid": "28482334",
+      "year": 2017,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.jplph.2017.04.012",
+      "oa_url": null,
+      "crop": "tomato",
+      "note": "Khalloufi et al., J Plant Physiol - foliar GA3 1e-6 M + AMF improves growth under salinity"
+    },
+    {
+      "pmid": "24470243",
+      "year": 1981,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1007/BF00056261",
+      "oa_url": null,
+      "crop": "tomato",
+      "note": "Arteca & Dong, Photosynth Res - root GA3 1.4 uM -> photosynthesis +40-50%"
+    },
+    {
+      "pmid": "11539775",
+      "year": 1984,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": null,
+      "oa_url": null,
+      "crop": "tomato",
+      "note": "Bugbee & White, J Am Soc Hortic Sci - 15 uM GA3 in solution -> leaf area/dry weight"
+    },
+    {
+      "pmid": "36774421",
+      "year": 2023,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1038/s41598-023-29033-w",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9922316/",
+      "crop": "tomato",
+      "note": "El-Aswad et al., Sci Rep - GA3 best elicitor for growth; drench>foliar"
+    },
+    {
+      "pmid": "17503074",
+      "year": 2007,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1007/s00425-007-0533-z",
+      "oa_url": null,
+      "crop": "tomato",
+      "note": "Olimpieri et al., Planta - GA20ox1 mediates pollination-induced fruit set; pat parthenocarpy"
+    },
+    {
+      "pmid": "33274492",
+      "year": 2021,
+      "verified": true,
+      "paper_type": "review",
+      "doi": "10.1111/tpj.15112",
+      "oa_url": null,
+      "crop": "tomato",
+      "note": "Fenn & Giovannoni, Plant J - fruit set associated with auxin and GA signaling"
+    },
+    {
+      "pmid": "39119498",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "review",
+      "doi": "10.3389/fpls.2024.1404980",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11306060/",
+      "crop": "tomato",
+      "note": "Guan et al., Front Plant Sci - hormones incl. GA external application in parthenocarpy"
+    },
+    {
+      "pmid": "40957257",
+      "year": 2025,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.plaphy.2025.110492",
+      "oa_url": null,
+      "crop": "cucumber",
+      "note": "Su et al., Plant Physiol Biochem - auxin/GA/cytokinin treatments induce parthenocarpy in cucumber"
+    },
+    {
+      "pmid": "29146357",
+      "year": 2018,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.foodchem.2017.09.150",
+      "oa_url": null,
+      "crop": "cucumber",
+      "note": "Qian et al., Food Chem - GA4+7 (NOT GA3) 100 mg/L on female flowers -> parthenocarpic fruits"
+    },
+    {
+      "pmid": "41769268",
+      "year": 2026,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1007/s11032-026-01635-y",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12949208/",
+      "crop": "cucumber",
+      "note": "Meng et al., Mol Breed - floral dip -> parthenocarpy; CsGA20OX1 positive regulator"
+    },
+    {
+      "pmid": "37201922",
+      "year": 2023,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1093/jxb/erad181",
+      "oa_url": null,
+      "crop": "cucumber",
+      "note": "Zhao et al., J Exp Bot - CsPhyB-CsPIF3-CsGA20ox-2-DELLA hypocotyl elongation"
+    },
+    {
+      "pmid": "36092914",
+      "year": 2022,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.3389/fgene.2022.957360",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9459115/",
+      "crop": "cucumber",
+      "note": "Mandal et al., Front Genet - endogenous GA higher in parthenocarpic genotypes"
+    },
+    {
+      "pmid": "37323228",
+      "year": 2023,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1093/hr/uhad084",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10266944/",
+      "crop": "cucumber",
+      "note": "Liu et al., Hortic Res - melon (Cucumis melo, related genus): CPPU-induced fruit set depends on GA biosynthesis; context only"
+    },
+    {
+      "pmid": null,
+      "year": 1959,
+      "verified": false,
+      "paper_type": "trial",
+      "doi": "10.1038/184072a0b",
+      "oa_url": null,
+      "crop": "strawberry",
+      "note": "Thompson & Guttridge, Nature - 'Effect of Gibberellic Acid on the Initiation of Flowers and Runners in the Strawberry'; OpenAlex record, title_only (no abstract available)"
+    },
+    {
+      "pmid": null,
+      "year": 1996,
+      "verified": false,
+      "paper_type": "trial",
+      "doi": "10.21273/hortsci.31.7.1190",
+      "oa_url": "https://journals.ashs.org/",
+      "crop": "strawberry",
+      "note": "HortScience - 'Benzyladenine and Gibberellic Acid Increase Runner Production in Dayneutral Strawberries'; OpenAlex record, title_only"
+    }
+  ]
+}

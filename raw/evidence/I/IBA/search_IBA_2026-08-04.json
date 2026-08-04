@@ -1,0 +1,874 @@
+{
+  "contract_version": "1.2",
+  "substance": {
+    "code": "IBA",
+    "csv_name": "Indole-3-butyric Acid",
+    "queried_name": "Indole-3-butyric acid"
+  },
+  "searches": {
+    "performed": [
+      "pubchem_property (PubChem REST: name=Indole-3-butyric acid → property Title,MolecularFormula,MolecularWeight,CanonicalSMILES,IUPACName)",
+      "pubchem_xrefs (PubChem REST: xrefs/RegistryID → CAS 133-32-4 confirmed)",
+      "pubchem_synonyms (PubChem REST: synonyms → 5+ синонимов)",
+      "pubmed_esearch: \"indole-3-butyric acid tomato rooting\" → 14 PMID",
+      "pubmed_esearch: \"IBA tomato cuttings adventitious roots\" → 1 PMID (33162945)",
+      "pubmed_esearch: \"indole butyric acid strawberry runner rooting\" → 0 PMID",
+      "pubmed_esearch: \"IBA strawberry\" → 6 PMID",
+      "pubmed_esearch: \"indole-3-butyric acid cucumber\" → 6 PMID",
+      "pubmed_esearch: \"IBA cucumber seedling\" → 1 PMID (40805698)",
+      "pubmed_esearch fallback: \"indolebutyric acid AND Fragaria\" → 0 PMID",
+      "pubmed_esummary ×3 (все 26 кандидатов: 14 томат + 6 клубника + 6 огурец)",
+      "pubmed_efetch abstract ×2 (14 PMID короткого списка, rettype=abstract)",
+      "openalex_works: \"indole-3-butyric acid tomato rooting\" per-page=10 (топ-хит — Arabidopsis, генетика IBA-ответа, не по культурам)"
+    ],
+    "failed": [
+      "europepmc search \"indole-3-butyric acid\" AND tomato AND rooting (DNS/IPv6: NAT64-адрес 64:ff9b::c13e:c150 заблокирован)",
+      "europepmc search \"indole-3-butyric acid\" AND strawberry (та же ошибка)"
+    ],
+    "queries_used": [
+      "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Indole-3-butyric%20acid/property/Title,MolecularFormula,MolecularWeight,CanonicalSMILES,IUPACName/JSON",
+      "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Indole-3-butyric%20acid/xrefs/RegistryID/JSON",
+      "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Indole-3-butyric%20acid/synonyms/JSON",
+      "esearch: indole-3-butyric acid tomato rooting (retmax=20)",
+      "esearch: IBA tomato cuttings adventitious roots (retmax=20)",
+      "esearch: indole butyric acid strawberry runner rooting (retmax=20)",
+      "esearch: IBA strawberry (retmax=20)",
+      "esearch: indole-3-butyric acid cucumber (retmax=20)",
+      "esearch: IBA cucumber seedling (retmax=20)",
+      "esearch fallback: indolebutyric acid AND Fragaria (retmax=20)",
+      "esummary: 41824215,38810753,35540178,35358343,35200528,33162945,32695133,31010365,28855842,27252731,32481021,23306888,16146322,10482660",
+      "esummary: 37194800,36359930,33396927,28330189,24322545,16231183,40805698,36623357,31253270,31110507,29354371,24561896",
+      "esummary: 32481021,23306888,16146322,10482660,24561896",
+      "efetch abstract: 10482660,27252731,35540178,28855842,23306888,16146322,41824215",
+      "efetch abstract: 16231183,33396927,24322545,37194800,29354371,40805698,31110507",
+      "openalex: https://api.openalex.org/works?search=indole-3-butyric%20acid%20tomato%20rooting&per-page=10"
+    ],
+    "fallback_tries": [
+      "strawberry: \"indole butyric acid strawberry runner rooting\" → 0 hits; fallback-запрос \"indolebutyric acid AND Fragaria\" → 0 hits; использован результат \"IBA strawberry\" (6 PMID, все проверены esummary, 4 отобраны по релевантности)",
+      "tomato: точный запрос \"IBA tomato cuttings adventitious roots\" → 1 PMID (33162945, Pyrus communis — не томат, исключён); основной пул — 14 PMID из \"indole-3-butyric acid tomato rooting\"",
+      "cucumber: \"IBA cucumber seedling\" → 1 PMID (40805698, дубликат из основного пула)"
+    ]
+  },
+  "identity": {
+    "cas": "133-32-4",
+    "cid": "8617",
+    "formula": "C12H13NO2",
+    "iupac": "4-(1H-indol-3-yl)butanoic acid",
+    "molar_mass_g_mol": 203.24,
+    "class_confirmed": true,
+    "class_evidence": [
+      "PubChem CID 8617: класс ауксинов подтверждён структурой (индольное кольцо + бутановая кислота), IUPAC 4-(1H-indol-3-yl)butanoic acid",
+      "PMID 10482660 (Clark et al., Plant Physiol 1999): прикладной IBA увеличивал придаточное корнеобразование на стеблевых черенках томата — классический ризогенный эффект ауксина",
+      "PMID 27252731 (Wen et al., Front Plant Sci 2016): IBA — эндогенный ауксин томата, концентрации IAA и IBA растут при индукции придаточных корней через NO-сигналинг",
+      "PMID 35540178, 28855842, 16146322, 29354371: IBA используется как стандартный ауксин в средах укоренения in vitro (0.5-4.9 µM)",
+      "CSV-механизм: \"rooting hormone\" согласуется с литературой"
+    ],
+    "synonyms": [
+      "Indole-3-butyric acid",
+      "3-Indolebutyric acid",
+      "Indolebutyric acid",
+      "1H-Indole-3-butanoic acid",
+      "4-(3-Indolyl)butyric acid",
+      "Indole-3-butanoic acid",
+      "Indolylbutyric acid",
+      "beta-Indolebutyric acid",
+      "Indolbutyric acid",
+      "Торговые: Hormodin, Seradix, Rhizopon AA, Oxyberon, Chryzopon, Chryzosan, Chryzotek, Hormex, Jiffy grow",
+      "UNII: 061SKE27JP; EINECS: 205-101-5; EPA Pesticide Chemical Code: 046701; NSC 3130"
+    ],
+    "synonyms_ru": [
+      "Индолил-3-масляная кислота (ИМК)",
+      "Индолилмасляная кислота",
+      "β-индолилмасляная кислота"
+    ],
+    "notes": "Synonym-список PubChem содержит 200+ записей; отобраны наиболее употребимые. В RegistryID CAS 133-32-4 подтверждён (также ошибочная запись 933-32-4 присутствует в списках реестров). Русские синонимы — стандартная русскоязычная номенклатура (ИМК), из внешних источников не верифицировались в этом поиске."
+  },
+  "mode_of_action": {
+    "summary": "IBA — синтетический/природный ауксин, ризогенный гормон: стимулирует образование придаточных корней на черенках и укоренение микропобегов in vitro; действует через ауксиновую сигнализацию (PIN1/PIN3/PIN7, IAA19, IAA24) и NO-сигналинг; эффект на придаточное укоренение зависит от этиленовой чувствительности растения.",
+    "evidence": [
+      "PMID 10482660: прикладной IBA увеличивал придаточное корнеобразование на стеблевых черенках томата дикого типа; у этилен-нечувствительных мутантов Nr эффект почти отсутствовал — промотивный эффект ауксина на укоренение опосредован этиленовой чувствительностью",
+      "PMID 27252731: у детерминированных проростков томата экзогенный мелатонин (50 µM) индуцировал ARF через NO; концентрации эндогенных IAA и IBA при этом возрастали",
+      "PMID 31110507: IBA (как и NAA) индуцирует экспрессию CpMAKR4 (ортолог Arabidopsis MAKR4) в корнях тыквы — маркер ранней инициации латеральных корней; у огурца идентифицирован ортолог CsGATA24"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 15,
+        "europe_pmc": "failed (DNS/IPv6 блокировка, 1 запрос)",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Прикладной IBA увеличивает образование придаточных корней на стеблевых черенках томата дикого типа; у этилен-нечувствительных мутантов Never ripe эффект слабый/отсутствует",
+          "context": "Черенки томата (Lycopersicon esculentum) обрабатывали IBA; у дикого типа Pearson придаточных корней больше, у NR-мутантов — нет; ACC также усиливал укоренение, но у NR меньше, чем у дикого типа",
+          "dosage_normalized": {
+            "original": "концентрация IBA в аннотации не указана",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "n/a — доза не приведена",
+            "note": "Качественный эффект подтверждён; дозировку из аннотации извлечь нельзя"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "раствор для обработки черенков (детали в статье)",
+            "ph": null,
+            "stress": null,
+            "stage": "вегетативные стеблевые черенки",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "10482660",
+              "year": 1999,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1104/pp.121.1.53",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC59389/"
+            }
+          ],
+          "quote": "Applied auxin (indole-3-butyric acid) increased adventitious root formation on vegetative stem cuttings of wild-type plants but had little or no effect on rooting of NR plants."
+        },
+        {
+          "type": "dosage",
+          "value": "Укоренение микропобегов томата на среде MS с 0.5 мг/л IBA",
+          "context": "Протокол Agrobacterium-трансформации и регенерации томата (сорта Arka Vikas и PED); укоренение наблюдали на среде с 0.5 мг/л IBA; эффективность трансформации 42.8-64.6%",
+          "dosage_normalized": {
+            "original": "0.5 mg/L IBA (MS medium)",
+            "ppm_equivalent": 0.5,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "1 мг/л ≈ 1 ppm; 0.5 мг/л / 203.24 г/моль = 2.46 µM",
+            "note": "Доза in vitro; в ~200-2000 раз ниже CSV-диапазона 100-1000 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "in vitro микропобеги (укоренение)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "35540178",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1016/j.sjbs.2022.103292",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9079358/"
+            }
+          ],
+          "quote": "The rooting was observed on a medium amended with 0.5 mg l-1 indole 3-butyric acid (IBA)."
+        },
+        {
+          "type": "dosage",
+          "value": "Укоренение микропобегов томата на ½MS с 0.5 µM IBA; регенерация побегов на BA 5.0 µM + IBA 2.5 µM + Kin 10.0 µM",
+          "context": "Регенерация in vitro томата (сорта Jamila, Tomaland): максимальная частота регенерации из семядольных листьев на MS + BA 5.0 µM + IBA 2.5 µM + Kin 10.0 µM; укоренение на ½MS + 0.5 µM IBA; генетическая однородность подтверждена",
+          "dosage_normalized": {
+            "original": "0.5 µM IBA (½MS, укоренение); 2.5 µM IBA (регенерация)",
+            "ppm_equivalent": 0.102,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "0.5 µM × 203.24 г/моль = 0.102 мг/л ≈ 0.102 ppm; 2.5 µM ≈ 0.51 ppm",
+            "note": "Дозы in vitro; в ~1000 раз ниже CSV-диапазона 100-1000 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "½MS / MS среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "семядольные экспланты → микропобеги → укоренение",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "28855842",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1016/j.sjbs.2017.03.008",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5562467/"
+            }
+          ],
+          "quote": "In vitro regenerated microshoots were rooted on ½MS medium containing 0.5 µM indole-3-butyric acid (IBA)."
+        },
+        {
+          "type": "dosage",
+          "value": "Укоренение микропобегов карликового томата MicroTom на MS с 4.9 µM IBA; корни на 7-й день",
+          "context": "Листовые экспланты MicroTom: множественные побеги на MS + BAP 8.9 µM + IAA 1.14 µM; укоренение на MS + IBA 4.9 µM; корни через 7 дней, цветение in vitro на 13-й день, плоды через 15-17 дней",
+          "dosage_normalized": {
+            "original": "4.9 µM IBA (MS medium)",
+            "ppm_equivalent": 0.996,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "4.9 µM × 203.24 г/моль = 996 мкг/л ≈ 1.0 мг/л ≈ 1.0 ppm",
+            "note": "Доза in vitro; в ~100-1000 раз ниже CSV-диапазона"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "in vitro микропобеги (укоренение)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "16146322",
+              "year": 2005,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1016/j.jplph.2005.01.008",
+              "oa_url": null
+            }
+          ],
+          "quote": "For rooting, elongated microshoots were excised and transferred onto MS medium supplemented with 4.9 microM indole-3-butyric acid (IBA). Well-developed roots ... were obtained on d 7."
+        },
+        {
+          "type": "method",
+          "value": "IBA 1.5 мг/л + TDZ 1.5 мг/л в среде регенерации побегов из двусемядольных узловых эксплантов томата (микроинъекционная трансформация)",
+          "context": "Трансформация томата Agrobacterium: среда MS + 1.5 мг/л TDZ + 1.5 мг/л IBA + 30 мг/л канамицин; эффективность трансформации повышена с 46.28% до 65.90%",
+          "dosage_normalized": {
+            "original": "1.5 mg/L IBA (MS medium)",
+            "ppm_equivalent": 1.5,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "1.5 мг/л ≈ 1.5 ppm = 7.38 µM",
+            "note": "IBA в комбинации с цитокинином (TDZ) для побегообразования, не для укоренения"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "двусемядольные узловые экспланты",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "23306888",
+              "year": 2013,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1007/s12010-012-0006-0",
+              "oa_url": null
+            }
+          ],
+          "quote": "Four-day-old double cotyledonary nodal explants were excised ... cultured onto the MS medium supplemented with 1.5 mg L(-1) thidiazuron, 1.5 mg L(-1) indole-3-butyric acid, 30 mg L(-1) kanamycin."
+        },
+        {
+          "type": "effect",
+          "value": "Эндогенные концентрации IAA и IBA в проростках томата возрастают при индукции придаточных корней мелатонином через NO-сигналинг",
+          "context": "Декоренированные проростки томата: 50 µM мелатонин — оптимум индукции ARF; NO (снижение GSNOR) — нижестоящий сигнал; IBA фигурирует как эндогенный ауксин, а не экзогенная обработка",
+          "dosage_normalized": {
+            "original": "экзогенный IBA не применялся (измерялся эндогенный)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "n/a",
+            "note": "Механистическое свидетельство роли IBA в ARF томата"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": "декоренированные проростки",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "27252731",
+              "year": 2016,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3389/fpls.2016.00718",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4879336/"
+            }
+          ],
+          "quote": "Concentrations of indole-3-acetic acid and indole-3-butyric acid, as well as the expression of several genes related to the auxin signaling pathway (PIN1, PIN3, PIN7, IAA19, and IAA24), showed that MT influenced auxin transport and signal transduction."
+        },
+        {
+          "type": "effect",
+          "value": "Содержание эндогенной IBA в листьях, стебле и корнях проростков томата значимо возрастает под действием γ-валеролактона (100-250 мг/л)",
+          "context": "γ-валеролактон (биостимулятор из Stutzerimonas stutzeri) стимулировал рост проростков томата в гидропонике и теплице; IBA — среди гормонов, чьё содержание выросло (наряду с IAA-аспартатом, IAA-глутаматом, индол-3-ацетамидом, IAA-нитрилом, ГК3)",
+          "dosage_normalized": {
+            "original": "экзогенный IBA не применялся",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "n/a",
+            "note": "Косвенное свидетельство: IBA — эндогенный гормон роста томата"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "гидропоника / теплица",
+            "ph": null,
+            "stress": null,
+            "stage": "проростки томата",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "41824215",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1007/s11103-026-01699-6",
+              "oa_url": null
+            }
+          ],
+          "quote": "The content of IAA-aspartate, IAA-glutamate, indole-3-acetamide, indole-3-acetonitrile, indole-3-butyric acid, gibberellic acid 3 were all significantly increased in leaves, stem, and roots."
+        }
+      ],
+      "gap": "Прямых полевых/вегетационных исследований замачивания семян томата в 100-1000 ppm IBA не найдено. Найденные дозы (0.5 µM - 1.5 мг/л, in vitro) на 2-3 порядка ниже CSV-диапазона. PMID 33162945 (единственный точный хит по 'cuttings') оказался про Pyrus communis — исключён как нерелевантный. Остальные PMID из пула (38810753, 35358343, 35200528, 32695133, 31010365, 32481021) — не про IBA (MnO2-удобрения, микориза, солевой стресс, гидролизаты, нематоды, циклины), аннотации не читались, в claims не включены."
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 7,
+        "europe_pmc": "failed (DNS/IPv6 блокировка, запрос не отправлялся отдельно — оба europepmc-запроса упали)",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Максимальное укоренение огурца (96.2%) на среде с IBA 1.5 мг/л + KIN 0.5 мг/л",
+          "context": "Регенерация C. sativus 'Green Long' из семядольных узловых эксплантов: побеги на BAP 1.5 мг/л (+ AgNO3 4.5 мг/л → 100% множественная регенерация, 54.6 побегов/культуру); укоренение 96.2% на IBA 1.5 мг/л + KIN 0.5 мг/л; выживаемость при акклиматизации 72%",
+          "dosage_normalized": {
+            "original": "1.5 mg/L IBA + 0.5 mg/L KIN (MS medium)",
+            "ppm_equivalent": 1.5,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "1.5 мг/л ≈ 1.5 ppm = 7.38 µM (MW 203.24)",
+            "note": "Доза in vitro; в ~70-700 раз ниже CSV-диапазона 100-1000 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "семядольные узловые экспланты → укоренение микропобегов",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "29354371",
+              "year": 2018,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1007/s13205-018-1083-8",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5762594/"
+            }
+          ],
+          "quote": "The highest percent of rooting (96.2%) was noticed on a medium containing the combination of indole 3-butyric acid (IBA), 1.5 mg l-1 and KIN 0.5 mg l-1."
+        },
+        {
+          "type": "method",
+          "value": "Cucumis-биотест: ауксиноподобная активность водного экстракта куколя соответствовала 0.5-2 мг/л IBA",
+          "context": "Биотесты Cucumis и маш использованы для детекции ауксиноподобных PGR в Agrostemma githago; активность в Cucumis-биотесте эквивалентна 0.5-2 мг/л IBA (в биотесте маша — 0.5-4 мг/л); LC-MS подтвердила свободные ауксины",
+          "dosage_normalized": {
+            "original": "0.5-2 mg/L IBA (калибровочный стандарт Cucumis-биотеста)",
+            "ppm_equivalent": 1.25,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "0.5-2 мг/л ≈ 0.5-2 ppm = 2.46-9.84 µM",
+            "note": "IBA как референс в биотесте на проростках Cucumis; диапазон середина 1.25 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "водный раствор (биотест)",
+            "ph": null,
+            "stress": null,
+            "stage": "проростки Cucumis (биотест)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "40805698",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.3390/plants14152349",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12349385/"
+            }
+          ],
+          "quote": "The activity in the Cucumis bioassay corresponded to 0.5 to 2 mg L-1 of Indole-3-butyric acid (IBA), and in the mung bean bioassay, the activity corresponded to 0.5 to 4 mg L-1 of IBA."
+        },
+        {
+          "type": "effect",
+          "value": "IBA индуцирует экспрессию CpMAKR4 — раннего маркера инициации латеральных корней — у тыквы; у огурца идентифицирован ортолог CsGATA24 (механизм Cucurbitaceae)",
+          "context": "У Cucurbitaceae латеральные корни инициируются в апикальной меристеме родительского корня (в отличие от Arabidopsis); IBA (как и NAA) up-регулирует CpMAKR4 у Cucurbita pepo; у C. sativus найден CsGATA24; данные по огурцу — идентификация ортологов, обработка IBA выполнялась на тыкве",
+          "dosage_normalized": {
+            "original": "IBA-обработка (концентрация в аннотации не указана; эксперимент на Cucurbita pepo)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "n/a",
+            "note": "Механистическое свидетельство; экстраполяция с тыквы на огурец в рамках семейства Cucurbitaceae"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": "корни (инициация латеральных корней)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "31110507",
+              "year": 2019,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.3389/fpls.2019.00365",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499211/"
+            }
+          ],
+          "quote": "In squash, CpMAKR4 was up-regulated by naphthylacetic acid (NAA) and, similar to MAKR4 in Arabidopsis, indole-3-butyric acid (IBA)."
+        }
+      ],
+      "gap": "Прямых исследований экзогенной обработки семян/рассады огурца IBA (замачивание, полив) не найдено — всё ограничивается in vitro укоренением (29354371) и биотестами (40805698). Аналитические работы по детекции PGR в огурцах (31253270, 36623357) не включены (не агрономические). PMID 24561896 — Cucumis anguria (гуркин), не C. sativus, аннотация не читалась — исключён."
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 6,
+        "europe_pmc": "failed (DNS/IPv6 блокировка, 1 запрос)",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "TDZ 4.54 µM + IBA 0.98 µM — максимальная эффективность регенерации побегов из листьев Fragaria × ananassa; IBA давал наибольшую частоту регенерирующих листьев",
+          "context": "Органогенез листьев 9 сортов/селекций F. × ananassa, 2 линий F. virginiana glauca, 2 сортов F. vesca, 1 клона F. nubicola: MS + TDZ 4.54 µM с IBA 0.98 µM, BSAA 0.84 µM или 2,4-D 0.90 µM; TDZ+IBA — лучшая комбинация почти для всех генотипов",
+          "dosage_normalized": {
+            "original": "0.98 µM IBA (MS medium, в комбинации с TDZ 4.54 µM)",
+            "ppm_equivalent": 0.199,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "0.98 µM × 203.24 г/моль = 199 мкг/л ≈ 0.2 мг/л ≈ 0.2 ppm",
+            "note": "Доза in vitro (органогенез листьев, не укоренение усов); в ~500-5000 раз ниже CSV-диапазона 100-1000 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "листья 30-дневных пролиферирующих побегов (органогенез)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "16231183",
+              "year": 2006,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1007/s00299-005-0066-5",
+              "oa_url": null
+            }
+          ],
+          "quote": "TDZ plus IBA promoted the highest shoot regeneration efficiencies from leaves of nearly all of the genotypes ... IBA induced the highest frequency of regenerating leaves."
+        },
+        {
+          "type": "dosage",
+          "value": "Среда пролиферации клубники (F. × ananassa): MS + BA 0.5 мг/л + GA3 0.1 мг/л + IBA 0.1 мг/л",
+          "context": "Протоколы регенерации/трансформации трёх сортов клубники (Festival, Sweet Charly, Florida): экспланты из ювенильных листьев после субкультивирования на среде с 0.1 мг/л IBA; укоренение побегов — на 1.5 мг/л NAA (не IBA)",
+          "dosage_normalized": {
+            "original": "0.1 mg/L IBA (MS medium, среда пролиферации)",
+            "ppm_equivalent": 0.1,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "0.1 мг/л ≈ 0.1 ppm = 0.49 µM",
+            "note": "IBA в среде пролиферации; укоренение в этой работе выполнялось NAA"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro, 22 ± 2 °C",
+            "ph": null,
+            "stress": null,
+            "stage": "ювенильные листья (пролиферация эксплантов)",
+            "bbch_stages": [],
+            "temperature_range": "22 ± 2 °C",
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "24322545",
+              "year": 2014,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.4161/gmcr.27229",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5033169/"
+            }
+          ],
+          "quote": "Explants were collected after sub-culturing on a propagation medium composed of MS supplemented with 0.5 mg/l BA; 0.1 mg/l GA3 and 0.1 mg/l IBA."
+        },
+        {
+          "type": "dosage",
+          "value": "Среда микроразмножения земляники: MS + BAP 0.3 мг/л + IBA 0.01 мг/л + GA3 0.2 мг/л",
+          "context": "Клональное микроразмножение ягодных культур для криобанка гермоплазмы (66 сортов/гибридов смородины, малины, земляники); для земляники оптимум — MS + 0.3 мг/л BAP, 0.01 мг/л IBA, 0.2 мг/л GA3, 10 мг/л хелат железа, 30 г/л сахарозы",
+          "dosage_normalized": {
+            "original": "0.01 mg/L IBA (MS medium)",
+            "ppm_equivalent": 0.01,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "0.01 мг/л ≈ 0.01 ppm = 0.049 µM",
+            "note": "Минимальная из найденных доз IBA по клубнике; в 10 000-100 000 раз ниже CSV-диапазона"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro",
+            "ph": null,
+            "stress": null,
+            "stage": "микроразмножение (экспланты из усов в июле-августе)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "37194800",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1590/1519-6984.266975",
+              "oa_url": null
+            }
+          ],
+          "quote": "For strawberry - MS medium with 0.3 mg L-1 BAP, 0.01 mg L-1 IBA, 0.2 mg L-1 GA3, 10 mg L-1 iron chelate and 30 g L-1 sucrose."
+        },
+        {
+          "type": "effect",
+          "value": "Укоренение побегов Fragaria vesca достигнуто на среде с IBA или NAA (концентрации в аннотации не указаны)",
+          "context": "Регенерация дикой земляники F. vesca: каллус 100% на TDZ 2.27 µM + 2,4-D 2.27 µM; регенерация побегов 96% (19.4 побега/эксплант) на BA 0.44 µM; укоренение побегов на IBA- или NAA-содержащей среде с успешной акклиматизацией",
+          "dosage_normalized": {
+            "original": "IBA-содержащая среда (концентрация не указана)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 203.24,
+            "conversion_source": "n/a",
+            "note": "Вид Fragaria vesca (дикая земляника), не F. × ananassa; доза не приведена"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MS-среда, in vitro (2 недели в темноте для каллуса)",
+            "ph": null,
+            "stress": null,
+            "stage": "листовые экспланты → каллус → побеги → укоренение",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": "2 недели в темноте на этапе каллусообразования",
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "33396927",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.3390/plants10010067",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7823688/"
+            }
+          ],
+          "quote": "Rooting of shoots was achieved using indole-3-butyric acid (IBA) or an α-naphthaleneacetic acid (NAA)-containing medium, and the resulting plantlets were acclimatized successfully."
+        }
+      ],
+      "gap": "Прямых исследований укоренения усов (runner) клубники F. × ananassa обработкой IBA в PubMed НЕ найдено: 'indole butyric acid strawberry runner rooting' → 0 PMID; fallback 'indolebutyric acid AND Fragaria' → 0 PMID. Имеющиеся данные — только in vitro (органогенез/микроразмножение) с дозами 0.01-0.98 µM. PMID 36359930 (покрытия из хитозана, постхарвест) и 28330189 (элиситоры, защитный ответ) — не про IBA, аннотации не читались, исключены."
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Данные по ED50/TD50/терапевтическому индексу/персистентности в почве в рамках этого поиска не найдены (не запрашивались профильные токсикологические БД). IBA — регулятор роста растений (ауксин); при сверхвысоких дозах ауксинов типично ингибирование роста, но конкретных числовых значений из прочитанных аннотаций нет. CSV-доза 100-1000 ppm (492-4920 µM) существенно выше всех литературных концентраций — риск фитотоксичности при такой дозе не исключён, но не верифицирован источниками."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": "Не найдено. IBA (CAS 133-32-4) — PGR; в PubMed-пулах по томату/огурцу найдены только аналитические работы по детекции PGR в овощах (31253270, 36623357) без значений MRL. Официальные БД MRL (EU Pesticides Database, US EPA, Codex) в рамках этого поиска не опрашивались; значения не выдуманы — null по правилу 'только реальные данные'."
+  },
+  "contraindications": [
+    "Этилен-нечувствительные генотипы томата (мутант Never ripe) слабо отвечают на экзогенный IBA при придаточном укоренении — промотивный эффект IBA зависит от этиленовой чувствительности (PMID 10482660)",
+    "Экзогенные дозы IBA 100-1000 ppm (CSV) на 2-4 порядка превышают все верифицированные литературные концентрации (0.049-9.84 µM); применение без проверки на конкретной культуре/сорте не рекомендуется"
+  ],
+  "conflicts": [
+    "CSV-дозировка '100-1000 ppm, замачивание семян 2-6 ч' не подтверждена ни одним найденным источником: литературные дозы укоренения 0.01-1.5 ppm (0.049-7.38 µM), т.е. в 100-1000 раз ниже CSV-минимума",
+    "CSV Expected_Result 'Enhanced germination rate' — данных по влиянию IBA на всхожесть семян томата/огурца/клубники в найденной литературе нет (подтверждён только эффект на корнеобразование/укоренение)",
+    "CSV Target_Crops 'Vegetable crops, ornamentals' — для клубники (ягодная культура) прямых полевых подтверждений укоренения усов IBA в PubMed не найдено"
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "corrected",
+    "reason": "Механизм подтверждён: IBA — ризогенный ауксин, прямое применение увеличивает придаточное корнеобразование у томата (PMID 10482660), дозы укоренения in vitro верифицированы для всех трёх культур (томат 0.5 µM-1.5 мг/л; огурец 1.5 мг/л → 96.2% укоренения; клубника 0.01-0.98 µM). Однако CSV-дозировка (100-1000 ppm, замачивание семян) не подтверждена и на 2-3 порядка превышает литературные концентрации → доза должна быть исправлена (рекомендуемый диапазон по литературе ~0.5-50 ppm в зависимости от способа применения; точные полевые дозы требуют доп. источников). Заявка 'enhanced germination rate' не подтверждена (no_data по всхожести). Отсутствуют полевые испытания и данные по укоренению усов клубники."
+  },
+  "sources_index": [
+    {
+      "pmid": "10482660",
+      "year": 1999,
+      "doi": "10.1104/pp.121.1.53",
+      "title": "Root formation in ethylene-insensitive plants",
+      "journal": "Plant Physiol",
+      "crop": "tomato",
+      "verified": true
+    },
+    {
+      "pmid": "16146322",
+      "year": 2005,
+      "doi": "10.1016/j.jplph.2005.01.008",
+      "title": "Induction of multiple shoots from leaf segments, in vitro-flowering and fruiting of a dwarf tomato",
+      "journal": "J Plant Physiol",
+      "crop": "tomato",
+      "verified": true
+    },
+    {
+      "pmid": "16231183",
+      "year": 2006,
+      "doi": "10.1007/s00299-005-0066-5",
+      "title": "TDZ, auxin and genotype effects on leaf organogenesis in Fragaria",
+      "journal": "Plant Cell Rep",
+      "crop": "strawberry",
+      "verified": true
+    },
+    {
+      "pmid": "23306888",
+      "year": 2013,
+      "doi": "10.1007/s12010-012-0006-0",
+      "title": "Optimization of factors influencing microinjection method for Agrobacterium tumefaciens-mediated transformation of tomato",
+      "journal": "Appl Biochem Biotechnol",
+      "crop": "tomato",
+      "verified": true
+    },
+    {
+      "pmid": "24322545",
+      "year": 2014,
+      "doi": "10.4161/gmcr.27229",
+      "title": "Improved regeneration and transformation protocols for three strawberry cultivars",
+      "journal": "GM Crops Food",
+      "crop": "strawberry",
+      "verified": true
+    },
+    {
+      "pmid": "27252731",
+      "year": 2016,
+      "doi": "10.3389/fpls.2016.00718",
+      "title": "Promoting Roles of Melatonin in Adventitious Root Development of Solanum lycopersicum L. by Regulating Auxin and Nitric Oxide Signaling",
+      "journal": "Front Plant Sci",
+      "crop": "tomato",
+      "verified": true
+    },
+    {
+      "pmid": "28855842",
+      "year": 2017,
+      "doi": "10.1016/j.sjbs.2017.03.008",
+      "title": "Efficient and reproducible in vitro regeneration of Solanum lycopersicum and assessment genetic uniformity using flow cytometry and SPAR methods",
+      "journal": "Saudi J Biol Sci",
+      "crop": "tomato",
+      "verified": true
+    },
+    {
+      "pmid": "29354371",
+      "year": 2018,
+      "doi": "10.1007/s13205-018-1083-8",
+      "title": "High frequency plant regeneration from cotyledonary node explants of Cucumis sativus L. cultivar 'Green Long' via adventitious shoot organogenesis and assessment of genetic fidelity by RAPD-PCR technology",
+      "journal": "3 Biotech",
+      "crop": "cucumber",
+      "verified": true
+    },
+    {
+      "pmid": "31110507",
+      "year": 2019,
+      "doi": "10.3389/fpls.2019.00365",
+      "title": "Lateral Root Initiation in the Parental Root Meristem of Cucurbits: Old Players in a New Position",
+      "journal": "Front Plant Sci",
+      "crop": "cucumber",
+      "verified": true
+    },
+    {
+      "pmid": "33396927",
+      "year": 2020,
+      "doi": "10.3390/plants10010067",
+      "title": "Use of Thidiazuron for High-Frequency Callus Induction and Organogenesis of Wild Strawberry (Fragaria vesca)",
+      "journal": "Plants (Basel)",
+      "crop": "strawberry (F. vesca)",
+      "verified": true
+    },
+    {
+      "pmid": "35540178",
+      "year": 2022,
+      "doi": "10.1016/j.sjbs.2022.103292",
+      "title": "Highly efficient Agrobacterium-mediated transformation and plant regeneration system for genome engineering in tomato",
+      "journal": "Saudi J Biol Sci",
+      "crop": "tomato",
+      "verified": true
+    },
+    {
+      "pmid": "37194800",
+      "year": 2023,
+      "doi": "10.1590/1519-6984.266975",
+      "title": "Micropropagation of berry crops for creation of germplasm cryobanks",
+      "journal": "Braz J Biol",
+      "crop": "strawberry",
+      "verified": true
+    },
+    {
+      "pmid": "40805698",
+      "year": 2025,
+      "doi": "10.3390/plants14152349",
+      "title": "A Water Solution from the Seeds, Seedlings and Young Plants of the Corn Cockle (Agrostemma githago) Showed Plant-Growth Regulator Efficiency",
+      "journal": "Plants (Basel)",
+      "crop": "cucumber (биотест)",
+      "verified": true
+    },
+    {
+      "pmid": "41824215",
+      "year": 2026,
+      "doi": "10.1007/s11103-026-01699-6",
+      "title": "γ-Valerolactone promotes Solanum lycopersicum seedling growth through transcriptomic and plant hormone changes",
+      "journal": "Plant Mol Biol",
+      "crop": "tomato",
+      "verified": true
+    }
+  ]
+}

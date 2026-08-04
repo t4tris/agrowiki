@@ -2,24 +2,28 @@
 type: substance
 code: IBA
 name_en: Indole-3-butyric Acid
-cas: 
-formula: 
+cas: 133-32-4
+formula: C12H13NO2
 class: Auxin
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 100-1000 ppm solution for seed soaking 2-6 hours
 efficacy_csv: HIGH
-validation_status: unverified
-evidence_level: unverified
-last_checked: 
-next_review: 
-sources: []
-notes: []
+validation_status: corrected
+evidence_level: moderate
+last_checked: 2026-08-04
+next_review: 2026-09-04
+sources: ["PMID:10482660", "PMID:35540178", "PMID:28855842", "PMID:16146322", "PMID:23306888", "PMID:27252731", "PMID:41824215", "PMID:29354371", "PMID:40805698", "PMID:31110507", "PMID:16231183", "PMID:24322545", "PMID:37194800", "PMID:33396927"]
+notes:
+  - "CSV-доза замачивания семян 100-1000 ppm на 2-3 порядка выше всех литературных концентраций (0.5 µM - 1.5 мг/л, в основном in vitro)"
+  - "Прямых полевых/вегетационных исследований замачивания семян томата IBA не найдено; заявление CSV об ускорении прорастания не подтверждено"
+  - "Укоренение черенков/микропобегов IBA — основной подтверждённый эффект (томат PMID 10482660, огурец PMID 29354371, клубника — только in vitro)"
+  - "Прямых исследований укоренения усов клубники IBA в PubMed не найдено (0 PMID)"
 crops:
-  tomato: no_data
-  cucumber: no_data
-  strawberry: no_data
-aliases: []
-aliases_ru: []
+  tomato: found_verified
+  cucumber: found_verified
+  strawberry: found_verified
+aliases: ["Indole-3-butyric Acid", "Indolebutyric acid", "IBA", "4-(1H-Indol-3-yl)butanoic acid"]
+aliases_ru: ["Индолил-3-масляная кислота (ИМК)", "Индолилмасляная кислота", "β-индолилмасляная кислота"]
 eppo_code: null
 regulatory_status: null
 consensus_score: null
@@ -29,13 +33,16 @@ phi_mrl: {}
 
 # IBA — Indole-3-butyric Acid
 
-> ⚠️ Черновик из CSV. Статус: `unverified`. Валидация по культурам (томат/огурец/клубника) — впереди.
+> ✅ Валидировано 2026-08-04 (пилот, контракт v1.2). Статус: `corrected` / evidence: `moderate`.
+> ⚠️ CSV-протокол (замачивание семян 100–1000 ppm) **не подтверждён литературой и превышает рабочие дозы в 100–1000 раз**.
 
 ## Идентичность
-<!-- CAS, формула, класс — проверить через PubChem -->
+- **CAS:** 133-32-4 (подтверждён PubChem RegistryID; ошибочная запись 933-32-4 встречается в реестрах), **CID 8617**
+- **Формула:** C12H13NO2 · **Молярная масса:** 203.24 г/моль
+- **Класс:** Auxin (синтетический/природный ауксин, ризогенный гормон) — подтверждён
 
 ## Механизм действия
-Rooting hormone
+Ауксин, стимулирующий образование придаточных корней на черенках и укоренение микропобегов in vitro. Действует через ауксиновую сигнализацию (PIN1/PIN3/PIN7, IAA19/IAA24) и NO-сигналинг; эффект зависит от этиленовой чувствительности (у мутанта томата Never ripe укоренение почти не индуцируется, PMID 10482660).
 
 ## Применение (CSV)
 | Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
@@ -43,29 +50,48 @@ Rooting hormone
 | SEED_TREATMENT | Growth stimulation | Apply 100-1000 ppm solution for seed soaking 2-6 hours | Enhanced germination rate, stronger root system | HIGH | Vegetable crops, ornamentals |
 
 ## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
 
-### 🍅 Томат (Solanum lycopersicum)
-<!-- нет данных по культуре -->
+### 🍅 Томат (Solanum lycopersicum) — `found_verified`
+- **Укоренение стеблевых черенков:** прикладной IBA увеличивает придаточные корни у дикого типа; у этилен-нечувствительного мутанта Nr эффект почти отсутствует (PMID 10482660)
+- **In vitro укоренение микропобегов:** 0.5 мг/л (PMID 35540178), 0.5 µM на ½MS (PMID 28855842), 4.9 µM (MicroTom, PMID 16146322), 1.5 мг/л + TDZ 1.5 мг/л в регенерации (PMID 23306888)
+- **Эндогенный IBA** возрастает при индукции придаточных корней мелатонином через NO (PMID 27252731) и под действием γ-валеролактона (PMID 41824215) — экзогенный IBA не применялся
+- **Gap:** полевых/вегетационных исследований замачивания семян в 100–1000 ppm не найдено; все дозы (0.5 µM–1.5 мг/л) на 2–3 порядка ниже CSV-диапазона
 
-### 🥒 Огурец (Cucumis sativus)
-<!-- нет данных по культуре -->
+### 🥒 Огурец (Cucumis sativus) — `found_verified`
+- **In vitro укоренение:** максимум 96.2% на IBA 1.5 мг/л + кинетин 0.5 мг/л (PMID 29354371)
+- **Биотест Cucumis:** ауксиноподобная активность экстракта куколя = 0.5–2 мг/л IBA (PMID 40805698)
+- **Механизм Cucurbitaceae:** IBA индуцирует CpMAKR4 — ранний маркер инициации латеральных корней (у огурца ортолог CsGATA24) (PMID 31110507)
+- **Gap:** исследований обработки семян/рассады огурца IBA (замачивание/полив) не найдено — только in vitro и биотесты
 
-### 🍓 Клубника (Fragaria × ananassa)
-<!-- нет данных по культуре -->
+### 🍓 Клубника (Fragaria × ananassa) — `found_verified` (только in vitro)
+- **Органогенез листьев:** TDZ 4.54 µM + IBA 0.98 µM — максимальная регенерация побегов (PMID 16231183)
+- **Среда пролиферации:** MS + BA 0.5 + GA3 0.1 + IBA 0.1 мг/л (PMID 24322545); микроразмножение: MS + BAP 0.3 + IBA 0.01 мг/л (PMID 37194800)
+- **F. vesca:** укоренение побегов на IBA- или NAA-среде (PMID 33396927)
+- **Gap:** укоренение усов F. × ananassa IBA в полевых условиях — 0 PMID (запросы 'indole butyric acid strawberry runner rooting' → 0; fallback 'indolebutyric acid AND Fragaria' → 0)
 
 ## ⚠️ Corrected Dosages (vs CSV)
 | CSV Claim | Corrected | Condition | Source |
 |-----------|-----------|-----------|--------|
+| 100-1000 ppm замачивание семян 2-6 ч | Не подтверждено; рабочие дозы 0.5 µM–1.5 мг/л (≈0.1–1.5 ppm), в осн. in vitro | Укоренение черенков/микропобегов, не замачивание семян | PMID 35540178, 28855842, 16146322 |
+| Enhanced germination rate | Не подтверждено — исследований прорастания семян томата/огурца/клубники с IBA не найдено | — | — |
+| Stronger root system | Подтверждено для придаточных корней черенков (не семян) | Вегетативные черенки | PMID 10482660 |
 
 ## ⚠️ Toxicity Window
-<!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
+ED50/TD50/терапевтический индекс — **нет данных** (токсикологические БД не опрашивались). ⚠️ CSV-доза 100–1000 ppm = 492–4920 µM — существенно выше всех литературных концентраций; риск фитотоксичности при такой дозе не исключён, но источниками не верифицирован.
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
+**Нет данных.** PHI/MRL не найдены; IBA (CAS 133-32-4) — PGR, найденные работы — только аналитические по детекции PGR в овощах. Официальные БД MRL (EU Pesticides Database, US EPA, Codex) не опрашивались — null по правилам честности.
 
 ## Противоречия
-<!-- CSV vs литература, severity -->
+1. **CSV-доза 100–1000 ppm** vs литература 0.5 µM–1.5 мг/л — на 2–3 порядка выше (high)
+2. **«Enhanced germination rate»** — не подтверждено ни одним источником (high)
+3. **«Seed soaking»** как способ — полевых исследований замачивания семян нет; IBA применяется для укоренения черенков (medium)
 
 ## Источники
-<!-- PMID / DOI / URL -->
+- [PMID 10482660](https://pubmed.ncbi.nlm.nih.gov/10482660/) — IBA и придаточные корни томата, этилен (1999)
+- [PMID 35540178](https://pubmed.ncbi.nlm.nih.gov/35540178/) — 0.5 мг/л IBA укоренение томата (2022)
+- [PMID 28855842](https://pubmed.ncbi.nlm.nih.gov/28855842/) — 0.5 µM IBA регенерация томата (2017)
+- [PMID 29354371](https://pubmed.ncbi.nlm.nih.gov/29354371/) — 1.5 мг/л IBA укоренение огурца 96.2% (2018)
+- [PMID 16231183](https://pubmed.ncbi.nlm.nih.gov/16231183/) — TDZ+IBA регенерация клубники (2006)
+- [PMID 37194800](https://pubmed.ncbi.nlm.nih.gov/37194800/) — 0.01 мг/л IBA микроразмножение (2023)
+- Артефакт: [[raw/evidence/I/IBA/search_IBA_2026-08-04.json]]

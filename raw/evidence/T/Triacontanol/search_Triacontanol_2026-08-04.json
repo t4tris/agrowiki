@@ -1,0 +1,831 @@
+{
+  "contract_version": "1.2",
+  "substance": {
+    "code": "Triacontanol",
+    "csv_name": "1-Triacontanol",
+    "queried_name": "Triacontanol"
+  },
+  "searches": {
+    "performed": [
+      "pubchem_compound_name_property_JSON (Title, MolecularFormula, MolecularWeight, CanonicalSMILES, IUPACName)",
+      "pubchem_compound_name_xrefs_RegistryID_JSON (CAS)",
+      "pubchem_compound_name_synonyms_JSON",
+      "pubmed_esearch triacontanol tomato yield photosynthesis (retmax=20) -> 0 hits, fallback applied",
+      "pubmed_esearch triacontanol strawberry (retmax=20) -> 4 hits",
+      "pubmed_esearch triacontanol cucumber (retmax=20) -> 3 hits",
+      "pubmed_esearch triacontanol growth regulator foliar (retmax=20) -> 10 hits",
+      "pubmed_esearch fallback: triacontanol[Title/Abstract] AND tomato[Title/Abstract] -> 9 hits",
+      "pubmed_esummary for PMID 42328074,36466575,35893617,32290080 (strawberry)",
+      "pubmed_esummary for PMID 34969963,9042348,12231664 (cucumber)",
+      "pubmed_esummary for PMID 24226183,24302317,24407259,16660401 (tomato set)",
+      "pubmed_esummary for PMID 41656213,40275139,40123477,36934336,36898213,35260596,35043836,27379149,12198189 (general set)",
+      "pubmed_efetch abstracts PMID 38802434,40122002,15128037,24302317 (tomato)",
+      "pubmed_efetch abstracts PMID 35893617,32290080,36466575 (strawberry)",
+      "pubmed_efetch abstracts PMID 34969963,9042348 (cucumber)",
+      "pubmed_efetch abstracts PMID 24226183,16660401 (mechanism)",
+      "openalex_works title_and_abstract.search:triacontanol tomato (2 pages)",
+      "openalex_works title_and_abstract.search:triacontanol strawberry",
+      "openalex_works title_and_abstract.search:triacontanol cucumber",
+      "openalex_works title_and_abstract.search:triacontanol, from 2015-01-01, sorted desc",
+      "openalex_works title_and_abstract.search:triacontanol, type:preprint (preprint discovery)",
+      "openalex_works doi-lookup for 10.1038/s41598-024-62398-0, 10.1016/j.jhazmat.2025.137746, 10.1007/s11738-000-0030-5, 10.1078/0176-1617-01260, 10.21273/hortsci.20.1.73, 10.17660/actahortic.2009.823.29, 10.1007/s00344-024-11502-9, 10.1016/j.jafr.2026.102913 (PMID resolution)",
+      "local CSV verification (grep Triacontanol in Complete_Action_Oriented_Agronomic_Substances_CLEANED_v6.csv)"
+    ],
+    "failed": [
+      "europepmc_rest_search (https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=triacontanol AND tomato|strawberry|triacontanol) - 2 attempts, WebFetchBlockedUrlError: resolves to blocked IPv6-mapped address 64:ff9b::c13e:c150 (network-level block in fetch tool; NOT a DNS failure, endpoint unreachable from this environment)",
+      "pubmed_esearch first attempt 2026-08-04T~12:45 (tomato query) - HTTP 429 rate limit; retried successfully after pause"
+    ],
+    "queries_used": [
+      "triacontanol tomato yield photosynthesis",
+      "triacontanol strawberry",
+      "triacontanol cucumber",
+      "triacontanol growth regulator foliar",
+      "triacontanol[Title/Abstract] AND tomato[Title/Abstract] (fallback)",
+      "openalex: title_and_abstract.search:triacontanol tomato|strawberry|cucumber",
+      "openalex: title_and_abstract.search:triacontanol, from_publication_date:2015-01-01",
+      "openalex: title_and_abstract.search:triacontanol, type:preprint"
+    ],
+    "fallback_tries": [
+      "tomato: primary query (triacontanol tomato yield photosynthesis) returned 0 hits -> fallback triacontanol[Title/Abstract] AND tomato[Title/Abstract] returned 9 hits (used)",
+      "europepmc: unavailable (blocked endpoint), no fallback mirror available in this environment"
+    ]
+  },
+  "identity": {
+    "cas": "593-50-0",
+    "cid": 68972,
+    "formula": "C30H62O",
+    "iupac": "triacontan-1-ol",
+    "molar_mass_g_mol": 438.8,
+    "class_confirmed": "Biostimulant",
+    "class_evidence": [
+      "PMID 38802434 (Sci Rep 2024): 'triacontanol, a promising biostimulant found in cuticle waxes'",
+      "PMID 32290080 (Plants 2020): 'non-toxic, pollution-free, low-cost, high-efficiency, broad-spectrum plant growth regulator'",
+      "PMID 36466575 (Heliyon 2022, review): triacontanol listed among plant growth regulators essential for strawberry ripening/maturity/fruit quality"
+    ],
+    "synonyms": [
+      "1-Triacontanol",
+      "Triacontan-1-ol",
+      "Melissyl alcohol",
+      "Myricyl alcohol",
+      "n-Triacontanol",
+      "Triacontyl alcohol",
+      "1-Hydroxytriacontane",
+      "Well-Bloom (commercial formulation)"
+    ],
+    "synonyms_ru": [
+      "1-триаконтапол",
+      "триаконтановый спирт",
+      "мелиссиловый спирт",
+      "мирициловый спирт"
+    ],
+    "notes": "PubChem CID 68972; MW 438.8 g/mol (C30H62O, ConnectivitySMILES CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCO). CAS 593-50-0 (primary; PubChem RegistryID also lists 28351-05-5 as additional registration; EINECS 209-794-5; UNII 767RD0E90B; CHEBI:28409; KEGG C08392). Natural long-chain primary alcohol (C30) of plant cuticular waxes. synonyms_ru are standard Russian chemical names (melissyl alcohol = мелиссиловый спирт), not from PubChem. CSV row 6 (CLEANED_v6) matches code=Triacontanol, csv_name=1-Triacontanol, class=Biostimulant, mechanism='Growth stimulator', dosage='Apply 0.05-0.2 ppm foliar spray', Expected_Result='Increased photosynthesis and yield', Efficacy=HIGH, Target_Crops='All crops, especially in vegetative stage'. A second CSV row (line 266) lists 'Triacontanol (TRIA)' targeted at strawberry/fruit crops with dosage 'Foliar spray 1-150 ppm; 50 µM for fruit coloration'."
+  },
+  "mode_of_action": {
+    "summary": "TRIA — первичный длинноцепочечный спирт (C30H62O) из кутикулярных восков; стимулятор роста, открытый Ries et al. (Science 1977). Механизм: сверхнизкие (наномолярные) дозы в течение <=10 мин индуцируют водорастворимый вторичный мессенджер TRIM, который быстро перемещается по растению, стимулируя прирост сухой массы, водопоглощение и рост; активность блокируется октакозанолом (C28-спирт) и, частично, другими длинноцепочечными спиртами. TRIA увеличивает рост клеточных культур in vitro (за счёт числа клеток). В стрессовых условиях (NaCl, засуха, La) повышает активность антиоксидантных ферментов (SOD, POX/CAT, APX, GR), осмолитов (пролин, глицинбетаин, фенолы), фотосинтетических пигментов и газообмена, улучшает водный режим; модулирует гормональный гомеостаз (у томата — гормональный сдвиг, повышающий всхожесть; у клубники 50 мкМ — ускорение развития плодов, накопление сахаров/антоцианов). На мембранах (протопласты огурца) снижает микровязкость. Побочный механистический эффект: частичное подавление JA-индуцированной индукции ингибиторов протеиназ (снижение индуцированной устойчивости к насекомым).",
+    "evidence": [
+      "PMID 24226183 (Planta 1988, Ries & Wert): nanomolar doses elicit mobile second messenger TRIM within 10 min; dry weight and water uptake stimulated; octacosanol (OCTA) blocks TRIA activity; TRIM isolated from rice roots within 1 min of foliar TRIA application; TRIM passes through 4-mm water column (tomato shoots connected to rice roots)",
+      "PMID 16660401 (Plant Physiol 1978): TRIA increases fresh weight of in vitro cell cultures of tomato, tobacco, potato, bean, barley; growth increase due to cell number; octacosanol inactive",
+      "PMID 24302317 (Planta 1981): TRIA effect C3-specific (tomato: dry weight increase, reduced photorespiration-linked photosynthesis inhibition; maize C4: no effect) — 'regulates processes related to photosynthesis'",
+      "PMID 9042348 (BBA 1997): TRIA decreases microviscosity of cucumber fruit protoplast membranes (membrane-level mode of action)",
+      "PMID 38802434 (Sci Rep 2024): proteomics — TRIA up-regulates development/abiotic-stress proteins, down-regulates biotic-stress resistance proteins; alters hormone homeostasis"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": "esearch 'triacontanol tomato yield photosynthesis' = 0 hits; fallback 'triacontanol[tiab] AND tomato[tiab]' = 9 hits; abstracts read for 6 PMIDs (38802434, 40122002, 15128037, 24302317, 24226183, 16660401)",
+        "europe_pmc": "failed — endpoint blocked (IPv6-mapped address), no data",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Фолиарная/корневая аппликация TRIA: ускорение и усиление цветения без изменения вегетативного роста; повышение всхожести семян (через изменение гормонального гомеостаза); снижение повреждений от солевого стресса; протеомика листьев — повышение белков развития и абиотической устойчивости, снижение белков устойчивости к биотическому стрессу; питательные свойства плодов не изменяются",
+          "context": "Обработанные растения томата; концентрация TRIA в абстракте не указана; коммерческое участие IRRITEC SpA (производитель биостимуляторов)",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": null,
+            "ph": null,
+            "stress": "salt stress (reduced damage)",
+            "stage": "seed germination; flowering",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "38802434",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-024-62398-0",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11130248/"
+            }
+          ],
+          "quote": "Triacontanol application induced advanced and increased blooming without affecting plant growth... The treatment also increased the germination rate of seeds by altering hormone homeostasis and reduced salt stress-induced damage."
+        },
+        {
+          "type": "effect",
+          "value": "TRIA (в комбинации с MnO-наночастицами) против La-стресса: восстановление роста (побег +155.81%, корень +216.66%, сухая масса +116.58%/+173.06%), фотосинтетических пигментов (хлорофилл a +110.23%, b +263.15%, общий +142.27%, каротиноиды +266.66%), газообмена (нетто-фотосинтез +74.44%, устьичная проводимость +119.00%, транспирация +89.44%), антиоксидантной защиты (SOD +27.02%, CAT +15.38%, APX +90.37%, GR +90.38%); снижение H2O2, MDA, электролитной утечки",
+          "context": "La-стресс (лантан) у томата; эффект показан для комбинированной обработки MnO NPs + TRIA, не TRIA отдельно; доза TRIA в абстракте не указана",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "MnO nanoparticles + triacontanol (combined)",
+            "ph": null,
+            "stress": "lanthanum (La) stress",
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "net photosynthesis +74.44% (combined treatment vs La-stressed control)"
+          },
+          "sources": [
+            {
+              "pmid": "40122002",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.jhazmat.2025.137746",
+              "oa_url": null
+            }
+          ],
+          "quote": "Photosynthetic efficiency parameters, such as net photosynthetic rate, stomatal conductance, and transpiration rate, also improved by up to 74.44%, 119.00%, and 89.44%, respectively, under combined treatments."
+        },
+        {
+          "type": "method",
+          "value": "Корневая аппликация TRIA (в питательный раствор 2 раза в неделю, ~4 недели) значимо увеличивала сухую массу томата (C3); наибольший прирост при начале обработки ДО заложения бутонов; у кукурузы (C4) эффекта нет; у молодых листьев TRIA-растений падение фотосинтеза при повышении O2 с 2% до 21% составило 27% против 39% в контроле (меньше фотодыхание)",
+          "context": "Гидропоника (Phytotron, Univ. Oslo); метод — корневой, НЕ фолиарный; концентрация TRIA в абстракте не указана",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "nutrient solution (root application, twice weekly)",
+            "ph": null,
+            "stress": null,
+            "stage": "initiation before bud formation most effective",
+            "bbch_stages": [
+              "before bud formation (tomato BBCH <51)"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "significant dry-weight increase (tomato); photosynthesis inhibition 27% vs 39% control at 21% O2"
+          },
+          "sources": [
+            {
+              "pmid": "24302317",
+              "year": 1981,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1007/BF00384983",
+              "oa_url": null
+            }
+          ],
+          "quote": "After about 4 weeks the triacontanol treatment caused a significant increase in the dry weight of the tomato plants... the largest increase in growth was obtained when triacontanol treatment was initiated before bud formation."
+        },
+        {
+          "type": "effect",
+          "value": "TRIA частично подавляет JA-индуцированную продукцию ингибиторов протеиназ в листьях томата (снижение ингибирования трипсина и кишечных протеиназ Spodoptera litura); масса личинок S. litura на JA+TRIA-листьях выше, чем на JA-листьях",
+          "context": "Механистическое исследование (Karnatak Univ., Индия); указывает на возможное снижение индуцированной защиты от насекомых — см. contraindications",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "leaf protein extracts; larval feeding assay",
+            "ph": null,
+            "stress": "jasmonic acid elicitation",
+            "stage": "leaves",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_contradicts",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "partial reversal of JA-induced proteinase-inhibitor activity"
+          },
+          "sources": [
+            {
+              "pmid": "15128037",
+              "year": 2004,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1078/0176-1617-01260",
+              "oa_url": null
+            }
+          ],
+          "quote": "Triacontanol (TRIA), a long chain aliphatic alcohol (C30H61OH) reverses the effect of jasmonic acid (JA) in inducing proteinase inhibitors (PIs) in tomato leaves."
+        },
+        {
+          "type": "effect",
+          "value": "TRIA увеличивает прирост свежей массы клеточных культур томата in vitro (за счёт числа клеток); активен также на табаке, картофеле, фасоли, ячмене; октакозанол неактивен",
+          "context": "In vitro клеточные культуры (1978); подтверждает ростостимулирующее действие на клеточном уровне",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "in vitro cell culture medium",
+            "ph": null,
+            "stress": null,
+            "stage": "cell culture",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "16660401",
+              "year": 1978,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1104/pp.61.5.855",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1091993/"
+            }
+          ],
+          "quote": "Triacontanol [CH3(CH2)28CH2OH] increased growth in vitro of cell cultures of haploid tobacco... The fresh weight of cell cultures of tomato..., potato..., bean... and barley... was also increased."
+        }
+      ],
+      "gap": "Концентрации TRIA в абстрактах Sci Rep 2024 и J Hazard Mater 2025 не указаны — дозировка для томата не верифицирована. Прямого подтверждения 'increased yield' у томата в современных работах нет (цветение/всхожесть — косвенные признаки; урожайный эффект подтверждён только старой работой 1981 г. по сухой массе). Старые работы по урожаю томата (Plant Growth Regulation 1982, DOI 10.1007/bf00024217; Acta Hortic 2009, DOI 10.17660/actahortic.2009.823.29; Acta Physiol Plant 2000 'Tomatex', DOI 10.1007/s11738-000-0030-5; J Agric Food Res 2026, DOI 10.1016/j.jafr.2026.102913) найдены в OpenAlex, но абстракты не читались (нет PMID или недоступен) — включены в sources_index как title_only."
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": "esearch 'triacontanol cucumber' = 3 hits (34969963, 9042348, 12231664); abstracts read for 34969963, 9042348; 12231664 (Plant Physiol 1993, L(+)-adenosine ion pulses) — false positive, triacontanol not the treatment",
+        "europe_pmc": "failed — endpoint blocked, no data",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Оптимизированная фолиарная доза TRIA = 0.8 мг/л (~0.8 ppm) при солевом стрессе (NaCl 50 ммоль/л): смягчение стресса у всех 4 генотипов, наибольший отклик у 'Green long' и 'Marketmore'; рекомендация авторов — TRIA @ 0.8 мг/л",
+          "context": "4 генотипа огурца, фолиарная аппликация, солевой стресс 50 mM NaCl; доза подтверждена абстрактом",
+          "dosage_normalized": {
+            "original": "0.8 mg/L foliar",
+            "ppm_equivalent": 0.8,
+            "molar_mass_used_g_mol": 438.8,
+            "conversion_source": "mg/L ≈ ppm for dilute aqueous solution (1 ppm ≈ 1 mg/L); molar mass not required for mg/L->ppm",
+            "note": "Published effective foliar dose (0.8 mg/L) is 4-16x higher than CSV dose 0.05-0.2 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "ph": null,
+            "stress": "salt stress (50 mmol/L NaCl)",
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "34969963",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-021-04174-y",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8718522/"
+            }
+          ],
+          "quote": "The present study was designed to investigate the comparative performance of cucumber genotypes under salt stress (50 mmol L-1) and stress alleviation through an optimized level of triacontanol @ 0.8 mg L-1."
+        },
+        {
+          "type": "effect",
+          "value": "TRIA смягчает солевой стресс: повышение активности антиоксидантных ферментов (SOD, POD, CAT), накопление совместимых осмолитов (пролин, глицинбетаин, фенольные соединения), улучшение газообмена и водного режима, повышение Ca и K и снижение Na и Cl в листьях; положительный отклик урожайных признаков",
+          "context": "Фолиарная обработка при NaCl 50 мМ; эффект генотип-зависимый (Green long, Marketmore > Summer green, 20252)",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "ph": null,
+            "stress": "salt stress (50 mmol/L NaCl)",
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "34969963",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-021-04174-y",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8718522/"
+            }
+          ],
+          "quote": "Triacontanol performs as a good scavenger of ROS by accelerating the activity of antioxidant enzymes (SOD, POD, CAT) and compatible solutes (proline, glycinebetaine, phenolic contents)... Furthermore, triacontanol feeding also shows the answer to yield traits of cucumber."
+        },
+        {
+          "type": "effect",
+          "value": "TRIA и ABA снижают микровязкость мембран протопластов плодов огурца (уменьшение анизотропии флуоресценции DPH/пирена, снижение времени жизни флуоресценции пирена) — мембранный уровень действия",
+          "context": "In vitro: протопласты плодов Cucumis sativus; механистическое исследование (Karnatak Univ., Индия)",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "isolated protoplast membranes, DPH/pyrene probes",
+            "ph": null,
+            "stress": null,
+            "stage": "fruit protoplasts",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "9042348",
+              "year": 1997,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1016/S0005-2736(96)00193-9",
+              "oa_url": null
+            }
+          ],
+          "quote": "In the presence of TRIA and ABA, there was a sharp decrease in the fluorescence lifetime of pyrene. Similarly, there was also a decrease in the microviscosities of the membranes..."
+        }
+      ],
+      "gap": "Данные по огурцу в основном связаны со стрессовыми условиями (засоление); работ по действию TRIA на урожай огурца в нестрессовых условиях в PubMed не найдено. Дополнительные работы найдены в OpenAlex без PMID: seed priming против засоления (Int J Agric Biol 2017, DOI 10.17957/ijab/15.0356), холодостойкость (Acta Agrobot 2012, DOI 10.5586/aa.2009.038), борьба с Aphis gossypii в теплице (2020, DOI 10.21608/jppp.2020.67598), производство семян (Jurnal Agronomi Indonesia 2000, DOI 10.24831/jai.v28i3.1558) — title_only, абстракты не читались."
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": "esearch 'triacontanol strawberry' = 4 hits (42328074, 36466575, 35893617, 32290080); abstracts read for 36466575, 35893617, 32290080; 42328074 (Front Plant Sci 2026, Cannabis) — false positive, excluded",
+        "europe_pmc": "failed — endpoint blocked, no data",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Фолиарные дозы 0.5 и 1 ppm TRIA (5 обработок, начиная через 30 дней после высадки, интервал 15 дней) при трёх уровнях орошения (40/80/100% WHC): TRIA повышала хлорофилл, газообмен (фотосинтез, устьичную проводимость), WUE, активность SOD/POX/CAT, высоту растений, массу плода и общую биомассу; общий урожай с растения +12.7% при 1 ppm относительно контроля",
+          "context": "Два полевых опыта, сорт Fertona, условия засухи (40% и 80% WHC) и нормальный полив (100% WHC)",
+          "dosage_normalized": {
+            "original": "0.5 and 1 ppm foliar (5 sprays, 15-day intervals from 30 days after transplanting)",
+            "ppm_equivalent": "0.5-1.0",
+            "molar_mass_used_g_mol": 438.8,
+            "conversion_source": "dose stated as ppm in original publication; molar mass not required",
+            "note": "Published effective foliar doses 0.5-1 ppm are 2.5-20x higher than CSV dose 0.05-0.2 ppm; +12.7% yield at 1 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray (supplementary TR rates 0/0.5/1 ppm)",
+            "ph": null,
+            "stress": "drought (40% and 80% of water holding capacity) vs control 100% WHC",
+            "stage": "from 30 days after transplanting; 5 applications, 15-day intervals",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "total yield per plant +12.7% at 1 ppm TR vs control"
+          },
+          "sources": [
+            {
+              "pmid": "35893617",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants11151913",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9330780/"
+            }
+          ],
+          "quote": "Total yield per plant was increased 12.7% using 1 ppm of TR compared with the control."
+        },
+        {
+          "type": "effect",
+          "value": "Обработка плодов клубники 50 мкМ TRIA ускоряет развитие и созревание плодов, повышает содержание сахаров и антоцианов, активность стресс-связанных ферментов; транскриптомный анализ: 9338 дифференциально экспрессированных генов (4520 вверх, 4818 вниз), затрагивающих клеточные процессы, гормоны и вторичный метаболизм (синтез флавоноидов, передача фитогормональных сигналов); TA охарактеризован как нетоксичный, недорогой, широкого спектра",
+          "context": "Сорт Sweet Charlie (Fragaria × ananassa Duch.); обработка плодов (пост-уборочная/плодовая), не вегетативная стадия",
+          "dosage_normalized": {
+            "original": "50 µM (fruit treatment)",
+            "ppm_equivalent": 21.94,
+            "molar_mass_used_g_mol": 438.8,
+            "conversion_source": "computed: 50e-6 mol/L × 438.8 g/mol = 0.02194 g/L = 21.94 mg/L ≈ 21.94 ppm",
+            "note": "Fruit-surface treatment dose, not foliar vegetative dose; consistent with CSV row 266 '50 µM for fruit coloration'"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "TA solution applied to fruit surface (50 µM)",
+            "ph": null,
+            "stress": null,
+            "stage": "fruit development / ripening (postharvest)",
+            "bbch_stages": [
+              "fruit ripening (BBCH 81-89)"
+            ],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "9338 DEGs (4520 up / 4818 down)"
+          },
+          "sources": [
+            {
+              "pmid": "32290080",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants9040488",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238246/"
+            }
+          ],
+          "quote": "TA treatment (50 μM) could promote fruit development by up-regulating factors related to fruit ripening-related growth and development. TA increased fruit sugar content and anthocyanin accumulation..."
+        },
+        {
+          "type": "effect",
+          "value": "Обзор: триакотанол наряду с гиббереллином, НУК (ауксин) и хлормекватом — важный регулятор роста, влияющий на созревание, показатели зрелости и качество плодов клубники; 'plays a special role in plant growth and development'",
+          "context": "Обзорная статья (Heliyon 2022); количественных данных по TRIA не приводит",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": null,
+            "ph": null,
+            "stress": null,
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "36466575",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "review",
+              "doi": "10.1016/j.heliyon.2022.e11959",
+              "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9712129/"
+            }
+          ],
+          "quote": "Similarly, triacontanol plays a special role in plant growth and development."
+        }
+      ],
+      "gap": "Работа HortScience 1985 (TRIA на урожайность и состав плодов сортов Tangi/Dover; DOI 10.21203/rs.3.rs-7864265/v1 — нет, правильный DOI 10.21273/hortsci.20.1.73) и препринт Research Square 2025 (питание+PGR, сорт Winter Dawn; DOI 10.21203/rs.3.rs-7864265/v1) найдены, но абстракты не читались (title_only). CSV строка 266 (клубника: 1-150 ppm, 10 µM вегетативный рост, 5 ppm задержка цветения, 100 ppm макс. размер плода, серебряная бумага для снижения освещённости плодов, 3 обработки через день) НЕ верифицирована абстрактами — только частично пересекается с PMID 32290080 (50 µM). Данных по MRL/PHI для клубники нет."
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Количественных токсикологических параметров (ED50/TD50, персистентность в почве) в прочитанных источниках нет. PMID 32290080 характеризует TA как 'non-toxic, pollution-free, low-cost'. CSV строка 266 (title_only, не верифицировано) сообщает о задержке цветения/бутонизации при 5 ppm и максимальном размере плодов при 100 ppm у клубники — сверхвысокие дозы могут давать нежелательные фенологические сдвиги. Терапевтический индекс не рассчитывался."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": "no_data — ни в одном прочитанном источнике (PubMed abstracts, OpenAlex records) PHI/MRL для триакотанола не упоминается; триакотанол — природный компонент кутикулярных восков, в прочитанных работах нормирование как пестицида не обсуждается"
+  },
+  "contraindications": [
+    "Не применять совместно с октакозанолом (C28-спирт) и другими длинноцепочечными первичными спиртами: OCTA блокирует активность TRIA, в т.ч. при нанесении на противоположную часть растения за >=1 мин до TRIA (PMID 24226183, verified; специфичность ингибирования — PMID 24407259, title_only)",
+    "TRIA частично подавляет JA-индуцированную индукцию ингибиторов протеиназ у томата и даунрегулирует белки устойчивости к биотическому стрессу (PMID 15128037, verified; PMID 38802434, verified) — возможное снижение индуцированной устойчивости к насекомым-вредителям",
+    "Эффект вида-специфичен: у C4-растений (кукуруза) эффект TRIA не наблюдался; у томата наибольший отклик при начале обработки до бутонизации (PMID 24302317, verified) — экстраполяция на другие культуры требует осторожности"
+  ],
+  "conflicts": [
+    "Дозировка CSV (0.05-0.2 ppm фолиарно) НЕ подтверждена ни одной прочитанной работой и ниже опубликованных эффективных доз: клубника 0.5-1 ppm (PMID 35893617), огурец 0.8 мг/л (PMID 34969963), плоды клубники 50 мкМ ≈ 21.9 ppm (PMID 32290080); при этом механистическая активность показана при наномолярных концентрациях (~0.0004 ppm, PMID 24226183, на рисе) — диапазон рабочих доз в литературе очень широк (0.0004-150 ppm по CSV стр. 266)",
+    "CSV Expected_Result 'Increased photosynthesis': прямое повышение фотосинтеза подтверждено в стрессовых контекстах (комбинированное MnO NPs+TRIA лечение у томата, PMID 40122002; засуха у клубники, PMID 35893617); в нестрессовых условиях у томата показаны цветение/всхожесть/стресс-толерантность без изменения вегетативного роста (PMID 38802434), а в Planta 1981 эффект связан с фотодыханием (PMID 24302317)",
+    "CSV Efficacy=HIGH и 'growth stimulator in vegetative stage': у томата вегетативный рост при обработке TRIA НЕ изменялся (PMID 38802434); стимуляция вегетативного роста подтверждена у клубники (высота растений, PMID 35893617) и in vitro (PMID 16660401)",
+    "CSV строка 266 (клубника: 5 ppm задерживает цветение, 100 ppm — максимум размера плода) частично противоречит CSV строке 6 ('vegetative stage') и не верифицирована абстрактами"
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Класс (Biostimulant) и механизм действия (вторичный мессенджер TRIM, наномолярная активность, мембранный эффект) подтверждены верифицированными абстрактами. По всем трём культурам есть прочитанные абстракты: клубника — полевые опыты, +12.7% урожая при 1 ppm фолиарно (PMID 35893617) и ускорение созревания плодов при 50 мкМ (PMID 32290080); огурец — смягчение солевого стресса при 0.8 мг/л фолиарно (PMID 34969963); томат — ускорение цветения, всхожесть, стресс-толерантность (PMID 38802434), рост сухой массы при корневой подаче (PMID 24302317). Однако: (1) дозировка CSV 0.05-0.2 ppm не подтверждена ни одной прочитанной работой (опубликованные эффективные дозы 0.5-1 ppm / 0.8 мг/л); (2) 'increased photosynthesis' подтверждён преимущественно в стрессовых условиях; (3) прирост урожая томата современными работами прямо не показан; (4) Europe PMC недоступен (блокировка эндпоинта), поэтому поиск неполный (препринты не охвачены через SRC:PPR). Рекомендация: частичное подтверждение записи с корректировкой диапазона доз и пометкой о стресс-ориентированной доказательной базе."
+  },
+  "sources_index": [
+    {
+      "pmid": "38802434",
+      "doi": "10.1038/s41598-024-62398-0",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11130248/",
+      "note": "Tomato; phenotypical/biochemical characterization; abstract read"
+    },
+    {
+      "pmid": "40122002",
+      "doi": "10.1016/j.jhazmat.2025.137746",
+      "year": 2025,
+      "verified": true,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Tomato; La stress; MnO NPs + TRIA; abstract read"
+    },
+    {
+      "pmid": "15128037",
+      "doi": "10.1078/0176-1617-01260",
+      "year": 2004,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "oa_url": null,
+      "note": "Tomato; TRIA vs JA-induced proteinase inhibitors; abstract read"
+    },
+    {
+      "pmid": "24302317",
+      "doi": "10.1007/BF00384983",
+      "year": 1981,
+      "verified": true,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Tomato C3 vs maize C4; root application; abstract read"
+    },
+    {
+      "pmid": "24226183",
+      "doi": "10.1007/BF00394491",
+      "year": 1988,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "oa_url": null,
+      "note": "Second messenger TRIM; nanomolar doses; tomato among test plants; abstract read"
+    },
+    {
+      "pmid": "24407259",
+      "doi": "10.1007/BF00388770",
+      "year": 1979,
+      "verified": false,
+      "paper_type": "mechanistic",
+      "oa_url": null,
+      "note": "Specificity of 1-triacontanol; inhibition by other long-chain compounds; esummary only"
+    },
+    {
+      "pmid": "16660401",
+      "doi": "10.1104/pp.61.5.855",
+      "year": 1978,
+      "verified": true,
+      "paper_type": "trial_in_vitro",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1091993/",
+      "note": "Cell cultures incl. tomato; abstract read"
+    },
+    {
+      "pmid": "35893617",
+      "doi": "10.3390/plants11151913",
+      "year": 2022,
+      "verified": true,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9330780/",
+      "note": "Strawberry drought; 0.5-1 ppm foliar; +12.7% yield; abstract read"
+    },
+    {
+      "pmid": "32290080",
+      "doi": "10.3390/plants9040488",
+      "year": 2020,
+      "verified": true,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7238246/",
+      "note": "Strawberry fruit development 50 uM; transcriptome; abstract read"
+    },
+    {
+      "pmid": "36466575",
+      "doi": "10.1016/j.heliyon.2022.e11959",
+      "year": 2022,
+      "verified": true,
+      "paper_type": "review",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9712129/",
+      "note": "Strawberry PGR review; abstract read"
+    },
+    {
+      "pmid": "34969963",
+      "doi": "10.1038/s41598-021-04174-y",
+      "year": 2021,
+      "verified": true,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8718522/",
+      "note": "Cucumber salt stress; 0.8 mg/L foliar; abstract read"
+    },
+    {
+      "pmid": "9042348",
+      "doi": "10.1016/S0005-2736(96)00193-9",
+      "year": 1997,
+      "verified": true,
+      "paper_type": "trial_in_vitro",
+      "oa_url": null,
+      "note": "Cucumber protoplast membranes microviscosity; abstract read"
+    },
+    {
+      "pmid": "12231664",
+      "doi": "10.1104/pp.101.1.49",
+      "year": 1993,
+      "verified": false,
+      "paper_type": "mechanistic",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC158646/",
+      "note": "L(+)-Adenosine ion pulses (tomato/cucumber/maize); false positive for triacontanol treatment; esummary only"
+    },
+    {
+      "pmid": "42328074",
+      "doi": "10.3389/fpls.2026.1842299",
+      "year": 2026,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13278894/",
+      "note": "Cannabis biostimulant complexes; false positive (no strawberry); esummary only"
+    },
+    {
+      "pmid": null,
+      "doi": "10.21273/hortsci.20.1.73",
+      "year": 1985,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Strawberry Tangi/Dover yield & fruit composition; title_only (OpenAlex), no PMID"
+    },
+    {
+      "pmid": null,
+      "doi": "10.17660/actahortic.2009.823.29",
+      "year": 2009,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Tomato K + triacontanol (Acta Hortic); title_only, no PMID"
+    },
+    {
+      "pmid": null,
+      "doi": "10.1007/s11738-000-0030-5",
+      "year": 2000,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Tomatex/Triacontanol chlorophyll fluorescence & tomato yields; title_only, no PMID"
+    },
+    {
+      "pmid": null,
+      "doi": "10.1016/j.jafr.2026.102913",
+      "year": 2026,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Mini plum tomato Zn biofortification + triacontanol; title_only (OpenAlex), no PMID"
+    },
+    {
+      "pmid": null,
+      "doi": "10.21203/rs.3.rs-7864265/v1",
+      "year": 2025,
+      "verified": false,
+      "paper_type": "preprint",
+      "oa_url": "https://doi.org/10.21203/rs.3.rs-7864265/v1",
+      "note": "Strawberry Winter Dawn nutrients+PGR preprint (Research Square); title_only"
+    },
+    {
+      "pmid": "41656213",
+      "doi": "10.1186/s12870-026-08141-5",
+      "year": 2026,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12930777/",
+      "note": "Wheat salt stress (BMC Plant Biol); NOT target crops; esummary only"
+    },
+    {
+      "pmid": "35260596",
+      "doi": "10.1038/s41598-022-06516-w",
+      "year": 2022,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8904539/",
+      "note": "Hot pepper salinity (Sci Rep); NOT tomato — excluded from claims; esummary only"
+    },
+    {
+      "pmid": "27379149",
+      "doi": "10.3389/fpls.2016.00872",
+      "year": 2016,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4911394/",
+      "note": "Rice transplanting shock; NOT target crops; esummary only"
+    },
+    {
+      "pmid": "12198189",
+      "doi": "10.1093/pcp/pcf100",
+      "year": 2002,
+      "verified": false,
+      "paper_type": "mechanistic",
+      "oa_url": null,
+      "note": "Rice triacontanol-regulated genes; mechanism context only; esummary only"
+    },
+    {
+      "pmid": "36934336",
+      "doi": "10.1080/15592324.2023.2189371",
+      "year": 2023,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10026909/",
+      "note": "Indian mustard salt stress; NOT target crops; esummary only"
+    },
+    {
+      "pmid": "36898213",
+      "doi": "10.1016/j.plaphy.2023.02.053",
+      "year": 2023,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Mustard PGR salt mitigation; NOT target crops; esummary only"
+    },
+    {
+      "pmid": "40275139",
+      "doi": "10.1186/s12870-025-06522-w",
+      "year": 2025,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12020215/",
+      "note": "Grape foliar additives; NOT target crops; esummary only"
+    },
+    {
+      "pmid": "40123477",
+      "doi": "10.1039/d4em00736k",
+      "year": 2025,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Tagetes patula Cd enrichment; NOT target crops; esummary only"
+    },
+    {
+      "pmid": "35043836",
+      "doi": "10.1590/1519-6984.253696",
+      "year": 2022,
+      "verified": false,
+      "paper_type": "trial",
+      "oa_url": null,
+      "note": "Eggplant heat stress; NOT target crops; esummary only"
+    }
+  ]
+}

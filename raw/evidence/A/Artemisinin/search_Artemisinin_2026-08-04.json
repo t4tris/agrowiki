@@ -1,0 +1,361 @@
+{
+  "contract_version": "1.2",
+  "substance": {
+    "code": "Artemisinin",
+    "csv_name": "Artemisinin",
+    "queried_name": "Artemisinin"
+  },
+  "searches": {
+    "performed": [
+      "pubchem: /property/Title,MolecularFormula,MolecularWeight,CanonicalSMILES,IUPACName/JSON",
+      "pubchem: /xrefs/RegistryID/JSON (CAS)",
+      "pubchem: /synonyms/JSON",
+      "pubmed esearch: artemisinin tomato root-knot nematode (count=0)",
+      "pubmed esearch: artemisinin tomato Meloidogyne (count=0)",
+      "pubmed esearch: artemisinin tomato heat stress SOD POD (count=0)",
+      "pubmed esearch: artemisinin plant growth allelopathy (count=3)",
+      "pubmed esearch: artemisinin strawberry (count=1)",
+      "pubmed esearch: artemisinin cucumber (count=2)",
+      "pubmed esearch fallback: artemisinin Meloidogyne (count=2)",
+      "pubmed esearch fallback: artemisinin root-knot nematode (count=1)",
+      "pubmed esearch fallback: artemisinin heat stress (count=45)",
+      "pubmed esearch fallback: artemisinin heat stress plant (count=6)",
+      "pubmed esearch fallback: artemisinin Solanum (count=8)",
+      "pubmed esearch fallback: artemisinin Fragaria (count=0)",
+      "pubmed esummary: 36122740,35908798,25658194,20815879,36805532,35720574",
+      "pubmed esummary: 35344268,29727708",
+      "pubmed esummary: 41059406,39756564,34315897,33292992,31359134,28855821",
+      "pubmed esummary: 41155278,38491132,38362104,34029639,21643655,20736008",
+      "pubmed efetch abstract (rettype=abstract): 35344268, 25658194, 36805532, 35720574, 36122740+35908798",
+      "openalex: works?search=artemisinin tomato root-knot nematode (top-10 нерелевантны)",
+      "openalex: works?search=artemisinin Meloidogyne incognita (top-10 нерелевантны)"
+    ],
+    "failed": [
+      "europe_pmc: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=artemisinin tomato root-knot nematode&format=json&pageSize=25 — WebFetchBlockedUrlError: адрес резолвится в 64:ff9b::c13e:c150 (IPv4-mapped IPv6); повтор с TITLE_ABS-запросом (artemisinin AND Meloidogyne) — та же ошибка. DNS/IPv6-проблема, Europe PMC недоступен, помечено как searches.failed"
+    ],
+    "queries_used": [
+      "artemisinin tomato root-knot nematode",
+      "artemisinin tomato Meloidogyne",
+      "artemisinin tomato heat stress SOD POD",
+      "artemisinin plant growth allelopathy",
+      "artemisinin strawberry",
+      "artemisinin cucumber",
+      "artemisinin Meloidogyne (fallback)",
+      "artemisinin root-knot nematode (fallback)",
+      "artemisinin heat stress (fallback)",
+      "artemisinin heat stress plant (fallback)",
+      "artemisinin Solanum (fallback, синоним культуры)",
+      "artemisinin Fragaria (fallback, синоним культуры)",
+      "openalex: artemisinin tomato root-knot nematode",
+      "openalex: artemisinin Meloidogyne incognita"
+    ],
+    "fallback_tries": [
+      "artemisinin Meloidogyne → 2 PMID (35344268, 29727708); томат в аннотации 35344268 НЕ упомянут (вещество — артемизининовая/дигидроартемизининовая кислоты, не артемизинин)",
+      "artemisinin root-knot nematode → 1 PMID (35344268, дубль)",
+      "artemisinin heat stress → 45 PMID; выборка 20: все про малярию/паразитов/полынь, растительных культур нет",
+      "artemisinin heat stress plant → 6 PMID (41059406, 39756564, 34315897, 33292992, 31359134, 28855821): HSP70 полыни, соя-микропластики, малярия, свиноматки, Leishmania, Artemisia judaica — ни одного про томат/SOD-POD-элисицию",
+      "artemisinin Solanum → 8 PMID; все ложные совпадения (биосинтез могрозидов/кроцина, трихомы, ферментация томатного сока, антималярийные растения, Solanum nudum)",
+      "artemisinin Fragaria → 0 PMID"
+    ]
+  },
+  "identity": {
+    "cas": "63968-64-9",
+    "cid": 68827,
+    "formula": "C15H22O5",
+    "iupac": "(1R,4S,5R,8S,9R,12S,13R)-1,5,9-trimethyl-11,14,15,16-tetraoxatetracyclo[10.3.1.04,13.08,13]hexadecan-10-one",
+    "molar_mass_g_mol": 282.33,
+    "class_confirmed": true,
+    "class_evidence": [
+      "PubChem CID 68827: синоним CHEBI:223316 (ChEBI-классификация сесквитерпеновых лактонов); формула C15H22O5 с 1,2,4-триоксановым (эндопероксидным) циклом — признак сесквитерпенового лактона",
+      "PMID 35344268: родственные соединения Artemisia annua (артемизининовая/дигидроартемизининовая кислоты) прямо названы 'nematicidal sesquiterpenoid acids'"
+    ],
+    "synonyms": [
+      "Qinghaosu",
+      "Arteannuin",
+      "(+)-Artemisinin",
+      "Artemisinine",
+      "Huanghuahaosu",
+      "Artemisine",
+      "Qing Hau SU",
+      "UNII-9RMU91N5K2"
+    ],
+    "synonyms_ru": [
+      "артемизинин",
+      "цинхаосу (Qinghaosu)",
+      "артеаннуин (Arteannuin)"
+    ],
+    "notes": "CAS 63968-64-9 (основной, подтверждён PubChem RegistryID и синонимом 'CAS-63968-64-9'); в RegistryID присутствует также 63968-63-9 (связанная запись). UNII 9RMU91N5K2, EC 700-290-5, NSC 369397. Молярная масса 282.33 г/моль соответствует расчётной для C15H22O5 (282.34)."
+  },
+  "mode_of_action": {
+    "summary": "Артемизинин — сесквитерпеновый лактон с эндопероксидным мостиком (1,2,4-триоксан). Для растений документирован как фитотоксичный аллелохимикат: ингибирование роста, ROS-оверпродукция, перекисное окисление липидов, остановка митоза и гибель клеток (PMID 25658194, салат). Нематицидная активность показана для родственных сесквитерпеноидов A. annua — артемизининовой (ArA) и дигидроартемизининовой (DHArA) кислот: EC50/48h 0.37/0.76 мМ против J2 Meloidogyne incognita, механизм — повреждение мембран и деплеция глутатиона (реакция α,β-ненасыщенного карбонила ArA с GSH); в pot-эксперименте 5 мг а.и./горшок ≈ авермектины 2 мг/горшок (PMID 35344268). Прямых доказательств 'antioxidant elicitor' действия (повышение SOD/POD при тепловом стрессе у культур) не найдено; у ржи артемизининовый стресс повышал SOD/CAT/POD/APX как защитный стресс-ответ (PMID 36122740), у ячменя 20 мг/л смягчал солевой+freeze-thaw стресс при СНИЖЕНИИ SOD (PMID 35908798).",
+    "evidence": [
+      {
+        "pmid": 25658194,
+        "year": 2015,
+        "claim": "Артемизинин ингибирует рост корней/побегов салата концентрационно-зависимо; индуцирует ROS-оверпродукцию, перекисное окисление липидов, остановку клеточного деления и гибель клеток в корневых кончиках",
+        "verified": true,
+        "paper_type": "mechanistic",
+        "doi": "10.1016/j.plaphy.2015.01.010",
+        "relevance": "directly_supports",
+        "note": "Подтверждает фитотоксичность/аллелопатию — основание для contraindications, а НЕ для 'antioxidant elicitor' интерпретации"
+      },
+      {
+        "pmid": 35344268,
+        "year": 2022,
+        "claim": "Артемизининовая и дигидроартемизининовая кислоты (НЕ артемизинин) из A. annua нематицидны против J2 M. incognita: EC50/48h 0.37/0.76 мМ; 5 мг/горшок = контроль авермектинов 2 мг/горшок; механизм — мембранные повреждения и снижение GSH в J2",
+        "verified": true,
+        "paper_type": "trial_in_vitro",
+        "doi": "10.1002/cbdv.202200083",
+        "relevance": "partially_relevant",
+        "note": "Вещество — кислоты-предшественники, не артемизинин; культура-хозяин в аннотации не указана; CSV-цифра 'до 70% снижения галлов' здесь отсутствует"
+      },
+      {
+        "pmid": 36122740,
+        "year": 2022,
+        "claim": "Артемизининовый стресс на проростках ржи: ингибирование роста/хлорофилла/фотосинтеза, рост MDA, растворимых сахаров и антиоксидантных ферментов SOD, CAT, POD, APX (защитный ответ на аллелопатический стресс)",
+        "verified": true,
+        "paper_type": "trial",
+        "doi": "10.1016/j.chemosphere.2022.136476",
+        "relevance": "partially_relevant",
+        "note": "Культура — рожь; повышение SOD/POD — стресс-ответ на фитотоксичность, не элиситорный эффект"
+      },
+      {
+        "pmid": 35908798,
+        "year": 2022,
+        "claim": "Ячмень, гидропоника: 20 мг/л артемизинина при соли (150 мМ NaCl)+freeze-thaw смягчал повреждения (меньше MDA/H2O2, ниже относительная электропроводность), SOD при этом снижалась; вывод — 'умеренное количество артемизинина может смягчать повреждения'",
+        "verified": true,
+        "paper_type": "trial",
+        "doi": "10.1071/FP21359",
+        "relevance": "partially_relevant",
+        "note": "Культура — ячмень; эффект на SOD противоположен CSV-заявке (SOD снижалась)"
+      },
+      {
+        "pmid": 29727708,
+        "year": 2018,
+        "claim": "Обзор: артемизинин и производные активны против гельминтозов (в т.ч. нематод) у животных — фоновая нематицидная активность класса",
+        "verified": false,
+        "paper_type": "review",
+        "doi": "10.1016/j.phrs.2018.04.025",
+        "relevance": "partially_relevant",
+        "note": "Только заголовок (title_only); животные-хозяева, не растения"
+      }
+    ],
+    "confirmed": false
+  },
+  "crops": {
+    "tomato": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 0,
+        "europe_pmc": "failed",
+        "culture_mentioned": false
+      },
+      "claims": [
+        {
+          "type": "efficacy",
+          "value": "CSV-заявка (НЕ подтверждена литературой): 'Reduced root-knot nematode galling by up to 70%'",
+          "context": "CSV-строка 1: 'Apply 0.1-1 g/kg soil amendment' → 'Reduced root-knot nematode galling by up to 70%', культуры 'Tomato, root-knot nematode-prone crops'. В PubMed/OpenAlex работ по артемизинину × томат × Meloidogyne нет; цифра 70% нигде не обнаружена",
+          "dosage_normalized": {
+            "original": "0.1-1 g/kg soil amendment",
+            "ppm_equivalent": "100-1000 ppm (0.1 g/kg = 100 mg/kg; 1 g/kg = 1000 mg/kg)",
+            "molar_mass_used_g_mol": 282.33,
+            "conversion_source": "массовая доза на почву: mg/kg = ppm; молярная конверсия неприменима без объёма/плотности почвы",
+            "note": "Доза из CSV; подтверждающей литературы для томата не найдено"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "soil amendment",
+            "ph": null,
+            "stress": "root-knot nematode (Meloidogyne spp.)",
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "irrelevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": 0,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "Reduced root-knot nematode galling by up to 70%"
+        },
+        {
+          "type": "effect",
+          "value": "CSV-заявка (НЕ подтверждена литературой): 'Increased SOD and POD activity under heat stress'",
+          "context": "CSV-строка 2: 'Apply 50-200 mg/L foliar spray' → 'Increased SOD and POD activity under heat stress', культуры 'All crops'. Поиск 'artemisinin tomato heat stress SOD POD' → 0 PMID; fallback 'artemisinin heat stress plant' (6 PMID) — ни одной работы про культуры; 36122740 (рожь) показывает рост SOD/POD как ответ на фитотоксический стресс, 35908798 (ячмень) — снижение SOD",
+          "dosage_normalized": {
+            "original": "50-200 mg/L foliar spray",
+            "ppm_equivalent": "50-200 ppm; 0.177-0.708 mM",
+            "molar_mass_used_g_mol": 282.33,
+            "conversion_source": "mg/L ≈ ppm для разбавленных водных растворов; молярно: 50/282.33 = 0.177 mM; 200/282.33 = 0.708 mM",
+            "note": "Доза из CSV; подтверждающей литературы не найдено"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray",
+            "ph": null,
+            "stress": "heat stress",
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "irrelevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": 0,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "Increased SOD and POD activity under heat stress"
+        }
+      ],
+      "gap": "PubMed: 0 результатов по всем трём прямым запросам ('artemisinin tomato root-knot nematode', 'artemisinin tomato Meloidogyne', 'artemisinin tomato heat stress SOD POD'). Fallback 'artemisinin Meloidogyne' → 2 PMID: 35344268 — нематицидная активность артемизининовой/дигидроартемизининовой кислот (НЕ артемизинина) против J2 M. incognita, томат в аннотации не упомянут (пот-эксперимент, культура не указана); 29727708 — обзор гельминтозов животных. 'artemisinin Solanum' → 8 PMID, все ложные совпадения (гетерологичный биосинтез могрозидов/кроцина, трихомы, ферментация сока, антималярийные Solanum spp.). OpenAlex (2 запроса) — релевантных работ нет. culture_mentioned: false (в прочитанных аннотациях томат нигде не фигурирует в связи с артемизинином). Вероятный первоисточник CSV-заявки — работы с экстрактами A. annua или родственными кислотами (как 35344268), где цифр '70%' также нет."
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 2,
+        "europe_pmc": "failed",
+        "culture_mentioned": true
+      },
+      "claims": [],
+      "gap": "Запрос 'artemisinin cucumber' → 2 PMID, оба НЕ про применение артемизинина на огурце (аннотации прочитаны полностью): 36805532 (Commun Biol 2023, DOI 10.1038/s42003-023-04553-3) — гетерологичный биосинтез могрозидов в Cucumis sativus и Lycopersicon esculentum; артемизинин упомянут только в аффилиации автора ('The Artemisinin Research Center'), трансгенный огурец продуцировал могрозид V (587 нг/г сыр. массы); 35720574 (Front Plant Sci 2022, DOI 10.3389/fpls.2022.910228) — обзор молекулярных механизмов развития трихом: артемизинин фигурирует как вторичный метаболит секреторных трихом Artemisia annua, огурец — как модельный объект трихом. Данных о дозировках/эффектах артемизинина на огурце нет; culture_mentioned=true только формально (упоминание Cucumis sativus вне контекста вещества)."
+    },
+    "strawberry": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 1,
+        "europe_pmc": "failed",
+        "culture_mentioned": false
+      },
+      "claims": [],
+      "gap": "Единственный PMID по 'artemisinin strawberry' (20815879, Malar J 2010, DOI 10.1186/1475-2875-9-253) — ЛОЖНОЕ совпадение: ранняя клиническая разработка диспергируемых таблеток артеметер-люмефантрина, исследование вкусовой привлекательности (включая клубничный ароматизатор) у здоровых добровольцев; к культуре Fragaria × ananassa отношения не имеет. Fallback 'artemisinin Fragaria' → 0 PMID. Данных по клубнике нет."
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Числовых ED50/TD50 для растений не найдено (в аннотации 25658194 фитотоксичность на салате — концентрационно-зависимая, без значений). Фоновые ориентиры, НЕ пригодные для ED50_ppm: EC50/48h 0.37 мМ ≈ 87 мг/л (артемизининовая кислота, MW 234.33, против J2 M. incognita, PMID 35344268); 20 мг/л артемизинина в гидропонике смягчал солевой+freeze-thaw стресс ячменя (PMID 35908798). Почвенная персистентность не изучена (нет данных)."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": "no_data — артемизинин не зарегистрирован как пестицидное действующее вещество для пищевых культур; PHI/MRL не установлены (в найденной литературе остаточных норм нет). Требуется отдельная проверка регуляторных баз (EU Pesticides Database, US EPA, Codex) вне PubMed."
+  },
+  "contraindications": [
+    {
+      "issue": "Фитотоксичность/аллелопатия: риск повреждения чувствительных культур",
+      "detail": "Артемизинин — подтверждённый аллелохимикат: ингибирует рост корней и побегов, индуцирует ROS, перекисное окисление липидов, гибель клеток и остановку митоза (PMID 25658194, салат); у ржи — ингибирование фотосинтеза и хлорофилла (PMID 36122740). Применение на культурах без данных по селективности/порогам небезопасно",
+      "sources": [
+        {
+          "pmid": 25658194,
+          "year": 2015,
+          "doi": "10.1016/j.plaphy.2015.01.010"
+        },
+        {
+          "pmid": 36122740,
+          "year": 2022,
+          "doi": "10.1016/j.chemosphere.2022.136476"
+        }
+      ]
+    },
+    {
+      "issue": "Отсутствие нормативной базы",
+      "detail": "Нет MRL, PHI и данных по остаткам для пищевых культур; вещество не зарегистрировано как агрохимикат — применение на товарных культурах юридически не обеспечено",
+      "sources": []
+    }
+  ],
+  "conflicts": [],
+  "verdict": {
+    "evidence_level": "weak",
+    "status_suggested": "insufficient_data",
+    "reason": "Для всех трёх целевых культур (томат, огурец, клубника) прямых исследований применения артемизинина не найдено: PubMed 0/0/0 по прямым запросам (плюс 2 нерелевантных PMID по огурцу и 1 ложный по клубнике), Europe PMC недоступен (failed), OpenAlex без релевантных работ. CSV-заявка 1 ('снижение галлов M. incognita на томате до 70% при 0.1-1 г/кг') не подтверждается: ближайшая работа (PMID 35344268) демонстрирует нематицидность РОДСТВЕННЫХ кислот A. annua (EC50 0.37/0.76 мМ против J2), а не самого артемизинина, и без упоминания томата; цифра 70% нигде не встречается. CSV-заявка 2 ('SOD/POD при тепловом стрессе, All crops') также не подтверждена: в растительной литературе артемизинин — фитотоксичный стрессор (PMID 25658194), рост SOD/POD зафиксирован лишь как защитный ответ у ржи (PMID 36122740), а у ячменя SOD при смягчении стресса снижалась (PMID 35908798). Рекомендация: пометить обе CSV-строки как неподтверждённые (insufficient_data), статус вещества для агрономического использования — 'кандидат/класс A. annua сесквитерпеноиды', верификация невозможна без полевых исследований на целевых культурах."
+  },
+  "sources_index": [
+    {
+      "pmid": 35344268,
+      "year": 2022,
+      "verified": true,
+      "paper_type": "trial_in_vitro",
+      "doi": "10.1002/cbdv.202200083",
+      "oa_url": null,
+      "note": "Нематицидность ArA/DHArA против M. incognita; НЕ артемизинин, томат не упомянут"
+    },
+    {
+      "pmid": 25658194,
+      "year": 2015,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1016/j.plaphy.2015.01.010",
+      "oa_url": null,
+      "note": "Механизм фитотоксичности артемизинина (ROS, салат)"
+    },
+    {
+      "pmid": 36122740,
+      "year": 2022,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.chemosphere.2022.136476",
+      "oa_url": null,
+      "note": "Артемизининовый стресс + freeze-thaw, рожь; рост SOD/CAT/POD/APX как стресс-ответ"
+    },
+    {
+      "pmid": 35908798,
+      "year": 2022,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1071/FP21359",
+      "oa_url": null,
+      "note": "20 мг/л артемизинина, ячмень, соль+freeze-thaw; SOD снижалась"
+    },
+    {
+      "pmid": 29727708,
+      "year": 2018,
+      "verified": false,
+      "paper_type": "review",
+      "doi": "10.1016/j.phrs.2018.04.025",
+      "oa_url": null,
+      "note": "title_only; артемизинин при гельминтозах животных"
+    },
+    {
+      "pmid": 20815879,
+      "year": 2010,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1186/1475-2875-9-253",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2945360/",
+      "note": "Ложное совпадение по 'strawberry' (вкус таблетки артеметер-люмефантрина); к культуре отношения не имеет"
+    },
+    {
+      "pmid": 36805532,
+      "year": 2023,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1038/s42003-023-04553-3",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9938114/",
+      "note": "Могрозиды в огурце/томате; артемизинин только в аффилиации автора — нерелевантно"
+    },
+    {
+      "pmid": 35720574,
+      "year": 2022,
+      "verified": true,
+      "paper_type": "review",
+      "doi": "10.3389/fpls.2022.910228",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9198495/",
+      "note": "Обзор трихом; артемизинин как метаболит трихом A. annua — нерелевантно применению на огурце"
+    }
+  ]
+}

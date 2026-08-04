@@ -5,7 +5,7 @@ last_updated: 2026-08-04
 
 # Task Queue
 
-## 🔴 HIGH PRIORITY (45)
+## 🔴 HIGH PRIORITY (43)
 - [ ] VALIDATE: 1-MCP × 3 культуры
 - [ ] VALIDATE: 4-CPA × 3 культуры
 - [ ] VALIDATE: 6-BAP × 3 культуры
@@ -21,7 +21,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: GA1 × 3 культуры
 - [ ] VALIDATE: GA4 × 3 культуры
 - [ ] VALIDATE: Glycine Betaine × 3 культуры
-- [ ] VALIDATE: IBA × 3 культуры
+- [x] VALIDATE: IBA × 3 культуры → [[wiki/substances/IBA]] (corrected/moderate, 2026-08-04)
 - [ ] VALIDATE: Kinetin × 3 культуры
 - [ ] VALIDATE: Leonardite extract × 3 культуры
 - [ ] VALIDATE: MCPA × 3 культуры
@@ -46,13 +46,13 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Thiabendazole × 3 культуры
 - [ ] VALIDATE: Thidiazuron × 3 культуры
 - [ ] VALIDATE: Thiophanate-methyl × 3 культуры
-- [ ] VALIDATE: Triacontanol × 3 культуры
+- [x] VALIDATE: Triacontanol × 3 культуры → [[wiki/substances/Triacontanol]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Trifloxystrobin × 3 культуры
 - [ ] VALIDATE: Trinexapac-ethyl × 3 культуры
 - [ ] VALIDATE: Uniconazole × 3 культуры
 - [ ] VALIDATE: Zeatin × 3 культуры
 
-## 🟡 MEDIUM PRIORITY (139)
+## 🟡 MEDIUM PRIORITY (134)
 - [ ] VALIDATE: 2,4-D × 3 культуры
 - [ ] VALIDATE: 22,23,24-Trisepibrassinolide × 3 культуры
 - [ ] VALIDATE: 24-Epibrassinolide (EBR) × 3 культуры
@@ -66,7 +66,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Alpha-lipoic acid × 3 культуры
 - [ ] VALIDATE: Ancymidol × 3 культуры
 - [ ] VALIDATE: Arginine × 3 культуры
-- [ ] VALIDATE: Artemisinin × 3 культуры
+- [x] VALIDATE: Artemisinin × 3 культуры → [[wiki/substances/Artemisinin]] (insufficient_data/weak, 2026-08-04)
 - [ ] VALIDATE: Artichoke leaf × 3 культуры
 - [ ] VALIDATE: Ascophyllum extract × 3 культуры
 - [ ] VALIDATE: Ascorbic Acid × 3 культуры
@@ -81,8 +81,8 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Carbonic Anhydrase × 3 культуры
 - [ ] VALIDATE: Carbonic acid × 3 культуры
 - [ ] VALIDATE: Castasterone × 3 культуры
-- [ ] VALIDATE: Chitooligosaccharides × 3 культуры
-- [ ] VALIDATE: Chitosan × 3 культуры
+- [x] VALIDATE: Chitooligosaccharides × 3 культуры → [[wiki/substances/Chitooligosaccharides]] (partial/strong, 2026-08-04)
+- [x] VALIDATE: Chitosan × 3 культуры → [[wiki/substances/Chitosan]] (partial/strong, 2026-08-04)
 - [ ] VALIDATE: Chlorogenic acid × 3 культуры
 - [ ] VALIDATE: Choline chloride × 3 культуры
 - [ ] VALIDATE: Chromosaponin I × 3 культуры
@@ -103,7 +103,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Flurprimidol × 3 культуры
 - [ ] VALIDATE: Folic acid × 3 культуры
 - [ ] VALIDATE: GA20 × 3 культуры
-- [ ] VALIDATE: GA3 × 3 культуры
+- [x] VALIDATE: GA3 × 3 культуры → [[wiki/substances/GA3]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: GA7 × 3 культуры
 - [ ] VALIDATE: GABA × 3 культуры
 - [ ] VALIDATE: GSH × 3 культуры
@@ -181,7 +181,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: Tocopherol × 3 культуры
 - [ ] VALIDATE: Trans-jasmone × 3 культуры
 - [ ] VALIDATE: Trehalose × 3 культуры
-- [ ] VALIDATE: Triacontanol (TRIA) × 3 культуры
+- [x] VALIDATE: Triacontanol (TRIA) × 3 культуры → [[wiki/substances/Triacontanol (TRIA)]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Triadimefon × 3 культуры
 - [ ] VALIDATE: Tryptophan × 3 культуры
 - [ ] VALIDATE: Typhasterol × 3 культуры
@@ -280,3 +280,4 @@ last_updated: 2026-08-04
 
 ## ✅ COMPLETED
 - [x] INGEST: CSV → 267 черновиков карточек
+- [x] PILOT (2026-08-04): GA3, IBA, Triacontanol (+TRIA), Artemisinin, Chitosan (+Chitooligosaccharides) — 5 сабагентов, 7 карточек, L1-проверка всех артефактов

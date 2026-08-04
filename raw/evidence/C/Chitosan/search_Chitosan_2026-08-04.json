@@ -1,0 +1,1455 @@
+{
+  "contract_version": "1.2",
+  "substance": {
+    "code": "Chitosan",
+    "csv_name": "Chitosan (+ Chitosan oligomers)",
+    "queried_name": "Chitosan"
+  },
+  "searches": {
+    "performed": [
+      {
+        "engine": "pubchem",
+        "type": "property",
+        "target": "CID 71853",
+        "status": "ok",
+        "result": "Title=Chitosan from shrimp shells; C56H103N9O39; MW 1526.5"
+      },
+      {
+        "engine": "pubchem",
+        "type": "xrefs/RegistryID",
+        "target": "CID 71853",
+        "status": "ok",
+        "result": "CAS 9012-76-4 present in RegistryID list"
+      },
+      {
+        "engine": "pubchem",
+        "type": "synonyms",
+        "target": "CID 71853",
+        "status": "ok",
+        "result": "20 synonyms incl. low/high MW ranges"
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan tomato disease resistance elicitor",
+        "status": "ok",
+        "count": 8
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan tomato yield foliar",
+        "status": "ok",
+        "count": 8
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan cucumber powdery mildew",
+        "status": "ok",
+        "count": 2
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan cucumber growth",
+        "status": "ok",
+        "count": 28
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan strawberry gray mold Botrytis",
+        "status": "ok_after_retry",
+        "count": 8
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan strawberry postharvest",
+        "status": "ok",
+        "count": 62
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch_fallback",
+        "query": "chitosan powdery mildew",
+        "status": "ok",
+        "count": 28
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch_fallback",
+        "query": "chitosan cucumis sativus",
+        "status": "ok",
+        "count": 31
+      },
+      {
+        "engine": "pubmed",
+        "type": "esummary",
+        "target": "tomato 12 PMID",
+        "status": "ok"
+      },
+      {
+        "engine": "pubmed",
+        "type": "esummary",
+        "target": "tomato 5 PMID (truncation refill)",
+        "status": "ok"
+      },
+      {
+        "engine": "pubmed",
+        "type": "esummary",
+        "target": "cucumber 15+8+2 PMID",
+        "status": "ok"
+      },
+      {
+        "engine": "pubmed",
+        "type": "esummary",
+        "target": "strawberry 14+7+1 PMID",
+        "status": "ok"
+      },
+      {
+        "engine": "pubmed",
+        "type": "efetch_abstract",
+        "target": "tomato 7 PMID",
+        "status": "ok",
+        "verified_abstracts": 7
+      },
+      {
+        "engine": "pubmed",
+        "type": "efetch_abstract",
+        "target": "cucumber 7 PMID",
+        "status": "ok",
+        "verified_abstracts": 7
+      },
+      {
+        "engine": "pubmed",
+        "type": "efetch_abstract",
+        "target": "strawberry 7 PMID",
+        "status": "ok",
+        "verified_abstracts": 7
+      }
+    ],
+    "failed": [
+      {
+        "engine": "pubchem",
+        "type": "name_lookup",
+        "query": "name=Chitosan (property/xrefs/synonyms)",
+        "error": "HTTP 404 (name resolution ambiguous/unavailable via fetch proxy); CID 71853 used instead"
+      },
+      {
+        "engine": "pubchem",
+        "type": "name_lookup",
+        "query": "name=chitosan (lowercase)",
+        "error": "HTTP 404"
+      },
+      {
+        "engine": "pubchem",
+        "type": "name_lookup",
+        "query": "name=Chitosan oligosaccharide",
+        "error": "HTTP 404 — CAS/identity for oligomer row taken from literature COS/CHOS papers"
+      },
+      {
+        "engine": "pubmed",
+        "type": "esearch",
+        "query": "chitosan strawberry gray mold Botrytis (1st attempt)",
+        "error": "HTTP 429 rate limit; retried successfully after EuropePMC attempt"
+      },
+      {
+        "engine": "europe_pmc",
+        "type": "search",
+        "query": "chitosan tomato disease resistance / chitosan cucumber powdery mildew / chitosan strawberry Botrytis gray mold",
+        "error": "WebFetchBlockedUrlError — host resolves to blocked IPv6-mapped address 64:ff9b::c13e:c150; endpoint unreachable, incl. SRC:PPR not attempted"
+      }
+    ],
+    "queries_used": [
+      "chitosan tomato disease resistance elicitor",
+      "chitosan tomato yield foliar",
+      "chitosan cucumber powdery mildew",
+      "chitosan cucumber growth",
+      "chitosan strawberry gray mold Botrytis",
+      "chitosan strawberry postharvest",
+      "FALLBACK: chitosan powdery mildew (без культуры; проверка упоминания cucumber)",
+      "FALLBACK: chitosan cucumis sativus (синоним культуры)"
+    ],
+    "fallback_tries": [
+      {
+        "reason": "chitosan cucumber powdery mildew вернул только 2 результата (<5)",
+        "query": "chitosan powdery mildew",
+        "results": 28,
+        "culture_checked": "cucumber mentioned in 32814103, 39639480 (verified in abstracts)"
+      },
+      {
+        "reason": "синоним культуры (Cucumis sativus)",
+        "query": "chitosan cucumis sativus",
+        "results": 31,
+        "culture_checked": "yes"
+      }
+    ]
+  },
+  "identity": {
+    "cas": "9012-76-4",
+    "cid": "71853",
+    "formula": "C56H103N9O39",
+    "iupac": "methyl N-[(2S,3R,4R,5S,6R)-5-[(2S,3R,4R,5S,6R)-3-amino-5-[(2S,3R,4R,5S,6R)-3-amino-5-[(2S,3R,4R,5S,6R)-3-amino-5-[(2S,3R,4R,5S,6R)-3-amino-5-[(2S,3R,4R,5S,6R)-3-amino-5-[(2S,3R,4R,5S,6R)-3-amino-4,5-dihydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-4-hydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-4-hydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-4-hydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-4-hydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-4-hydroxy-6-(hydroxymethyl)oxan-2-yl]oxy-2-[(2R,3S,4R,5R,6S)-5-amino-6-[(2R,3S,4R,5R,6R)-5-amino-4,6-dihydroxy-2-(hydroxymethyl)oxan-3-yl]oxy-4-hydroxy-2-(hydroxymethyl)oxan-3-yl]oxy-4-hydroxy-6-(hydroxymethyl)oxan-3-yl]carbamate",
+    "molar_mass_g_mol": 1526.5,
+    "class_confirmed": true,
+    "class_evidence": [
+      "CSV: класс Biostimulant; механизм elicitor + microbial enhancer",
+      "PMID 33094513 (Plant Cell Environ 2021): chitosan = коммерческий элиситор, defence priming у томата против Botrytis cinerea",
+      "PMID 32814103 (Int J Biol Macromol 2020): прайминг хитозаном индуцирует фитогормоны и устойчивость огурца к мучнистой росе",
+      "PMID 28671619 (Int J Mol Sci 2017): прехарвест-хитозан — элиситор прайминга PR/PGIP-генов у Fragaria chiloensis",
+      "PMID 27095400 (Plant Sci 2016): COS-OGA (хитозан-олигомеры) — элиситор SAR (SA-путь), защита томата от Leveillula taurica"
+    ],
+    "synonyms": [
+      "Chitosan from shrimp shells",
+      "Chitosan - Non-animal origin",
+      "Chitosan high molecular weight,310000-375000Da",
+      "Chitosan low molecular weight,50,000-190,000Da",
+      "MFCD00676696",
+      "Chitosan oligosaccharide / chito-oligosaccharides (CHOS) — форма из 2-й CSV-строки, используется в PMID 37047175, 24770723, 27095400, 29869942"
+    ],
+    "synonyms_ru": [
+      "хитозан",
+      "хитозан из панцирей креветок",
+      "поли(D-глюкозамин)",
+      "деацетилированный хитин",
+      "хитозан низкомолекулярный (50,000–190,000 Да)",
+      "хитозан высокомолекулярный (310,000–375,000 Да)",
+      "олигомеры хитозана / хитозановые олигосахариды (COS/CHOS)"
+    ],
+    "notes": "Полимер с переменной молекулярной массой: значение 1526.5 г/моль — масса определённого ~8-звенного фрагмента в записи PubChem CID 71853 (титул 'Chitosan from shrimp shells', формула C56H103N9O39, метилкарбаматная форма); коммерческие хитозаны 50,000–375,000 Да (по синонимам PubChem). CAS 9012-76-4 подтверждён через xrefs/RegistryID. Name-based lookup в PubChem REST возвращал 404 (неоднозначность имени) — использован CID. Вторая CSV-строка ('Chitosan oligomers') соответствует COS/CHOS (олигомеры DPn ~2–40); отдельная запись PubChem по имени 'Chitosan oligosaccharide' также 404. Формула и IUPAC относятся к фрагменту, а не к полимеру в целом.",
+    "molar_mass_note": "Полимер, переменная MM — см. conversion_source в dosage_normalized"
+  },
+  "mode_of_action": {
+    "summary": "Элиситор/индуктор защитных реакций (defence priming): стимулирует SAR/ISR-пути — накопление SA и JA, PR-белков (β-1,3-глюканазы, хитиназы), защитных ферментов (PAL, POD, PPO, глюканаза), отложение каллозы и лигнина; прямое фунгитоксическое действие при высоких концентрациях (MIC 0.5–1 мг/мл против B. cinerea). CSV-механизм 'microbial enhancer' (усиление полезной микробиоты почвы при заделке 1–5 кг/га) прямыми аннотациями из выборки не подтверждён.",
+    "evidence": [
+      "PMID 33094513: прайминг каллозы и JA; гены ACRE75/ACRE180 — позитивные регуляторы устойчивости томата к B. cinerea",
+      "PMID 32814103: отложение лигнина, каллозы, H2O2; ап-регуляция PPO, PAL, пероксидазы, глюканазы; фитогормоны",
+      "PMID 28671619: ап-регуляция FcBG2-1, FcBG2-3, FcPGIP1, FcPGIP2 (прайминг PR/PGIP)",
+      "PMID 27095400: SAR-механизм через SA, накопление PR-белков (субтилизин-подобные протеазы), кумулятивный эффект повторных опрыскиваний",
+      "PMID 32429524: ап-регуляция PR1, PAL1; рост антиоксидантной системы",
+      "PMID 39214206: прямое фунгитоксическое действие (нарушение морфологии мицелия) + элиситация фенолов/флавоноидов"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": {
+          "chitosan tomato disease resistance elicitor": 8,
+          "chitosan tomato yield foliar": 8
+        },
+        "europe_pmc": "failed (endpoint blocked, IPv6-mapped address)",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "4 g/L (4000 ppm) хитозан, 3 или 6 фолиарных обработок — максимальная урожайность и контроль чёрной гнили (Alternaria alternata) плодов томата; ап-регуляция 7 защитных генов (RAP, XET-2, ACS-2, PINII, PAL5, LOXD, PR1)",
+          "context": "Полевые опрыскивания томата, сравнение с литовитом, K-тиосульфатом и салициловой кислотой",
+          "dosage_normalized": {
+            "original": "4 g/L foliar, 3 or 6 field applications",
+            "ppm_equivalent": 4000,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — ppm из массовой концентрации (1 g/L ≈ 1000 ppm, водный раствор)",
+            "note": "MW не требуется для пересчёта массовой концентрации в ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan aqueous solution 4 g/L (MW unspecified)",
+            "ph": null,
+            "stress": "Alternaria alternata (black mold) infection",
+            "stage": "pre-harvest, field",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "32605169",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants9070808",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7412205/"
+            }
+          ],
+          "quote": "The highest yield quantity was recorded with six applications with Chitosan followed by Salicylic acid; also, they were the most effective treatments in controlling the Alternaria alternata infection in tomato fruits."
+        },
+        {
+          "type": "effect",
+          "value": "Хитозан (коммерческая формуляция) праймирует защиту томата против Botrytis cinerea: отложение каллозы, накопление JA, экспрессия ACRE75/ACRE180",
+          "context": "Исследование defence priming на томате и Nicotiana benthamiana; транскриптомный анализ",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "commercial chitosan elicitor formulation",
+            "ph": null,
+            "stress": "Botrytis cinerea infection",
+            "stage": "pre-infection treatment",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "33094513",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1111/pce.13921",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7821246/"
+            }
+          ],
+          "quote": "In tomato plants, enhanced resistance has been linked with priming of callose deposition and accumulation of the plant hormone jasmonic acid (JA)."
+        },
+        {
+          "type": "effect",
+          "value": "Профилактическое фолиарное опрыскивание хитозаном снижает накопление CMV у томата (S. lycopersicum var. cerasiforme) до 100% и улучшает газообмен; SAR-ответ (NPR1, PAL5, CEVI-1, PSY2)",
+          "context": "Профилактическая обработка до инокуляции вирусом; отсутствие симптомов у обработанных растений",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray (concentration not reported in abstract)",
+            "ph": null,
+            "stress": "Cucumber mosaic virus (CMV) infection",
+            "stage": "preventive pre-inoculation",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "CMV accumulation reduction up to 100%"
+          },
+          "sources": [
+            {
+              "pmid": "30640158",
+              "year": 2019,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.jplph.2019.01.003",
+              "oa_url": null
+            }
+          ],
+          "quote": "It was observed a significant reduction of CMV accumulation in chitosan-treated plants that were successively infected with CMV, compared to only CMV-infected ones (up to 100%)."
+        },
+        {
+          "type": "dosage",
+          "value": "Хитозан 1.5–2.5 мг/мл (почвенное внесение или фолиарно) против галловых нематод (Meloidogyne spp.) на черри-томате: 2.5 мг/мл в почву — снижение популяции нематод на 85%, урожайность до 33.5 т/га",
+          "context": "Факторный дизайн: 2 генотипа черри-томата (IAC1687, LA2076), 2 способа внесения, 8 обработок; растворитель — уксусная кислота (ограничение исследования)",
+          "dosage_normalized": {
+            "original": "1.5–2.5 mg/mL soil drench or foliar",
+            "ppm_equivalent": 2500,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/mL ≈ 1000 ppm (водный раствор)",
+            "note": "Значение ppm для верхней дозы 2.5 mg/mL"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan dissolved in acetic acid (solvent interference noted by authors)",
+            "ph": null,
+            "stress": "Meloidogyne spp. (root-knot nematode) infestation",
+            "stage": "cherry tomato, pot/field trial",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "85% nematode population reduction; yield 33.5 t/ha"
+          },
+          "sources": [
+            {
+              "pmid": "41600063",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants15020256",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12845396/"
+            }
+          ],
+          "quote": "The cherry tomato (IAC1687) obtained the greatest yield, with 33.5 kg/ha and an 85% reduction in the nematode population with the application of 2.5 mg/mL of chitosan to the soil."
+        },
+        {
+          "type": "effect",
+          "value": "Хитозан в числе биостимуляторов (фолиарно и через корни) улучшает показатели питательной ценности и продуктивности бессубстратных тепличных томатов (сорт Samyeli F1, кокосовый субстрат)",
+          "context": "Сравнение аминокислот, PGPR, фульвовой кислоты, хитозана, вермикомпоста; в аннотации хитозан отдельно не выделен (лучшие результаты у PGPR и вермикомпоста)",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar + root application with mineral fertilizers",
+            "ph": null,
+            "stress": null,
+            "stage": "spring cultivation, soilless (coir pith)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "39339562",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/plants13182587",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11434684/"
+            }
+          ],
+          "quote": "The experiment, conducted in a coir pith medium using the 'Samyeli F1' tomato cultivar, demonstrated that plants treated with biostimulants performed better than control plants."
+        },
+        {
+          "type": "method",
+          "value": "COS-OGA (хитозан-олигомеры + пектин-олигомеры) при повторных опрыскиваниях защищает тепличный томат от мучнистой росы (Leveillula taurica); SA-зависимый SAR, накопление PR-белков",
+          "context": "COS-OGA — комплексный элиситор, содержащий катионные хитозан-олигомеры (COS); эффект кумулятивный, зависит от числа обработок",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "COS-OGA spray (chitosan oligomers + oligogalacturonides)",
+            "ph": null,
+            "stress": "Leveillula taurica (powdery mildew)",
+            "stage": "greenhouse tomato, repeated sprays",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "27095400",
+              "year": 2016,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.plantsci.2016.03.005",
+              "oa_url": null
+            }
+          ],
+          "quote": "COS-OGA, an elicitor that combines cationic chitosan oligomers (COS) with anionic pectin oligomers (OGA), efficiently protected tomato (Solanum lycopersicum) grown in greenhouse against powdery mildew (Leveillula taurica)."
+        },
+        {
+          "type": "method",
+          "value": "Хитозановые наночастицы как носитель HarpinPss повышают биодоступность элиситора и устойчивость томата к Rhizoctonia solani (JA-путь)",
+          "context": "Наноформуляция; сами CSNPs также вызывали дифференциальную экспрессию защитных генов",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "harpin-loaded chitosan nanoparticles (H-CSNPs), foliar",
+            "ph": null,
+            "stress": "Rhizoctonia solani infection",
+            "stage": "tomato, foliar spray",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": 0.05,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "30143111",
+              "year": 2018,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.carbpol.2018.06.094",
+              "oa_url": null
+            }
+          ],
+          "quote": "Treatment with H-CSNPs resulted in sustained induction of peroxidase, phenylalanine ammonia lyase and decreased Rhizoctonia solani infection (p < 0.05)."
+        },
+        {
+          "type": "dosage",
+          "value": "CSV-протокол: 400 мг/л (400 ppm), фолиарно, 5 обработок на 15, 40, 85, 110, 135 день после высадки — 'Improved nutrient uptake and disease resistance', культуры: All crops",
+          "context": "Запись из CSV-базы (строка 1). Точный протокол (5 опрыскиваний 400 мг/л) в PubMed-выборке не найден; литературный диапазон доз для томата 200–4000 ppm (28583179: 200 ppm; 32605169: 4000 ppm). Прямых данных именно по 'nutrient uptake' в прочитанных аннотациях нет",
+          "dosage_normalized": {
+            "original": "400 mg/L foliage, five sprays at 15/40/85/110/135 DAT",
+            "ppm_equivalent": 400,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/L ≈ 1 ppm (водный раствор)",
+            "note": "ppm ≈ mg/L для водных растворов"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray (CSV record)",
+            "ph": null,
+            "stress": null,
+            "stage": "15–135 days after transplanting",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": null,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "CSV record (row 1): '400 mg/L foliage sprayed five times at 15, 40, 85, 110, 135 days after transplanting (from Dec 20)' → 'Improved nutrient uptake and disease resistance', crops: All crops. Not independently verified."
+        }
+      ],
+      "gap": "Протокол CSV (400 мг/л × 5 обработок) не верифицирован как единый протокол; формулировка 'improved nutrient uptake' прямыми аннотациями не подтверждена (подтверждены disease resistance, yield, качество). 'All crops' — охват не проверен за пределами томата/огурца/клубники. Дозы в литературе для томата: 200–4000 ppm."
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": {
+          "chitosan cucumber powdery mildew": 2,
+          "chitosan cucumber growth": 28,
+          "fallback chitosan powdery mildew": 28,
+          "fallback chitosan cucumis sativus": 31
+        },
+        "europe_pmc": "failed (endpoint blocked, IPv6-mapped address)",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Прайминг семян хитозаном 2.5 мг/мл (2500 ppm): всхожесть 90%, индекс вигора 2665, усиление роста; защита от мучнистой росы 66.6% в теплице; отложение лигнина/каллозы/H2O2; ап-регуляция PPO, PAL, пероксидазы, глюканазы",
+          "context": "Семенной прайминг (2.5 мг/мл — лучшая концентрация из испытанных), восприимчивый сорт огурца",
+          "dosage_normalized": {
+            "original": "2.5 mg/mL seed priming",
+            "ppm_equivalent": 2500,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/mL ≈ 1000 ppm (водный раствор)",
+            "note": null
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan (crab-shell biopolymer) seed priming solution",
+            "ph": null,
+            "stress": "powdery mildew (greenhouse)",
+            "stage": "seed germination → seedling → greenhouse",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "66.6% disease protection vs powdery mildew"
+          },
+          "sources": [
+            {
+              "pmid": "32814103",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.ijbiomac.2020.08.124",
+              "oa_url": null
+            }
+          ],
+          "quote": "a significant induced disease protection of 66.6% against powdery mildew disease was noticed in chitosan-pretreated plants at 2.5 mg/mL."
+        },
+        {
+          "type": "effect",
+          "value": "Хитозан в комбинации с окисленной медной солью — высокая эффективность против мучнистой росы огурца в теплице; хитозан-олигосахариды — среди испытанных органических материалов",
+          "context": "Оценка органических материалов (OAM), биоконтроль-агентов и эфирных масел для IPM; бордоские смеси и сера — самые надёжные",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan + oxidated copper salt; chitooligosaccharides",
+            "ph": null,
+            "stress": "cucumber powdery mildew (CPM)",
+            "stage": "greenhouse, preventive/therapeutic",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "39639480",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.4014/jmb.2409.09030",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11813349/"
+            }
+          ],
+          "quote": "Chitosan combined with oxidated copper salt showed high efficacy, making it a promising candidate for long-term control."
+        },
+        {
+          "type": "dosage",
+          "value": "Экзогенный хитозан-олигосахарид 50 мг/л (50 ppm) — лучшая обработка против холодового стресса проростков огурца: рост, хлорофилл, фотосинтез, осмолиты, антиоксидантные ферменты; снижение электропроводности и MDA",
+          "context": "Сравнение глицин-бетаина, хитозана и COS на проростках огурца при холодовом стрессе; транскриптомный анализ (JA-биосинтез, ауксиновый ответ, MAPK, фенилпропаноиды)",
+          "dosage_normalized": {
+            "original": "50 mg/L chitosan oligosaccharide pretreatment",
+            "ppm_equivalent": 50,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/L ≈ 1 ppm (водный раствор)",
+            "note": "COS — олигомерная форма (2-я CSV-строка)"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "50 mg/L COS aqueous pretreatment",
+            "ph": null,
+            "stress": "cold stress",
+            "stage": "seedling",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "37047175",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms24076202",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10094205/"
+            }
+          ],
+          "quote": "The results showed that 50 mg·L-1 chitosan oligosaccharide had the best activity. It effectively increases plant growth, chlorophyll content, photosynthetic capacity, osmotic regulatory substance content, and antioxidant enzyme activities..."
+        },
+        {
+          "type": "effect",
+          "value": "Фолиарное опрыскивание хитозаном (одним или с глицин-бетаином) снижает тяжесть и накопление CMV у огурца; рост антиоксидантов и PR1/PAL1; комбинация GB+CHT наиболее эффективна",
+          "context": "Индукция системной устойчивости против CMV; первое сообщение об индукции устойчивости GB",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar GB and/or chitosan",
+            "ph": null,
+            "stress": "Cucumber mosaic virus (CMV)",
+            "stage": "foliar spray, virus-infected plants",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "32429524",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/molecules25102341",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7288169/"
+            }
+          ],
+          "quote": "The results showed a significant reduction in disease severity and CMV accumulation in plants treated with GB and CHT, either alone or in combination, compared to untreated plants (challenge control)."
+        },
+        {
+          "type": "method",
+          "value": "Покрытие хитозан + гиперразветвлённый поли-L-лизин (CS-HBPL) продлевает срок хранения плодов огурца при 25°C: задержка гниения, потери массы, сохранение твёрдости, белка, витамина C, фенолов; ингибирование MDA и PPO",
+          "context": "Постхарвест-обработка, 18 дней хранения при комнатной температуре",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan + HBPL coating",
+            "ph": null,
+            "stress": null,
+            "stage": "postharvest storage (18 d, 25 °C)",
+            "bbch_stages": [],
+            "temperature_range": "25 °C",
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "38731725",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/foods13091354",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11083981/"
+            }
+          ],
+          "quote": "In summary, the combined CS-HBPL treatment successfully prolonged cucumber shelf life at room temperature, enabling new possibilities for extending cucumber shelf life."
+        },
+        {
+          "type": "dosage",
+          "value": "Фолиарный хитозан 0.2 г/л (200 ppm) (один или с калий-фосфитом) повышает содержание кукурбитацина E и антибактериальный потенциал экстрактов огурца (E. coli, P. aeruginosa)",
+          "context": "Опрыскивание листьев 2 раза с интервалом 12 ч; максимальный CuE в плодах (2.2 г/л) при совместном применении",
+          "dosage_normalized": {
+            "original": "0.2 g/L foliar, twice within 12 h",
+            "ppm_equivalent": 200,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 0.2 g/L = 200 ppm (водный раствор)",
+            "note": null
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan 0.2 g/L foliar spray",
+            "ph": null,
+            "stress": null,
+            "stage": "after emergence of secondary leaves",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "28583179",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1186/s12906-017-1808-y",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5460470/"
+            }
+          ],
+          "quote": "KPhi and chitosan can induce production of CuE compound and increase antibacterial potential of cucumber plant extract."
+        },
+        {
+          "type": "effect",
+          "value": "Хитозановый индуктор устойчивости сравним с эндофитными PGPR по биоконтролю вирусов (CymRSV, CMV): снижение тяжести симптомов, SA-путь (EDS1, NPR1, PR2B)",
+          "context": "ВАЖНО: модельное растение — Nicotiana benthamiana, НЕ огурец; CMV — общий патоген огурца",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan-based resistance inducer product",
+            "ph": null,
+            "stress": "CymRSV, CMV, PVX, PVY",
+            "stage": "controlled conditions, N. benthamiana",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "35805989",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms23136990",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266900/"
+            }
+          ],
+          "quote": "ePGPB- and chitosan-treated plants presented well-defined biocontrol efficacy against CymRSV and CMV, unlike PVX and PVY."
+        },
+        {
+          "type": "method",
+          "value": "Покрытие на основе углеродных точек с хитозаном улучшает сохранность нарезанного свежего огурца в МАП-упаковке (влияние на микроорганизмы и качество хранения)",
+          "context": "Постхарвест; заголовок и аннотация не читались полностью — только title",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "carbon dots + chitosan coating, modified-atmosphere packaging",
+            "ph": null,
+            "stress": null,
+            "stage": "fresh-cut cucumber, storage",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "31226218",
+              "year": 2019,
+              "verified": false,
+              "paper_type": "trial",
+              "doi": "10.1002/jsfa.9879",
+              "oa_url": null
+            }
+          ],
+          "quote": "Title: 'Effect of carbon dots with chitosan coating on microorganisms and storage quality of modified-atmosphere-packaged fresh-cut cucumber' (abstract not read)"
+        },
+        {
+          "type": "dosage",
+          "value": "CSV-протокол: 1–5 кг/га заделка в почву → 'Enhanced beneficial microbial activity', системы органического земледелия",
+          "context": "Запись из CSV-базы (строка 2, Chitosan oligomers). Прямых аннотаций о заделке хитозана в почву 1–5 кг/га и усилении микробной активности в PubMed-выборке не найдено — не верифицировано",
+          "dosage_normalized": {
+            "original": "1-5 kg/ha soil incorporation",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM",
+            "note": "Почвенное внесение — пересчёт в ppm невозможен без глубины заделки и плотности почвы; данные по микробной активности не подтверждены"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "soil incorporation (CSV record)",
+            "ph": null,
+            "stress": null,
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": null,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "CSV record (row 2): 'Apply 1-5 kg/ha soil incorporation' → 'Enhanced beneficial microbial activity', crops: Organic farming systems. Not independently verified."
+        }
+      ],
+      "gap": "Запрос 'chitosan cucumber powdery mildew' дал только 2 результата (<5) — использованы fallback-запросы ('chitosan powdery mildew' — 28, культура проверена в аннотациях 32814103/39639480; 'chitosan cucumis sativus' — 31). CSV-заявление о почвенной заделке 1–5 кг/га и усилении микробной активности не подтверждено ни одной прочитанной аннотацией. COS-данные (50 мг/л) относятся к хитозан-олигомерам (2-я CSV-строка)."
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": {
+          "chitosan strawberry gray mold Botrytis": 8,
+          "chitosan strawberry postharvest": 62
+        },
+        "europe_pmc": "failed (endpoint blocked, IPv6-mapped address)",
+        "culture_mentioned": true
+      },
+      "claims": [
+        {
+          "type": "method",
+          "value": "Полевые (прехарвест) опрыскивания хитозаном каждые 5 дней от цветения до созревания снижают послеуборочные гнили клубники (Fragaria × ananassa, сорта Alba и Romina) примерно на 30% (серая гниль, Rhizopus) без ухудшения окраски и твёрдости; хитозан и BTH — самые эффективные альтернативы фунгицидам",
+          "context": "Сравнение с ламинарином, экстрактами Abies/Polygonum/Saccharomyces, органо-кислотно-кальциевой композицией и BTH; 2012–2013 гг.",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "preharvest canopy sprays every 5 days, flowering → ripening",
+            "ph": null,
+            "stress": "postharvest decay (Botrytis cinerea gray mold, Rhizopus rot)",
+            "stage": "flowering to ripening (preharvest)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 2,
+            "p_value": null,
+            "effect_size": "~30% reduction in postharvest decay vs control"
+          },
+          "sources": [
+            {
+              "pmid": "26256331",
+              "year": 2015,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.carbpol.2015.05.078",
+              "oa_url": null
+            }
+          ],
+          "quote": "The treatments with alternative compounds provided ~30% reduction in postharvest decay of strawberry compared to the water-treated controls, mainly against gray mold and Rhizopus rot... Chitosan and benzothiadiazole were the most effective alternative treatments."
+        },
+        {
+          "type": "effect",
+          "value": "Прехарвест-обработки хитозаном (и MeJA) снижают инцидентность Botrytis cinerea у плодов Fragaria chiloensis при послеуборочном хранении (48–72 ч после инокуляции) за счёт прайминга PR-генов (FcBG2-1, FcBG2-3) и PGIP (FcPGIP1, FcPGIP2)",
+          "context": "Чилийская земляника F. chiloensis — близкий родственник F. × ananassa; механика прайминга показана на молекулярном уровне",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "preharvest application of chitosan (or MeJA)",
+            "ph": null,
+            "stress": "B. cinerea inoculation (postharvest)",
+            "stage": "preharvest → postharvest storage",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "lower B. cinerea incidence at 48 and 72 hpi"
+          },
+          "sources": [
+            {
+              "pmid": "28671619",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms18071420",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5535912/"
+            }
+          ],
+          "quote": "Remarkably, MeJA- and chitosan-treated fruit exhibited a lower incidence of B. cinerea infection than the control-treated at 48 and 72 hpi."
+        },
+        {
+          "type": "dosage",
+          "value": "Съедобное покрытие хитозаном из насекомых (Hermetia illucens) против B. cinerea на клубнике после уборки: MIC 0.5–1 мг/мл (500–1000 ppm), ингибирование роста 70% (PEND, недеколорированный); эффект зависит от MM и степени деацетилирования",
+          "context": "In vitro + in vivo покрытие (аэрограф), хранение 4°C и смешанное; PEDEC действует через элиситацию фенолов/флавоноидов",
+          "dosage_normalized": {
+            "original": "MIC 0.5–1 mg/mL (in vitro); coating via aerograph",
+            "ppm_equivalent": 1000,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/mL ≈ 1000 ppm",
+            "note": "Верхняя граница MIC 1 mg/mL = 1000 ppm"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "insect-derived chitosan edible coating (aerograph)",
+            "ph": null,
+            "stress": "Botrytis cinerea",
+            "stage": "postharvest, storage 4 °C / mixed",
+            "bbch_stages": [],
+            "temperature_range": "4 °C (and mixed RT)",
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "70% fungal growth inhibition (PEND); MIC 0.5–1 mg/mL"
+          },
+          "sources": [
+            {
+              "pmid": "39214206",
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.ijbiomac.2024.135158",
+              "oa_url": null
+            }
+          ],
+          "quote": "An inhibition/reduction of fungal growth and a disturbance of normal fungal morphology were observed, being MIC of 0.5 mg mL-1 and 1 mg mL-1 and growth inhibition of 70% and 4% for PEND and PEDEC, respectively."
+        },
+        {
+          "type": "dosage",
+          "value": "Хитозановые наночастицы (CNPs) на листьях клубники: 25 мг/мл снижает тяжесть серой гнили (B. cinerea) до 3%; 50 мг/мл даёт обратный (негативный) эффект",
+          "context": "Биосинтез CNPs (Pelargonium graveolens); in planta на листьях; отмечен неблагоприятный эффект высоких концентраций",
+          "dosage_normalized": {
+            "original": "25 mg/mL chitosan nanoparticles on leaves (50 mg/mL adverse)",
+            "ppm_equivalent": 25000,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/mL ≈ 1000 ppm; НО: суспензия наночастиц, не истинный раствор",
+            "note": "25 mg/mL = 25000 ppm (номинально); сравнение с растворами некорректно"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "biosynthesized chitosan nanoparticles (CNPs) suspension",
+            "ph": null,
+            "stress": "Botrytis cinerea (gray mold)",
+            "stage": "strawberry leaves (detached/plant)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "gray mold severity reduced to 3% at 25 mg/mL"
+          },
+          "sources": [
+            {
+              "pmid": "35241695",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-022-07073-y",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8894456/"
+            }
+          ],
+          "quote": "On strawberry leaves, 25 mg CNPs/mL reduced the symptoms of gray mold severity down to 3%. The higher concentration of CNPs (50 mg/mL) was found to have a reverse effect..."
+        },
+        {
+          "type": "method",
+          "value": "Съедобные покрытия хитозан + алоэ вера (CH+AVG) при комнатном хранении клубники (26±2°C, 65–70% RH): снижение потери массы на 37.98%, сохранение твёрдости 91.58%, снижение общего микробного числа на 44.98%; срок хранения 2 → 4 дня",
+          "context": "Сравнение CH, AVG, кокосового масла и комбинаций; CH лучше подавлял микробный рост",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "chitosan + Aloe vera gel edible coating",
+            "ph": null,
+            "stress": null,
+            "stage": "postharvest, ambient storage",
+            "bbch_stages": [],
+            "temperature_range": "26 ± 2 °C",
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": 65
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "weight loss −37.98%; firmness +91.58%; TPC −44.98%"
+          },
+          "sources": [
+            {
+              "pmid": "42255699",
+              "year": 2026,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1002/fsn3.71949",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13239484/"
+            }
+          ],
+          "quote": "Among all treatments, CH + AVG was the most effective, reducing weight loss by 37.98%, preserving firmness by 91.58%, and lowering total plate count by 44.98% compared to the control."
+        },
+        {
+          "type": "dosage",
+          "value": "Композит наносеребро–облучённый хитозан (nano Ag-IrCTS): MIC 125 мкг/мл (125 ppm) против B. cinerea; покрытие клубники — исчезновение признаков серой гнили у 90% заражённых плодов после 7 дней хранения",
+          "context": "Композитный материал (не чистый хитозан); включает облучённый грибной хитозан (IrCTS)",
+          "dosage_normalized": {
+            "original": "MIC 125 μg/mL (nano Ag-IrCTS composite)",
+            "ppm_equivalent": 125,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 μg/mL ≈ 1 ppm",
+            "note": "Композит с наносеребром — прямое сравнение с чистым хитозаном некорректно"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "nano Ag-irradiated fungal chitosan composite coating",
+            "ph": null,
+            "stress": "Botrytis cinerea (gray mold)",
+            "stage": "postharvest coating, 7 d storage",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": "gray mold signs absent in 90% of fruits after 7 d"
+          },
+          "sources": [
+            {
+              "pmid": "24025030",
+              "year": 2013,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1111/1750-3841.12247",
+              "oa_url": null
+            }
+          ],
+          "quote": "The consequence of strawberries coating, with antifungal composite based solution, was the disappearance of gray mold infection signs in 90% of the contaminated fruits after 7 d of storage."
+        },
+        {
+          "type": "effect",
+          "value": "Хитозан-олигосахариды (CHOS, DPn 15–40) обладают наибольшей антифунгальной активностью против B. cinerea и синергичны с низкими дозами синтетических фунгицидов (in vitro и in vivo)",
+          "context": "Возбудитель серой гнили — общий для клубники; культура в статье — 'numerous fruit and vegetable crops' (не клубника напрямую)",
+          "dosage_normalized": null,
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "CHOS (DPn 15-40) alone and with fungicides",
+            "ph": null,
+            "stress": "Botrytis cinerea",
+            "stage": "in vitro + in vivo assays",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [
+            {
+              "pmid": "24770723",
+              "year": 2014,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1371/journal.pone.0093192",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4000203/"
+            }
+          ],
+          "quote": "CHOS with DPn in the range of 15-40 had the greatest anti-fungal activity. The combination of CHOS and low dosages of synthetic fungicides showed synergistic effects on antifungal activity in both in vitro and in vivo assays."
+        },
+        {
+          "type": "dosage",
+          "value": "CSV-протокол: 400 мг/л (400 ppm), фолиарно, 5 обработок на 15, 40, 85, 110, 135 день после высадки — 'Improved nutrient uptake and disease resistance', культуры: All crops",
+          "context": "Запись из CSV-базы (строка 1). Для клубники литература подтверждает прехарвест-опрыскивания (26256331: каждые 5 дней от цветения; 28671619: прехарвест) и постхарвест-покрытия, но не протокол 400 мг/л × 5 с фиксированными днями",
+          "dosage_normalized": {
+            "original": "400 mg/L foliage, five sprays at 15/40/85/110/135 DAT",
+            "ppm_equivalent": 400,
+            "molar_mass_used_g_mol": null,
+            "conversion_source": "PubChem CID 71853; polymer, variable MM — 1 mg/L ≈ 1 ppm (водный раствор)",
+            "note": "ppm ≈ mg/L для водных растворов"
+          },
+          "conditions": {
+            "photoperiod": null,
+            "formulation": "foliar spray (CSV record)",
+            "ph": null,
+            "stress": null,
+            "stage": "15–135 days after transplanting",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "time_of_day": null,
+            "light_sensitivity": null,
+            "humidity_min": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "inferred",
+          "stats": {
+            "n_studies": null,
+            "p_value": null,
+            "effect_size": null
+          },
+          "sources": [],
+          "quote": "CSV record (row 1): '400 mg/L foliage sprayed five times at 15, 40, 85, 110, 135 days after transplanting (from Dec 20)' → 'Improved nutrient uptake and disease resistance', crops: All crops. Not independently verified."
+        }
+      ],
+      "gap": "Литература по клубнике обильна по постхарвест-покрытиям (62 результата в запросе postharvest); прехарвест-полевые данные (CSV 400 мг/л) не верифицированы. PMID 28671619 выполнен на F. chiloensis (близкий вид рода Fragaria, не F. × ananassa) — помечено в контексте. Прямых данных о 'nutrient uptake' не найдено."
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Данных ED50/TD50 в прочитанных аннотациях нет. Зафиксированные ориентиры активности/безопасности: in vitro MIC против B. cinerea 500–1000 ppm (PMID 39214206, чистый хитозан); неблагоприятный ('обратный') эффект на листьях клубники при 50 мг/мл ≈ 50000 ppm CNPs, рабочие дозы 12500–25000 ppm (PMID 35241695); MIC композита Ag-хитозан 125 ppm (PMID 24025030). Хитозан — пищевой биополимер (CAS 9012-76-4), регуляторные токсикологические пороги в выборке не встречались."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": "Нет данных PHI/MRL в прочитанных источниках; хитозан в рассмотренных работах позиционируется как альтернатива фунгицидам (не регистрируемый пестицид с MRL). Постхарвест-покрытия наносятся на плоды — остаточность в выборке не измерялась"
+  },
+  "contraindications": [
+    {
+      "condition": "Высокие концентрации хитозановых наночастиц (≥50 мг/мл ≈ 50000 ppm) вызывали неблагоприятный эффект на листьях клубники (увеличение поражённой площади по сравнению с 12.5–25 мг/мл)",
+      "source": "PMID 35241695 (Sci Rep 2022)",
+      "severity": "moderate",
+      "note": "Данные по листьям клубники, не по плодам"
+    },
+    {
+      "condition": "Растворитель уксусная кислота при приготовлении растворов хитозана может вмешиваться в результаты (ограничение, отмеченное авторами)",
+      "source": "PMID 41600063 (Plants 2026)",
+      "severity": "low",
+      "note": "Касается методологии, а не токсичности"
+    }
+  ],
+  "conflicts": [],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "partial",
+    "reason": "Механизм (элиситор/defence priming, SA/JA-пути, PR-белки, каллоза/лигнин, прямые антифунгальные эффекты) подтверждён 21 прочитанной аннотацией во всех трёх культурах (томат: Botrytis, Alternaria, CMV, Meloidogyne; огурец: мучнистая роса 66.6% защиты, CMV, холодовой стресс, хранение; клубника: серая гниль, ~30% снижение послеуборочных гнилей, покрытия). CSV Efficacy MEDIUM согласуется с литературой (~30–66% снижения болезней). Однако CSV-протоколы дозировок (400 мг/л × 5 опрыскиваний; заделка 1–5 кг/га → микробная активность) независимо не подтверждены, заявление 'All crops' шире проверенных трёх культур, а часть 'microbial enhancer' не верифицирована → status_suggested: partial (не 'verified'), при сильном общем уровне доказательности."
+  },
+  "sources_index": [
+    {
+      "pmid": "33094513",
+      "year": 2021,
+      "verified": true,
+      "paper_type": "mechanistic",
+      "doi": "10.1111/pce.13921",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7821246/",
+      "crop": "tomato"
+    },
+    {
+      "pmid": "32605169",
+      "year": 2020,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/plants9070808",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7412205/",
+      "crop": "tomato"
+    },
+    {
+      "pmid": "39339562",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/plants13182587",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11434684/",
+      "crop": "tomato"
+    },
+    {
+      "pmid": "41600063",
+      "year": 2026,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/plants15020256",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12845396/",
+      "crop": "tomato"
+    },
+    {
+      "pmid": "30143111",
+      "year": 2018,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.carbpol.2018.06.094",
+      "oa_url": null,
+      "crop": "tomato"
+    },
+    {
+      "pmid": "30640158",
+      "year": 2019,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.jplph.2019.01.003",
+      "oa_url": null,
+      "crop": "tomato"
+    },
+    {
+      "pmid": "27095400",
+      "year": 2016,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.plantsci.2016.03.005",
+      "oa_url": null,
+      "crop": "tomato"
+    },
+    {
+      "pmid": "32814103",
+      "year": 2020,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.ijbiomac.2020.08.124",
+      "oa_url": null,
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "39639480",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.4014/jmb.2409.09030",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11813349/",
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "37047175",
+      "year": 2023,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/ijms24076202",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10094205/",
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "32429524",
+      "year": 2020,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/molecules25102341",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7288169/",
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "38731725",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/foods13091354",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11083981/",
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "35805989",
+      "year": 2022,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/ijms23136990",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9266900/",
+      "crop": "cucumber_partial_N.benthamiana"
+    },
+    {
+      "pmid": "28583179",
+      "year": 2017,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1186/s12906-017-1808-y",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5460470/",
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "31226218",
+      "year": 2019,
+      "verified": false,
+      "paper_type": "trial",
+      "doi": "10.1002/jsfa.9879",
+      "oa_url": null,
+      "crop": "cucumber"
+    },
+    {
+      "pmid": "26256331",
+      "year": 2015,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.carbpol.2015.05.078",
+      "oa_url": null,
+      "crop": "strawberry"
+    },
+    {
+      "pmid": "28671619",
+      "year": 2017,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.3390/ijms18071420",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5535912/",
+      "crop": "strawberry_F.chiloensis"
+    },
+    {
+      "pmid": "39214206",
+      "year": 2024,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1016/j.ijbiomac.2024.135158",
+      "oa_url": null,
+      "crop": "strawberry"
+    },
+    {
+      "pmid": "35241695",
+      "year": 2022,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1038/s41598-022-07073-y",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8894456/",
+      "crop": "strawberry"
+    },
+    {
+      "pmid": "42255699",
+      "year": 2026,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1002/fsn3.71949",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13239484/",
+      "crop": "strawberry"
+    },
+    {
+      "pmid": "24025030",
+      "year": 2013,
+      "verified": true,
+      "paper_type": "trial",
+      "doi": "10.1111/1750-3841.12247",
+      "oa_url": null,
+      "crop": "strawberry"
+    },
+    {
+      "pmid": "24770723",
+      "year": 2014,
+      "verified": true,
+      "paper_type": "trial_in_vitro",
+      "doi": "10.1371/journal.pone.0093192",
+      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4000203/",
+      "crop": "strawberry_partial"
+    }
+  ]
+}
