@@ -22,6 +22,21 @@ WHERE validation_status = "verified" OR validation_status = "corrected"
 SORT evidence_level DESC
 ```
 
+## 🟡 Частично подтверждено (partial)
+```dataview
+LIST
+FROM "wiki/substances"
+WHERE validation_status = "partial"
+SORT evidence_level DESC
+```
+
+## ⚪ Нет данных (insufficient_data)
+```dataview
+LIST
+FROM "wiki/substances"
+WHERE validation_status = "insufficient_data"
+```
+
 ## 📊 Прогресс
 ```dataview
 TABLE length(rows) AS "Всего"
