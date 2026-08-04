@@ -8,7 +8,7 @@ class: Ethylene
 class_family: ethylene
 mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 100-1000 ppm gas treatment
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

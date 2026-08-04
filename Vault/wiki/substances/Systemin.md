@@ -8,7 +8,7 @@ class: Peptide hormone
 class_family: peptides_proteins
 mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 0.1-1 ppm foliar (research)
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

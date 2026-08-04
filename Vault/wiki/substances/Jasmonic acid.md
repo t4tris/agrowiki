@@ -8,7 +8,7 @@ class: Jasmonate
 class_family: jasmonates
 mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 100-500 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

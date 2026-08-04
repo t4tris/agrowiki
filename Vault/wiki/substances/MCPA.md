@@ -8,7 +8,7 @@ class: Synthetic auxin
 class_family: auxins
 mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply per label for weed management
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

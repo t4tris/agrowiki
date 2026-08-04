@@ -8,7 +8,7 @@ class: Quaternary ammonium
 class_family: synthetic_growth_regulators
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: 250-500 ppm once in the second half of June, at the beginning of creeping stem emergence (early July), at a rate of one liter of the spray solution per 10 square meters enhanced anthesis and fruit ripening by about 10 days
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

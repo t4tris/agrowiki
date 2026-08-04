@@ -8,7 +8,7 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: osmoprotection
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 50-200 ppm seed priming
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

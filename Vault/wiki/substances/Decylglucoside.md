@@ -8,7 +8,7 @@ class: Surfactant
 class_family: other
 mechanism: growth_regulation
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Soak seeds in 0.5% solution
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

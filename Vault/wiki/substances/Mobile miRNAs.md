@@ -8,7 +8,7 @@ class: RNA
 class_family: peptides_proteins
 mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply via root drench
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

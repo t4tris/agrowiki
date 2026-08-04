@@ -8,7 +8,7 @@ class: Vitamin
 class_family: vitamins_cofactors
 mechanism: antioxidant_defense
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 100-300 ppm in seed treatment
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

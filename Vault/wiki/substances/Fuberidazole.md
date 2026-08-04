@@ -8,7 +8,7 @@ class: Benzimidazole fungicide
 class_family: fungicides
 mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 200-400 g/ha foliar spray
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Karrikin
 class_family: aba_strigolactones_karrikins
 mechanism: growth_regulation
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 1-10 ppm seed soaking
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

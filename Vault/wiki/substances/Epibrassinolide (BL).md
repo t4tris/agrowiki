@@ -8,7 +8,7 @@ class: Brassinosteroid
 class_family: brassinosteroids
 mechanism: brassinosteroid_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Fruit treatment
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

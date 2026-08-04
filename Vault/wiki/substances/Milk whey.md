@@ -8,7 +8,7 @@ class: Organic byproduct
 class_family: biostimulants_extracts
 mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 5% soil drench
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

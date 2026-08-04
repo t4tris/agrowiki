@@ -8,7 +8,7 @@ class: Synthetic auxin
 class_family: auxins
 mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 30-400 ppm
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

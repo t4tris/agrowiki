@@ -8,7 +8,7 @@ class: Vitamin-like
 class_family: vitamins_cofactors
 mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 25-100 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

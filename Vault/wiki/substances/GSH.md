@@ -8,7 +8,7 @@ class: Tripeptide
 class_family: peptides_proteins
 mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Fruit injection 0.5 mL of 100 mM
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

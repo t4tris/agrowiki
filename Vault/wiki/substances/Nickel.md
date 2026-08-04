@@ -8,7 +8,7 @@ class: Beneficial element
 class_family: elements_minerals
 mechanism: nutrition_metabolism
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Soak seeds in 0.1 mg/L solution
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

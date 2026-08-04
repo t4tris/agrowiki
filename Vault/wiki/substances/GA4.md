@@ -8,7 +8,7 @@ class: Gibberellin
 class_family: gibberellins
 mechanism: gibberellin_action
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: 20ppm
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

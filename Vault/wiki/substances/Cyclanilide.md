@@ -8,7 +8,7 @@ class: Defoliant/regulator
 class_family: synthetic_growth_regulators
 mechanism: ethylene_signaling
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 100-300 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

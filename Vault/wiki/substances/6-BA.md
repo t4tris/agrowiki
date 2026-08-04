@@ -8,7 +8,7 @@ class: Synthetic cytokinin
 class_family: cytokinins
 mechanism: cytokinin_signaling
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Foliar 50-150 ppm
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

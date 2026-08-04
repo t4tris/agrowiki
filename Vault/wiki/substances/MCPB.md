@@ -8,7 +8,7 @@ class: Synthetic auxin
 class_family: auxins
 mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply per label for crop regulation
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

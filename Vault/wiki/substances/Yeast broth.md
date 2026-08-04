@@ -8,7 +8,7 @@ class: Organic extract
 class_family: biostimulants_extracts
 mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 2 g/L foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

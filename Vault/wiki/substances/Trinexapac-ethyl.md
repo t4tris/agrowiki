@@ -8,7 +8,7 @@ class: Acylcyclohexanedione
 class_family: synthetic_growth_regulators
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 100-400 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

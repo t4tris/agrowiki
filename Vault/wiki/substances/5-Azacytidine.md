@@ -8,7 +8,7 @@ class: Nucleoside analog
 class_family: synthetic_growth_regulators
 mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Spray fruit 0.5-20 mM
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

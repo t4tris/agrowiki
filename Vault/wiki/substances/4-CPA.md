@@ -8,7 +8,7 @@ class: Auxin
 class_family: auxins
 mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 10-50 ppm spray during flowering
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

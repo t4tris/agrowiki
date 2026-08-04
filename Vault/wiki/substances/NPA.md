@@ -8,7 +8,7 @@ class: Auxin transport inhibitor
 class_family: auxins
 mechanism: auxin_signaling
 action_category: ROOT_DEVELOPMENT
-application_csv: 
+application_csv: Apply 1-10 ppm research treatment
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

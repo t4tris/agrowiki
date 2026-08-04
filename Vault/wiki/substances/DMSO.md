@@ -8,7 +8,7 @@ class: Solvent
 class_family: other
 mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Use at 0.1-1% in spray solutions
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

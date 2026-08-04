@@ -8,7 +8,7 @@ class: Organic Acid
 class_family: organic_acids
 mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 2-10 kg/ha soil drench
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

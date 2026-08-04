@@ -8,7 +8,7 @@ class: Beneficial element
 class_family: elements_minerals
 mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 50 mg/L foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

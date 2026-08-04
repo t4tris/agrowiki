@@ -8,7 +8,7 @@ class: Natural biostimulant
 class_family: biostimulants_extracts
 mechanism: elicitor_immunity
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 5-20 kg/ha soil incorporation
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

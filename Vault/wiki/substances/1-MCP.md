@@ -8,7 +8,7 @@ class: Ethylene inhibitor
 class_family: ethylene
 mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply as gas treatment 0.5-3 ppm
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

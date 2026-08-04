@@ -8,7 +8,7 @@ class: Synthetic cytokinin
 class_family: cytokinins
 mechanism: cytokinin_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 10-50 ppm foliar
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

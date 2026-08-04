@@ -8,7 +8,7 @@ class: Synthetic jasmonate
 class_family: jasmonates
 mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 50-200 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

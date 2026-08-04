@@ -8,7 +8,7 @@ class: Auxin
 class_family: auxins
 mechanism: auxin_signaling
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 25-75 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

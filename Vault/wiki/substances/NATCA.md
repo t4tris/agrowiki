@@ -8,7 +8,7 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: auxin_signaling
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 100-300 ppm seed soak for 4-6 hours
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

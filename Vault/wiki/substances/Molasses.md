@@ -8,7 +8,7 @@ class: Carbohydrate source
 class_family: carbohydrates
 mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 10 L/ha of 5% solution
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

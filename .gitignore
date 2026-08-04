@@ -4,5 +4,9 @@
 Thumbs.db
 Desktop.ini
 .DS_Store
+# Python
+__pycache__/
+*.pyc
 # Obsidian
 Vault/.obsidian/workspace*
+Vault/.obsidian/graph.json

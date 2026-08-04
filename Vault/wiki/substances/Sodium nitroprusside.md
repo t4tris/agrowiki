@@ -8,7 +8,7 @@ class: Iron nitrosyl complex
 class_family: gasotransmitters
 mechanism: gas_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Foliar application
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

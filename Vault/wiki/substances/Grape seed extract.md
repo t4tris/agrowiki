@@ -8,7 +8,7 @@ class: Polyphenol
 class_family: phenolics_polyphenols
 mechanism: antioxidant_defense
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Fruit injection 0.2-0.4% m/v
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

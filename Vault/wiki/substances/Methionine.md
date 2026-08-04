@@ -8,7 +8,7 @@ class: Amino Acid
 class_family: amino_acids_polyamines
 mechanism: ethylene_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 100-500 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

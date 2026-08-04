@@ -8,7 +8,7 @@ class: Polyamine
 class_family: amino_acids_polyamines
 mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 50-200 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

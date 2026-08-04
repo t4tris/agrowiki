@@ -8,7 +8,7 @@ class: Nitrophenolate
 class_family: synthetic_growth_regulators
 mechanism: auxin_signaling
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 50-200 ppm seed soak
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

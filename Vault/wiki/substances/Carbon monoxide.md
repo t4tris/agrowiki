@@ -8,7 +8,7 @@ class: Gasotransmitter
 class_family: gasotransmitters
 mechanism: gas_signaling
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 10-100 ppm seed priming
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Metal / metal-oxide nanoparticles
 class_family: elements_minerals
 mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Foliar spray or seed treatment (low ppm)
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

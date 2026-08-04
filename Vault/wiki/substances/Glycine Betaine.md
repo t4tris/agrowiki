@@ -8,7 +8,7 @@ class: Osmoprotectant
 class_family: amino_acids_polyamines
 mechanism: osmoprotection
 action_category: STRESS_TOLERANCE
-application_csv: 
+application_csv: Apply 100-1000 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

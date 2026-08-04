@@ -8,7 +8,7 @@ class: ABA
 class_family: aba_strigolactones_karrikins
 mechanism: aba_stress_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 100-500 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

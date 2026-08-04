@@ -8,7 +8,7 @@ class: Amino Acid
 class_family: amino_acids_polyamines
 mechanism: osmoprotection
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 100-500 ppm for seed priming
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: GA inhibitor
 class_family: gibberellins
 mechanism: growth_regulation
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: applied 5 weeks after planting at 125mg/L — Single early application at 62.5 and 150 mg·L⁻¹ Followed by a repeat dose 25 days later — 200 mg/L foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

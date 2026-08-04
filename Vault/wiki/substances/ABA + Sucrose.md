@@ -8,7 +8,7 @@ class: Plant hormone + disaccharide
 class_family: sar_signals_elicitors
 mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Spray fruit at white stage (95 µM ABA, 100 mM sucrose)
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

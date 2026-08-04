@@ -8,7 +8,7 @@ class: Indolamine derivative
 class_family: indolamines
 mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION, SEED_TREATMENT
-application_csv: 
+application_csv: Apply 10-50 ppm foliar spray; Apply 10-50 ppm seed soak
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

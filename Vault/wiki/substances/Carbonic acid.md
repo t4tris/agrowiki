@@ -8,7 +8,7 @@ class: Organic Acid
 class_family: organic_acids
 mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 0.5-1% CO2-enriched foliar spray; Apply 1-2 g/L bicarbonate in irrigation
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

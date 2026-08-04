@@ -8,7 +8,7 @@ class: Auxin
 class_family: auxins
 mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 15-30 ppm spray post fruit set
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Cytokinin
 class_family: cytokinins
 mechanism: cytokinin_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: well-rooted plantswere sprayed twice with 100ppm (30 mL per plant)and the remainder with an equal volume of distilled water(dH2O) during the vegetative stage with a 1-week interval Afterward, plants were treated with MeJA 200 µM) or EBR(Sigma-Aldrich, USA) solutions (1, or 3µM) during the reproductive phase; at the stages of small green, biggreen, and completely red berries (48h before harvest)
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

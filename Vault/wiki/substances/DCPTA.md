@@ -8,7 +8,7 @@ class: Synthetic tertiary amine
 class_family: synthetic_growth_regulators
 mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 10-100 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

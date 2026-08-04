@@ -8,7 +8,7 @@ class: Cytokinin
 class_family: cytokinins
 mechanism: cytokinin_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 5-25 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

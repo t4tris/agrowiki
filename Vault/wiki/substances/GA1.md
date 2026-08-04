@@ -8,7 +8,7 @@ class: Gibberellin
 class_family: gibberellins
 mechanism: gibberellin_action
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 50-200 ppm for seed treatment 12-24 hours
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

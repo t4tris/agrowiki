@@ -8,7 +8,7 @@ class: Disaccharide
 class_family: carbohydrates
 mechanism: osmoprotection
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 50-200 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

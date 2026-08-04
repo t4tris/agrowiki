@@ -8,7 +8,7 @@ class: Neonicotinoid
 class_family: insecticides
 mechanism: pesticide_action
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 5-20 ppm seed treatment
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

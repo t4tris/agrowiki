@@ -8,7 +8,7 @@ class: Alkylating agent
 class_family: synthetic_growth_regulators
 mechanism: pesticide_action
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Spray fruit 5 mM
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Triazole fungicide
 class_family: fungicides
 mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 150-300 g/ha foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

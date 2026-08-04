@@ -8,7 +8,7 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: fruit sprayed 0.5% w/v
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

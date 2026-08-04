@@ -8,7 +8,7 @@ class: Strigolactone
 class_family: aba_strigolactones_karrikins
 mechanism: growth_regulation
 action_category: ROOT_DEVELOPMENT
-application_csv: 
+application_csv: Apply 1-10 ppm soil drench
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Phosphonate fungicide/biostimulant
 class_family: fungicides
 mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 0.5-1 kg/ha foliar spray; Apply 2-4 kg/ha soil drench
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

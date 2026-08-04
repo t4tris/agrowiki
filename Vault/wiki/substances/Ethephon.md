@@ -8,7 +8,7 @@ class: Ethylene releaser
 class_family: ethylene
 mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Fruit dip 7 mmol/L or 25-50 ppm
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

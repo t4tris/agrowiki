@@ -8,7 +8,7 @@ class: Brassinosteroid
 class_family: brassinosteroids
 mechanism: aba_stress_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 0.05-0.5 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

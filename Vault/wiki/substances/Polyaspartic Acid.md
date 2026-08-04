@@ -8,7 +8,7 @@ class: Synthetic polymer
 class_family: synthetic_growth_regulators
 mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 1-5 kg/ha with fertilizer
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

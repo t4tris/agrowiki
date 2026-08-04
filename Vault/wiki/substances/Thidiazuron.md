@@ -8,7 +8,7 @@ class: Phenylurea cytokinin
 class_family: cytokinins
 mechanism: cytokinin_signaling
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: foliar sprays at a concentration of 50 mg/L. Spraying was done three times at 10-day intervals, 40-days old crop after cutting from mother plnat
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

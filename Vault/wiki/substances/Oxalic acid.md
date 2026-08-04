@@ -8,7 +8,7 @@ class: Organic Acid
 class_family: organic_acids
 mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 100-500 ppm foliar spray
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

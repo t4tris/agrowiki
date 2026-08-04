@@ -8,7 +8,7 @@ class: Chelated nutrient
 class_family: elements_minerals
 mechanism: nutrition_metabolism
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
-application_csv: 
+application_csv: Apply 0.5-2% foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

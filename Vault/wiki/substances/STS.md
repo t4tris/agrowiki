@@ -8,7 +8,7 @@ class: Ethylene inhibitor
 class_family: ethylene
 mechanism: ethylene_signaling
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 50-100 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

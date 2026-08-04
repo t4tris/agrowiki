@@ -8,7 +8,7 @@ class: Oxidant
 class_family: other
 mechanism: pesticide_action
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Soak seeds in 100 ppm solution
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Triazole
 class_family: fungicides
 mechanism: brassinosteroid_signaling
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Foliar treatment
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

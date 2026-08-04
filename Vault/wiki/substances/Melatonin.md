@@ -8,7 +8,7 @@ class: Indolamine; Indoleamine
 class_family: indolamines
 mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION, FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 10-100 ppm foliar spray; Fruit spray 100 µM
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

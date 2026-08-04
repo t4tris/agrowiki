@@ -8,7 +8,7 @@ class: Aryloxy acid
 class_family: auxins
 mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: 100 µg in 40 µL ethanol
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

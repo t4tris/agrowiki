@@ -8,7 +8,7 @@ class: Pyrimidine
 class_family: synthetic_growth_regulators
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Foliar / drench
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

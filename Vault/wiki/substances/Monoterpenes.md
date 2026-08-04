@@ -8,7 +8,7 @@ class: VOC
 class_family: voc_volatiles
 mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 10-50 ppm foliar spray
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

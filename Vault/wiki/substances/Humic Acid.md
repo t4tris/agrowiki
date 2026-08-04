@@ -8,7 +8,7 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: nutrition_metabolism
 action_category: ROOT_DEVELOPMENT, SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 2-5% soil drench or foliar; Apply 2-10 kg/ha soil incorporation
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

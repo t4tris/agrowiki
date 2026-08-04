@@ -8,7 +8,7 @@ class: Brassinosteroid
 class_family: brassinosteroids
 mechanism: brassinosteroid_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Spray fruit 0.2 µM EBR
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

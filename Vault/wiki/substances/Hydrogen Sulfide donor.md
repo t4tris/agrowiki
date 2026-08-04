@@ -8,7 +8,7 @@ class: Gasotransmitter
 class_family: gasotransmitters
 mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 10-100 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Vitamin
 class_family: vitamins_cofactors
 mechanism: nutrition_metabolism
 action_category: SEED_TREATMENT
-application_csv: 
+application_csv: Apply 50-200 ppm in seed treatment solution
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

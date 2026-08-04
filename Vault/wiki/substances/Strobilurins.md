@@ -8,7 +8,7 @@ class: Fungicide/Biostimulant
 class_family: biostimulants_extracts
 mechanism: photosynthesis_enhancement
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
-application_csv: 
+application_csv: Apply as per label for disease control
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

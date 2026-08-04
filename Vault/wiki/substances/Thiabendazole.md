@@ -8,7 +8,7 @@ class: Benzimidazole fungicide
 class_family: fungicides
 mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 500-1000 ppm dip
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

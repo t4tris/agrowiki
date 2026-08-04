@@ -8,7 +8,7 @@ class: Phenolic
 class_family: phenolics_polyphenols
 mechanism: antioxidant_defense
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 2-8 mM foliar
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

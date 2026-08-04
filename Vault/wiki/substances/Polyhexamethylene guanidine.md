@@ -8,7 +8,7 @@ class: Polymeric guanidine
 class_family: synthetic_growth_regulators
 mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Foliar application
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

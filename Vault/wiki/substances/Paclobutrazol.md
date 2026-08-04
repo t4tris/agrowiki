@@ -8,7 +8,7 @@ class: Triazole
 class_family: fungicides
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 0.25-2 g/L soil drench, 75-300mg/l sprayed 35 days after planting.
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Vitamin
 class_family: vitamins_cofactors
 mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 25-100 ppm foliar spray
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Phospholipid
 class_family: terpenoids_saponins_lipids
 mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 0.2% foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

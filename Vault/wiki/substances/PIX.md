@@ -8,7 +8,7 @@ class: GA inhibitor
 class_family: gibberellins
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: 
+application_csv: Apply 30-120 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

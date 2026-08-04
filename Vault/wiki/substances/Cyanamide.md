@@ -8,7 +8,7 @@ class: Nitrile
 class_family: synthetic_growth_regulators
 mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Apply 2-5% spray during dormant season
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

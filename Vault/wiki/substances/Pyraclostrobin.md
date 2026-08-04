@@ -8,7 +8,7 @@ class: Strobilurin fungicide
 class_family: fungicides
 mechanism: ethylene_signaling
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 100-200 g/ha as per label
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

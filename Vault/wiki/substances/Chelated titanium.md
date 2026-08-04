@@ -8,7 +8,7 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: photosynthesis_enhancement
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 0.5-2 kg/ha with fertilizer
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

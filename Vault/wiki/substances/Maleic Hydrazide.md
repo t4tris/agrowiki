@@ -8,7 +8,7 @@ class: Diazine; Growth inhibitor
 class_family: synthetic_growth_regulators
 mechanism: growth_regulation
 action_category: GROWTH_REGULATION, SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 2000-8000 ppm spray; Apply 2-8 kg/ha post-harvest
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

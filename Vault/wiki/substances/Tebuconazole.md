@@ -8,7 +8,7 @@ class: Triazole fungicide
 class_family: fungicides
 mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply as per fungicide label
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified

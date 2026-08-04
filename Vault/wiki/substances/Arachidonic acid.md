@@ -8,7 +8,7 @@ class: Organic Acid
 class_family: organic_acids
 mechanism: elicitor_immunity
 action_category: SOIL_APPLICATION
-application_csv: 
+application_csv: Apply 50-200 ppm soil drench
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

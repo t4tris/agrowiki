@@ -8,7 +8,7 @@ class: Enzyme
 class_family: peptides_proteins
 mechanism: growth_regulation
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
-application_csv: 
+application_csv: Apply Zn foliar 0.5-1%
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified

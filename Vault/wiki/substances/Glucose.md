@@ -8,7 +8,7 @@ class: Monosaccharide
 class_family: carbohydrates
 mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
-application_csv: 
+application_csv: Apply 50-200 ppm foliar spray
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified

@@ -8,7 +8,7 @@ class: Aldehyde
 class_family: terpenoids_saponins_lipids
 mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
-application_csv: 
+application_csv: Post-harvest treatment
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
