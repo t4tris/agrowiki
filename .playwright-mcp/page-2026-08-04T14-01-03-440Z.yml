@@ -1,0 +1,125 @@
+- generic [ref=f3e4]:
+  - banner [ref=f3e5]:
+    - generic [ref=f3e6]:
+      - generic [ref=f3e7]:
+        - list [ref=f3e10]:
+          - listitem [ref=f3e11]:
+            - link "العربية" [ref=f3e12] [cursor=pointer]:
+              - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/ar/?mdrv=www.fao.org
+          - listitem [ref=f3e13]:
+            - link "中文" [ref=f3e14] [cursor=pointer]:
+              - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/zh/?mdrv=www.fao.org
+          - listitem [ref=f3e15]:
+            - link "english" [ref=f3e16] [cursor=pointer]:
+              - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/en/?mdrv=www.fao.org
+          - listitem [ref=f3e17]:
+            - link "français" [ref=f3e18] [cursor=pointer]:
+              - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/fr/?mdrv=www.fao.org
+          - listitem [ref=f3e19]:
+            - link "Русский" [ref=f3e20] [cursor=pointer]:
+              - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/ru/?mdrv=www.fao.org
+          - listitem [ref=f3e21]:
+            - link "Español" [ref=f3e22] [cursor=pointer]:
+              - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/es/?mdrv=www.fao.org
+        - generic [ref=f3e30]:
+          - textbox [ref=f3e31]
+          - button "" [ref=f3e33] [cursor=pointer]
+      - generic [ref=f3e35]:
+        - generic [ref=f3e37]:
+          - link [ref=f3e39] [cursor=pointer]:
+            - /url: https://www.fao.org
+          - link [ref=f3e41] [cursor=pointer]:
+            - /url: http://www.who.int/en/
+        - link [ref=f3e46] [cursor=pointer]:
+          - /url: /fao-who-codexalimentarius/world-food-safety-day/wfsd-homepage/en/
+          - img "Support World Food Safety Day" [ref=f3e47]
+  - navigation [ref=f3e48]:
+    - button [ref=f3e49] [cursor=pointer]
+    - text:   
+  - generic [ref=f3e54]:
+    - link "codexalimentarius" [ref=f3e56] [cursor=pointer]:
+      - /url: /fao-who-codexalimentarius/home/en/
+    - generic [ref=f3e57]:
+      - text: ">"
+      - link "Codex Texts" [ref=f3e58] [cursor=pointer]:
+        - /url: /fao-who-codexalimentarius/codex-texts/en/
+    - generic [ref=f3e59]:
+      - text: ">"
+      - link "Codex online databases" [ref=f3e60] [cursor=pointer]:
+        - /url: /fao-who-codexalimentarius/codex-texts/dbs/en/
+    - text: "> Pesticide Database"
+  - generic [ref=f3e62]:
+    - generic [ref=f3e64]:
+      - heading "Codex Pesticides Residues in Food Online Database" [level=1] [ref=f3e65]
+      - paragraph [ref=f3e66]:
+        - text: This database contains Codex Maximum Residue Limits for Pesticides and Extraneous Maximum Residue Limits adopted by the Codex Alimentarius Commission up to and including its 48
+        - superscript [ref=f3e67]: th
+        - text: Session (November 2025).
+      - paragraph [ref=f3e68]
+      - paragraph [ref=f3e69]: In the data base a user can obtain information on Codex Maximum Residue Limits (MRLs) and Codex Extraneous Maximum Residue Limits (EMRLs) for pesticide / commodity combinations. Names and definitions of commodities are found in the Codex Classification of Foods and Animal Feeds.
+      - paragraph [ref=f3e70]: The foods listed shall not contain more than the MRL or EMRL (in mg/kg) of the pesticide residue (defined in each individual case in the definition of residue) at (a) the point of entry into a country or (b) at the point of entry into trade channels within a country. This maximum limit shall not be exceeded at any time thereafter.
+      - paragraph [ref=f3e71]: The MRLs and EMRLs apply to the residue content of the final sample representative of the lot and of the portion of commodities which is analyzed.
+      - paragraph [ref=f3e72]:
+        - text: Up to 2025 the Codex Alimentarius Commission has adopted
+        - strong [ref=f3e73]: 6522 MRLs and 63 EMRLs (CXLs)
+        - text: for different combinations of pesticide/commodity(ies).
+      - blockquote [ref=f3e74]:
+        - paragraph [ref=f3e75]:
+          - generic [ref=f3e76]: 
+          - text: When searching MRLs for single commodity (e.g. FC 0204 Lemon), please also search MRLs for the corresponding subgroups (e.g. FC 0002 Lemons and Limes) and the corresponding groups (e.g. FC 0001 Citrus Fruits) in order to have the whole spectrum of the Codex MRLs for the commodity.
+    - navigation [ref=f3e78]:
+      - list [ref=f3e79]:
+        - listitem [ref=f3e80]:
+          - link "Pesticides" [ref=f3e81] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/pesticides/en/
+        - listitem [ref=f3e82]:
+          - link "Functional Classes" [ref=f3e83] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/functional-classes/en/
+        - listitem [ref=f3e84]:
+          - link "Commodities" [ref=f3e85] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/commodities/en/
+        - listitem [ref=f3e86]:
+          - link "Glossary" [ref=f3e87] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/codex-texts/dbs/pestres/glossary/en/
+  - contentinfo [ref=f3e88]:
+    - generic [ref=f3e89]:
+      - list [ref=f3e90]:
+        - listitem [ref=f3e91]:
+          - link "About us" [ref=f3e92] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/about-codex/en/#c453333
+        - listitem [ref=f3e93]:
+          - link "Contact us" [ref=f3e94] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/about-codex/en/#c453328
+        - listitem [ref=f3e95]:
+          - link "FAQs" [ref=f3e96] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/about-codex/faq/en/#c454876
+      - list [ref=f3e97]:
+        - listitem [ref=f3e98]:
+          - link "Circular Letters" [ref=f3e99] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/resources/circular-letters/en/
+        - listitem [ref=f3e100]:
+          - link "Sitemap" [ref=f3e101] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/sitemap/en/
+        - listitem [ref=f3e102]:
+          - link "Help" [ref=f3e103] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/help/en/
+      - list [ref=f3e104]:
+        - listitem [ref=f3e105]:
+          - link "Data Protection and Privacy Notice" [ref=f3e106] [cursor=pointer]:
+            - /url: https://www.fao.org/fao-who-codexalimentarius/data_protection/en/
+        - listitem [ref=f3e107]:
+          - link "Copyright / Disclaimer" [ref=f3e108] [cursor=pointer]:
+            - /url: /contact-us/terms/
+        - listitem [ref=f3e109]:
+          - link "Login" [ref=f3e110] [cursor=pointer]:
+            - /url: /fao-who-codexalimentarius/registration/CAF_connector/en/?caslogin=login
+    - generic [ref=f3e112]:
+      - heading "Follow us on" [level=4] [ref=f3e114]
+      - paragraph [ref=f3e115]:
+        - link [ref=f3e116] [cursor=pointer]:
+          - /url: https://x.com/FAOWHOCodex
+          - img "Twitter" [ref=f3e117]
+        - link [ref=f3e118] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=x6uGYyXexzM&list=PLzp5NgJ2-dK69ov7NL8Zt0mO1iJqxYeW9
+          - img "YouTube" [ref=f3e119]
+    - generic [ref=f3e120]: © FAO/WHO, 2026
