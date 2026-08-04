@@ -1,0 +1,1284 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-04",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Chitosan",
+    "csv_name": "Chitosan"
+  },
+  "searches": [
+    {
+      "query": "chitosan AND tomato AND disease",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 2723,
+      "results": [
+        {
+          "id": "42030269",
+          "source": "MED",
+          "title": "Green synthesis and characterization of zinc chitosan nanoparticles with their anti-bacterial study against rice pathogen Xanthomonas oryzae pv. oryzae.",
+          "first_author": "Rahman L",
+          "pub_year": "2026",
+          "doi": "10.1371/journal.pone.0346082",
+          "pmid": "42030269"
+        },
+        {
+          "id": "42343967",
+          "source": "MED",
+          "title": "Grapevine LysM-containing receptor-like kinase &lt;i&gt;VvLYK6&lt;/i&gt; enhances resistance to white rot in tomato.",
+          "first_author": "Liu Q",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1869419",
+          "pmid": "42343967"
+        },
+        {
+          "id": "41640174",
+          "source": "MED",
+          "title": "Developments of nanoparticle-mediated dsRNA delivery systems to control ToCV and TYLCV infections in plants.",
+          "first_author": "Wu G",
+          "pub_year": "2026",
+          "doi": "10.1002/ps.70607",
+          "pmid": "41640174"
+        },
+        {
+          "id": "PMC12987238",
+          "source": "PMC",
+          "title": "Development, Characterization, and Evaluation of Chitosan Nano/Microcapsules with Bacillus subtilis Extract and Their Effect on Tomato (Solanum lycopersicum) Seed Germination",
+          "first_author": "Díaz-Herrera R",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41600063",
+          "source": "MED",
+          "title": "Chitosan Acts as a Sustainable Strategy for Integrated Management of Root-Knot Nematodes (<i>Meloidogyne</i> spp.) in Cherry Tomato.",
+          "first_author": "González-Cardona C",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15020256",
+          "pmid": "41600063"
+        },
+        {
+          "id": "42075470",
+          "source": "MED",
+          "title": "Antifungal Efficacy of Essential Oils and Nanoformulations Against Fusarium Wilt of Tomato: Systematic Review (2000-2025).",
+          "first_author": "Abuzaitoun SY",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081268",
+          "pmid": "42075470"
+        },
+        {
+          "id": "42122827",
+          "source": "MED",
+          "title": "Nanoparticle-Induced Cross-Tolerance: A Review of Mechanisms for Concurrent Biotic and Abiotic Stress Mitigation in Crops.",
+          "first_author": "Abdulraheem MI",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091334",
+          "pmid": "42122827"
+        },
+        {
+          "id": "41266957",
+          "source": "MED",
+          "title": "Bacillus subtilis and chitosan nanoparticles enhance potato virus Y (PVY) tolerance in tomato (Solanum lycopersicum L.) via modulation of antioxidants and secondary metabolites.",
+          "first_author": "Ghanaim AM",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07617-0",
+          "pmid": "41266957"
+        },
+        {
+          "id": "41581110",
+          "source": "MED",
+          "title": "Applications of nanoparticles in plant disease identification and control for sustainable crop production.",
+          "first_author": "Kalu CM",
+          "pub_year": "2026",
+          "doi": "10.1186/s11671-026-04440-w",
+          "pmid": "41581110"
+        },
+        {
+          "id": "PMC12987116",
+          "source": "PMC",
+          "title": "Basic Substances and Nanotechnology: Bridging Sustainability and Innovation for Fungal Disease Management in Plants",
+          "first_author": "Akrivou A",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41256925",
+          "source": "MED",
+          "title": "Assessment of chitosan-based edible coatings containing bioactive compounds derived from agricultural residue for improving postharvest quality characteristics of tomato (&lt;i&gt;Solanum lycopersicum&lt;/i&gt; L.).",
+          "first_author": "Yadav S",
+          "pub_year": "2025",
+          "doi": "10.3389/fnut.2025.1673029",
+          "pmid": "41256925"
+        },
+        {
+          "id": "41613398",
+          "source": "MED",
+          "title": "Advanced molecular tools for surveillance and management of tobamoviruses.",
+          "first_author": "Mehmood MA",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1718133",
+          "pmid": "41613398"
+        },
+        {
+          "id": "41858663",
+          "source": "MED",
+          "title": "Natural products for biocontrol of &lt;i&gt;Pseudomonas syringae&lt;/i&gt;: mechanisms and applications.",
+          "first_author": "Han X",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1754522",
+          "pmid": "41858663"
+        },
+        {
+          "id": "42121525",
+          "source": "MED",
+          "title": "Biocontrol Efficacy of Microbial Antagonists Against &lt;i&gt;Pectobacterium carotovorum&lt;/i&gt;-Induced Soft Rot in Fruits and Vegetables in East Asia: A Systematic Review and Meta-Analysis.",
+          "first_author": "Lawal H",
+          "pub_year": "2026",
+          "doi": "10.3390/foods15091580",
+          "pmid": "42121525"
+        },
+        {
+          "id": "42273211",
+          "source": "MED",
+          "title": "Screening of plant immune elicitors and their control effects on tomato yellow leaf curl virus disease.",
+          "first_author": "Wang D",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1834029",
+          "pmid": "42273211"
+        },
+        {
+          "id": "IND609257784",
+          "source": "AGR",
+          "title": "Integrated use of chitosan and arbuscular mycorrhizal fungi mitigates Verticillium dahliae infection in Tomato: Comparison with conventional fertilization",
+          "first_author": "Soussani FE",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42226772",
+          "source": "MED",
+          "title": "Plant-derived chitosan nanoparticles: antibacterial and improved crop performance under drought stress.",
+          "first_author": "Aldahasi RM",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.21209",
+          "pmid": "42226772"
+        },
+        {
+          "id": "41441114",
+          "source": "MED",
+          "title": "Advances in the Application of Nanocomposite Hydrogels in Crops.",
+          "first_author": "Hernández-Echave DG",
+          "pub_year": "2025",
+          "doi": "10.3390/gels11120957",
+          "pmid": "41441114"
+        },
+        {
+          "id": "41735810",
+          "source": "MED",
+          "title": "Engineered nano-pesticides: a multifaceted strategy for sustainable crop protection and enhanced food security in the era of climate change.",
+          "first_author": "Verma KK",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2633785",
+          "pmid": "41735810"
+        },
+        {
+          "id": "41965512",
+          "source": "MED",
+          "title": "Controlling root rot and wilt diseases in faba bean (Vicia faba) using bio-filtrates and bio-stimulant substances.",
+          "first_author": "Almimoni NM.",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08654-z",
+          "pmid": "41965512"
+        },
+        {
+          "id": "41382031",
+          "source": "MED",
+          "title": "Synergistic effect of Trichoderma harzianum and chitosan nanoparticles on garlic plants in arid regions.",
+          "first_author": "Shalaby OA.",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07844-5",
+          "pmid": "41382031"
+        },
+        {
+          "id": "40941157",
+          "source": "MED",
+          "title": "Nano Emulsion of Essential Oils Loaded in Chitosan Coating for Controlling Anthracnose in Tomatoes (&lt;i&gt;Solanum lycopersicum&lt;/i&gt;) During Storage.",
+          "first_author": "Gumede S",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14173038",
+          "pmid": "40941157"
+        },
+        {
+          "id": "41340662",
+          "source": "MED",
+          "title": "Editorial: Natural bioactive compounds in food preservation and safety.",
+          "first_author": "Cabezudo I",
+          "pub_year": "2025",
+          "doi": "10.3389/fnut.2025.1720905",
+          "pmid": "41340662"
+        },
+        {
+          "id": "40776542",
+          "source": "MED",
+          "title": "Application of Nanocomposites-Based Polymers on Managing Fungal Diseases in Crop Production.",
+          "first_author": "Hoang NH",
+          "pub_year": "2025",
+          "doi": "10.5423/ppj.rw.02.2025.0029",
+          "pmid": "40776542"
+        },
+        {
+          "id": "40313412",
+          "source": "MED",
+          "title": "The synergistic effects of humic acid, chitosan and &lt;i&gt;Bacillus subtilis&lt;/i&gt; on tomato growth and against plant diseases.",
+          "first_author": "Qiu C",
+          "pub_year": "2025",
+          "doi": "10.3389/fmicb.2025.1574765",
+          "pmid": "40313412"
+        }
+      ]
+    },
+    {
+      "query": "chitosan AND tomato AND disease AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 10,
+      "results": [
+        {
+          "id": "PPR919019",
+          "source": "PPR",
+          "title": "Development of Nanostructured Chitosan Coating with Coffee Peels Extract for Preservation of Tomato Quality and Control Pre and Postharvest Disease Caused by <em>Rhizopus stolonifer</em>",
+          "first_author": "Barrera Necha LL",
+          "pub_year": "2024",
+          "doi": "10.20944/preprints202410.0179.v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR952539",
+          "source": "PPR",
+          "title": "Chitin soil amendment triggers systemic plant disease resistance through enhanced pattern-triggered immunity",
+          "first_author": "Makechemu M",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.12.08.627391",
+          "pmid": null
+        },
+        {
+          "id": "PPR1165813",
+          "source": "PPR",
+          "title": "Stop-Codon–Mediated Polycistronic Translation Enables Multi-ORF Expression in Mammalian Neurons In Vivo",
+          "first_author": "Olszakier S",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-8629892/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR972649",
+          "source": "PPR",
+          "title": "High-throughput glycan array screening reveals rhamnogalacturonan-I as a ligand for Arabidopsis leucine-rich repeat receptor kinases",
+          "first_author": "Lee D",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.01.29.635407",
+          "pmid": null
+        },
+        {
+          "id": "PPR204426",
+          "source": "PPR",
+          "title": "Boosting photosynthetic machinery and defense priming with chitosan application on tomato plants infected with  <i>Fusarium oxysporum</i>  f. sp.  <i>lycopersici</i>",
+          "first_author": "Carmona SL",
+          "pub_year": "2020",
+          "doi": "10.1101/2020.08.18.256628",
+          "pmid": null
+        },
+        {
+          "id": "PPR925678",
+          "source": "PPR",
+          "title": "Optochemical profiling of NMDA receptor molecular diversity at synaptic and extrasynaptic sites",
+          "first_author": "Sicard A",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.10.14.618157",
+          "pmid": null
+        },
+        {
+          "id": "PPR1196576",
+          "source": "PPR",
+          "title": "A lentinan-loaded hydrogel with core-shell structure induces broad-spectrum resistance against plant virus by activating the expression of CML30",
+          "first_author": "Xiang S",
+          "pub_year": "2020",
+          "doi": "10.22541/au.160503099.94865844/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR547007",
+          "source": "PPR",
+          "title": "Apolipoprotein E controls Dectin-1-dependent development of monocyte-derived alveolar macrophages upon pulmonary β-glucan-induced inflammatory adaptation",
+          "first_author": "Theobald H",
+          "pub_year": "2022",
+          "doi": "10.1101/2022.09.15.505390",
+          "pmid": null
+        },
+        {
+          "id": "PPR705124",
+          "source": "PPR",
+          "title": "Potent and broadly neutralizing antibodies against sarbecoviruses induced by sequential COVID-19 vaccination",
+          "first_author": "Zhao X",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.08.22.554373",
+          "pmid": null
+        },
+        {
+          "id": "PPR632203",
+          "source": "PPR",
+          "title": "A branching model of lineage differentiation underpinning the neurogenic potential of enteric glia",
+          "first_author": "Pachnis V",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-2491905/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "chitosan AND cucumber AND powdery mildew",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 160,
+      "results": [
+        {
+          "id": "41440721",
+          "source": "MED",
+          "title": "Harnessing Nanoparticles and Nanosuspensions to Combat Powdery Mildew: A Frontier in Vegetable and Fruit Protection.",
+          "first_author": "Geremew A",
+          "pub_year": "2025",
+          "doi": "10.3390/jof11120896",
+          "pmid": "41440721"
+        },
+        {
+          "id": "39639480",
+          "source": "MED",
+          "title": "Control of Cucumber Powdery Mildew Using Resistant Cultivars and Organic Agricultural Materials.",
+          "first_author": "Kim MJ",
+          "pub_year": "2024",
+          "doi": "10.4014/jmb.2409.09030",
+          "pmid": "39639480"
+        },
+        {
+          "id": "41864960",
+          "source": "MED",
+          "title": "Cell-type-specific immune programs orchestrate spatial defense in the Arabidopsis leaf epidermis.",
+          "first_author": "Song J",
+          "pub_year": "2026",
+          "doi": "10.1038/s41467-026-70843-z",
+          "pmid": "41864960"
+        },
+        {
+          "id": "41254470",
+          "source": "MED",
+          "title": "&lt;i&gt;CERK1&lt;/i&gt; is required for chitin-triggered reactive oxygen species generation in melon and is broadly conserved in cucurbits.",
+          "first_author": "Suen CY",
+          "pub_year": "2025",
+          "doi": "10.1080/15592324.2025.2578279",
+          "pmid": "41254470"
+        },
+        {
+          "id": "41987041",
+          "source": "MED",
+          "title": "Silica nanoparticles enhance resistance of Vitis vinifera to downy mildew.",
+          "first_author": "Alfonso E",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08718-0",
+          "pmid": "41987041"
+        },
+        {
+          "id": "38611445",
+          "source": "MED",
+          "title": "Potential of Chitosan for the Control of Powdery Mildew (<i>Leveillula taurica</i> (Lév.) Arnaud) in a Jalapeño Pepper (<i>Capsicum annuum</i> L.) Cultivar.",
+          "first_author": "Jiménez-Pérez O",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13070915",
+          "pmid": "38611445"
+        },
+        {
+          "id": "40241243",
+          "source": "MED",
+          "title": "Nanoparticles as tools for enhancing plant resistance to biotic stress in the context of climate change.",
+          "first_author": "Ruffatto K",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70227",
+          "pmid": "40241243"
+        },
+        {
+          "id": "38384763",
+          "source": "MED",
+          "title": "Increasing vineyard sustainability: innovating a targeted chitosan-derived biocontrol solution to induce grapevine resistance against downy and powdery mildews.",
+          "first_author": "Brulé D",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1360254",
+          "pmid": "38384763"
+        },
+        {
+          "id": "41154029",
+          "source": "MED",
+          "title": "Ethephon Treatment Enhanced Postharvest Litchi Fruit Resistance to &lt;i&gt;Peronophythora litchii&lt;/i&gt; by Strengthening Antioxidant Capacity and Defense Systems.",
+          "first_author": "Zhu D",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14203493",
+          "pmid": "41154029"
+        },
+        {
+          "id": "40697939",
+          "source": "MED",
+          "title": "Cytophysiological manifestations of wheat's defense reactions against stem rust induced by the biofungicide Novochizol.",
+          "first_author": "Shcherban AB",
+          "pub_year": "2025",
+          "doi": "10.18699/vjgb-25-57",
+          "pmid": "40697939"
+        },
+        {
+          "id": "40655329",
+          "source": "MED",
+          "title": "Biotic Stress Alleviation in Plant Using Rhizobacteria: An Overview of Mechanism of Action, Antimicrobial Compounds Production, (Nano) Formulations and Employment Methods.",
+          "first_author": "Rana A",
+          "pub_year": "2025",
+          "doi": "10.1007/s12088-024-01429-w",
+          "pmid": "40655329"
+        },
+        {
+          "id": "38202360",
+          "source": "MED",
+          "title": "Prior Infection by &lt;i&gt;Colletotrichum spinaciae&lt;/i&gt; Lowers the Susceptibility to Infection by Powdery Mildew in Common Vetch.",
+          "first_author": "Li F",
+          "pub_year": "2023",
+          "doi": "10.3390/plants13010052",
+          "pmid": "38202360"
+        },
+        {
+          "id": "41656714",
+          "source": "MED",
+          "title": "Control Strategies of Plant Viruses Using Spray-Induced Gene Silencing.",
+          "first_author": "Choi SK",
+          "pub_year": "2026",
+          "doi": "10.5423/ppj.rw.10.2025.0148",
+          "pmid": "41656714"
+        },
+        {
+          "id": "39157329",
+          "source": "MED",
+          "title": "Carbohydrate elicitor-induced plant immunity: Advances and prospects.",
+          "first_author": "Meresa BK",
+          "pub_year": "2024",
+          "doi": "10.1016/j.heliyon.2024.e34871",
+          "pmid": "39157329"
+        },
+        {
+          "id": "38264029",
+          "source": "MED",
+          "title": "The molecular structure, biological roles, and inhibition of plant pathogenic fungal chitin deacetylases.",
+          "first_author": "Mapuranga J",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1335646",
+          "pmid": "38264029"
+        },
+        {
+          "id": "40776542",
+          "source": "MED",
+          "title": "Application of Nanocomposites-Based Polymers on Managing Fungal Diseases in Crop Production.",
+          "first_author": "Hoang NH",
+          "pub_year": "2025",
+          "doi": "10.5423/ppj.rw.02.2025.0029",
+          "pmid": "40776542"
+        },
+        {
+          "id": "39968951",
+          "source": "MED",
+          "title": "Modified carbon dot-mediated transient transformation for genomic and epigenomic studies in wheat.",
+          "first_author": "She L",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.14573",
+          "pmid": "39968951"
+        },
+        {
+          "id": "36771718",
+          "source": "MED",
+          "title": "Resistance Inducers for the Protection of Pedunculate Oak (<i>Quercus robur</i> L.) Seedlings against Powdery Mildew <i>Erysiphe alphitoides</i>.",
+          "first_author": "Turczański K",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12030635",
+          "pmid": "36771718"
+        },
+        {
+          "id": "41095209",
+          "source": "MED",
+          "title": "&lt;i&gt;Bacillus subtilis&lt;/i&gt; Strain TCX1 Isolated from &lt;i&gt;Ambrosia artemisiifolia&lt;/i&gt;: Enhancing Cucumber Growth and Biocontrol Against Cucumber &lt;i&gt;Fusarium&lt;/i&gt; Wilt.",
+          "first_author": "Dong Y",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14193068",
+          "pmid": "41095209"
+        },
+        {
+          "id": "38239972",
+          "source": "MED",
+          "title": "Chitosan and its derivatives as promising plant protection tools.",
+          "first_author": "Shcherban AB.",
+          "pub_year": "2023",
+          "doi": "10.18699/vjgb-23-116",
+          "pmid": "38239972"
+        },
+        {
+          "id": "PMC11200688",
+          "source": "PMC",
+          "title": "Molecular Basis of Plant–Pathogen Interactions in the Agricultural Context",
+          "first_author": "Ijaz U",
+          "pub_year": "2024",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "40201780",
+          "source": "MED",
+          "title": "Cell wall bricks of defence: the case study of oligogalacturonides.",
+          "first_author": "Degli Esposti C",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1552926",
+          "pmid": "40201780"
+        },
+        {
+          "id": "42122827",
+          "source": "MED",
+          "title": "Nanoparticle-Induced Cross-Tolerance: A Review of Mechanisms for Concurrent Biotic and Abiotic Stress Mitigation in Crops.",
+          "first_author": "Abdulraheem MI",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091334",
+          "pmid": "42122827"
+        },
+        {
+          "id": "39023655",
+          "source": "MED",
+          "title": "Exploitation of functionalized green nanomaterials for plant disease management.",
+          "first_author": "Wasule DL",
+          "pub_year": "2024",
+          "doi": "10.1186/s11671-024-04063-z",
+          "pmid": "39023655"
+        },
+        {
+          "id": "41470706",
+          "source": "MED",
+          "title": "Antimicrobial Potential of Six Plant Essential Oils Against &lt;i&gt;Pseudomonas syringae&lt;/i&gt; pv. &lt;i&gt;actinidiae&lt;/i&gt;: &lt;i&gt;In Vitro&lt;/i&gt; Activity and &lt;i&gt;In Planta&lt;/i&gt; Efficacy Do Not Always Align.",
+          "first_author": "Nunes da Silva M",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243825",
+          "pmid": "41470706"
+        }
+      ]
+    },
+    {
+      "query": "chitosan AND cucumber AND powdery mildew AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "chitosan AND strawberry AND botrytis",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 515,
+      "results": [
+        {
+          "id": "42279791",
+          "source": "MED",
+          "title": "Deep Learning and Microbiome Analysis Reveal the Preservation Mechanism of &lt;i&gt;Cinnamomum cassia&lt;/i&gt; for Strawberry.",
+          "first_author": "Jiang S",
+          "pub_year": "2026",
+          "doi": "10.3390/foods15112005",
+          "pmid": "42279791"
+        },
+        {
+          "id": "42255699",
+          "source": "MED",
+          "title": "Effect of Chitosan, &lt;i&gt;Aloe vera&lt;/i&gt; Gel and Coconut Oil Edible Coatings on Postharvest Quality and Shelf Life of Strawberry (&lt;i&gt;Fragaria × ananassa Duch&lt;/i&gt;) Under Ambient Storage.",
+          "first_author": "Karim GMT",
+          "pub_year": "2026",
+          "doi": "10.1002/fsn3.71949",
+          "pmid": "42255699"
+        },
+        {
+          "id": "41376079",
+          "source": "MED",
+          "title": "Antimicrobial Effects of Three Plant-Derived Phenolic Compounds and Their Potential Role in Strawberry Preservation.",
+          "first_author": "Liang Z",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14234142",
+          "pmid": "41376079"
+        },
+        {
+          "id": "41458128",
+          "source": "MED",
+          "title": "Antimicrobial EU@Ag-MOF/PLA composite films enhance postharvest quality of strawberries by mitigating oxidative stress and modulating microbial communities.",
+          "first_author": "Qin Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.fochx.2025.103377",
+          "pmid": "41458128"
+        },
+        {
+          "id": "40220827",
+          "source": "MED",
+          "title": "Chitosan/pullulan edible coatings containing thyme essential oil nanoemulsion: Preparation, characterization and application in strawberry preservation.",
+          "first_author": "Chen C",
+          "pub_year": "2025",
+          "doi": "10.1016/j.ijbiomac.2025.143043",
+          "pmid": "40220827"
+        },
+        {
+          "id": "42187841",
+          "source": "MED",
+          "title": "Stereospecific Antifungal Activity of Strigolactone Analogues Against &lt;i&gt;Botrytis cinerea&lt;/i&gt; and &lt;i&gt;Sclerotinia sclerotiorum&lt;/i&gt;.",
+          "first_author": "Huang P",
+          "pub_year": "2026",
+          "doi": "10.3390/jof12050359",
+          "pmid": "42187841"
+        },
+        {
+          "id": "41249803",
+          "source": "MED",
+          "title": "Encapsulated citrus peel essential oil in pegylated mesoporous silica nanoparticles for postharvest control of Botrytis cinerea in strawberry.",
+          "first_author": "Jokarshourijeh F",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-23911-1",
+          "pmid": "41249803"
+        },
+        {
+          "id": "IND609012791",
+          "source": "AGR",
+          "title": "A novel bio-based aerogel for fragile fruit packaging with cushioning and antimicrobial properties",
+          "first_author": "Li Y",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "39986084",
+          "source": "MED",
+          "title": "Enhancing Botrytis cinerea resistance in strawberry preservation with non-contact functionalized chitosan-Cinnamaldehyde composite films.",
+          "first_author": "Wang H",
+          "pub_year": "2025",
+          "doi": "10.1016/j.foodchem.2025.143488",
+          "pmid": "39986084"
+        },
+        {
+          "id": "42042179",
+          "source": "MED",
+          "title": "Efficacy of EPS Gel Coating and Lactic Acid Bacteria in Preserving Strawberry Postharvest Quality.",
+          "first_author": "Erazo Anacona D",
+          "pub_year": "2026",
+          "doi": "10.3390/gels12040341",
+          "pmid": "42042179"
+        },
+        {
+          "id": "40174851",
+          "source": "MED",
+          "title": "Fabrication and investigation of chitosan-based edible coating derived mushroom substrates: Efficient performance on storage and improving postharvest quality of strawberry.",
+          "first_author": "Rad SS",
+          "pub_year": "2025",
+          "doi": "10.1016/j.ijbiomac.2025.142731",
+          "pmid": "40174851"
+        },
+        {
+          "id": "40901652",
+          "source": "MED",
+          "title": "Innovative Strategies for Postharvest Disease Management in Fruits and Vegetables: A Comprehensive Treatise.",
+          "first_author": "Ullah Q",
+          "pub_year": "2025",
+          "doi": "10.1002/fsn3.70850",
+          "pmid": "40901652"
+        },
+        {
+          "id": "PMC12984437",
+          "source": "PMC",
+          "title": "Strategically Designed Coaxial Electrospun Nanofibers of Polylactic Acid/Glycerol Monolaurate Hydroxypropyl-γ-Cyclodextrin Inclusion Compound with Sustained Release for Active Food Packaging",
+          "first_author": "Zhang Y",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41614759",
+          "source": "MED",
+          "title": "Application of Mulberry (<i>Morus nigra</i>) Anthocyanin Extract Combined with Carboxymethyl Chitosan for Postharvest Preservation of Strawberry (<i>Fragaria x ananassa</i>).",
+          "first_author": "Zhou B",
+          "pub_year": "2025",
+          "doi": "10.3390/cimb47120995",
+          "pmid": "41614759"
+        },
+        {
+          "id": "PMC12987116",
+          "source": "PMC",
+          "title": "Basic Substances and Nanotechnology: Bridging Sustainability and Innovation for Fungal Disease Management in Plants",
+          "first_author": "Akrivou A",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41214555",
+          "source": "MED",
+          "title": "Development and characterization of a chitosan-stabilized pickering emulsion incorporating thyme essential oil to extend the shelf life of strawberries during cold storage.",
+          "first_author": "Zamandi AA",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07554-y",
+          "pmid": "41214555"
+        },
+        {
+          "id": "40985376",
+          "source": "MED",
+          "title": "RNA Interference in Fungal Plant Pathogens: What Do We Know from &lt;i&gt;Botrytis cinerea&lt;/i&gt; with Research Hotspots and Gaps, and What Are the Future Directions?",
+          "first_author": "Smagghe G.",
+          "pub_year": "2025",
+          "doi": "10.3390/jof11070498",
+          "pmid": "40985376"
+        },
+        {
+          "id": "39214206",
+          "source": "MED",
+          "title": "In vitro antifungal activity and in vivo edible coating efficacy of insect-derived chitosan against Botrytis cinerea in strawberry.",
+          "first_author": "Vitti A",
+          "pub_year": "2024",
+          "doi": "10.1016/j.ijbiomac.2024.135158",
+          "pmid": "39214206"
+        },
+        {
+          "id": "40287141",
+          "source": "MED",
+          "title": "Nanoencapsulation of Curcumin and Quercetin in Zein-chitosan Shells for Enhanced Broad-spectrum Antimicrobial Efficacy and Shelf-life Extension of Strawberries.",
+          "first_author": "Kunadu AP",
+          "pub_year": "2025",
+          "doi": "10.1016/j.jfp.2025.100517",
+          "pmid": "40287141"
+        },
+        {
+          "id": "42187782",
+          "source": "MED",
+          "title": "Silicon Dioxide Nanoparticles and Biochar to Suppress Leaf Blight and Fruit Rot in Eggplant.",
+          "first_author": "Khan M",
+          "pub_year": "2026",
+          "doi": "10.3390/jof12050300",
+          "pmid": "42187782"
+        },
+        {
+          "id": "40943233",
+          "source": "MED",
+          "title": "Comparative Analysis of Plant Defense Activation by Four Biosurfactants: Mode of Action and Disease Control Potential.",
+          "first_author": "Aoki Y",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26178313",
+          "pmid": "40943233"
+        },
+        {
+          "id": "39549515",
+          "source": "MED",
+          "title": "High-adhesion antimicrobial composite coating incorporating quaternary chitosan and tea tree oil for enhanced preservation of fruits and vegetables.",
+          "first_author": "Liu Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.foodchem.2024.142007",
+          "pmid": "39549515"
+        },
+        {
+          "id": "39818386",
+          "source": "MED",
+          "title": "Development of pH and enzyme dual responsive chitosan/polyaspartic acid nanoparticle-embedded nanofibers for fruit preservation.",
+          "first_author": "Jiao X",
+          "pub_year": "2025",
+          "doi": "10.1016/j.ijbiomac.2025.139903",
+          "pmid": "39818386"
+        },
+        {
+          "id": "40573815",
+          "source": "MED",
+          "title": "Alternative Plant Protection Strategies Using Bacteria and Thyme to Improve Strawberry (cv. Elsanta) Yield and Quality.",
+          "first_author": "Rasiukevičiūtė N",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14121827",
+          "pmid": "40573815"
+        },
+        {
+          "id": "41234009",
+          "source": "MED",
+          "title": "Nanomaterial-mediated delivery of tomato miR393 intrinsically targeting a cell wall-related gene of Botrytis cinerea confers efficient control of gray mold disease.",
+          "first_author": "Yin Y",
+          "pub_year": "2026",
+          "doi": "10.1016/j.xplc.2025.101615",
+          "pmid": "41234009"
+        }
+      ]
+    },
+    {
+      "query": "chitosan AND strawberry AND botrytis AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR900794",
+          "source": "PPR",
+          "title": "Green Alternatives for the Control of Fungal Diseases in Strawberry: In-Field Optimization of the Use of Elicitors, Botanical Extracts and Essential Oils",
+          "first_author": "Soppelsa S",
+          "pub_year": "2024",
+          "doi": "10.20944/preprints202408.1682.v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "chitosan AND tomato AND yield",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 2508,
+      "results": [
+        {
+          "id": "41600063",
+          "source": "MED",
+          "title": "Chitosan Acts as a Sustainable Strategy for Integrated Management of Root-Knot Nematodes (<i>Meloidogyne</i> spp.) in Cherry Tomato.",
+          "first_author": "González-Cardona C",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15020256",
+          "pmid": "41600063"
+        },
+        {
+          "id": "PMC12987238",
+          "source": "PMC",
+          "title": "Development, Characterization, and Evaluation of Chitosan Nano/Microcapsules with Bacillus subtilis Extract and Their Effect on Tomato (Solanum lycopersicum) Seed Germination",
+          "first_author": "Díaz-Herrera R",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42122827",
+          "source": "MED",
+          "title": "Nanoparticle-Induced Cross-Tolerance: A Review of Mechanisms for Concurrent Biotic and Abiotic Stress Mitigation in Crops.",
+          "first_author": "Abdulraheem MI",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091334",
+          "pmid": "42122827"
+        },
+        {
+          "id": "42030269",
+          "source": "MED",
+          "title": "Green synthesis and characterization of zinc chitosan nanoparticles with their anti-bacterial study against rice pathogen Xanthomonas oryzae pv. oryzae.",
+          "first_author": "Rahman L",
+          "pub_year": "2026",
+          "doi": "10.1371/journal.pone.0346082",
+          "pmid": "42030269"
+        },
+        {
+          "id": "42280486",
+          "source": "MED",
+          "title": "Foliar Application of Chitosan Nanoparticles Mitigates Early Physiological and Antioxidant Responses of &lt;i&gt;Solanum lycopersicum&lt;/i&gt; L. Seedlings Under Mild-to-Moderate Water Deficit.",
+          "first_author": "Tighe-Neira R",
+          "pub_year": "2026",
+          "doi": "10.3390/polym18111275",
+          "pmid": "42280486"
+        },
+        {
+          "id": "41266957",
+          "source": "MED",
+          "title": "Bacillus subtilis and chitosan nanoparticles enhance potato virus Y (PVY) tolerance in tomato (Solanum lycopersicum L.) via modulation of antioxidants and secondary metabolites.",
+          "first_author": "Ghanaim AM",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07617-0",
+          "pmid": "41266957"
+        },
+        {
+          "id": "42343967",
+          "source": "MED",
+          "title": "Grapevine LysM-containing receptor-like kinase &lt;i&gt;VvLYK6&lt;/i&gt; enhances resistance to white rot in tomato.",
+          "first_author": "Liu Q",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1869419",
+          "pmid": "42343967"
+        },
+        {
+          "id": "41382031",
+          "source": "MED",
+          "title": "Synergistic effect of Trichoderma harzianum and chitosan nanoparticles on garlic plants in arid regions.",
+          "first_author": "Shalaby OA.",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07844-5",
+          "pmid": "41382031"
+        },
+        {
+          "id": "41950217",
+          "source": "MED",
+          "title": "Seed treatment combined with foliar application of oligosaccharides enhances seed germination and seedling growth in pepper and tomato under low-temperature stress.",
+          "first_author": "Wu L",
+          "pub_year": "2026",
+          "doi": "10.1371/journal.pone.0345298",
+          "pmid": "41950217"
+        },
+        {
+          "id": "41441114",
+          "source": "MED",
+          "title": "Advances in the Application of Nanocomposite Hydrogels in Crops.",
+          "first_author": "Hernández-Echave DG",
+          "pub_year": "2025",
+          "doi": "10.3390/gels11120957",
+          "pmid": "41441114"
+        },
+        {
+          "id": "IND609262283",
+          "source": "AGR",
+          "title": "Biostimulant-driven growth enhancement and stress resistance in tomato: The combined impact of alginate, chitosan, and salicylic acid",
+          "first_author": "El Amerany F",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42280736",
+          "source": "MED",
+          "title": "A Comprehensive Review of the Biochar-Mediated Alleviation of Salt Stress.",
+          "first_author": "Chandrasekaran M",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111699",
+          "pmid": "42280736"
+        },
+        {
+          "id": "42075470",
+          "source": "MED",
+          "title": "Antifungal Efficacy of Essential Oils and Nanoformulations Against Fusarium Wilt of Tomato: Systematic Review (2000-2025).",
+          "first_author": "Abuzaitoun SY",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081268",
+          "pmid": "42075470"
+        },
+        {
+          "id": "41613398",
+          "source": "MED",
+          "title": "Advanced molecular tools for surveillance and management of tobamoviruses.",
+          "first_author": "Mehmood MA",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1718133",
+          "pmid": "41613398"
+        },
+        {
+          "id": "IND609225526",
+          "source": "AGR",
+          "title": "Elicitor potential of chitosan and its derivatives to enhancing greenhouse tomato (Lycopersicon esculentum Mill.) performance under deficit irrigation conditions",
+          "first_author": "Jafari L",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "PMC12987116",
+          "source": "PMC",
+          "title": "Basic Substances and Nanotechnology: Bridging Sustainability and Innovation for Fungal Disease Management in Plants",
+          "first_author": "Akrivou A",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "40716642",
+          "source": "MED",
+          "title": "Biostimulant-driven growth enhancement and stress resistance in tomato: The combined impact of alginate, chitosan, and salicylic acid.",
+          "first_author": "El Amerany F",
+          "pub_year": "2025",
+          "doi": "10.1016/j.jbiotec.2025.07.022",
+          "pmid": "40716642"
+        },
+        {
+          "id": "41735810",
+          "source": "MED",
+          "title": "Engineered nano-pesticides: a multifaceted strategy for sustainable crop protection and enhanced food security in the era of climate change.",
+          "first_author": "Verma KK",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2633785",
+          "pmid": "41735810"
+        },
+        {
+          "id": "42084113",
+          "source": "MED",
+          "title": "Multifunctional Bio-Based Packaging for Perishable Foods: Structural Design, Scalable Fabrication, and Versatile Applications.",
+          "first_author": "Zhang L",
+          "pub_year": "2026",
+          "doi": "10.1002/adma.202521880",
+          "pmid": "42084113"
+        },
+        {
+          "id": "42196479",
+          "source": "MED",
+          "title": "Chitooligosaccharide Seed Priming Enhances Photosynthetic Efficiency in Pea (&lt;i&gt;Pisum sativum&lt;/i&gt;) Under Salinity.",
+          "first_author": "Krumova S",
+          "pub_year": "2026",
+          "doi": "10.3390/ijms27104498",
+          "pmid": "42196479"
+        },
+        {
+          "id": "PPR1015724",
+          "source": "PPR",
+          "title": "Chitosan Application Improves the Growth and Physiological Parameters of Tomato Crops",
+          "first_author": "Reyes-Pérez JJ",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202505.0437.v1",
+          "pmid": null
+        },
+        {
+          "id": "42280636",
+          "source": "MED",
+          "title": "Biostimulation of Tomato Plants (&lt;i&gt;Solanum lycopersicum&lt;/i&gt; L.) Using Fragmented Extracellular DNA from &lt;i&gt;Clavibacter michiganensis&lt;/i&gt;.",
+          "first_author": "Carbajal-Valenzuela IA",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111599",
+          "pmid": "42280636"
+        },
+        {
+          "id": "42226772",
+          "source": "MED",
+          "title": "Plant-derived chitosan nanoparticles: antibacterial and improved crop performance under drought stress.",
+          "first_author": "Aldahasi RM",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.21209",
+          "pmid": "42226772"
+        },
+        {
+          "id": "41858663",
+          "source": "MED",
+          "title": "Natural products for biocontrol of &lt;i&gt;Pseudomonas syringae&lt;/i&gt;: mechanisms and applications.",
+          "first_author": "Han X",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1754522",
+          "pmid": "41858663"
+        },
+        {
+          "id": "42040301",
+          "source": "MED",
+          "title": "Unveiling the landscape of plant virology in Saudi Arabia: seven decades of progress and future directions toward Vision 2030.",
+          "first_author": "Iqbal Z",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1758142",
+          "pmid": "42040301"
+        }
+      ]
+    },
+    {
+      "query": "chitosan AND tomato AND yield AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 8,
+      "results": [
+        {
+          "id": "PPR1015724",
+          "source": "PPR",
+          "title": "Chitosan Application Improves the Growth and Physiological Parameters of Tomato Crops",
+          "first_author": "Reyes-Pérez JJ",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202505.0437.v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR825236",
+          "source": "PPR",
+          "title": "A novel histidine functionalized chitosan nanoformulation: Synthesis, characterization and its bioactivity in tomato plant",
+          "first_author": "Meena M",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4002182/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR952539",
+          "source": "PPR",
+          "title": "Chitin soil amendment triggers systemic plant disease resistance through enhanced pattern-triggered immunity",
+          "first_author": "Makechemu M",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.12.08.627391",
+          "pmid": null
+        },
+        {
+          "id": "PPR1165813",
+          "source": "PPR",
+          "title": "Stop-Codon–Mediated Polycistronic Translation Enables Multi-ORF Expression in Mammalian Neurons In Vivo",
+          "first_author": "Olszakier S",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-8629892/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR925678",
+          "source": "PPR",
+          "title": "Optochemical profiling of NMDA receptor molecular diversity at synaptic and extrasynaptic sites",
+          "first_author": "Sicard A",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.10.14.618157",
+          "pmid": null
+        },
+        {
+          "id": "PPR685356",
+          "source": "PPR",
+          "title": "Structure-guided engineering of biased-agonism in the human niacin receptor via single amino acid substitution",
+          "first_author": "Yadav MK",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.07.03.547505",
+          "pmid": null
+        },
+        {
+          "id": "PPR632203",
+          "source": "PPR",
+          "title": "A branching model of lineage differentiation underpinning the neurogenic potential of enteric glia",
+          "first_author": "Pachnis V",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-2491905/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR572527",
+          "source": "PPR",
+          "title": "Contemporary human H3N2 influenza A viruses require a low threshold of suitable glycan receptors for efficient infection",
+          "first_author": "Spruit CM",
+          "pub_year": "2022",
+          "doi": "10.1101/2022.11.16.516725",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR919019",
+      "source": "PPR",
+      "title": "Development of Nanostructured Chitosan Coating with Coffee Peels Extract for Preservation of Tomato Quality and Control Pre and Postharvest Disease Caused by <em>Rhizopus stolonifer</em>",
+      "first_author": "Barrera Necha LL",
+      "pub_year": "2024",
+      "doi": "10.20944/preprints202410.0179.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR952539",
+      "source": "PPR",
+      "title": "Chitin soil amendment triggers systemic plant disease resistance through enhanced pattern-triggered immunity",
+      "first_author": "Makechemu M",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.12.08.627391",
+      "pmid": null
+    },
+    {
+      "id": "PPR1165813",
+      "source": "PPR",
+      "title": "Stop-Codon–Mediated Polycistronic Translation Enables Multi-ORF Expression in Mammalian Neurons In Vivo",
+      "first_author": "Olszakier S",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-8629892/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR972649",
+      "source": "PPR",
+      "title": "High-throughput glycan array screening reveals rhamnogalacturonan-I as a ligand for Arabidopsis leucine-rich repeat receptor kinases",
+      "first_author": "Lee D",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.01.29.635407",
+      "pmid": null
+    },
+    {
+      "id": "PPR204426",
+      "source": "PPR",
+      "title": "Boosting photosynthetic machinery and defense priming with chitosan application on tomato plants infected with  <i>Fusarium oxysporum</i>  f. sp.  <i>lycopersici</i>",
+      "first_author": "Carmona SL",
+      "pub_year": "2020",
+      "doi": "10.1101/2020.08.18.256628",
+      "pmid": null
+    },
+    {
+      "id": "PPR925678",
+      "source": "PPR",
+      "title": "Optochemical profiling of NMDA receptor molecular diversity at synaptic and extrasynaptic sites",
+      "first_author": "Sicard A",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.10.14.618157",
+      "pmid": null
+    },
+    {
+      "id": "PPR1196576",
+      "source": "PPR",
+      "title": "A lentinan-loaded hydrogel with core-shell structure induces broad-spectrum resistance against plant virus by activating the expression of CML30",
+      "first_author": "Xiang S",
+      "pub_year": "2020",
+      "doi": "10.22541/au.160503099.94865844/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR547007",
+      "source": "PPR",
+      "title": "Apolipoprotein E controls Dectin-1-dependent development of monocyte-derived alveolar macrophages upon pulmonary β-glucan-induced inflammatory adaptation",
+      "first_author": "Theobald H",
+      "pub_year": "2022",
+      "doi": "10.1101/2022.09.15.505390",
+      "pmid": null
+    },
+    {
+      "id": "PPR705124",
+      "source": "PPR",
+      "title": "Potent and broadly neutralizing antibodies against sarbecoviruses induced by sequential COVID-19 vaccination",
+      "first_author": "Zhao X",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.08.22.554373",
+      "pmid": null
+    },
+    {
+      "id": "PPR632203",
+      "source": "PPR",
+      "title": "A branching model of lineage differentiation underpinning the neurogenic potential of enteric glia",
+      "first_author": "Pachnis V",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-2491905/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR900794",
+      "source": "PPR",
+      "title": "Green Alternatives for the Control of Fungal Diseases in Strawberry: In-Field Optimization of the Use of Elicitors, Botanical Extracts and Essential Oils",
+      "first_author": "Soppelsa S",
+      "pub_year": "2024",
+      "doi": "10.20944/preprints202408.1682.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1015724",
+      "source": "PPR",
+      "title": "Chitosan Application Improves the Growth and Physiological Parameters of Tomato Crops",
+      "first_author": "Reyes-Pérez JJ",
+      "pub_year": "2025",
+      "doi": "10.20944/preprints202505.0437.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR825236",
+      "source": "PPR",
+      "title": "A novel histidine functionalized chitosan nanoformulation: Synthesis, characterization and its bioactivity in tomato plant",
+      "first_author": "Meena M",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-4002182/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR685356",
+      "source": "PPR",
+      "title": "Structure-guided engineering of biased-agonism in the human niacin receptor via single amino acid substitution",
+      "first_author": "Yadav MK",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.07.03.547505",
+      "pmid": null
+    },
+    {
+      "id": "PPR572527",
+      "source": "PPR",
+      "title": "Contemporary human H3N2 influenza A viruses require a low threshold of suitable glycan receptors for efficient infection",
+      "first_author": "Spruit CM",
+      "pub_year": "2022",
+      "doi": "10.1101/2022.11.16.516725",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

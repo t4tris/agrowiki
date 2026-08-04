@@ -20,6 +20,7 @@ notes:
   - "Фотосинтез/урожай: эффект подтверждён в основном в стрессовых условиях (соль, засуха, La); в нестрессовых — старые работы 1978-1981 (сухая масса)"
   - "Строка CSV 266 (клубника, 1-150 ppm, 5 ppm задержка цветения, 100 ppm макс. размер плода) не верифицирована"
   - "Противопоказание: октакозанол (C28) блокирует активность TRIA (PMID 24226183); TRIA подавляет JA-индуцированную защиту от насекомых (PMID 15128037, 38802434)"
+  - "Fallback Europe PMC (2026-08-04): новых релевантных PMID нет (найденные Europe PMC PMID 40122002, 38802434, 35893617 уже в карточке); препринт PPR 1115894 (клубника, питание + PGR cv. Winter Dawn, 2025) — смежное, TRIA не выделен в названии"
 crops:
   tomato: found_verified
   cucumber: found_verified
@@ -31,6 +32,7 @@ regulatory_status: null
 consensus_score: null
 toxicity_window: {}
 phi_mrl: {}
+fallback_status: orchestrator
 ---
 
 # Triacontanol — 1-Triacontanol
@@ -105,4 +107,4 @@ phi_mrl: {}
 - [PMID 24226183](https://pubmed.ncbi.nlm.nih.gov/24226183/) — TRIM-механизм, блокировка октакозанолом (1988)
 - [PMID 24302317](https://pubmed.ncbi.nlm.nih.gov/24302317/) — C3-специфичность, сухая масса томата (1981)
 - [PMID 15128037](https://pubmed.ncbi.nlm.nih.gov/15128037/) — антагонизм с JA (2004)
-- Артефакт: [search_Triacontanol_2026-08-04.json](../../../raw/evidence/T/Triacontanol/search_Triacontanol_2026-08-04.json)
+- Артефакт: [search_Triacontanol_2026-08-04.json](../../../raw/evidence/T/Triacontanol/search_Triacontanol_2026-08-04.json) · [orchestrator_fallback_2026-08-04.json](../../../raw/evidence/T/Triacontanol/orchestrator_fallback_2026-08-04.json)

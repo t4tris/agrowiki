@@ -1,0 +1,754 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-04",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Triacontanol",
+    "csv_name": "Triacontanol"
+  },
+  "searches": [
+    {
+      "query": "triacontanol AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 84,
+      "results": [
+        {
+          "id": "42328074",
+          "source": "MED",
+          "title": "Comparison of two carbohydrate-based biostimulant complexes for their ability to enhance &lt;i&gt;Cannabis sativa&lt;/i&gt; flower yield and quality.",
+          "first_author": "Wise K",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1842299",
+          "pmid": "42328074"
+        },
+        {
+          "id": "40122002",
+          "source": "MED",
+          "title": "Alleviating lanthanum stress in tomato plants using MnO nanoparticles and triacontanol: Impacts on growth, photosynthesis, and antioxidant defense.",
+          "first_author": "Babzada SA",
+          "pub_year": "2025",
+          "doi": "10.1016/j.jhazmat.2025.137746",
+          "pmid": "40122002"
+        },
+        {
+          "id": "38802434",
+          "source": "MED",
+          "title": "Phenotypical and biochemical characterization of tomato plants treated with triacontanol.",
+          "first_author": "Manai M",
+          "pub_year": "2024",
+          "doi": "10.1038/s41598-024-62398-0",
+          "pmid": "38802434"
+        },
+        {
+          "id": "42122845",
+          "source": "MED",
+          "title": "Phytotoxic and Eustress Effects of Metal Oxide Nanoparticles (CuO, Mn&lt;sub&gt;x&lt;/sub&gt;O&lt;sub&gt;x&lt;/sub&gt;, and ZnO NPs) on Plants.",
+          "first_author": "Strekalovskaya EI",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091353",
+          "pmid": "42122845"
+        },
+        {
+          "id": "41674682",
+          "source": "MED",
+          "title": "Comprehensive metabolomics and phytochemical analyses identified important metabolites involved in the antioxidant activity of four Swiss chard cultivars (&lt;i&gt;Beta vulgaris&lt;/i&gt; L. var. cicla) with different leaf colours.",
+          "first_author": "Park C",
+          "pub_year": "2026",
+          "doi": "10.1016/j.fochx.2026.103587",
+          "pmid": "41674682"
+        },
+        {
+          "id": "37836116",
+          "source": "MED",
+          "title": "Comparison of Policosanol Profiles of the Sprouts of Wheat Mutant Lines and the Effect of Differential LED Lights on Selected Lines.",
+          "first_author": "Han AR",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12193377",
+          "pmid": "37836116"
+        },
+        {
+          "id": "37111895",
+          "source": "MED",
+          "title": "Seed Priming with Triacontanol Alleviates Lead Stress in <i>Phaseolus vulgaris</i> L. (Common Bean) through Improving Nutritional Orchestration and Morpho-Physiological Characteristics.",
+          "first_author": "Ahmed S",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12081672",
+          "pmid": "37111895"
+        },
+        {
+          "id": "40692138",
+          "source": "MED",
+          "title": "Harnessing halophyte-derived allelochemicals and signaling molecules to enhance salinity tolerance in crops.",
+          "first_author": "Székely G",
+          "pub_year": "2025",
+          "doi": "10.1002/ajb2.70076",
+          "pmid": "40692138"
+        },
+        {
+          "id": "38891265",
+          "source": "MED",
+          "title": "Primary Metabolic Response of <i>Aristolochia contorta</i> to Simulated Specialist Herbivory under Elevated CO<sub>2</sub> Conditions.",
+          "first_author": "Jeong HJ",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13111456",
+          "pmid": "38891265"
+        },
+        {
+          "id": "34761134",
+          "source": "MED",
+          "title": "Effect of different doses of triacontanol on growth and yield of kohlrabi (<i>Brassica oleracea</i> L. var. <i>gongylodes</i>).",
+          "first_author": "Bhandari S",
+          "pub_year": "2021",
+          "doi": "10.1016/j.heliyon.2021.e08242",
+          "pmid": "34761134"
+        },
+        {
+          "id": "35893617",
+          "source": "MED",
+          "title": "Unravelling the Effect of Triacontanol in Combating Drought Stress by Improving Growth, Productivity, and Physiological Performance in Strawberry Plants.",
+          "first_author": "El-Beltagi HS",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11151913",
+          "pmid": "35893617"
+        },
+        {
+          "id": "35260596",
+          "source": "MED",
+          "title": "Triacontanol regulates morphological traits and enzymatic activities of salinity affected hot pepper plants.",
+          "first_author": "Sarwar M",
+          "pub_year": "2022",
+          "doi": "10.1038/s41598-022-06516-w",
+          "pmid": "35260596"
+        },
+        {
+          "id": "37107512",
+          "source": "MED",
+          "title": "The Relationships between Waxes and Storage Quality Indexes of Fruits of Three Plum Cultivars.",
+          "first_author": "Zhu S",
+          "pub_year": "2023",
+          "doi": "10.3390/foods12081717",
+          "pmid": "37107512"
+        },
+        {
+          "id": "34440293",
+          "source": "MED",
+          "title": "Biochemical and Molecular Effects Induced by Triacontanol in Acquired Tolerance of Rice to Drought Stress.",
+          "first_author": "Alharbi BM",
+          "pub_year": "2021",
+          "doi": "10.3390/genes12081119",
+          "pmid": "34440293"
+        },
+        {
+          "id": "32549684",
+          "source": "MED",
+          "title": "Effect of foliar applied triacontanol on wheat (<i>Triticum aestivum</i> L.) under arsenic stress: a study of changes in growth, yield and photosynthetic characteristics.",
+          "first_author": "Ali HMM",
+          "pub_year": "2020",
+          "doi": "10.1007/s12298-020-00831-0",
+          "pmid": "32549684"
+        },
+        {
+          "id": "36771755",
+          "source": "MED",
+          "title": "Antifungal In Vitro Activity of <i>Phoradendron</i> sp. Extracts on Fungal Isolates from Tomato Crop.",
+          "first_author": "Salas-Gómez AL",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12030672",
+          "pmid": "36771755"
+        },
+        {
+          "id": "39861499",
+          "source": "MED",
+          "title": "Trade-Off Between Enzymatic Antioxidant Defense and Accumulation of Organic Metabolite Affects Salt Tolerance of White Clover Associated with Redox, Water, and Metabolic Homeostases.",
+          "first_author": "Zhou M",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14020145",
+          "pmid": "39861499"
+        },
+        {
+          "id": "32158118",
+          "source": "MED",
+          "title": "Plant growth regulators improve growth, photosynthesis, mineral nutrient and antioxidant system under cadmium stress in menthol mint (<i>Mentha arvensis</i> L.).",
+          "first_author": "Zaid A",
+          "pub_year": "2020",
+          "doi": "10.1007/s12298-019-00715-y",
+          "pmid": "32158118"
+        },
+        {
+          "id": "32290080",
+          "source": "MED",
+          "title": "Triacontanol Promotes the Fruit Development and Retards Fruit Senescence in Strawberry: A Transcriptome Analysis.",
+          "first_author": "Pang Q",
+          "pub_year": "2020",
+          "doi": "10.3390/plants9040488",
+          "pmid": "32290080"
+        },
+        {
+          "id": "35567134",
+          "source": "MED",
+          "title": "Molecular Biology, Composition and Physiological Functions of Cuticle Lipids in Fleshy Fruits.",
+          "first_author": "García-Coronado H",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11091133",
+          "pmid": "35567134"
+        },
+        {
+          "id": "32377038",
+          "source": "MED",
+          "title": "Triacontanol as a dynamic growth regulator for plants under diverse environmental conditions.",
+          "first_author": "Islam S",
+          "pub_year": "2020",
+          "doi": "10.1007/s12298-020-00815-0",
+          "pmid": "32377038"
+        },
+        {
+          "id": "31110509",
+          "source": "MED",
+          "title": "Developmental and Environmental Regulation of Cuticular Wax Biosynthesis in Fleshy Fruits.",
+          "first_author": "Trivedi P",
+          "pub_year": "2019",
+          "doi": "10.3389/fpls.2019.00431",
+          "pmid": "31110509"
+        },
+        {
+          "id": "40606185",
+          "source": "MED",
+          "title": "Integrated SA-CMC hydrogel formulation with the NAA hormone, ZnO nanoparticles, and potassium chloride: a sustainable approach to enhance flowering and crop yield in the short-term crop chili (&lt;i&gt;Capsicum annuum&lt;/i&gt;).",
+          "first_author": "Rodrigo L",
+          "pub_year": "2025",
+          "doi": "10.1039/d5ra03488d",
+          "pmid": "40606185"
+        },
+        {
+          "id": "39958583",
+          "source": "MED",
+          "title": "Inducing salt stress tolerance in bitter gourd (<i>Momordica chanrantia</i>) through seed treatment with chitosan.",
+          "first_author": "Ali A",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1525561",
+          "pmid": "39958583"
+        },
+        {
+          "id": "42004344",
+          "source": "MED",
+          "title": "Enhancing Salt Tolerance and Bioactivity in &lt;i&gt;Achillea fragrantissima&lt;/i&gt; through ZnO Nanoparticles: Growth, Antimicrobial, and Hepatoprotective Benefits.",
+          "first_author": "El Sherif F",
+          "pub_year": "2026",
+          "doi": "10.1021/acsomega.5c11044",
+          "pmid": "42004344"
+        }
+      ]
+    },
+    {
+      "query": "triacontanol AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "triacontanol AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 37,
+      "results": [
+        {
+          "id": "39771126",
+          "source": "MED",
+          "title": "Exogenously Applied Triacontanol Mitigates Cadmium Toxicity in <i>Vigna radiata</i> L. by Optimizing Growth, Nutritional Orchestration, and Metal Accumulation.",
+          "first_author": "Mudassar S",
+          "pub_year": "2024",
+          "doi": "10.3390/toxics12120911",
+          "pmid": "39771126"
+        },
+        {
+          "id": "34969963",
+          "source": "MED",
+          "title": "Triacontanol modulates salt stress tolerance in cucumber by altering the physiological and biochemical status of plant cells.",
+          "first_author": "Sarwar M",
+          "pub_year": "2021",
+          "doi": "10.1038/s41598-021-04174-y",
+          "pmid": "34969963"
+        },
+        {
+          "id": "40275139",
+          "source": "MED",
+          "title": "Effects of foliar fertilizer additives on grape fruit quality and endogenous hormones in leaves.",
+          "first_author": "Ma M",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06522-w",
+          "pmid": "40275139"
+        },
+        {
+          "id": "37111895",
+          "source": "MED",
+          "title": "Seed Priming with Triacontanol Alleviates Lead Stress in <i>Phaseolus vulgaris</i> L. (Common Bean) through Improving Nutritional Orchestration and Morpho-Physiological Characteristics.",
+          "first_author": "Ahmed S",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12081672",
+          "pmid": "37111895"
+        },
+        {
+          "id": "42122845",
+          "source": "MED",
+          "title": "Phytotoxic and Eustress Effects of Metal Oxide Nanoparticles (CuO, Mn&lt;sub&gt;x&lt;/sub&gt;O&lt;sub&gt;x&lt;/sub&gt;, and ZnO NPs) on Plants.",
+          "first_author": "Strekalovskaya EI",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091353",
+          "pmid": "42122845"
+        },
+        {
+          "id": "34761134",
+          "source": "MED",
+          "title": "Effect of different doses of triacontanol on growth and yield of kohlrabi (<i>Brassica oleracea</i> L. var. <i>gongylodes</i>).",
+          "first_author": "Bhandari S",
+          "pub_year": "2021",
+          "doi": "10.1016/j.heliyon.2021.e08242",
+          "pmid": "34761134"
+        },
+        {
+          "id": "35893617",
+          "source": "MED",
+          "title": "Unravelling the Effect of Triacontanol in Combating Drought Stress by Improving Growth, Productivity, and Physiological Performance in Strawberry Plants.",
+          "first_author": "El-Beltagi HS",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11151913",
+          "pmid": "35893617"
+        },
+        {
+          "id": "41971983",
+          "source": "MED",
+          "title": "Dual regulation of appressorium development in the maize pathogen &lt;i&gt;Bipolaris maydis&lt;/i&gt;: BmOPY2-mediated hydrophobic surface recognition and pectin recognition.",
+          "first_author": "Yoshida H",
+          "pub_year": "2025",
+          "doi": "10.47371/mycosci.2025.06.001",
+          "pmid": "41971983"
+        },
+        {
+          "id": "40692138",
+          "source": "MED",
+          "title": "Harnessing halophyte-derived allelochemicals and signaling molecules to enhance salinity tolerance in crops.",
+          "first_author": "Székely G",
+          "pub_year": "2025",
+          "doi": "10.1002/ajb2.70076",
+          "pmid": "40692138"
+        },
+        {
+          "id": "38465213",
+          "source": "MED",
+          "title": "P-hydroxybenzoic acid positively affect the <i>Fusarium oxysporum</i> to stimulate root rot in <i>Panax notoginseng</i>.",
+          "first_author": "Zhao J",
+          "pub_year": "2024",
+          "doi": "10.1016/j.jgr.2023.11.005",
+          "pmid": "38465213"
+        },
+        {
+          "id": "32290080",
+          "source": "MED",
+          "title": "Triacontanol Promotes the Fruit Development and Retards Fruit Senescence in Strawberry: A Transcriptome Analysis.",
+          "first_author": "Pang Q",
+          "pub_year": "2020",
+          "doi": "10.3390/plants9040488",
+          "pmid": "32290080"
+        },
+        {
+          "id": "39456729",
+          "source": "MED",
+          "title": "Understanding of Plant Salt Tolerance Mechanisms and Application to Molecular Breeding.",
+          "first_author": "Zhou Y",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms252010940",
+          "pmid": "39456729"
+        },
+        {
+          "id": "31110509",
+          "source": "MED",
+          "title": "Developmental and Environmental Regulation of Cuticular Wax Biosynthesis in Fleshy Fruits.",
+          "first_author": "Trivedi P",
+          "pub_year": "2019",
+          "doi": "10.3389/fpls.2019.00431",
+          "pmid": "31110509"
+        },
+        {
+          "id": "34950169",
+          "source": "MED",
+          "title": "Changes in Morphology, Metabolism and Composition of Cuticular Wax in Zucchini Fruit During Postharvest Cold Storage.",
+          "first_author": "Carvajal F",
+          "pub_year": "2021",
+          "doi": "10.3389/fpls.2021.778745",
+          "pmid": "34950169"
+        },
+        {
+          "id": "36555796",
+          "source": "MED",
+          "title": "The Plant Fatty Acyl Reductases.",
+          "first_author": "Zhang X",
+          "pub_year": "2022",
+          "doi": "10.3390/ijms232416156",
+          "pmid": "36555796"
+        },
+        {
+          "id": "38951751",
+          "source": "MED",
+          "title": "Cuticle deposition ceases during strawberry fruit development.",
+          "first_author": "Straube J",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05327-7",
+          "pmid": "38951751"
+        },
+        {
+          "id": "35265396",
+          "source": "MED",
+          "title": "Growth regulators promote soybean productivity: a review.",
+          "first_author": "Amoanimaa-Dede H",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.12556",
+          "pmid": "35265396"
+        },
+        {
+          "id": "37291596",
+          "source": "MED",
+          "title": "Aging and chronic inflammation: highlights from a multidisciplinary workshop.",
+          "first_author": "Saavedra D",
+          "pub_year": "2023",
+          "doi": "10.1186/s12979-023-00352-w",
+          "pmid": "37291596"
+        },
+        {
+          "id": "39958583",
+          "source": "MED",
+          "title": "Inducing salt stress tolerance in bitter gourd (<i>Momordica chanrantia</i>) through seed treatment with chitosan.",
+          "first_author": "Ali A",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1525561",
+          "pmid": "39958583"
+        },
+        {
+          "id": "35567134",
+          "source": "MED",
+          "title": "Molecular Biology, Composition and Physiological Functions of Cuticle Lipids in Fleshy Fruits.",
+          "first_author": "García-Coronado H",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11091133",
+          "pmid": "35567134"
+        },
+        {
+          "id": "33613631",
+          "source": "MED",
+          "title": "Transcriptomics of Biostimulation of Plants Under Abiotic Stress.",
+          "first_author": "González-Morales S",
+          "pub_year": "2021",
+          "doi": "10.3389/fgene.2021.583888",
+          "pmid": "33613631"
+        },
+        {
+          "id": "35053039",
+          "source": "MED",
+          "title": "Harnessing Synergistic Biostimulatory Processes: A Plausible Approach for Enhanced Crop Growth and Resilience in Organic Farming.",
+          "first_author": "Sani MNH",
+          "pub_year": "2021",
+          "doi": "10.3390/biology11010041",
+          "pmid": "35053039"
+        },
+        {
+          "id": "36147242",
+          "source": "MED",
+          "title": "Role of phytomelatonin responsive to metal stresses: An omics perspective and future scenario.",
+          "first_author": "Ali S",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.936747",
+          "pmid": "36147242"
+        },
+        {
+          "id": "23970832",
+          "source": "MED",
+          "title": "The influence of 1-triacontanol on the growth, flowering, and quality of potted Bougainvillea plants (Bougainvillea glabra var. \"Elizabeth Angus\") under natural conditions.",
+          "first_author": "Khandaker MM",
+          "pub_year": "2013",
+          "doi": "10.1155/2013/308651",
+          "pmid": "23970832"
+        },
+        {
+          "id": "40556263",
+          "source": "MED",
+          "title": "Innovations in Edible Packaging Films, Coatings, and Antimicrobial Agents for Applications in Food Industry.",
+          "first_author": "Kumar L",
+          "pub_year": "2025",
+          "doi": "10.1111/1541-4337.70217",
+          "pmid": "40556263"
+        }
+      ]
+    },
+    {
+      "query": "triacontanol AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "triacontanol AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 35,
+      "results": [
+        {
+          "id": "PPR1115894",
+          "source": "PPR",
+          "title": "Effect of nutrients and plant growth regulators on growth, yield and fruit quality of strawberry (Fragaria × ananassa Duch.) cv. Winter Dawn",
+          "first_author": "Meena VR",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7864265/v1",
+          "pmid": null
+        },
+        {
+          "id": "42328074",
+          "source": "MED",
+          "title": "Comparison of two carbohydrate-based biostimulant complexes for their ability to enhance &lt;i&gt;Cannabis sativa&lt;/i&gt; flower yield and quality.",
+          "first_author": "Wise K",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1842299",
+          "pmid": "42328074"
+        },
+        {
+          "id": "41656213",
+          "source": "MED",
+          "title": "Unraveling triacontanol impact in combating salt stress via enhancing growth, productivity, and physiological performance of wheat plant.",
+          "first_author": "Sadak MS.",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08141-5",
+          "pmid": "41656213"
+        },
+        {
+          "id": "36466575",
+          "source": "MED",
+          "title": "Impacts of plant growth regulators in strawberry plant: A review.",
+          "first_author": "Katel S",
+          "pub_year": "2022",
+          "doi": "10.1016/j.heliyon.2022.e11959",
+          "pmid": "36466575"
+        },
+        {
+          "id": "36934336",
+          "source": "MED",
+          "title": "Mitigation of salt stress in Indian mustard (<i>Brassica juncea</i> L.) by the application of triacontanol and hydrogen sulfide.",
+          "first_author": "Verma T",
+          "pub_year": "2023",
+          "doi": "10.1080/15592324.2023.2189371",
+          "pmid": "36934336"
+        },
+        {
+          "id": "35893617",
+          "source": "MED",
+          "title": "Unravelling the Effect of Triacontanol in Combating Drought Stress by Improving Growth, Productivity, and Physiological Performance in Strawberry Plants.",
+          "first_author": "El-Beltagi HS",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11151913",
+          "pmid": "35893617"
+        },
+        {
+          "id": "38951751",
+          "source": "MED",
+          "title": "Cuticle deposition ceases during strawberry fruit development.",
+          "first_author": "Straube J",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05327-7",
+          "pmid": "38951751"
+        },
+        {
+          "id": "32290080",
+          "source": "MED",
+          "title": "Triacontanol Promotes the Fruit Development and Retards Fruit Senescence in Strawberry: A Transcriptome Analysis.",
+          "first_author": "Pang Q",
+          "pub_year": "2020",
+          "doi": "10.3390/plants9040488",
+          "pmid": "32290080"
+        },
+        {
+          "id": "40142145",
+          "source": "MED",
+          "title": "&lt;i&gt;Scaptotrigona mexicana&lt;/i&gt; Propolis from Totonacapan Region: Chemical Composition, Antioxidant and Antibacterial Activities.",
+          "first_author": "Rivero-Cruz BE",
+          "pub_year": "2025",
+          "doi": "10.3390/molecules30061370",
+          "pmid": "40142145"
+        },
+        {
+          "id": "34828860",
+          "source": "MED",
+          "title": "Quality and Stability Equivalence of High Pressure and/or Thermal Treatments in Peach-Strawberry Puree. A Multicriteria Study.",
+          "first_author": "Bleoanca I",
+          "pub_year": "2021",
+          "doi": "10.3390/foods10112580",
+          "pmid": "34828860"
+        },
+        {
+          "id": "38465213",
+          "source": "MED",
+          "title": "P-hydroxybenzoic acid positively affect the <i>Fusarium oxysporum</i> to stimulate root rot in <i>Panax notoginseng</i>.",
+          "first_author": "Zhao J",
+          "pub_year": "2024",
+          "doi": "10.1016/j.jgr.2023.11.005",
+          "pmid": "38465213"
+        },
+        {
+          "id": "32377038",
+          "source": "MED",
+          "title": "Triacontanol as a dynamic growth regulator for plants under diverse environmental conditions.",
+          "first_author": "Islam S",
+          "pub_year": "2020",
+          "doi": "10.1007/s12298-020-00815-0",
+          "pmid": "32377038"
+        },
+        {
+          "id": "38786728",
+          "source": "MED",
+          "title": "Zonal Chemical Signal Pathways Mediating Floral Induction in Apple.",
+          "first_author": "Reddy P",
+          "pub_year": "2024",
+          "doi": "10.3390/metabo14050251",
+          "pmid": "38786728"
+        },
+        {
+          "id": "31533196",
+          "source": "MED",
+          "title": "Characterizing the involvement of FaMADS9 in the regulation of strawberry fruit receptacle development.",
+          "first_author": "Vallarino JG",
+          "pub_year": "2020",
+          "doi": "10.1111/pbi.13257",
+          "pmid": "31533196"
+        },
+        {
+          "id": "35265396",
+          "source": "MED",
+          "title": "Growth regulators promote soybean productivity: a review.",
+          "first_author": "Amoanimaa-Dede H",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.12556",
+          "pmid": "35265396"
+        },
+        {
+          "id": "41788811",
+          "source": "MED",
+          "title": "Comprehensive review of tujia \"Lian\" medicinal botanical drugs: traditional classification system, phytochemical, and pharmacological profile.",
+          "first_author": "Kuang N",
+          "pub_year": "2026",
+          "doi": "10.3389/fphar.2026.1747999",
+          "pmid": "41788811"
+        },
+        {
+          "id": "31632110",
+          "source": "MED",
+          "title": "Potential role of phytochemicals in metabolic syndrome prevention and therapy.",
+          "first_author": "Francini-Pesenti F",
+          "pub_year": "2019",
+          "doi": "10.2147/dmso.s214550",
+          "pmid": "31632110"
+        },
+        {
+          "id": "PMC3433881",
+          "source": "PMC",
+          "title": "Rapid in vitro regeneration method for Moringa oleifera and performance evaluation of field grown nutritionally enriched tissue cultured plants",
+          "first_author": "Saini R",
+          "pub_year": "2012",
+          "doi": "10.1007/s13205-012-0045-9",
+          "pmid": null
+        },
+        {
+          "id": "35453220",
+          "source": "MED",
+          "title": "Phytocompounds as an Alternative Antimicrobial Approach in Aquaculture.",
+          "first_author": "Nik Mohamad Nek Rahimi N",
+          "pub_year": "2022",
+          "doi": "10.3390/antibiotics11040469",
+          "pmid": "35453220"
+        },
+        {
+          "id": "35053039",
+          "source": "MED",
+          "title": "Harnessing Synergistic Biostimulatory Processes: A Plausible Approach for Enhanced Crop Growth and Resilience in Organic Farming.",
+          "first_author": "Sani MNH",
+          "pub_year": "2021",
+          "doi": "10.3390/biology11010041",
+          "pmid": "35053039"
+        },
+        {
+          "id": "35567134",
+          "source": "MED",
+          "title": "Molecular Biology, Composition and Physiological Functions of Cuticle Lipids in Fleshy Fruits.",
+          "first_author": "García-Coronado H",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11091133",
+          "pmid": "35567134"
+        },
+        {
+          "id": "32178418",
+          "source": "MED",
+          "title": "Trends in Seaweed Extract Based Biostimulants: Manufacturing Process and Beneficial Effect on Soil-Plant Systems.",
+          "first_author": "El Boukhari MEM",
+          "pub_year": "2020",
+          "doi": "10.3390/plants9030359",
+          "pmid": "32178418"
+        },
+        {
+          "id": "31031719",
+          "source": "MED",
+          "title": "Isolation of Antimicrobial Compounds From <i>Cnestis ferruginea</i> Vahl ex. DC (Connaraceae) Leaves Through Bioassay-Guided Fractionation.",
+          "first_author": "Kouakou K",
+          "pub_year": "2019",
+          "doi": "10.3389/fmicb.2019.00705",
+          "pmid": "31031719"
+        },
+        {
+          "id": "36557824",
+          "source": "MED",
+          "title": "An Analysis of the Plant- and Animal-Based Hydrocolloids as Byproducts of the Food Industry.",
+          "first_author": "Waraczewski R",
+          "pub_year": "2022",
+          "doi": "10.3390/molecules27248686",
+          "pmid": "36557824"
+        },
+        {
+          "id": "28203243",
+          "source": "MED",
+          "title": "Foliar Nutrition, Biostimulants and Prime-Like Dynamics in Fruit Tree Physiology: New Insights on an Old Topic.",
+          "first_author": "Tanou G",
+          "pub_year": "2017",
+          "doi": "10.3389/fpls.2017.00075",
+          "pmid": "28203243"
+        }
+      ]
+    },
+    {
+      "query": "triacontanol AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR1115894",
+          "source": "PPR",
+          "title": "Effect of nutrients and plant growth regulators on growth, yield and fruit quality of strawberry (Fragaria × ananassa Duch.) cv. Winter Dawn",
+          "first_author": "Meena VR",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7864265/v1",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1115894",
+      "source": "PPR",
+      "title": "Effect of nutrients and plant growth regulators on growth, yield and fruit quality of strawberry (Fragaria × ananassa Duch.) cv. Winter Dawn",
+      "first_author": "Meena VR",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-7864265/v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

@@ -78,6 +78,7 @@ regulatory_status: null
 consensus_score: null
 toxicity_window: {}             # ED50/TD50/therapeutic_index/soil_persistence — только из литературы
 phi_mrl: {}                     # PHI_days, MRL_EU/USA/Codex — для HIGH-efficacy обязательно
+fallback_status: null           # orchestrator | europepmc_unavailable | null (после Europe PMC fallback; дашборд в validation.md)
 ---
 ```
 Секции карточки:

@@ -14,7 +14,7 @@ validation_status: partial
 evidence_level: moderate
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:40780106", "PMID:29288326", "PMID:33890635", "PMID:38337908", "PMID:41225064", "PMID:39260050", "PMID:28482334", "PMID:24470243", "PMID:11539775", "PMID:40866815", "PMID:36774421", "PMID:17503074", "PMID:33274492", "PMID:39119498", "PMID:29146357", "PMID:40957257", "PMID:41769268", "PMID:36092914", "PMID:37201922"]
+sources: ["PMID:40780106", "PMID:29288326", "PMID:33890635", "PMID:38337908", "PMID:41225064", "PMID:39260050", "PMID:28482334", "PMID:24470243", "PMID:11539775", "PMID:40866815", "PMID:36774421", "PMID:17503074", "PMID:33274492", "PMID:39119498", "PMID:29146357", "PMID:40957257", "PMID:41769268", "PMID:36092914", "PMID:37201922", "PPR:1188729"]
 notes:
   - "Механизм (усы/рост клубники через путь GA/DELLA) подтверждён 4 аннотациями (PMID 40780106, 29288326, 33890635, 38337908)"
   - "ВСЕ конкретные дозировки CSV (25-200 ppm, 100 mg/L, 1.0 mM ~13 усов, 200 mg/L + длинный день → абортация цветков, 0.5 mM цитратный буфер/DMSO) не найдены в PubMed/OpenAlex — unverified/inferred"
@@ -31,6 +31,7 @@ regulatory_status: null
 consensus_score: null
 toxicity_window: {}
 phi_mrl: {}
+fallback_status: orchestrator
 ---
 
 # GA3 — Gibberellic Acid
@@ -69,6 +70,7 @@ phi_mrl: {}
 ### 🍓 Клубника (Fragaria × ananassa) — `found_verified` (механизм)
 - **Образование усов:** экзогенный GA3 индуцирует усы у неусатой Fragaria vesca (PMID 40780106, 33890635); GAs ускоряют деградацию DELLA (FveRGA1) → усы (PMID 29288326); фотопериод vs GA-путь — трейд-офф цветение/усы (PMID 38337908)
 - **Дозировки CSV (25-200 ppm, 100 мг/л, 1.0 мМ ~13 усов/растение, 200 мг/л + длинный день → абортация цветков, 0.5 мМ буфер/DMSO) — НЕ подтверждены** ни одним источником (PubMed 0 результатов; классические работы Thompson & Guttridge 1959, HortScience 1996 — только title_only)
+- **Препринт (fallback Europe PMC, 2026):** экзогенные GA3 + NAA (1-NAA) — рост, урожайность и качество плодов клубники Chandler, полевой опыт (Северо-Восточная Индия) (PPR 1188729) — подтверждает применение GA3 на клубнике, но без конкретных доз CSV
 
 ## ⚠️ Corrected Dosages (vs CSV)
 | CSV Claim | Corrected | Condition | Source |
@@ -91,7 +93,7 @@ ED50/TD50/терапевтический индекс — **нет данных*
 3. **100 мг/л «best vegetative»** — подтверждения для клубники нет (medium)
 4. **Партенокарпия огурца** подтверждена GA4+7, не GA3 (low — не подставлять дозы)
 5. **0.5 мМ буфер/DMSO и 1.0 мМ weekly** — не прослеживаются ни до одной публикации (high, inferred)
-6. Europe PMC недоступен (сетевой блок) — рекомендован повторный запуск оркестратором (low)
+6. Europe PMC был недоступен сабагенту (IPv6-блок); **оркестратор выполнил fallback 2026-08-04** — найдены препринты: PPR 1188729 (GA3+NAA клубника, полевой опыт) и PPR 1134233 (гормональный прайминг томата, смежное) (low)
 
 ## Источники
 - [PMID 40780106](https://pubmed.ncbi.nlm.nih.gov/40780106/) — GA и усы F. vesca (2025)
@@ -102,4 +104,5 @@ ED50/TD50/терапевтический индекс — **нет данных*
 - [PMID 39260050](https://pubmed.ncbi.nlm.nih.gov/39260050/) — GA3 1 µM при засолении (2024)
 - [PMID 17503074](https://pubmed.ncbi.nlm.nih.gov/17503074/) — GA20ox1 и завязывание плодов томата (2007)
 - [PMID 29146357](https://pubmed.ncbi.nlm.nih.gov/29146357/) — GA4+7 партенокарпия огурца (2018)
-- Артефакт: [search_GA3_2026-08-04.json](../../../raw/evidence/G/GA3/search_GA3_2026-08-04.json)
+- [PPR 1188729](https://doi.org/10.21203/rs.3.rs-9558237/v1) — GA3+NAA, клубника Chandler, урожай/качество (2026, препринт; fallback Europe PMC)
+- Артефакт: [search_GA3_2026-08-04.json](../../../raw/evidence/G/GA3/search_GA3_2026-08-04.json) · [orchestrator_fallback_2026-08-04.json](../../../raw/evidence/G/GA3/orchestrator_fallback_2026-08-04.json)

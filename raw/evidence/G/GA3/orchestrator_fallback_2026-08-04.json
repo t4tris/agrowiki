@@ -1,0 +1,1897 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-04",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "GA3",
+    "csv_name": "Gibberellic acid"
+  },
+  "searches": [
+    {
+      "query": "gibberellic acid AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 15789,
+      "results": [
+        {
+          "id": "42418766",
+          "source": "MED",
+          "title": "Gibberellic acids and ethylene antagonistically regulate stem growth via SlGAI-SlERF1B-SlXTH19 module in tomato.",
+          "first_author": "Luo J",
+          "pub_year": "2026",
+          "doi": "10.1093/plphys/kiag487",
+          "pmid": "42418766"
+        },
+        {
+          "id": "42340497",
+          "source": "MED",
+          "title": "Study of the molecular mechanism of seedless fruit formation regulated by the blueberry BR6OX1 gene via heterologous transformation in tomato and transcriptomic analysis.",
+          "first_author": "Xingru W",
+          "pub_year": "2026",
+          "doi": "10.1007/s00299-026-03874-x",
+          "pmid": "42340497"
+        },
+        {
+          "id": "42511498",
+          "source": "MED",
+          "title": "Tomato Leaf Color Diversity as a Functional Trait: Molecular Mechanisms, Physiological Significance, and Environmental Responses.",
+          "first_author": "Jan R",
+          "pub_year": "2026",
+          "doi": "10.3390/ijms27146151",
+          "pmid": "42511498"
+        },
+        {
+          "id": "42285419",
+          "source": "MED",
+          "title": "SlROP4 negatively regulates drought tolerance in tomato.",
+          "first_author": "Cheng C",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plantsci.2026.113273",
+          "pmid": "42285419"
+        },
+        {
+          "id": "42476588",
+          "source": "MED",
+          "title": "Implantable Hydrogel Electrochemical Sensor for Early Warning and Fingerprinting of Environmental Pollutant Stresses in Plants.",
+          "first_author": "Yu C",
+          "pub_year": "2026",
+          "doi": "10.1021/acs.analchem.6c02353",
+          "pmid": "42476588"
+        },
+        {
+          "id": "42341165",
+          "source": "MED",
+          "title": "The SlAREB-SlGPX2-SlRCCR module coordinates stomatal closure and chloroplast antioxidant defense to confer drought tolerance in tomato.",
+          "first_author": "Meng F",
+          "pub_year": "2026",
+          "doi": "10.1093/plphys/kiag430",
+          "pmid": "42341165"
+        },
+        {
+          "id": "42442559",
+          "source": "MED",
+          "title": "ABA-dependent priming of stomatal immunity by the harpin protein PopW restricts entry of Xanthomonas euvesicatoria in tomato.",
+          "first_author": "Zhou X",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plantsci.2026.113304",
+          "pmid": "42442559"
+        },
+        {
+          "id": "42330786",
+          "source": "MED",
+          "title": "Identification of the Importin β gene family in tomato (Solanum lycopersicum) and functional analysis of SlIMB4 in response to drought stress.",
+          "first_author": "Wang Y",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111504",
+          "pmid": "42330786"
+        },
+        {
+          "id": "PPR1249769",
+          "source": "PPR",
+          "title": "Hydroxylated monoterpenes mimic bacterial attack to trigger jasmonate-dependent self-amplifying immunity in tomato",
+          "first_author": "Pérez-Pérez J",
+          "pub_year": "2026",
+          "doi": "10.64898/2026.06.09.731038",
+          "pmid": null
+        },
+        {
+          "id": "PPR1250260",
+          "source": "PPR",
+          "title": "Functional divergence of the SlNPR gene family regulates antagonistic SA-JA crosstalk governing resistance to foliar necrotrophic and vascular hemibiotrophic pathogens in tomato",
+          "first_author": "Singh N",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9550670/v1",
+          "pmid": null
+        },
+        {
+          "id": "42429416",
+          "source": "MED",
+          "title": "Sulfite Dynamics Affect Drought Tolerance and Water Status in Arabidopsis and Tomato.",
+          "first_author": "Khatri K",
+          "pub_year": "2026",
+          "doi": "10.1093/jxb/erag344",
+          "pmid": "42429416"
+        },
+        {
+          "id": "42289694",
+          "source": "MED",
+          "title": "Phytohormone dynamics in tomato leaves due to in-situ continuous wearing of sensors.",
+          "first_author": "Wei M",
+          "pub_year": "2026",
+          "doi": "10.1186/s13007-026-01552-3",
+          "pmid": "42289694"
+        },
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "42393317",
+          "source": "MED",
+          "title": "Photoelectrochemical aptasensor based on biomass-derived carbon/BiOI nanoflowers for in-situ monitoring of abscisic acid.",
+          "first_author": "Yan Y",
+          "pub_year": "2026",
+          "doi": "10.1007/s00604-026-08213-1",
+          "pmid": "42393317"
+        },
+        {
+          "id": "41263500",
+          "source": "MED",
+          "title": "ABA enhances drought tolerance in tomato seedlings and is partially dependent on SlDML2-directed DNA demethylation.",
+          "first_author": "Liu Z",
+          "pub_year": "2026",
+          "doi": "10.1093/pcp/pcaf156",
+          "pmid": "41263500"
+        },
+        {
+          "id": "41731713",
+          "source": "MED",
+          "title": "ABF2-activated sly-miR398 mediates ABA-dependent superoxide accumulation and stomatal closure in tomato.",
+          "first_author": "Zhai X",
+          "pub_year": "2026",
+          "doi": "10.1093/jxb/erag091",
+          "pmid": "41731713"
+        },
+        {
+          "id": "42115498",
+          "source": "MED",
+          "title": "CRISPR/Cas9-mediated disruption of the gamma carbonic anhydrase 2 gene leads to reduced mitochondrial complex I and growth alterations in tomato.",
+          "first_author": "Valiñas MA",
+          "pub_year": "2026",
+          "doi": "10.1007/s00425-026-05020-z",
+          "pmid": "42115498"
+        },
+        {
+          "id": "42442153",
+          "source": "MED",
+          "title": "PavSnRK2.2, a member of the SNF1-related protein kinase 2 family, positively regulates ABA-induced fruit ripening in sweet cherry.",
+          "first_author": "Wang W",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111548",
+          "pmid": "42442153"
+        },
+        {
+          "id": "42339802",
+          "source": "MED",
+          "title": "Plant Hydathodes Detect Microbial Patterns to Close Hydathode Pores and Restrict Leaf Entry.",
+          "first_author": "Khanal S",
+          "pub_year": "2026",
+          "doi": "10.1094/phyto-10-25-0337-sc",
+          "pmid": "42339802"
+        },
+        {
+          "id": "42220070",
+          "source": "MED",
+          "title": "Spatially Resolved ABA Signalling Reveals Dual Role in Tomato Yield.",
+          "first_author": "Wen FA",
+          "pub_year": "2026",
+          "doi": "10.1111/pbi.70700",
+          "pmid": "42220070"
+        },
+        {
+          "id": "42163091",
+          "source": "MED",
+          "title": "The SlASR4 Interaction with the Phloem Protein2 (SlPP2) regulating the tolerance to drought in tomato (Solanum lycopersicum).",
+          "first_author": "Sundas F",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08993-x",
+          "pmid": "42163091"
+        },
+        {
+          "id": "42034713",
+          "source": "MED",
+          "title": "Melatonin enhances the cold tolerance of tomatoes by promoting ABA accumulation.",
+          "first_author": "Wang G",
+          "pub_year": "2026",
+          "doi": "10.1007/s00299-026-03825-6",
+          "pmid": "42034713"
+        },
+        {
+          "id": "42060978",
+          "source": "MED",
+          "title": "The lectin receptor-like kinase SILecRLK45 acts as a negative regulator of ethylene to inhibit fruit ripening in tomato.",
+          "first_author": "Shen X",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111296",
+          "pmid": "42060978"
+        },
+        {
+          "id": "42048698",
+          "source": "MED",
+          "title": "Stem bending reduces internode elongation and enhances stem diameter in tomato, with potential involvement of jasmonate-gibberellin and jasmonate-abscisic acid signaling.",
+          "first_author": "Bao B",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111329",
+          "pmid": "42048698"
+        },
+        {
+          "id": "42102488",
+          "source": "MED",
+          "title": "Hormonal modulation by omeprazole improves tomato growth under single and combined water and nitrogen deficits.",
+          "first_author": "Fernandes APG",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111342",
+          "pmid": "42102488"
+        }
+      ]
+    },
+    {
+      "query": "gibberellic acid AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 85,
+      "results": [
+        {
+          "id": "PPR1249769",
+          "source": "PPR",
+          "title": "Hydroxylated monoterpenes mimic bacterial attack to trigger jasmonate-dependent self-amplifying immunity in tomato",
+          "first_author": "Pérez-Pérez J",
+          "pub_year": "2026",
+          "doi": "10.64898/2026.06.09.731038",
+          "pmid": null
+        },
+        {
+          "id": "PPR1250260",
+          "source": "PPR",
+          "title": "Functional divergence of the SlNPR gene family regulates antagonistic SA-JA crosstalk governing resistance to foliar necrotrophic and vascular hemibiotrophic pathogens in tomato",
+          "first_author": "Singh N",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9550670/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1134233",
+          "source": "PPR",
+          "title": "Impact of hormonal priming on crop growth, yield and seed quality in tomato (Solanum lycopersicum L.) cv. PKM 1",
+          "first_author": "Satheeshkumar P",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7693556/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1231367",
+          "source": "PPR",
+          "title": "Both conventionally and organically fertilized tomatoes maintain fruit quality through uncontrolled green peach aphid infestation, with a transcriptional shift towards catabolism",
+          "first_author": "Labbancz J",
+          "pub_year": "2025",
+          "doi": "10.64898/2025.12.14.694237",
+          "pmid": null
+        },
+        {
+          "id": "PPR1108963",
+          "source": "PPR",
+          "title": "Identification of tomato bromodomain-containing genes and functional characterization of SlGTE7 in drought and salt stresses",
+          "first_author": "Shi H",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7712815/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1198580",
+          "source": "PPR",
+          "title": "Novel_miR_130 Targeting VvCHX20 in Grape Ion/Water Transport and Fruit Growth",
+          "first_author": "Zeng F",
+          "pub_year": "2025",
+          "doi": "10.22541/au.176033915.56534054/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1106254",
+          "source": "PPR",
+          "title": "Tomato drought-responsive transcription factor TINY1 suppresses embryonic growth",
+          "first_author": "Azriel M",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.10.22.683859",
+          "pmid": null
+        },
+        {
+          "id": "PPR1040680",
+          "source": "PPR",
+          "title": "Antagonistic and Synergistic Roles of Tomato AFP3 Isoforms in Hormonal Regulation and Development",
+          "first_author": "Vittozzi Y",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.06.18.660365",
+          "pmid": null
+        },
+        {
+          "id": "PPR1198707",
+          "source": "PPR",
+          "title": "Low ethylene production in the root(stock) alleviates salt stress in tomato",
+          "first_author": "Martín-Rodríguez JA",
+          "pub_year": "2025",
+          "doi": "10.22541/au.176155600.06834638/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1085187",
+          "source": "PPR",
+          "title": "Effects of AMF on the Physiological Responses and Root Organic Acid Secretion of Tomato (<em>Solanum lycopersicum</em>) Under Cadmium Stress",
+          "first_author": "Zhang D",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202509.1192.v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1054409",
+          "source": "PPR",
+          "title": "Impact of elevated temperature on immunity-related hormone signaling in tomato plants",
+          "first_author": "Liu K",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.07.20.665745",
+          "pmid": null
+        },
+        {
+          "id": "PPR1062277",
+          "source": "PPR",
+          "title": "N-ethylmaleimide (NemA) reductase mediated hexavalent chromium transformation by Plant growth promoting Bacillus tropicus V1 facilitates post stimulatory response in tomato (Solanum lycopersicum) cultivated in chromium contaminated soil",
+          "first_author": "Patel V",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7055822/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1032337",
+          "source": "PPR",
+          "title": "Microneedle-based precision payload delivery in plants",
+          "first_author": "Li M",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.06.04.657704",
+          "pmid": null
+        },
+        {
+          "id": "PPR997354",
+          "source": "PPR",
+          "title": "Organ-level gene regulatory network models enable the identification of central transcription factors in  <i>Solanum lycopersicum</i>",
+          "first_author": "Fernández JD",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.03.26.645553",
+          "pmid": null
+        },
+        {
+          "id": "PPR998119",
+          "source": "PPR",
+          "title": "Evolutionary Trade-off Between Stomatal Defense and Gas Exchange in Brassicaceae",
+          "first_author": "Kang W",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.03.31.646295",
+          "pmid": null
+        },
+        {
+          "id": "PPR935733",
+          "source": "PPR",
+          "title": "Identification of a drought stress response module in tomato plants commonly induced by fungal endophytes that confer increased drought tolerance",
+          "first_author": "Ortega-Villaizán AG",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-5105504/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR963898",
+          "source": "PPR",
+          "title": "Humidity-driven ABA depletion determines plant-pathogen competition for leaf water",
+          "first_author": "Yasuda S",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.01.04.631318",
+          "pmid": null
+        },
+        {
+          "id": "PPR1102102",
+          "source": "PPR",
+          "title": "Discovery of tomato UDP-glucosyltransferases involved in bioactive jasmonate homeostasis using limited proteolysis-coupled mass spectrometry",
+          "first_author": "Venegas-Molina J",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.10.15.682356",
+          "pmid": null
+        },
+        {
+          "id": "PPR852389",
+          "source": "PPR",
+          "title": "Multi-Omics Exploration of ABA Involvement in Identifying Unique Molecular Markers for Single and Combined Stresses in tomato plants",
+          "first_author": "Pardo-Hernández M",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.05.13.593826",
+          "pmid": null
+        },
+        {
+          "id": "PPR844418",
+          "source": "PPR",
+          "title": "Multi-Omics Exploration of ABA Involvement in Identifying Unique Molecular Markers for Single and Combined Stresses in tomato plants",
+          "first_author": "Rivero R",
+          "pub_year": "2024",
+          "doi": "10.22541/au.171427818.89749392/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR788967",
+          "source": "PPR",
+          "title": "Metabolomic spectral biomarker selection towards early diagnostic of Fusarium oxysporum in tomato",
+          "first_author": "García-Barrera LJ",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-3798483/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1121067",
+          "source": "PPR",
+          "title": "Uncovering the genetic basis of fruit volatiles in  <i>Fragaria vesca</i>  through GWAS reveals FvJMT2 as a methyl benzoate biosynthesis gene with insect-repellent function",
+          "first_author": "Jiménez-Muñoz R",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.11.18.689018",
+          "pmid": null
+        },
+        {
+          "id": "PPR657051",
+          "source": "PPR",
+          "title": "Metabolic crosstalk between hydroxylated monoterpenes and salicylic acid in tomato defence response against  <i>Pseudomonas syringae</i>  pv  <i>tomato</i>",
+          "first_author": "Pérez-Pérez J",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.05.05.539605",
+          "pmid": null
+        },
+        {
+          "id": "PPR593962",
+          "source": "PPR",
+          "title": "Comparative Transcriptome Profiling Provides Insights into the Growth Promotion Activity of  <i>Pseudomonas fluorescens</i>  strain SLU99 in Tomato and Potato Plants",
+          "first_author": "binti Hanifah NAS",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.01.08.523145",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "gibberellic acid AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 4304,
+      "results": [
+        {
+          "id": "41983327",
+          "source": "MED",
+          "title": "Touch-Responsive CsaGASAs Regulate Tendril Length During the Climbing Stage in Cucumber.",
+          "first_author": "Zhou C",
+          "pub_year": "2026",
+          "doi": "10.1111/pce.70537",
+          "pmid": "41983327"
+        },
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "42430926",
+          "source": "MED",
+          "title": "Mitigation of bensulfuron-methyl induced multiple stress responses in Cucumis sativus L. by biostimulants: A comprehensive metabolic and molecular docking approach.",
+          "first_author": "Er MY",
+          "pub_year": "2026",
+          "doi": "10.1016/j.jhazmat.2026.142962",
+          "pmid": "42430926"
+        },
+        {
+          "id": "42361297",
+          "source": "MED",
+          "title": "Ethylene-mediated CsWRKY41 regulates the PYL-PP2C module to promote adventitious root formation in cucumber under waterlogging stress.",
+          "first_author": "Hu Q",
+          "pub_year": "2026",
+          "doi": "10.1093/plphys/kiag432",
+          "pmid": "42361297"
+        },
+        {
+          "id": "42226098",
+          "source": "MED",
+          "title": "Ectopic overexpression of cucumber CsBT2 gene increases drought and salt stress sensitivity in Arabidopsis.",
+          "first_author": "Huang W",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-09045-0",
+          "pmid": "42226098"
+        },
+        {
+          "id": "41964666",
+          "source": "MED",
+          "title": "Cloning and functional analysis of qCmr2.1, a novel gene for Cucumber mosaic virus resistance in Capsicum frutescens.",
+          "first_author": "Guo G",
+          "pub_year": "2026",
+          "doi": "10.1007/s00122-026-05228-3",
+          "pmid": "41964666"
+        },
+        {
+          "id": "41675605",
+          "source": "MED",
+          "title": "Comprehensive analysis of cucumber &lt;i&gt;ERF&lt;/i&gt; family genes and functional characterization of &lt;i&gt;CsERF017&lt;/i&gt; and &lt;i&gt;CsERF061&lt;/i&gt; in cold tolerance in cucumber.",
+          "first_author": "Zhang J",
+          "pub_year": "2026",
+          "doi": "10.1007/s12298-025-01701-3",
+          "pmid": "41675605"
+        },
+        {
+          "id": "40957257",
+          "source": "MED",
+          "title": "Cytokinin, gibberellin and auxin regulate parthenocarpy in cucumber via modulating downstream auxin signaling network.",
+          "first_author": "Su L",
+          "pub_year": "2025",
+          "doi": "10.1016/j.plaphy.2025.110492",
+          "pmid": "40957257"
+        },
+        {
+          "id": "41506203",
+          "source": "MED",
+          "title": "Abscisic acid confers antibiotic stress tolerance in cucumber by alleviating antibiotic phytotoxicity and decreasing the levels of antibiotic and antibiotic resistance genes.",
+          "first_author": "Wang Q",
+          "pub_year": "2026",
+          "doi": "10.1016/j.jhazmat.2026.141060",
+          "pmid": "41506203"
+        },
+        {
+          "id": "41946333",
+          "source": "MED",
+          "title": "Paraburkholderia sp. GD17 alleviates damage under drought stress by inducing abscisic acid to regulate the branched-chain amino acid pathway.",
+          "first_author": "Zhang X",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111260",
+          "pmid": "41946333"
+        },
+        {
+          "id": "42245747",
+          "source": "MED",
+          "title": "Integration of phytohormones, miRNAs and transcriptome sequencing in cucumber fruit development under high-temperature stress.",
+          "first_author": "Dan Z",
+          "pub_year": "2026",
+          "doi": "10.1016/j.fochms.2026.100420",
+          "pmid": "42245747"
+        },
+        {
+          "id": "42222826",
+          "source": "MED",
+          "title": "Evaluation of the Biostimulant Activity of the Microalgae &lt;i&gt;Chlorella sorokiniana&lt;/i&gt; and &lt;i&gt;Scenedesmus&lt;/i&gt; sp. and Their Resistance to the Most Widely Used Agricultural Pesticides.",
+          "first_author": "Rodríguez-Mora K",
+          "pub_year": "2026",
+          "doi": "10.1021/acsomega.5c11935",
+          "pmid": "42222826"
+        },
+        {
+          "id": "42001397",
+          "source": "MED",
+          "title": "A Water-Saving Drought Survival Phenotype in a Wheat TILLING Mutant Involves Survival-Biased Metabolic and Phosphorylation Reprogramming.",
+          "first_author": "Mega R",
+          "pub_year": "2026",
+          "doi": "10.1111/pce.70546",
+          "pmid": "42001397"
+        },
+        {
+          "id": "41342984",
+          "source": "MED",
+          "title": "Deciphering the cucumber ATG6 and its promoter to enhance abiotic stress tolerance and drive stress-responsive transgene expression in plants.",
+          "first_author": "Dachphun I",
+          "pub_year": "2025",
+          "doi": "10.1007/s11248-025-00472-7",
+          "pmid": "41342984"
+        },
+        {
+          "id": "IND609241534",
+          "source": "AGR",
+          "title": "Combined analysis of the transcriptome and metabolome revealed that selenium nanoparticles mediate root development in cucumber (Cucumis sativus L.)",
+          "first_author": "Zhang Y",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41310275",
+          "source": "MED",
+          "title": "Comparative transcriptome analysis reveals the role of CsABA8ox1 in cucumber under high-temperature stress.",
+          "first_author": "Xu X",
+          "pub_year": "2025",
+          "doi": "10.1007/s11103-025-01664-9",
+          "pmid": "41310275"
+        },
+        {
+          "id": "40913742",
+          "source": "MED",
+          "title": "Multiomics analysis of gibberellin involved in far-red light-regulated internode elongation in cucumber seedlings.",
+          "first_author": "Li S",
+          "pub_year": "2025",
+          "doi": "10.1007/s00299-025-03598-4",
+          "pmid": "40913742"
+        },
+        {
+          "id": "41112104",
+          "source": "MED",
+          "title": "Multiomics reveals the impact of microplastics and di-&lt;i&gt;n&lt;/i&gt;-octyl phthalate on hormone biosynthesis in cucumber.",
+          "first_author": "Zhuang H",
+          "pub_year": "2025",
+          "doi": "10.1007/s12298-025-01645-8",
+          "pmid": "41112104"
+        },
+        {
+          "id": "PMC13298316",
+          "source": "PMC",
+          "title": "Genome-Wide Identification and Expression Analysis of the GDPD Gene Family in Cucumber (Cucumis sativus L.)",
+          "first_author": null,
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42278294",
+          "source": "MED",
+          "title": "Genome-Wide Analysis of AGPase Identifies &lt;i&gt;CsAGP4&lt;/i&gt; as a Regulator of Watermelon Mosaic Virus Resistance in Cucumber.",
+          "first_author": "Sun X",
+          "pub_year": "2026",
+          "doi": "10.3390/ijms27114764",
+          "pmid": "42278294"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "IND609211826",
+          "source": "AGR",
+          "title": "Blue light is a key factor in regulating stomatal movement, transpiration rate and ABA metabolism under varying vapour pressure",
+          "first_author": "Innes SN",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42050414",
+          "source": "MED",
+          "title": "Comprehensive genome-wide identification, structural analysis, and cold-responsive expression profiling of double B-box (DBB) transcription factors in melon (Cucumis melo L.).",
+          "first_author": "Liu S",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08870-7",
+          "pmid": "42050414"
+        },
+        {
+          "id": "40446530",
+          "source": "MED",
+          "title": "Combined analysis of the transcriptome and metabolome revealed that selenium nanoparticles mediate root development in cucumber (Cucumis sativus L.).",
+          "first_author": "Zhang Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.plaphy.2025.110064",
+          "pmid": "40446530"
+        },
+        {
+          "id": "41068606",
+          "source": "MED",
+          "title": "Enhancing cucumber tolerance to zinc stress through grafting: a comprehensive study on biochemical, hormonal, and metabolic responses.",
+          "first_author": "Coşkun ÖF",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07287-y",
+          "pmid": "41068606"
+        }
+      ]
+    },
+    {
+      "query": "gibberellic acid AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 9,
+      "results": [
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR758977",
+          "source": "PPR",
+          "title": "Rhizosphere inoculation of PGPR strain Bacillus cereus BC56 enhances salt tolerance of cucumber",
+          "first_author": "Song H",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-3590751/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR511810",
+          "source": "PPR",
+          "title": "Grafting enhances drought stress tolerance by regulating stress-responsive gene expression and antioxidant enzyme activities in cucumbers",
+          "first_author": "Shehata SA",
+          "pub_year": "2022",
+          "doi": "10.21203/rs.3.rs-1723166/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR479843",
+          "source": "PPR",
+          "title": "High endogenous phytohormone concentrations are present in cucumber fruit apoplasts",
+          "first_author": "Kojima K.",
+          "pub_year": "2022",
+          "doi": "10.21203/rs.3.rs-1259508/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1114869",
+          "source": "PPR",
+          "title": "<i>Cryptococcus neoformans</i>  employs both PP1 and PP2A phosphatases to silence the spindle checkpoint",
+          "first_author": "Suresh AP",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.11.04.686612",
+          "pmid": null
+        },
+        {
+          "id": "PPR207572",
+          "source": "PPR",
+          "title": "H  <sub>2</sub>  O  <sub>2</sub>  /ABA signal pathway participates in the regulation of stomata opening of cucumber leaves under salt stress by putrescine",
+          "first_author": "Ma S",
+          "pub_year": "2020",
+          "doi": "10.1101/2020.08.28.272120",
+          "pmid": null
+        },
+        {
+          "id": "PPR1074171",
+          "source": "PPR",
+          "title": "Specialisation of meiotic kinetochores revealed through a synthetic spindle assembly checkpoint strategy",
+          "first_author": "Koch LB",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.08.28.672825",
+          "pmid": null
+        },
+        {
+          "id": "PPR760699",
+          "source": "PPR",
+          "title": "A chromosome-level genome assembly of  <i>Solanum chilense</i>  , a tomato wild relative associated with resistance to salinity and drought",
+          "first_author": "Molitor C",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.11.17.567531",
+          "pmid": null
+        },
+        {
+          "id": "PPR628494",
+          "source": "PPR",
+          "title": "High light can alleviate chilling stress in maize",
+          "first_author": "Cackett L",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.03.07.531599",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "gibberellic acid AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 3313,
+      "results": [
+        {
+          "id": "PPR1188729",
+          "source": "PPR",
+          "title": "Effect of exogenous application of gibberellic acid and 1-naphthaleneacetic acid on the growth, yield, quality and storage behaviour of Strawberry cv. Chandler under the Northeast region of India",
+          "first_author": "Singh A",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9558237/v1",
+          "pmid": null
+        },
+        {
+          "id": "42514569",
+          "source": "MED",
+          "title": "Abscisic Acid Stimulates Ethylene Biosynthesis by Repressing the Expression of &lt;i&gt;FaMADS1&lt;/i&gt; in Postharvest Strawberry Fruit.",
+          "first_author": "Chen R",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15142202",
+          "pmid": "42514569"
+        },
+        {
+          "id": "42357235",
+          "source": "MED",
+          "title": "Molecular and Biochemical Impact of Selenium on the Acceleration of Ripening and Quality Changes in 'Camarosa' Strawberry Fruits.",
+          "first_author": "Rezaei S",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15121916",
+          "pmid": "42357235"
+        },
+        {
+          "id": "41988680",
+          "source": "MED",
+          "title": "Light as the Master Regulator: Photoreceptor-Mediated Pathways in Hormonal and Epigenetic Switches of Fruit Ripening.",
+          "first_author": "Pal S",
+          "pub_year": "2026",
+          "doi": "10.1111/ppl.70881",
+          "pmid": "41988680"
+        },
+        {
+          "id": "41319584",
+          "source": "MED",
+          "title": "Exploring the mechanism of fruit expansion in strawberry mutants through a joint study of anatomical structures, phytohormones and the transcriptome.",
+          "first_author": "Yang Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.plaphy.2025.110760",
+          "pmid": "41319584"
+        },
+        {
+          "id": "IND609218105",
+          "source": "AGR",
+          "title": "Relationship Between in Endogenous Phytohormones and Iron Nutrition in Strawberry (Fragaria vesca ssp. semperflorens)",
+          "first_author": "Sönmez F",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "PMC13299393",
+          "source": "PMC",
+          "title": "Genome-Wide Analysis Reveals the Roles of FAR1/FHY3 Genes in Fragaria × ananassa Under Abiotic/Biotic Stresses and Highlights Their Potential Functions in Anthocyanin Biosynthesis During Fruit Development",
+          "first_author": "Ren R",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "PMC13290904",
+          "source": "PMC",
+          "title": "Genomic analysis of Botrytis cinerea causing postharvest strawberry rot and the control effect of pydiflumetofen",
+          "first_author": "Yan H",
+          "pub_year": null,
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "IND609283134",
+          "source": "AGR",
+          "title": "RD21 enhances resistance to the strawberry vein banding virus by promoting autophagy‐mediated degradation of the viral silencing suppressor P6 protein",
+          "first_author": "Yang X",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42113081",
+          "source": "MED",
+          "title": "Molecular mechanisms of plant hormones and sugars regulates strawberry fruit development and ripening.",
+          "first_author": "Pinto CA",
+          "pub_year": "2026",
+          "doi": "10.1007/s11103-026-01714-w",
+          "pmid": "42113081"
+        },
+        {
+          "id": "42014991",
+          "source": "MED",
+          "title": "Transcriptomic and metabolomic analysis reveals the role of Piriformospora indica in enhancing strawberry alkaline tolerance.",
+          "first_author": "Liu W",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08790-6",
+          "pmid": "42014991"
+        },
+        {
+          "id": "41998522",
+          "source": "MED",
+          "title": "Genome-wide characterization of the PHY gene family in octoploid strawberry reveals the critical role of FxaPHY15 in far-red light signaling and fruit ripening.",
+          "first_author": "He S",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08649-w",
+          "pmid": "41998522"
+        },
+        {
+          "id": "42075373",
+          "source": "MED",
+          "title": "&lt;i&gt;Cytokinin Oxidase/Dehydrogenase 1&lt;/i&gt; (&lt;i&gt;FvCKX1&lt;/i&gt;) Coordinates Receptacle Growth and Achene Maturation in Strawberry.",
+          "first_author": "Tian Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081171",
+          "pmid": "42075373"
+        },
+        {
+          "id": "41258267",
+          "source": "MED",
+          "title": "Role of growth regulators on fruit splitting and nutritional status of Daisy Mandarin in subtropical conditions.",
+          "first_author": "Kaur K",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-24540-4",
+          "pmid": "41258267"
+        },
+        {
+          "id": "42197610",
+          "source": "MED",
+          "title": "Genome-Wide Identification of NF-YA Transcription Factors in Strawberry and Their Responses to Salt Stress.",
+          "first_author": "Yu J",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15101475",
+          "pmid": "42197610"
+        },
+        {
+          "id": "41545448",
+          "source": "MED",
+          "title": "Exogenous regulators enhance strawberry yield under heat stress conditions.",
+          "first_author": "Salwa NT",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-35730-z",
+          "pmid": "41545448"
+        },
+        {
+          "id": "41146965",
+          "source": "MED",
+          "title": "&lt;i&gt;FveTRM5&lt;/i&gt; plays a critical role in regulating fruit shape in woodland strawberry.",
+          "first_author": "Zheng Z",
+          "pub_year": "2025",
+          "doi": "10.1093/hr/uhaf199",
+          "pmid": "41146965"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "41580606",
+          "source": "MED",
+          "title": "Genome-wide analysis of leucine-rich repeat-only proteins gene family revealed FaLRRop26 responding Colletotrichum Siamense infection by regulated lignin synthesis in cultivated strawberry (Fragaria × ananassa).",
+          "first_author": "Li X",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08210-9",
+          "pmid": "41580606"
+        },
+        {
+          "id": "41606066",
+          "source": "MED",
+          "title": "Integrated preharvest salicylic acid maleic hydrazide and postharvest 1 MCP delay softening and preserve strawberry quality during cold storage.",
+          "first_author": "Sharma N",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-36487-1",
+          "pmid": "41606066"
+        },
+        {
+          "id": "41823601",
+          "source": "MED",
+          "title": "FvMAPK6-Mediated FvMYB44s/FvSWEET1 Dual-Layer Regulation Modulates Sugar Accumulation in Strawberry Fruit, With FvSPS3 Enabling Quality-Yield Balance.",
+          "first_author": "Feng Q",
+          "pub_year": "2026",
+          "doi": "10.1111/pbi.70623",
+          "pmid": "41823601"
+        },
+        {
+          "id": "IND609303220",
+          "source": "AGR",
+          "title": "FaMADS6 negatively regulates anthocyanin accumulation in strawberry by inhibiting FaMYB10 expression and ABA biosynthesis",
+          "first_author": "Zhang Y",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41508555",
+          "source": "MED",
+          "title": "A signaling pathway mediating abscisic acid-induced jasmonic acid biosynthesis during strawberry ripening.",
+          "first_author": "Jia K",
+          "pub_year": "2026",
+          "doi": "10.1111/jipb.70128",
+          "pmid": "41508555"
+        },
+        {
+          "id": "41286132",
+          "source": "MED",
+          "title": "Exogenous hormones regulate the sequentially reproductive output in Pseudostellaria heterophylla with a chasmogamous-cleistogamous mixed mating system.",
+          "first_author": "Sun Q",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-25479-2",
+          "pmid": "41286132"
+        },
+        {
+          "id": "41797559",
+          "source": "MED",
+          "title": "Insights into the roles of RALF peptides and CrRLK1L receptors in fruit ripening.",
+          "first_author": "Montano JA",
+          "pub_year": "2026",
+          "doi": "10.1111/tpj.70766",
+          "pmid": "41797559"
+        }
+      ]
+    },
+    {
+      "query": "gibberellic acid AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 12,
+      "results": [
+        {
+          "id": "PPR1188729",
+          "source": "PPR",
+          "title": "Effect of exogenous application of gibberellic acid and 1-naphthaleneacetic acid on the growth, yield, quality and storage behaviour of Strawberry cv. Chandler under the Northeast region of India",
+          "first_author": "Singh A",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9558237/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1121067",
+          "source": "PPR",
+          "title": "Uncovering the genetic basis of fruit volatiles in  <i>Fragaria vesca</i>  through GWAS reveals FvJMT2 as a methyl benzoate biosynthesis gene with insect-repellent function",
+          "first_author": "Jiménez-Muñoz R",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.11.18.689018",
+          "pmid": null
+        },
+        {
+          "id": "PPR1194789",
+          "source": "PPR",
+          "title": "Antarctic endophytic fungi modulate plant transcriptome to enhance physiological and biochemical performance of strawberry plants (Fragaria x ananassa) under drought and high temperatures.",
+          "first_author": "Ortega MAY",
+          "pub_year": "2024",
+          "doi": "10.22541/au.172472887.75803967/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1231107",
+          "source": "PPR",
+          "title": "Lateral root formation is stimulated by common symbiosis genes and  <i>NIN</i>  in  <i>Lotus japonicus</i>",
+          "first_author": "Cathebras C",
+          "pub_year": "2025",
+          "doi": "10.64898/2025.12.16.694690",
+          "pmid": null
+        },
+        {
+          "id": "PPR805353",
+          "source": "PPR",
+          "title": "The  <i>Xanthomonas fragariae</i>  effector XopK suppresses stomatal immunity by perturbing abscisic acid accumulation and signaling pathways in strawberry",
+          "first_author": "Cai X",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.02.07.579334",
+          "pmid": null
+        },
+        {
+          "id": "PPR782832",
+          "source": "PPR",
+          "title": "FveDAD2 negatively regulates branch crowns by affecting abscisic acid metabolism through FveHB7 in woodland strawberry",
+          "first_author": "Sun H",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.01.02.573951",
+          "pmid": null
+        },
+        {
+          "id": "PPR876196",
+          "source": "PPR",
+          "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+          "first_author": "Sanchez ER",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4583627/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR780559",
+          "source": "PPR",
+          "title": "Chronological age, changes in DNA methylation, and endogenous hormone levels of explants promote somatic embryogenesis of Euterpe edulis Martius",
+          "first_author": "de Mello T",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-3756044/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR899525",
+          "source": "PPR",
+          "title": "VRS5 (HvTB1) binds to the promoter of tillering and floral homeotic genes to regulate their expression",
+          "first_author": "Winkelmolen T",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.08.22.609225",
+          "pmid": null
+        },
+        {
+          "id": "PPR292975",
+          "source": "PPR",
+          "title": "N  <sup>6</sup>  -methyladenosine RNA modification regulates strawberry fruit ripening in an ABA-dependent manner",
+          "first_author": "Zhou L",
+          "pub_year": "2021",
+          "doi": "10.1101/2021.03.04.433875",
+          "pmid": null
+        },
+        {
+          "id": "PPR775654",
+          "source": "PPR",
+          "title": "The diallelic self-incompatibility system in Oleaceae is controlled by a hemizygous genomic region expressing a gibberellin pathway gene",
+          "first_author": "Castric V",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.12.18.571976",
+          "pmid": null
+        },
+        {
+          "id": "PPR613761",
+          "source": "PPR",
+          "title": "Genetic mapping of the root-mycobiota in rice and its role in drought tolerance",
+          "first_author": "Andreo-Jimenez B",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-2552674/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "gibberellin AND tomato AND fruit set",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 3347,
+      "results": [
+        {
+          "id": "42340497",
+          "source": "MED",
+          "title": "Study of the molecular mechanism of seedless fruit formation regulated by the blueberry BR6OX1 gene via heterologous transformation in tomato and transcriptomic analysis.",
+          "first_author": "Xingru W",
+          "pub_year": "2026",
+          "doi": "10.1007/s00299-026-03874-x",
+          "pmid": "42340497"
+        },
+        {
+          "id": "42029760",
+          "source": "MED",
+          "title": "Challenges and solutions in hand pollination for hybrid pepper (Capsicum annuum L.) seed production: a review.",
+          "first_author": "Gyalai IM",
+          "pub_year": "2026",
+          "doi": "10.1007/s00425-026-05012-z",
+          "pmid": "42029760"
+        },
+        {
+          "id": "41463419",
+          "source": "MED",
+          "title": "Research Advances in the Regulation of Fruit Size: An Integrated Perspective of Genetic, Hormonal, Epigenetic, and Environmental Control.",
+          "first_author": "Bu H",
+          "pub_year": "2025",
+          "doi": "10.3390/biology14121643",
+          "pmid": "41463419"
+        },
+        {
+          "id": "42135064",
+          "source": "MED",
+          "title": "SlSEC1- and SlSPY-mediated O-glycosylation stabilizes the transcription factor SlNOR to promote tomato fruit ripening.",
+          "first_author": "Wu YD",
+          "pub_year": "2026",
+          "doi": "10.1093/plcell/koag144",
+          "pmid": "42135064"
+        },
+        {
+          "id": "41596721",
+          "source": "MED",
+          "title": "&lt;i&gt;SlACO1&lt;/i&gt; and &lt;i&gt;SlGARP&lt;/i&gt; Regulate Hormone-Mediated Metabolic Profiles in Tomato Fruit.",
+          "first_author": "Liu Y",
+          "pub_year": "2026",
+          "doi": "10.3390/ijms27021078",
+          "pmid": "41596721"
+        },
+        {
+          "id": "41901409",
+          "source": "MED",
+          "title": "The Role of Endogenous Hormones in Regulating Early Development of Stone Fruit.",
+          "first_author": "Zhang S",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15060890",
+          "pmid": "41901409"
+        },
+        {
+          "id": "41645467",
+          "source": "MED",
+          "title": "Tomato drought-responsive transcription factor TINY1 suppresses embryonic growth.",
+          "first_author": "Azriel M",
+          "pub_year": "2026",
+          "doi": "10.1093/jxb/erag054",
+          "pmid": "41645467"
+        },
+        {
+          "id": "41226771",
+          "source": "MED",
+          "title": "Integrated Analysis of Transcriptomes and Pectinase Gene Families Reveals a Novel Pathway Mediating Tomato Fruit Malformation.",
+          "first_author": "Wen J",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms262110739",
+          "pmid": "41226771"
+        },
+        {
+          "id": "42265472",
+          "source": "MED",
+          "title": "Splicing regulation by RS2Z36 controls ovary patterning and fruit growth in tomato.",
+          "first_author": "Vraggalas S",
+          "pub_year": "2026",
+          "doi": "10.1007/s11103-026-01730-w",
+          "pmid": "42265472"
+        },
+        {
+          "id": "42325908",
+          "source": "MED",
+          "title": "Bifunctional transcription factors: recent advances in growth and development, stress resistance, and quality formation of fruits and vegetables.",
+          "first_author": "Shu P",
+          "pub_year": "2026",
+          "doi": "10.1093/hr/uhag100",
+          "pmid": "42325908"
+        },
+        {
+          "id": "41225809",
+          "source": "MED",
+          "title": "Overexpression of &lt;i&gt;SlMADS48&lt;/i&gt; Alters the Structure of Inflorescence and the Sizes of Sepal and Fruit in Tomato.",
+          "first_author": "Guo P",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14213259",
+          "pmid": "41225809"
+        },
+        {
+          "id": "41709976",
+          "source": "MED",
+          "title": "Too cold or too warm? Modelling seed set and fruit mass based on the effect of temperature on pollen quality.",
+          "first_author": "Zepeda AC",
+          "pub_year": "2026",
+          "doi": "10.1093/aobpla/plag004",
+          "pmid": "41709976"
+        },
+        {
+          "id": "41808021",
+          "source": "MED",
+          "title": "Haplotype-based genome-wide association study uncovers QTL for fruit-related traits in the 287 tomato accessions.",
+          "first_author": "Nguyen TTN",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08494-x",
+          "pmid": "41808021"
+        },
+        {
+          "id": "40804757",
+          "source": "MED",
+          "title": "'Bud to fruit'-hormonal interactions governing early fruit development.",
+          "first_author": "Baral R",
+          "pub_year": "2025",
+          "doi": "10.1093/jxb/eraf363",
+          "pmid": "40804757"
+        },
+        {
+          "id": "41337755",
+          "source": "MED",
+          "title": "Regulation of tomato fruit growth and development during different plant developmental stages by far-red light: a combined anatomical, physiological, and transcriptomic analysis.",
+          "first_author": "Mastoraki M",
+          "pub_year": "2025",
+          "doi": "10.1111/tpj.70613",
+          "pmid": "41337755"
+        },
+        {
+          "id": "41375329",
+          "source": "MED",
+          "title": "Comprehensive Analysis of Boron-Induced Changes in Cell Expansion and Phytohormone During Early Ovary Development in Pear (&lt;i&gt;Pyrus sinkiangensis&lt;/i&gt; Yu).",
+          "first_author": "Chen J",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14233619",
+          "pmid": "41375329"
+        },
+        {
+          "id": "42339384",
+          "source": "MED",
+          "title": "From green to red: metabolic reprogramming and bacterial community succession underpin cherry tomato fruit ripening and quality formation.",
+          "first_author": "Hussain M",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1843442",
+          "pmid": "42339384"
+        },
+        {
+          "id": "40940390",
+          "source": "MED",
+          "title": "Application of 4-CPA or ethanol enhances plant growth and fruit quality of phyA mutant under heat stress.",
+          "first_author": "Ahmed RAH",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-17929-8",
+          "pmid": "40940390"
+        },
+        {
+          "id": "41629778",
+          "source": "MED",
+          "title": "Transcriptomic analysis identifies key regulatory genes for blossom-end scar size and GA&lt;sub&gt;3&lt;/sub&gt; regulation in melon (Cucumis melo L.).",
+          "first_author": "Bao R",
+          "pub_year": "2026",
+          "doi": "10.1186/s12864-026-12584-3",
+          "pmid": "41629778"
+        },
+        {
+          "id": "41977723",
+          "source": "MED",
+          "title": "Molecular Regulatory Mechanism of Inflorescence, Flower and Fruit Development in Tomato.",
+          "first_author": "Ma S",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15071064",
+          "pmid": "41977723"
+        },
+        {
+          "id": "41953274",
+          "source": "MED",
+          "title": "Integrated transcriptomic and Metabolomic insights into the dynamic changes in gene expression and secondary metabolites in gibberellin-treated grape berries.",
+          "first_author": "Xun Z",
+          "pub_year": "2026",
+          "doi": "10.1016/j.fochms.2025.100349",
+          "pmid": "41953274"
+        },
+        {
+          "id": "40824826",
+          "source": "MED",
+          "title": "MicroRNA156-SPL13B Module Induces Parthenocarpy Through the Gibberellin Pathway.",
+          "first_author": "Wang DR",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70324",
+          "pmid": "40824826"
+        },
+        {
+          "id": "42072144",
+          "source": "MED",
+          "title": "Identification and Regulation of Melatonin Biosynthetic Genes in Sweet Pepper During Ripening and Melatonin Treatment.",
+          "first_author": "Taboada J",
+          "pub_year": "2026",
+          "doi": "10.3390/antiox15040503",
+          "pmid": "42072144"
+        },
+        {
+          "id": "41659366",
+          "source": "MED",
+          "title": "RsMYB8-RsMYB73 module positively regulates parthenocarpic fruitsetting via elevating &lt;i&gt;RsGA3ox9&lt;/i&gt; expression in seedless chestnut rose (&lt;i&gt;Rosa sterilis&lt;/i&gt;).",
+          "first_author": "Zhou K",
+          "pub_year": "2026",
+          "doi": "10.1093/hr/uhaf277",
+          "pmid": "41659366"
+        },
+        {
+          "id": "42010458",
+          "source": "MED",
+          "title": "Comparative proteomics analysis of wild and cultivated accessions reveals key candidate proteins associated with seed weight variations in peanut.",
+          "first_author": "Li Z",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08710-8",
+          "pmid": "42010458"
+        }
+      ]
+    },
+    {
+      "query": "gibberellin AND tomato AND fruit set AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 6,
+      "results": [
+        {
+          "id": "PPR464285",
+          "source": "PPR",
+          "title": "Reductions of endogenous gibberellin content impact fruit development and modify tomato fruit metabolism during ripening",
+          "first_author": "Martins AO",
+          "pub_year": "2022",
+          "doi": "10.21203/rs.3.rs-1363335/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR958456",
+          "source": "PPR",
+          "title": "A Witches’ Broom Phytoplasma effector induces stunting by stabilizing a bHLH transcription factor in plants",
+          "first_author": "Yang S",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.12.24.629987",
+          "pmid": null
+        },
+        {
+          "id": "PPR1244887",
+          "source": "PPR",
+          "title": "Mechanical coordination of counter-gradient growth maintains organ curvature in the apical hook",
+          "first_author": "Robert S",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9901835/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR642430",
+          "source": "PPR",
+          "title": "A quantitative method to measure geranylgeranyl diphosphate (GGPP) and geranylgeranyl monophosphate (GGP) in tomato (Solanum lycopersicum) fruit",
+          "first_author": "Zita W",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-2776814/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1044627",
+          "source": "PPR",
+          "title": "Exploring phenotypic and genetic variation in  <i>Lactuca</i>  with GWAS in  <i>L. sativa</i>  and  <i>L. serriola</i>",
+          "first_author": "Mehrem S",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.06.27.661939",
+          "pmid": null
+        },
+        {
+          "id": "PPR357035",
+          "source": "PPR",
+          "title": "Linking Omics and Gene Editing Tools for Rapid Improvement of Traditional Food Plants for Diversified Foods and Sustainable Food Security",
+          "first_author": "Kumar A",
+          "pub_year": "2021",
+          "doi": "10.20944/preprints202106.0363.v1",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1249769",
+      "source": "PPR",
+      "title": "Hydroxylated monoterpenes mimic bacterial attack to trigger jasmonate-dependent self-amplifying immunity in tomato",
+      "first_author": "Pérez-Pérez J",
+      "pub_year": "2026",
+      "doi": "10.64898/2026.06.09.731038",
+      "pmid": null
+    },
+    {
+      "id": "PPR1250260",
+      "source": "PPR",
+      "title": "Functional divergence of the SlNPR gene family regulates antagonistic SA-JA crosstalk governing resistance to foliar necrotrophic and vascular hemibiotrophic pathogens in tomato",
+      "first_author": "Singh N",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-9550670/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1237873",
+      "source": "PPR",
+      "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+      "first_author": "Wang M",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-9579147/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1134233",
+      "source": "PPR",
+      "title": "Impact of hormonal priming on crop growth, yield and seed quality in tomato (Solanum lycopersicum L.) cv. PKM 1",
+      "first_author": "Satheeshkumar P",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-7693556/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1231367",
+      "source": "PPR",
+      "title": "Both conventionally and organically fertilized tomatoes maintain fruit quality through uncontrolled green peach aphid infestation, with a transcriptional shift towards catabolism",
+      "first_author": "Labbancz J",
+      "pub_year": "2025",
+      "doi": "10.64898/2025.12.14.694237",
+      "pmid": null
+    },
+    {
+      "id": "PPR1108963",
+      "source": "PPR",
+      "title": "Identification of tomato bromodomain-containing genes and functional characterization of SlGTE7 in drought and salt stresses",
+      "first_author": "Shi H",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-7712815/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1198580",
+      "source": "PPR",
+      "title": "Novel_miR_130 Targeting VvCHX20 in Grape Ion/Water Transport and Fruit Growth",
+      "first_author": "Zeng F",
+      "pub_year": "2025",
+      "doi": "10.22541/au.176033915.56534054/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1106254",
+      "source": "PPR",
+      "title": "Tomato drought-responsive transcription factor TINY1 suppresses embryonic growth",
+      "first_author": "Azriel M",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.10.22.683859",
+      "pmid": null
+    },
+    {
+      "id": "PPR1040680",
+      "source": "PPR",
+      "title": "Antagonistic and Synergistic Roles of Tomato AFP3 Isoforms in Hormonal Regulation and Development",
+      "first_author": "Vittozzi Y",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.06.18.660365",
+      "pmid": null
+    },
+    {
+      "id": "PPR1198707",
+      "source": "PPR",
+      "title": "Low ethylene production in the root(stock) alleviates salt stress in tomato",
+      "first_author": "Martín-Rodríguez JA",
+      "pub_year": "2025",
+      "doi": "10.22541/au.176155600.06834638/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1085187",
+      "source": "PPR",
+      "title": "Effects of AMF on the Physiological Responses and Root Organic Acid Secretion of Tomato (<em>Solanum lycopersicum</em>) Under Cadmium Stress",
+      "first_author": "Zhang D",
+      "pub_year": "2025",
+      "doi": "10.20944/preprints202509.1192.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1054409",
+      "source": "PPR",
+      "title": "Impact of elevated temperature on immunity-related hormone signaling in tomato plants",
+      "first_author": "Liu K",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.07.20.665745",
+      "pmid": null
+    },
+    {
+      "id": "PPR1062277",
+      "source": "PPR",
+      "title": "N-ethylmaleimide (NemA) reductase mediated hexavalent chromium transformation by Plant growth promoting Bacillus tropicus V1 facilitates post stimulatory response in tomato (Solanum lycopersicum) cultivated in chromium contaminated soil",
+      "first_author": "Patel V",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-7055822/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1032337",
+      "source": "PPR",
+      "title": "Microneedle-based precision payload delivery in plants",
+      "first_author": "Li M",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.06.04.657704",
+      "pmid": null
+    },
+    {
+      "id": "PPR997354",
+      "source": "PPR",
+      "title": "Organ-level gene regulatory network models enable the identification of central transcription factors in  <i>Solanum lycopersicum</i>",
+      "first_author": "Fernández JD",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.03.26.645553",
+      "pmid": null
+    },
+    {
+      "id": "PPR998119",
+      "source": "PPR",
+      "title": "Evolutionary Trade-off Between Stomatal Defense and Gas Exchange in Brassicaceae",
+      "first_author": "Kang W",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.03.31.646295",
+      "pmid": null
+    },
+    {
+      "id": "PPR935733",
+      "source": "PPR",
+      "title": "Identification of a drought stress response module in tomato plants commonly induced by fungal endophytes that confer increased drought tolerance",
+      "first_author": "Ortega-Villaizán AG",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-5105504/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR963898",
+      "source": "PPR",
+      "title": "Humidity-driven ABA depletion determines plant-pathogen competition for leaf water",
+      "first_author": "Yasuda S",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.01.04.631318",
+      "pmid": null
+    },
+    {
+      "id": "PPR1102102",
+      "source": "PPR",
+      "title": "Discovery of tomato UDP-glucosyltransferases involved in bioactive jasmonate homeostasis using limited proteolysis-coupled mass spectrometry",
+      "first_author": "Venegas-Molina J",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.10.15.682356",
+      "pmid": null
+    },
+    {
+      "id": "PPR852389",
+      "source": "PPR",
+      "title": "Multi-Omics Exploration of ABA Involvement in Identifying Unique Molecular Markers for Single and Combined Stresses in tomato plants",
+      "first_author": "Pardo-Hernández M",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.05.13.593826",
+      "pmid": null
+    },
+    {
+      "id": "PPR844418",
+      "source": "PPR",
+      "title": "Multi-Omics Exploration of ABA Involvement in Identifying Unique Molecular Markers for Single and Combined Stresses in tomato plants",
+      "first_author": "Rivero R",
+      "pub_year": "2024",
+      "doi": "10.22541/au.171427818.89749392/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR788967",
+      "source": "PPR",
+      "title": "Metabolomic spectral biomarker selection towards early diagnostic of Fusarium oxysporum in tomato",
+      "first_author": "García-Barrera LJ",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-3798483/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1121067",
+      "source": "PPR",
+      "title": "Uncovering the genetic basis of fruit volatiles in  <i>Fragaria vesca</i>  through GWAS reveals FvJMT2 as a methyl benzoate biosynthesis gene with insect-repellent function",
+      "first_author": "Jiménez-Muñoz R",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.11.18.689018",
+      "pmid": null
+    },
+    {
+      "id": "PPR657051",
+      "source": "PPR",
+      "title": "Metabolic crosstalk between hydroxylated monoterpenes and salicylic acid in tomato defence response against  <i>Pseudomonas syringae</i>  pv  <i>tomato</i>",
+      "first_author": "Pérez-Pérez J",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.05.05.539605",
+      "pmid": null
+    },
+    {
+      "id": "PPR593962",
+      "source": "PPR",
+      "title": "Comparative Transcriptome Profiling Provides Insights into the Growth Promotion Activity of  <i>Pseudomonas fluorescens</i>  strain SLU99 in Tomato and Potato Plants",
+      "first_author": "binti Hanifah NAS",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.01.08.523145",
+      "pmid": null
+    },
+    {
+      "id": "PPR758977",
+      "source": "PPR",
+      "title": "Rhizosphere inoculation of PGPR strain Bacillus cereus BC56 enhances salt tolerance of cucumber",
+      "first_author": "Song H",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-3590751/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR511810",
+      "source": "PPR",
+      "title": "Grafting enhances drought stress tolerance by regulating stress-responsive gene expression and antioxidant enzyme activities in cucumbers",
+      "first_author": "Shehata SA",
+      "pub_year": "2022",
+      "doi": "10.21203/rs.3.rs-1723166/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR479843",
+      "source": "PPR",
+      "title": "High endogenous phytohormone concentrations are present in cucumber fruit apoplasts",
+      "first_author": "Kojima K.",
+      "pub_year": "2022",
+      "doi": "10.21203/rs.3.rs-1259508/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1114869",
+      "source": "PPR",
+      "title": "<i>Cryptococcus neoformans</i>  employs both PP1 and PP2A phosphatases to silence the spindle checkpoint",
+      "first_author": "Suresh AP",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.11.04.686612",
+      "pmid": null
+    },
+    {
+      "id": "PPR207572",
+      "source": "PPR",
+      "title": "H  <sub>2</sub>  O  <sub>2</sub>  /ABA signal pathway participates in the regulation of stomata opening of cucumber leaves under salt stress by putrescine",
+      "first_author": "Ma S",
+      "pub_year": "2020",
+      "doi": "10.1101/2020.08.28.272120",
+      "pmid": null
+    },
+    {
+      "id": "PPR1074171",
+      "source": "PPR",
+      "title": "Specialisation of meiotic kinetochores revealed through a synthetic spindle assembly checkpoint strategy",
+      "first_author": "Koch LB",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.08.28.672825",
+      "pmid": null
+    },
+    {
+      "id": "PPR760699",
+      "source": "PPR",
+      "title": "A chromosome-level genome assembly of  <i>Solanum chilense</i>  , a tomato wild relative associated with resistance to salinity and drought",
+      "first_author": "Molitor C",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.11.17.567531",
+      "pmid": null
+    },
+    {
+      "id": "PPR628494",
+      "source": "PPR",
+      "title": "High light can alleviate chilling stress in maize",
+      "first_author": "Cackett L",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.03.07.531599",
+      "pmid": null
+    },
+    {
+      "id": "PPR1188729",
+      "source": "PPR",
+      "title": "Effect of exogenous application of gibberellic acid and 1-naphthaleneacetic acid on the growth, yield, quality and storage behaviour of Strawberry cv. Chandler under the Northeast region of India",
+      "first_author": "Singh A",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-9558237/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1194789",
+      "source": "PPR",
+      "title": "Antarctic endophytic fungi modulate plant transcriptome to enhance physiological and biochemical performance of strawberry plants (Fragaria x ananassa) under drought and high temperatures.",
+      "first_author": "Ortega MAY",
+      "pub_year": "2024",
+      "doi": "10.22541/au.172472887.75803967/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1231107",
+      "source": "PPR",
+      "title": "Lateral root formation is stimulated by common symbiosis genes and  <i>NIN</i>  in  <i>Lotus japonicus</i>",
+      "first_author": "Cathebras C",
+      "pub_year": "2025",
+      "doi": "10.64898/2025.12.16.694690",
+      "pmid": null
+    },
+    {
+      "id": "PPR805353",
+      "source": "PPR",
+      "title": "The  <i>Xanthomonas fragariae</i>  effector XopK suppresses stomatal immunity by perturbing abscisic acid accumulation and signaling pathways in strawberry",
+      "first_author": "Cai X",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.02.07.579334",
+      "pmid": null
+    },
+    {
+      "id": "PPR782832",
+      "source": "PPR",
+      "title": "FveDAD2 negatively regulates branch crowns by affecting abscisic acid metabolism through FveHB7 in woodland strawberry",
+      "first_author": "Sun H",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.01.02.573951",
+      "pmid": null
+    },
+    {
+      "id": "PPR876196",
+      "source": "PPR",
+      "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+      "first_author": "Sanchez ER",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-4583627/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR780559",
+      "source": "PPR",
+      "title": "Chronological age, changes in DNA methylation, and endogenous hormone levels of explants promote somatic embryogenesis of Euterpe edulis Martius",
+      "first_author": "de Mello T",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-3756044/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR899525",
+      "source": "PPR",
+      "title": "VRS5 (HvTB1) binds to the promoter of tillering and floral homeotic genes to regulate their expression",
+      "first_author": "Winkelmolen T",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.08.22.609225",
+      "pmid": null
+    },
+    {
+      "id": "PPR292975",
+      "source": "PPR",
+      "title": "N  <sup>6</sup>  -methyladenosine RNA modification regulates strawberry fruit ripening in an ABA-dependent manner",
+      "first_author": "Zhou L",
+      "pub_year": "2021",
+      "doi": "10.1101/2021.03.04.433875",
+      "pmid": null
+    },
+    {
+      "id": "PPR775654",
+      "source": "PPR",
+      "title": "The diallelic self-incompatibility system in Oleaceae is controlled by a hemizygous genomic region expressing a gibberellin pathway gene",
+      "first_author": "Castric V",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.12.18.571976",
+      "pmid": null
+    },
+    {
+      "id": "PPR613761",
+      "source": "PPR",
+      "title": "Genetic mapping of the root-mycobiota in rice and its role in drought tolerance",
+      "first_author": "Andreo-Jimenez B",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-2552674/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR464285",
+      "source": "PPR",
+      "title": "Reductions of endogenous gibberellin content impact fruit development and modify tomato fruit metabolism during ripening",
+      "first_author": "Martins AO",
+      "pub_year": "2022",
+      "doi": "10.21203/rs.3.rs-1363335/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR958456",
+      "source": "PPR",
+      "title": "A Witches’ Broom Phytoplasma effector induces stunting by stabilizing a bHLH transcription factor in plants",
+      "first_author": "Yang S",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.12.24.629987",
+      "pmid": null
+    },
+    {
+      "id": "PPR1244887",
+      "source": "PPR",
+      "title": "Mechanical coordination of counter-gradient growth maintains organ curvature in the apical hook",
+      "first_author": "Robert S",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-9901835/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR642430",
+      "source": "PPR",
+      "title": "A quantitative method to measure geranylgeranyl diphosphate (GGPP) and geranylgeranyl monophosphate (GGP) in tomato (Solanum lycopersicum) fruit",
+      "first_author": "Zita W",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-2776814/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1044627",
+      "source": "PPR",
+      "title": "Exploring phenotypic and genetic variation in  <i>Lactuca</i>  with GWAS in  <i>L. sativa</i>  and  <i>L. serriola</i>",
+      "first_author": "Mehrem S",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.06.27.661939",
+      "pmid": null
+    },
+    {
+      "id": "PPR357035",
+      "source": "PPR",
+      "title": "Linking Omics and Gene Editing Tools for Rapid Improvement of Traditional Food Plants for Diversified Foods and Sustainable Food Security",
+      "first_author": "Kumar A",
+      "pub_year": "2021",
+      "doi": "10.20944/preprints202106.0363.v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}
