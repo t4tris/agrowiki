@@ -5,8 +5,8 @@ name_en: Artemisinin
 cas: 63968-64-9
 formula: C15H22O5
 class: Sesquiterpene lactone
-class_family: terpenoids_saponins_lipids
-mechanism: antioxidant_defense
+class_family: nematicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
 application_csv: Apply 0.1-1 g/kg soil amendment; 50-200 mg/L foliar spray
 efficacy_csv: MEDIUM

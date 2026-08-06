@@ -5,8 +5,8 @@ name_en: MCPB
 cas: 
 formula: 
 class: Synthetic auxin
-class_family: auxins
-mechanism: growth_regulation
+class_family: herbicides
+mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: Apply per label for crop regulation
 efficacy_csv: MEDIUM

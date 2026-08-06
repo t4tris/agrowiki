@@ -5,8 +5,8 @@ name_en: Hypochlorous acid
 cas: 
 formula: 
 class: Oxidant
-class_family: other
-mechanism: elicitor_immunity
+class_family: antibacterials
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 application_csv: Apply 100 ppm foliar spray
 efficacy_csv: MEDIUM

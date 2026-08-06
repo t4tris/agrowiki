@@ -5,7 +5,7 @@ name_en: MCPA
 cas: 
 formula: 
 class: Synthetic auxin
-class_family: auxins
+class_family: herbicides
 mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: Apply per label for weed management

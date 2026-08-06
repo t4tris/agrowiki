@@ -5,7 +5,7 @@ name_en: Sodium hypochlorite
 cas: 
 formula: 
 class: Oxidant
-class_family: other
+class_family: antibacterials
 mechanism: pesticide_action
 action_category: SEED_TREATMENT
 application_csv: Soak seeds in 100 ppm solution

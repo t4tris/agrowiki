@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Phase 2: build taxonomy — 8 categories, ~24 class families, ~15 mechanisms.
+"""Phase 2: build taxonomy — 8 categories, ~29 class families, ~15 mechanisms.
 - Updates substance cards: adds `class_family` and `mechanism` fields to frontmatter.
 - Generates wiki/categories/*.md, wiki/classes/*.md, wiki/mechanisms/*.md pages.
 Idempotent: pages are created only if missing; cards are patched in place (regex insert).
@@ -14,7 +14,10 @@ CAT_DIR = r'f:\agrowiki\Vault\wiki\categories'
 CLS_DIR = r'f:\agrowiki\Vault\wiki\classes'
 MEC_DIR = r'f:\agrowiki\Vault\wiki\mechanisms'
 
-# ---- 89 CSV classes -> ~24 families ----
+# Коды CSV, объединённые в карточки-каноны (см. dedup/merge в log.md) — карточек не имеют
+MERGED_CODES = {'MeJA (Methyl Jasmonate)', 'Triacontanol (TRIA)'}
+
+# ---- 89 CSV classes -> 29 families ----
 CLASS_FAMILY = {
     'Amino Acid': 'amino_acids_polyamines', 'Amino acid': 'amino_acids_polyamines',
     'Polyamine': 'amino_acids_polyamines', 'Osmoprotectant': 'amino_acids_polyamines',
@@ -50,12 +53,12 @@ CLASS_FAMILY = {
     'Pyrimidine': 'synthetic_growth_regulators', 'Diazine': 'synthetic_growth_regulators',
     'Synthetic polymer': 'synthetic_growth_regulators', 'Halogenated pyruvate': 'synthetic_growth_regulators',
     'Alkylating agent': 'synthetic_growth_regulators', 'Nucleoside analog': 'synthetic_growth_regulators',
-    'Polymeric guanidine': 'synthetic_growth_regulators', 'Nitrile': 'synthetic_growth_regulators',
+    'Polymeric guanidine': 'antibacterials', 'Nitrile': 'synthetic_growth_regulators',
     'Ethylene inhibitor': 'ethylene', 'Ethylene releaser': 'ethylene', 'Ethylene': 'ethylene',
     'Indolamine derivative': 'indolamines', 'Indolamine': 'indolamines', 'Indoleamine': 'indolamines',
     'Gasotransmitter': 'gasotransmitters', 'Iron nitrosyl complex': 'gasotransmitters',
     'Sulfide salt': 'gasotransmitters',
-    'Related': 'other', 'Oxidant': 'other', 'Solvent': 'other', 'Surfactant': 'other',
+    'Related': 'other', 'Oxidant': 'antibacterials', 'Solvent': 'other', 'Surfactant': 'other',
     'Disaccharide': 'carbohydrates', 'Polysaccharide': 'carbohydrates',
     'Monosaccharide': 'carbohydrates', 'Carbohydrate source': 'carbohydrates',
     'Saponin': 'terpenoids_saponins_lipids', 'Sesquiterpene lactone': 'terpenoids_saponins_lipids',
@@ -74,7 +77,10 @@ DEFAULT_MECHANISM = {
     'terpenoids_saponins_lipids': 'growth_regulation', 'indolamines': 'growth_regulation',
     'gasotransmitters': 'gas_signaling', 'voc_volatiles': 'jasmonate_sar_defense',
     'sar_signals_elicitors': 'jasmonate_sar_defense', 'fungicides': 'pesticide_action',
-    'insecticides': 'pesticide_action', 'biostimulants_extracts': 'elicitor_immunity',
+    'insecticides': 'pesticide_action', 'herbicides': 'pesticide_action',
+    'nematicides': 'pesticide_action', 'miticides': 'pesticide_action',
+    'antibacterials': 'pesticide_action', 'antivirals': 'pesticide_action',
+    'biostimulants_extracts': 'elicitor_immunity',
     'elements_minerals': 'nutrition_metabolism',
     'synthetic_growth_regulators': 'growth_regulation', 'other': 'growth_regulation',
 }
@@ -107,6 +113,10 @@ MOA_RULES = [
     ('stress', 'aba_stress_signaling'), ('ABA', 'aba_stress_signaling'),
     ('nAChR', 'pesticide_action'), ('sterol', 'pesticide_action'),
     ('antimicrobial', 'pesticide_action'), ('nematicid', 'pesticide_action'),
+    ('herbicid', 'pesticide_action'), ('weed control', 'pesticide_action'),
+    ('antibacteri', 'pesticide_action'), ('bactericid', 'pesticide_action'),
+    ('antivir', 'pesticide_action'), ('viruc', 'pesticide_action'),
+    ('disinfect', 'pesticide_action'), ('sanitizer', 'pesticide_action'),
     ('glycolysis inhibitor', 'pesticide_action'), ('metabolic inhibitor', 'pesticide_action'),
     ('seed sanitizer', 'pesticide_action'),
     ('chelat', 'nutrition_metabolism'), ('nitrogen', 'nutrition_metabolism'),
@@ -127,7 +137,8 @@ OVERRIDES = {
     'GA3': 'gibberellin_action', 'GA1': 'gibberellin_action', 'GA4': 'gibberellin_action',
     'IBA': 'auxin_signaling', 'NAA': 'auxin_signaling', '2,4-D': 'auxin_signaling',
     '4-CPA': 'auxin_signaling', '3-CPA': 'auxin_signaling', '2,4,5-T': 'auxin_signaling',
-    'MCPA': 'auxin_signaling', 'Dicamba': 'auxin_signaling', 'BNOA': 'auxin_signaling',
+    'MCPA': 'auxin_signaling', 'Dicamba': 'auxin_signaling', 'MCPB': 'auxin_signaling',
+    'Picloram': 'auxin_signaling', 'Triclopyr': 'auxin_signaling', 'BNOA': 'auxin_signaling',
     '6-BA': 'cytokinin_signaling', '6-BAP': 'cytokinin_signaling', 'Kinetin': 'cytokinin_signaling',
     'Zeatin': 'cytokinin_signaling', '2iP': 'cytokinin_signaling', 'CPPU': 'cytokinin_signaling',
     'TDZ': 'cytokinin_signaling', 'Thidiazuron': 'cytokinin_signaling',
@@ -156,11 +167,19 @@ OVERRIDES = {
     'L-carnitine': 'nutrition_metabolism',      # карнитин — метаболизм/энергетика
     # Коррекции taxonomy_check (контракт v1.4, валидация 2026-08-04)
     'Silicon': 'antioxidant_defense',           # основной механизм — антиоксидантная защита
+    'Artemisinin': 'pesticide_action',          # заявка CSV: нематоцид (не подтверждена валидацией)
+    'Polyhexamethylene guanidine': 'pesticide_action',  # биоцид широкого спектра, а не PGR
+    'HOCl': 'pesticide_action',                 # дезинфектант (активный хлор), а не элиситор
 }
 
 # Ручные правки class_family по итогам валидации (taxonomy_check v1.4); применяются до маппинга классов
 FAMILY_OVERRIDES = {
     'Paclobutrazol': 'synthetic_growth_regulators',  # триазольный ретардант, НЕ фунгицид по применению
+    # Синтетические ауксиновые гербициды (CSV-класс 'Synthetic auxin', MoA указывает на гербицидное применение)
+    '2,4-D': 'herbicides', '2,4,5-T': 'herbicides', 'MCPA': 'herbicides', 'MCPB': 'herbicides',
+    'Dicamba': 'herbicides', 'Picloram': 'herbicides', 'Triclopyr': 'herbicides',
+    # Нематоциды (CSV MoA «Nematicidal agent»)
+    'Artemisinin': 'nematicides',
 }
 
 # ---------- page metadata ----------
@@ -227,13 +246,28 @@ FAMILIES = [
      'Химические средства защиты от грибных болезней: ингибиторы стеролов, дыхания, микротрубочек.'),
     ('insecticides', 'Инсектициды', ['Neonicotinoid'],
      'Химические средства защиты от насекомых: неоникотиноиды (агонисты nAChR).'),
+    ('herbicides', 'Гербициды', ['Synthetic auxin'],
+     'Синтетические ауксиновые гербициды (2,4-D, MCPA, дикамба, пиклорам, триклопир): сверхоптимальные '
+     'дозы ауксинов вызывают неконтролируемый рост и гибель двудольных сорняков. '
+     'В CSV выделены по Mode_of_Action (Auxin herbicide, Weed control at high dose).'),
+    ('nematicides', 'Нематоциды', [],
+     'Средства против нематод. В CSV: артемизинин (MoA «Nematicidal agent») — заявка не подтверждена '
+     'валидацией (insufficient_data).'),
+    ('miticides', 'Митициды (акарициды)', [],
+     'Средства против растительноядных клещей. В CSV веществ нет — семейство создано для полноты '
+     'классификации пестицидов.'),
+    ('antibacterials', 'Антибактериальные', ['Polymeric guanidine', 'Oxidant'],
+     'Бактерициды и дезинфектанты: полимерные гуанидины (PHMG), активный хлор (HOCl, гипохлорит натрия).'),
+    ('antivirals', 'Противовирусные', [],
+     'Средства против вирусов растений. В CSV веществ нет — семейство создано для полноты '
+     'классификации пестицидов.'),
     ('biostimulants_extracts', 'Биостимуляторы и экстракты', ['Biostimulant', 'Marine biostimulant', 'Natural biostimulant', 'Organic extract', 'Organic byproduct', 'Fungicide/Biostimulant'],
      'Экстракты водорослей (Ascophyllum, Ecklonia), гуминовые вещества, микробные биостимуляторы.'),
     ('elements_minerals', 'Элементы и минералы', ['Beneficial element', 'Chelated nutrient', 'Metal / metal-oxide nanoparticles'],
      'Полезные элементы (Si, Co, Se), хелатированные микроудобрения, наночастицы.'),
-    ('synthetic_growth_regulators', 'Синтетические регуляторы роста', ['Nitrophenolate', 'Growth inhibitor', 'Acylcyclohexanedione', 'Quaternary ammonium', 'Synthetic tertiary amine', 'Defoliant/regulator', 'Pyrimidine', 'Diazine', 'Synthetic polymer', 'Halogenated pyruvate', 'Alkylating agent', 'Nucleoside analog', 'Polymeric guanidine', 'Nitrile'],
+    ('synthetic_growth_regulators', 'Синтетические регуляторы роста', ['Nitrophenolate', 'Growth inhibitor', 'Acylcyclohexanedione', 'Quaternary ammonium', 'Synthetic tertiary amine', 'Defoliant/regulator', 'Pyrimidine', 'Diazine', 'Synthetic polymer', 'Halogenated pyruvate', 'Alkylating agent', 'Nucleoside analog', 'Nitrile'],
      'Синтетические соединения, регулирующие рост: нитрофеноляты (Atonik), DA-6, дефолианты.'),
-    ('other', 'Прочее', ['Related', 'Oxidant', 'Solvent', 'Surfactant'],
+    ('other', 'Прочее', ['Related', 'Solvent', 'Surfactant'],
      'Вспомогательные и трудно классифицируемые соединения: DMSO, децилглюкозид, пероксид водорода.'),
 ]
 
@@ -281,8 +315,9 @@ MECHANISMS = [
      'Доноры оксида азота, сероводорода и угарного газа — сигнальные молекулы, модулирующие '
      'укоренение, прорастание и стрессоустойчивость.'),
     ('pesticide_action', 'Пестицидное действие',
-     'Фунгициды (триазолы, стробилурины, бензимидазолы) и инсектициды (неоникотиноиды): '
-     'прямое подавление патогенов и вредителей.'),
+     'Средства защиты растений: фунгициды (триазолы, стробилурины, бензимидазолы), инсектициды '
+     '(неоникотиноиды), гербициды, нематоциды, митициды, антибактериальные и противовирусные: '
+     'прямое подавление патогенов, вредителей и сорняков.'),
 ]
 
 # ---------- helpers ----------
@@ -313,15 +348,17 @@ def insert_frontmatter(path, family, mechanism, refresh=False):
     if 'class_family:' in text:
         if not refresh:
             return False
-        new_text = re.sub(r'^(class_family: .*)$', f'class_family: {family}', text, count=1, flags=re.M)
-        new_text = re.sub(r'^(mechanism: .*)$', f'mechanism: {mechanism}', new_text, count=1, flags=re.M)
+        # NB: [^\r\n]* вместо .* — не съедать \r (CRLF) при перезаписи
+        new_text = re.sub(r'^(class_family: )[^\r\n]*', rf'\g<1>{family}', text, count=1, flags=re.M)
+        new_text = re.sub(r'^(mechanism: )[^\r\n]*', rf'\g<1>{mechanism}', new_text, count=1, flags=re.M)
         if new_text == text:
             return False
         with open(path, 'w', encoding='utf-8') as f:
             f.write(new_text)
         return True
     # insert after the `class:` line inside frontmatter
-    new_text = re.sub(r'^(class: .*)$', r'\1\nclass_family: %s\nmechanism: %s' % (family, mechanism),
+    new_text = re.sub(r'^(class: )[^\r\n]*',
+                      rf'\g<0>\nclass_family: {family}\nmechanism: {mechanism}',
                       text, count=1, flags=re.M)
     if new_text == text:
         return False
@@ -371,7 +408,8 @@ def main():
                     patched += 1
                 break
         else:
-            print(f'WARN: card not found for code {code}')
+            if code not in MERGED_CODES:
+                print(f'WARN: card not found for code {code}')
 
     print(f'cards patched: {patched}/{len(by_code)}')
 

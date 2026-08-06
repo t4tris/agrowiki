@@ -5,7 +5,7 @@ name_en: Dicamba
 cas: 
 formula: 
 class: Synthetic auxin
-class_family: auxins
+class_family: herbicides
 mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 application_csv: Apply 5-20 ppm foliar spray

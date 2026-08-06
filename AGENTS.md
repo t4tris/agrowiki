@@ -33,7 +33,7 @@ f:\agrowiki\           ← КОРЕНЬ ПРОЕКТА (git repo, НЕ част�
     └── wiki/          (слой 2: вики, пишет LLM)
         ├── substances/    (271 карточка вещества)
         ├── categories/    (8 категорий действий)
-        ├── classes/       (~20 семейств хим. классов)
+        ├── classes/       (29 семейств хим. классов)
         ├── mechanisms/    (механизмы действия)
         ├── crops/         (3 культуры: Томат, Огурец, Клубника)
         ├── syntheses/     (сравнения и ответы-страницы)
@@ -118,7 +118,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - **Совпадение CAS** у двух кодов CSV → объединить в одну страницу, коды в `aliases`.
 - **Культуры:** Томат = Solanum lycopersicum, Огурец = Cucumis sativus, Клубника = Fragaria × ananassa. Синонимы использовать в fallback-запросах.
 - **Единицы:** ppm/mg/L/µM не конвертировать, писать как в источнике + в CSV.
-- **Классы:** 89 CSV-классов → 24 семейства (страницы `wiki/classes/`, маппинг в `_scripts/gen_taxonomy.py`). Поле `class_family` в карточке — slug семейства, `mechanism` — slug механизма (страницы `wiki/mechanisms/`, 15 механизмов). При генерации новых карточек запускать `python _scripts/gen_taxonomy.py` (идемпотентно).
+- **Классы:** 89 CSV-классов → 29 семейств (страницы `wiki/classes/`, маппинг в `_scripts/gen_taxonomy.py`). Поле `class_family` в карточке — slug семейства, `mechanism` — slug механизма (страницы `wiki/mechanisms/`, 15 механизмов). При генерации новых карточек запускать `python _scripts/gen_taxonomy.py` (идемпотентно).
 
 ## Контракт отчёта сабагента поиска (JSON v1.4)
 Один запуск = одно вещество × 3 культуры. Схема (обязательные поля, enum'ы строгие):
