@@ -79,6 +79,3 @@ ED50/TD50/стойкость не опубликованы. GB — природ�
 - [PMID 32429524](https://pubmed.ncbi.nlm.nih.gov/32429524/) — GB + хитозан, CMV огурца (2020)
 - [PMID 30388672](https://pubmed.ncbi.nlm.nih.gov/30388672/) — генотип-зависимость, соль (2019)
 - Артефакт: [search_GlycineBetaine_2026-08-04.json](../../../raw/evidence/G/Glycine%20Betaine/search_GlycineBetaine_2026-08-04.json)
-
-## Источники
-<!-- PMID / DOI / URL -->
