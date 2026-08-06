@@ -1,5 +1,18 @@
 # -*- coding: utf-8 -*-
-"""L1 autocheck: schema + type-check + PMID esummary + DOI Crossref for contract v1.4 report."""
+"""L1 autocheck: schema + type-check + источник-верификация для контракта v1.5.
+
+Контракт v1.5 (ревью 2026-08-06 part 3): добавлена поддержка источников БЕЗ PMID/DOI —
+source_type: pmid | doi | openalex | isbn | url_verified | label.
+Обратная совместимость: source со старыми полями pmid/doi обрабатывается как v1.4.
+
+Верификация:
+- pmid  -> esummary (title не пуст)
+- doi   -> Crossref (title не пуст)
+- openalex -> OpenAlex API (work резолвится)
+- url_verified -> HTTP 200
+- isbn  -> контрольная цифра ISBN-10/ISBN-13
+- label -> допустим только с verified:true и verification_method: manual_read
+"""
 import json
 import os
 import sys
@@ -15,12 +28,58 @@ CLAIM_TYPES = {'dosage', 'effect', 'method', 'efficacy'}
 RELEVANCE = {'directly_supports', 'directly_contradicts', 'partially_relevant', 'irrelevant'}
 EQ = {'direct_abstract', 'title_only', 'inferred'}
 SEVERITY = {'high', 'medium', 'low'}
+# v1.5: типы источников и методы верификации
+SOURCE_TYPES = {'pmid', 'doi', 'openalex', 'isbn', 'url_verified', 'label'}
+VERIF_METHODS = {'esummary', 'crossref', 'openalex_api', 'manual_read'}
+PAPER_TYPES = {'review', 'trial', 'trial_in_vitro', 'mechanistic', 'preprint',
+               'conference', 'regional_journal'}
+VERSIONS = {'1.4', '1.5'}
 
 
 def fetch(url, timeout=30):
-    req = urllib.request.Request(url, headers={'User-Agent': 'agro-wiki-l1/1.0'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'agro-wiki-l1/1.5'})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode('utf-8', 'replace')
+
+
+def isbn_check_digit(isbn):
+    """Проверка контрольной цифры ISBN-10/ISBN-13. Возвращает True/False."""
+    isbn = isbn.replace('-', '').replace(' ', '').upper()
+    if len(isbn) == 10:
+        s = 0
+        for i, ch in enumerate(isbn[:9]):
+            if not ch.isdigit():
+                return False
+            s += int(ch) * (10 - i)
+        last = isbn[9]
+        check = 'X' if (11 - s % 11) == 10 else str((11 - s % 11) % 11)
+        return last == check
+    if len(isbn) == 13:
+        if not isbn.isdigit():
+            return False
+        s = sum(int(ch) * (1 if i % 2 == 0 else 3) for i, ch in enumerate(isbn[:12]))
+        check = (10 - s % 10) % 10
+        return int(isbn[12]) == check
+    return False
+
+
+def iter_sources(d):
+    """Итерация по всем source в claims всех культур."""
+    for crop, cv in d.get('crops', {}).items():
+        for c in cv.get('claims', []):
+            for s in c.get('sources', []):
+                yield s
+
+
+def source_id(s):
+    """Нормализованный идентификатор source (v1.5) или из старых полей pmid/doi."""
+    if s.get('source_type'):
+        return s.get('source_type'), s.get('id', '')
+    if s.get('pmid'):
+        return 'pmid', s['pmid']
+    if s.get('doi'):
+        return 'doi', s['doi']
+    return None, None
 
 
 def main(path):
@@ -28,8 +87,9 @@ def main(path):
     errors = []
 
     # --- schema ---
-    if d.get('contract_version') != '1.4':
-        errors.append(f'contract_version != 1.4: {d.get("contract_version")}')
+    ver = d.get('contract_version')
+    if ver not in VERSIONS:
+        errors.append(f'contract_version невалиден: {ver} (ожидается 1.4 или 1.5)')
     for k in REQUIRED_TOP:
         if k not in d:
             errors.append(f'отсутствует поле: {k}')
@@ -113,23 +173,50 @@ def main(path):
             if c.get('evidence_quality') not in EQ:
                 errors.append(f'crops.{crop}.claims evidence_quality невалиден: {c.get("evidence_quality")}')
             for s in c.get('sources', []):
-                if not s.get('pmid') and not s.get('doi'):
-                    errors.append('source без pmid и doi')
+                stype, sid = source_id(s)
+                if stype is None:
+                    errors.append(f'crops.{crop}.claims source без идентификатора (нужен pmid/doi или source_type+id)')
+                    continue
+                if stype in ('pmid', 'doi') and s.get('source_type'):
+                    errors.append(f'crops.{crop}.claims source: source_type={stype}, но заполнены старые поля pmid/doi — используйте одно представление')
+                if stype not in SOURCE_TYPES:
+                    errors.append(f'crops.{crop}.claims source_type невалиден: {stype}')
+                if not sid:
+                    errors.append(f'crops.{crop}.claims source: пустой id для source_type={stype}')
+                vm = s.get('verification_method')
+                if vm is not None and vm not in VERIF_METHODS:
+                    errors.append(f'crops.{crop}.claims source verification_method невалиден: {vm}')
+                if s.get('paper_type') is not None and s.get('paper_type') not in PAPER_TYPES:
+                    errors.append(f'crops.{crop}.claims source paper_type невалиден: {s.get("paper_type")}')
+                # label — самое слабое: только с verified:true и manual_read
+                if stype == 'label' and not (s.get('verified') and vm == 'manual_read'):
+                    errors.append(f'crops.{crop}.claims source label: допустим только с verified:true и verification_method:manual_read')
     if d.get('verdict', {}).get('evidence_level') not in {'strong', 'moderate', 'weak', 'unverified'}:
         errors.append('verdict.evidence_level невалиден')
     if d.get('verdict', {}).get('status_suggested') not in {'verified', 'corrected', 'partial',
                                                             'insufficient_data', 'conflicting'}:
         errors.append('verdict.status_suggested невалиден')
 
-    # --- PMID esummary batch ---
-    pmids = []
-    for crop, cv in d.get('crops', {}).items():
-        for c in cv.get('claims', []):
-            for s in c.get('sources', []):
-                if s.get('pmid'):
-                    pmids.append(s['pmid'])
+    # --- Источник-верификация (v1.5): pmid→esummary, doi→crossref, openalex→API, url→HTTP, isbn→check digit, label→manual ---
+    pmids, dois, oalex, urls, isbns, labels = [], [], [], [], [], []
+    for s in iter_sources(d):
+        stype, sid = source_id(s)
+        if stype == 'pmid':
+            pmids.append(sid)
+        elif stype == 'doi':
+            dois.append(sid)
+        elif stype == 'openalex':
+            oalex.append(sid)
+        elif stype == 'url_verified':
+            urls.append(sid)
+        elif stype == 'isbn':
+            isbns.append(sid)
+        elif stype == 'label':
+            labels.append(sid)
     pmids = sorted(set(pmids))
-    print(f'--- L1: уникальных PMID: {len(pmids)}')
+
+    print(f'--- L1: PMID: {len(pmids)}, DOI: {len(set(dois))}, OpenAlex: {len(set(oalex))}, URL: {len(set(urls))}, ISBN: {len(set(isbns))}, label: {len(set(labels))}')
+
     pmid_ok = {}
     for i in range(0, len(pmids), 50):
         batch = pmids[i:i + 50]
@@ -140,15 +227,11 @@ def main(path):
             res = js.get('result', {})
             for pid in batch:
                 r = res.get(pid)
-                if r and r.get('title'):
-                    pmid_ok[pid] = r['title']
-                else:
-                    pmid_ok[pid] = None
+                pmid_ok[pid] = r['title'] if (r and r.get('title')) else None
         except Exception as e:
             for pid in batch:
                 pmid_ok[pid] = f'ESUMMARY_ERROR: {e}'
         time.sleep(0.5)
-
     bad = [p for p, t in pmid_ok.items() if not t]
     if bad:
         errors.append(f'PMID не подтверждены esummary: {bad}')
@@ -157,17 +240,8 @@ def main(path):
         for p in list(pmid_ok)[:5]:
             print(f'  {p}: {pmid_ok[p][:90]}')
 
-    # --- DOI Crossref ---
-    dois = []
-    for crop, cv in d.get('crops', {}).items():
-        for c in cv.get('claims', []):
-            for s in c.get('sources', []):
-                if s.get('doi'):
-                    dois.append(s['doi'])
-    dois = sorted(set(dois))
-    print(f'--- L1: уникальных DOI: {len(dois)}')
     doi_ok = {}
-    for doi in dois:
+    for doi in sorted(set(dois)):
         try:
             js = json.loads(fetch(f'https://api.crossref.org/works/{urllib.parse.quote(doi)}'))
             title = js.get('message', {}).get('title', [''])
@@ -180,6 +254,49 @@ def main(path):
         errors.append(f'DOI не подтверждены Crossref: {bad_doi}')
     else:
         print('Все DOI подтверждены ✅')
+
+    # v1.5: OpenAlex — work резолвится (всегда возвращает JSON, проверяем title)
+    oalex_ok = {}
+    for wid in sorted(set(oalex)):
+        wid_clean = wid.replace('OpenAlex:', '').replace('https://openalex.org/', '')
+        try:
+            js = json.loads(fetch(f'https://api.openalex.org/works/{urllib.parse.quote(wid_clean)}'))
+            title = js.get('title')
+            oalex_ok[wid] = title if title else 'NO_TITLE'
+        except Exception as e:
+            oalex_ok[wid] = f'OPENALEX_ERROR: {e}'
+        time.sleep(0.3)
+    bad_oa = [x for x, t in oalex_ok.items() if isinstance(t, str) and t.startswith(('OPENALEX_ERROR', 'NO_TITLE'))]
+    if bad_oa:
+        errors.append(f'OpenAlex ID не подтверждены: {bad_oa}')
+    else:
+        print('Все OpenAlex ID подтверждены ✅')
+        for k in list(oalex_ok)[:5]:
+            print(f'  {k}: {oalex_ok[k][:90]}')
+
+    # v1.5: URL — HTTP 200
+    bad_url = []
+    for u in sorted(set(urls)):
+        u_clean = u.replace('URL:', '')
+        try:
+            req = urllib.request.Request(u_clean, method='HEAD',
+                                         headers={'User-Agent': 'agro-wiki-l1/1.5'})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                if r.status >= 400:
+                    bad_url.append(u)
+        except Exception:
+            bad_url.append(u)
+    if bad_url:
+        errors.append(f'URL недоступны (не HTTP 200): {bad_url}')
+    else:
+        print('Все URL подтверждены ✅')
+
+    # v1.5: ISBN — контрольная цифра
+    bad_isbn = [i for i in sorted(set(isbns)) if not isbn_check_digit(i.replace('ISBN:', ''))]
+    if bad_isbn:
+        errors.append(f'ISBN невалидны (контрольная цифра): {bad_isbn}')
+    else:
+        print('Все ISBN подтверждены ✅')
 
     # --- Вывод ---
     print()

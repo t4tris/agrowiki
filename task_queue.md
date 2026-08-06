@@ -287,7 +287,9 @@ last_updated: 2026-08-06
 - [ ] AUDIT_TAXONOMY-20: закрыть 20 явно спорных **до Фазы 4** (синтезы), отдельный батч без полной валидации (только taxonomy_check)
 - [ ] TAXONOMY_CHECK: с контракта v1.4 каждый сабагент подтверждает/исправляет class_family/mechanism карточки; оркестратор применяет corrections и фиксирует в notes; при правке маппинга — `python _scripts/gen_taxonomy.py --refresh`
 - [ ] SYNONYMS: обновлять `raw/normalization/synonyms.json` после каждой валидации (`python _scripts/gen_synonyms.py` — генерирует из aliases карточек)
-- [ ] MIGRATE v1.2→v1.4: при Lint-перепроверке пилотных карточек (GA3, IBA, Triacontanol, Artemisinin, Chitosan) — либо миграция схемы, либо повторная валидация по v1.4
+- [ ] MIGRATE v1.2→v1.5: при Lint-перепроверке пилотных карточек (GA3, IBA, Triacontanol, Artemisinin, Chitosan) — либо миграция схемы, либо повторная валидация по v1.5
+- [ ] CARD_WRITER (SDD-кандидат, ревью 2026-08-06 part 3): автоматический writer карточек — скрипт, перезаписывающий файл целиком из отчёта v1.5 (защита от «хвостов» бутстрапа на уровне инструмента, а не инструкции; правило 10 LLM может нарушить)
+- [ ] RETRY_PROCESS: сохранять retry-ответы сабагентов в `raw/evidence/<код>/subagent_response_retry.txt` → JSON в `search_<код>_<дата>_rev2.json` (supersedes); `subagent_response_retry.txt` в git НЕ включать (правило 12, v1.5)
 
 ## ✅ COMPLETED
 - [x] INGEST: CSV → 267 черновиков карточек

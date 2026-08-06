@@ -78,28 +78,90 @@
   },
   "crops": {
     "tomato": {
-      "status": "found_unverified",
+      "status": "found_verified",
       "search_stats": {
         "pubmed": 0,
         "europe_pmc": 0,
         "culture_mentioned": 1
       },
-      "claims": [],
-      "gap": "Единственная полевая работа по томату (Figueiredo 2015) не имеет DOI/PMID — не верифицируема через L1, но факты реально прочитаны и сохранены в related_evidence.",
-      "related_evidence": [
+      "claims": [
         {
-          "pmid": null,
-          "year": 2015,
-          "claim": "Фолиарная обработка trinexapac-ethyl сокращает размер растения индетерминантного томата (cv. Debora Plus), уменьшая расстояние между узлами и кистями, увеличивает диаметр стебля",
-          "note": "OpenAlex W1790097572 (Figueiredo et al. 2015); DOI и PMID отсутствуют — верификация через L1 невозможна, но работа реально прочитана (verified: true)"
+          "type": "effect",
+          "value": "Сокращение длины междоузлий и расстояния между кистями, увеличение диаметра стебля у индетерминантного томата",
+          "context": "Полевой опыт, индетерминантный томат cv. Debora Plus, возрастающие дозы этил-тринексапака (ET), фолиарная обработка",
+          "dosage_normalized": {
+            "original": "возрастающие дозы ET (дозы в аннотации не указаны)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 252.26,
+            "conversion_source": "PubChem CID 92421",
+            "note": "конкретные дозы в аннотации не приведены"
+          },
+          "conditions": {
+            "stage": "вегетативный рост/плодоношение",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "фолиарная обработка"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "source_type": "openalex",
+              "id": "OpenAlex:W1790097572",
+              "year": 2015,
+              "verified": true,
+              "verification_method": "openalex_api",
+              "paper_type": "regional_journal",
+              "doi": null,
+              "pmid": null,
+              "oa_url": "https://openalex.org/W1790097572"
+            }
+          ],
+          "quote": "Trinexapac-Ethyl reduced the size of the plant by shortening the distance between node and between curls of tomatoes, and helped to increase the diameter of the stem of the plant."
         },
         {
-          "pmid": null,
-          "year": 2015,
-          "claim": "При возрастании дозы ET снижается продуктивность, средняя масса плода и доля крупных/средних плодов; растёт доля мелких плодов",
-          "note": "OpenAlex W1790097572 (Figueiredo et al. 2015); тот же полевой опыт cv. Debora Plus"
+          "type": "effect",
+          "value": "Снижение продуктивности, средней массы плода и доли крупных/средних плодов при возрастании дозы; рост доли мелких плодов",
+          "context": "Тот же полевой опыт cv. Debora Plus; возрастающие дозы ET",
+          "dosage_normalized": {
+            "original": "возрастающие дозы ET",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 252.26,
+            "conversion_source": "PubChem CID 92421",
+            "note": "дозы в аннотации не указаны"
+          },
+          "conditions": {
+            "stage": "плодоношение",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "фолиарная обработка"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "source_type": "openalex",
+              "id": "OpenAlex:W1790097572",
+              "year": 2015,
+              "verified": true,
+              "verification_method": "openalex_api",
+              "paper_type": "regional_journal",
+              "doi": null,
+              "pmid": null,
+              "oa_url": "https://openalex.org/W1790097572"
+            }
+          ],
+          "quote": "the increase dose of ET led to reduced productivity, average fruit weight and percentage of large and medium-sized fruit, and accordingly increased the percentage of small fruit produced."
         }
-      ]
+      ],
+      "gap": "Полевой опыт Figueiredo 2015 (OpenAlex W1790097572, без DOI/PMID) подтверждает контроль длины междоузлий и предупреждает о снижении урожайности при возрастании дозы; конкретный диапазон 100-400 ppm в аннотации не указан.",
+      "related_evidence": []
     },
     "cucumber": {
       "status": "no_data",
@@ -177,7 +239,7 @@
   "verdict": {
     "evidence_level": "weak",
     "status_suggested": "partial",
-    "reason": "Механизм (ингибитор биосинтеза ГК) подтверждён (PMID 15012200, 34608958). По томату есть реальный полевой факт (Figueiredo 2015, контроль междоузлий и диаметра стебля, обратная сторона дозы), но работа без DOI/PMID — не верифицируема через L1. По огурцу и клубнике данных нет. CSV-доза 100-400 ppm не подтверждена количественно."
+    "reason": "Механизм (ингибитор биосинтеза ГК) подтверждён (PMID 15012200, 34608958). По томату есть полевой факт (Figueiredo 2015, OpenAlex W1790097572): контроль междоузлий/диаметра стебля + обратная сторона дозы; источник без DOI/PMID, верифицирован через OpenAlex API (v1.5). По огурцу и клубнике данных нет. CSV-доза 100-400 ppm не подтверждена количественно."
   },
   "taxonomy_check": {
     "class_family_confirmed": true,

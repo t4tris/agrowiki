@@ -165,7 +165,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - **Единицы:** ppm/mg/L/µM не конвертировать, писать как в источнике + в CSV.
 - **Классы:** 89 CSV-классов → 29 семейств (страницы `wiki/classes/`, маппинг в `_scripts/gen_taxonomy.py`). Поле `class_family` в карточке — slug семейства, `mechanism` — slug механизма (страницы `wiki/mechanisms/`, 15 механизмов). При генерации новых карточек запускать `python _scripts/gen_taxonomy.py` (идемпотентно).
 
-## Контракт отчёта сабагента поиска (JSON v1.4)
+## Контракт отчёта сабагента поиска (JSON v1.5)
 Один запуск = одно вещество × 3 культуры. Схема (обязательные поля, enum'ы строгие):
 
 **Правки v1.3 (по итогам пилота 2026-08-04):**
@@ -177,9 +177,17 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 **Правки v1.4 (по итогам внешнего аудита 2026-08-04):**
 - Добавлено поле **`taxonomy_check`** — сабагент обязан подтвердить или исправить таксономию карточки: в промпт передаются текущие `class_family` и `mechanism` из frontmatter карточки; сабагент сверяет их с литературой и сообщает `class_family_confirmed` / `mechanism_confirmed` (bool). При исправлении — заполняет `corrections` (массив `{field, from, to, reason}`). L1 проверяет обязательность и типы.
 - Оркестратор применяет `corrections` к frontmatter карточки (поле `mechanism`/`class_family`), фиксирует в `notes`; обратные изменения в `_scripts/gen_taxonomy.py` (OVERRIDES) — только через `--refresh` после правки маппинга (по умолчанию скрипт ручные правки не перезаписывает).
+
+**Правки v1.5 (по итогам внешнего аудита 2026-08-06 part 3):**
+- **`source_type` enum** — поддержка источников БЕЗ PMID/DOI: `pmid | doi | openalex | isbn | url_verified | label`. Каждый source в `claims.sources` обязан иметь ЛИБО старые поля `pmid`/`doi`, ЛИБО `source_type` + `id`. Реальные работы без DOI (региональные журналы, старые статьи, конференции, техотчёты — ~20–25% агрономической литературы) НЕ выбрасываются: они цитируются с `source_type: "openalex"` (или `isbn`/`url_verified`/`label`), `verified: true` и `verification_method`.
+- **`verification_method`**: `esummary | crossref | openalex_api | manual_read` — как верифицирован источник.
+- **`paper_type`** расширен: `+ conference, regional_journal`.
+- **L1-верификация новых типов:** openalex → OpenAlex API (work резолвится); url_verified → HTTP 200; isbn → контрольная цифра ISBN-10/13; label → только с `verified: true` и `verification_method: manual_read` (название работы без идентификатора).
+- **`phi_mrl.required_for` УДАЛЁН из схемы** (служебная строка попадала в карточки) — вместо него: если есть реальные PHI/MRL-факты → `phi_mrl.source` с фактическим источником; иначе null.
+- **Retry-ответы:** повторный запуск сабагента сохраняется как `search_<код>_<дата>_rev2.json` (supersedes) — НЕ коммитить `subagent_response_retry.txt` как артефакт поиска.
 ```json
 {
-  "contract_version": "1.4",
+  "contract_version": "1.5",
   "substance": {"code": "IBA", "csv_name": "...", "queried_name": "..."},
   "searches": {
     "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "openalex", "pubchem"],
@@ -212,8 +220,12 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
         "evidence_quality": "direct_abstract|title_only|inferred",
         "stats": {"n_studies": 3, "p_value": 0.001, "effect_size": "large"},
         "sources": [{"pmid": "...", "year": 2006, "verified": true,
-                     "paper_type": "review|trial|trial_in_vitro|mechanistic|preprint",
-                     "doi": "...", "oa_url": null}],
+                     "paper_type": "review|trial|trial_in_vitro|mechanistic|preprint|conference|regional_journal",
+                     "doi": "...", "oa_url": null},
+                    {"source_type": "openalex|isbn|url_verified|label", "id": "OpenAlex:W1790097572|ISBN:978-...|URL:https://...|название работы",
+                     "year": 2015, "verified": true,
+                     "verification_method": "esummary|crossref|openalex_api|manual_read",
+                     "paper_type": "trial|conference|regional_journal", "doi": null, "oa_url": null}],
         "quote": "..."
       }],
       "gap": "...",
@@ -224,8 +236,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
   "toxicity_window": {"ED50_ppm": null, "TD50_ppm": null, "therapeutic_index": null,
                       "soil_persistence": null, "notes": "только из литературы"},
   "phi_mrl": {"PHI_days": null, "MRL_EU_mg_kg": null, "MRL_USA_mg_kg": null,
-              "MRL_Codex_mg_kg": null, "source": "EU Pesticides Database|OpenFoodTox|Codex",
-              "required_for": "HIGH-efficacy вещества"},
+              "MRL_Codex_mg_kg": null, "source": "EU Pesticides Database|OpenFoodTox|Codex"},
   "contraindications": [{"condition": "...", "effect": "...", "severity": "high|medium|low", "sources": ["PMID:..."]}],
   "conflicts": [{"csv_field": "...", "csv_value": "...", "literature_summary": "...",
                  "severity": "high|medium|low", "sources": ["PMID:..."]}],
@@ -252,9 +263,10 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 9. **Типы (v1.3):** `conflicts` и `contraindications` — массивы объектов или пустые `[]`. Строки вместо dict, null-заглушки и placeholders **запрещены** — L1 падает на type-check.
 10. **Europe PMC:** если у сабагента `searches.failed` содержит `{endpoint: "europepmc", retry_by_orchestrator: true}` → оркестратор сам выполняет запрос в своей среде, дополняет отчёт как `orchestrator_fallback` (файл `raw/evidence/{A-Z}/<код>/orchestrator_fallback_<дата>.json`) и логирует в log.md. Если и оркестратор не может → `europepmc_unavailable`, не блокирует валидацию.
 11. **Иммутабельность артефактов (v1.4, по итогам аудита):** `raw/evidence/**/search_*.json` **НИКОГДА не редактируются** (включая мелкие type-fix). Ошибка схемы в отчёте → оркестратор **не правит файл**, а: (а) возвращает сабагенту на перезапуск, либо (б) создаёт новый артефакт `search_<код>_<дата>_rev2.json` с полем `"supersedes": "<имя старого файла>"` (старый остаётся иммутабельным). L1 проверяет существование supersedes-файла. **При создании rev2-артефакта ОБЯЗАТЕЛЬНО прогнать его через L1** (дополнение аудита).
-12. **Retry сабагентов (v1.4):** пустой/незавершённый ответ сабагента — не блокер: автоматический повторный запуск (до 2 попыток), причина фиксируется в `task_queue.md` (строка `RETRY: <код> — <причина>`). Если после retry ответа нет → карточка `insufficient_data` с gap-описанием, очередь не блокируется.
+12. **Retry сабагентов (v1.4):** пустой/незавершённый ответ сабагента — не блокер: автоматический повторный запуск (до 2 попыток), причина фиксируется в `task_queue.md` (строка `RETRY: <код> — <причина>`). Если после retry ответа нет → карточка `insufficient_data` с gap-описанием, очередь не блокируется. **Retry-ответ ОБЯЗАТЕЛЬНО сохраняется в файл** (тот же путь, что и первый ответ: `raw/evidence/{A-Z}/<код>/subagent_response_retry.txt`), из него извлекается JSON в `search_<код>_<дата>_rev2.json` (supersedes); `subagent_response_retry.txt` — служебный файл, в git можно НЕ включать.
 13. **Препринты PPR:** источники `PPR:<id>`/`paper_type: preprint` — **не учитываются как strong-доказательство** (evidence_level strong только по PMID/DOI-рецензированным); DOI препринтов проходят Crossref-проверку L1. В карточках PPR помечаются словом «препринт».
 14. **PHI/REI (v1.4, уточнено по итогам практики):** для пестицидов/ретардантов (class_family: fungicides, insecticides, synthetic_growth_regulators с efficacy HIGH) **PHI (Pre-Harvest Interval, срок ожидания до уборки) и REI (Re-entry Interval, срок выхода на работы)** — важная справочная информация, но **НЕ блокер валидации**. Источники PHI/REI: этикетки конкретных препаратов, национальные реестры СЗР (e-phy FR, BVL DE, EPA/US, Госреестр РФ), инструкции производителя; в открытых БД (EUPD/PPDB/Codex) PHI/REI, как правило, отсутствуют. **Сбор PHI/REI — процесс (артефакт `raw/sources/`, задача PHI_REI в task_queue), НЕ содержимое карточки.** В карточке PHI/REI пишется лаконично: если реальных данных из литературы/этикеток нет → **«Нет данных.»**; если есть реальные значения (из этикеток/реестров) → факт с источником. В карточку **запрещено** переносить формулировки процесса («в открытых БД не найдены», «задача PHI_REI в task_queue», «устанавливаются этикеткой препарата/национальной авторизацией») — это служебная обвязка, её место в артефакте/очереди. Статус при отсутствии PHI/REI-данных не выше `partial`. **Выдумывать waiting periods ЗАПРЕЩЕНО** — не найдено → `unknown`. MRL — справочная информация (EUPD доступен через Playwright MCP: секция MRLs; Codex — API /jsoncodexpest/), **не блокер**; реальные MRL-значения (если собраны) — полезный факт в карточке.
+15. **Источники без DOI (v1.5, по итогам аудита 2026-08-06 part 3):** реальная работа БЕЗ PMID/DOI может быть процитирована в claims, если: (1) она верифицирована через OpenAlex/Scopus/ISBN/URL (идентификатор в `source_type` + `id`), (2) реально прочитана (`verified: true`, `verification_method: manual_read` или `openalex_api`), (3) в карточке/артефакте указан источник идентификации (OpenAlex ID, URL и т.п.), (4) НЕТ выдуманных PMID/DOI. L1-проверка новых типов: openalex → OpenAlex API (work резолвится); url_verified → HTTP 200; isbn → контрольная цифра; label → только `verified: true` + `manual_read`. **Потеря полезных фактов из-за отсутствия DOI — ошибка дизайна**: работа с OpenAlex ID лучше, чем отсутствие данных.
 
 ## Принцип «тонкий агент — толстый артефакт»
 - Агент stateless: читает артефакт → одно действие → пишет новый артефакт. Памяти между вызовами нет.

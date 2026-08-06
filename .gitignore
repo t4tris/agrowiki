@@ -18,3 +18,16 @@ Vault/.obsidian/plugins/
 
 # Рабочая папка пользователя: черновики будущих sources (редактируются в Obsidian), вне конвейера
 Vault/raw/
+
+# Временные файлы research-сабагентов (создаются при исследовании, НЕ артефакты)
+_scripts/_tmp_*
+_scripts/ccc_*
+_scripts/*_research.py
+_scripts/*_final.py
+_scripts/*_batch.py
+_scripts/*_verify.py
+_scripts/*_abs.py
+_scripts/*_abs.json
+_scripts/*_results.json
+_scripts/*_oa_abs.json
+raw/evidence/**/subagent_response_retry.txt

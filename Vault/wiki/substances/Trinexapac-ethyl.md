@@ -64,4 +64,5 @@ aliases_ru: ["Тринексапак-этил"]
 - [PMID 34608958](https://pubmed.ncbi.nlm.nih.gov/34608958/) — ингибирование GA-биосинтеза
 - [PMID 37389027](https://pubmed.ncbi.nlm.nih.gov/37389027/) — EFSA peer review trinexapac (2023)
 - [PMID 39633074](https://pubmed.ncbi.nlm.nih.gov/39633074/) — остатки trinexapac, диссипация (2024)
+- [OpenAlex W1790097572](https://openalex.org/W1790097572) — Figueiredo et al. 2015, полевой опыт на томате (без DOI/PMID; верифицирован через OpenAlex API)
 - Артефакт: [search_Trinexapac-ethyl_2026-08-06_rev2.json](../../../raw/evidence/T/Trinexapac-ethyl/search_Trinexapac-ethyl_2026-08-06_rev2.json)
