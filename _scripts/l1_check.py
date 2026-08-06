@@ -191,6 +191,13 @@ def main(path):
                 # label — самое слабое: только с verified:true и manual_read
                 if stype == 'label' and not (s.get('verified') and vm == 'manual_read'):
                     errors.append(f'crops.{crop}.claims source label: допустим только с verified:true и verification_method:manual_read')
+        # v1.5 (ревью part 4): label — не более 20% источников на культуру
+        all_src = [s for c in cv.get('claims', []) for s in c.get('sources', [])]
+        if all_src:
+            label_n = sum(1 for s in all_src if source_id(s)[0] == 'label')
+            if label_n / len(all_src) > 0.2:
+                errors.append(f'crops.{crop}: доля source_type=label {label_n}/{len(all_src)} '
+                              f'({label_n/len(all_src)*100:.0f}%) > 20% — заменить label на верифицируемые идентификаторы')
     if d.get('verdict', {}).get('evidence_level') not in {'strong', 'moderate', 'weak', 'unverified'}:
         errors.append('verdict.evidence_level невалиден')
     if d.get('verdict', {}).get('status_suggested') not in {'verified', 'corrected', 'partial',
@@ -256,20 +263,43 @@ def main(path):
         print('Все DOI подтверждены ✅')
 
     # v1.5: OpenAlex — work резолвится (всегда возвращает JSON, проверяем title)
+    # retry с exponential backoff (3 попытки: 1с/2с/4с); при недоступности API после 3 попыток —
+    # WARNING (не блокирует), оркестратор может пометить verification_method: manual_read_pending
     oalex_ok = {}
+    oalex_api_down = False
     for wid in sorted(set(oalex)):
         wid_clean = wid.replace('OpenAlex:', '').replace('https://openalex.org/', '')
-        try:
-            js = json.loads(fetch(f'https://api.openalex.org/works/{urllib.parse.quote(wid_clean)}'))
-            title = js.get('title')
-            oalex_ok[wid] = title if title else 'NO_TITLE'
-        except Exception as e:
-            oalex_ok[wid] = f'OPENALEX_ERROR: {e}'
-        time.sleep(0.3)
-    bad_oa = [x for x, t in oalex_ok.items() if isinstance(t, str) and t.startswith(('OPENALEX_ERROR', 'NO_TITLE'))]
+        title = None
+        last_err = None
+        for attempt, delay in enumerate([1, 2, 4], start=1):
+            try:
+                js = json.loads(fetch(f'https://api.openalex.org/works/{urllib.parse.quote(wid_clean)}'))
+                title = js.get('title')
+                break
+            except Exception as e:
+                last_err = e
+                if attempt < 3:
+                    time.sleep(delay)
+        if title:
+            oalex_ok[wid] = title
+        elif last_err:
+            oalex_ok[wid] = f'OPENALEX_ERROR: {last_err}'
+            oalex_api_down = True
+        else:
+            oalex_ok[wid] = 'NO_TITLE'
+    bad_oa = [x for x, t in oalex_ok.items() if isinstance(t, str) and t.startswith('NO_TITLE')]
+    api_errs = [x for x, t in oalex_ok.items() if isinstance(t, str) and t.startswith('OPENALEX_ERROR')]
     if bad_oa:
-        errors.append(f'OpenAlex ID не подтверждены: {bad_oa}')
-    else:
+        errors.append(f'OpenAlex ID не подтверждены (work без title): {bad_oa}')
+    if api_errs:
+        # Не блокируем конвейер при недоступности OpenAlex API (ревью part 4):
+        # предупреждение + оркестратор вручную перепроверит (verification_method: manual_read_pending)
+        print(f'⚠️ WARNING: OpenAlex API недоступен для {len(api_errs)} ID — перепроверить вручную '
+              f'(manual_read_pending): {api_errs[:5]}')
+        if oalex_api_down:
+            print('⚠️ WARNING: OpenAlex API недоступен (3 попытки с backoff) — L1 НЕ блокирует, '
+                  'пометить источник verification_method: manual_read_pending')
+    if not bad_oa and not api_errs:
         print('Все OpenAlex ID подтверждены ✅')
         for k in list(oalex_ok)[:5]:
             print(f'  {k}: {oalex_ok[k][:90]}')

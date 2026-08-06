@@ -23,6 +23,8 @@ contract_version: 1.4
 | `_meta/session_report_2026-08-06_part2.md` | **Отчёт для внешнего аудита** (реализация ревью 6.5/10: коммит, STYLE_MIGRATE, smoke_test, bootstrap-защита, EOL) |
 | `_meta/session_report_2026-08-06_part3.md` | **Отчёт для внешнего аудита** (Фаза 3: валидация 10 HIGH-веществ, фикс хвостов бутстрапа, PHI/REI — не блокер, 4 коммита) |
 | `_meta/session_report_2026-08-06_part4.md` | **Отчёт для внешнего аудита** (реализация ревью 7/10: контракт v1.5 source_type, восстановление Figueiredo 2015, защита конвейера) |
+| `_meta/session_report_2026-08-06_part5.md` | **Отчёт для внешнего аудита** (реализация ревью 8/10: промпт v1.5, OpenAlex backoff, label ≤20%) |
+| `_meta/subagent_prompt_v1.5.md` | **Шаблон промпта research-сабагента (контракт v1.5)** — использовать для запуска сабагентов |
 | `_meta/sdd_openspec_context.md` | Контекст для SDD-переосмысления (OpenSpec-брейншторм, актуализирован 2026-08-06) |
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
 | `AGENTS.md` | Схема вики, контракт отчёта **v1.5** (source_type enum), правила честности 1–15, L1–L4 |
@@ -104,7 +106,7 @@ contract_version: 1.4
 Порядок приоритетов (в `task_queue.md`): **HIGH (28)** → MEDIUM (133) → LOW (83).
 
 **Рабочий цикл на вещество** (пакетами по 10–20 за сессию):
-1. Запустить research-сабагент (stateless; промпт: CSV-строка + текущая таксономия карточки + контракт **v1.4**).
+1. Запустить research-сабагент (stateless; промпт **по шаблону `_meta/subagent_prompt_v1.5.md`**: CSV-строка + текущая таксономия карточки + контракт **v1.5**).
 2. Извлечь JSON: `python _scripts/extract_report.py <ответ1.txt> <dst.json> [<ответ2.txt>] [<ответ3.txt>]` — **проверять `$LASTEXITCODE`**: 0 = ок, 2 = RETRY_NEEDED (повторный запуск сабагента, до 2 попыток; после 2 неудач → `insufficient_data`).
 3. L1: `python _scripts/l1_check.py raw/evidence/{A-Z}/<код>/search_*.json` (требует v1.4).
 4. При `searches.failed` europepmc → `python _scripts/fallback_europepmc.py <код> "<имя>" "<запросы>"`.
