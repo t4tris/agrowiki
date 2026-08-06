@@ -5,16 +5,12 @@ name_en: 1-Methylcyclopropene
 cas: 
 formula: 
 class: Ethylene inhibitor
-class_family: ethylene
-mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
-application_csv: Apply as gas treatment 0.5-3 ppm
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
   tomato: no_data
@@ -22,11 +18,6 @@ crops:
   strawberry: no_data
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # 1-MCP — 1-Methylcyclopropene
@@ -39,13 +30,13 @@ phi_mrl: {}
 ## Механизм действия
 Anti-ripening agent
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FRUIT_MANAGEMENT | Post-harvest | Apply as gas treatment 0.5-3 ppm | Extended shelf life | HIGH | Fruits and vegetables |
+| Post-harvest: Apply as gas treatment 0.5-3 ppm | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -56,18 +47,11 @@ Anti-ripening agent
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

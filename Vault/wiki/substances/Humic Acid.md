@@ -5,29 +5,19 @@ name_en: Humic substances
 cas: 
 formula: 
 class: Biostimulant
-class_family: biostimulants_extracts
-mechanism: nutrition_metabolism
 action_category: ROOT_DEVELOPMENT, SOIL_APPLICATION
-application_csv: Apply 2-5% soil drench or foliar; Apply 2-10 kg/ha soil incorporation
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
-notes:
-  - "CSV-код Humic Acid встречается дважды с разными названиями: 'Humic substances' (ROOT_DEVELOPMENT, 2-5% drench/foliar) и 'Potassium Humate' (SOIL_APPLICATION, 2-10 кг/га) — объединены в одну карточку; при валидации уточнить CAS (гуминовые кислоты — смесь олигомеров, PubChem-идентичность условная)"
+notes: []
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: ["Potassium Humate", "Humic substances", "Humic acid"]
-aliases_ru: ["гуминовые вещества", "гумат калия", "гуминовая кислота"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
+aliases: []
+aliases_ru: []
 ---
 
 # Humic Acid — Humic substances
@@ -40,14 +30,14 @@ phi_mrl: {}
 ## Механизм действия
 Root stimulator
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| ROOT_DEVELOPMENT | Root growth | Apply 2-5% soil drench or foliar | Enhanced root development and nutrient uptake | MEDIUM | All crops, especially at establishment |
-| SOIL_APPLICATION | Soil conditioning | Apply 2-10 kg/ha soil incorporation | Improved soil structure and CEC | MEDIUM | All crops, especially degraded soils |
+| Root growth: Apply 2-5% soil drench or foliar | ⚪ Нет данных | — | — | — | — |
+| Soil conditioning: Apply 2-10 kg/ha soil incorporation | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -58,18 +48,11 @@ Root stimulator
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

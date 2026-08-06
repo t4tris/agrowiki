@@ -8,13 +8,11 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 50-200 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: partial
 evidence_level: strong
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:37047175", "PMID:24770723", "PMID:27095400", "PMID:32814103", "PMID:32429524"]
 notes:
   - "COS/CHOS — олигомеры хитозана (DPn 2-40); данные собраны в рамках пилотной валидации [[Chitosan]] (один отчёт на оба CSV-кода)"
   - "Огурец — подтверждено: 50 мг/л COS лучшая обработка при холодовом стрессе (PMID 37047175); CHOS DPn 15-40 — наибольшая антифунгальная активность против B. cinerea (PMID 24770723)"
@@ -27,11 +25,6 @@ crops:
   strawberry: no_data
 aliases: ["COS", "CHOS", "Chitooligosaccharides", "Chitosan oligosaccharide"]
 aliases_ru: ["хитозан-олигосахариды", "олигомеры хитозана"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Chitooligosaccharides — Хитозан-олигосахариды (COS/CHOS)

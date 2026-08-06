@@ -5,16 +5,12 @@ name_en: 18-amino acid peptide
 cas: 
 formula: 
 class: Peptide hormone
-class_family: peptides_proteins
-mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 0.1-1 ppm foliar (research)
 efficacy_csv: LOW
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
   tomato: no_data
@@ -22,11 +18,6 @@ crops:
   strawberry: no_data
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Systemin — 18-amino acid peptide
@@ -39,13 +30,13 @@ phi_mrl: {}
 ## Механизм действия
 Defense signaling
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FOLIAR_APPLICATION | Wound response | Apply 0.1-1 ppm foliar (research) | Enhanced defense against herbivores | LOW | Solanaceae family (research) |
+| Wound response: Apply 0.1-1 ppm foliar (research) | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -56,18 +47,11 @@ Defense signaling
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

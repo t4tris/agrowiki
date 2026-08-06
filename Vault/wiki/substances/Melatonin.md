@@ -5,29 +5,19 @@ name_en: N-acetyl-5-methoxytryptamine
 cas: 
 formula: 
 class: Indolamine; Indoleamine
-class_family: indolamines
-mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION, FRUIT_MANAGEMENT
-application_csv: Apply 10-100 ppm foliar spray; Fruit spray 100 µM
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
-notes:
-  - "CSV-код Melatonin встречается дважды (FOLIAR 10-100 ppm + FRUIT 100 µM на клубнике) — объединены; claim '100 µM, клубника, задержка созревания' — приоритетный для валидации (культура в фокусе)"
+notes: []
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: ["Melatonin", "N-acetyl-5-methoxytryptamine"]
-aliases_ru: ["мелатонин", "N-ацетил-5-метокситриптамин"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
+aliases: []
+aliases_ru: []
 ---
 
 # Melatonin — N-acetyl-5-methoxytryptamine
@@ -40,14 +30,14 @@ phi_mrl: {}
 ## Механизм действия
 Circadian rhythm regulator
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FOLIAR_APPLICATION | Circadian regulation | Apply 10-100 ppm foliar spray | Enhanced stress tolerance, antioxidant activity | MEDIUM | Crops under stress conditions |
-| FRUIT_MANAGEMENT | Ripening delay | Fruit spray 100 µM | Delayed ripening, improved color, firmness and TSS — fruit sprayed 100 µM — delay ripening, impove colour, firmness, and TSS | MEDIUM | Strawberry, fruits |
+| Circadian regulation: Apply 10-100 ppm foliar spray | ⚪ Нет данных | — | — | — | — |
+| Ripening delay: Fruit spray 100 µM | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -58,18 +48,11 @@ Circadian rhythm regulator
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

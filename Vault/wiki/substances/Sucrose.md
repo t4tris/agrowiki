@@ -5,16 +5,12 @@ name_en: Sucrose
 cas: 
 formula: 
 class: Disaccharide
-class_family: carbohydrates
-mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 10-50% foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
   tomato: no_data
@@ -22,11 +18,6 @@ crops:
   strawberry: no_data
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Sucrose — Sucrose
@@ -39,13 +30,13 @@ phi_mrl: {}
 ## Механизм действия
 Metabolic & signaling
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FOLIAR_APPLICATION | — | Apply 10-50% foliar spray | Enhanced germination, stress tolerance | MEDIUM | Tomato, lettuce |
+| —: Apply 10-50% foliar spray | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -56,18 +47,11 @@ Metabolic & signaling
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

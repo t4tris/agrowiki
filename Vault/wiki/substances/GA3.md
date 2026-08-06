@@ -8,13 +8,11 @@ class: Gibberellin
 class_family: gibberellins
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: Apply 25-200 ppm foliar; 100 mg/L best vegetative; 1.0 mM weekly ~13 runners; 200 mg/L + long photoperiod → flower abortion; 0.5 mM in citric buffer/DMSO to fruit
 efficacy_csv: MEDIUM
 validation_status: partial
 evidence_level: moderate
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:40780106", "PMID:29288326", "PMID:33890635", "PMID:38337908", "PMID:41225064", "PMID:39260050", "PMID:28482334", "PMID:24470243", "PMID:11539775", "PMID:40866815", "PMID:36774421", "PMID:17503074", "PMID:33274492", "PMID:39119498", "PMID:29146357", "PMID:40957257", "PMID:41769268", "PMID:36092914", "PMID:37201922", "PPR:1188729"]
 notes:
   - "Механизм (усы/рост клубники через путь GA/DELLA) подтверждён 4 аннотациями (PMID 40780106, 29288326, 33890635, 38337908)"
   - "ВСЕ конкретные дозировки CSV (25-200 ppm, 100 mg/L, 1.0 mM ~13 усов, 200 mg/L + длинный день → абортация цветков, 0.5 mM цитратный буфер/DMSO) не найдены в PubMed/OpenAlex — unverified/inferred"
@@ -26,11 +24,6 @@ crops:
   strawberry: found_verified
 aliases: ["Gibberellic Acid", "Gibberellin A3", "GA3"]
 aliases_ru: ["Гибберелловая кислота", "Гиббереллин A3", "Гиббереллин X"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 fallback_status: orchestrator
 ---
 

@@ -8,13 +8,11 @@ class: Sesquiterpene lactone
 class_family: nematicides
 mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
-application_csv: Apply 0.1-1 g/kg soil amendment; 50-200 mg/L foliar spray
 efficacy_csv: MEDIUM
 validation_status: insufficient_data
 evidence_level: weak
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:35344268", "PMID:25658194", "PMID:36122740", "PMID:35908798", "PMID:29727708", "PMID:20815879", "PMID:36805532", "PMID:35720574"]
 notes:
   - "По всем трём культурам (томат, огурец, клубника) прямых исследований применения артемизинина НЕ найдено: PubMed 0/0/0 по прямым запросам"
   - "CSV-заявка «снижение галлов M. incognita на томате до 70% при 0.1-1 г/кг» НЕ подтверждается: ближайшая работа (PMID 35344268) — нематицидность РОДСТВЕННЫХ кислот A. annua (артемизининовая/дигидроартемизининовая), не самого артемизинина; цифра 70% нигде не встречается"
@@ -27,11 +25,6 @@ crops:
   strawberry: no_data
 aliases: ["Artemisinin", "Qinghaosu", "Arteannuin"]
 aliases_ru: ["артемизинин", "цинхаосу (Qinghaosu)", "артеаннуин (Arteannuin)"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Artemisinin — Artemisinin

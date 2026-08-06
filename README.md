@@ -60,8 +60,8 @@ f:\agrowiki\
 3. Поиск по русским названиям работает: `aliases_ru` в карточках (напр., «метилжасмонат» → MeJA)
 
 ### Как читать карточку вещества (`wiki/substances/<код>.md`)
-- **Frontmatter** — машиночитаемые поля: `validation_status`, `evidence_level`, `crops` (по 3 культурам), `phi_mrl`, `toxicity_window`
-- **Секции**: Идентичность → Механизм действия → Применение (CSV) → `crop_evidence` (по культурам с PMID/DOI) → ⚠️ Corrected Dosages (CSV vs литература) → Toxicity Window → 📅 PHI и MRL → Противоречия → Источники
+- **Frontmatter** — машиночитаемые поля: `validation_status`, `evidence_level`, `crops` (по 3 культурам), `class_family`, `mechanism`, `aliases_ru`
+- **Секции**: Идентичность → Механизм действия → ⚠️ Валидация CSV-заявок → Научные данные по культурам (по культурам с PMID/DOI) → Toxicity Window → 📅 PHI и MRL → Ограничения и противопоказания → Источники
 - Статусы: ✅ `verified`/`corrected` — подтверждено; 🟡 `partial` — частично; ⚪ `insufficient_data` — данных мало; 🔴 `conflicting` — противоречия
 
 ### Для LLM-агента

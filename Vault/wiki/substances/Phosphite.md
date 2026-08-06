@@ -5,29 +5,19 @@ name_en: Phosphorous acid
 cas: 
 formula: 
 class: Phosphonate fungicide/biostimulant
-class_family: fungicides
-mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
-application_csv: Apply 0.5-1 kg/ha foliar spray; Apply 2-4 kg/ha soil drench
 efficacy_csv: HIGH
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
-notes:
-  - "CSV-код Phosphite встречается дважды (FOLIAR 0.5-1 кг/га HIGH + SOIL 2-4 кг/га MEDIUM) — обе строки объединены в одну карточку; при валидации проверять оба протокола"
+notes: []
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: ["Phosphorous acid", "Phosphite", "Phosphonate"]
-aliases_ru: ["фосфористая кислота", "фосфит", "фосфонаты"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
+aliases: []
+aliases_ru: []
 ---
 
 # Phosphite — Phosphorous acid
@@ -40,14 +30,14 @@ phi_mrl: {}
 ## Механизм действия
 <!-- пусто в CSV -->
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FOLIAR_APPLICATION | Pathogen inhibition & SAR induction | Apply 0.5-1 kg/ha foliar spray | Disease control and immune priming | HIGH | Orchards, vegetables |
-| SOIL_APPLICATION | Soil drench for SAR | Apply 2-4 kg/ha soil drench | Systemic resistance induction, improved growth | MEDIUM | Vegetables, orchard crops |
+| Pathogen inhibition & SAR induction: Apply 0.5-1 kg/ha foliar spray | ⚪ Нет данных | — | — | — | — |
+| Soil drench for SAR: Apply 2-4 kg/ha soil drench | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -58,18 +48,11 @@ phi_mrl: {}
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

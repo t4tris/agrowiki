@@ -5,16 +5,12 @@ name_en: Zn-containing enzyme
 cas: 
 formula: 
 class: Enzyme
-class_family: peptides_proteins
-mechanism: photosynthesis_enhancement
 action_category: PHOTOSYNTHESIS_ENHANCEMENT
-application_csv: Apply Zn foliar 0.5-1%
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
   tomato: no_data
@@ -22,11 +18,6 @@ crops:
   strawberry: no_data
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Carbonic Anhydrase — Zn-containing enzyme
@@ -39,13 +30,13 @@ phi_mrl: {}
 ## Механизм действия
 CO2 fixation
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| PHOTOSYNTHESIS_ENHANCEMENT | Carbon fixation | Apply Zn foliar 0.5-1% | Enhanced CO2 assimilation | MEDIUM | All crops |
+| Carbon fixation: Apply Zn foliar 0.5-1% | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -56,18 +47,11 @@ CO2 fixation
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

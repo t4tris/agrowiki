@@ -5,16 +5,12 @@ name_en: 24-Epibrassinolide
 cas: 
 formula: 
 class: Brassinosteroid
-class_family: brassinosteroids
-mechanism: aba_stress_signaling
 action_category: STRESS_TOLERANCE
-application_csv: Apply 0.1-1 ppm foliar spray
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
   tomato: no_data
@@ -22,11 +18,6 @@ crops:
   strawberry: no_data
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Brassinolide — 24-Epibrassinolide
@@ -39,13 +30,13 @@ phi_mrl: {}
 ## Механизм действия
 Stress protector
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| STRESS_TOLERANCE | Temperature stress | Apply 0.1-1 ppm foliar spray | Enhanced heat and cold tolerance; Level decreases during strawberry fruit development, suggesting a role in early stages; Auxin-induced fruit growth and delayed fruit ripening of strawberry | MEDIUM | All crops in extreme temperatures |
+| Temperature stress: Apply 0.1-1 ppm foliar spray | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -56,18 +47,11 @@ Stress protector
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

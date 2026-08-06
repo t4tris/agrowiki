@@ -279,6 +279,8 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: p-Coumaric acid × 3 культуры
 
 ## 🔵 TECHNICAL DEBT
+- [ ] **STYLE_MIGRATE:** привести 10 валидированных карточек к стилю-гайду v1.5 «конечные факты» (AGENTS.md 2026-08-06): убрать баннеры, описание процесса поиска, дубли фактов; эталон — IBA.md
+
 - [ ] **PAPERS_TO_FETCH:** Proline (Celiktopuz 2023, Barrios 2026 + прайминг семян), Paclobutrazol (этикетки препаратов PBZ — PHI/REI) — очередь `raw/sources/papers_to_fetch.md`; пользователь скачивает batch → анализ и дополнение карточек
 - [ ] **PHI_REI (практический блокер):** Paclobutrazol, Uniconazole, PIX — срок ожидания (PHI) и срок выхода на работы (REI) из этикеток препаратов/национальных реестров (e-phy FR, BVL DE, EPA); в открытых БД отсутствуют — задача на ручной сбор этикеток (MRL уже собран: PBZ ✅ EU 0.01* LOD, Codex нет)
 - [ ] AUDIT_TAXONOMY: перепроверить mechanism для спорных веществ (назначен дефолтом семейства, не оверрайд/MoA; список из `_scripts/gen_synonyms.py`, сейчас 77). Явно спорные кандидаты: CLE RALF CEP PSK peptides, CLE peptides, CLE25/40/41-44, CLV3, Florigen FT protein, Hd3a, Mobile miRNAs, Ascophyllum extract, Laminarin oligomers, Leonardite extract, Dandelion, Echinacea, Molasses, Isoprene, Monoterpenes, Hexanal, Diosgenin, 5-Azacytidine, NHP, Azelaic acid (уже исправлены через OVERRIDES: GSH→antioxidant_defense, Methyl Salicylate→jasmonate_sar_defense, Carbonic Anhydrase→photosynthesis_enhancement, HypSys→jasmonate_sar_defense, L-carnitine→nutrition_metabolism)

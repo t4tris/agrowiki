@@ -8,13 +8,11 @@ class: Jasmonate
 class_family: jasmonates
 mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 100-500 ppm foliar spray; Fruit spray 230 µM
 efficacy_csv: HIGH
 validation_status: corrected
 evidence_level: strong
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:31117506", "PMID:35887486", "PMID:42537888", "PMID:41404138", "PMID:41770901", "PMID:40545701", "PMID:41136943", "PMID:39859190", "PMID:35574100", "PMID:28981785", "PMID:32033119", "PMID:33879022", "PMID:41876383", "PMID:32457779", "PMID:28671619", "PMID:26212995", "PMID:32252456", "PMID:35691062", "PMID:35325290", "PMID:41136892", "PMID:41388739", "PMID:11158538", "PMID:35325290", "PMID:35293128", "PMID:29899259", "PMID:25046752", "PMID:32033119", "PMID:31117506"]
 notes:
   - "Механизм подтверждён (JA-сигналинг MYC2/JAZ, прайминг защитных генов); название 'jasmonate_sar_defense' условно — путь JA-зависимый, строго не SAR (SA-зависимый)"
   - "CSV-доза 100-500 ppm выше литературных эффективных 5.6-112 ppm (25-500 µM); верхняя граница 500 ppm рискованна (подавление ассимиляции, длительное закрытие устьиц)"
@@ -28,11 +26,6 @@ crops:
   strawberry: found_verified
 aliases: ["Methyl jasmonate", "Jasmonic acid methyl ester", "Methyl cis-jasmonate", "(-)-Methyl jasmonate", "MeJA", "MeJA (Methyl Jasmonate)"]
 aliases_ru: ["метилжасмонат", "метиловый эфир жасмоновой кислоты"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Methyl Jasmonate — Метилжасмонат (MeJA)
@@ -107,31 +100,3 @@ ED50/TD50 не опубликованы. Ориентиры: 50 мМ (≈11.2 г
 - [PMID 41388739](https://pubmed.ncbi.nlm.nih.gov/41388739/) — ⚠️ антракноз, повышенная восприимчивость (2026)
 - [PMID 41770901](https://pubmed.ncbi.nlm.nih.gov/41770901/) — ликопин на свету/в темноте (2026)
 - Артефакт: [search_MethylJasmonate_2026-08-04.json](../../../raw/evidence/M/Methyl%20Jasmonate/search_MethylJasmonate_2026-08-04.json)
-
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
-
-### 🍅 Томат (Solanum lycopersicum)
-<!-- нет данных по культуре -->
-
-### 🥒 Огурец (Cucumis sativus)
-<!-- нет данных по культуре -->
-
-### 🍓 Клубника (Fragaria × ananassa)
-<!-- нет данных по культуре -->
-
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
-## ⚠️ Toxicity Window
-<!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
-
-## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
-
-## Источники
-<!-- PMID / DOI / URL -->

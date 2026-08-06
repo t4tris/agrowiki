@@ -8,13 +8,11 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
-application_csv: 400 mg/L foliage sprayed 5x (15/40/85/110/135 DAT); 1-5 kg/ha soil incorporation
 efficacy_csv: MEDIUM
 validation_status: partial
 evidence_level: strong
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:33094513", "PMID:32605169", "PMID:39339562", "PMID:41600063", "PMID:30143111", "PMID:30640158", "PMID:27095400", "PMID:32814103", "PMID:39639480", "PMID:37047175", "PMID:32429524", "PMID:38731725", "PMID:35805989", "PMID:28583179", "PMID:26256331", "PMID:28671619", "PMID:39214206", "PMID:35241695", "PMID:42255699", "PMID:24025030", "PMID:24770723", "PPR:204426", "PPR:1015724"]
 notes:
   - "Механизм (элиситор/defence priming: SA/JA-пути, PR-белки, каллоза/лигнин, прямое фунгитоксическое действие) подтверждён 21 прочитанной аннотацией по всем трём культурам"
   - "CSV-протоколы дозировок (400 мг/л × 5 опрыскиваний; заделка 1-5 кг/га → микробная активность) независимо НЕ подтверждены; заявление 'All crops' шире проверенных трёх культур"
@@ -27,11 +25,6 @@ crops:
   strawberry: found_verified
 aliases: ["Chitosan", "Chitosan from shrimp shells", "Poly(D-glucosamine)", "COS", "CHOS", "Chitooligosaccharides"]
 aliases_ru: ["хитозан", "поли(D-глюкозамин)", "деацетилированный хитин", "хитозан низкомолекулярный (50 000–190 000 Да)", "олигомеры хитозана (COS/CHOS)"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 fallback_status: orchestrator
 ---
 

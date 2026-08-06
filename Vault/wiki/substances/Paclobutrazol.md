@@ -8,13 +8,11 @@ class: Triazole
 class_family: synthetic_growth_regulators
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
-application_csv: Apply 0.25-2 g/L soil drench, 75-300mg/l sprayed 35 days after planting.
 efficacy_csv: HIGH
 validation_status: partial
 evidence_level: strong
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:41225862", "PMID:35161406", "PMID:41834248", "PMID:37895095", "PMID:31884369", "PMID:27936707", "PMID:37084381", "PMID:40780106", "PMID:33890635", "PMID:22791823", "PMID:31755653", "PMID:36466575"]
 notes:
   - "Taxonomy correction (v1.4): class_family изменён 'fungicides' → 'synthetic_growth_regulators' (триазольный ретардант, ингибитор биосинтеза GA; применение — регуляция роста, не фунгицидное); mechanism gibberellin_action подтверждён"
   - "CSV-дозировки (soil drench 0.25-2 г/л; 75-300 мг/л на 35-й день) для фокусных культур не верифицированы; верхняя граница 300 мг/л превышает подтверждённый диапазон 25-200 мг/л"
@@ -25,19 +23,6 @@ crops:
   strawberry: found_verified
 aliases: ["PBZ", "Paclobutrazol", "(2RS,3RS)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1H-1,2,4-triazol-1-yl)pentan-3-ol"]
 aliases_ru: ["паклобутразол"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window:
-  soil_persistence: "T1/2 изомеров PBZ 9.24 и 16.6 сут при засолке огурцов (PMID 31884369); остатки PBZ обнаруживаются в плодах (PMID 31755653, 27936707)"
-phi_mrl:
-  PHI_days: null
-  REI_hours: null
-  MRL_EU_mg_kg: 0.01
-  MRL_USA_mg_kg: null
-  MRL_Codex_mg_kg: null
-  source: "EU Pesticides Database v3.4 (Reg. (EU) 2023/1719, Annex II); Codex — MRL не установлены; статус ЕС: Approved до 31/01/2029"
-  notes: "PHI/REI в открытых БД не публикуются — устанавливаются этикеткой препарата/национальной авторизацией (правило честности 14); MRL EU 0.01 mg/kg = LOD для томата/огурца/клубники; клип: raw/sources/Paclobutrazol/eu_mrl_codex_2026-08-04.md"
 ---
 
 # Paclobutrazol — Паклобутразол
@@ -139,31 +124,3 @@ GA inhibitor
 | Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
 |---|---|---|---|---|---|
 | GROWTH_REGULATION | Height control | Apply 0.25-2 g/L soil drench, 75-300mg/l sprayed 35 days after planting. | retardant delay flower development and reduce flower size and reduces vegetative growth. reducing runner development. enhance the photosynthetic capability of strawberry. | HIGH | Cereals, ornamentals, fruit trees |
-
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
-
-### 🍅 Томат (Solanum lycopersicum)
-<!-- нет данных по культуре -->
-
-### 🥒 Огурец (Cucumis sativus)
-<!-- нет данных по культуре -->
-
-### 🍓 Клубника (Fragaria × ananassa)
-<!-- нет данных по культуре -->
-
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
-## ⚠️ Toxicity Window
-<!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
-
-## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
-
-## Источники
-<!-- PMID / DOI / URL -->

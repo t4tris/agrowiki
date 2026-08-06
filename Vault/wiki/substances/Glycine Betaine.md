@@ -8,13 +8,11 @@ class: Osmoprotectant
 class_family: amino_acids_polyamines
 mechanism: osmoprotection
 action_category: STRESS_TOLERANCE
-application_csv: Apply 100-1000 ppm foliar spray
 efficacy_csv: HIGH
 validation_status: partial
 evidence_level: moderate
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:42121052", "PMID:19336390", "PMID:16608869", "PMID:35150305", "PMID:21342716", "PMID:28224920", "PMID:15500464", "PMID:23402752", "PMID:38906183", "PMID:32860517", "PMID:33394352", "PMID:32429524", "PMID:34890613", "PMID:35804328", "PMID:38674545", "PMID:35751219", "PMID:30388672", "PMID:40772049"]
 notes:
   - "Таксономия подтверждена (v1.4): amino_acids_polyamines / osmoprotection; GB — метилированное производное глицина"
   - "CSV-диапазон 100-1000 ppm частично подтверждён: 117-586 ppm (1-5 мМ); верхняя граница 1000 ppm и кратность обработок не проверены"
@@ -27,11 +25,6 @@ crops:
   strawberry: found_verified
 aliases: ["Betaine", "Glycine betaine", "N,N,N-trimethylglycine", "Glycine Betaine"]
 aliases_ru: ["глицин-бетаин", "триметилглицин", "бетаин"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Glycine Betaine — Глицин-бетаин (GB)

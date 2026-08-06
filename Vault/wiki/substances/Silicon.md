@@ -8,13 +8,11 @@ class: Beneficial element
 class_family: elements_minerals
 mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 1-2 g/L foliar spray
 efficacy_csv: HIGH
 validation_status: corrected
 evidence_level: strong
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:26941762", "PMID:24607576", "PMID:35805970", "PMID:23371799", "PMID:41425612", "PMID:33968576", "PMID:30812924", "PMID:30743339", "PMID:36311065", "PMID:15707331", "PMID:18944917", "PMID:42079716", "PMID:35409165", "PMID:33290389", "PMID:33077742", "PMID:41457109", "PMID:41366309", "PMID:28536765", "PMID:31811389", "PPR:766746"]
 notes:
   - "Taxonomy correction (v1.4): mechanism изменён 'nutrition_metabolism' → 'antioxidant_defense' (основной документированный механизм — усиление антиоксидантной защиты SOD/CAT/APX, снижение ROS/MDA при стрессе; плюс SA/JA/PTI-прайминг при болезнях)"
   - "CSV-доза '1-2 г/л фолиарно' — единицы неоднозначны (г/л препарата vs мг Si/л); в литературе фолиарные дозы 30-75 мг Si/л, корневые 0.5-2.5 мМ (≈14-70 мг Si/л)"
@@ -26,11 +24,6 @@ crops:
   strawberry: found_verified
 aliases: ["Silicon", "Si", "Kieselsäure (H4SiO4)", "Potassium silicate"]
 aliases_ru: ["кремний", "кремниевая кислота", "силикат калия"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 fallback_status: orchestrator
 ---
 
@@ -105,46 +98,3 @@ Si нетоксичен в агрономических дозах; ED50/TD50 н
 - [PMID 33077742](https://pubmed.ncbi.nlm.nih.gov/33077742/) — SiO2-наночастицы, засуха клубники (2022)
 - [PPR 766746](https://doi.org/10.21203/rs.3.rs-3671784/v1) — AMF + Si, томат при засухе (2023, препринт; fallback Europe PMC)
 - Артефакт: [search_Silicon_2026-08-04.json](../../../raw/evidence/S/Silicon/search_Silicon_2026-08-04.json) · [orchestrator_fallback_2026-08-04.json](../../../raw/evidence/S/Silicon/orchestrator_fallback_2026-08-04.json)
-
-# Silicon — Silicon (Si)
-
-> ⚠️ Черновик из CSV. Статус: `unverified`. Валидация по культурам (томат/огурец/клубника) — впереди.
-
-## Идентичность
-<!-- CAS, формула, класс — проверить через PubChem -->
-
-## Механизм действия
-<!-- пусто в CSV -->
-
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
-|---|---|---|---|---|---|
-| FOLIAR_APPLICATION | Cell wall fortification & stress mitigation | Apply 1-2 g/L foliar spray | Enhanced drought tolerance, lodging resistance, pathogen defense | HIGH | Cereals, vegetables |
-
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
-
-### 🍅 Томат (Solanum lycopersicum)
-<!-- нет данных по культуре -->
-
-### 🥒 Огурец (Cucumis sativus)
-<!-- нет данных по культуре -->
-
-### 🍓 Клубника (Fragaria × ananassa)
-<!-- нет данных по культуре -->
-
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
-## ⚠️ Toxicity Window
-<!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
-
-## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
-
-## Источники
-<!-- PMID / DOI / URL -->

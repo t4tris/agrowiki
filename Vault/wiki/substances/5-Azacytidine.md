@@ -5,16 +5,12 @@ name_en: 5-Azacytidine (AZA)
 cas: 
 formula: 
 class: Nucleoside analog
-class_family: synthetic_growth_regulators
-mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
-application_csv: Spray fruit 0.5-20 mM
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
   tomato: no_data
@@ -22,11 +18,6 @@ crops:
   strawberry: no_data
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # 5-Azacytidine — 5-Azacytidine (AZA)
@@ -39,13 +30,13 @@ phi_mrl: {}
 ## Механизм действия
 DNA demethylation
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FRUIT_MANAGEMENT | Ripening delay | Spray fruit 0.5-20 mM | Decreased ABA, increased auxins/gibberellins, delayed ripening — DNA demethylating agent — spraying strawberry fruits with 20µmM — Decreased levels of abscisic acid (ABA), the ripening-promoting hormone. Increased levels of auxins and gibberellins, which inhibit ripening. | MEDIUM | Strawberry, fruits |
+| Ripening delay: Spray fruit 0.5-20 mM | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -56,18 +47,11 @@ DNA demethylation
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->

@@ -8,13 +8,11 @@ class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
-application_csv: Apply 0.05-0.2 ppm foliar spray; Foliar spray 1-150 ppm; 50 µM for fruit coloration
 efficacy_csv: HIGH
 validation_status: partial
 evidence_level: moderate
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:24226183", "PMID:16660401", "PMID:24302317", "PMID:9042348", "PMID:38802434", "PMID:40122002", "PMID:15128037", "PMID:34969963", "PMID:35893617", "PMID:32290080", "PMID:36466575"]
 notes:
   - "CSV-доза 0.05-0.2 ppm не подтверждена; литературные дозы 0.5-1 ppm фолиарно (клубника PMID 35893617, огурец 0.8 мг/л PMID 34969963)"
   - "Фотосинтез/урожай: эффект подтверждён в основном в стрессовых условиях (соль, засуха, La); в нестрессовых — старые работы 1978-1981 (сухая масса)"
@@ -27,11 +25,6 @@ crops:
   strawberry: found_verified
 aliases: ["1-Triacontanol", "Melissyl alcohol", "Myricyl alcohol", "TRIA", "Triacontanol (TRIA)"]
 aliases_ru: ["1-триаконтапол", "триаконтановый спирт", "мелиссиловый спирт", "мирициловый спирт"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 fallback_status: orchestrator
 ---
 

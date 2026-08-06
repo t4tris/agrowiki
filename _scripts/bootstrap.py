@@ -11,6 +11,10 @@ import os
 import re
 from collections import defaultdict
 
+# Коды CSV, объединённые в карточки-каноны (dedup/merge, см. log.md) — карточек не имеют,
+# НЕ пересоздавать при генерации черновиков (синхронизировано с gen_taxonomy.MERGED_CODES)
+MERGED_CODES = {'MeJA (Methyl Jasmonate)', 'Triacontanol (TRIA)'}
+
 CSV = r'f:\agrowiki\raw\Complete_Action_Oriented_Agronomic_Substances_CLEANED_v6.csv'
 VAULT = r'f:\agrowiki\Vault'
 
@@ -83,9 +87,9 @@ def main():
             f'{esc(r["Efficacy_Level"])} | {esc(r["Target_Crops"])} |'
             for r in rs)
         moa = esc(rs[0]['Mode_of_Action'])
-        dosages = [r['Application_Method_Dosage'].strip() for r in rs
-                   if r['Application_Method_Dosage'].strip()]
-        app_csv = '; '.join(dosages) if dosages else '—'
+        claims = '\n'.join(
+            f'| {esc(r["Specific_Action"])}{": " + esc(r["Application_Method_Dosage"]) if r["Application_Method_Dosage"].strip() else ""} | ⚪ Нет данных | — | — | — | — |'
+            for r in rs)
 
         page = f"""---
 type: substance
@@ -95,23 +99,16 @@ cas:
 formula: 
 class: {'; '.join(classes) if classes else '—'}
 action_category: {', '.join(cats) if cats else '—'}
-application_csv: {app_csv}
 efficacy_csv: {eff_name}
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
 notes: []
 crops:
 {crops_yml}
 aliases: []
 aliases_ru: []
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {{}}
-phi_mrl: {{}}
 ---
 
 # {code} — {name_en}
@@ -124,13 +121,13 @@ phi_mrl: {{}}
 ## Механизм действия
 {moa if moa != '—' else '<!-- пусто в CSV -->'}
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
 {claims}
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -141,23 +138,19 @@ phi_mrl: {{}}
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->
 """
         card_path = os.path.join(subst_dir, f'{sanitize(code)}.md')
+        if code in MERGED_CODES:
+            print(f'SKIP (MERGED_CODES): {code}')
+            continue
         if os.path.exists(card_path) and not args.force:
             existing = open(card_path, encoding='utf-8').read()
             if re.search(r'^validation_status:\s*(?!unverified)\S', existing, re.M):

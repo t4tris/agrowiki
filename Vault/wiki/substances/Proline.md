@@ -8,13 +8,11 @@ class: Amino Acid
 class_family: amino_acids_polyamines
 mechanism: osmoprotection
 action_category: SEED_TREATMENT
-application_csv: Apply 100-500 ppm for seed priming
 efficacy_csv: HIGH
 validation_status: partial
 evidence_level: moderate
 last_checked: 2026-08-04
 next_review: 2026-09-04
-sources: ["PMID:36645928", "PMID:42452200", "PMID:42531627", "PMID:41326523"]
 notes:
   - "Класс (аминокислота) и механизм (осмопротекция: P5CS/P5CR-синтез при стрессе) подтверждены"
   - "Эффективность экзогенного пролина подтверждена для ФОЛИАРНОГО применения: клубника +23-32% урожая при дефиците орошения (PMID 36645928), томат — термотолерантность без прироста биомассы (PMID 42452200)"
@@ -28,11 +26,6 @@ crops:
   strawberry: found_verified
 aliases: ["L-Proline", "Proline", "(S)-Pyrrolidine-2-carboxylic acid"]
 aliases_ru: ["пролин", "L-пролин"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
 ---
 
 # Proline — Пролин (L-Proline)
@@ -94,31 +87,3 @@ ED50/TD50 — нет данных (не выдумывать). Пролин — 
 - [PMID 42452200](https://pubmed.ncbi.nlm.nih.gov/42452200/) — пролин, термотолерантность томата 43°C (2026)
 - [PMID 42531627](https://pubmed.ncbi.nlm.nih.gov/42531627/) — Se+H2S, PEG-засуха томата (2026)
 - Артефакт: [search_Proline_2026-08-04.json](../../../raw/evidence/P/Proline/search_Proline_2026-08-04.json)
-
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
-
-### 🍅 Томат (Solanum lycopersicum)
-<!-- нет данных по культуре -->
-
-### 🥒 Огурец (Cucumis sativus)
-<!-- нет данных по культуре -->
-
-### 🍓 Клубника (Fragaria × ananassa)
-<!-- нет данных по культуре -->
-
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
-## ⚠️ Toxicity Window
-<!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
-
-## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
-
-## Источники
-<!-- PMID / DOI / URL -->

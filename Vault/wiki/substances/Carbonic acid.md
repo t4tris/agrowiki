@@ -5,29 +5,19 @@ name_en: Carbonic acid (H2CO3)
 cas: 
 formula: 
 class: Organic Acid
-class_family: organic_acids
-mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
-application_csv: Apply 0.5-1% CO2-enriched foliar spray; Apply 1-2 g/L bicarbonate in irrigation
 efficacy_csv: MEDIUM
 validation_status: unverified
 evidence_level: unverified
 last_checked: 
 next_review: 
-sources: []
-notes:
-  - "CSV-код Carbonic acid встречается дважды (FOLIAR 0.5-1% CO2-обогащённый раствор + SOIL 1-2 г/л бикарбонат в полив) — объединены; проверять оба протокола (физиологическая роль H2CO3/бикарбоната в фотосинтезе — основной вопрос валидации)"
+notes: []
 crops:
   tomato: no_data
   cucumber: no_data
   strawberry: no_data
-aliases: ["H2CO3", "Carbonic acid", "Bicarbonate"]
-aliases_ru: ["угольная кислота", "бикарбонат"]
-eppo_code: null
-regulatory_status: null
-consensus_score: null
-toxicity_window: {}
-phi_mrl: {}
+aliases: []
+aliases_ru: []
 ---
 
 # Carbonic acid — Carbonic acid (H2CO3)
@@ -40,14 +30,14 @@ phi_mrl: {}
 ## Механизм действия
 Photosynthesis enhancer
 
-## Применение (CSV)
-| Категория | Действие | Дозировка/Способ | Ожидаемый результат | Эффективность | Культуры |
+## ⚠️ Валидация CSV-заявок
+| CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| FOLIAR_APPLICATION | — | Apply 0.5-1% CO2-enriched foliar spray | Increased net photosynthesis and water-use efficiency | MEDIUM | Wheat, drought-stressed crops |
-| SOIL_APPLICATION | — | Apply 1-2 g/L bicarbonate in irrigation | Improved CO2 assimilation and biomass in hydroponics | MEDIUM | Lettuce, hydroponic systems |
+| —: Apply 0.5-1% CO2-enriched foliar spray | ⚪ Нет данных | — | — | — | — |
+| —: Apply 1-2 g/L bicarbonate in irrigation | ⚪ Нет данных | — | — | — | — |
 
-## crop_evidence
-<!-- После валидации: дозировки и эффекты по каждой культуре с PMID/DOI -->
+## Научные данные по культурам
+<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
 
 ### 🍅 Томат (Solanum lycopersicum)
 <!-- нет данных по культуре -->
@@ -58,18 +48,11 @@ Photosynthesis enhancer
 ### 🍓 Клубника (Fragaria × ananassa)
 <!-- нет данных по культуре -->
 
-## ⚠️ Corrected Dosages (vs CSV)
-| CSV Claim | Corrected | Condition | Source |
-|-----------|-----------|-----------|--------|
-
 ## ⚠️ Toxicity Window
 <!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; для HIGH-efficacy обязательно -->
-
-## Противоречия
-<!-- CSV vs литература, severity -->
+<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
 
 ## Источники
 <!-- PMID / DOI / URL -->
