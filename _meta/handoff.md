@@ -21,11 +21,12 @@ contract_version: 1.4
 | `_meta/session_report_2026-08-04_part3.md` | **Отчёт для внешнего аудита** (часть 3: ревью part 2, 1 коммит) |
 | `_meta/session_report_2026-08-06.md` | **Отчёт для внешнего аудита** (2026-08-06: анализ, merge, таксономия 7 семейств, SDD-контекст, стиль-гайд v2 — 4 коммита + незакоммиченная работа) |
 | `_meta/session_report_2026-08-06_part2.md` | **Отчёт для внешнего аудита** (реализация ревью 6.5/10: коммит, STYLE_MIGRATE, smoke_test, bootstrap-защита, EOL) |
+| `_meta/session_report_2026-08-06_part3.md` | **Отчёт для внешнего аудита** (Фаза 3: валидация 10 HIGH-веществ, фикс хвостов бутстрапа, PHI/REI — не блокер, 4 коммита) |
 | `_meta/sdd_openspec_context.md` | Контекст для SDD-переосмысления (OpenSpec-брейншторм, актуализирован 2026-08-06) |
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
 | `AGENTS.md` | Схема вики, контракт отчёта **v1.4**, правила честности 1–14, L1–L4 |
 | `README.md` | **Человекочитаемый хаб проекта** (этот README) |
-| `task_queue.md` | Очередь VALIDATE (HIGH 38 / MEDIUM 133 / LOW 83) + TECHNICAL DEBT (6 задач) + RETRY LOG |
+| `task_queue.md` | Очередь VALIDATE (HIGH 28 / MEDIUM 133 / LOW 83) + TECHNICAL DEBT (6 задач) + RETRY LOG |
 | `validation.md` | Трекер валидации для LLM (Dataview не рендерится — дашборд в `Vault/index.md`) |
 | `log.md` | Хронология (append-only) |
 | `raw/sources/papers_to_fetch.md` | **Очередь статей на скачивание человеком** (Proline ×3, PBZ-этикетки ×2) |
@@ -46,9 +47,11 @@ contract_version: 1.4
 
 **Конвейер работает и прошёл 4 цикла внешнего аудита** (ревью 2026-08-06, оценка 6.5/10 —
 реализовано в тот же день). Контракт — **v1.4**; стиль-гайд карточек **v2.3** «конечные факты»;
-все 11 валидированных карточек мигрированы на новую схему (эталон — IBA.md).
+все 21 валидированная карточка на новой схеме (эталон — IBA.md). В этой сессии (part 3)
+валидировано **10 новых HIGH-веществ** (11 → 21), добавлены 2 rev2-артефакта, расширен
+smoke_test (правило 10), правило 14 — PHI/REI не блокер.
 
-### Валидировано: 11 / 265 страниц (267 кодов CSV — 2 пары объединены: MeJA→Methyl Jasmonate, TRIA→Triacontanol)
+### Валидировано: 21 / 265 страниц (267 кодов CSV — 2 пары объединены: MeJA→Methyl Jasmonate, TRIA→Triacontanol)
 
 | Вещество | Статус | Evidence | Ключевой вывод |
 |---|---|---|---|
@@ -63,6 +66,16 @@ contract_version: 1.4
 | **Glycine Betaine** | partial | moderate | 117–586 ppm подтверждены; засуха «все культуры» слабо |
 | **Proline** | partial | moderate | Фолиарно клубника +23–32%; **seed priming = insufficient_data** (очередь скачивания) |
 | **Silicon** | corrected | strong | Дозы 30–75 мг Si/л; taxonomy: mechanism → antioxidant_defense |
+| **Kinetin** | partial | moderate | Анти-сенесцентное действие подтверждено; CSV 10–50 ppm не подтверждена напрямую |
+| **6-BAP** | partial | strong | Доза 100 ppm подтверждена для томата (+108.4% урожайности); цвет плодов не затрагивает |
+| **Thidiazuron** | verified | strong | Фолиарный TDZ 50 мг/л ×3 — рост пазушных почек клубники; томат/огурец no_data |
+| **PIX** | partial | moderate | Контроль столонов клубники; **taxonomy → synthetic_growth_regulators** |
+| **Uniconazole** | corrected | moderate | Дозы 2.5–10 мг/л (томат), 10–20 ppm (клубника); **taxonomy → synthetic_growth_regulators** |
+| **Ethephon** | corrected | strong | 100 ppm ускоряет созревание томата; 7 mmol/L≈1011 ppm не подтверждён |
+| **S-ABA** | verified | moderate | Стресс-толерантность; созревание клубники (не-климактерический плод) |
+| **Zeatin** | partial | moderate | Эндогенный транс-зеатин в цветках/плодах; CSV 5–25 ppm не подтверждена |
+| **Trinexapac-ethyl** | insufficient_data | weak | Механизм GA-ингибитор подтверждён; по фокусным культурам нет верифицируемых PMID/DOI |
+| **Chlormequat Chloride** | partial | moderate | Контроль высоты рассады; CSV 250–500 ppm и ускорение созревания не подтверждены |
 
 ### Инфраструктура (сделано к 2026-08-06)
 - Стиль-гайд v2.3 «конечные факты»: таблица «Валидация CSV-заявок», «Научные данные по культурам»,
@@ -78,14 +91,15 @@ contract_version: 1.4
 
 ## 🎯 Следующие шаги (Фаза 3)
 
-### 0. Перед стартом — НЕ нужно (закрыто в этой сессии)
-- ✅ STYLE_MIGRATE: 11 карточек на стиль-гайд v2.3 (эталон IBA.md); smoke_test — OK
-- ✅ Europe PMC fallback для GA3/Triacontanol/Chitosan/Silicon — выполнен (orchestrator_fallback)
-- ✅ Дубликаты (8) — разрешены; ✅ заявки CSV — в таблице валидации (v2.2)
-- ✅ PHI/MRL Paclobutrazol — собран (EU 0.01\* LOD); PHI/REI — очередь на этикетки (papers_to_fetch)
+### 0. Перед стартом — закрыто в этой сессии (part 3)
+- ✅ Валидировано 10 новых HIGH-веществ: Kinetin, 6-BAP, Thidiazuron, PIX, Uniconazole, Ethephon, S-ABA, Zeatin, Trinexapac-ethyl, Chlormequat Chloride (11 → 21)
+- ✅ Smoke_test расширен (правило 10: комментарии-заглушки, дубли секций, служебная обвязка PHI/MRL)
+- ✅ Правило 14: PHI/REI — не блокер (AGENTS.md, README, task_queue)
+- ✅ 2 rev2-артефакта (Uniconazole, Trinexapac-ethyl) с `supersedes`, L1 пройден
+- ✅ Хвосты бутстрапа удалены из всех валидированных карточек
 
 ### 1. Полный цикл валидации
-Порядок приоритетов (в `task_queue.md`): **HIGH (38)** → MEDIUM (133) → LOW (83).
+Порядок приоритетов (в `task_queue.md`): **HIGH (28)** → MEDIUM (133) → LOW (83).
 
 **Рабочий цикл на вещество** (пакетами по 10–20 за сессию):
 1. Запустить research-сабагент (stateless; промпт: CSV-строка + текущая таксономия карточки + контракт **v1.4**).
@@ -93,19 +107,20 @@ contract_version: 1.4
 3. L1: `python _scripts/l1_check.py raw/evidence/{A-Z}/<код>/search_*.json` (требует v1.4).
 4. При `searches.failed` europepmc → `python _scripts/fallback_europepmc.py <код> "<имя>" "<запросы>"`.
 5. Применить `taxonomy_check.corrections` (если есть) → карточка + `gen_taxonomy.py --refresh` при изменении маппинга.
-6. Написать карточку **строго по стиль-гайду v2.3** (AGENTS.md): frontmatter (18 полей) + «Валидация CSV-заявок» (одна заявка = одна строка) + «Научные данные по культурам» (методы применения) + toxicity + 📅 PHI/REI/MRL + ограничения + источники. Без баннеров, процесса поиска, дублей.
+6. Написать карточку **строго по стиль-гайду v2.3** (AGENTS.md): frontmatter (18 полей) + «Валидация CSV-заявок» (одна заявка = одна строка) + «Научные данные по культурам» (методы применения) + toxicity + 📅 PHI/REI/MRL + ограничения + источники. Без баннеров, процесса поиска, дублей. **ВАЖНО: файл перезаписывать ЦЕЛИКОМ** (правило 10) — НЕ только верхнюю часть через replace_string, иначе в конце остаются секции-заглушки черновика (повторялось 2 раза в этой сессии!).
 7. Обновить `task_queue.md` ([x] + RETRY-строки), `validation.md` + проверить `Vault/index.md`, `log.md`, обновить `synonyms.json` (`gen_synonyms.py`).
 8. `python _scripts/smoke_test.py` (exit 0 = ок) → коммит + push.
 
-### 2. Рекомендуемый следующий пакет (10 веществ, все HIGH)
-**Kinetin, 6-BAP, Thidiazuron, PIX, Uniconazole, Ethephon, S-ABA, Trinexapac-ethyl, Chlormequat Chloride, Zeatin** — цитокинины/ретарданты, пересечения с GA3/Paclobutrazol. Для PIX/Uniconazole — PHI/REI (этикетки, см. papers_to_fetch.md).
+### 2. Рекомендуемый следующий пакет (HIGH, остаток 28)
+**1-MCP, 4-CPA, BNOA, Carbendazim, Cyanamide, DA-6, DMSO, Ethylene, Fulvic Acid, GA1, GA4, Leonardite, MCPA, Magnesium, Maleic Hydrazide, NAD, NHP, PDJ, Phosphite, Polyaspartic, Polyglutamic, Propiconazole, Pyraclostrobin, STS, Tebuconazole, Thiabendazole, Thiophanate, Trifloxystrobin.** Для пестицидов/ретардантов (Carbendazim, Propiconazole, Tebuconazole, Thiabendazole, Thiophanate, Trifloxystrobin) — PHI/REI справочно (не блокер), MRL — из этикеток.
 
 ### 3. Технический долг (TECHNICAL DEBT в task_queue.md)
 - **PAPERS_TO_FETCH**: пользователь скачивает статьи/этикетки (Proline ×3, PBZ ×2) → анализ → карточки
-- **PHI_REI**: Uniconazole, PIX (этикетки)
+- **PHI_REI**: Uniconazole, PIX, Chlormequat (этикетки)
 - **AUDIT_TAXONOMY-20**: отдельный батч taxonomy_check **до Фазы 4** (синтезы)
 - **MIGRATE v1.2→v1.4**: при Lint-перепроверке пилотных карточек (2026-09-04)
 - **SDD-сессия**: брейншторм OpenSpec по `_meta/sdd_openspec_context.md` (отложено до Фазы 5)
+- **Усилить конвейер** (из репорта part 3): автоматический writer карточек (правило 10), фильтр `required_for` из отчётов, сохранение retry-ответов, унификация папок evidence для кодов с цифрами
 
 ---
 
