@@ -45,7 +45,7 @@ f:\agrowiki\
     ├── raw/             ← рабочая папка: черновики будущих sources (в Obsidian, в .gitignore)
     └── wiki/
         ├── substances/  ← 265 страниц (267 кодов CSV, 2 пары объединены)
-        ├── categories/  ← 8 категорий применения
+        ├── categories/  ← 9 категорий применения
         ├── classes/     ← 29 семейств химических классов
         ├── mechanisms/  ← 15 механизмов действия
         ├── crops/       ← 3 культуры-хаба
@@ -76,7 +76,7 @@ f:\agrowiki\
 | `extract_report.py` | Извлечение JSON из ответа сабагента; **авто-retry** (до 3 файлов), exit 2 = нужен повторный запуск |
 | `l1_check.py` | L1: схема v1.4 + type-check + `taxonomy_check` + `supersedes` + PMID (esummary) + DOI (Crossref) |
 | `fallback_europepmc.py` | Europe PMC fallback оркестратора (SRC:PPR препринты) → `orchestrator_fallback_*.json` |
-| `gen_taxonomy.py` | Таксономия: 8 категорий + 29 семейств + 15 механизмов (`--refresh` для пересчёта) |
+| `gen_taxonomy.py` | Таксономия: 9 категорий + 29 семейств + 15 механизмов (`--refresh` для пересчёта) |
 | `gen_synonyms.py` | `raw/normalization/synonyms.json` из aliases карточек |
 | `bootstrap.py` | Черновики карточек из CSV (по умолчанию — только карточки; `--full` перезаписывает служебные файлы!) |
 | `digest.py` | Компактный дайджест отчётов |

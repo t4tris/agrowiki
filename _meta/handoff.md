@@ -30,7 +30,7 @@ contract_version: 1.4
 | `_scripts/extract_report.py` | Извлечение JSON из ответа сабагента; **авто-retry** (до 3 файлов), exit 2 = RETRY_NEEDED, RETRY-лог в task_queue |
 | `_scripts/l1_check.py` | L1: схема **v1.4** + type-check + `taxonomy_check` + `supersedes` + PMID esummary + DOI Crossref |
 | `_scripts/fallback_europepmc.py` | Europe PMC fallback оркестратора (SRC:PPR) → `orchestrator_fallback_*.json` |
-| `_scripts/gen_taxonomy.py` | Таксономия (8 категорий + 29 семейств + 15 механизмов); `--refresh` для пересчёта |
+| `_scripts/gen_taxonomy.py` | Таксономия (9 категорий + 29 семейств + 15 механизмов); `--refresh` для пересчёта |
 | `_scripts/gen_synonyms.py` | `raw/normalization/synonyms.json` из aliases карточек (267 веществ) |
 | `_scripts/bootstrap.py` | Черновики из CSV (**по умолчанию — только карточки**; `--full` перезаписывает служебные файлы!) |
 | `raw/evidence/{A,C,G,I,M,P,S,T}/…/search_*.json` | 12 артефактов (5 пилот v1.2 + 5 v1.4 + fallback'и) |
@@ -60,7 +60,7 @@ contract_version: 1.4
 
 ### Инфраструктура (сделано за сессию)
 - Реструктуризация: служебный слой вне vault; GitHub remote (`main`)
-- Таксономия: 8 категорий + 29 семейств + 15 механизмов (267 карточек с `class_family`/`mechanism`)
+- Таксономия: 9 категорий + 29 семейств + 15 механизмов (267 карточек с `class_family`/`mechanism`)
 - `synonyms.json` (267 веществ), авто-retry в extract_report, L1 v1.4, fallback Europe PMC (4 вещества)
 - Дубликаты (8) разрешены; заявки CSV — в таблице «Валидация CSV-заявок» (поле `application_csv` удалено в схеме v2.2)
 - PHI/REI — практический блокер (правило 14); **MRL Paclobutrazol собран** (EU 0.01\* LOD, Codex нет)

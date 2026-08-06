@@ -7,7 +7,7 @@ formula: C5H11NO2
 class: Osmoprotectant
 class_family: amino_acids_polyamines
 mechanism: osmoprotection
-action_category: STRESS_TOLERANCE
+action_category: STRESS_TOLERANCE, SHELF_LIFE
 efficacy_csv: HIGH
 validation_status: partial
 evidence_level: moderate

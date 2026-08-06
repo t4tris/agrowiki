@@ -7,7 +7,7 @@ formula: C13H20O3
 class: Jasmonate
 class_family: jasmonates
 mechanism: jasmonate_sar_defense
-action_category: FOLIAR_APPLICATION
+action_category: FOLIAR_APPLICATION, SHELF_LIFE
 efficacy_csv: HIGH
 validation_status: corrected
 evidence_level: strong

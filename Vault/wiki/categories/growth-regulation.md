@@ -13,6 +13,6 @@ substances: []
 ```dataview
 TABLE efficacy_csv AS "Эффективность", validation_status AS "Статус", crops.tomato AS "Томат", crops.cucumber AS "Огурец", crops.strawberry AS "Клубника"
 FROM "wiki/substances"
-WHERE action_category = "GROWTH_REGULATION"
+WHERE contains(action_category, \"GROWTH_REGULATION\")
 SORT validation_status ASC
 ```

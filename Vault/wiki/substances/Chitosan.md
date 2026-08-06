@@ -7,7 +7,7 @@ formula: C56H103N9O39 (фрагмент; полимер 50 000–375 000 Да)
 class: Biostimulant
 class_family: biostimulants_extracts
 mechanism: elicitor_immunity
-action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
+action_category: FOLIAR_APPLICATION, SOIL_APPLICATION, SHELF_LIFE
 efficacy_csv: MEDIUM
 validation_status: partial
 evidence_level: strong

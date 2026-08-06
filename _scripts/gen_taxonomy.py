@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Phase 2: build taxonomy — 8 categories, ~29 class families, ~15 mechanisms.
+"""Phase 2: build taxonomy — 9 categories, ~29 class families, ~15 mechanisms.
 - Updates substance cards: adds `class_family` and `mechanism` fields to frontmatter.
 - Generates wiki/categories/*.md, wiki/classes/*.md, wiki/mechanisms/*.md pages.
 Idempotent: pages are created only if missing; cards are patched in place (regex insert).
@@ -204,6 +204,10 @@ CATS = [
      'Защита от абиотических стрессов: засуха, жара, соль, заморозки (3 строки).'),
     ('photosynthesis-enhancement', 'Усиление фотосинтеза', 'PHOTOSYNTHESIS_ENHANCEMENT',
      'Стимуляция фотосинтетического аппарата, содержание хлорофилла, CO2-фиксация (3 строки).'),
+    ('shelf-life', 'Хранение и лёжкость (shelf-life)', 'SHELF_LIFE',
+     'Постхарвест-обработки и управление лёжкостью: продление срока хранения, подавление гнилей '
+     'при хранении, покрытия, регуляторы созревания/старения (в CSV категории нет — расширение '
+     'схемы 2026-08-06; назначается по подтверждённым постхарвест-фактам карточек).'),
 ]
 
 FAMILIES = [
@@ -435,7 +439,7 @@ substances: []
 ```dataview
 TABLE efficacy_csv AS "Эффективность", validation_status AS "Статус", crops.tomato AS "Томат", crops.cucumber AS "Огурец", crops.strawberry AS "Клубника"
 FROM "wiki/substances"
-WHERE action_category = "{ac}"
+WHERE contains(action_category, "{ac}")
 SORT validation_status ASC
 ```
 """
