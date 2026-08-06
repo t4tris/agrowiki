@@ -88,7 +88,9 @@
         ],
         "quote": "..."
       }],
-      "gap": "...", "related_evidence": []},
+      "gap": "...", "related_evidence": [{"claim": "...", "note": "экстраполяция (Cucurbitaceae) — родственная культура",
+        "sources": [{"source_type": "doi", "id": "DOI:10.2478/fhort-2025-0018", "year": 2025, "verified": true,
+                     "verification_method": "crossref", "paper_type": "regional_journal"}]}]},
     "cucumber": {...},
     "strawberry": {...}
   },
@@ -117,6 +119,13 @@
 3. `source_type: "label"` — только для этикеток препаратов/техотчётов без идентификаторов,
    с `verified: true` + `verification_method: "manual_read"`; не более 20% источников на культуру.
 4. Не выдумывать PMID/DOI. Реальная работа с OpenAlex ID лучше, чем отсутствие данных.
+5. **Каждый claim в `related_evidence` ОБЯЗАТЕЛЬНО сопровождается `sources` с идентификатором**
+   (DOI/OpenAlex ID/PMID из `sources_index`). Если идентификатор не найден — `source_type: "label"`,
+   `verified: true`, `verification_method: "manual_read"` + пояснение в `note`.
+6. **Родственные культуры (правило 16):** данные по культурам того же семейства, что и фокусные
+   (дыня/тыква/кабачок для огурца, перец/баклажан для томата, малина/ежевика для клубники),
+   НЕ отбрасывать — сохранять в `related_evidence` целевой культуры с пометкой
+   «экстраполяция (семейство)» и источником (DOI/OpenAlex ID).
 
 ## Блок 8. Финал
 

@@ -24,17 +24,17 @@ contract_version: 1.4
 | `_meta/session_report_2026-08-06_part3.md` | **Отчёт для внешнего аудита** (Фаза 3: валидация 10 HIGH-веществ, фикс хвостов бутстрапа, PHI/REI — не блокер, 4 коммита) |
 | `_meta/session_report_2026-08-06_part4.md` | **Отчёт для внешнего аудита** (реализация ревью 7/10: контракт v1.5 source_type, восстановление Figueiredo 2015, защита конвейера) |
 | `_meta/session_report_2026-08-06_part5.md` | **Отчёт для внешнего аудита** (реализация ревью 8/10: промпт v1.5, OpenAlex backoff, label ≤20%) |
-| `_meta/subagent_prompt_v1.5.md` | **Шаблон промпта research-сабагента (контракт v1.5)** — использовать для запуска сабагентов |
+| `_meta/subagent_prompt_v1.5.md` | **Шаблон промпта research-сабагента (контракт v1.5)** — использовать для запуска сабагентов; Блок 7 п.5-6: related_evidence ОБЯЗАТЕЛЬНО с источником-идентификатором, родственные культуры → related_evidence |
 | `_meta/sdd_openspec_context.md` | Контекст для SDD-переосмысления (OpenSpec-брейншторм, актуализирован 2026-08-06) |
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
-| `AGENTS.md` | Схема вики, контракт отчёта **v1.5** (source_type enum), правила честности 1–15, L1–L4 |
+| `AGENTS.md` | Схема вики, контракт отчёта **v1.5** (source_type enum), правила честности **1–16** (16: родственные культуры → related_evidence «экстраполяция (семейство)»), L1–L4 |
 | `README.md` | **Человекочитаемый хаб проекта** (этот README) |
-| `task_queue.md` | Очередь VALIDATE (HIGH 28 / MEDIUM 133 / LOW 83) + TECHNICAL DEBT (6 задач) + RETRY LOG |
+| `task_queue.md` | Очередь VALIDATE (HIGH 27 / MEDIUM 133 / LOW 83) + TECHNICAL DEBT (6 задач) + RETRY LOG |
 | `validation.md` | Трекер валидации для LLM (Dataview не рендерится — дашборд в `Vault/index.md`) |
 | `log.md` | Хронология (append-only) |
 | `raw/sources/papers_to_fetch.md` | **Очередь статей на скачивание человеком** (Proline ×3, PBZ-этикетки ×2) |
 | `_scripts/extract_report.py` | Извлечение JSON из ответа сабагента; **авто-retry** (до 3 файлов), exit 2 = RETRY_NEEDED, RETRY-лог в task_queue |
-| `_scripts/l1_check.py` | L1: схема **v1.4** + type-check + `taxonomy_check` + `supersedes` + PMID esummary + DOI Crossref |
+| `_scripts/l1_check.py` | L1: схема **v1.5** + type-check + `taxonomy_check` + `supersedes` + PMID esummary + DOI Crossref + OpenAlex/URL/ISBN/label + WARNING related_evidence без идентификатора |
 | `_scripts/fallback_europepmc.py` | Europe PMC fallback оркестратора (SRC:PPR) → `orchestrator_fallback_*.json` |
 | `_scripts/gen_taxonomy.py` | Таксономия (9 категорий + 29 семейств + 15 механизмов); `--refresh` для пересчёта |
 | `_scripts/gen_synonyms.py` | `raw/normalization/synonyms.json` из aliases карточек (267 веществ) |
@@ -48,12 +48,13 @@ contract_version: 1.4
 
 ## 🟢 Статус проекта (на 2026-08-06, конец дня)
 
-**Конвейер работает и прошёл 5 циклов внешнего аудита** (ревью 2026-08-06 part 4, оценка 8/10 —
-реализовано: контракт v1.5, промпт v1.5 проверен в бою на DA-6). Контракт — **v1.5**
+**Конвейер работает и прошёл 5 циклов внешнего аудита** (ревью 2026-08-06 part 4, оценка 8/10;
+part 5 обновлённый — 7.5/10, реализовано: контракт v1.5, промпт v1.5 проверен в бою на DA-6,
+правило 16 — родственные культуры, промпт v1.5 — привязка DOI к related_evidence). Контракт — **v1.5**
 (source_type: pmid|doi|openalex|isbn|url_verified|label); стиль-гайд карточек **v2.3** «конечные
 факты»; все 22 валидированные карточки на новой схеме (эталон — IBA.md). Валидировано
 **11 новых HIGH-веществ** (11 → 22), добавлены 2 rev2-артефакта, расширен smoke_test (правило 10),
-правило 14 — PHI/REI не блокер, правило 15 — источники без DOI.
+правило 14 — PHI/REI не блокер, правило 15 — источники без DOI, правило 16 — родственные культуры.
 
 ### Валидировано: 22 / 265 страниц (267 кодов CSV — 2 пары объединены: MeJA→Methyl Jasmonate, TRIA→Triacontanol)
 
@@ -96,15 +97,18 @@ contract_version: 1.4
 
 ## 🎯 Следующие шаги (Фаза 3)
 
-### 0. Перед стартом — закрыто в этой сессии (part 3)
-- ✅ Валидировано 10 новых HIGH-веществ: Kinetin, 6-BAP, Thidiazuron, PIX, Uniconazole, Ethephon, S-ABA, Zeatin, Trinexapac-ethyl, Chlormequat Chloride (11 → 21)
+### 0. Перед стартом — закрыто в этой сессии (part 3–5)
+- ✅ Валидировано 11 новых HIGH-веществ: Kinetin, 6-BAP, Thidiazuron, PIX, Uniconazole, Ethephon, S-ABA, Zeatin, Trinexapac-ethyl, Chlormequat Chloride, **DA-6** (11 → 22)
 - ✅ Smoke_test расширен (правило 10: комментарии-заглушки, дубли секций, служебная обвязка PHI/MRL)
 - ✅ Правило 14: PHI/REI — не блокер (AGENTS.md, README, task_queue)
 - ✅ 2 rev2-артефакта (Uniconazole, Trinexapac-ethyl) с `supersedes`, L1 пройден
 - ✅ Хвосты бутстрапа удалены из всех валидированных карточек
+- ✅ DA-6: данные по дыне Cucumis melo (родственная культура огурца) верифицированы через OpenAlex/Crossref (DOI fhort-2025-0018/0026)
+- ✅ **Правило 16** (AGENTS.md): родственные культуры → `related_evidence` с пометкой «экстраполяция (семейство)» + источник; данные не влияют на evidence_level/статус культуры
+- ✅ Промпт v1.5, Блок 7: каждый claim в `related_evidence` ОБЯЗАТЕЛЬНО с sources[идентификатор]; l1_check: WARNING для related_evidence без ID
 
 ### 1. Полный цикл валидации
-Порядок приоритетов (в `task_queue.md`): **HIGH (28)** → MEDIUM (133) → LOW (83).
+Порядок приоритетов (в `task_queue.md`): **HIGH (27)** → MEDIUM (133) → LOW (83).
 
 **Рабочий цикл на вещество** (пакетами по 10–20 за сессию):
 1. Запустить research-сабагент (stateless; промпт **по шаблону `_meta/subagent_prompt_v1.5.md`**: CSV-строка + текущая таксономия карточки + контракт **v1.5**).
@@ -116,8 +120,8 @@ contract_version: 1.4
 7. Обновить `task_queue.md` ([x] + RETRY-строки), `validation.md` + проверить `Vault/index.md`, `log.md`, обновить `synonyms.json` (`gen_synonyms.py`).
 8. `python _scripts/smoke_test.py` (exit 0 = ок) → коммит + push.
 
-### 2. Рекомендуемый следующий пакет (HIGH, остаток 28)
-**1-MCP, 4-CPA, BNOA, Carbendazim, Cyanamide, DA-6, DMSO, Ethylene, Fulvic Acid, GA1, GA4, Leonardite, MCPA, Magnesium, Maleic Hydrazide, NAD, NHP, PDJ, Phosphite, Polyaspartic, Polyglutamic, Propiconazole, Pyraclostrobin, STS, Tebuconazole, Thiabendazole, Thiophanate, Trifloxystrobin.** Для пестицидов/ретардантов (Carbendazim, Propiconazole, Tebuconazole, Thiabendazole, Thiophanate, Trifloxystrobin) — PHI/REI справочно (не блокер), MRL — из этикеток.
+### 2. Рекомендуемый следующий пакет (HIGH, остаток 27)
+**1-MCP, 4-CPA, BNOA, Carbendazim, Cyanamide, DMSO, Ethylene, Fulvic Acid, GA1, GA4, Leonardite, MCPA, Magnesium, Maleic Hydrazide, NAD, NHP, PDJ, Phosphite, Polyaspartic, Polyglutamic, Propiconazole, Pyraclostrobin, STS, Tebuconazole, Thiabendazole, Thiophanate, Trifloxystrobin.** Для пестицидов/ретардантов (Carbendazim, Propiconazole, Tebuconazole, Thiabendazole, Thiophanate, Trifloxystrobin) — PHI/REI справочно (не блокер), MRL — из этикеток.
 
 ### 3. Технический долг (TECHNICAL DEBT в task_queue.md)
 - **PAPERS_TO_FETCH**: пользователь скачивает статьи/этикетки (Proline ×3, PBZ ×2) → анализ → карточки
@@ -126,6 +130,7 @@ contract_version: 1.4
 - **MIGRATE v1.2→v1.4**: при Lint-перепроверке пилотных карточек (2026-09-04)
 - **SDD-сессия**: брейншторм OpenSpec по `_meta/sdd_openspec_context.md` (отложено до Фазы 5)
 - **Усилить конвейер** (из репорта part 3): автоматический writer карточек (правило 10), фильтр `required_for` из отчётов, сохранение retry-ответов, унификация папок evidence для кодов с цифрами
+- **Напоминание**: related_evidence — всегда с источником-идентификатором (DOI/OpenAlex ID) или label/manual_read; родственные культуры не повышают статус культуры
 
 ---
 

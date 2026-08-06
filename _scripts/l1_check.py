@@ -166,15 +166,22 @@ def main(path):
         # v1.3: no_data-культуры должны иметь related_evidence
         if cv.get('status') == 'no_data' and not cv.get('related_evidence'):
             errors.append(f'crops.{crop}: status=no_data, но related_evidence пуст/отсутствует')
-        # v1.5 (ревью part 5): related_evidence с claim должен иметь идентификатор
-        # (pmid/doi/source_type+id) — warning, не блокер: данные без ID не верифицируемы
+        # v1.5 (ревью part 5): related_evidence с claim обязан иметь sources с идентификатором
+        # (pmid/doi/source_type+id) или pmid/doi на верхнем уровне — warning, не блокер
         for re_i, re in enumerate(cv.get('related_evidence', [])):
             if not isinstance(re, dict):
                 continue
-            rid = re.get('pmid') or re.get('doi') or (re.get('source_type') and re.get('id'))
+            re_srcs = re.get('sources') if isinstance(re.get('sources'), list) else []
+            rid = re.get('pmid') or re.get('doi')
+            for rs in re_srcs:
+                if isinstance(rs, dict):
+                    rid = rid or rs.get('pmid') or rs.get('doi') or (rs.get('source_type') and rs.get('id'))
+                    if rid:
+                        break
             if not rid and re.get('claim'):
-                warnings.append(f'crops.{crop}.related_evidence[{re_i}]: claim без идентификатора '
-                                f'(pmid/doi/source_type+id) — данные не верифицируемы, указать DOI/OpenAlex ID')
+                warnings.append(f'crops.{crop}.related_evidence[{re_i}]: claim без источника с '
+                                f'идентификатором (нужен sources[] с pmid/doi/source_type+id) — '
+                                f'привязать DOI/OpenAlex ID из sources_index или пометить label/manual_read')
         for c in cv.get('claims', []):
             if c.get('type') not in CLAIM_TYPES:
                 errors.append(f'crops.{crop}.claims type невалиден: {c.get("type")}')
