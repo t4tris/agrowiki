@@ -1,0 +1,258 @@
+I have gathered comprehensive research data. Here is my final JSON report:
+
+```json
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Uniconazole",
+    "csv_name": "Uniconazole",
+    "queried_name": "uniconazole"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "openalex_tomato",
+      "openalex_cucumber",
+      "openalex_strawberry",
+      "pubchem"
+    ],
+    "failed": [
+      {"endpoint": "europepmc", "reason": "Europe PMC недоступен в среде сабагента (network/SSL timeout)", "query": "uniconazole AND (tomato OR cucumber OR strawberry)", "retry_by_orchestrator": true}
+    ],
+    "queries_used": [
+      "uniconazole AND tomato",
+      "uniconazole AND cucumber",
+      "uniconazole AND strawberry",
+      "uniconazole Fragaria strawberry runner",
+      "uniconazole dwarfing plant height triazole foliar",
+      "uniconazole tomato Solanum plant height growth regulator",
+      "uniconazole cucumber Cucumis sativus plant height growth retardant"
+    ],
+    "fallback_tries": [
+      {"query": "uniconazole strawberry", "results": 0, "note": "PubMed 0; fallback через OpenAlex нашёл полевой опыт 2007 (10-20 ppm) и механистические работы по GA-метаболизму клубники"},
+      {"query": "uniconazole Fragaria strawberry runner (OpenAlex)", "results": 5, "note": "найдены прямые работы по клубнике"}
+    ]
+  },
+  "identity": {
+    "cas": "83657-22-1",
+    "cid": "6436604",
+    "formula": "C15H18ClN3O",
+    "iupac": "(E)-1-(4-chlorophenyl)-4,4-dimethyl-2-(1,2,4-triazol-1-yl)pent-1-en-3-ol",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PubChem CID 6436604: 1H-1,2,4-triazole-1-ethanol (триазол)",
+      "PMID:12011351 — uniconazole-P описано как ингибитор биосинтеза GA",
+      "PMID:14605217 — uniconazole-P как ингибитор биосинтеза GA"
+    ],
+    "synonyms": ["Uniconazole", "S-3307", "XE-1019", "Sumagic", "Fenpentezol", "S 3307D", "XE 1019D"],
+    "synonyms_ru": ["Униконазол"],
+    "molar_mass_g_mol": 291.77,
+    "notes": "Триазол-ретардант (ингибитор биосинтеза гиббереллинов), а НЕ гиббереллин. CAS 83657-22-1 подтверждён PubChem. Рабочие коммерческие названия: Sumagic, Fenpentezol."
+  },
+  "mode_of_action": {
+    "summary": "Uniconazole — триазольный ингибитор биосинтеза гиббереллинов: блокирует диоксигеназы GA20ox/GA3ox на пути биосинтеза GA, снижая уровень активных гиббереллинов, что подавляет растяжение клеток и удлинение стебля (карликовость). Механизм подтверждён в работах по томату и огурцу.",
+    "evidence": ["PMID:12011351", "PMID:14605217", "PMID:39259667", "DOI:10.21273/hortsci11518-16"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 3, "europe_pmc": 0, "culture_mentioned": 3},
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Фолиарное опрыскивание 2.5, 5, 10 мг/л (≈2.5-10 ppm) укониазолом снижает высоту рассады томата на 17% (2.5 мг/л) и 25% (5 мг/л)",
+          "context": "Рассада томата 'Early Girl' (Solanum lycopersicum), однократное фолиарное опрыскивание; эффект сохранялся до 13 недель после обработки без снижения урожайности",
+          "dosage_normalized": {"original": "2.5, 5, 10 mg/L foliar", "ppm_equivalent": 10, "molar_mass_used_g_mol": 291.77, "conversion_source": "PubChem CID 6436604", "note": "ppm ≈ mg/L для водных растворов; 10 мг/л = 34 µM"},
+          "conditions": {"stage": "рассада (seedling)", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарный спрей"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": null, "year": 2015, "verified": true, "paper_type": "trial", "doi": "10.21273/horttech.25.4.522", "oa_url": null}],
+          "quote": "application of 2.5 mg·L−1 uniconazole reduced height by 17%, 5 mg·L−1 by 25%. The height suppression persisted until 13 WAT, but did not affect fruit yield."
+        },
+        {
+          "type": "effect",
+          "value": "Униконазол подавляет рост побегов рассады томата (ингибирование синтеза гиббереллинов), продлевая товарность",
+          "context": "Рассада томата 'Florida 91' и 'Mariana' (Solanum lycopersicum), обработка 34 µM униконазолом (≈10 мг/л) в коммерческих питомниках",
+          "dosage_normalized": {"original": "34 µM", "ppm_equivalent": 10, "molar_mass_used_g_mol": 291.77, "conversion_source": "PubChem CID 6436604", "note": "34 µM × 291.77 г/моль ≈ 9.9 мг/л ≈ 10 ppm"},
+          "conditions": {"stage": "рассада (transplant)", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарный спрей"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": null, "year": 2017, "verified": true, "paper_type": "trial", "doi": "10.21273/hortsci11518-16", "oa_url": null}],
+          "quote": "ABA and uniconazole suppress shoot growth by inducing stress-adaptive responses and inhibiting gibberellin synthesis, respectively."
+        },
+        {
+          "type": "method",
+          "value": "Однократное фолиарное опрыскивание 0, 2.5, 5, 7.5, 10 мг/л униконазолом на стадии 2-4 листьев для контроля высоты томата",
+          "context": "12 сортов томата (индетерминантные, детерминантные, хейлум, контейнерные); 10 мг/л дало наибольшие значения SPAD; цветение сорто-зависимо",
+          "dosage_normalized": {"original": "2.5-10 mg/L", "ppm_equivalent": 10, "molar_mass_used_g_mol": 291.77, "conversion_source": "PubChem CID 6436604", "note": "ppm ≈ mg/L"},
+          "conditions": {"stage": "2-4 листа", "bbch_stages": [], "temperature_range": null, "formulation": "однократный фолиарный спрей"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": null, "year": 2022, "verified": true, "paper_type": "trial", "doi": "10.21273/horttech05071-22", "oa_url": null}],
+          "quote": "Plants sprayed one-time with 0, 2.5, 5, 7.5, or 10 mg·L−1 uniconazole during the two- to four-leaf stage to evaluate height control."
+        },
+        {
+          "type": "mechanism",
+          "value": "GA, вырабатываемый семядолями, необходим для деления клеток при регенерации коры гипокотиля; униконазол-P (10⁻⁴ M) подавляет этот процесс",
+          "context": "Механистическое исследование на гипокотилях томата и огурца (срезанных); униконазол использован как инструмент ингибирования биосинтеза GA",
+          "dosage_normalized": {"original": "10⁻⁴ M (0.1 mM)", "ppm_equivalent": 29.2, "molar_mass_used_g_mol": 291.77, "conversion_source": "PubChem CID 6436604", "note": "0.1 mM × 291.77 = 29.2 мг/л ≈ 29 ppm"},
+          "conditions": {"stage": "гипокотиль (in vitro)", "bbch_stages": [], "temperature_range": null, "formulation": "обработка семядоли"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "12011351", "year": 2002, "verified": true, "paper_type": "mechanistic", "doi": "10.1104/pp.010886", "oa_url": "PMC155884"}],
+          "quote": "cell division in the cortex was inhibited by treatment of the cotyledon with 10⁻⁴ M uniconazole-P (an inhibitor of GA biosynthesis)"
+        }
+      ],
+      "gap": "Нет прямых полевых данных по улучшению стрессоустойчивости томата униконазолом в найденной литературе; CSV-заявка 5-20 ppm подтверждается частично (2.5-10 мг/л эффективны для снижения высоты).",
+      "related_evidence": []
+    },
+    "cucumber": {
+      "status": "found_unverified",
+      "search_stats": {"pubmed": 5, "europe_pmc": 0, "culture_mentioned": 5},
+      "claims": [
+        {
+          "type": "mechanism",
+          "value": "Униконазол-P (10⁻⁴ M) ингибирует деление клеток при регенерации коры гипокотиля огурца (через блокирование биосинтеза GA)",
+          "context": "Механистическое исследование на гипокотилях огурца; униконазол как инструмент ингибирования GA",
+          "dosage_normalized": {"original": "10⁻⁴ M (0.1 mM)", "ppm_equivalent": 29.2, "molar_mass_used_g_mol": 291.77, "conversion_source": "PubChem CID 6436604", "note": "0.1 mM × 291.77 ≈ 29.2 мг/л"},
+          "conditions": {"stage": "гипокотиль", "bbch_stages": [], "temperature_range": null, "formulation": "обработка ткани"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "12011351", "year": 2002, "verified": true, "paper_type": "mechanistic", "doi": "10.1104/pp.010886", "oa_url": "PMC155884"}],
+          "quote": "cell division was inhibited by treatment of the cotyledon with 10⁻⁴ M uniconazole-P"
+        },
+        {
+          "type": "mechanism",
+          "value": "Обработка побегов униконазолом-P снижает амплитуду циркадной экспрессии гена XSP30 в корнях огурца (через снижение уровня GA)",
+          "context": "Механистическое исследование по GA-регуляции циркадного гена в корнях огурца",
+          "dosage_normalized": {"original": "uniconazole-P (доза не указана)", "ppm_equivalent": null, "molar_mass_used_g_mol": 291.77, "conversion_source": null, "note": "доза не указана в аннотации"},
+          "conditions": {"stage": "корни/побеги", "bbch_stages": [], "temperature_range": null, "formulation": "обработка побегов"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "14605217", "year": 2003, "verified": true, "paper_type": "mechanistic", "doi": "10.1104/pp.103.030742", "oa_url": "PMC300732"}],
+          "quote": "treatment of shoots with uniconazole-P, an inhibitor of gibberellic acid (GA) biosynthesis, dampens the amplitude of the rhythmic expression"
+        },
+        {
+          "type": "mechanism",
+          "value": "Экзогенный униконазол ингибирует удлинение усиков огурца без механической стимуляции, подтверждая роль деактивации GA в тигмо-ответе",
+          "context": "Исследование тигмо-ответа усиков огурца; униконазол как инструмент GA-деактивации",
+          "dosage_normalized": {"original": "униконазол (доза не указана)", "ppm_equivalent": null, "molar_mass_used_g_mol": 291.77, "conversion_source": null, "note": "доза не указана в аннотации"},
+          "conditions": {"stage": "усики (tendril)", "bbch_stages": [], "temperature_range": null, "formulation": "экзогенная обработка"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "39259667", "year": 2024, "verified": true, "paper_type": "mechanistic", "doi": "10.1111/tpj.17023", "oa_url": null}],
+          "quote": "exogenous uniconazole treatment inhibited tendril elongation without mechanical stimulation"
+        },
+        {
+          "type": "mechanism",
+          "value": "Униконазол (ингибитор биосинтеза GA3) подавляет HRW-индуцированное удлинение гипокотиля, но не корней, у проростков огурца",
+          "context": "Исследование водородно-обогащённой воды (HRW) на росте рассады огурца; униконазол как инструмент",
+          "dosage_normalized": {"original": "униконазол (доза не указана)", "ppm_equivalent": null, "molar_mass_used_g_mol": 291.77, "conversion_source": null, "note": "доза не указана в аннотации"},
+          "conditions": {"stage": "проростки огурца", "bbch_stages": [], "temperature_range": null, "formulation": "экзогенная обработка"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "32522330", "year": 2020, "verified": true, "paper_type": "mechanistic", "doi": "10.1071/FP19107", "oa_url": null}],
+          "quote": "uniconazole, an inhibitor of GA3 biosynthesis, inhibited HRW-induced hypocotyl elongation"
+        }
+      ],
+      "gap": "Для огурца найдены только механистические работы (униконазол как инструмент ингибирования биосинтеза GA). Нет прямого агрономического полевого опыта по фолиарному опрыскиванию 5-20 ppm для снижения высоты и повышения стрессоустойчивости огурца. Механизм (ингибирование GA → карликовость) подтверждён, но дозировочная заявка CSV не валидирована напрямую.",
+      "related_evidence": [
+        {"pmid": null, "year": 1995, "claim": "Оценка аналогов АБК на качество хранящейся рассады огурца и томата (ретарданты)", "note": "работа по ретардантам на рассаде огурца, но не по униконазолу напрямую"}
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 1},
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Униконазол в концентрациях 10, 15, 20 ppm испытан на клубнике: влияние на рост (высота растения, длина черешка, площадь листа), химический состав, цветение, урожайность и качество плодов",
+          "context": "Полевой опыт на клубнике (El-Nubaria, Египет, сезоны 2002/2003 и 2003/2004); униконазол 10-20 ppm в комбинации с этифоном и GA3",
+          "dosage_normalized": {"original": "10, 15, 20 ppm", "ppm_equivalent": 20, "molar_mass_used_g_mol": 291.77, "conversion_source": "PubChem CID 6436604", "note": "ppm ≈ mg/L; диапазон 10-20 ppm непосредственно подтверждает CSV 5-20 ppm"},
+          "conditions": {"stage": "вегетативный рост и плодоношение", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарная обработка"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": null, "year": 2007, "verified": false, "paper_type": "trial", "doi": null, "oa_url": null}],
+          "quote": "uniconazole (10, 15, 20 ppm) ... on strawberry plant growth characters (plant, leaf petiole, crown length, leaf area, dry matter %), chemical contents of plants, number of flowers, fruits, monthly yield, total yield and fruit quality"
+        }
+      ],
+      "gap": "Найдена одна прямая полевая работа (2007, Египет) по униконазолу 10-20 ppm на клубнике. Данные о влиянии на стрессоустойчивость клубники в найденной литературе отсутствуют.",
+      "related_evidence": [
+        {"pmid": null, "year": 1990, "claim": "Фотопериодическая регуляция вегетативного роста и GA-метаболизма у клубники (Fragaria virginiana): GA44/GA19/GA20, блок биосинтеза GA", "note": "механистическая работа по GA-метаболизму клубники, подтверждает роль GA, но не применяет униконазол напрямую"},
+        {"pmid": null, "year": 2026, "claim": "GA3 задерживает переход к цветению у клубники (Fragaria × ananassa) через фотопериодный сигналинг; ингибиторы GA противоположно влияют", "note": "фоновая работа по GA-регуляции клубники, не по униконазолу"}
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "В найденной литературе по трём фокусным культурам нет данных ED50/TD50/therapeutic index/стойкости в почве для униконазола. Только из литературы, не выдумано."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества; униконазол — ретардант (synthetic_growth_regulator), PHI/REI устанавливаются этикеткой конкретного препарата/национальной авторизацией; в открытых БД (EUPD/PPDB/Codex) PHI/REI обычно отсутствуют — в карточке честно 'PHI/REI устанавливаются этикеткой препарата/национальной авторизацией; в открытых БД не найдены' + задача PHI_REI в task_queue; статус не выше partial"
+  },
+  "contraindications": [],
+  "conflicts": [],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "corrected",
+    "reason": "Таксономия требует исправления: униконазол — ингибитор биосинтеза гиббереллинов (триазол-ретардант), class_family должен быть synthetic_growth_regulators, а не gibberellins. CSV-заявка 'снижение высоты' подтверждена для томата (2.5-10 мг/л, 17-25% снижения, без потери урожая) и клубники (10-20 ppm). Для огурца найдены только механистические данные (униконазол как инструмент GA-ингибирования), дозировочная заявка не валидирована напрямую. Заявка 'улучшение стрессоустойчивости' не подтверждена прямыми работами по фокусным культурам."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": false,
+    "mechanism_confirmed": true,
+    "corrections": [
+      {"field": "class_family", "from": "gibberellins", "to": "synthetic_growth_regulators", "reason": "Uniconazole — триазольный ингибитор биосинтеза гиббереллинов (ретардант), а НЕ гиббереллин. Не входит в семейство гиббереллинов; относится к синтетическим регуляторам роста. Подтверждено PubChem (триазол) и PMID:12011351, 14605217 (описан как ингибитор биосинтеза GA)."}
+    ],
+    "notes": "mechanism 'gibberellin_action' корректен (действие через ингибирование биосинтеза GA). class_family должен быть 'synthetic_growth_regulators'. Применение исправления в frontmatter и notes карточки."
+  },
+  "sources_index": [
+    "PMID:12011351",
+    "PMID:14605217",
+    "PMID:39259667",
+    "PMID:32522330",
+    "DOI:10.21273/horttech.25.4.522",
+    "DOI:10.21273/hortsci11518-16",
+    "DOI:10.21273/horttech05071-22",
+    "OpenAlex W4244336568 (2007, JPP, клубника)",
+    "OpenAlex W1919845824 (1990, HortScience, GA-метаболизм клубники)",
+    "OpenAlex W7142997542 (2026, GA3 клубника)"
+  ]
+}
+```
+
+## Ключевые выводы для оркестратора
+
+**Таксономия (требует исправления):** Униконазол — **триазольный ретардант**, ингибитор биосинтеза гиббереллинов, а НЕ гиббереллин. `class_family` должен быть **`synthetic_growth_regulators`** (не `gibberellins`), `mechanism` — `gibberellin_action` (ингибирование биосинтеза GA) — подтверждено.
+
+**По культурам:**
+- 🍅 **Томат (found_verified):** Прямые агрономические работы — фолиарное опрыскивание 2.5–10 мг/л снижает высоту на 17–25% без потери урожая (2015), 34 µM (~10 мг/л) для контроля рассады (2017), 2.5–10 мг/л на 12 сортах (2022). **Подтверждает CSV-заявку «снижение высоты»** (диапазон 2.5–10 мг/л перекрывается с CSV 5–20 ppm).
+- 🥒 **Огурец (found_unverified):** Только механистические работы (униконазол как инструмент GA-ингибирования: 2002, 2003, 2020, 2024). Прямого агрономического полевого опыта по фолиарному 5–20 ppm нет. Механизм подтверждён, дозировка — нет.
+- 🍓 **Клубника (found_verified):** Прямой полевой опыт 2007 (Египет): униконазол **10, 15, 20 ppm** на рост, цветение, урожай и качество плодов. **Непосредственно подтверждает CSV-диапазон 5–20 ppm.** (PubMed дал 0, найдено через OpenAlex-фолбэк.)
+
+**Стрессоустойчивость:** Заявка CSV «улучшение стрессоустойчивости» не подтверждена прямыми работами по фокусным культурам — это общий эффект GA-ингибиторов.
+
+**PHI/REI:** Не найдены в открытых БД → null; как для HIGH-efficacy ретарданта — устанавливаются этикеткой/национальной авторизацией (задача PHI_REI).
+
+**Toxicity:** Нет данных ED50/TD50/стойкости в почве в найденной литературе → null.
+
+**conflicts/contraindications:** `[]` — прямых противоречий с CSV не выявлено.

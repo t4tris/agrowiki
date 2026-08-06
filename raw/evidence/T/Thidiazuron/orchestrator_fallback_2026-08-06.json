@@ -1,0 +1,773 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Thidiazuron",
+    "csv_name": "thidiazuron"
+  },
+  "searches": [
+    {
+      "query": "(thidiazuron) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 238,
+      "results": [
+        {
+          "id": "IND609023353",
+          "source": "AGR",
+          "title": "Establishment of somatic embryogenesis regeneration system and transcriptome analysis of early somatic embryogenesis in litchi",
+          "first_author": "Qin Y",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41514915",
+          "source": "MED",
+          "title": "Transcriptional Regulation and WGCNA Studies of Leaf Abscission in Cotton Cultivars FU75 and 518-48 Under Chemical Defoliant Treatment.",
+          "first_author": "Yang R",
+          "pub_year": "2025",
+          "doi": "10.3390/biology15010074",
+          "pmid": "41514915"
+        },
+        {
+          "id": "41322610",
+          "source": "MED",
+          "title": "Discovery and Biological Evaluation of 3‑(1,2,3-Thiadiazol-5-yl)-1-arylimidazolidine-2,4-diones as Potential Plant Growth Regulators.",
+          "first_author": "Kalinina TA",
+          "pub_year": "2025",
+          "doi": "10.1021/acsomega.5c07563",
+          "pmid": "41322610"
+        },
+        {
+          "id": "41470638",
+          "source": "MED",
+          "title": "Study on Genetic Transformation System of Cabbage (&lt;i&gt;Brassica oleracea&lt;/i&gt; var. &lt;i&gt;capitata&lt;/i&gt;) Based on Transgenic Root Regeneration.",
+          "first_author": "Tao M",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243754",
+          "pmid": "41470638"
+        },
+        {
+          "id": "39025176",
+          "source": "MED",
+          "title": "Genome-wide identified VvOFP genes family and VvOFP4 functional characterization provide insight into fruit shape in grape.",
+          "first_author": "Dong Y",
+          "pub_year": "2024",
+          "doi": "10.1016/j.ijbiomac.2024.133880",
+          "pmid": "39025176"
+        },
+        {
+          "id": "42137031",
+          "source": "MED",
+          "title": "Fipexide (FPX), a chemical callus inducer, promotes in vitro shoot regeneration and &lt;i&gt;Agrobacterium&lt;/i&gt;-mediated genetic transformation in three fruit tree species.",
+          "first_author": "Dai F",
+          "pub_year": "2026",
+          "doi": "10.5511/plantbiotechnology.25.1228a",
+          "pmid": "42137031"
+        },
+        {
+          "id": "40978783",
+          "source": "MED",
+          "title": "A new plant guanosine cyclase ZjGC found from jujube regulates growth and development via endogenous hormones.",
+          "first_author": "Zhao X",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1633496",
+          "pmid": "40978783"
+        },
+        {
+          "id": "42265984",
+          "source": "MED",
+          "title": "Postharvest preservation of fruits and vegetables by light-emitting diodes.",
+          "first_author": "Vijeev A",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2684157",
+          "pmid": "42265984"
+        },
+        {
+          "id": "41144691",
+          "source": "MED",
+          "title": "Development of chloroplast transformation for five species in the genus Nicotiana.",
+          "first_author": "Luo Q",
+          "pub_year": "2025",
+          "doi": "10.1111/tpj.70542",
+          "pmid": "41144691"
+        },
+        {
+          "id": "39605102",
+          "source": "MED",
+          "title": "Development of an in vitro regeneration system for Heinsia crinita (Afz.) G. Taylor via direct induction of shoot proliferation from explants.",
+          "first_author": "Chukwurah PN",
+          "pub_year": "2024",
+          "doi": "10.1186/s13104-024-07002-4",
+          "pmid": "39605102"
+        },
+        {
+          "id": "42075373",
+          "source": "MED",
+          "title": "&lt;i&gt;Cytokinin Oxidase/Dehydrogenase 1&lt;/i&gt; (&lt;i&gt;FvCKX1&lt;/i&gt;) Coordinates Receptacle Growth and Achene Maturation in Strawberry.",
+          "first_author": "Tian Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081171",
+          "pmid": "42075373"
+        },
+        {
+          "id": "40241977",
+          "source": "MED",
+          "title": "Chemical-induced variations in callus regenerated &lt;i&gt;Atropa acuminata&lt;/i&gt; plants: A study on Ethyl Methanesulfonate effects.",
+          "first_author": "Dar SA",
+          "pub_year": "2025",
+          "doi": "10.1016/j.btre.2025.e00888",
+          "pmid": "40241977"
+        },
+        {
+          "id": "40830832",
+          "source": "MED",
+          "title": "Establishment of a leaf regeneration system and its molecular basis in Poplar 741.",
+          "first_author": "Liu L",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07091-8",
+          "pmid": "40830832"
+        },
+        {
+          "id": "40045663",
+          "source": "MED",
+          "title": "Abscission zones: cellular interfaces for the programmed separation of organs.",
+          "first_author": "Pautot V",
+          "pub_year": "2025",
+          "doi": "10.1093/aob/mcaf034",
+          "pmid": "40045663"
+        },
+        {
+          "id": "41109683",
+          "source": "MED",
+          "title": "Rational design of induced regeneration via somatic embryogenesis in the absence of exogenous phytohormones.",
+          "first_author": "Wittmer J",
+          "pub_year": "2025",
+          "doi": "10.1093/plcell/koaf252",
+          "pmid": "41109683"
+        },
+        {
+          "id": "42280654",
+          "source": "MED",
+          "title": "Polyamine-Related Gene Families Identification and Regulatory Effects on Early Somatic Embryogenesis via Modulating Gene Expressions and Hormone Levels in &lt;i&gt;Ginkgo biloba&lt;/i&gt;.",
+          "first_author": "Di J",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111617",
+          "pmid": "42280654"
+        },
+        {
+          "id": "42180146",
+          "source": "MED",
+          "title": "The &lt;i&gt;PagWUS-PagCLV3&lt;/i&gt; module regulates shoot meristem maintenance and activity in poplar.",
+          "first_author": "Dong WC",
+          "pub_year": "2026",
+          "doi": "10.48130/forres-0026-0007",
+          "pmid": "42180146"
+        },
+        {
+          "id": "37108752",
+          "source": "MED",
+          "title": "Comparative Physiological and Transcriptomic Mechanisms of Defoliation in Cotton in Response to Thidiazuron versus Ethephon.",
+          "first_author": "Liao B",
+          "pub_year": "2023",
+          "doi": "10.3390/ijms24087590",
+          "pmid": "37108752"
+        },
+        {
+          "id": "42280714",
+          "source": "MED",
+          "title": "In Vitro Regeneration Strategies in Woody Citrus of Northeast India (&lt;i&gt;Citrus jambhiri&lt;/i&gt; and &lt;i&gt;Citrus aurantifolia&lt;/i&gt;).",
+          "first_author": "Sharma P",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111677",
+          "pmid": "42280714"
+        },
+        {
+          "id": "39506995",
+          "source": "MED",
+          "title": "Small chemical molecules regulating the phytohormone signalling alter the plant's physiological processes to improve stress adaptation, growth and productivity.",
+          "first_author": "Yadav S",
+          "pub_year": "2024",
+          "doi": "10.1007/s12298-024-01514-w",
+          "pmid": "39506995"
+        },
+        {
+          "id": "39642150",
+          "source": "MED",
+          "title": "Somatic embryogenesis and shoot organogenesis in peanut cv. 'Georgia-12Y' and successful transfer to the soil.",
+          "first_author": "Khatri P",
+          "pub_year": "2024",
+          "doi": "10.1371/journal.pone.0315060",
+          "pmid": "39642150"
+        },
+        {
+          "id": "40060288",
+          "source": "MED",
+          "title": "Elite genotype selection through antioxidant and antimicrobial activities, in vitro multiplication with &lt;i&gt;meta&lt;/i&gt;-Topolin, genetic fidelity assessment via SCoT markers and cytological study, and chemo-profiling of selected elite genotype of &lt;i&gt;Solanum sisymbriifolium&lt;/i&gt; Lam.: an underutilized alternative for nutrition and medicine.",
+          "first_author": "Biswas D",
+          "pub_year": "2025",
+          "doi": "10.1007/s13205-025-04229-1",
+          "pmid": "40060288"
+        },
+        {
+          "id": "41123679",
+          "source": "MED",
+          "title": "Transgene-free genome editing in citrus and poplar trees using positive and negative selection markers.",
+          "first_author": "Rocha DC",
+          "pub_year": "2025",
+          "doi": "10.1007/s00299-025-03627-2",
+          "pmid": "41123679"
+        },
+        {
+          "id": "42343905",
+          "source": "MED",
+          "title": "From recalcitrance to precision: a robust regeneration, transformation and targeted gene editing framework in &lt;i&gt;Cajanus cajan&lt;/i&gt;.",
+          "first_author": "Verma R",
+          "pub_year": "2026",
+          "doi": "10.3389/fgeed.2026.1815812",
+          "pmid": "42343905"
+        },
+        {
+          "id": "38732032",
+          "source": "MED",
+          "title": "Cytological, Phytohormone, and Transcriptome Analyses Provide Insights into Persimmon Fruit Shape Formation (<i>Diospyros kaki Thunb.</i>).",
+          "first_author": "Li H",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25094812",
+          "pmid": "38732032"
+        }
+      ]
+    },
+    {
+      "query": "(thidiazuron) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(thidiazuron) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 83,
+      "results": [
+        {
+          "id": "41322610",
+          "source": "MED",
+          "title": "Discovery and Biological Evaluation of 3‑(1,2,3-Thiadiazol-5-yl)-1-arylimidazolidine-2,4-diones as Potential Plant Growth Regulators.",
+          "first_author": "Kalinina TA",
+          "pub_year": "2025",
+          "doi": "10.1021/acsomega.5c07563",
+          "pmid": "41322610"
+        },
+        {
+          "id": "41882047",
+          "source": "MED",
+          "title": "Effect of medium composition on in vitro ovary culture of cucumber.",
+          "first_author": "Nyirahabimana F",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-025-31636-4",
+          "pmid": "41882047"
+        },
+        {
+          "id": "IND608636029",
+          "source": "AGR",
+          "title": "Production and identification of melon double haploid induced by wide hybridization between melon and cucumber",
+          "first_author": "Bi Y",
+          "pub_year": "2024",
+          "doi": "10.1007/s10681-024-03421-3",
+          "pmid": null
+        },
+        {
+          "id": "41470638",
+          "source": "MED",
+          "title": "Study on Genetic Transformation System of Cabbage (&lt;i&gt;Brassica oleracea&lt;/i&gt; var. &lt;i&gt;capitata&lt;/i&gt;) Based on Transgenic Root Regeneration.",
+          "first_author": "Tao M",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243754",
+          "pmid": "41470638"
+        },
+        {
+          "id": "PPR805846",
+          "source": "PPR",
+          "title": "Production and identification of melon double haploid induced by wide hybridization between melon and cucumber",
+          "first_author": "Bi Y",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-3935758/v1",
+          "pmid": null
+        },
+        {
+          "id": "42137031",
+          "source": "MED",
+          "title": "Fipexide (FPX), a chemical callus inducer, promotes in vitro shoot regeneration and &lt;i&gt;Agrobacterium&lt;/i&gt;-mediated genetic transformation in three fruit tree species.",
+          "first_author": "Dai F",
+          "pub_year": "2026",
+          "doi": "10.5511/plantbiotechnology.25.1228a",
+          "pmid": "42137031"
+        },
+        {
+          "id": "41470617",
+          "source": "MED",
+          "title": "Doubled Haploid Production in &lt;i&gt;Cucurbita pepo&lt;/i&gt; L. Through Ovary Culture.",
+          "first_author": "García-Pérez A",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243733",
+          "pmid": "41470617"
+        },
+        {
+          "id": "PMC11203547",
+          "source": "PMC",
+          "title": "Advances in Molecular Plant Sciences",
+          "first_author": "Zhou M",
+          "pub_year": "2024",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "36832005",
+          "source": "MED",
+          "title": "Production of a Monoclonal Antibody for the Detection of Forchlorfenuron: Application in an Indirect Enzyme-Linked Immunosorbent Assay and Immunochromatographic Strip.",
+          "first_author": "Lei X",
+          "pub_year": "2023",
+          "doi": "10.3390/bios13020239",
+          "pmid": "36832005"
+        },
+        {
+          "id": "35182320",
+          "source": "MED",
+          "title": "Effects of genotype and nutrient medium on obtaining haploid plants through ovary culture in cucumber.",
+          "first_author": "Baktemur G",
+          "pub_year": "2022",
+          "doi": "10.1007/s11033-022-07238-y",
+          "pmid": "35182320"
+        },
+        {
+          "id": "38494244",
+          "source": "MED",
+          "title": "Enhancing in vitro regeneration via somatic embryogenesis and Fusarium wilt resistance of Egyptian cucumber (Cucumis sativus L.) cultivars.",
+          "first_author": "Hamza HM",
+          "pub_year": "2024",
+          "doi": "10.1016/j.jgeb.2024.100360",
+          "pmid": "38494244"
+        },
+        {
+          "id": "39300484",
+          "source": "MED",
+          "title": "Production of genetically stable and Odontoglossum ringspot virus-free Cymbidium orchid 'New True' plants via meristem-derived protocorm-like body (PLB) subcultures.",
+          "first_author": "Campol JR",
+          "pub_year": "2024",
+          "doi": "10.1186/s13007-024-01269-1",
+          "pmid": "39300484"
+        },
+        {
+          "id": "41963813",
+          "source": "MED",
+          "title": "Dynamic changes of endogenous hormones and transcriptome analysis reveal the regulatory mechanism of gibberellin-promoted male cone formation in Platycladus orientalis.",
+          "first_author": "Liao T",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08706-4",
+          "pmid": "41963813"
+        },
+        {
+          "id": "35193740",
+          "source": "MED",
+          "title": "Somatic embryogenesis from flower tepals of Hippeastrum aiming regeneration of virus-free plants.",
+          "first_author": "de Almeida NV",
+          "pub_year": "2022",
+          "doi": "10.1016/j.plantsci.2022.111191",
+          "pmid": "35193740"
+        },
+        {
+          "id": "38732032",
+          "source": "MED",
+          "title": "Cytological, Phytohormone, and Transcriptome Analyses Provide Insights into Persimmon Fruit Shape Formation (<i>Diospyros kaki Thunb.</i>).",
+          "first_author": "Li H",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25094812",
+          "pmid": "38732032"
+        },
+        {
+          "id": "41233772",
+          "source": "MED",
+          "title": "Establishment of a refined somatic embryogenesis protocol and light-spectrum-based acclimatization in Caladium bicolor 'White'.",
+          "first_author": "Dehestani-Ardakani M",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07551-1",
+          "pmid": "41233772"
+        },
+        {
+          "id": "40343122",
+          "source": "MED",
+          "title": "Advances in cotton harvesting aids.",
+          "first_author": "Xie Z",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1570251",
+          "pmid": "40343122"
+        },
+        {
+          "id": "37304716",
+          "source": "MED",
+          "title": "Editorial: Growth regulators and biostimulants: upcoming opportunities.",
+          "first_author": "Gupta S",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1209499",
+          "pmid": "37304716"
+        },
+        {
+          "id": "35200339",
+          "source": "MED",
+          "title": "A Sensitive Monoclonal-Antibody-Based ELISA for Forchlorfenuron Residue Analysis in Food Samples.",
+          "first_author": "Liu X",
+          "pub_year": "2022",
+          "doi": "10.3390/bios12020078",
+          "pmid": "35200339"
+        },
+        {
+          "id": "36432851",
+          "source": "MED",
+          "title": "Stipagrostis pennata (Trin.) De Winter Artificial Seed Production and Seedlings Multiplication in Temporary Immersion Bioreactors",
+          "first_author": "Aghbolaghi MA",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11223122",
+          "pmid": "36432851"
+        },
+        {
+          "id": "39506995",
+          "source": "MED",
+          "title": "Small chemical molecules regulating the phytohormone signalling alter the plant's physiological processes to improve stress adaptation, growth and productivity.",
+          "first_author": "Yadav S",
+          "pub_year": "2024",
+          "doi": "10.1007/s12298-024-01514-w",
+          "pmid": "39506995"
+        },
+        {
+          "id": "32505285",
+          "source": "MED",
+          "title": "Imidazolium ionic-liquid-modified phenolic resin for solid-phase extraction of thidiazuron and forchlorfenuron from cucumbers.",
+          "first_author": "Li P",
+          "pub_year": "2020",
+          "doi": "10.1016/j.chroma.2020.461192",
+          "pmid": "32505285"
+        },
+        {
+          "id": "41013595",
+          "source": "MED",
+          "title": "Establishment of an efficient tissue culture system for Paeonia ostii by combining vernalization and etiolation pretreatment with optimized culture conditions.",
+          "first_author": "Li M",
+          "pub_year": "2025",
+          "doi": "10.1186/s13007-025-01440-2",
+          "pmid": "41013595"
+        },
+        {
+          "id": "37653909",
+          "source": "MED",
+          "title": "Establishment of Highly Efficient Plant Regeneration, Callus Transformation and Analysis of <i>Botrytis cinerea-</i>Responsive PR Promoters in <i>Lilium brownii</i> var. <i>viridulum</i>.",
+          "first_author": "Fu Y",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12101992",
+          "pmid": "37653909"
+        },
+        {
+          "id": "36091085",
+          "source": "MED",
+          "title": "Elimination of coexisting canna yellow mottle virus, bean yellow mosaic virus and cucumber mosaic virus from <i>Canna generalis</i> cv. black knight through in vitro chemotherapy of rhizome explants.",
+          "first_author": "Kumari A",
+          "pub_year": "2022",
+          "doi": "10.1007/s13205-022-03330-z",
+          "pmid": "36091085"
+        }
+      ]
+    },
+    {
+      "query": "(thidiazuron) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR805846",
+          "source": "PPR",
+          "title": "Production and identification of melon double haploid induced by wide hybridization between melon and cucumber",
+          "first_author": "Bi Y",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-3935758/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(thidiazuron) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 115,
+      "results": [
+        {
+          "id": "41793913",
+          "source": "MED",
+          "title": "Efficient CRISPR/Cas9 system established via co-cultivation of plantlets and Agrobacterium tumefaciens for positive transgenic calluses generation and regeneration in cultivated strawberry (Fragaria × ananassa).",
+          "first_author": "Li X",
+          "pub_year": "2026",
+          "doi": "10.1016/j.plaphy.2026.111195",
+          "pmid": "41793913"
+        },
+        {
+          "id": "42075373",
+          "source": "MED",
+          "title": "&lt;i&gt;Cytokinin Oxidase/Dehydrogenase 1&lt;/i&gt; (&lt;i&gt;FvCKX1&lt;/i&gt;) Coordinates Receptacle Growth and Achene Maturation in Strawberry.",
+          "first_author": "Tian Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081171",
+          "pmid": "42075373"
+        },
+        {
+          "id": "40362299",
+          "source": "MED",
+          "title": "Thidiazuron Enhances Strawberry Shoot Multiplication by Regulating Hormone Signal Transduction Pathways.",
+          "first_author": "Wang F",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26094060",
+          "pmid": "40362299"
+        },
+        {
+          "id": "41514915",
+          "source": "MED",
+          "title": "Transcriptional Regulation and WGCNA Studies of Leaf Abscission in Cotton Cultivars FU75 and 518-48 Under Chemical Defoliant Treatment.",
+          "first_author": "Yang R",
+          "pub_year": "2025",
+          "doi": "10.3390/biology15010074",
+          "pmid": "41514915"
+        },
+        {
+          "id": "41007414",
+          "source": "MED",
+          "title": "Synergistic Effects of Gibberellic Acid, Forchlorfenuron, Thidiazuron, and Brassinosteroid Combinations on Seedless Berry Development and Quality Enhancement in 'Shine Muscat' and 'Red Muscat of Alexandria' Grapes.",
+          "first_author": "Yang P",
+          "pub_year": "2025",
+          "doi": "10.3390/biology14091270",
+          "pmid": "41007414"
+        },
+        {
+          "id": "42137215",
+          "source": "MED",
+          "title": "Selection and validation of suitable reference genes for qPCR expression analysis in young &lt;i&gt;in vitro&lt;/i&gt; grown kohlrabi under cytokinin and sucrose treatments.",
+          "first_author": "Tomić A",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1820839",
+          "pmid": "42137215"
+        },
+        {
+          "id": "41470638",
+          "source": "MED",
+          "title": "Study on Genetic Transformation System of Cabbage (&lt;i&gt;Brassica oleracea&lt;/i&gt; var. &lt;i&gt;capitata&lt;/i&gt;) Based on Transgenic Root Regeneration.",
+          "first_author": "Tao M",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243754",
+          "pmid": "41470638"
+        },
+        {
+          "id": "38475410",
+          "source": "MED",
+          "title": "An Efficient <i>Agrobacterium</i>-Mediated Genetic Transformation System for Gene Editing in Strawberry (<i>Fragaria</i> × <i>ananassa</i>).",
+          "first_author": "Akter F",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13050563",
+          "pmid": "38475410"
+        },
+        {
+          "id": "42265984",
+          "source": "MED",
+          "title": "Postharvest preservation of fruits and vegetables by light-emitting diodes.",
+          "first_author": "Vijeev A",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2684157",
+          "pmid": "42265984"
+        },
+        {
+          "id": "39420380",
+          "source": "MED",
+          "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4.",
+          "first_author": "Sanchez ER",
+          "pub_year": "2024",
+          "doi": "10.1186/s13007-024-01270-8",
+          "pmid": "39420380"
+        },
+        {
+          "id": "PPR876196",
+          "source": "PPR",
+          "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+          "first_author": "Sanchez ER",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4583627/v1",
+          "pmid": null
+        },
+        {
+          "id": "39048858",
+          "source": "MED",
+          "title": "RNA interference-based strategies to control Botrytis cinerea infection in cultivated strawberry.",
+          "first_author": "Capriotti L",
+          "pub_year": "2024",
+          "doi": "10.1007/s00299-024-03288-7",
+          "pmid": "39048858"
+        },
+        {
+          "id": "40783809",
+          "source": "MED",
+          "title": "A Repression-Activation System Involving miR164a-NACs Regulates Tissue-Specific Anthocyanin Accumulation in Peach Fruit.",
+          "first_author": "Liang L",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70304",
+          "pmid": "40783809"
+        },
+        {
+          "id": "41470678",
+          "source": "MED",
+          "title": "Overcoming Recalcitrance: A Review of Regeneration Methods and Challenges in Roses.",
+          "first_author": "Nelson A",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243797",
+          "pmid": "41470678"
+        },
+        {
+          "id": "33396927",
+          "source": "MED",
+          "title": "Use of Thidiazuron for High-Frequency Callus Induction and Organogenesis of Wild Strawberry (<i>Fragaria vesca</i>).",
+          "first_author": "Chung HH",
+          "pub_year": "2020",
+          "doi": "10.3390/plants10010067",
+          "pmid": "33396927"
+        },
+        {
+          "id": "41373832",
+          "source": "MED",
+          "title": "Cell Suspension of the Tree Fern &lt;i&gt;Cyathea smithii&lt;/i&gt; (J.D. Hooker) and Its Metabolic Potential During Cell Growth: Preliminary Studies.",
+          "first_author": "Rybczyński JJ",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms262311683",
+          "pmid": "41373832"
+        },
+        {
+          "id": "34834592",
+          "source": "MED",
+          "title": "A Strategy for the Production and Molecular Validation of Agrobacterium-Mediated Intragenic Octoploid Strawberry.",
+          "first_author": "Duan K",
+          "pub_year": "2021",
+          "doi": "10.3390/plants10112229",
+          "pmid": "34834592"
+        },
+        {
+          "id": "38732032",
+          "source": "MED",
+          "title": "Cytological, Phytohormone, and Transcriptome Analyses Provide Insights into Persimmon Fruit Shape Formation (<i>Diospyros kaki Thunb.</i>).",
+          "first_author": "Li H",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25094812",
+          "pmid": "38732032"
+        },
+        {
+          "id": "36616212",
+          "source": "MED",
+          "title": "An Integrated Metabolomic and Gene Expression Analysis of 'Sachinoka' Strawberry and Its Somaclonal Mutant Reveals Fruit Color and Volatiles Differences.",
+          "first_author": "Bian R",
+          "pub_year": "2022",
+          "doi": "10.3390/plants12010082",
+          "pmid": "36616212"
+        },
+        {
+          "id": "36600911",
+          "source": "MED",
+          "title": "Phenotypic variation and epigenetic insight into tissue culture berry crops.",
+          "first_author": "Debnath SC",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.1042726",
+          "pmid": "36600911"
+        },
+        {
+          "id": "30828813",
+          "source": "MED",
+          "title": "Dissipation and the effects of thidiazuron on antioxidant enzyme activity and malondialdehyde content in strawberry.",
+          "first_author": "Yang G",
+          "pub_year": "2019",
+          "doi": "10.1002/jsfa.9666",
+          "pmid": "30828813"
+        },
+        {
+          "id": "35887106",
+          "source": "MED",
+          "title": "B-Box Transcription Factor FaBBX22 Promotes Light-Induced Anthocyanin Accumulation in Strawberry (<i>Fragaria</i> × <i>ananassa</i>).",
+          "first_author": "Liu Y",
+          "pub_year": "2022",
+          "doi": "10.3390/ijms23147757",
+          "pmid": "35887106"
+        },
+        {
+          "id": "37328837",
+          "source": "MED",
+          "title": "Indirect regeneration in Ficus lyrata Warb. and metabolite profiles influenced by nitric oxide and Plant growth regulators.",
+          "first_author": "Abdolinejad R",
+          "pub_year": "2023",
+          "doi": "10.1186/s12870-023-04339-z",
+          "pmid": "37328837"
+        },
+        {
+          "id": "35884201",
+          "source": "MED",
+          "title": "Thidiazuron: New Trends and Future Perspectives to Fight <i>Xylella fastidiosa</i> in Olive Trees.",
+          "first_author": "Catalano A",
+          "pub_year": "2022",
+          "doi": "10.3390/antibiotics11070947",
+          "pmid": "35884201"
+        },
+        {
+          "id": "37886931",
+          "source": "MED",
+          "title": "Optimization of Plant Growth Regulators for In Vitro Mass Propagation of a Disease-Free 'Shine Muscat' Grapevine Cultivar.",
+          "first_author": "Kim SH",
+          "pub_year": "2023",
+          "doi": "10.3390/cimb45100487",
+          "pmid": "37886931"
+        }
+      ]
+    },
+    {
+      "query": "(thidiazuron) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR876196",
+          "source": "PPR",
+          "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+          "first_author": "Sanchez ER",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4583627/v1",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR805846",
+      "source": "PPR",
+      "title": "Production and identification of melon double haploid induced by wide hybridization between melon and cucumber",
+      "first_author": "Bi Y",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-3935758/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR876196",
+      "source": "PPR",
+      "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+      "first_author": "Sanchez ER",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-4583627/v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

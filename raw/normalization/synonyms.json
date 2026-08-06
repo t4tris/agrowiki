@@ -400,15 +400,8 @@
         "Carbonic acid (H2CO3)"
       ],
       "name_en": "Carbonic acid (H2CO3)",
-      "aliases": [
-        "H2CO3",
-        "Carbonic acid",
-        "Bicarbonate"
-      ],
-      "aliases_ru": [
-        "угольная кислота",
-        "бикарбонат"
-      ]
+      "aliases": [],
+      "aliases_ru": []
     },
     "Castasterone": {
       "csv_name": [
@@ -983,16 +976,8 @@
         "Humic substances"
       ],
       "name_en": "Humic substances",
-      "aliases": [
-        "Potassium Humate",
-        "Humic substances",
-        "Humic acid"
-      ],
-      "aliases_ru": [
-        "гуминовые вещества",
-        "гумат калия",
-        "гуминовая кислота"
-      ]
+      "aliases": [],
+      "aliases_ru": []
     },
     "Hydrogen Sulfide donor": {
       "csv_name": [
@@ -1128,8 +1113,17 @@
         "6-Furfurylaminopurine"
       ],
       "name_en": "6-Furfurylaminopurine",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Kinetin",
+        "6-furfurylaminopurine",
+        "N6-furfuryladenine",
+        "furfuryladenine",
+        "6-furfuryladenine"
+      ],
+      "aliases_ru": [
+        "Кинетин",
+        "6-фурфуриламинопурин"
+      ]
     },
     "Kresoxim-methyl": {
       "csv_name": [
@@ -1232,16 +1226,8 @@
         "MH"
       ],
       "name_en": "Maleic hydrazide",
-      "aliases": [
-        "MH",
-        "Maleic hydrazide",
-        "1",
-        "2-Dihydropyridazine-3",
-        "6-dione"
-      ],
-      "aliases_ru": [
-        "малеиновый гидразид"
-      ]
+      "aliases": [],
+      "aliases_ru": []
     },
     "Malic Acid": {
       "csv_name": [
@@ -1264,14 +1250,8 @@
         "Melatonin"
       ],
       "name_en": "N-acetyl-5-methoxytryptamine",
-      "aliases": [
-        "Melatonin",
-        "N-acetyl-5-methoxytryptamine"
-      ],
-      "aliases_ru": [
-        "мелатонин",
-        "N-ацетил-5-метокситриптамин"
-      ]
+      "aliases": [],
+      "aliases_ru": []
     },
     "Meta-topolin": {
       "csv_name": [
@@ -1512,8 +1492,23 @@
         "Mepiquat chloride"
       ],
       "name_en": "Mepiquat chloride",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Mepiquat chloride",
+        "mepiquat",
+        "PIX",
+        "1",
+        "1-dimethylpiperidinium chloride",
+        "Pix Ultra",
+        "BAS 083W",
+        "N",
+        "N-Dimethylpiperidinium chloride"
+      ],
+      "aliases_ru": [
+        "Мепикват хлорид",
+        "ПИКС",
+        "1",
+        "1-диметилпиперидиний хлорид"
+      ]
     },
     "PQQ": {
       "csv_name": [
@@ -1562,16 +1557,8 @@
         "Phosphorous acid"
       ],
       "name_en": "Phosphorous acid",
-      "aliases": [
-        "Phosphorous acid",
-        "Phosphite",
-        "Phosphonate"
-      ],
-      "aliases_ru": [
-        "фосфористая кислота",
-        "фосфит",
-        "фосфонаты"
-      ]
+      "aliases": [],
+      "aliases_ru": []
     },
     "Phylloquinone": {
       "csv_name": [
@@ -1793,15 +1780,8 @@
         "Serotonin (5-HT)"
       ],
       "name_en": "Serotonin (5-HT)",
-      "aliases": [
-        "5-HT",
-        "5-Hydroxytryptamine",
-        "Serotonin"
-      ],
-      "aliases_ru": [
-        "серотонин",
-        "5-гидрокситриптамин"
-      ]
+      "aliases": [],
+      "aliases_ru": []
     },
     "Silicon": {
       "csv_name": [
@@ -2049,8 +2029,18 @@
         "TDZ"
       ],
       "name_en": "TDZ",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Thidiazuron",
+        "TDZ",
+        "N-phenyl-N'-1",
+        "2",
+        "3-thiadiazol-5-ylurea",
+        "1-phenyl-3-(thiadiazol-5-yl)urea"
+      ],
+      "aliases_ru": [
+        "Тидиазурон",
+        "ТДЗ"
+      ]
     },
     "Thiophanate-methyl": {
       "csv_name": [
@@ -2180,8 +2170,18 @@
         "Uniconazole"
       ],
       "name_en": "Uniconazole",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Uniconazole",
+        "S-3307",
+        "XE-1019",
+        "Sumagic",
+        "Fenpentezol",
+        "S 3307D",
+        "XE 1019D"
+      ],
+      "aliases_ru": [
+        "Униконазол"
+      ]
     },
     "Valine": {
       "csv_name": [

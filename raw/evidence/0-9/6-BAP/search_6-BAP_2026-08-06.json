@@ -1,0 +1,587 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "6-BAP",
+    "csv_name": "6-Benzylaminopurine",
+    "queried_name": "6-benzylaminopurine"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "pubmed_senescence_tomato",
+      "pubmed_cucumber_foliar",
+      "pubmed_strawberry_postharvest",
+      "openalex_tomato",
+      "openalex_cucumber",
+      "openalex_strawberry",
+      "europepmc_strawberry",
+      "pubchem",
+      "crossref_doi_check"
+    ],
+    "failed": [],
+    "queries_used": [
+      "(6-benzylaminopurine OR 6-benzyladenine OR benzyladenine OR BAP) AND tomato",
+      "(6-benzylaminopurine OR 6-benzyladenine OR benzyladenine OR BAP) AND cucumber",
+      "(6-benzylaminopurine OR 6-benzyladenine OR benzyladenine OR BAP) AND strawberry",
+      "(6-benzylaminopurine OR benzyladenine OR BAP) AND (senescence OR chlorophyll) AND (tomato OR lycopersicum)",
+      "(6-benzylaminopurine OR benzyladenine OR 6-BA OR BAP) AND cucumber AND (foliar OR spray OR leaf OR chlorophyll OR senescence OR yield)",
+      "(6-benzylaminopurine OR benzyladenine OR 6-BA OR BAP) AND strawberry AND (postharvest OR senescence OR chlorophyll OR quality)",
+      "6-benzylaminopurine tomato senescence (OpenAlex)",
+      "6-benzylaminopurine cucumber chlorophyll senescence (OpenAlex)",
+      "6-benzylaminopurine strawberry senescence chlorophyll (OpenAlex)",
+      "6-benzylaminopurine AND strawberry AND senescence (Europe PMC)"
+    ],
+    "fallback_tries": [
+      {
+        "query": "6-benzylaminopurine cucumber (OpenAlex)",
+        "results": 0
+      },
+      {
+        "query": "6-benzylaminopurine strawberry (OpenAlex)",
+        "results": 0
+      }
+    ]
+  },
+  "identity": {
+    "cas": "1214-39-7",
+    "cid": "62389",
+    "formula": "C12H11N5",
+    "iupac": "N-benzyl-7H-purin-6-amine",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:41225064",
+      "PMID:33274876",
+      "PMID:37960026"
+    ],
+    "synonyms": [
+      "6-benzylaminopurine",
+      "6-benzyladenine",
+      "N6-benzyladenine",
+      "benzyladenine",
+      "benzylaminopurine",
+      "BAP",
+      "BA",
+      "6-BA",
+      "6-(benzylamino)purine",
+      "N-benzyl-9H-purin-6-amine",
+      "Cytokinin B",
+      "NSC 40818"
+    ],
+    "synonyms_ru": [
+      "6-бензиламинопурин",
+      "6-бензиладенин",
+      "БАП",
+      "бензиладенин"
+    ],
+    "molar_mass_g_mol": 225.25,
+    "notes": "CAS 1214-39-7 подтверждён PubChem CID 62389. Молярная масса C12H11N5 = 225.25 г/моль. 6-BAP — синтетический цитокинин (типа N6-аденина), аналог кинетина/зеатина."
+  },
+  "mode_of_action": {
+    "summary": "6-BAP — синтетический цитокинин (N6-аденин), активирует цитокининовую сигнализацию (рецепторы AHK, сигнализация через His-киназы → ответы клеточного деления, задержка сенесценции, поддержание хлорофилла). Стимулирует клеточное деление и пробуждение почек (CSV), поддерживает зелёный цвет листьев за счёт сохранения хлорофилла и подавления деградации хлорофилла.",
+    "evidence": [
+      "PMID:41225064",
+      "PMID:33274876",
+      "PMID:23258766",
+      "PMID:37960026"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 56,
+        "europe_pmc": 1029,
+        "culture_mentioned": 5
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "BAP 50 и 100 мг/л (mg L-1) фолиарно, опрыскивание листьев на 14, 28 и 42 день после высадки (до цветения)",
+          "context": "Жёлтый черри-томат (Solanum lycopersicum var. cerasiforme) в теплице. BAP дал наибольший прирост урожайности (+108.4% к контролю), повысил содержание хлорофилла и удержание микроэлементов в листьях (Zn 0.859 мг/кг).",
+          "dosage_normalized": {
+            "original": "100 mg L-1",
+            "ppm_equivalent": 100,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "ppm ≈ mg/L для водных растворов; 100 mg/L = 100 ppm. Доза 100 ppm из CSV прямо подтверждена."
+          },
+          "conditions": {
+            "stage": "до цветения",
+            "bbch_stages": [],
+            "temperature_range": "теплица",
+            "formulation": "фолиарное опрыскивание"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "effect_size": "+108.4% урожайность"
+          },
+          "sources": [
+            {
+              "pmid": "41225064",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1038/s41598-025-27667-6",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12612272/"
+            }
+          ],
+          "quote": "Treatments included foliar applications of GA3 (25, 50, and 75 mgL-1) and BAP (50 and 100 mgL-1), sprayed on plant leaves at 14, 28, and 42 days after transplanting... BAP produced the highest yield increase (108.4%). Also, BAP increased chlorophyll content and leaf micronutrient retention."
+        },
+        {
+          "type": "effect",
+          "value": "6-BA 6 и 12 мг/л повышает хлорофилл a/b, суммарный хлорофилл, каротиноиды, витамин C и активность антиоксидантных ферментов",
+          "context": "Томат (Solanum lycopersicum L.) в Вьетнаме, стадии 5 листьев и цветения. Эффект зависит от концентрации и стадии развития.",
+          "dosage_normalized": {
+            "original": "6 и 12 mg L-1",
+            "ppm_equivalent": 6,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "ppm ≈ mg/L; 6-12 mg/L ниже CSV-дозы 100 ppm"
+          },
+          "conditions": {
+            "stage": "5 листьев и цветение",
+            "bbch_stages": [
+              "BBCH 15",
+              "BBCH 61"
+            ],
+            "temperature_range": "Вьетнам",
+            "formulation": "не указано (опрыскивание)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "33274876",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3923/pjbs.2020.1462.1472",
+              "oa_url": null
+            }
+          ],
+          "quote": "chlorophyll a content, chlorophyll b content, total chlorophyll content, carotenoid content, vitamin C content... of tomato varieties treated with 6-BA at a concentration of 6 and 12 mg L-1 were higher than those of the control group."
+        },
+        {
+          "type": "effect",
+          "value": "BAP 300 и 600 ppm; 600 ppm улучшает хлорофилл (71.7 SPAD), теплоустойчивость, пролин, антиоксиданты",
+          "context": "Три генотипа томата (Castlerock, GS 12-F1, Fayrouz F1), опрыскивание 2% BAP при тепловом стрессе. Подтверждает поддержание зелёного цвета (хлорофилл).",
+          "dosage_normalized": {
+            "original": "300 и 600 ppm",
+            "ppm_equivalent": 600,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "доза выше CSV-100 ppm; эффект на хлорофилл подтверждён"
+          },
+          "conditions": {
+            "stage": "поле, тепловой стресс",
+            "bbch_stages": [],
+            "temperature_range": "высокие температуры",
+            "formulation": "фолиарное опрыскивание 2% BAP"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 2024,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/horticulturae10020170",
+              "oa_url": "https://www.mdpi.com/2311-7524/10/2/170"
+            }
+          ],
+          "quote": "the maximum dose of BAP improved chlorophyll (71.7 spad units) in GS 12 leaves... Application BAP on tomatoes moderately improved fruit quality, such as ascorbic acid and maturity degree."
+        },
+        {
+          "type": "effect",
+          "value": "BAP 5 и 10 µM·L-1 в питательной среде повышает биомассу, корневую морфологию и содержание хлорофилла при Co-стрессе",
+          "context": "Гидропоника, томат при Co-стрессе (400 µM). BAP 10 µM снижает накопление Co в корнях на 48.4% и побегах на 70.2%. Не фолиарный метод.",
+          "dosage_normalized": {
+            "original": "10 µM L-1",
+            "ppm_equivalent": 2.25,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "10 µM × 225.25 г/моль ≈ 2.25 мг/л ≈ 2.25 ppm"
+          },
+          "conditions": {
+            "stage": "стресс Co",
+            "bbch_stages": [],
+            "temperature_range": "гидропоника",
+            "formulation": "в питательную среду (не фолиарно)"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1,
+            "p_value": 0.05
+          },
+          "sources": [
+            {
+              "pmid": "33297138",
+              "year": 2021,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1016/j.chemosphere.2020.128169",
+              "oa_url": null
+            }
+          ],
+          "quote": "the supplementation of ABA and 6-BAP via nutrient media significantly (P < 0.05) enhanced plant biomass, root morphology and chlorophyll contents of tomato."
+        },
+        {
+          "type": "effect",
+          "value": "Бензиладенин (10-7 M) подавляет сенесценцию листовых дисков томата, но НЕ влияет на созревание/цвет плодов",
+          "context": "Томат Rutgers и мутант rin. BA (4.44×10-6 до 1.8×10-4 M) не повлиял на созревание плодов; сенесценция листовых дисков подавлена уже при 10-7 M. Частичное подтверждение: задержка сенесценции листьев — да, поддержание цвета плодов — нет.",
+          "dosage_normalized": {
+            "original": "10-7 M (0.1 µM)",
+            "ppm_equivalent": 0.0225,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "0.1 µM × 225.25 ≈ 0.0225 мг/л; доза ниже CSV-100 ppm"
+          },
+          "conditions": {
+            "stage": "листовые диски и плоды",
+            "bbch_stages": [],
+            "temperature_range": "лаборатория",
+            "formulation": "экзогенно на листовые диски и плоды"
+          },
+          "relevance": "directly_contradicts",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "16659341",
+              "year": 1975,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1104/pp.56.4.544",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC541865/"
+            }
+          ],
+          "quote": "Ripening in Rutgers fruit was not influenced by treatment with 6-benzyladenine... However, senescence rates of leaf disks of both Rutgers and rin were significantly inhibited by as little as 10(-7)m exogenous benzyladenine."
+        }
+      ],
+      "gap": "Доза 100 ppm и задержка сенесценции листьев подтверждены. Однако эффект на поддержание зелёного цвета ПЛОДОВ (созревание) не подтверждён — BAP не влиял на созревание плодов Rutgers (PMID 16659341). CSV-заявка про 'maintained green color' применима к листьям/вегетативной части, а не к плодам.",
+      "related_evidence": []
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 53,
+        "europe_pmc": 0,
+        "culture_mentioned": 3
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "6-BA 50 µmol·L-1 поддерживает хлорофилл, аскорбиновую кислоту, фенолы и задерживает пост-уборочное старение плодов огурца",
+          "context": "Пост-уборочная обработка плодов огурца (Cucumis sativus) при холодовом стрессе. 6-BA 50 µmol·L-1 (в аннотации '50 mmol L-1' — вероятно опечатка, физиологически правдоподобно 50 µmol/L) подавлял холодовое повреждение, поддерживал хлорофилл и антиоксидантный статус.",
+          "dosage_normalized": {
+            "original": "50 µmol L-1 (в аннотации 50 mmol L-1, вероятно опечатка)",
+            "ppm_equivalent": 11.26,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "50 µmol × 225.25 ≈ 11.26 мг/л ≈ 11 ppm; доза ниже CSV-100 ppm"
+          },
+          "conditions": {
+            "stage": "пост-уборочное хранение",
+            "bbch_stages": [],
+            "temperature_range": "холодовой стресс",
+            "formulation": "обработка плодов (погружение)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "23258766",
+              "year": 2013,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1002/jsfa.5990",
+              "oa_url": null
+            }
+          ],
+          "quote": "6-BA at 50 mmol L(-1) was most effective to restrain CI in cucumber fruit. Fruits treated with 50 mmol L(-1) 6-BA maintained higher levels of chlorophyll, ascorbic acid, total phenolics and total antioxidant capacity."
+        },
+        {
+          "type": "effect",
+          "value": "Бензиладенин на изолированных листовых дисках огурца отвечает за рост клеток; кинетин/ИУК повышают хлорофилл",
+          "context": "Сенесценция/омоложение изолированных листьев огурца. BA (бензиладенин) ответственен за рост клеток, ИУК и кинетин — за повышение содержания хлорофилла. Подтверждает эффект BAP на листьях огурца.",
+          "dosage_normalized": {
+            "original": "не указано",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": null,
+            "note": "концентрации в статье не указаны в аннотации"
+          },
+          "conditions": {
+            "stage": "изолированные листья",
+            "bbch_stages": [],
+            "temperature_range": "лаборатория",
+            "formulation": "обработка листовых дисков"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "17006800",
+              "year": 2007,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1055/s-2006-924347",
+              "oa_url": null
+            }
+          ],
+          "quote": "The hormones showed mutuality in their effects, benzyladenine being responsible for the growth of cells, while indolylacetic acid and kinetin promoted an increase in chlorophyll content."
+        },
+        {
+          "type": "effect",
+          "value": "GA и BAP увеличивают число трихом (шипов) на плодах огурца",
+          "context": "Классификация трихом плода огурца; фитогормоны GA и BAP способны увеличивать число трихом на плод при различных концентрациях. Подтверждает эффект BAP на плодах огурца (морфогенез), но не сенесценцию.",
+          "dosage_normalized": {
+            "original": "не указано",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": null,
+            "note": "концентрации в аннотации не указаны"
+          },
+          "conditions": {
+            "stage": "развитие плода",
+            "bbch_stages": [],
+            "temperature_range": "Китай",
+            "formulation": "обработка гормонами"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "30225671",
+              "year": 2019,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/s00425-018-3004-9",
+              "oa_url": null
+            }
+          ],
+          "quote": "We found that GA and BAP were capable of increasing trichome number per fruit with distinct effects under different concentrations."
+        }
+      ],
+      "gap": "Нет прямых полевых/фолиарных исследований BAP на огурце для задержки сенесценции. Имеющиеся данные — пост-уборочная обработка плодов (PMID 23258766) и листовые диски (PMID 17006800). Доза 100 ppm фолиарно на огурце в литературе не найдена.",
+      "related_evidence": [
+        {
+          "pmid": "23258766",
+          "year": 2013,
+          "claim": "6-BA поддерживает хлорофилл и задерживает старение пост-уборочных плодов огурца",
+          "note": "ближайшая работа по BAP на огурце (пост-уборочная, не фолиарная)"
+        },
+        {
+          "pmid": "17006800",
+          "year": 2007,
+          "claim": "BA влияет на листья огурца (рост клеток)",
+          "note": "работа по BAP на листьях огурца"
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "found_unverified",
+      "search_stats": {
+        "pubmed": 15,
+        "europe_pmc": 0,
+        "culture_mentioned": 2
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "6-BA 50 мг/л значительно увеличивает число усов (runner) клубники при длинном дне",
+          "context": "Ортогональный тест (фотопериод, температура, гиббереллин, 6-BA), клубника (Fragaria × ananassa). 6-BA 50 mg·L-1 значительно увеличил число усов; фотопериод — главный фактор. Эффект за счёт повышения растворимых сахаров и пробуждения пазушных почек. Это НЕ задержка сенесценции, а индукция усов.",
+          "dosage_normalized": {
+            "original": "50 mg L-1",
+            "ppm_equivalent": 50,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": "PubChem CID 62389",
+            "note": "50 мг/л = 50 ppm; ниже CSV-100 ppm"
+          },
+          "conditions": {
+            "stage": "вегетативная стадия",
+            "bbch_stages": [],
+            "temperature_range": "длинный день",
+            "formulation": "обработка 6-BA"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "32664642",
+              "year": 2020,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.3390/ijms21144917",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7403970/"
+            }
+          ],
+          "quote": "a long-day (LD) environment was the most influential factor for the runner formation, and 50 mg·L-1 of 6-BA significantly increased the number of runners."
+        },
+        {
+          "type": "effect",
+          "value": "Цитокинины играют роль в развитии цветков и рецептакула клубники (транс-зеатин), но это эндогенные, не экзогенный BAP",
+          "context": "Механистическое исследование: транс-зеатин высок в цветочных почках и при антезисе, снижается к созреванию. Экзогенный BAP не применялся. Релевантно для механизма, не для дозировки.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 225.25,
+            "conversion_source": null,
+            "note": "эндогенные цитокинины, дозировка не применима"
+          },
+          "conditions": {
+            "stage": "цветки/рецептакул",
+            "bbch_stages": [],
+            "temperature_range": "Мексика",
+            "formulation": "анализ экспрессии генов и содержания транс-зеатина"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "37960026",
+              "year": 2023,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.3390/plants12213672",
+              "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10649685/"
+            }
+          ],
+          "quote": "A high concentration [of trans-zeatin] was observed in flower buds and at anthesis and decreased as the fruit approached maturity."
+        }
+      ],
+      "gap": "Нет прямых исследований фолиарного 6-BAP для задержки сенесценции на клубнике. Единственное прямое применение 6-BA (50 мг/л) — индукция усов при длинном дне (PMID 32664642), что не соответствует CSV-заявке про задержку сенесценции/поддержание зелёного цвета. CSV-схема (100 ppm BAP в вегетативную стадию + MeJA/EBR в репродуктивную) литературой для клубники не подтверждена.",
+      "related_evidence": [
+        {
+          "pmid": "32664642",
+          "year": 2020,
+          "claim": "6-BA 50 мг/л увеличивает число усов клубники при длинном дне",
+          "note": "прямое применение 6-BA на клубнике, но эффект — индукция усов, не сенесценция"
+        },
+        {
+          "pmid": "37960026",
+          "year": 2023,
+          "claim": "Цитокинины (транс-зеатин) участвуют в развитии цветков/рецептакула клубники",
+          "note": "эндогенные цитокинины, экзогенный BAP не тестировался"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Специфических данных ED50/TD50/терапевтического индекса для 6-BAP на фокусных культурах в литературе не найдено. 6-BAP — цитокинин с низкой фитотоксичностью в рабочих дозах (6-600 ppm). Данные о стойкости в почве отсутствуют."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества"
+  },
+  "contraindications": [
+    {
+      "condition": "Эффект на созревание плодов",
+      "effect": "BAP не влияет на созревание/цвет плодов томата (Rutgers) — задерживает сенесценцию листьев, но не плодов (PMID 16659341)",
+      "severity": "medium",
+      "sources": [
+        "PMID:16659341"
+      ]
+    },
+    {
+      "condition": "Доза и стадия",
+      "effect": "Эффект 6-BA на томате зависит от концентрации и стадии развития; высокие дозы (600 ppm) могут давать иной баланс биомасса/питательность, чем низкие (PMID 33274876; Horticulturae 2024)",
+      "severity": "low",
+      "sources": [
+        "PMID:33274876",
+        "DOI:10.3390/horticulturae10020170"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "Expected_Result (maintained green color)",
+      "csv_value": "Delayed senescence, maintained green color",
+      "literature_summary": "На томате BAP подтверждает задержку сенесценции ЛИСТЬЕВ и поддержание хлорофилла (PMID 41225064, 33274876, Horticulturae 2024), но НЕ влияет на созревание/цвет ПЛОДОВ (PMID 16659341). CSV-заявка 'maintained green color' применима к вегетативной части, не к плодам.",
+      "severity": "medium",
+      "sources": [
+        "PMID:16659341",
+        "PMID:41225064"
+      ]
+    },
+    {
+      "csv_field": "Application_Method_Dosage (100 ppm, 2 опрыскивания, интервал неделя)",
+      "csv_value": "sprayed twice with 100ppm (30 mL per plant) during vegetative stage with 1-week interval",
+      "literature_summary": "Доза 100 ppm (100 мг/л) подтверждена на томате (PMID 41225064: BAP 100 mg/L фолиарно). Однако схема 'два опрыскивания с интервалом неделя' и объём 30 мл/растение в литературе не встречаются как стандарт; интервалы на томате — 14/28/42 дня после высадки. На огурце/клубнике фолиарная доза 100 ppm не найдена.",
+      "severity": "low",
+      "sources": [
+        "PMID:41225064"
+      ]
+    },
+    {
+      "csv_field": "Application_Method_Dosage (клубника в CSV)",
+      "csv_value": "100 ppm BAP on strawberry during vegetative stage",
+      "literature_summary": "На клубнике единственное прямое применение 6-BA — 50 мг/л для индукции усов при длинном дне (PMID 32664642), не для задержки сенесценции. Доза 100 ppm фолиарно на клубнике литературой не подтверждена.",
+      "severity": "medium",
+      "sources": [
+        "PMID:32664642"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "partial",
+    "reason": "Томат: доза 100 ppm и задержка сенесценции листьев подтверждены сильными источниками (PMID 41225064, 33274876, Horticulturae 2024), но эффект на цвет ПЛОДОВ не подтверждён (PMID 16659341). Огурец: BAP подтверждён на пост-уборочных плодах (хлорофилл) и листьях, но фолиарная доза 100 ppm не найдена. Клубника: прямое применение 6-BA найдено только для индукции усов (50 мг/л), задержка сенесценции фолиарным BAP не подтверждена. Таксономия (cytokinins, cytokinin_signaling) подтверждена."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "6-BAP — синтетический цитокинин (N6-аденин, класс cytokinins) подтверждён. Механизм — цитокининовая сигнализация (cytokinin_signaling) подтверждён литературой (PMID 37960026 — роль цитокининов в развитии; PMID 41225064 — цитокинин-ауксиновое взаимодействие). Исправлений нет."
+  },
+  "sources_index": [
+    "PMID:41225064",
+    "PMID:33274876",
+    "PMID:33297138",
+    "PMID:16659341",
+    "PMID:23258766",
+    "PMID:17006800",
+    "PMID:30225671",
+    "PMID:32664642",
+    "PMID:37960026",
+    "DOI:10.3390/horticulturae10020170"
+  ]
+}

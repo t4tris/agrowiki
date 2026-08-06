@@ -1,0 +1,734 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "PIX",
+    "csv_name": "mepiquat chloride"
+  },
+  "searches": [
+    {
+      "query": "(mepiquat) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 74,
+      "results": [
+        {
+          "id": "40059163",
+          "source": "MED",
+          "title": "Effects of DA-6 and MC on the growth, physiology, and yield characteristics of soybean.",
+          "first_author": "Wang X",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06310-6",
+          "pmid": "40059163"
+        },
+        {
+          "id": "40722057",
+          "source": "MED",
+          "title": "Prohexadione calcium and KH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt; synergy optimizes pod pepper plant architecture for mechanized harvesting and boosts yield and fruit quality.",
+          "first_author": "Geng Y",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06979-9",
+          "pmid": "40722057"
+        },
+        {
+          "id": "41555227",
+          "source": "MED",
+          "title": "Optimal combination of canopy management and planting density for yield enhancement in late-sown cotton.",
+          "first_author": "Hayat MAB",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08163-z",
+          "pmid": "41555227"
+        },
+        {
+          "id": "40563853",
+          "source": "MED",
+          "title": "RNA Interference-Mediated Suppression of &lt;i&gt;GhSP&lt;/i&gt; (&lt;i&gt;SELF-PRUNING&lt;/i&gt;) Modulates the Plant Architecture of Transgenic Cotton in a Dose-Dependent Manner.",
+          "first_author": "Wang Y",
+          "pub_year": "2025",
+          "doi": "10.3390/biology14060601",
+          "pmid": "40563853"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "36371622",
+          "source": "MED",
+          "title": "Considering degradation kinetics of pesticides in plant uptake models: proof of concept for potato.",
+          "first_author": "Li Z",
+          "pub_year": "2023",
+          "doi": "10.1002/ps.7288",
+          "pmid": "36371622"
+        },
+        {
+          "id": "41600095",
+          "source": "MED",
+          "title": "Gibberellin-Treated Seedless Cultivation Alters Berry Fracture Behavior, Cell Size and Cell Wall Components in the Interspecific Hybrid Table Grape (<i>Vitis labruscana</i> × <i>Vitis vinifera</i>) 'Shine Muscat'.",
+          "first_author": "Ishikawa H",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15020287",
+          "pmid": "41600095"
+        },
+        {
+          "id": "PMC12985092",
+          "source": "PMC",
+          "title": "Dynamic Modeling of Pesticide Residue Determination to Ensure Safe Food: A Review",
+          "first_author": "Jahangir S",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "39026987",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 55th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8841",
+          "pmid": "39026987"
+        },
+        {
+          "id": "36899076",
+          "source": "MED",
+          "title": "Growth changes of tomato seedlings responding to sodium salt of α-naphthalene acetic acid and potassium salt of fulvic acid.",
+          "first_author": "Ren M",
+          "pub_year": "2023",
+          "doi": "10.1038/s41598-023-31023-x",
+          "pmid": "36899076"
+        },
+        {
+          "id": "37255950",
+          "source": "MED",
+          "title": "Low-Temperature Cleanup Followed by Dispersive Solid-Phase Extraction for Determination of Nine Polar Plant Growth Regulators in Herbal Matrices Using Liquid Chromatography-Tandem Mass Spectrometry.",
+          "first_author": "Hu Q",
+          "pub_year": "2023",
+          "doi": "10.1007/s10337-023-04254-3",
+          "pmid": "37255950"
+        },
+        {
+          "id": "37762483",
+          "source": "MED",
+          "title": "Alterations in Growth Habit to Channel End-of-Season Perennial Reserves towards Increased Yield and Reduced Regrowth after Defoliation in Upland Cotton (&lt;i&gt;Gossypium hirsutum&lt;/i&gt; L.).",
+          "first_author": "Naveed S",
+          "pub_year": "2023",
+          "doi": "10.3390/ijms241814174",
+          "pmid": "37762483"
+        },
+        {
+          "id": "38202744",
+          "source": "MED",
+          "title": "Safe Application of 75% Trifloxystrobin-Tebuconazole as Water-Dispersible Granules in Paddy Based on Residue and Dietary Risk Assessment.",
+          "first_author": "Wang S",
+          "pub_year": "2023",
+          "doi": "10.3390/molecules29010163",
+          "pmid": "38202744"
+        },
+        {
+          "id": "39124130",
+          "source": "MED",
+          "title": "Role of Endophytic Entomopathogenic Fungi in Mediating Host Selection, Biology, Behavior, and Management of Tarnished Plant Bug, <i>Lygus lineolaris</i> (Hemiptera: Miridae).",
+          "first_author": "George J",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13152012",
+          "pmid": "39124130"
+        },
+        {
+          "id": "28915421",
+          "source": "MED",
+          "title": "Determination of chlormequat and mepiquat residues and their dissipation rates in tomato cultivation matrices by ultra-performance liquid chromatography-tandem mass spectrometry.",
+          "first_author": "Zhang H",
+          "pub_year": "2017",
+          "doi": "10.1016/j.jchromb.2017.09.012",
+          "pmid": "28915421"
+        },
+        {
+          "id": "33719323",
+          "source": "MED",
+          "title": "Profiling of MicroRNAs Involved in Mepiquat Chloride-Mediated Inhibition of Internode Elongation in Cotton (<i>Gossypium hirsutum</i> L.) Seedlings.",
+          "first_author": "Wang L",
+          "pub_year": "2021",
+          "doi": "10.3389/fpls.2021.643213",
+          "pmid": "33719323"
+        },
+        {
+          "id": "40343122",
+          "source": "MED",
+          "title": "Advances in cotton harvesting aids.",
+          "first_author": "Xie Z",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1570251",
+          "pmid": "40343122"
+        },
+        {
+          "id": "36753361",
+          "source": "MED",
+          "title": "Analysis of highly polar pesticides in foods by LC-MS/MS.",
+          "first_author": "Liao WR",
+          "pub_year": "2022",
+          "doi": "10.38212/2224-6614.3420",
+          "pmid": "36753361"
+        },
+        {
+          "id": "35783954",
+          "source": "MED",
+          "title": "Editorial: Petal Development: From Cell Biology to EvoDevo.",
+          "first_author": "Huang T",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.951442",
+          "pmid": "35783954"
+        },
+        {
+          "id": "39327656",
+          "source": "MED",
+          "title": "[Advances in the application of ion chromatography-mass spectrometry in the fields of life and health].",
+          "first_author": "Yi YX",
+          "pub_year": "2024",
+          "doi": "10.3724/sp.j.1123.2023.11001",
+          "pmid": "39327656"
+        },
+        {
+          "id": "38709777",
+          "source": "MED",
+          "title": "Sublethal effects of a commercial Bt product and Bt cotton flowers on the bollworm (Helicoverpa zea) with impacts to predation from a lady beetle (Hippodamia convergens).",
+          "first_author": "Elkins BH",
+          "pub_year": "2024",
+          "doi": "10.1371/journal.pone.0302941",
+          "pmid": "38709777"
+        },
+        {
+          "id": "40673397",
+          "source": "MED",
+          "title": "Supramolecular chemistry for optical detection and delivery applications in living plants.",
+          "first_author": "Balli MV",
+          "pub_year": "2025",
+          "doi": "10.1039/d4cs00500g",
+          "pmid": "40673397"
+        },
+        {
+          "id": "39735772",
+          "source": "MED",
+          "title": "Unravelling physiological disorders in onion and garlic: critical assessment and bibliometric visualization.",
+          "first_author": "Kale RB",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1500917",
+          "pmid": "39735772"
+        },
+        {
+          "id": "36500842",
+          "source": "MED",
+          "title": "Engineered Nanomaterials for Improving the Nutritional Quality of Agricultural Products: A Review.",
+          "first_author": "Sun Y",
+          "pub_year": "2022",
+          "doi": "10.3390/nano12234219",
+          "pmid": "36500842"
+        }
+      ]
+    },
+    {
+      "query": "(mepiquat) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(mepiquat) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 36,
+      "results": [
+        {
+          "id": "42168867",
+          "source": "MED",
+          "title": "Mepiquat chloride enhances cold tolerance in cotton via regulating root growth and antioxidant enzymes.",
+          "first_author": "Ahmad I",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08226-1",
+          "pmid": "42168867"
+        },
+        {
+          "id": "40722057",
+          "source": "MED",
+          "title": "Prohexadione calcium and KH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt; synergy optimizes pod pepper plant architecture for mechanized harvesting and boosts yield and fruit quality.",
+          "first_author": "Geng Y",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06979-9",
+          "pmid": "40722057"
+        },
+        {
+          "id": "41963813",
+          "source": "MED",
+          "title": "Dynamic changes of endogenous hormones and transcriptome analysis reveal the regulatory mechanism of gibberellin-promoted male cone formation in Platycladus orientalis.",
+          "first_author": "Liao T",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08706-4",
+          "pmid": "41963813"
+        },
+        {
+          "id": "39026987",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 55th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8841",
+          "pmid": "39026987"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "36061767",
+          "source": "MED",
+          "title": "Increasing the activities of protective enzymes is an important strategy to improve resistance in cucumber to powdery mildew disease and melon aphid under different infection/infestation patterns.",
+          "first_author": "Zhang Q",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.950538",
+          "pmid": "36061767"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "40343122",
+          "source": "MED",
+          "title": "Advances in cotton harvesting aids.",
+          "first_author": "Xie Z",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1570251",
+          "pmid": "40343122"
+        },
+        {
+          "id": "40371318",
+          "source": "MED",
+          "title": "The 2023 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9398",
+          "pmid": "40371318"
+        },
+        {
+          "id": "39604786",
+          "source": "MED",
+          "title": "Biostimulants for enhancing productivity, bioactive components, and the essential oils of garlic with the potential antifungal activity.",
+          "first_author": "Hassan HS",
+          "pub_year": "2024",
+          "doi": "10.1186/s13568-024-01790-5",
+          "pmid": "39604786"
+        },
+        {
+          "id": "40673397",
+          "source": "MED",
+          "title": "Supramolecular chemistry for optical detection and delivery applications in living plants.",
+          "first_author": "Balli MV",
+          "pub_year": "2025",
+          "doi": "10.1039/d4cs00500g",
+          "pmid": "40673397"
+        },
+        {
+          "id": "PMC11843168",
+          "source": "PMC",
+          "title": "Review of the methodology used for the assessment of the short‐term (acute) dietary exposure to pesticide residues in food (IESTI methodology)",
+          "first_author": null,
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "36380296",
+          "source": "MED",
+          "title": "Use of plant growth regulators to reduce 2-methyl-4-chlorophenoxy acetic acid-Na (MPCA-Na) damage in cotton (Gossypium hirsutum).",
+          "first_author": "Zhang QC",
+          "pub_year": "2022",
+          "doi": "10.1186/s12870-022-03917-x",
+          "pmid": "36380296"
+        },
+        {
+          "id": "28852186",
+          "source": "MED",
+          "title": "Species composition and richness of aphid parasitoid wasps in cotton fields in northern China.",
+          "first_author": "Yang F",
+          "pub_year": "2017",
+          "doi": "10.1038/s41598-017-10345-7",
+          "pmid": "28852186"
+        },
+        {
+          "id": "30174521",
+          "source": "MED",
+          "title": "Effects of exogenous 6-BA and NAA on growth and contents of medicinal ingredient of <i>Phellodendron chinense</i> seedlings.",
+          "first_author": "He H",
+          "pub_year": "2018",
+          "doi": "10.1016/j.sjbs.2017.11.037",
+          "pmid": "30174521"
+        },
+        {
+          "id": "25469374",
+          "source": "MED",
+          "title": "Functional-structural plant models: a growing paradigm for plant studies.",
+          "first_author": "Sievänen R",
+          "pub_year": "2014",
+          "doi": "10.1093/aob/mcu175",
+          "pmid": "25469374"
+        },
+        {
+          "id": "32625348",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue level for propamocarb in chards/beet leaves.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2017",
+          "doi": "10.2903/j.efsa.2017.5055",
+          "pmid": "32625348"
+        },
+        {
+          "id": "PMC4156129",
+          "source": "PMC",
+          "title": "ContentSnapshots",
+          "first_author": null,
+          "pub_year": "2014",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "32874271",
+          "source": "MED",
+          "title": "The 2018 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2020",
+          "doi": "10.2903/j.efsa.2020.6057",
+          "pmid": "32874271"
+        },
+        {
+          "id": "37122284",
+          "source": "MED",
+          "title": "The 2021 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.7939",
+          "pmid": "37122284"
+        },
+        {
+          "id": "38764479",
+          "source": "MED",
+          "title": "Review of the existing maximum residue levels for gamma-cyhalothrin according to Article 12 of Regulation (EC) No 396/2005.",
+          "first_author": "EFSA (European Food Safety Authority)",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8758",
+          "pmid": "38764479"
+        },
+        {
+          "id": "32626046",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for potassium phosphonates in certain berries and small fruits.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5411",
+          "pmid": "32626046"
+        },
+        {
+          "id": "32626325",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue level for fosetyl/phosphonic acid for potatoes and wheat.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2019",
+          "doi": "10.2903/j.efsa.2019.5703",
+          "pmid": "32626325"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "32625802",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for fosetyl-Al in tree nuts, pome fruit, peach and potato.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5161",
+          "pmid": "32625802"
+        }
+      ]
+    },
+    {
+      "query": "(mepiquat) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(mepiquat) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 39,
+      "results": [
+        {
+          "id": "40722057",
+          "source": "MED",
+          "title": "Prohexadione calcium and KH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt; synergy optimizes pod pepper plant architecture for mechanized harvesting and boosts yield and fruit quality.",
+          "first_author": "Geng Y",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06979-9",
+          "pmid": "40722057"
+        },
+        {
+          "id": "41924334",
+          "source": "MED",
+          "title": "MiABI5-like7-&lt;i&gt;MiFT3&lt;/i&gt; regulatory module controls floral transition induced by mepiquat chloride in evergreen perennial mango (&lt;i&gt;Mangifera indica&lt;/i&gt; L.).",
+          "first_author": "Xu W",
+          "pub_year": "2026",
+          "doi": "10.1093/hr/uhaf336",
+          "pmid": "41924334"
+        },
+        {
+          "id": "41600095",
+          "source": "MED",
+          "title": "Gibberellin-Treated Seedless Cultivation Alters Berry Fracture Behavior, Cell Size and Cell Wall Components in the Interspecific Hybrid Table Grape (<i>Vitis labruscana</i> × <i>Vitis vinifera</i>) 'Shine Muscat'.",
+          "first_author": "Ishikawa H",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15020287",
+          "pmid": "41600095"
+        },
+        {
+          "id": "38649811",
+          "source": "MED",
+          "title": "The application potential of mepiquat chloride in soybean: improvement of yield characteristics and drought resistance.",
+          "first_author": "Wang X",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05028-1",
+          "pmid": "38649811"
+        },
+        {
+          "id": "40563853",
+          "source": "MED",
+          "title": "RNA Interference-Mediated Suppression of &lt;i&gt;GhSP&lt;/i&gt; (&lt;i&gt;SELF-PRUNING&lt;/i&gt;) Modulates the Plant Architecture of Transgenic Cotton in a Dose-Dependent Manner.",
+          "first_author": "Wang Y",
+          "pub_year": "2025",
+          "doi": "10.3390/biology14060601",
+          "pmid": "40563853"
+        },
+        {
+          "id": "36530389",
+          "source": "MED",
+          "title": "Widely targeted metabolite profiling of mango stem apex during floral induction by compond of mepiquat chloride, prohexadione-calcium and uniconazole.",
+          "first_author": "Liang F",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.14458",
+          "pmid": "36530389"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "31755653",
+          "source": "MED",
+          "title": "Simultaneous determination of multiclass plant growth regulators in fruits using the quick, easy, cheap, effective, rugged, and safe method and ultra-high performance liquid chromatography-tandem mass spectrometry.",
+          "first_author": "Xu X",
+          "pub_year": "2020",
+          "doi": "10.1002/jssc.201900771",
+          "pmid": "31755653"
+        },
+        {
+          "id": "39026987",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 55th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8841",
+          "pmid": "39026987"
+        },
+        {
+          "id": "34661117",
+          "source": "MED",
+          "title": "Induction of defence-related proteins by selected plant growth regulators and biocontrol agents against guava root knot nematode, <i>Meloidogyne enterolobii</i>.",
+          "first_author": "Ashokkumar N",
+          "pub_year": "2021",
+          "doi": "10.21307/jofnem-2021-081",
+          "pmid": "34661117"
+        },
+        {
+          "id": "41531467",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for deltamethrin in kiwi, melons and watermelons.",
+          "first_author": "EFSA (European Food Safety Authority)",
+          "pub_year": "2026",
+          "doi": "10.2903/j.efsa.2026.9818",
+          "pmid": "41531467"
+        },
+        {
+          "id": "36753361",
+          "source": "MED",
+          "title": "Analysis of highly polar pesticides in foods by LC-MS/MS.",
+          "first_author": "Liao WR",
+          "pub_year": "2022",
+          "doi": "10.38212/2224-6614.3420",
+          "pmid": "36753361"
+        },
+        {
+          "id": "40371318",
+          "source": "MED",
+          "title": "The 2023 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9398",
+          "pmid": "40371318"
+        },
+        {
+          "id": "PMC11843168",
+          "source": "PMC",
+          "title": "Review of the methodology used for the assessment of the short‐term (acute) dietary exposure to pesticide residues in food (IESTI methodology)",
+          "first_author": null,
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "35733791",
+          "source": "MED",
+          "title": "<i>Lactiplantibacillus plantarum</i> P9 improved gut microbial metabolites and alleviated inflammatory response in pesticide exposure cohorts.",
+          "first_author": "Liu W",
+          "pub_year": "2022",
+          "doi": "10.1016/j.isci.2022.104472",
+          "pmid": "35733791"
+        },
+        {
+          "id": "38655191",
+          "source": "MED",
+          "title": "The 2022 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8753",
+          "pmid": "38655191"
+        },
+        {
+          "id": "32646004",
+          "source": "MED",
+          "title": "Impacts of Verticillium Wilt on Photosynthesis Rate, Lint Production, and Fiber Quality of Greenhouse-Grown Cotton (<i>Gossypium hirsutum</i>).",
+          "first_author": "Ayele AG",
+          "pub_year": "2020",
+          "doi": "10.3390/plants9070857",
+          "pmid": "32646004"
+        },
+        {
+          "id": "35386573",
+          "source": "MED",
+          "title": "The 2020 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2022",
+          "doi": "10.2903/j.efsa.2022.7215",
+          "pmid": "35386573"
+        },
+        {
+          "id": "IND43696919",
+          "source": "AGR",
+          "title": "Effect of prohexidione-Ca and mepiquat chloride on stolon production and yield of Florida grown strawberry (Fragaria xananassa Duch.).",
+          "first_author": "Duval JR",
+          "pub_year": "2005",
+          "doi": "10.1300/j301v04n02_02",
+          "pmid": null
+        },
+        {
+          "id": "33854575",
+          "source": "MED",
+          "title": "The 2019 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6491",
+          "pmid": "33854575"
+        },
+        {
+          "id": "32626046",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for potassium phosphonates in certain berries and small fruits.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5411",
+          "pmid": "32626046"
+        },
+        {
+          "id": "32625983",
+          "source": "MED",
+          "title": "The 2016 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5348",
+          "pmid": "32625983"
+        },
+        {
+          "id": "32625885",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue level for abamectin in citrus fruits.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5254",
+          "pmid": "32625885"
+        },
+        {
+          "id": "32626361",
+          "source": "MED",
+          "title": "The 2017 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2019",
+          "doi": "10.2903/j.efsa.2019.5743",
+          "pmid": "32626361"
+        },
+        {
+          "id": "35873725",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue level for deltamethrin in maize/corn.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2022",
+          "doi": "10.2903/j.efsa.2022.7446",
+          "pmid": "35873725"
+        }
+      ]
+    },
+    {
+      "query": "(mepiquat) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [],
+  "notes": []
+}

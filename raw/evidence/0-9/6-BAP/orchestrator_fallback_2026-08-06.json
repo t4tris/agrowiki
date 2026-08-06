@@ -1,0 +1,863 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "6-BAP",
+    "csv_name": "6-benzylaminopurine"
+  },
+  "searches": [
+    {
+      "query": "(6-benzylaminopurine OR 6-benzyladenine) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 1356,
+      "results": [
+        {
+          "id": "42491681",
+          "source": "MED",
+          "title": "Development of an efficient &lt;i&gt;in vitro&lt;/i&gt; plant regeneration system using true leaf explants of processing tomato (&lt;i&gt;Solanum lycopersicum&lt;/i&gt; L.) 'Ligeer 87-5'.",
+          "first_author": "Zhang J",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.21520",
+          "pmid": "42491681"
+        },
+        {
+          "id": "41225064",
+          "source": "MED",
+          "title": "Effects of benzylaminopurine and gibberellic acid on growth, yield, and nutrient composition of greenhouse cultivated yellow cherry tomatoes.",
+          "first_author": "Eissa RA",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-27667-6",
+          "pmid": "41225064"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "41375978",
+          "source": "MED",
+          "title": "Development and Validation of an LC-MS/MS Method for Quantifying Phytohormones Related to Tomato Shelf Life.",
+          "first_author": "Hakeem MK",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14234040",
+          "pmid": "41375978"
+        },
+        {
+          "id": "41386863",
+          "source": "MED",
+          "title": "Efficient and cost-effective shoot regeneration in Aguaymanto (Physalis peruviana L.) using meta-Topolin and 6-benzylaminopurine combinations.",
+          "first_author": "Vargas R",
+          "pub_year": "2025",
+          "doi": "10.1016/j.jgeb.2025.100599",
+          "pmid": "41386863"
+        },
+        {
+          "id": "42280711",
+          "source": "MED",
+          "title": "Effects of Hot Water and Plant Growth Regulator Treatments on Bud Germination and Pathogen Elimination in Citrus Scions.",
+          "first_author": "Zhang Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111674",
+          "pmid": "42280711"
+        },
+        {
+          "id": "41681608",
+          "source": "MED",
+          "title": "Comparative Effects of Biostimulants and Fruit Enlargement Agents on Fruit Quality in Two Kiwifruit Cultivars.",
+          "first_author": "Sun X",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15030444",
+          "pmid": "41681608"
+        },
+        {
+          "id": "41377105",
+          "source": "MED",
+          "title": "Highly Efficient &lt;i&gt;Agrobacterium&lt;/i&gt;-Mediated Transformation of Tomato cv Micro-Tom From Cotyledon Explants.",
+          "first_author": "Pagliuso D",
+          "pub_year": "2025",
+          "doi": "10.21769/bioprotoc.5524",
+          "pmid": "41377105"
+        },
+        {
+          "id": "42131741",
+          "source": "MED",
+          "title": "Trichome formation in &lt;i&gt;Nicotiana benthamiana&lt;/i&gt; is induced by certain &lt;i&gt;Agrobacterium tumefaciens&lt;/i&gt; strains.",
+          "first_author": "Chen J",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1762747",
+          "pmid": "42131741"
+        },
+        {
+          "id": "40872174",
+          "source": "MED",
+          "title": "In Vitro Propagation of Variegated &lt;i&gt;Cymbidium lancifolium&lt;/i&gt; Hooker.",
+          "first_author": "Kang I",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14162551",
+          "pmid": "40872174"
+        },
+        {
+          "id": "42341129",
+          "source": "MED",
+          "title": "Brassinosteroid signaling regulates shoot apical meristem homeostasis via orchestrating cytokinin and WUSCHEL activity.",
+          "first_author": "Wang X",
+          "pub_year": "2026",
+          "doi": "10.1126/sciadv.aed5120",
+          "pmid": "42341129"
+        },
+        {
+          "id": "41904208",
+          "source": "MED",
+          "title": "Effect of nano-NPK fertilizer and BAP on growth and flowering of Viola tricolor.",
+          "first_author": "Al-Hashemi FH",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-37747-w",
+          "pmid": "41904208"
+        },
+        {
+          "id": "41975297",
+          "source": "MED",
+          "title": "Effect of alone &amp; combined application of benzylaminopurine and gibberellic acid on in-vitro germination and growth rate of broccoli.",
+          "first_author": "Khan TA",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08576-w",
+          "pmid": "41975297"
+        },
+        {
+          "id": "41304593",
+          "source": "MED",
+          "title": "Comparative Transcriptome Analysis Provides Insight into the Effect of 6-BA on Flower Development and Flowering in &lt;i&gt;Bougainvillea&lt;/i&gt;.",
+          "first_author": "Lin X",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14223442",
+          "pmid": "41304593"
+        },
+        {
+          "id": "41456912",
+          "source": "MED",
+          "title": "Virus-Inducible Activation of Hypersensitive Response Confers Broad-Spectrum Resistance to Diverse Viruses in Plants.",
+          "first_author": "Pan RR",
+          "pub_year": "2025",
+          "doi": "10.1111/mpp.70195",
+          "pmid": "41456912"
+        },
+        {
+          "id": "41304616",
+          "source": "MED",
+          "title": "Dual Role of &lt;i&gt;Bacillus velezensis&lt;/i&gt; EM-A8 in Maize: Biocontrol of Exserohilum Turcicum and Enhancement of Plant Growth.",
+          "first_author": "Grossi Vanacore MF",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14223464",
+          "pmid": "41304616"
+        },
+        {
+          "id": "40461982",
+          "source": "MED",
+          "title": "Regulatory effects of gibberellin and cytokinin on citrus peel cell wall metabolism.",
+          "first_author": "Wang X",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06705-5",
+          "pmid": "40461982"
+        },
+        {
+          "id": "39439714",
+          "source": "MED",
+          "title": "Potential of some explants for callus induction and plantlet regeneration in <i>Solanum lycopersicum</i> L. under treatment of different plant growth regulators.",
+          "first_author": "Kumari A",
+          "pub_year": "2024",
+          "doi": "10.5114/bta.2024.141803",
+          "pmid": "39439714"
+        },
+        {
+          "id": "41603328",
+          "source": "MED",
+          "title": "Exploiting Laminaria digitata L. Aqueous Extract for Tomato Biostimulation: A Physiological and Metabolomic Approach.",
+          "first_author": "Circuncisão AR",
+          "pub_year": "2026",
+          "doi": "10.1111/ppl.70762",
+          "pmid": "41603328"
+        },
+        {
+          "id": "41409487",
+          "source": "MED",
+          "title": "Light spectrum effects on micropropagation and gene expression of &lt;i&gt;Bucephalandra&lt;/i&gt; sp. in a temporary immersion system for sustainable production.",
+          "first_author": "Laksana C",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1660632",
+          "pmid": "41409487"
+        },
+        {
+          "id": "40457200",
+          "source": "MED",
+          "title": "Cloning and assessment of cold resistance in the transcription factor PhIPT5 from Populus hopeiensis.",
+          "first_author": "Zhang Q",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06481-2",
+          "pmid": "40457200"
+        },
+        {
+          "id": "PPR1204923",
+          "source": "PPR",
+          "title": "The Halostachys caspica miR172e/TOE3 module regulates Arabidopsis resistance to Pseudomonas syringae pv. tomato DC3000 and Verticillium dahliae",
+          "first_author": "Zhang R",
+          "pub_year": "2024",
+          "doi": "10.22541/au.173149604.40121701/v1",
+          "pmid": null
+        },
+        {
+          "id": "39982900",
+          "source": "MED",
+          "title": "An efficient Rhizobium rhizogenes-mediated transformation system for Cuscuta campestris.",
+          "first_author": "Alles KMA",
+          "pub_year": "2025",
+          "doi": "10.1371/journal.pone.0317347",
+          "pmid": "39982900"
+        },
+        {
+          "id": "41233772",
+          "source": "MED",
+          "title": "Establishment of a refined somatic embryogenesis protocol and light-spectrum-based acclimatization in Caladium bicolor 'White'.",
+          "first_author": "Dehestani-Ardakani M",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07551-1",
+          "pmid": "41233772"
+        },
+        {
+          "id": "41595534",
+          "source": "MED",
+          "title": "Multi-Omics Analysis Identifies the Key Defence Pathways in Chinese Cabbage Responding to Black Spot Disease.",
+          "first_author": "Yan W",
+          "pub_year": "2026",
+          "doi": "10.3390/genes17010115",
+          "pmid": "41595534"
+        }
+      ]
+    },
+    {
+      "query": "(6-benzylaminopurine OR 6-benzyladenine) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 6,
+      "results": [
+        {
+          "id": "PPR1204923",
+          "source": "PPR",
+          "title": "The Halostachys caspica miR172e/TOE3 module regulates Arabidopsis resistance to Pseudomonas syringae pv. tomato DC3000 and Verticillium dahliae",
+          "first_author": "Zhang R",
+          "pub_year": "2024",
+          "doi": "10.22541/au.173149604.40121701/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR958456",
+          "source": "PPR",
+          "title": "A Witches’ Broom Phytoplasma effector induces stunting by stabilizing a bHLH transcription factor in plants",
+          "first_author": "Yang S",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.12.24.629987",
+          "pmid": null
+        },
+        {
+          "id": "PPR59025",
+          "source": "PPR",
+          "title": "Efficient and reproducible somatic embryogenesis and micro propagation in tomato via novel structures -Rhizoid Tubers",
+          "first_author": "Saeed W",
+          "pub_year": "2018",
+          "doi": "10.1101/446286",
+          "pmid": null
+        },
+        {
+          "id": "PPR835162",
+          "source": "PPR",
+          "title": "A prion-like protein regulates the 2-dimensional to 3-dimensional growth transition in the moss  <i>Physcomitrium patens</i>",
+          "first_author": "Weeks Z",
+          "pub_year": "2024",
+          "doi": "10.1101/2024.04.08.588603",
+          "pmid": null
+        },
+        {
+          "id": "PPR382530",
+          "source": "PPR",
+          "title": "Reconstitution of monoterpene indole alkaloid biosynthesis in genome engineered  <i>Nicotiana benthamiana</i>",
+          "first_author": "Dudley QM",
+          "pub_year": "2021",
+          "doi": "10.1101/2021.08.12.456143",
+          "pmid": null
+        },
+        {
+          "id": "PPR506045",
+          "source": "PPR",
+          "title": "Tunable control of insect pheromone biosynthesis in  <i>Nicotiana benthamiana</i>",
+          "first_author": "Kallam K",
+          "pub_year": "2022",
+          "doi": "10.1101/2022.06.15.496242",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(6-benzylaminopurine OR 6-benzyladenine) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 373,
+      "results": [
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "42131741",
+          "source": "MED",
+          "title": "Trichome formation in &lt;i&gt;Nicotiana benthamiana&lt;/i&gt; is induced by certain &lt;i&gt;Agrobacterium tumefaciens&lt;/i&gt; strains.",
+          "first_author": "Chen J",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1762747",
+          "pmid": "42131741"
+        },
+        {
+          "id": "41477263",
+          "source": "MED",
+          "title": "LED lighting and exogenous cytokinin enhance budbreak and winter growth of 'Washington' navel orange in the nursery.",
+          "first_author": "de Carvalho DU",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1735154",
+          "pmid": "41477263"
+        },
+        {
+          "id": "41322610",
+          "source": "MED",
+          "title": "Discovery and Biological Evaluation of 3‑(1,2,3-Thiadiazol-5-yl)-1-arylimidazolidine-2,4-diones as Potential Plant Growth Regulators.",
+          "first_author": "Kalinina TA",
+          "pub_year": "2025",
+          "doi": "10.1021/acsomega.5c07563",
+          "pmid": "41322610"
+        },
+        {
+          "id": "41257558",
+          "source": "MED",
+          "title": "RNA sequencing and histology analysis provide insights into the formation of hollow fruits in cucumber.",
+          "first_author": "Zhou G",
+          "pub_year": "2025",
+          "doi": "10.1186/s12864-025-12253-x",
+          "pmid": "41257558"
+        },
+        {
+          "id": "40805698",
+          "source": "MED",
+          "title": "A Water Solution from the Seeds, Seedlings and Young Plants of the Corn Cockle (&lt;i&gt;Agrostemma githago&lt;/i&gt;) Showed Plant-Growth Regulator Efficiency.",
+          "first_author": "Ambrožič-Dolinšek J",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14152349",
+          "pmid": "40805698"
+        },
+        {
+          "id": "41233772",
+          "source": "MED",
+          "title": "Establishment of a refined somatic embryogenesis protocol and light-spectrum-based acclimatization in Caladium bicolor 'White'.",
+          "first_author": "Dehestani-Ardakani M",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07551-1",
+          "pmid": "41233772"
+        },
+        {
+          "id": "41844728",
+          "source": "MED",
+          "title": "Regulating female ear morphogenesis in maize by uniconazole and 5-aminolevulinic acid for yield improvement.",
+          "first_author": "Xu L",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-41685-y",
+          "pmid": "41844728"
+        },
+        {
+          "id": "41975297",
+          "source": "MED",
+          "title": "Effect of alone &amp; combined application of benzylaminopurine and gibberellic acid on in-vitro germination and growth rate of broccoli.",
+          "first_author": "Khan TA",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08576-w",
+          "pmid": "41975297"
+        },
+        {
+          "id": "39439714",
+          "source": "MED",
+          "title": "Potential of some explants for callus induction and plantlet regeneration in <i>Solanum lycopersicum</i> L. under treatment of different plant growth regulators.",
+          "first_author": "Kumari A",
+          "pub_year": "2024",
+          "doi": "10.5114/bta.2024.141803",
+          "pmid": "39439714"
+        },
+        {
+          "id": "39940806",
+          "source": "MED",
+          "title": "Multifunctional Role of Cytokinin in Horticultural Crops.",
+          "first_author": "Hussain S",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26031037",
+          "pmid": "39940806"
+        },
+        {
+          "id": "41387738",
+          "source": "MED",
+          "title": "Ethylene promotes branch formation but inhibits tendril development in cucumber.",
+          "first_author": "Zhang X",
+          "pub_year": "2025",
+          "doi": "10.1038/s41467-025-67444-7",
+          "pmid": "41387738"
+        },
+        {
+          "id": "38494244",
+          "source": "MED",
+          "title": "Enhancing in vitro regeneration via somatic embryogenesis and Fusarium wilt resistance of Egyptian cucumber (Cucumis sativus L.) cultivars.",
+          "first_author": "Hamza HM",
+          "pub_year": "2024",
+          "doi": "10.1016/j.jgeb.2024.100360",
+          "pmid": "38494244"
+        },
+        {
+          "id": "37877088",
+          "source": "MED",
+          "title": "Agronomic and hormonal approaches for enhancing flowering intensity in white Guinea yam (<i>Dioscorea rotundata</i> Poir.).",
+          "first_author": "Mondo JM",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1250771",
+          "pmid": "37877088"
+        },
+        {
+          "id": "39857308",
+          "source": "MED",
+          "title": "Morphological, Physiological, and Transcriptional Changes in &lt;i&gt;Crocus sativus&lt;/i&gt; L. Under In Vitro Polyethylene Glycol-Induced Water Stress.",
+          "first_author": "Gusain S",
+          "pub_year": "2025",
+          "doi": "10.3390/biology14010078",
+          "pmid": "39857308"
+        },
+        {
+          "id": "40452414",
+          "source": "MED",
+          "title": "Comparative RNA sequencing-based transcriptome profiling of Quercur robur: specific sets of genes involved in taproot and lateral roots emergence.",
+          "first_author": "Kościelniak P",
+          "pub_year": "2025",
+          "doi": "10.1093/treephys/tpaf067",
+          "pmid": "40452414"
+        },
+        {
+          "id": "39375519",
+          "source": "MED",
+          "title": "Cytokinin-related genes regulate cucumber fruit pedicel length.",
+          "first_author": "Yane S",
+          "pub_year": "2024",
+          "doi": "10.1038/s41598-024-75186-7",
+          "pmid": "39375519"
+        },
+        {
+          "id": "40341554",
+          "source": "MED",
+          "title": "A nuclear-encoded endonuclease governs the paternal transmission of mitochondria in Cucumis plants.",
+          "first_author": "Shen J",
+          "pub_year": "2025",
+          "doi": "10.1038/s41467-025-59568-7",
+          "pmid": "40341554"
+        },
+        {
+          "id": "41470617",
+          "source": "MED",
+          "title": "Doubled Haploid Production in &lt;i&gt;Cucurbita pepo&lt;/i&gt; L. Through Ovary Culture.",
+          "first_author": "García-Pérez A",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243733",
+          "pmid": "41470617"
+        },
+        {
+          "id": "40017819",
+          "source": "MED",
+          "title": "A review of soil waterlogging impacts, mechanisms, and adaptive strategies.",
+          "first_author": "Zhang Y",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1545912",
+          "pmid": "40017819"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "39942942",
+          "source": "MED",
+          "title": "Biochar Nanoparticles Reduce Ciprofloxacin Accumulation and Restore Growth and Hormonal Balance in Rice Seedlings.",
+          "first_author": "Chen X",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14030380",
+          "pmid": "39942942"
+        },
+        {
+          "id": "42158733",
+          "source": "MED",
+          "title": "The utility of pyrimidine derivatives in the construction of azolo[&lt;i&gt;d&lt;/i&gt;]pyrimidine: part II-multi-nitrogen azole systems with potential biological applications.",
+          "first_author": "Shamroukh AH",
+          "pub_year": "2026",
+          "doi": "10.1039/d6ra02611g",
+          "pmid": "42158733"
+        },
+        {
+          "id": "40332369",
+          "source": "MED",
+          "title": "Virus-Free Micro-Corm Induction and the Mechanism of Corm Development in Taro.",
+          "first_author": "Wang S",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26083740",
+          "pmid": "40332369"
+        },
+        {
+          "id": "35367797",
+          "source": "MED",
+          "title": "Synthesis, characterization and absorption evaluation of bifunctional monomer magnetic molecularly imprinted polymers nanoparticles for the extraction of 6-benzylaminopurine from vegetables.",
+          "first_author": "Xiong Y",
+          "pub_year": "2022",
+          "doi": "10.1016/j.foodchem.2022.132792",
+          "pmid": "35367797"
+        }
+      ]
+    },
+    {
+      "query": "(6-benzylaminopurine OR 6-benzyladenine) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(6-benzylaminopurine OR 6-benzyladenine) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 398,
+      "results": [
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "41754272",
+          "source": "MED",
+          "title": "A Stable and Rapid Protoplast-Based CRISPR/Cas9-Ribonucleoprotein Complex Screening System for Octoploid Strawberry (&lt;i&gt;Fragaria × ananassa&lt;/i&gt;).",
+          "first_author": "Kim Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15040565",
+          "pmid": "41754272"
+        },
+        {
+          "id": "PMC12943902",
+          "source": "PMC",
+          "title": "A Stable and Rapid Protoplast-Based CRISPR/Cas9-Ribonucleoprotein Complex Screening System for Octoploid Strawberry (Fragaria × ananassa)",
+          "first_author": "Kim Y",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41225064",
+          "source": "MED",
+          "title": "Effects of benzylaminopurine and gibberellic acid on growth, yield, and nutrient composition of greenhouse cultivated yellow cherry tomatoes.",
+          "first_author": "Eissa RA",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-27667-6",
+          "pmid": "41225064"
+        },
+        {
+          "id": "42280711",
+          "source": "MED",
+          "title": "Effects of Hot Water and Plant Growth Regulator Treatments on Bud Germination and Pathogen Elimination in Citrus Scions.",
+          "first_author": "Zhang Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111674",
+          "pmid": "42280711"
+        },
+        {
+          "id": "42243242",
+          "source": "MED",
+          "title": "Synergistic effects of plant growth regulators, riboflavin, and iron nanoparticles on secondary metabolites in micropropagated Ceratonia siliqua L.",
+          "first_author": "Taha LS",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-55883-1",
+          "pmid": "42243242"
+        },
+        {
+          "id": "39670266",
+          "source": "MED",
+          "title": "Cytokinin modulates the inhibitory effect of shade stress on photosynthesis, antioxidant capacity and hormone homeostasis to regulate the grain yield in wheat.",
+          "first_author": "Zhang Y",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1498123",
+          "pmid": "39670266"
+        },
+        {
+          "id": "41409487",
+          "source": "MED",
+          "title": "Light spectrum effects on micropropagation and gene expression of &lt;i&gt;Bucephalandra&lt;/i&gt; sp. in a temporary immersion system for sustainable production.",
+          "first_author": "Laksana C",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1660632",
+          "pmid": "41409487"
+        },
+        {
+          "id": "41146965",
+          "source": "MED",
+          "title": "&lt;i&gt;FveTRM5&lt;/i&gt; plays a critical role in regulating fruit shape in woodland strawberry.",
+          "first_author": "Zheng Z",
+          "pub_year": "2025",
+          "doi": "10.1093/hr/uhaf199",
+          "pmid": "41146965"
+        },
+        {
+          "id": "40558394",
+          "source": "MED",
+          "title": "Green-Synthesized Silver Nanoparticles (AgNPs) Enhance In Vitro Multiplication and Rooting of Strawberries (&lt;i&gt;Fragaria&lt;/i&gt; × &lt;i&gt;ananassa&lt;/i&gt; Duchesne).",
+          "first_author": "Aguirre-Noyola JL",
+          "pub_year": "2025",
+          "doi": "10.3390/biotech14020045",
+          "pmid": "40558394"
+        },
+        {
+          "id": "40458554",
+          "source": "MED",
+          "title": "Regulation of fruit quality formation in strawberry: from omics to biotechnology.",
+          "first_author": "Wang ZY",
+          "pub_year": "2025",
+          "doi": "10.7717/peerj.19497",
+          "pmid": "40458554"
+        },
+        {
+          "id": "40869305",
+          "source": "MED",
+          "title": "Exogenous Gibberellic Acid (GA<sub>3</sub>) and Benzylaminopurine Enhance the Antioxidant Properties of <i>Vaccinium corymbosum</i> L. 'Biloxi' Fruits Without Affecting Yield.",
+          "first_author": "Rodrigues LS",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26167984",
+          "pmid": "40869305"
+        },
+        {
+          "id": "PMC13300443",
+          "source": "PMC",
+          "title": "Genome-Wide Identification of the MYB Family in Morus atropurpurea and Functional Characterization of MaDIV for Its Possible Involvement in Anthocyanin Biosynthesis",
+          "first_author": null,
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41514991",
+          "source": "MED",
+          "title": "Real-Time Callus Instance Segmentation in Plant Tissue Culture Using Successive Generations of YOLO Architectures.",
+          "first_author": "Egi Y",
+          "pub_year": "2025",
+          "doi": "10.3390/plants15010047",
+          "pmid": "41514991"
+        },
+        {
+          "id": "41772453",
+          "source": "MED",
+          "title": "CcMYB24 redirects flavonoid metabolic flux toward flavonols by activating CcFLS and CcCHI to drive leaf variegation in Cymbidium.",
+          "first_author": "Yang G",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08457-2",
+          "pmid": "41772453"
+        },
+        {
+          "id": "38475410",
+          "source": "MED",
+          "title": "An Efficient <i>Agrobacterium</i>-Mediated Genetic Transformation System for Gene Editing in Strawberry (<i>Fragaria</i> × <i>ananassa</i>).",
+          "first_author": "Akter F",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13050563",
+          "pmid": "38475410"
+        },
+        {
+          "id": "41280866",
+          "source": "MED",
+          "title": "Two-Stage Regulation of &lt;i&gt;trans&lt;/i&gt;-Pterostilbene Biosynthesis in Blueberry Leaf-Derived Cell Cultures.",
+          "first_author": "Kim TE",
+          "pub_year": "2025",
+          "doi": "10.1021/acsomega.5c06116",
+          "pmid": "41280866"
+        },
+        {
+          "id": "PMC13299642",
+          "source": "PMC",
+          "title": "Overexpression of PeBBM2 and PeWUS Genes via Carbon Nanotube-Based DNA Delivery Enhances the Callus and Shoot Formation in Phyllostachys edulis",
+          "first_author": "Ding Y",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "38893343",
+          "source": "MED",
+          "title": "Eliciting Polyphenols in Strawberry Leaves: Preliminary Experiments in <i>Fragaria</i> × <i>ananassa</i> cv. Festival.",
+          "first_author": "Salas-Arias K",
+          "pub_year": "2024",
+          "doi": "10.3390/molecules29112467",
+          "pmid": "38893343"
+        },
+        {
+          "id": "40783509",
+          "source": "MED",
+          "title": "CRISPR/Cas9-mediated editing of carotenoid biosynthesis genes alters carotenoid concentrations in kiwifruit.",
+          "first_author": "Luo X",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07112-6",
+          "pmid": "40783509"
+        },
+        {
+          "id": "39409692",
+          "source": "MED",
+          "title": "Members of WRKY Group III Transcription Factors Are Important in Mite Infestation in Strawberry (<i>Fragaria</i> × <i>ananassa</i> Duch.).",
+          "first_author": "Chen P",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13192822",
+          "pmid": "39409692"
+        },
+        {
+          "id": "41398259",
+          "source": "MED",
+          "title": "Response surface optimization of abiotic elicitors for betalain production and antioxidant capacity in Celosia argentea cell suspension cultures.",
+          "first_author": "Sang A Roon T",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-31876-4",
+          "pmid": "41398259"
+        },
+        {
+          "id": "42075908",
+          "source": "MED",
+          "title": "L-Tryptophan Stimulates Bioactive Metabolite Accumulation and Cell Wall Remodelling in Flax Callus Cultures.",
+          "first_author": "Tudruj KL",
+          "pub_year": "2026",
+          "doi": "10.3390/molecules31081229",
+          "pmid": "42075908"
+        },
+        {
+          "id": "39406501",
+          "source": "MED",
+          "title": "Global characterization of somatic mutations and DNA methylation changes during vegetative propagation in strawberries.",
+          "first_author": "Hu S",
+          "pub_year": "2024",
+          "doi": "10.1101/gr.279378.124",
+          "pmid": "39406501"
+        },
+        {
+          "id": "40604434",
+          "source": "MED",
+          "title": "Effects of different hormones on the color of tree peony leaves.",
+          "first_author": "Yang Z",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06837-8",
+          "pmid": "40604434"
+        }
+      ]
+    },
+    {
+      "query": "(6-benzylaminopurine OR 6-benzyladenine) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR876196",
+          "source": "PPR",
+          "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+          "first_author": "Sanchez ER",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4583627/v1",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1204923",
+      "source": "PPR",
+      "title": "The Halostachys caspica miR172e/TOE3 module regulates Arabidopsis resistance to Pseudomonas syringae pv. tomato DC3000 and Verticillium dahliae",
+      "first_author": "Zhang R",
+      "pub_year": "2024",
+      "doi": "10.22541/au.173149604.40121701/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR958456",
+      "source": "PPR",
+      "title": "A Witches’ Broom Phytoplasma effector induces stunting by stabilizing a bHLH transcription factor in plants",
+      "first_author": "Yang S",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.12.24.629987",
+      "pmid": null
+    },
+    {
+      "id": "PPR59025",
+      "source": "PPR",
+      "title": "Efficient and reproducible somatic embryogenesis and micro propagation in tomato via novel structures -Rhizoid Tubers",
+      "first_author": "Saeed W",
+      "pub_year": "2018",
+      "doi": "10.1101/446286",
+      "pmid": null
+    },
+    {
+      "id": "PPR835162",
+      "source": "PPR",
+      "title": "A prion-like protein regulates the 2-dimensional to 3-dimensional growth transition in the moss  <i>Physcomitrium patens</i>",
+      "first_author": "Weeks Z",
+      "pub_year": "2024",
+      "doi": "10.1101/2024.04.08.588603",
+      "pmid": null
+    },
+    {
+      "id": "PPR382530",
+      "source": "PPR",
+      "title": "Reconstitution of monoterpene indole alkaloid biosynthesis in genome engineered  <i>Nicotiana benthamiana</i>",
+      "first_author": "Dudley QM",
+      "pub_year": "2021",
+      "doi": "10.1101/2021.08.12.456143",
+      "pmid": null
+    },
+    {
+      "id": "PPR506045",
+      "source": "PPR",
+      "title": "Tunable control of insect pheromone biosynthesis in  <i>Nicotiana benthamiana</i>",
+      "first_author": "Kallam K",
+      "pub_year": "2022",
+      "doi": "10.1101/2022.06.15.496242",
+      "pmid": null
+    },
+    {
+      "id": "PPR876196",
+      "source": "PPR",
+      "title": "Overexpression of Vitis GRF4-GIF1 improves regeneration efficiency in diploid Fragaria vesca Hawaii 4",
+      "first_author": "Sanchez ER",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-4583627/v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

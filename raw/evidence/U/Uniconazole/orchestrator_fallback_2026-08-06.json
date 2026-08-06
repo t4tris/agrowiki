@@ -1,0 +1,754 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Uniconazole",
+    "csv_name": "uniconazole"
+  },
+  "searches": [
+    {
+      "query": "(uniconazole) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 122,
+      "results": [
+        {
+          "id": "39065416",
+          "source": "MED",
+          "title": "Comparative Analysis Highlights Uniconazole's Efficacy in Enhancing the Cold Stress Tolerance of Mung Beans by Targeting Photosynthetic Pathways.",
+          "first_author": "Chen M",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13141885",
+          "pmid": "39065416"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "40805668",
+          "source": "MED",
+          "title": "Effects of LED Applications on Dahlia (&lt;i&gt;Dahlia&lt;/i&gt; sp.) Seedling Quality.",
+          "first_author": "Gündoğdu G",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14152319",
+          "pmid": "40805668"
+        },
+        {
+          "id": "37453642",
+          "source": "MED",
+          "title": "Sl-lncRNA47980, a positive regulator affects tomato resistance to Phytophthora infestans.",
+          "first_author": "Su C",
+          "pub_year": "2023",
+          "doi": "10.1016/j.ijbiomac.2023.125824",
+          "pmid": "37453642"
+        },
+        {
+          "id": "39485912",
+          "source": "MED",
+          "title": "Fast and simple fluorometric measurement of phloem loading exposes auxin-dependent regulation of Arabidopsis sucrose transporter AtSUC2.",
+          "first_author": "Ren Y",
+          "pub_year": "2024",
+          "doi": "10.1111/tpj.17110",
+          "pmid": "39485912"
+        },
+        {
+          "id": "40810021",
+          "source": "MED",
+          "title": "Aspergillus-derived β-glucan nanoparticles: a dual strategy for &lt;i&gt;Fusarium Wilt&lt;/i&gt; management and tomato plant growth enhancement.",
+          "first_author": "Ramalingam P",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1611582",
+          "pmid": "40810021"
+        },
+        {
+          "id": "39479549",
+          "source": "MED",
+          "title": "Characterization of the gibberellic oxidase gene <i>SdGA20ox1</i> in <i>Sophora davidii</i> (Franch.) skeels and interaction protein screening.",
+          "first_author": "Zhao L",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1478854",
+          "pmid": "39479549"
+        },
+        {
+          "id": "38699535",
+          "source": "MED",
+          "title": "2-oxoglutarate-dependent dioxygenases and BAHD acyltransferases drive the structural diversification of orobanchol in Fabaceae plants.",
+          "first_author": "Homma M",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1392212",
+          "pmid": "38699535"
+        },
+        {
+          "id": "38132877",
+          "source": "MED",
+          "title": "<i>SlbHLH22</i>-Induced Hypertrophy Development Is Related to the Salt Stress Response of the <i>GTgamma</i> Gene in Tomatoes.",
+          "first_author": "Cui B",
+          "pub_year": "2023",
+          "doi": "10.3390/metabo13121195",
+          "pmid": "38132877"
+        },
+        {
+          "id": "36589099",
+          "source": "MED",
+          "title": "Transcriptomic and metabolomic analyses reveal the mechanism of uniconazole inducing hypocotyl dwarfing by suppressing BrbZIP39-<i>BrPAL4</i> module mediating lignin biosynthesis in flowering Chinese cabbage.",
+          "first_author": "Zhang L",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.1014396",
+          "pmid": "36589099"
+        },
+        {
+          "id": "40260434",
+          "source": "MED",
+          "title": "Revelation of mechanisms associated with strengthening plant cold tolerance through using exogenous substances.",
+          "first_author": "Feng D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1478692",
+          "pmid": "40260434"
+        },
+        {
+          "id": "40229735",
+          "source": "MED",
+          "title": "Gibberellin Regulates LBD38-1 Responses to Xanthomonas arboricola pv. juglandis Infection in Walnut Bacterial Blight Pathogenesis.",
+          "first_author": "Dai W",
+          "pub_year": "2025",
+          "doi": "10.1186/s12864-025-11518-9",
+          "pmid": "40229735"
+        },
+        {
+          "id": "39436914",
+          "source": "MED",
+          "title": "Physiological response of microalga Dunaliella parva when treated with MeJA, GA3.",
+          "first_author": "Ruan L",
+          "pub_year": "2024",
+          "doi": "10.1371/journal.pone.0308730",
+          "pmid": "39436914"
+        },
+        {
+          "id": "36921046",
+          "source": "MED",
+          "title": "Solanoeclepin B, a hatching factor for potato cyst nematode.",
+          "first_author": "Shimizu K",
+          "pub_year": "2023",
+          "doi": "10.1126/sciadv.adf4166",
+          "pmid": "36921046"
+        },
+        {
+          "id": "41970271",
+          "source": "MED",
+          "title": "Zn-based seed priming enhances drought resistance during germination of &lt;i&gt;Lespedeza potaninii&lt;/i&gt;: physiological and transcriptomic insights.",
+          "first_author": "Huo XW",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.21054",
+          "pmid": "41970271"
+        },
+        {
+          "id": "39650109",
+          "source": "MED",
+          "title": "Both uniconazole and 5-aminolevulinic acid increase maize (<i>Zea mays</i> L.) yield by changing its ear morphology and increasing photosynthetic efficiency and antioxidants in saline-alkali land.",
+          "first_author": "Xu L",
+          "pub_year": "2022",
+          "doi": "10.32615/ps.2022.029",
+          "pmid": "39650109"
+        },
+        {
+          "id": "38006179",
+          "source": "MED",
+          "title": "<i>Green</i> Hydrogels Loaded with Extracts from <i>Solanaceae</i> for the Controlled Disinfection of Agricultural Soils.",
+          "first_author": "Clemente I",
+          "pub_year": "2023",
+          "doi": "10.3390/polym15224455",
+          "pmid": "38006179"
+        },
+        {
+          "id": "IND606744083",
+          "source": "AGR",
+          "title": "Can the inclusion of uniconazole improve the effectiveness of acibenzolar-S-methyl in managing bacterial speck (Pseudomonas syringae pv. tomato) and bacterial spot (Xanthomonas gardneri) in tomato?",
+          "first_author": "Trueman CL",
+          "pub_year": "2019",
+          "doi": "10.1007/s10658-019-01824-w",
+          "pmid": null
+        },
+        {
+          "id": "39506686",
+          "source": "MED",
+          "title": "The role of gibberellin synthase gene VvGA2ox7 acts as a positive regulator to salt stress in Arabidopsis thaliana.",
+          "first_author": "Gou H",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05708-y",
+          "pmid": "39506686"
+        },
+        {
+          "id": "35945492",
+          "source": "MED",
+          "title": "Genome-wide identification and expression analysis of carotenoid cleavage oxygenase genes in Litchi (Litchi chinensis Sonn.).",
+          "first_author": "Yue XQ",
+          "pub_year": "2022",
+          "doi": "10.1186/s12870-022-03772-w",
+          "pmid": "35945492"
+        },
+        {
+          "id": "34829974",
+          "source": "MED",
+          "title": "Identification of <i>DELLA</i> Genes and Key Stage for GA Sensitivity in Bolting and Flowering of Flowering Chinese Cabbage.",
+          "first_author": "Guan H",
+          "pub_year": "2021",
+          "doi": "10.3390/ijms222212092",
+          "pmid": "34829974"
+        },
+        {
+          "id": "34451783",
+          "source": "MED",
+          "title": "Study on the Regulatory Effects of GA<sub>3</sub> on Soybean Internode Elongation.",
+          "first_author": "Shan F",
+          "pub_year": "2021",
+          "doi": "10.3390/plants10081737",
+          "pmid": "34451783"
+        },
+        {
+          "id": "33637735",
+          "source": "MED",
+          "title": "The biosynthetic pathway of potato solanidanes diverged from that of spirosolanes due to evolution of a dioxygenase.",
+          "first_author": "Akiyama R",
+          "pub_year": "2021",
+          "doi": "10.1038/s41467-021-21546-0",
+          "pmid": "33637735"
+        },
+        {
+          "id": "39406739",
+          "source": "MED",
+          "title": "Exploring the synergistic benefits of biochar and gibberellic acid in alleviating cadmium toxicity.",
+          "first_author": "Anwar T",
+          "pub_year": "2024",
+          "doi": "10.1038/s41598-024-73678-0",
+          "pmid": "39406739"
+        },
+        {
+          "id": "36267949",
+          "source": "MED",
+          "title": "Effects of gibberellins on important agronomic traits of horticultural plants.",
+          "first_author": "Zhang X",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.978223",
+          "pmid": "36267949"
+        }
+      ]
+    },
+    {
+      "query": "(uniconazole) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(uniconazole) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 64,
+      "results": [
+        {
+          "id": "41844728",
+          "source": "MED",
+          "title": "Regulating female ear morphogenesis in maize by uniconazole and 5-aminolevulinic acid for yield improvement.",
+          "first_author": "Xu L",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-41685-y",
+          "pmid": "41844728"
+        },
+        {
+          "id": "39259667",
+          "source": "MED",
+          "title": "Tendril length is determined by gibberellin deactivation during thigmo response in cucumber.",
+          "first_author": "Fan Z",
+          "pub_year": "2024",
+          "doi": "10.1111/tpj.17023",
+          "pmid": "39259667"
+        },
+        {
+          "id": "41042447",
+          "source": "MED",
+          "title": "Rice Transcription Factor HSTL Regulates Plant Height and Salt Stress Response by Modulating Gibberellin Homeostasis.",
+          "first_author": "Wang C",
+          "pub_year": "2025",
+          "doi": "10.1186/s12284-025-00851-y",
+          "pmid": "41042447"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "38699535",
+          "source": "MED",
+          "title": "2-oxoglutarate-dependent dioxygenases and BAHD acyltransferases drive the structural diversification of orobanchol in Fabaceae plants.",
+          "first_author": "Homma M",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1392212",
+          "pmid": "38699535"
+        },
+        {
+          "id": "41002363",
+          "source": "MED",
+          "title": "Haptens Optimization Using Molecular Modeling and Paper-Based Immunosensor for On-Site Detection of Carbendazim in Vegetable Products.",
+          "first_author": "Chen W",
+          "pub_year": "2025",
+          "doi": "10.3390/bios15090625",
+          "pmid": "41002363"
+        },
+        {
+          "id": "40260434",
+          "source": "MED",
+          "title": "Revelation of mechanisms associated with strengthening plant cold tolerance through using exogenous substances.",
+          "first_author": "Feng D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1478692",
+          "pmid": "40260434"
+        },
+        {
+          "id": "PPR239103",
+          "source": "PPR",
+          "title": "Gibberellins Regulate Lateral Root Development that is Associated with Auxin and Cell Wall Metabolisms in Cucumber",
+          "first_author": "Cai B",
+          "pub_year": "2020",
+          "doi": "10.21203/rs.3.rs-105436/v1",
+          "pmid": null
+        },
+        {
+          "id": "32522330",
+          "source": "MED",
+          "title": "Hydrogen-rich water promotes elongation of hypocotyls and roots in plants through mediating the level of endogenous gibberellin and auxin.",
+          "first_author": "Wu Q",
+          "pub_year": "2020",
+          "doi": "10.1071/fp19107",
+          "pmid": "32522330"
+        },
+        {
+          "id": "34829974",
+          "source": "MED",
+          "title": "Identification of <i>DELLA</i> Genes and Key Stage for GA Sensitivity in Bolting and Flowering of Flowering Chinese Cabbage.",
+          "first_author": "Guan H",
+          "pub_year": "2021",
+          "doi": "10.3390/ijms222212092",
+          "pmid": "34829974"
+        },
+        {
+          "id": "34451783",
+          "source": "MED",
+          "title": "Study on the Regulatory Effects of GA<sub>3</sub> on Soybean Internode Elongation.",
+          "first_author": "Shan F",
+          "pub_year": "2021",
+          "doi": "10.3390/plants10081737",
+          "pmid": "34451783"
+        },
+        {
+          "id": "34685951",
+          "source": "MED",
+          "title": "Genome-Wide Identification and Expression Analysis of MADS-Box Family Genes in Litchi (<i>Litchi chinensis</i> Sonn.) and Their Involvement in Floral Sex Determination.",
+          "first_author": "Guan H",
+          "pub_year": "2021",
+          "doi": "10.3390/plants10102142",
+          "pmid": "34685951"
+        },
+        {
+          "id": "39506686",
+          "source": "MED",
+          "title": "The role of gibberellin synthase gene VvGA2ox7 acts as a positive regulator to salt stress in Arabidopsis thaliana.",
+          "first_author": "Gou H",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05708-y",
+          "pmid": "39506686"
+        },
+        {
+          "id": "30279398",
+          "source": "MED",
+          "title": "Characterization of MS/MS Product Ions for the Differentiation of Structurally Isomeric Pesticides by High-Resolution Mass Spectrometry.",
+          "first_author": "Nuñez A",
+          "pub_year": "2018",
+          "doi": "10.3390/toxics6040059",
+          "pmid": "30279398"
+        },
+        {
+          "id": "31492001",
+          "source": "MED",
+          "title": "Genome-Wide Identification and Expression Analysis of GA2ox, GA3ox, and GA20ox Are Related to Gibberellin Oxidase Genes in Grape (<i>Vitis</i><i>Vinifera</i> L.).",
+          "first_author": "He H",
+          "pub_year": "2019",
+          "doi": "10.3390/genes10090680",
+          "pmid": "31492001"
+        },
+        {
+          "id": "40017819",
+          "source": "MED",
+          "title": "A review of soil waterlogging impacts, mechanisms, and adaptive strategies.",
+          "first_author": "Zhang Y",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1545912",
+          "pmid": "40017819"
+        },
+        {
+          "id": "34072439",
+          "source": "MED",
+          "title": "Polymorphism in the Chloroplast ATP Synthase Beta-Subunit Is Associated with a Maternally Inherited Enhanced Cold Recovery in Cucumber.",
+          "first_author": "Oravec MW",
+          "pub_year": "2021",
+          "doi": "10.3390/plants10061092",
+          "pmid": "34072439"
+        },
+        {
+          "id": "32182882",
+          "source": "MED",
+          "title": "Complete Genome Sequence of <i>Pseudomonas psychrotolerans</i> CS51, a Plant Growth-Promoting Bacterium, Under Heavy Metal Stress Conditions.",
+          "first_author": "Kang SM",
+          "pub_year": "2020",
+          "doi": "10.3390/microorganisms8030382",
+          "pmid": "32182882"
+        },
+        {
+          "id": "31795392",
+          "source": "MED",
+          "title": "Inhibitors of Brassinosteroid Biosynthesis and Signal Transduction.",
+          "first_author": "Rozhon W",
+          "pub_year": "2019",
+          "doi": "10.3390/molecules24234372",
+          "pmid": "31795392"
+        },
+        {
+          "id": "36267949",
+          "source": "MED",
+          "title": "Effects of gibberellins on important agronomic traits of horticultural plants.",
+          "first_author": "Zhang X",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.978223",
+          "pmid": "36267949"
+        },
+        {
+          "id": "29166853",
+          "source": "MED",
+          "title": "Proteomic insight into fruit set of cucumber (Cucumis sativus L.) suggests the cues of hormone-independent parthenocarpy.",
+          "first_author": "Li J",
+          "pub_year": "2017",
+          "doi": "10.1186/s12864-017-4290-5",
+          "pmid": "29166853"
+        },
+        {
+          "id": "32155833",
+          "source": "MED",
+          "title": "The Role of Gibberellins in Regulation of Nitrogen Uptake and Physiological Traits in Maize Responding to Nitrogen Availability.",
+          "first_author": "Wang Y",
+          "pub_year": "2020",
+          "doi": "10.3390/ijms21051824",
+          "pmid": "32155833"
+        },
+        {
+          "id": "35265396",
+          "source": "MED",
+          "title": "Growth regulators promote soybean productivity: a review.",
+          "first_author": "Amoanimaa-Dede H",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.12556",
+          "pmid": "35265396"
+        },
+        {
+          "id": "30322023",
+          "source": "MED",
+          "title": "Comprehensive Analysis of Cucumber Gibberellin Oxidase Family Genes and Functional Characterization of <i>CsGA20ox1</i> in Root Development in <i>Arabidopsis</i>.",
+          "first_author": "Sun H",
+          "pub_year": "2018",
+          "doi": "10.3390/ijms19103135",
+          "pmid": "30322023"
+        },
+        {
+          "id": "34930032",
+          "source": "MED",
+          "title": "Successful Treatment of Disseminated Disease Due to Highly Resistant Aspergillus calidoustus with a Novel Antifungal Therapy.",
+          "first_author": "Camargo JF",
+          "pub_year": "2022",
+          "doi": "10.1128/aac.02206-21",
+          "pmid": "34930032"
+        }
+      ]
+    },
+    {
+      "query": "(uniconazole) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR239103",
+          "source": "PPR",
+          "title": "Gibberellins Regulate Lateral Root Development that is Associated with Auxin and Cell Wall Metabolisms in Cucumber",
+          "first_author": "Cai B",
+          "pub_year": "2020",
+          "doi": "10.21203/rs.3.rs-105436/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(uniconazole) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 33,
+      "results": [
+        {
+          "id": "40741121",
+          "source": "MED",
+          "title": "Uniconazole-mediated growth regulation in &lt;i&gt;Ophiopogon japonicus&lt;/i&gt;: yield maximization vs. medicinal quality trade-offs.",
+          "first_author": "Cai X",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1542539",
+          "pmid": "40741121"
+        },
+        {
+          "id": "40410625",
+          "source": "MED",
+          "title": "Spatio-Temporal Regulation of Gibberellin Biosynthesis Contributes to Optimal Rhizome Bud Development.",
+          "first_author": "Bessho-Uehara K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12284-025-00798-0",
+          "pmid": "40410625"
+        },
+        {
+          "id": "40805668",
+          "source": "MED",
+          "title": "Effects of LED Applications on Dahlia (&lt;i&gt;Dahlia&lt;/i&gt; sp.) Seedling Quality.",
+          "first_author": "Gündoğdu G",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14152319",
+          "pmid": "40805668"
+        },
+        {
+          "id": "35945492",
+          "source": "MED",
+          "title": "Genome-wide identification and expression analysis of carotenoid cleavage oxygenase genes in Litchi (Litchi chinensis Sonn.).",
+          "first_author": "Yue XQ",
+          "pub_year": "2022",
+          "doi": "10.1186/s12870-022-03772-w",
+          "pmid": "35945492"
+        },
+        {
+          "id": "36530389",
+          "source": "MED",
+          "title": "Widely targeted metabolite profiling of mango stem apex during floral induction by compond of mepiquat chloride, prohexadione-calcium and uniconazole.",
+          "first_author": "Liang F",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.14458",
+          "pmid": "36530389"
+        },
+        {
+          "id": "41157104",
+          "source": "MED",
+          "title": "The Effect of Ozone on the Behavior of Systemic and Non-Systemic Pesticides in Cereal Grains.",
+          "first_author": "Hrynko I.",
+          "pub_year": "2025",
+          "doi": "10.3390/molecules30204087",
+          "pmid": "41157104"
+        },
+        {
+          "id": "36267949",
+          "source": "MED",
+          "title": "Effects of gibberellins on important agronomic traits of horticultural plants.",
+          "first_author": "Zhang X",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.978223",
+          "pmid": "36267949"
+        },
+        {
+          "id": "40260434",
+          "source": "MED",
+          "title": "Revelation of mechanisms associated with strengthening plant cold tolerance through using exogenous substances.",
+          "first_author": "Feng D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1478692",
+          "pmid": "40260434"
+        },
+        {
+          "id": "35222492",
+          "source": "MED",
+          "title": "Structure Elucidation and Biosynthesis of Orobanchol.",
+          "first_author": "Wakabayashi T",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.835160",
+          "pmid": "35222492"
+        },
+        {
+          "id": "35620694",
+          "source": "MED",
+          "title": "Abscisic Acid: Role in Fruit Development and Ripening.",
+          "first_author": "Gupta K",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.817500",
+          "pmid": "35620694"
+        },
+        {
+          "id": "36908412",
+          "source": "MED",
+          "title": "Monitoring residues of pesticides in food in Brazil: A multiscale analysis of the main contaminants, dietary cancer risk estimative and mechanisms associated.",
+          "first_author": "Bitencourt de Morais Valentim JM",
+          "pub_year": "2023",
+          "doi": "10.3389/fpubh.2023.1130893",
+          "pmid": "36908412"
+        },
+        {
+          "id": "39012965",
+          "source": "MED",
+          "title": "Gibberellin dynamics governing nodulation revealed using GIBBERELLIN PERCEPTION SENSOR 2 in Medicago truncatula lateral organs.",
+          "first_author": "Drapek C",
+          "pub_year": "2024",
+          "doi": "10.1093/plcell/koae201",
+          "pmid": "39012965"
+        },
+        {
+          "id": "31795392",
+          "source": "MED",
+          "title": "Inhibitors of Brassinosteroid Biosynthesis and Signal Transduction.",
+          "first_author": "Rozhon W",
+          "pub_year": "2019",
+          "doi": "10.3390/molecules24234372",
+          "pmid": "31795392"
+        },
+        {
+          "id": "35265396",
+          "source": "MED",
+          "title": "Growth regulators promote soybean productivity: a review.",
+          "first_author": "Amoanimaa-Dede H",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.12556",
+          "pmid": "35265396"
+        },
+        {
+          "id": "35069668",
+          "source": "MED",
+          "title": "Regulation Mechanism of Exogenous Brassinolide on Bulbil Formation and Development in <i>Pinellia ternata</i>.",
+          "first_author": "Guo C",
+          "pub_year": "2021",
+          "doi": "10.3389/fpls.2021.809769",
+          "pmid": "35069668"
+        },
+        {
+          "id": "25929454",
+          "source": "MED",
+          "title": "Pesticide residues in fruit samples: comparison of different QuEChERS methods using liquid chromatography-tandem mass spectrometry.",
+          "first_author": "Christia C",
+          "pub_year": "2015",
+          "doi": "10.1007/s11356-015-4456-0",
+          "pmid": "25929454"
+        },
+        {
+          "id": "32257239",
+          "source": "MED",
+          "title": "Construction of an anchoring SSR marker genetic linkage map and detection of a sex-linked region in two dioecious populations of red bayberry.",
+          "first_author": "Wang Y",
+          "pub_year": "2020",
+          "doi": "10.1038/s41438-020-0276-6",
+          "pmid": "32257239"
+        },
+        {
+          "id": "34947400",
+          "source": "MED",
+          "title": "The Studies on α-Pinene Oxidation over the TS-1. The Influence of the Temperature, Reaction Time, Titanium and Catalyst Content.",
+          "first_author": "Wróblewska A",
+          "pub_year": "2021",
+          "doi": "10.3390/ma14247799",
+          "pmid": "34947400"
+        },
+        {
+          "id": "23335967",
+          "source": "MED",
+          "title": "Genetic variation in plant CYP51s confers resistance against voriconazole, a novel inhibitor of brassinosteroid-dependent sterol biosynthesis.",
+          "first_author": "Rozhon W",
+          "pub_year": "2013",
+          "doi": "10.1371/journal.pone.0053650",
+          "pmid": "23335967"
+        },
+        {
+          "id": "32999840",
+          "source": "MED",
+          "title": "Chemical Manipulation of Abscisic Acid Signaling: A New Approach to Abiotic and Biotic Stress Management in Agriculture.",
+          "first_author": "Hewage KAH",
+          "pub_year": "2020",
+          "doi": "10.1002/advs.202001265",
+          "pmid": "32999840"
+        },
+        {
+          "id": "30038905",
+          "source": "MED",
+          "title": "Effect of Exogenous General Plant Growth Regulators on the Growth of the Duckweed <i>Lemna minor</i>.",
+          "first_author": "Utami D",
+          "pub_year": "2018",
+          "doi": "10.3389/fchem.2018.00251",
+          "pmid": "30038905"
+        },
+        {
+          "id": "36836849",
+          "source": "MED",
+          "title": "Exogenous Melatonin Spray Enhances Salinity Tolerance in <i>Zizyphus</i> Germplasm: A Brief Theory.",
+          "first_author": "Ahmad R",
+          "pub_year": "2023",
+          "doi": "10.3390/life13020493",
+          "pmid": "36836849"
+        },
+        {
+          "id": "31690765",
+          "source": "MED",
+          "title": "Response of Roses (Rosa hybrida L. 'Herbert Stevens') to Foliar Application of Polyamines on Root Development, Flowering, Photosynthetic Pigments, Antioxidant Enzymes Activity and NPK.",
+          "first_author": "Yousefi F",
+          "pub_year": "2019",
+          "doi": "10.1038/s41598-019-52547-1",
+          "pmid": "31690765"
+        },
+        {
+          "id": "29992702",
+          "source": "MED",
+          "title": "The red bayberry genome and genetic basis of sex determination.",
+          "first_author": "Jia HM",
+          "pub_year": "2019",
+          "doi": "10.1111/pbi.12985",
+          "pmid": "29992702"
+        },
+        {
+          "id": "36295069",
+          "source": "MED",
+          "title": "Molecular and Physiological Mechanisms to Mitigate Abiotic Stress Conditions in Plants.",
+          "first_author": "Saharan BS",
+          "pub_year": "2022",
+          "doi": "10.3390/life12101634",
+          "pmid": "36295069"
+        }
+      ]
+    },
+    {
+      "query": "(uniconazole) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR239103",
+      "source": "PPR",
+      "title": "Gibberellins Regulate Lateral Root Development that is Associated with Auxin and Cell Wall Metabolisms in Cucumber",
+      "first_author": "Cai B",
+      "pub_year": "2020",
+      "doi": "10.21203/rs.3.rs-105436/v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,272 @@
+I've completed the research on Thidiazuron (TDZ). Here is the structured JSON report (contract v1.4):
+
+```json
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Thidiazuron",
+    "csv_name": "TDZ",
+    "queried_name": "thidiazuron"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "pubmed_axillary_bud",
+      "pubmed_runner",
+      "pubmed_chlorophyll",
+      "pubmed_senescence",
+      "openalex_strawberry_runner",
+      "openalex_strawberry_crown",
+      "openalex_strawberry_field",
+      "openalex_tomato",
+      "pubchem",
+      "crossref"
+    ],
+    "failed": [
+      {
+        "endpoint": "europepmc",
+        "reason": "Europe PMC не опрашивался: среда сабагента страдает от IPv6-блокировок; данные получены через PubMed E-utilities и OpenAlex. Запрос оставлен оркестратору для fallback-дополнения.",
+        "query": "thidiazuron AND (strawberry OR Fragaria) AND (runner OR axillary OR crown)",
+        "retry_by_orchestrator": true
+      }
+    ],
+    "queries_used": [
+      "thidiazuron tomato",
+      "thidiazuron cucumber",
+      "thidiazuron strawberry",
+      "thidiazuron axillary bud",
+      "thidiazuron runner",
+      "thidiazuron chlorophyll",
+      "thidiazuron senescence leaf",
+      "openalex: thidiazuron strawberry runner",
+      "openalex: thidiazuron strawberry crown axillary",
+      "openalex: thidiazuron strawberry field foliar growth",
+      "openalex: thidiazuron tomato growth"
+    ],
+    "fallback_tries": [
+      {
+        "query": "thidiazuron tomato (OpenAlex: growth)",
+        "results": 0
+      },
+      {
+        "query": "thidiazuron cucumber (PubMed: только in vitro/аналитика, без полевого фолиарного роста)",
+        "results": 0
+      }
+    ]
+  },
+  "identity": {
+    "cas": "51707-55-2",
+    "cid": "40087",
+    "formula": "C9H8N4OS",
+    "iupac": "1-phenyl-3-(thiadiazol-5-yl)urea",
+    "class_confirmed": true,
+    "class_evidence": ["PMID:40362299", "DOI:10.3390/agronomy11030594"],
+    "synonyms": ["thidiazuron", "TDZ", "N-phenyl-N'-1,2,3-thiadiazol-5-ylurea", "1-phenyl-3-(thiadiazol-5-yl)urea"],
+    "synonyms_ru": ["Тидиазурон", "ТДЗ"],
+    "molar_mass_g_mol": 220.25,
+    "notes": "Синтетическая фенилмочевина с цитокинин-подобной активностью (PubChem CID 40087, MW 220.25 г/моль). CAS 51707-55-2. В литературе классифицируется как цитокинин/цитокинин-подобный регулятор."
+  },
+  "mode_of_action": {
+    "summary": "TDZ — синтетическая фенилмочевина (N-фенил-N'-1,2,3-тиадиазол-5-илмочевина) с цитокинин-подобной активностью. Активирует цитокининовый сигнальный путь (cytokinin signal transduction), что стимулирует деление клеток и закладку меристем/пазушных почек, и подавляет гены синтеза ауксина. В тканевой культуре клубники TDZ усиливает цитокининовый сигналинг и подавляет биосинтез эндогенных цитокининов, повышая активность цитокининоксидазы. Физиологический trade-off: стимуляция меристем сопровождается снижением хлорофилла, каротиноидов, растворимых сахаров и крахмала в листьях.",
+    "evidence": ["PMID:40362299", "DOI:10.3390/agronomy11030594"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 4, "europe_pmc": 0, "culture_mentioned": 0},
+      "claims": [],
+      "gap": "Нет данных о фолиарном применении TDZ для стимуляции роста/пазушных побегов томата в полевых условиях. Найденные статьи касаются аналитического определения остатков TDZ в овощах (PMID:27120042, 24148418) либо не связаны с эффектом на рост томата.",
+      "related_evidence": [
+        {
+          "pmid": "27120042",
+          "year": 2016,
+          "claim": "Аналитический метод определения форхлорфенурона и тидиазурона в фруктах и овощах (SERS + SPE).",
+          "note": "Работа по веществу (TDZ), но культура не в фокусе: аналитический метод, а не эффект на рост томата."
+        },
+        {
+          "pmid": "24148418",
+          "year": 2013,
+          "claim": "Дисперсионная жидкостно-жидкостная микроэкстракция для определения трёх цитокининов в фруктах и овощах.",
+          "note": "Аналитическое определение TDZ, без эффекта на рост томата."
+        }
+      ]
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 7, "europe_pmc": 0, "culture_mentioned": 2},
+      "claims": [],
+      "gap": "Нет данных о фолиарном применении TDZ (50 мг/л, 3 раза) для стимуляции роста огурца. Найденные работы показывают, что TDZ на проростках огурца оказывает скорее ингибирующее действие на корни, чем стимулирующее, и не подтверждают заявку CSV по росту.",
+      "related_evidence": [
+        {
+          "pmid": "41322610",
+          "year": 2025,
+          "claim": "TDZ и аналоги 1,2,3-тиадиазол-5-илимидазолидин-2,4-дионы: при 5 мг/л TDZ подавлял рост боковых корней и задерживал удлинение главного корня проростков огурца.",
+          "note": "Работа по веществу (TDZ) на огурце, но эффект ингибирующий на корни, не подтверждает фолиарную стимуляцию роста по CSV."
+        },
+        {
+          "pmid": "25522501",
+          "year": 2014,
+          "claim": "TDZ (10 мг/л) снижал длину побега, длину корня и содержание хлорофилла у проростков; у огурца TDZ значимо снижал биомассу и длину корня.",
+          "note": "Работа по веществу (TDZ) на огурце, эффект негативный на проростки, не подтверждает заявку CSV."
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 12, "europe_pmc": 0, "culture_mentioned": 5},
+      "claims": [
+        {
+          "type": "efficacy",
+          "value": "TDZ — наиболее эффективный цитокинин для роста пазушных почек клубники; стимулирует рост пазушных побегов и общий рост растения.",
+          "context": "Фолиарное опрыскивание листьев клубники 50 мг/л TDZ трижды с интервалом 10 дней; оценка роста пазушных почек в короне.",
+          "dosage_normalized": {
+            "original": "50 mg/L, 3 раза с интервалом 10 дней",
+            "ppm_equivalent": 50,
+            "molar_mass_used_g_mol": 220.25,
+            "conversion_source": "PubChem CID 40087",
+            "note": "ppm ≈ mg/L для водных растворов; 50 мг/л ≈ 227 мкМ"
+          },
+          "conditions": {"stage": "вегетативные растения клубники (корона с пазушными почками)", "bbch_stages": [], "temperature_range": "", "formulation": "фолиарный спрей, 50 мг/л, 3 обработки с интервалом 10 дней"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "", "year": 2021, "verified": true, "paper_type": "trial", "doi": "10.3390/agronomy11030594", "oa_url": "https://doi.org/10.3390/agronomy11030594"}],
+          "quote": "TDZ was the most effective hormone for the axillary bud growth, and also promoted plant growth. However, chlorophyll, soluble sugar, and starch contents in the leaves were lower after TDZ. TDZ activated the cytokinin signal transduction pathway, while repressing the auxin synthesis genes."
+        },
+        {
+          "type": "effect",
+          "value": "TDZ снижает содержание хлорофилла, растворимых сахаров и крахмала в листьях клубники (физиологический trade-off при стимуляции меристем).",
+          "context": "Тот же эксперимент (фолиарный TDZ 50 мг/л); физиологические показатели листьев.",
+          "dosage_normalized": {"original": "50 mg/L фолиарно", "ppm_equivalent": 50, "molar_mass_used_g_mol": 220.25, "conversion_source": "PubChem CID 40087", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "вегетативные растения клубники", "bbch_stages": [], "temperature_range": "", "formulation": "фолиарный спрей"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 2},
+          "sources": [
+            {"pmid": "", "year": 2021, "verified": true, "paper_type": "trial", "doi": "10.3390/agronomy11030594", "oa_url": "https://doi.org/10.3390/agronomy11030594"},
+            {"pmid": "40362299", "year": 2025, "verified": true, "paper_type": "trial_in_vitro", "doi": "10.3390/ijms26094060", "oa_url": "https://doi.org/10.3390/ijms26094060"}
+          ],
+          "quote": "TDZ application inhibited plant height and reduced chlorophyll, carotenoid, and soluble sugar contents. (PMID:40362299, in vitro 0.05 mg/L)."
+        },
+        {
+          "type": "effect",
+          "value": "TDZ усиливает размножение побегов клубники через регуляцию путей гормональной сигнальной трансдукции (цитокининовый сигналинг).",
+          "context": "Тканевая культура клубники (Fragaria × ananassa): экспланты обработаны TDZ 0–0.4 мг/л, оптимально 0.05 мг/л; анализ транскриптома.",
+          "dosage_normalized": {"original": "0.05 mg/L в культуре in vitro (оптимум)", "ppm_equivalent": 0.05, "molar_mass_used_g_mol": 220.25, "conversion_source": "PubChem CID 40087", "note": "ppm ≈ mg/L для водных растворов; доза in vitro, не сопоставима с фолиарной 50 мг/л"},
+          "conditions": {"stage": "экспланты in vitro", "bbch_stages": [], "temperature_range": "", "formulation": "среда культивирования, 0.05 мг/л TDZ"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "40362299", "year": 2025, "verified": true, "paper_type": "trial_in_vitro", "doi": "10.3390/ijms26094060", "oa_url": "https://doi.org/10.3390/ijms26094060"}],
+          "quote": "TDZ promotes strawberry shoot multiplication primarily through hormone signal transduction... TDZ enhanced the cytokinin signaling pathway, which is crucial for cell division and shoot initiation."
+        },
+        {
+          "type": "effect",
+          "value": "TDZ применяется как агент увеличения плодов/урожайности клубники; изменяет активность антиоксидантных ферментов (SOD, POD, CAT) и содержание MDA; остатки разлагаются с разной скоростью в полевых и закрытых условиях.",
+          "context": "Полевое и закрытое выращивание клубники; остатки TDZ, активность антиоксидантных ферментов, MDA.",
+          "dosage_normalized": {"original": "2 mg/kg TDZ (обработка)", "ppm_equivalent": 2, "molar_mass_used_g_mol": 220.25, "conversion_source": "PubChem CID 40087", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "плодоношение клубники", "bbch_stages": [], "temperature_range": "", "formulation": "обработка 2 мг/кг"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "30828813", "year": 2019, "verified": true, "paper_type": "trial", "doi": "10.1002/jsfa.9666", "oa_url": "https://doi.org/10.1002/jsfa.9666"}],
+          "quote": "The ascorbic acid content increased when TDZ was applied at 2 mg kg-1. The SOD, POD and CAT activities of strawberry tended to decrease and subsequently increase following the application of TDZ... antioxidant enzyme activities and the MDA content of strawberry were altered."
+        }
+      ],
+      "gap": "",
+      "related_evidence": [
+        {
+          "pmid": "33396927",
+          "year": 2020,
+          "claim": "TDZ (0.45–4.54 мкМ) в комбинации с 2,4-D индуцировал каллус и органогенез у дикой клубники (Fragaria vesca); регенерация побегов.",
+          "note": "Работа по веществу (TDZ) на клубнике, но метод in vitro (каллус/органогенез), не фолиарный."
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "В отобранной литературе ED50/TD50/терапевтический индекс и стойкость в почве для TDZ на целевых культурах не приводятся. Есть данные о динамике распада остатков TDZ в клубнике (полевые и закрытые условия различаются по температуре и влажности) — PMID:30828813."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества"
+  },
+  "contraindications": [
+    {
+      "condition": "Применение в высоких концентрациях (≥10 мг/л на проростках огурца; 5 мг/л на корнях огурца)",
+      "effect": "Ингибирование роста боковых и главного корня, снижение биомассы, длины побега и хлорофилла у проростков",
+      "severity": "medium",
+      "sources": ["PMID:41322610", "PMID:25522501"]
+    },
+    {
+      "condition": "Стимуляция меристем/пазушных почек фолиарным TDZ",
+      "effect": "Снижение содержания хлорофилла, каротиноидов, растворимых сахаров и крахмала в листьях клубники (физиологический trade-off)",
+      "severity": "low",
+      "sources": ["DOI:10.3390/agronomy11030594", "PMID:40362299"]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "foliar sprays at 50 mg/L, three times at 10-day intervals, 40-days old crop after cutting from mother plant",
+      "literature_summary": "Подтверждено для клубники: фолиарный TDZ 50 мг/л, 3 раза с интервалом 10 дней, наиболее эффективен для роста пазушных почек (DOI:10.3390/agronomy11030594). Однако для огурца TDZ на проростках оказывает ингибирующее действие на корни (PMID:41322610, 25522501), а для томата данных о фолиарной стимуляции роста не найдено.",
+      "severity": "medium",
+      "sources": ["DOI:10.3390/agronomy11030594", "PMID:41322610", "PMID:25522501"]
+    },
+    {
+      "csv_field": "Expected_Result",
+      "csv_value": "TDZ most effective cytokinin; promoted axillary bud outgrowth and overall growth; increased runners and branch crowns; reduced chlorophyll, soluble sugar, starch in leaves (trade-off)",
+      "literature_summary": "Подтверждено для клубники: TDZ наиболее эффективен для роста пазушных почек, стимулирует рост растения, снижает хлорофилл/сахара/крахмал в листьях (DOI:10.3390/agronomy11030594). Прямых данных об увеличении числа усов (runners) в полевых условиях в отобранной литературе не найдено; данные по усам ограничены in vitro-микроразмножением.",
+      "severity": "low",
+      "sources": ["DOI:10.3390/agronomy11030594"]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "verified",
+    "reason": "Ключевая CSV-заявка (фолиарный TDZ 50 мг/л, 3 раза с интервалом 10 дней, стимуляция пазушных почек клубники, снижение хлорофилла и сахаров) напрямую подтверждена рецензируемой статьёй Agronomy 2021 (DOI:10.3390/agronomy11030594) с прочитанной аннотацией. Механизм (активация цитокининового сигналинга, подавление генов синтеза ауксина) подтверждён также PMID:40362299. Для огурца и томата данных по фолиарной стимуляции роста нет — статусы no_data."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family=cytokinins подтверждён: TDZ — синтетическая фенилмочевина с цитокинин-подобной активностью, в литературе классифицируется как цитокинин. mechanism=cytokinin_signaling подтверждён: и Agronomy 2021, и PMID:40362299 прямо указывают, что TDZ активирует путь цитокининовой сигнальной трансдукции и подавляет гены синтеза ауксина. Исправления не требуются."
+  },
+  "sources_index": [
+    "PMID:40362299",
+    "PMID:30828813",
+    "PMID:33396927",
+    "PMID:41322610",
+    "PMID:25522501",
+    "PMID:27120042",
+    "PMID:24148418",
+    "DOI:10.3390/agronomy11030594"
+  ]
+}
+```
+
+## Ключевые выводы исследования
+
+**Главная находка** — CSV-заявка для клубники **подтверждена напрямую** рецензируемой статьёй *"Foliar Thidiazuron Promotes the Growth of Axillary Buds in Strawberry"* (Agronomy 2021, DOI: 10.3390/agronomy11030594). В ней ровно те же параметры: **TDZ 50 мг/л фолиарно, 3 раза с интервалом 10 дней**, TDZ — наиболее эффективный цитокинин для роста пазушных почек, стимулирует рост растения, снижает хлорофилл/сахара/крахмал в листьях. Механизм совпадает с CSV (активация цитокининового сигналинга, подавление генов синтеза ауксина).
+
+**Статусы по культурам:**
+- 🍓 **Клубника — `found_verified`** (сильные доказательства, 4 claim с прочитанными аннотациями)
+- 🥒 **Огурец — `no_data`** (найденные работы показывают ингибирующее действие TDZ на корни проростков, не подтверждают фолиарную стимуляцию роста)
+- 🍅 **Томат — `no_data`** (только аналитические методы определения остатков, без эффектов на рост)
+
+**Таксономия подтверждена:** `class_family=cytokinins` и `mechanism=cytokinin_signaling` — оба верны, исправлений нет.
+
+**Идентичность подтверждена** через PubChem: CID 40087, C9H8N4OS, MW 220.25, CAS 51707-55-2.
+
+*Примечание для оркестратора:* в `searches.failed` помечен fallback-запрос Europe PMC (`retry_by_orchestrator: true`) — данные уже покрыты PubMed/OpenAlex, но по контракту v1.4 оркестратор может дополнить артефакт.

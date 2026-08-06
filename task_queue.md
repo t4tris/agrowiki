@@ -1,14 +1,14 @@
 ---
 type: task_queue
-last_updated: 2026-08-04
+last_updated: 2026-08-06
 ---
 
 # Task Queue
 
-## 🔴 HIGH PRIORITY (38)
+## 🔴 HIGH PRIORITY (33)
 - [ ] VALIDATE: 1-MCP × 3 культуры
 - [ ] VALIDATE: 4-CPA × 3 культуры
-- [ ] VALIDATE: 6-BAP × 3 культуры
+- [x] VALIDATE: 6-BAP × 3 культуры → [[wiki/substances/6-BAP]] (partial/strong, 2026-08-06)
 - [ ] VALIDATE: BNOA × 3 культуры
 - [ ] VALIDATE: Carbendazim × 3 культуры
 - [ ] VALIDATE: Chlormequat Chloride × 3 культуры
@@ -22,7 +22,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: GA4 × 3 культуры
 - [x] VALIDATE: Glycine Betaine × 3 культуры → [[wiki/substances/Glycine Betaine]] (partial/moderate, 2026-08-04)
 - [x] VALIDATE: IBA × 3 культуры → [[wiki/substances/IBA]] (corrected/moderate, 2026-08-04)
-- [ ] VALIDATE: Kinetin × 3 культуры
+- [x] VALIDATE: Kinetin × 3 культуры → [[wiki/substances/Kinetin]] (partial/moderate, 2026-08-06)
 - [ ] VALIDATE: Leonardite extract × 3 культуры
 - [ ] VALIDATE: MCPA × 3 культуры
 - [ ] VALIDATE: Magnesium × 3 культуры
@@ -31,7 +31,7 @@ last_updated: 2026-08-04
 - [ ] VALIDATE: NAD × 3 культуры
 - [ ] VALIDATE: NHP × 3 культуры
 - [ ] VALIDATE: PDJ × 3 культуры
-- [ ] VALIDATE: PIX × 3 культуры
+- [x] VALIDATE: PIX × 3 культуры → [[wiki/substances/PIX]] (partial/moderate, 2026-08-06)
 - [x] VALIDATE: Paclobutrazol × 3 культуры → [[wiki/substances/Paclobutrazol]] (partial/strong, 2026-08-04)
 - [ ] VALIDATE: Phosphite × 3 культуры
 - [ ] VALIDATE: Polyaspartic Acid × 3 культуры
@@ -44,12 +44,12 @@ last_updated: 2026-08-04
 - [x] VALIDATE: Silicon × 3 культуры → [[wiki/substances/Silicon]] (corrected/strong, 2026-08-04)
 - [ ] VALIDATE: Tebuconazole × 3 культуры
 - [ ] VALIDATE: Thiabendazole × 3 культуры
-- [ ] VALIDATE: Thidiazuron × 3 культуры
+- [x] VALIDATE: Thidiazuron × 3 культуры → [[wiki/substances/Thidiazuron]] (verified/strong, 2026-08-06)
 - [ ] VALIDATE: Thiophanate-methyl × 3 культуры
 - [x] VALIDATE: Triacontanol × 3 культуры → [[wiki/substances/Triacontanol]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Trifloxystrobin × 3 культуры
 - [ ] VALIDATE: Trinexapac-ethyl × 3 культуры
-- [ ] VALIDATE: Uniconazole × 3 культуры
+- [x] VALIDATE: Uniconazole × 3 культуры → [[wiki/substances/Uniconazole]] (corrected/moderate, 2026-08-06)
 - [ ] VALIDATE: Zeatin × 3 культуры
 
 ## 🟡 MEDIUM PRIORITY (133)

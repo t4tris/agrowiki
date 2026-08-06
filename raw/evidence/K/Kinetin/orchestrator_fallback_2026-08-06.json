@@ -1,0 +1,882 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Kinetin",
+    "csv_name": "kinetin"
+  },
+  "searches": [
+    {
+      "query": "(kinetin OR 6-furfurylaminopurine) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 859,
+      "results": [
+        {
+          "id": "42222826",
+          "source": "MED",
+          "title": "Evaluation of the Biostimulant Activity of the Microalgae &lt;i&gt;Chlorella sorokiniana&lt;/i&gt; and &lt;i&gt;Scenedesmus&lt;/i&gt; sp. and Their Resistance to the Most Widely Used Agricultural Pesticides.",
+          "first_author": "Rodríguez-Mora K",
+          "pub_year": "2026",
+          "doi": "10.1021/acsomega.5c11935",
+          "pmid": "42222826"
+        },
+        {
+          "id": "42286862",
+          "source": "MED",
+          "title": "Diet and microbiome shape small-molecule cytokinin pools in mammals.",
+          "first_author": "Othman EM",
+          "pub_year": "2026",
+          "doi": "10.1080/19490976.2026.2679497",
+          "pmid": "42286862"
+        },
+        {
+          "id": "40733449",
+          "source": "MED",
+          "title": "Asymbiotic Seed Germination and In Vitro Propagation of the Thai Rare Orchid Species; &lt;i&gt;Eulophia bicallosa&lt;/i&gt; (D.Don) P.F.Hunt &amp; Summerh.",
+          "first_author": "Wongsa T",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14142212",
+          "pmid": "40733449"
+        },
+        {
+          "id": "41304695",
+          "source": "MED",
+          "title": "In Vitro Regeneration, Acclimatization, Phytochemical Profiling, and Antioxidant Properties of Hong Hoen Sirirugsa (&lt;i&gt;Globba sirirugsae&lt;/i&gt; Saensouk &amp; P.Saensouk).",
+          "first_author": "Saensouk S",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14223544",
+          "pmid": "41304695"
+        },
+        {
+          "id": "40883660",
+          "source": "MED",
+          "title": "Kinetin and arbuscular mycorrhizal fungi: vital regulators of Vicia faba plants' response and tolerance to drought stress.",
+          "first_author": "Abdelhameed RE",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07260-9",
+          "pmid": "40883660"
+        },
+        {
+          "id": "41681569",
+          "source": "MED",
+          "title": "Influence of Silver Nanoparticles (AgNPs) on Vegetative Growth and Concentrations of Nutrients and Phytohormones in Tomato.",
+          "first_author": "Guzmán-Báez GA",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15030405",
+          "pmid": "41681569"
+        },
+        {
+          "id": "PPR1093450",
+          "source": "PPR",
+          "title": "Isolation and characterization of Plant growth-promoting hormones by an endophytic bacterium, Curtobacterium. citreum AVN2 isolated from the rhizome of Curcuma longa L",
+          "first_author": "NARMADA S",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7602699/v1",
+          "pmid": null
+        },
+        {
+          "id": "42087492",
+          "source": "MED",
+          "title": "Stem Cells in Cosmetic Applications: Advancements, Challenges, and Future Directions.",
+          "first_author": "KarkonShayan F",
+          "pub_year": "2026",
+          "doi": "10.1111/jocd.70866",
+          "pmid": "42087492"
+        },
+        {
+          "id": "42131739",
+          "source": "MED",
+          "title": "SlBL4 is involved in leaf polarity development in tomato.",
+          "first_author": "Hu N",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1765515",
+          "pmid": "42131739"
+        },
+        {
+          "id": "41062959",
+          "source": "MED",
+          "title": "Synergistic effects of plant growth regulators and fe₃o₄ nanoparticles on in vitro organogenesis and bioactive compound production in hypericum perforatum.",
+          "first_author": "Al Nooh KM",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07409-6",
+          "pmid": "41062959"
+        },
+        {
+          "id": "40700013",
+          "source": "MED",
+          "title": "Protocol for Agrobacterium-mediated transformation of tomato and flow cytometry-based ploidy confirmation.",
+          "first_author": "Wang Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.xpro.2025.103959",
+          "pmid": "40700013"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "39644684",
+          "source": "MED",
+          "title": "A tomato ethylene-resistant mutant displays altered growth and higher β-carotene levels in fruit.",
+          "first_author": "Gupta SK",
+          "pub_year": "2025",
+          "doi": "10.1016/j.plaphy.2024.109373",
+          "pmid": "39644684"
+        },
+        {
+          "id": "42343905",
+          "source": "MED",
+          "title": "From recalcitrance to precision: a robust regeneration, transformation and targeted gene editing framework in &lt;i&gt;Cajanus cajan&lt;/i&gt;.",
+          "first_author": "Verma R",
+          "pub_year": "2026",
+          "doi": "10.3389/fgeed.2026.1815812",
+          "pmid": "42343905"
+        },
+        {
+          "id": "42280714",
+          "source": "MED",
+          "title": "In Vitro Regeneration Strategies in Woody Citrus of Northeast India (&lt;i&gt;Citrus jambhiri&lt;/i&gt; and &lt;i&gt;Citrus aurantifolia&lt;/i&gt;).",
+          "first_author": "Sharma P",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111677",
+          "pmid": "42280714"
+        },
+        {
+          "id": "41304616",
+          "source": "MED",
+          "title": "Dual Role of &lt;i&gt;Bacillus velezensis&lt;/i&gt; EM-A8 in Maize: Biocontrol of Exserohilum Turcicum and Enhancement of Plant Growth.",
+          "first_author": "Grossi Vanacore MF",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14223464",
+          "pmid": "41304616"
+        },
+        {
+          "id": "PMC12723035",
+          "source": "PMC",
+          "title": "Gamma-Aminobutyric acid profiling (GABA) and standardization of in-vitro regeneration protocol in tomato (Solanum lycopersicum L.) genotypes",
+          "first_author": "Babu D",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41409491",
+          "source": "MED",
+          "title": "Tomato cell cultures as innovative plant biostimulants: evaluation of its effect on pepper seeds germinated under salinity conditions.",
+          "first_author": "Martí-Guillén JM",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1726488",
+          "pmid": "41409491"
+        },
+        {
+          "id": "40094644",
+          "source": "MED",
+          "title": "An In Vitro Phytohormone Survey Reveals Concerted Regulation of the Cannabis Glandular Trichome Disc Cell Proteome.",
+          "first_author": "Dimopoulos N",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14050694",
+          "pmid": "40094644"
+        },
+        {
+          "id": "40769992",
+          "source": "MED",
+          "title": "Metabolically engineered plant cell cultures as biofactories for the production of high-value carotenoids astaxanthin and canthaxanthin.",
+          "first_author": "Rebelo BA",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-11916-9",
+          "pmid": "40769992"
+        },
+        {
+          "id": "39439714",
+          "source": "MED",
+          "title": "Potential of some explants for callus induction and plantlet regeneration in <i>Solanum lycopersicum</i> L. under treatment of different plant growth regulators.",
+          "first_author": "Kumari A",
+          "pub_year": "2024",
+          "doi": "10.5114/bta.2024.141803",
+          "pmid": "39439714"
+        },
+        {
+          "id": "37799729",
+          "source": "MED",
+          "title": "<i>In vitro</i> callus induction and evaluation of antioxidant activity of <i>Rhinacanthus nasutus</i> (L.) Kurz.",
+          "first_author": "Yaowachai W",
+          "pub_year": "2023",
+          "doi": "10.1093/biomethods/bpad019",
+          "pmid": "37799729"
+        },
+        {
+          "id": "40573737",
+          "source": "MED",
+          "title": "Exploring the Potential of Plant Cytokinins Against Common Human Pathogens: In Vitro Assessment and In Silico Insights.",
+          "first_author": "Lazarević J",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14121749",
+          "pmid": "40573737"
+        },
+        {
+          "id": "37304716",
+          "source": "MED",
+          "title": "Editorial: Growth regulators and biostimulants: upcoming opportunities.",
+          "first_author": "Gupta S",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1209499",
+          "pmid": "37304716"
+        },
+        {
+          "id": "39942995",
+          "source": "MED",
+          "title": "Plant Stem Cells in Cosmetic Industry.",
+          "first_author": "Gardiki V",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14030433",
+          "pmid": "39942995"
+        }
+      ]
+    },
+    {
+      "query": "(kinetin OR 6-furfurylaminopurine) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 6,
+      "results": [
+        {
+          "id": "PPR1093450",
+          "source": "PPR",
+          "title": "Isolation and characterization of Plant growth-promoting hormones by an endophytic bacterium, Curtobacterium. citreum AVN2 isolated from the rhizome of Curcuma longa L",
+          "first_author": "NARMADA S",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7602699/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR759681",
+          "source": "PPR",
+          "title": "A tomato ethylene-insensitive mutant displays altered growth and higher β-carotene levels in fruit",
+          "first_author": "Gupta SK",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.11.14.566984",
+          "pmid": null
+        },
+        {
+          "id": "PPR1059623",
+          "source": "PPR",
+          "title": "A high-throughput heterologous expression platform for plant synthetic biology based on Arabidopsis suspension cells",
+          "first_author": "Meile L",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.07.30.667703",
+          "pmid": null
+        },
+        {
+          "id": "PPR1046410",
+          "source": "PPR",
+          "title": "Floral innovation through modifications in stem cell peptide signaling",
+          "first_author": "Jones DS",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.06.27.661788",
+          "pmid": null
+        },
+        {
+          "id": "PPR59025",
+          "source": "PPR",
+          "title": "Efficient and reproducible somatic embryogenesis and micro propagation in tomato via novel structures -Rhizoid Tubers",
+          "first_author": "Saeed W",
+          "pub_year": "2018",
+          "doi": "10.1101/446286",
+          "pmid": null
+        },
+        {
+          "id": "PPR564437",
+          "source": "PPR",
+          "title": "Mutations in  <i>NAKED-ENDOSPERM</i>  IDD genes reveal functional interactions with  <i>SCARECROW</i>  and a maternal influence on leaf patterning in C  <sub>4</sub>  grasses",
+          "first_author": "Hughes TE",
+          "pub_year": "2022",
+          "doi": "10.1101/2022.10.28.514209",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(kinetin OR 6-furfurylaminopurine) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 291,
+      "results": [
+        {
+          "id": "42222826",
+          "source": "MED",
+          "title": "Evaluation of the Biostimulant Activity of the Microalgae &lt;i&gt;Chlorella sorokiniana&lt;/i&gt; and &lt;i&gt;Scenedesmus&lt;/i&gt; sp. and Their Resistance to the Most Widely Used Agricultural Pesticides.",
+          "first_author": "Rodríguez-Mora K",
+          "pub_year": "2026",
+          "doi": "10.1021/acsomega.5c11935",
+          "pmid": "42222826"
+        },
+        {
+          "id": "41882047",
+          "source": "MED",
+          "title": "Effect of medium composition on in vitro ovary culture of cucumber.",
+          "first_author": "Nyirahabimana F",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-025-31636-4",
+          "pmid": "41882047"
+        },
+        {
+          "id": "41473448",
+          "source": "MED",
+          "title": "Shoot tip vitrification cryopreservation and elimination of soybean mosaic virus (SMV) and cauliflower mosaic virus (CMV) from infected stocks of &lt;i&gt;Pinellia Ternata (Thunb.)&lt;/i&gt; Breit.",
+          "first_author": "Zhang Y",
+          "pub_year": "2026",
+          "doi": "10.1007/s13205-025-04607-9",
+          "pmid": "41473448"
+        },
+        {
+          "id": "42245747",
+          "source": "MED",
+          "title": "Integration of phytohormones, miRNAs and transcriptome sequencing in cucumber fruit development under high-temperature stress.",
+          "first_author": "Dan Z",
+          "pub_year": "2026",
+          "doi": "10.1016/j.fochms.2026.100420",
+          "pmid": "42245747"
+        },
+        {
+          "id": "41470617",
+          "source": "MED",
+          "title": "Doubled Haploid Production in &lt;i&gt;Cucurbita pepo&lt;/i&gt; L. Through Ovary Culture.",
+          "first_author": "García-Pérez A",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243733",
+          "pmid": "41470617"
+        },
+        {
+          "id": "37304716",
+          "source": "MED",
+          "title": "Editorial: Growth regulators and biostimulants: upcoming opportunities.",
+          "first_author": "Gupta S",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1209499",
+          "pmid": "37304716"
+        },
+        {
+          "id": "39754032",
+          "source": "MED",
+          "title": "Optimization of in vitro propagation and virus eradication using meristem culture and thermotherapy in two geranium species Pelargonium X hortorum ('Zonal') and Pelargonium × domesticum ('Regal').",
+          "first_author": "Alavijeh MK",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-024-06027-y",
+          "pmid": "39754032"
+        },
+        {
+          "id": "41292399",
+          "source": "MED",
+          "title": "Role of Polyamines in Mitigating Salinity Stress in Ornamental and Food Crops.",
+          "first_author": "Mohammadi Alagoz S",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70649",
+          "pmid": "41292399"
+        },
+        {
+          "id": "38794391",
+          "source": "MED",
+          "title": "Widening Genetic Diversity Using Embryo Rescue in Cucurbit Crops: A Review.",
+          "first_author": "Reddy CS",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13101320",
+          "pmid": "38794391"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "40284636",
+          "source": "MED",
+          "title": "Eco-Friendly Biomass Production and Identification of Active Compounds of &lt;i&gt;Paenibacillus polymyxa&lt;/i&gt; EB.KN35 with Potent Anti-&lt;i&gt;Fusarium oxysporum&lt;/i&gt; Effect.",
+          "first_author": "Ngo VA",
+          "pub_year": "2025",
+          "doi": "10.3390/microorganisms13040800",
+          "pmid": "40284636"
+        },
+        {
+          "id": "39439714",
+          "source": "MED",
+          "title": "Potential of some explants for callus induction and plantlet regeneration in <i>Solanum lycopersicum</i> L. under treatment of different plant growth regulators.",
+          "first_author": "Kumari A",
+          "pub_year": "2024",
+          "doi": "10.5114/bta.2024.141803",
+          "pmid": "39439714"
+        },
+        {
+          "id": "35719852",
+          "source": "MED",
+          "title": "The bioactive potential of phytohormones: A review.",
+          "first_author": "Mukherjee A",
+          "pub_year": "2022",
+          "doi": "10.1016/j.btre.2022.e00748",
+          "pmid": "35719852"
+        },
+        {
+          "id": "39940806",
+          "source": "MED",
+          "title": "Multifunctional Role of Cytokinin in Horticultural Crops.",
+          "first_author": "Hussain S",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26031037",
+          "pmid": "39940806"
+        },
+        {
+          "id": "41874791",
+          "source": "MED",
+          "title": "At the core of global bioenergy: polyamines and transglutaminases in chloroplasts.",
+          "first_author": "Serafini-Fracassini D",
+          "pub_year": "2026",
+          "doi": "10.1007/s00726-026-03518-0",
+          "pmid": "41874791"
+        },
+        {
+          "id": "39273563",
+          "source": "MED",
+          "title": "The Impact of a Non-Pathogenic Strain of Fusarium Oxysporum on Structural and Biochemical Properties of Flax Suspension Cultures.",
+          "first_author": "Wróbel-Kwiatkowska M",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25179616",
+          "pmid": "39273563"
+        },
+        {
+          "id": "41296450",
+          "source": "MED",
+          "title": "Effects of Exogenous Spermidine on Germination and Seedling Growth of Rice Under Salt Stress: Physiological and Transcriptomic Insights.",
+          "first_author": "Fei B",
+          "pub_year": "2025",
+          "doi": "10.3390/cimb47110946",
+          "pmid": "41296450"
+        },
+        {
+          "id": "36290287",
+          "source": "MED",
+          "title": "Photosynthesis Monitoring in Microalgae Cultures Grown on Municipal Wastewater as a Nutrient Source in Large-Scale Outdoor Bioreactors.",
+          "first_author": "Masojídek J",
+          "pub_year": "2022",
+          "doi": "10.3390/biology11101380",
+          "pmid": "36290287"
+        },
+        {
+          "id": "42259393",
+          "source": "MED",
+          "title": "Toward in planta studies of persistent fungal viruses in a model plant.",
+          "first_author": "Telengech P",
+          "pub_year": "2026",
+          "doi": "10.1016/j.virusres.2026.199761",
+          "pmid": "42259393"
+        },
+        {
+          "id": "35182320",
+          "source": "MED",
+          "title": "Effects of genotype and nutrient medium on obtaining haploid plants through ovary culture in cucumber.",
+          "first_author": "Baktemur G",
+          "pub_year": "2022",
+          "doi": "10.1007/s11033-022-07238-y",
+          "pmid": "35182320"
+        },
+        {
+          "id": "41048392",
+          "source": "MED",
+          "title": "Optimization of anther culture of awnless triticale.",
+          "first_author": "Ma J",
+          "pub_year": "2025",
+          "doi": "10.7717/peerj.19951",
+          "pmid": "41048392"
+        },
+        {
+          "id": "36501342",
+          "source": "MED",
+          "title": "Mitigation of Negative Effects of Chromium (VI) Toxicity in Faba Bean (<i>Vicia faba</i>) Plants through the Supplementation of Kinetin (KN) and Gibberellic Acid (GA3).",
+          "first_author": "Alam P",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11233302",
+          "pmid": "36501342"
+        },
+        {
+          "id": "33268918",
+          "source": "MED",
+          "title": "Exogenous kinetin and putrescine synergistically mitigate salt stress in <i>Luffa acutangula</i> by modulating physiology and antioxidant defense.",
+          "first_author": "Kapoor RT",
+          "pub_year": "2020",
+          "doi": "10.1007/s12298-020-00894-z",
+          "pmid": "33268918"
+        },
+        {
+          "id": "39808450",
+          "source": "MED",
+          "title": "ClaPEPCK4: target gene for breeding innovative watermelon germplasm with low malic acid and high sweetness.",
+          "first_author": "Yang C",
+          "pub_year": "2025",
+          "doi": "10.1080/21645698.2025.2452702",
+          "pmid": "39808450"
+        },
+        {
+          "id": "41233772",
+          "source": "MED",
+          "title": "Establishment of a refined somatic embryogenesis protocol and light-spectrum-based acclimatization in Caladium bicolor 'White'.",
+          "first_author": "Dehestani-Ardakani M",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07551-1",
+          "pmid": "41233772"
+        }
+      ]
+    },
+    {
+      "query": "(kinetin OR 6-furfurylaminopurine) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR776540",
+          "source": "PPR",
+          "title": "Modulation of prion protein expression through cryptic splice site manipulation",
+          "first_author": "Gentile JE",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.12.19.572439",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(kinetin OR 6-furfurylaminopurine) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 204,
+      "results": [
+        {
+          "id": "PMC12943902",
+          "source": "PMC",
+          "title": "A Stable and Rapid Protoplast-Based CRISPR/Cas9-Ribonucleoprotein Complex Screening System for Octoploid Strawberry (Fragaria × ananassa)",
+          "first_author": "Kim Y",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "40362299",
+          "source": "MED",
+          "title": "Thidiazuron Enhances Strawberry Shoot Multiplication by Regulating Hormone Signal Transduction Pathways.",
+          "first_author": "Wang F",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26094060",
+          "pmid": "40362299"
+        },
+        {
+          "id": "41470678",
+          "source": "MED",
+          "title": "Overcoming Recalcitrance: A Review of Regeneration Methods and Challenges in Roses.",
+          "first_author": "Nelson A",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14243797",
+          "pmid": "41470678"
+        },
+        {
+          "id": "40458554",
+          "source": "MED",
+          "title": "Regulation of fruit quality formation in strawberry: from omics to biotechnology.",
+          "first_author": "Wang ZY",
+          "pub_year": "2025",
+          "doi": "10.7717/peerj.19497",
+          "pmid": "40458554"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "38475410",
+          "source": "MED",
+          "title": "An Efficient <i>Agrobacterium</i>-Mediated Genetic Transformation System for Gene Editing in Strawberry (<i>Fragaria</i> × <i>ananassa</i>).",
+          "first_author": "Akter F",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13050563",
+          "pmid": "38475410"
+        },
+        {
+          "id": "41303307",
+          "source": "MED",
+          "title": "Genetic Stability and Photosystem II Functioning of In Vitro-Recovered &lt;i&gt;Lamprocapnos spectabilis&lt;/i&gt; (L.) Fukuhara After ZnO + Ag Nanoparticles or Melatonin Exposure During Vitrification-Preliminary Study.",
+          "first_author": "Kulus D",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms262210817",
+          "pmid": "41303307"
+        },
+        {
+          "id": "PMC13299642",
+          "source": "PMC",
+          "title": "Overexpression of PeBBM2 and PeWUS Genes via Carbon Nanotube-Based DNA Delivery Enhances the Callus and Shoot Formation in Phyllostachys edulis",
+          "first_author": "Ding Y",
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "38474012",
+          "source": "MED",
+          "title": "Changes in Phytohormones and Transcriptomic Reprogramming in Strawberry Leaves under Different Light Qualities.",
+          "first_author": "Li P",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25052765",
+          "pmid": "38474012"
+        },
+        {
+          "id": "41303551",
+          "source": "MED",
+          "title": "Transcriptomics and Plant Hormone Analysis Reveal the Mechanism of Exogenous GA&lt;sub&gt;3&lt;/sub&gt; Promoting Reflowering of &lt;i&gt;Phalaenopsis&lt;/i&gt; 'Hatuyuki'.",
+          "first_author": "Ma X",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms262211069",
+          "pmid": "41303551"
+        },
+        {
+          "id": "38243597",
+          "source": "MED",
+          "title": "An inducible CRISPR activation tool for accelerating plant regeneration.",
+          "first_author": "Zhang C",
+          "pub_year": "2024",
+          "doi": "10.1016/j.xplc.2024.100823",
+          "pmid": "38243597"
+        },
+        {
+          "id": "38644814",
+          "source": "MED",
+          "title": "Phenolic profiling and bioactivity assessment of <i>in vitro</i> propagated <i>Psidium cattleianum</i> Sabine: A promising study.",
+          "first_author": "El-Deeb EM",
+          "pub_year": "2024",
+          "doi": "10.1016/j.heliyon.2024.e29379",
+          "pmid": "38644814"
+        },
+        {
+          "id": "38869461",
+          "source": "MED",
+          "title": "Appreciating animal induced pluripotent stem cells to shape plant cell reprogramming strategies.",
+          "first_author": "Wittmer J",
+          "pub_year": "2024",
+          "doi": "10.1093/jxb/erae264",
+          "pmid": "38869461"
+        },
+        {
+          "id": "36986925",
+          "source": "MED",
+          "title": "<i>In Vitro</i> Mass Propagation of Coffee Plants (<i>Coffea arabica</i> L. var. Colombia) through Indirect Somatic Embryogenesis.",
+          "first_author": "Avila-Victor CM",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12061237",
+          "pmid": "36986925"
+        },
+        {
+          "id": "37896033",
+          "source": "MED",
+          "title": "Callus Type, Growth Regulators, and Phytagel on Indirect Somatic Embryogenesis of Coffee (<i>Coffea arabica</i> L. var. Colombia).",
+          "first_author": "Avila-Victor CM",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12203570",
+          "pmid": "37896033"
+        },
+        {
+          "id": "37175817",
+          "source": "MED",
+          "title": "Ectopic Expression of <i>FvVND4c</i> Promotes Secondary Cell Wall Thickening and Flavonoid Accumulation in <i>Fragaria vesca</i>.",
+          "first_author": "Zhang B",
+          "pub_year": "2023",
+          "doi": "10.3390/ijms24098110",
+          "pmid": "37175817"
+        },
+        {
+          "id": "36968363",
+          "source": "MED",
+          "title": "Hormones regulate the flowering process in saffron differently depending on the developmental stage.",
+          "first_author": "Singh D",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1107172",
+          "pmid": "36968363"
+        },
+        {
+          "id": "37623838",
+          "source": "MED",
+          "title": "The Impact of Acute Low-Dose Gamma Irradiation on Biomass Accumulation and Secondary Metabolites Production in <i>Cotinus coggygria</i> Scop. and <i>Fragaria × ananassa</i> Duch. Red Callus Cultures.",
+          "first_author": "Ciocan AG",
+          "pub_year": "2023",
+          "doi": "10.3390/metabo13080894",
+          "pmid": "37623838"
+        },
+        {
+          "id": "38434117",
+          "source": "MED",
+          "title": "A multiple shoot induction system for peptide-mediated gene delivery into plastids in <i>Arabidopsis thaliana</i>, <i>Nicotiana benthamiana</i>, and <i>Fragaria</i>×<i>ananassa</i>.",
+          "first_author": "Odahara M",
+          "pub_year": "2023",
+          "doi": "10.5511/plantbiotechnology.23.0501a",
+          "pmid": "38434117"
+        },
+        {
+          "id": "39687314",
+          "source": "MED",
+          "title": "Genome-wide characterization of the sunflower kinome: classification, evolutionary analysis and expression patterns under different stresses.",
+          "first_author": "Yan N",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1450936",
+          "pmid": "39687314"
+        },
+        {
+          "id": "40937166",
+          "source": "MED",
+          "title": "Synergistic Changes in Ascorbic Acid and Soluble Sugar Contents in Apricot Fruits and the Related Regulatory Mechanisms.",
+          "first_author": "He Y",
+          "pub_year": "2025",
+          "doi": "10.1002/fsn3.70899",
+          "pmid": "40937166"
+        },
+        {
+          "id": "41189876",
+          "source": "MED",
+          "title": "Toxicological and nutritional evaluation of plant cell cultures from scurvy grass (&lt;i&gt;Cochlearia danica&lt;/i&gt;) and rowan (&lt;i&gt;Sorbus aucuparia&lt;/i&gt;).",
+          "first_author": "Felicianna",
+          "pub_year": "2025",
+          "doi": "10.3389/ftox.2025.1655489",
+          "pmid": "41189876"
+        },
+        {
+          "id": "40219113",
+          "source": "MED",
+          "title": "Inoculum of Endophytic &lt;i&gt;Bacillus&lt;/i&gt; spp. Stimulates Growth of Ex Vitro Acclimatised Apple Plantlets.",
+          "first_author": "Vinskienė J",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14071045",
+          "pmid": "40219113"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "40209051",
+          "source": "MED",
+          "title": "ERF100 regulated by ERF28 and NOR controls pectate lyase 7, modulating fig (Ficus carica L.) fruit softening.",
+          "first_author": "Fan Z",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70085",
+          "pmid": "40209051"
+        }
+      ]
+    },
+    {
+      "query": "(kinetin OR 6-furfurylaminopurine) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR723140",
+          "source": "PPR",
+          "title": "Nutritional Composition, Health Benefits and Processing of Coconut (Cocos Nucifera) as an Industrial Underutilised Nut - A Scoping Review",
+          "first_author": "N AA",
+          "pub_year": "2023",
+          "doi": "10.2139/ssrn.4555239",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1093450",
+      "source": "PPR",
+      "title": "Isolation and characterization of Plant growth-promoting hormones by an endophytic bacterium, Curtobacterium. citreum AVN2 isolated from the rhizome of Curcuma longa L",
+      "first_author": "NARMADA S",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-7602699/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR759681",
+      "source": "PPR",
+      "title": "A tomato ethylene-insensitive mutant displays altered growth and higher β-carotene levels in fruit",
+      "first_author": "Gupta SK",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.11.14.566984",
+      "pmid": null
+    },
+    {
+      "id": "PPR1059623",
+      "source": "PPR",
+      "title": "A high-throughput heterologous expression platform for plant synthetic biology based on Arabidopsis suspension cells",
+      "first_author": "Meile L",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.07.30.667703",
+      "pmid": null
+    },
+    {
+      "id": "PPR1046410",
+      "source": "PPR",
+      "title": "Floral innovation through modifications in stem cell peptide signaling",
+      "first_author": "Jones DS",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.06.27.661788",
+      "pmid": null
+    },
+    {
+      "id": "PPR59025",
+      "source": "PPR",
+      "title": "Efficient and reproducible somatic embryogenesis and micro propagation in tomato via novel structures -Rhizoid Tubers",
+      "first_author": "Saeed W",
+      "pub_year": "2018",
+      "doi": "10.1101/446286",
+      "pmid": null
+    },
+    {
+      "id": "PPR564437",
+      "source": "PPR",
+      "title": "Mutations in  <i>NAKED-ENDOSPERM</i>  IDD genes reveal functional interactions with  <i>SCARECROW</i>  and a maternal influence on leaf patterning in C  <sub>4</sub>  grasses",
+      "first_author": "Hughes TE",
+      "pub_year": "2022",
+      "doi": "10.1101/2022.10.28.514209",
+      "pmid": null
+    },
+    {
+      "id": "PPR776540",
+      "source": "PPR",
+      "title": "Modulation of prion protein expression through cryptic splice site manipulation",
+      "first_author": "Gentile JE",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.12.19.572439",
+      "pmid": null
+    },
+    {
+      "id": "PPR723140",
+      "source": "PPR",
+      "title": "Nutritional Composition, Health Benefits and Processing of Coconut (Cocos Nucifera) as an Industrial Underutilised Nut - A Scoping Review",
+      "first_author": "N AA",
+      "pub_year": "2023",
+      "doi": "10.2139/ssrn.4555239",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,306 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "PIX",
+    "csv_name": "Mepiquat chloride",
+    "queried_name": "mepiquat chloride"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "europepmc_tomato",
+      "europepmc_cucumber",
+      "europepmc_strawberry",
+      "openalex_tomato",
+      "openalex_cucumber",
+      "openalex_strawberry",
+      "pubchem",
+      "crossref"
+    ],
+    "failed": [],
+    "queries_used": [
+      "mepiquat chloride tomato",
+      "mepiquat chloride cucumber",
+      "mepiquat chloride strawberry",
+      "TITLE:\"mepiquat\" AND (tomato OR lycopersicum)",
+      "TITLE:\"mepiquat\" AND (cucumber OR \"cucumis sativus\")",
+      "TITLE:\"mepiquat\" AND (strawberry OR fragaria)",
+      "mepiquat chloride Solanum lycopersicum growth regulator",
+      "mepiquat chloride Cucumis sativus growth regulator",
+      "mepiquat chloride Fragaria strawberry runner stolon"
+    ],
+    "fallback_tries": []
+  },
+  "identity": {
+    "cas": "24307-26-4",
+    "cid": "62781",
+    "formula": "C7H16ClN",
+    "iupac": "1,1-dimethylpiperidin-1-ium chloride",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:28915421",
+      "DOI:10.1186/s12870-019-2176-1",
+      "DOI:10.3389/fpls.2019.01751"
+    ],
+    "synonyms": [
+      "mepiquat chloride",
+      "mepiquat",
+      "PIX",
+      "1,1-dimethylpiperidinium chloride",
+      "Pix Ultra",
+      "BAS 083W",
+      "N,N-Dimethylpiperidinium chloride",
+      "1,1-dimethylpiperidin-1-ium;chloride"
+    ],
+    "synonyms_ru": [
+      "Мепикват хлорид",
+      "ПИКС",
+      "1,1-диметилпиперидиний хлорид"
+    ],
+    "molar_mass_g_mol": 149.66,
+    "notes": "Четвертичная аммониевая соль, ретардант (ингибитор биосинтеза гиббереллинов). CAS 24307-26-4 подтверждён PubChem CID 62781. Синоним 'PIX' — товарное имя препарата."
+  },
+  "mode_of_action": {
+    "summary": "Mepiquat chloride — четвертичная аммониевая соль, ретардант, ингибирующий биосинтез гиббереллинов: подавляет превращение предшественников гиббереллинов (ингибирует ent-kaurene oxidase / сокращает активный GA), что снижает элонгацию междоузлий и рост побегов. Приводит к компактному габитусу, укороченным междоузлиям. Литература по хлопку подтверждает ингибирование элонгации междоузлий и модуляцию гормонального гомеостаза.",
+    "evidence": [
+      "DOI:10.3389/fpls.2019.01751",
+      "DOI:10.1186/s12870-019-2176-1"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_unverified",
+      "search_stats": {
+        "pubmed": 4,
+        "europe_pmc": 5,
+        "culture_mentioned": 4
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Остатки и диссипация мепиквата в матрицах выращивания томата (аналитическое определение)",
+          "context": "Аналитическая химия остатков мепиквата в томате — подтверждает применение мепиквата на томате, но не даёт агрономических данных по росту.",
+          "dosage_normalized": {
+            "original": "н/д (аналитический метод)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 149.66,
+            "conversion_source": "PubChem CID 62781",
+            "note": "ppm ≈ mg/L для водных растворов"
+          },
+          "conditions": {
+            "stage": "н/д",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "н/д"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 2
+          },
+          "sources": [
+            {
+              "pmid": "28915421",
+              "year": 2017,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1016/j.jchromb.2017.09.012",
+              "oa_url": null
+            },
+            {
+              "pmid": "22006392",
+              "year": 2011,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1002/rcm.5225",
+              "oa_url": null
+            }
+          ],
+          "quote": "Determination of chlormequat and mepiquat residues and their dissipation rates in tomato cultivation matrices (28915421); multi-residue determination of plant growth regulators in tomatoes (22006392)."
+        }
+      ],
+      "gap": "Нет данных о применении 30–120 ppm фолиарно на томате для снижения роста побегов и укрепления стеблей в индексированной литературе. Прямых агрономических полевых/трансплантных опытов с мепикватом на томате в PubMed/Europe PMC/OpenAlex не найдено; доступные работы — аналитическое определение остатков.",
+      "related_evidence": [
+        {
+          "pmid": "31864311",
+          "year": 2019,
+          "claim": "Мепикват хлорид модулирует гормональный гомеостаз и образование боковых корней у хлопка",
+          "note": "Работа по механизму на хлопке (не фокусная культура), подтверждает механизм действия"
+        },
+        {
+          "pmid": "32047505",
+          "year": 2019,
+          "claim": "Мепикват хлорид ингибирует элонгацию междоузлий хлопка",
+          "note": "Механизм на хлопке (не фокусная культура)"
+        }
+      ]
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 0,
+        "europe_pmc": 1,
+        "culture_mentioned": 0
+      },
+      "claims": [],
+      "gap": "Нет данных о применении мепиквата хлорида на огурце (Cucumis sativus). PubMed: 0 результатов; Europe PMC TITLE-поиск: 0; OpenAlex: прямых агрономических опытов мепиквата на огурце не найдено.",
+      "related_evidence": [
+        {
+          "pmid": "42168867",
+          "year": 2026,
+          "claim": "Мепикват хлорид повышает холодоустойчивость хлопка через регуляцию роста корней и антиоксидантных ферментов",
+          "note": "Работа по мепиквату на хлопке (не фокусная культура), показывает ретардантный/стресс-механизм"
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 1,
+        "europe_pmc": 4,
+        "culture_mentioned": 1
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Мепикват хлорид (Ponnax®) при 170.6 и 273.5 г д.в./га даёт значимый контроль столонов (усов) клубники, сопоставимый с прoгексадионом-кальцием",
+          "context": "Полевой опыт во Флориде (ежегодная зимняя система производства клубники). Две нормы мепиквата (170.6 и 273.5 г д.в./га), две нормы прoгексадиона-Ca (113.8 и 227.6 г д.в./га), 3 обработки с недельным интервалом, начиная с 4 недель после высадки. Значимый контроль столонов у обоих ретардантов против необработанного контроля.",
+          "dosage_normalized": {
+            "original": "170.6 и 273.5 г д.в./га, 3 обработки (недельный интервал)",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 149.66,
+            "conversion_source": "PubChem CID 62781",
+            "note": "Доза в г д.в./га (норма расхода), не в ppm — прямое сравнение с CSV (30–120 ppm фолиар) невозможно без данных о норме расхода раствора"
+          },
+          "conditions": {
+            "stage": "4 недели после высадки, 3 обработки еженедельно",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "фолиарное опрыскивание (Ponnax®)"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 2005,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1300/j301v04n02_02",
+              "oa_url": null
+            }
+          ],
+          "quote": "Significant stolon control was achieved with both rates of mepiquat chloride (170.6 and 273.5 g ai/ha) compared to untreated controls. Application of mepiquat chloride at 273.5 g ai/ha increased fruit yield during January above all other treatments."
+        },
+        {
+          "type": "effect",
+          "value": "Мепикват хлорид при 273.5 г д.в./га повышал урожайность плодов в январе выше всех остальных обработок",
+          "context": "Полевой опыт во Флориде: мепикват при максимальной норме 273.5 г д.в./га увеличил урожайность ягод в январе по сравнению со всеми другими обработками (включая необработанный контроль и прoгексадион-Ca).",
+          "dosage_normalized": {
+            "original": "273.5 г д.в./га",
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 149.66,
+            "conversion_source": "PubChem CID 62781",
+            "note": "Норма в г д.в./га, не ppm"
+          },
+          "conditions": {
+            "stage": "после высадки, в течение сезона",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "фолиарное опрыскивание"
+          },
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 2005,
+              "verified": true,
+              "paper_type": "trial",
+              "doi": "10.1300/j301v04n02_02",
+              "oa_url": null
+            }
+          ],
+          "quote": "Application of mepiquat chloride at 273.5 g ai/ha increased fruit yield during January above all other treatments."
+        }
+      ],
+      "gap": "Единичный полевой опыт (Флорида, 2005). Доза в г д.в./га, а не ppm; прямое сопоставление с CSV-диапазоном 30–120 ppm фолиар затруднено. Нет данных по PHI/MRL для клубники.",
+      "related_evidence": []
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Только из литературы. В индексированных источниках (PubMed/Europe PMC/OpenAlex) по трём фокусным культурам данных об ED50/TD50/therapeutic index/стойкости в почве для мепиквата хлорида не найдено."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества; для пестицидов/ретардантов — PHI/REI из этикеток, в открытых БД обычно нет"
+  },
+  "contraindications": [
+    {
+      "condition": "Избыточное подавление роста при высоких нормах",
+      "effect": "Ретардант с высокой нормой может чрезмерно ограничивать вегетативный рост; в опыте по клубнике значимые снижения урожайности связывались с прoгексадионом-Ca, а не с мепикватом",
+      "severity": "low",
+      "sources": [
+        "DOI:10.1300/j301v04n02_02"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "Apply 30-120 ppm foliar spray",
+      "literature_summary": "На клубнике мепикват применялся в норме 170.6–273.5 г д.в./га (3 обработки), а не в ppm-концентрации; единицы (г д.в./га vs ppm) напрямую не сопоставимы без нормы расхода раствора. На томате и огурце прямых агрономических данных по дозам 30–120 ppm не найдено.",
+      "severity": "medium",
+      "sources": [
+        "DOI:10.1300/j301v04n02_02"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Идентичность и механизм (ингибитор биосинтеза ГК) подтверждены PubChem и литературой по хлопку. По клубнике есть прямой полевой опыт (Duval & Golden 2005), подтверждающий контроль столонов и рост урожайности — CSV-заявка о подавлении вегетативного роста подтверждена частично (единицы дозировки не совпадают: г д.в./га vs ppm). По томату — только аналитическое определение остатков, агрономических опытов по дозам 30–120 ppm нет. По огурцу — данных нет (no_data). Таксономия требует исправления: class_family должен быть synthetic_growth_regulators, а не gibberellins."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": false,
+    "mechanism_confirmed": true,
+    "corrections": [
+      {
+        "field": "class_family",
+        "from": "gibberellins",
+        "to": "synthetic_growth_regulators",
+        "reason": "Mepiquat chloride — ингибитор биосинтеза гиббереллинов (ретардант, четвертичная аммониевая соль), а не гиббереллин. Относится к семейству синтетических регуляторов роста."
+      }
+    ],
+    "notes": "mechanism 'gibberellin_action' подтверждён: мепикват подавляет биосинтез активных гиббереллинов, снижая элонгацию междоузлий. class_family 'gibberellins' ошибочен и должен быть заменён на 'synthetic_growth_regulators'."
+  },
+  "sources_index": [
+    "PMID:28915421",
+    "PMID:22006392",
+    "PMID:12214689",
+    "PMID:31864311",
+    "PMID:32047505",
+    "PMID:33719323",
+    "PMID:42168867",
+    "DOI:10.1300/j301v04n02_02",
+    "DOI:10.3389/fpls.2019.01751",
+    "DOI:10.1186/s12870-019-2176-1"
+  ]
+}

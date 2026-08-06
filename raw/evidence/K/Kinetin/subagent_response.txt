@@ -1,0 +1,245 @@
+I have all the data needed. Here is my JSON report.
+
+```json
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Kinetin",
+    "csv_name": "6-Furfurylaminopurine",
+    "queried_name": "kinetin"
+  },
+  "searches": {
+    "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "openalex", "pubchem"],
+    "failed": [
+      {"endpoint": "europepmc", "reason": "IPv6 blocked in subagent environment", "query": "(kinetin) AND (tomato OR cucumber OR strawberry)", "retry_by_orchestrator": true}
+    ],
+    "queries_used": [
+      "(kinetin OR 6-furfurylaminopurine) AND tomato",
+      "(kinetin OR 6-furfurylaminopurine) AND cucumber",
+      "(kinetin OR 6-furfurylaminopurine) AND strawberry",
+      "kinetin strawberry foliar senescence",
+      "kinetin tomato senescence"
+    ],
+    "fallback_tries": []
+  },
+  "identity": {
+    "cas": "525-79-1",
+    "cid": "3830",
+    "formula": "C10H9N5O",
+    "iupac": "N-(furan-2-ylmethyl)-7H-purin-6-amine",
+    "class_confirmed": true,
+    "class_evidence": ["PMID:30180173", "PMID:29125985"],
+    "synonyms": ["kinetin", "6-furfurylaminopurine", "N6-furfuryladenine", "furfuryladenine", "6-furfuryladenine"],
+    "synonyms_ru": ["Кинетин", "6-фурфуриламинопурин"],
+    "molar_mass_g_mol": 215.21,
+    "notes": "Искусственный цитокинин (аденин с N6-фурфурильным заместителем). PubChem CID 3830, CAS 525-79-1."
+  },
+  "mode_of_action": {
+    "summary": "Кинетин — цитокинин, действующий через цитокининовую сигнализацию: задерживает сенесценцию листьев, стимулирует хлорофилл-ретенцию и регреенинг, повышает активность антиоксидантной системы (ASC-GSH цикл, глиоксалазная система) и стабильность мембран при стрессе. На огурце стимулирует этиопласт→хлоропластную трансформацию и синтез MGDG.",
+    "evidence": ["PMID:30180173", "PMID:29125985", "PMID:31838316", "PMID:18563516", "PMID:17006800"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 20, "europe_pmc": 0, "culture_mentioned": 20},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Экзогенный кинетин (10 µM) защищает Solanum lycopersicum от NaCl-индуцированного (150 mM) окислительного стресса: повышает хлорофилл/каротиноиды, фотосинтез, антиоксидантную систему, снижает H2O2 и перекисное окисление липидов, повышает стабильность мембран",
+          "context": "Вегетативные растения томата, солевой стресс 150 mM NaCl; кинетин применялся экзогенно",
+          "dosage_normalized": {"original": "10 µM", "ppm_equivalent": 2.15, "molar_mass_used_g_mol": 215.21, "conversion_source": "PubChem CID 3830", "note": "ppm ≈ mg/L для водных растворов; 10 µM × 215.21 г/моль = 2.15 мг/л ≈ 2.15 ppm"},
+          "conditions": {"stage": "вегетативный рост", "bbch_stages": [], "temperature_range": "не указано", "formulation": "экзогенный раствор кинетина"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "30180173", "year": 2018, "verified": true, "paper_type": "trial", "doi": "10.1371/journal.pone.0202175", "oa_url": null}],
+          "quote": "The protective role of exogenously applied kinetin (10 μM KN, a cytokinin) against the adverse effects caused by NaCl-induced (150 mM) stress in Solanum lycopersicum was investigated."
+        },
+        {
+          "type": "effect",
+          "value": "Кинетин (Kn) + эпибрассинолид (EBL) смягчают солевой стресс (100 mM NaCl) у томата: рост хлорофиллов/каротиноидов, улучшение газообмена (gs, Ci, Pn), Fv/Fm, ETR; комбинированное применение эффективнее",
+          "context": "Solanum lycopersicum, солевой стресс 100 mM NaCl",
+          "dosage_normalized": {"original": "не указана в аннотации (Kn в µM-диапазоне)", "ppm_equivalent": null, "molar_mass_used_g_mol": 215.21, "conversion_source": null, "note": "точная концентрация Kn в аннотации не приведена"},
+          "conditions": {"stage": "вегетативный рост", "bbch_stages": [], "temperature_range": "не указано", "formulation": "кинетин + эпибрассинолид"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "31838316", "year": 2020, "verified": true, "paper_type": "trial", "doi": "10.1016/j.plaphy.2019.12.007", "oa_url": null}],
+          "quote": "Combined application of Kn and EBL imparted much prominent impact on the growth, photosynthesis and metabolism of antioxidants."
+        },
+        {
+          "type": "method",
+          "value": "Стратегия опрыскивания кинетином (пре- и пост-обработка) смягчает вредные эффекты UVC-стресса у томата",
+          "context": "Томат под UVC-стрессом; пред- и пост-обработка кинетином (foliar spraying strategy)",
+          "dosage_normalized": {"original": "лучшая доза Kn подобрана в предварительных опытах (в аннотации не указана)", "ppm_equivalent": null, "molar_mass_used_g_mol": 215.21, "conversion_source": null, "note": "доза в аннотации не раскрыта"},
+          "conditions": {"stage": "вегетативный рост, UVC-стресс", "bbch_stages": [], "temperature_range": "не указано", "formulation": "листовое опрыскивание (foliar spray)"},
+          "relevance": "directly_supports",
+          "evidence_quality": "title_only",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "35258726", "year": 2022, "verified": false, "paper_type": "trial", "doi": "10.1007/s11356-022-19378-6", "oa_url": null}],
+          "quote": "Appraisal of kinetin spraying strategy to alleviate the harmful effects of UVC stress on tomato plants."
+        },
+        {
+          "type": "effect",
+          "value": "Кинетин (KN) амелиорирует кадмиевую токсичность (Cd 3 и 9 мг/кг песка) у сеянцев томата: снижает ROS (O2-, H2O2), улучшает фотохимию PSII (Fv/Fm, PIABS), активность ASC-GSH цикла",
+          "context": "Сеянцы томата, кадмиевый стресс в песке",
+          "dosage_normalized": {"original": "не указана (KN, 6-furfurylaminopurine)", "ppm_equivalent": null, "molar_mass_used_g_mol": 215.21, "conversion_source": null, "note": "концентрация KN в аннотации не приведена"},
+          "conditions": {"stage": "сеянцы, Cd-стресс", "bbch_stages": [], "temperature_range": "не указано", "formulation": "супплементация кинетином"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "29125985", "year": 2018, "verified": true, "paper_type": "trial", "doi": "10.1016/j.jphotobiol.2017.10.025", "oa_url": null}],
+          "quote": "whether a phytohormone 'kinetin' (KN, 6-furfuylaminopurine), one of the artificial cytokinins could ameliorate the cadmium induced toxicity in tomato seedlings"
+        }
+      ],
+      "gap": "Подтверждено анти-стрессовое и хлорофилл-ретенционное действие в лабораторных/вегетационных опытах (дозы в µM, ~2.15 ppm). Прямых полевых работ с листовым опрыскиванием 10-50 ppm именно для задержки сенесценции не найдено; дозы CSV (10-50 ppm) выше литературных (10 µM ≈ 2.15 ppm).",
+      "related_evidence": []
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 20, "europe_pmc": 0, "culture_mentioned": 20},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Кинетин стимулирует этиопласт→хлоропластную трансформацию в семядолях огурца через регуляцию экспрессии трансглутаминаз (77, 50, 30 kDa)",
+          "context": "Семядоли огурца (Cucumis sativus), фоторазвитие хлоропластов",
+          "dosage_normalized": {"original": "не указана в аннотации", "ppm_equivalent": null, "molar_mass_used_g_mol": 215.21, "conversion_source": null, "note": "концентрация кинетина в аннотации не приведена"},
+          "conditions": {"stage": "семядоли, этиоляция→освещение", "bbch_stages": [], "temperature_range": "не указано", "formulation": "кинетиновая обработка"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "18563516", "year": 2008, "verified": true, "paper_type": "mechanistic", "doi": "10.1007/s00709-008-0002-y", "oa_url": null}],
+          "quote": "part of the mechanism of kinetin action, which stimulates chloroplast differentiation"
+        },
+        {
+          "type": "effect",
+          "value": "Кинетин (как и ИУК) повышает содержание хлорофилла и вызывает регреенинг в отсоединённых листьях/листовых дисках огурца; поддерживает задержку сенесценции",
+          "context": "Отсоединённые листья и листовые диски Cucumis sativus (in vitro/excised tissue), сенесценция и реювенация",
+          "dosage_normalized": {"original": "не указана в аннотации", "ppm_equivalent": null, "molar_mass_used_g_mol": 215.21, "conversion_source": null, "note": "концентрация в аннотации не приведена"},
+          "conditions": {"stage": "отсоединённые листья/диски", "bbch_stages": [], "temperature_range": "не указано", "formulation": "кинетиновая обработка дисков"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "17006800", "year": 2007, "verified": true, "paper_type": "mechanistic", "doi": "10.1055/s-2006-924347", "oa_url": null}],
+          "quote": "indolylacetic acid and kinetin promoted an increase in chlorophyll content"
+        },
+        {
+          "type": "effect",
+          "value": "Цитокинины (включая кинетин в классе цитокининов) кооперативно со светом регулируют синтез MGDG при позеленении семядолей огурца (в опыте использован бензиладенин)",
+          "context": "Семядоли Cucumis sativus, развитие хлоропластов; в работе применён синтетический цитокинин (бензиладенин), кинетин — родственный цитокинин",
+          "dosage_normalized": {"original": "не указана (для BA)", "ppm_equivalent": null, "molar_mass_used_g_mol": 215.21, "conversion_source": null, "note": "работа по цитокинину BA, не кинетину напрямую"},
+          "conditions": {"stage": "семядоли, этиоляция→свет", "bbch_stages": [], "temperature_range": "не указано", "formulation": "цитокинин (BA)"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "inferred",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "12941877", "year": 2003, "verified": true, "paper_type": "mechanistic", "doi": "10.1093/pcp/pcg110", "oa_url": null}],
+          "quote": "Light and cytokinin play a co-operative role in MGDG synthesis in greening cucumber cotyledons"
+        }
+      ],
+      "gap": "Данные по огурцу носят преимущественно механистический характер (развитие хлоропластов, регреенинг, сенесценция) на изолированных тканях/семядолях in vitro. Полевых работ с листовым опрыскиванием кинетином 10-50 ppm на огурце не найдено.",
+      "related_evidence": []
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 6, "europe_pmc": 0, "culture_mentioned": 6},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Кинетин (0.5 мг/л = 0.5 ppm) в среде для микроразмножения улучшает ростовые параметры побегов и даёт генетически стабильные растения нескольких сортов клубники",
+          "context": "In vitro микроразмножение клубники из меристем; среда с 0.5 мг/л кинетина",
+          "dosage_normalized": {"original": "0.5 mg/L", "ppm_equivalent": 0.5, "molar_mass_used_g_mol": 215.21, "conversion_source": "0.5 mg/L ≈ 0.5 ppm (водный раствор)", "note": "0.5 мг/л = 0.5 ppm"},
+          "conditions": {"stage": "микроразмножение, индукция побегов in vitro", "bbch_stages": [], "temperature_range": "не указано", "formulation": "среда MS с кинетином"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "31011361", "year": 2019, "verified": true, "paper_type": "trial_in_vitro", "doi": "10.1186/s13007-019-0421-0", "oa_url": null}],
+          "quote": "shoot induction was successful only in the meristems cultured in the medium without Kn and the medium containing 0.5 mg L-1 Kn"
+        },
+        {
+          "type": "method",
+          "value": "Смесь ИУК + ГК3 + кинетин (3×10⁻⁴ M) на рецептакулум стимулирует флоэмный транспорт сахарозы и фосфата к рецептакулуму клубники (после удаления семянок)",
+          "context": "Плоды клубники сорта Talisman, рецептакулум обработан гормональной смесью",
+          "dosage_normalized": {"original": "3×10⁻⁴ M (смесь ИУК+ГК3+кинетина)", "ppm_equivalent": 64.6, "molar_mass_used_g_mol": 215.21, "conversion_source": "3×10⁻⁴ M × 215.21 = 64.6 мг/л (кинетиновая доля в смеси)", "note": "кинетин — лишь компонент смеси"},
+          "conditions": {"stage": "14 дней после опыления, рецептакулум", "bbch_stages": [], "temperature_range": "не указано", "formulation": "гормональная смесь на рецептакулум"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "24272726", "year": 1982, "verified": true, "paper_type": "mechanistic", "doi": "10.1007/BF00392770", "oa_url": null}],
+          "quote": "the receptacles were treated for 3 d with a mixture of indoleacetic acid (IAA), gibberellic acid (GA3) and kinetin at a concentration of 3·10(-4) M"
+        }
+      ],
+      "gap": "Нет данных о листовом опрыскивании кинетином для задержки сенесценции листьев клубники в полевых условиях. Имеющиеся работы — in vitro микроразмножение (0.5 мг/л) и механистические исследования транспорта ассимилятов. CSV-заявка 10-50 ppm foliar spray на клубнике не подтверждена.",
+      "related_evidence": []
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "**Нет данных.** Только из литературы; в доступных аннотациях токсикологические параметры кинетина (ED50/TD50, стойкость в почве) не найдены."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества"
+  },
+  "contraindications": [],
+  "conflicts": [
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "Apply 10-50 ppm foliar spray",
+      "literature_summary": "Кинетин как анти-сенесцентный агент подтверждён на томате (задержка сенесценции, защита от стресса) и огурце (регреенинг, хлорофилл-ретенция), но рабочие дозы в литературе значительно ниже CSV: 10 µM ≈ 2.15 ppm (PMID:30180173), 0.5 мг/л на клубнике (PMID:31011361). Прямых полевых исследований именно 10-50 ppm листового опрыскивания на трёх фокусных культурах не найдено.",
+      "severity": "medium",
+      "sources": ["PMID:30180173", "PMID:31011361"]
+    },
+    {
+      "csv_field": "Expected_Result",
+      "csv_value": "Delayed leaf senescence, maintained green color",
+      "literature_summary": "Задержка сенесценции и сохранение зелёной окраски подтверждаются: на томате кинетин повышает хлорофилл/каротиноиды и защищает от стрессов (PMID:31838316, 30180173), на огурце вызывает регреенинг и повышение хлорофилла (PMID:17006800). Однако данные в основном лабораторные/вегетационные и механистические, а не полевые foliar-применения.",
+      "severity": "low",
+      "sources": ["PMID:31838316", "PMID:30180173", "PMID:17006800"]
+    },
+    {
+      "csv_field": "Efficacy_Level",
+      "csv_value": "HIGH",
+      "literature_summary": "Эффективность кинетина как анти-стрессового/анти-сенесцентного агента подтверждена в контролируемых опытах (томат, огурец), но отсутствие полевых foliar-исследований в диапазоне 10-50 ppm на трёх культурах не позволяет подтвердить HIGH-эффективность именно заявленным способом и дозой.",
+      "severity": "medium",
+      "sources": ["PMID:30180173", "PMID:31838316"]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Анти-сенесцентное и хлорофилл-ретенционное действие кинетина подтверждено литературой на томате (сильные лабораторные/вегетационные опыты, дозы в µM) и огурце (механистически), на клубнике — только микроразмножение. Однако CSV-заявка «10-50 ppm foliar spray» не подтверждена напрямую: рабочие концентрации в литературе (10 µM ≈ 2.15 ppm; 0.5 мг/л) ниже и применены иными способами (экзогенный раствор, in vitro). Таксономия подтверждена (цитокинин, цитокининовая сигнализация)."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "Кинетин — искусственный цитокинин (N6-фурфуриладенин), класс цитокининов подтверждён (PMID:30180173 'a cytokinin', PMID:29125985 'one of the artificial cytokinins'). Механизм — цитокининовая сигнализация (задержка сенесценции, хлорофилл-ретенция, анти-стресс) подтверждён. Исправления не требуются."
+  },
+  "sources_index": [
+    "PMID:30180173",
+    "PMID:31838316",
+    "PMID:35258726",
+    "PMID:29125985",
+    "PMID:18563516",
+    "PMID:17006800",
+    "PMID:12941877",
+    "PMID:31011361",
+    "PMID:24272726"
+  ]
+}
+```
+
+**Краткое резюме (для оркестратора):**
+
+- **Таксономия подтверждена**: кинетин — цитокинин (`cytokinins`), механизм цитокининовая сигнализация (`cytokinin_signaling`). Исправлений нет.
+- **CSV-заявка «10-50 ppm foliar spray, delayed senescence»** подтверждается **частично**: анти-сенесцентное/хлорофилл-ретенционное действие кинетина есть (томат — защита от NaCl/Cd/UVC-стресса с ростом хлорофилла; огурец — регреенинг, хлорофилл-ретенция), но рабочие дозы в литературе значительно ниже CSV (10 µM ≈ **2.15 ppm**, а не 10-50 ppm) и применены не как полевое опрыскивание 10-50 ppm. На клубнике — только in vitro микроразмножение (0.5 мг/л).
+- **Статус**: `partial` (evidence_level `moderate`). Томат — самая сильная доказательная база, огурец — механистическая, клубника — ограниченная (нет полевых foliar-данных).
+- **Europe PMC** был недоступен (IPv6) — помечен в `searches.failed` с `retry_by_orchestrator: true`.
