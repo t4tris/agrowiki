@@ -5,7 +5,7 @@ last_updated: 2026-08-06
 
 # Task Queue
 
-## 🔴 HIGH PRIORITY (28)
+## 🔴 HIGH PRIORITY (27)
 - [ ] VALIDATE: 1-MCP × 3 культуры
 - [ ] VALIDATE: 4-CPA × 3 культуры
 - [x] VALIDATE: 6-BAP × 3 культуры → [[wiki/substances/6-BAP]] (partial/strong, 2026-08-06)
@@ -13,7 +13,7 @@ last_updated: 2026-08-06
 - [ ] VALIDATE: Carbendazim × 3 культуры
 - [x] VALIDATE: Chlormequat Chloride × 3 культуры → [[wiki/substances/Chlormequat Chloride]] (partial/moderate, 2026-08-06)
 - [ ] VALIDATE: Cyanamide × 3 культуры
-- [ ] VALIDATE: DA-6 × 3 культуры
+- [x] VALIDATE: DA-6 × 3 культуры → [[wiki/substances/DA-6]] (partial/moderate, 2026-08-06; первый артефакт контракта v1.5 с source_type=openalex)
 - [ ] VALIDATE: DMSO × 3 культуры
 - [x] VALIDATE: Ethephon × 3 культуры → [[wiki/substances/Ethephon]] (corrected/strong, 2026-08-06)
 - [ ] VALIDATE: Ethylene × 3 культуры

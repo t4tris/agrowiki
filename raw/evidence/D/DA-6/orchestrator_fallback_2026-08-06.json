@@ -1,0 +1,736 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "DA-6",
+    "csv_name": "diethyl aminoethyl hexanoate"
+  },
+  "searches": [
+    {
+      "query": "(diethyl aminoethyl hexanoate OR DA-6) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 63,
+      "results": [
+        {
+          "id": "42362668",
+          "source": "MED",
+          "title": "Nano-emulsion of garlic oil extracts: development, characterization and nematicidal efficacy against Meloidogyne incognita on tomato.",
+          "first_author": "Radwan MA",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-57476-4",
+          "pmid": "42362668"
+        },
+        {
+          "id": "PPR1151986",
+          "source": "PPR",
+          "title": "Nano-emulsion of Garlic Oil Extracts: Development, Characterization and Nematicidal Efficacy against Meloidogyne incognita on Tomato",
+          "first_author": "Radwan MA",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-8612767/v1",
+          "pmid": null
+        },
+        {
+          "id": "41970271",
+          "source": "MED",
+          "title": "Zn-based seed priming enhances drought resistance during germination of &lt;i&gt;Lespedeza potaninii&lt;/i&gt;: physiological and transcriptomic insights.",
+          "first_author": "Huo XW",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.21054",
+          "pmid": "41970271"
+        },
+        {
+          "id": "39825233",
+          "source": "MED",
+          "title": "Exogenous diethyl aminoethyl hexanoate alleviates the damage caused by low-temperature stress in Phaseolus vulgaris L. seedlings through photosynthetic and antioxidant systems.",
+          "first_author": "Bai Y",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06083-y",
+          "pmid": "39825233"
+        },
+        {
+          "id": "37020215",
+          "source": "MED",
+          "title": "Effect of plant growth regulators DA-6 and COS on drought tolerance of pineapple through bromelain and oxidative stress.",
+          "first_author": "Huang X",
+          "pub_year": "2023",
+          "doi": "10.1186/s12870-023-04200-3",
+          "pmid": "37020215"
+        },
+        {
+          "id": "36176681",
+          "source": "MED",
+          "title": "Editorial: Hormonal crosstalk on the regulation of stress responses.",
+          "first_author": "Kim TH",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.1022143",
+          "pmid": "36176681"
+        },
+        {
+          "id": "40260434",
+          "source": "MED",
+          "title": "Revelation of mechanisms associated with strengthening plant cold tolerance through using exogenous substances.",
+          "first_author": "Feng D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1478692",
+          "pmid": "40260434"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "41369432",
+          "source": "MED",
+          "title": "Nanotechnology and Agricultural Sustainability: A Review.",
+          "first_author": "Zeng S",
+          "pub_year": "2025",
+          "doi": "10.3390/nano15231755",
+          "pmid": "41369432"
+        },
+        {
+          "id": "33613581",
+          "source": "MED",
+          "title": "Exogenous DA-6 Improves the Low Night Temperature Tolerance of Tomato Through Regulating Cytokinin.",
+          "first_author": "Lu J",
+          "pub_year": "2020",
+          "doi": "10.3389/fpls.2020.599111",
+          "pmid": "33613581"
+        },
+        {
+          "id": "40781505",
+          "source": "MED",
+          "title": "Pyroligneous acid as a multifunctional biostimulant enhances microalgal growth and soil beneficial metabolites for sustainable agriculture.",
+          "first_author": "Abinandan S",
+          "pub_year": "2025",
+          "doi": "10.1007/s11274-025-04514-4",
+          "pmid": "40781505"
+        },
+        {
+          "id": "42213848",
+          "source": "MED",
+          "title": "Excess nitric oxide alters cellular pH to restrict salicylic acid movement and systemic immunity.",
+          "first_author": "Xia F",
+          "pub_year": "2026",
+          "doi": "10.1126/sciadv.adz4776",
+          "pmid": "42213848"
+        },
+        {
+          "id": "35668812",
+          "source": "MED",
+          "title": "Enhanced Adaptability to Limited Water Supply Regulated by Diethyl Aminoethyl Hexanoate (DA-6) Associated With Lipidomic Reprogramming in Two White Clover Genotypes.",
+          "first_author": "Hassan MJ",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.879331",
+          "pmid": "35668812"
+        },
+        {
+          "id": "32353025",
+          "source": "MED",
+          "title": "Exogenous diethyl aminoethyl hexanoate ameliorates low temperature stress by improving nitrogen metabolism in maize seedlings.",
+          "first_author": "Zhang J",
+          "pub_year": "2020",
+          "doi": "10.1371/journal.pone.0232294",
+          "pmid": "32353025"
+        },
+        {
+          "id": "35956492",
+          "source": "MED",
+          "title": "Seed Priming with Chitosan Improves Germination Characteristics Associated with Alterations in Antioxidant Defense and Dehydration-Responsive Pathway in White Clover under Water Stress.",
+          "first_author": "Ling Y",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11152015",
+          "pmid": "35956492"
+        },
+        {
+          "id": "41929844",
+          "source": "MED",
+          "title": "Recent advances in metal-organic framework as nanocarriers for pesticide delivery.",
+          "first_author": "Yang F",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1776360",
+          "pmid": "41929844"
+        },
+        {
+          "id": "31324148",
+          "source": "MED",
+          "title": "Transcriptome analysis reveals the mechanism by which spraying diethyl aminoethyl hexanoate after anthesis regulates wheat grain filling.",
+          "first_author": "Wen D",
+          "pub_year": "2019",
+          "doi": "10.1186/s12870-019-1925-5",
+          "pmid": "31324148"
+        },
+        {
+          "id": "39789073",
+          "source": "MED",
+          "title": "Chemical composition and insecticidal activity of Mentha rotundifolia and Chrysanthemum coronarium essential oils against the tomato leaf miner, Tuta absoluta.",
+          "first_author": "Farial K",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-85606-x",
+          "pmid": "39789073"
+        },
+        {
+          "id": "39273343",
+          "source": "MED",
+          "title": "Transcriptomic and Physiological Studies Unveil that Brassinolide Maintains the Balance of Maize's Multiple Metabolisms under Low-Temperature Stress.",
+          "first_author": "Zhao X",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25179396",
+          "pmid": "39273343"
+        },
+        {
+          "id": "29982626",
+          "source": "MED",
+          "title": "DA-6 promotes germination and seedling establishment from aged soybean seeds by mediating fatty acid metabolism and glycometabolism.",
+          "first_author": "Zhou W",
+          "pub_year": "2019",
+          "doi": "10.1093/jxb/ery247",
+          "pmid": "29982626"
+        },
+        {
+          "id": "33958696",
+          "source": "MED",
+          "title": "Determination and dietary risk assessment of 284 pesticide residues in local fruit cultivars in Shanghai, China.",
+          "first_author": "Zhang Y",
+          "pub_year": "2021",
+          "doi": "10.1038/s41598-021-89204-5",
+          "pmid": "33958696"
+        },
+        {
+          "id": "36293104",
+          "source": "MED",
+          "title": "Metabolic Regulation and Lipidomic Remodeling in Relation to Spermidine-induced Stress Tolerance to High Temperature in Plants.",
+          "first_author": "Li Z",
+          "pub_year": "2022",
+          "doi": "10.3390/ijms232012247",
+          "pmid": "36293104"
+        },
+        {
+          "id": "38535302",
+          "source": "MED",
+          "title": "5-ALA, DTA-6, and Nitrogen Mitigate NaCl Stress by Promoting Photosynthesis and Carbon Metabolism in Rice Seedlings.",
+          "first_author": "Wang Y",
+          "pub_year": "2024",
+          "doi": "10.3390/metabo14030142",
+          "pmid": "38535302"
+        },
+        {
+          "id": "39949812",
+          "source": "MED",
+          "title": "Review of <i>Astragalus membranaceus</i> polysaccharides: Extraction process, structural features, bioactivities and applications.",
+          "first_author": "Tian H",
+          "pub_year": "2025",
+          "doi": "10.1016/j.chmed.2024.09.004",
+          "pmid": "39949812"
+        },
+        {
+          "id": "38251263",
+          "source": "MED",
+          "title": "Mycotoxins-Imprinted Polymers: A State-of-the-Art Review.",
+          "first_author": "Cavalera S",
+          "pub_year": "2024",
+          "doi": "10.3390/toxins16010047",
+          "pmid": "38251263"
+        }
+      ]
+    },
+    {
+      "query": "(diethyl aminoethyl hexanoate OR DA-6) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR1151986",
+          "source": "PPR",
+          "title": "Nano-emulsion of Garlic Oil Extracts: Development, Characterization and Nematicidal Efficacy against Meloidogyne incognita on Tomato",
+          "first_author": "Radwan MA",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-8612767/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(diethyl aminoethyl hexanoate OR DA-6) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 65,
+      "results": [
+        {
+          "id": "40475825",
+          "source": "MED",
+          "title": "Comparative study of intelligent sensory technologies combined multiple metabolomics in evaluating sensory attributes and health profiles across different grades and varieties of green tea-processed mulberry leaf tea.",
+          "first_author": "Lin J",
+          "pub_year": "2025",
+          "doi": "10.1016/j.fochx.2025.102518",
+          "pmid": "40475825"
+        },
+        {
+          "id": "40260434",
+          "source": "MED",
+          "title": "Revelation of mechanisms associated with strengthening plant cold tolerance through using exogenous substances.",
+          "first_author": "Feng D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1478692",
+          "pmid": "40260434"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "40781505",
+          "source": "MED",
+          "title": "Pyroligneous acid as a multifunctional biostimulant enhances microalgal growth and soil beneficial metabolites for sustainable agriculture.",
+          "first_author": "Abinandan S",
+          "pub_year": "2025",
+          "doi": "10.1007/s11274-025-04514-4",
+          "pmid": "40781505"
+        },
+        {
+          "id": "40104113",
+          "source": "MED",
+          "title": "A combination of systemic mannitol and mannitol modified polyester nanoparticles for caveolae-mediated gene delivery to the brain.",
+          "first_author": "Gilbert BR",
+          "pub_year": "2025",
+          "doi": "10.1016/j.omtn.2025.102480",
+          "pmid": "40104113"
+        },
+        {
+          "id": "41844728",
+          "source": "MED",
+          "title": "Regulating female ear morphogenesis in maize by uniconazole and 5-aminolevulinic acid for yield improvement.",
+          "first_author": "Xu L",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-41685-y",
+          "pmid": "41844728"
+        },
+        {
+          "id": "41369432",
+          "source": "MED",
+          "title": "Nanotechnology and Agricultural Sustainability: A Review.",
+          "first_author": "Zeng S",
+          "pub_year": "2025",
+          "doi": "10.3390/nano15231755",
+          "pmid": "41369432"
+        },
+        {
+          "id": "39273343",
+          "source": "MED",
+          "title": "Transcriptomic and Physiological Studies Unveil that Brassinolide Maintains the Balance of Maize's Multiple Metabolisms under Low-Temperature Stress.",
+          "first_author": "Zhao X",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25179396",
+          "pmid": "39273343"
+        },
+        {
+          "id": "41614218",
+          "source": "MED",
+          "title": "Interplay between nuclear survivin and the PRC2 complex and its impact on H3K27me3-directed transcriptional repression.",
+          "first_author": "Vaidya AD",
+          "pub_year": "2026",
+          "doi": "10.1242/jcs.264572",
+          "pmid": "41614218"
+        },
+        {
+          "id": "40342911",
+          "source": "MED",
+          "title": "Integrated widely targeted metabolomics and flavoromics reveal processing-driven dynamic changes in functional metabolites of &lt;i&gt;Eucommia ulmoides&lt;/i&gt; leaf tea.",
+          "first_author": "Lin Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.fochx.2025.102434",
+          "pmid": "40342911"
+        },
+        {
+          "id": "34681240",
+          "source": "MED",
+          "title": "Optimization of Synthesis of the Amino Lipid ECO for Effective Delivery of Nucleic Acids.",
+          "first_author": "Schilb AL",
+          "pub_year": "2021",
+          "doi": "10.3390/ph14101016",
+          "pmid": "34681240"
+        },
+        {
+          "id": "41592217",
+          "source": "MED",
+          "title": "Polyanion Chemistry Engineers Ternary RNA Nanoparticle Structure/Function from the Inside-Out.",
+          "first_author": "Hu L",
+          "pub_year": "2026",
+          "doi": "10.1021/acsnano.5c19683",
+          "pmid": "41592217"
+        },
+        {
+          "id": "36293104",
+          "source": "MED",
+          "title": "Metabolic Regulation and Lipidomic Remodeling in Relation to Spermidine-induced Stress Tolerance to High Temperature in Plants.",
+          "first_author": "Li Z",
+          "pub_year": "2022",
+          "doi": "10.3390/ijms232012247",
+          "pmid": "36293104"
+        },
+        {
+          "id": "33615675",
+          "source": "MED",
+          "title": "Mannosylated Cationic Copolymers for Gene Delivery to Macrophages.",
+          "first_author": "Lopukhov AV",
+          "pub_year": "2021",
+          "doi": "10.1002/mabi.202000371",
+          "pmid": "33615675"
+        },
+        {
+          "id": "39038808",
+          "source": "MED",
+          "title": "A Comprehensive &lt;i&gt;In Vitro&lt;/i&gt; Characterization of a New Class of Indole-Based Compounds Developed as Selective Haspin Inhibitors.",
+          "first_author": "Vestuto V",
+          "pub_year": "2024",
+          "doi": "10.1021/acs.jmedchem.4c00718",
+          "pmid": "39038808"
+        },
+        {
+          "id": "35265396",
+          "source": "MED",
+          "title": "Growth regulators promote soybean productivity: a review.",
+          "first_author": "Amoanimaa-Dede H",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.12556",
+          "pmid": "35265396"
+        },
+        {
+          "id": "35392519",
+          "source": "MED",
+          "title": "Metabolites Reprogramming and Na<sup>+</sup>/K<sup>+</sup> Transportation Associated With Putrescine-Regulated White Clover Seed Germination and Seedling Tolerance to Salt Toxicity.",
+          "first_author": "Cheng B",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.856007",
+          "pmid": "35392519"
+        },
+        {
+          "id": "36421153",
+          "source": "MED",
+          "title": "A Comprehensive Review on Upconversion Nanomaterials-Based Fluorescent Sensor for Environment, Biology, Food and Medicine Applications.",
+          "first_author": "Jiang W",
+          "pub_year": "2022",
+          "doi": "10.3390/bios12111036",
+          "pmid": "36421153"
+        },
+        {
+          "id": "39382224",
+          "source": "MED",
+          "title": "Pentathiepins are an understudied molecular prism of biological activities.",
+          "first_author": "Pozzetti L",
+          "pub_year": "2024",
+          "doi": "10.1002/ardp.202400646",
+          "pmid": "39382224"
+        },
+        {
+          "id": "40019206",
+          "source": "MED",
+          "title": "Targeting TUBG1 in RB1-negative tumors.",
+          "first_author": "Lindström L",
+          "pub_year": "2025",
+          "doi": "10.1096/fj.202403180rr",
+          "pmid": "40019206"
+        },
+        {
+          "id": "34327311",
+          "source": "MED",
+          "title": "Stable Retinoid Analogue Targeted Dual pH-Sensitive Smart Lipid ECO/pDNA Nanoparticles for Specific Gene Delivery in the Retinal Pigment Epithelium.",
+          "first_author": "Sun D",
+          "pub_year": "2020",
+          "doi": "10.1021/acsabm.0c00130",
+          "pmid": "34327311"
+        },
+        {
+          "id": "36183275",
+          "source": "MED",
+          "title": "Developing Photoaffinity Probes for Dopamine Receptor D<sub>2</sub> to Determine Targets of Parkinson's Disease Drugs.",
+          "first_author": "Kim ST",
+          "pub_year": "2022",
+          "doi": "10.1021/acschemneuro.2c00544",
+          "pmid": "36183275"
+        },
+        {
+          "id": "32784605",
+          "source": "MED",
+          "title": "Rapid Multi-Residue Detection Methods for Pesticides and Veterinary Drugs.",
+          "first_author": "Jia M",
+          "pub_year": "2020",
+          "doi": "10.3390/molecules25163590",
+          "pmid": "32784605"
+        },
+        {
+          "id": "33587080",
+          "source": "MED",
+          "title": "Tumor-targeted gene therapy with lipid nanoparticles inhibits tumor-associated adipocytes and remodels the immunosuppressive tumor microenvironment in triple-negative breast cancer.",
+          "first_author": "Liu Y",
+          "pub_year": "2021",
+          "doi": "10.1039/d0nh00588f",
+          "pmid": "33587080"
+        },
+        {
+          "id": "35668826",
+          "source": "MED",
+          "title": "Phosphonates and Phosphonate Prodrugs in Medicinal Chemistry: Past Successes and Future Prospects.",
+          "first_author": "Krečmerová M",
+          "pub_year": "2022",
+          "doi": "10.3389/fchem.2022.889737",
+          "pmid": "35668826"
+        }
+      ]
+    },
+    {
+      "query": "(diethyl aminoethyl hexanoate OR DA-6) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(diethyl aminoethyl hexanoate OR DA-6) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 23,
+      "results": [
+        {
+          "id": "39394568",
+          "source": "MED",
+          "title": "Diethyl aminoethyl hexanoate ameliorates salt tolerance associated with ion transport, osmotic adjustment, and metabolite reprograming in white clover.",
+          "first_author": "Hassan MJ",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05657-6",
+          "pmid": "39394568"
+        },
+        {
+          "id": "39464286",
+          "source": "MED",
+          "title": "Diethyl aminoethyl hexanoate reprogramed accumulations of organic metabolites associated with water balance and metabolic homeostasis in white clover under drought stress.",
+          "first_author": "Hassan MJ",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1430752",
+          "pmid": "39464286"
+        },
+        {
+          "id": "41929844",
+          "source": "MED",
+          "title": "Recent advances in metal-organic framework as nanocarriers for pesticide delivery.",
+          "first_author": "Yang F",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1776360",
+          "pmid": "41929844"
+        },
+        {
+          "id": "35668812",
+          "source": "MED",
+          "title": "Enhanced Adaptability to Limited Water Supply Regulated by Diethyl Aminoethyl Hexanoate (DA-6) Associated With Lipidomic Reprogramming in Two White Clover Genotypes.",
+          "first_author": "Hassan MJ",
+          "pub_year": "2022",
+          "doi": "10.3389/fpls.2022.879331",
+          "pmid": "35668812"
+        },
+        {
+          "id": "34394164",
+          "source": "MED",
+          "title": "Diethyl Aminoethyl Hexanoate Priming Ameliorates Seed Germination via Involvement in Hormonal Changes, Osmotic Adjustment, and Dehydrins Accumulation in White Clover Under Drought Stress.",
+          "first_author": "Hassan MJ",
+          "pub_year": "2021",
+          "doi": "10.3389/fpls.2021.709187",
+          "pmid": "34394164"
+        },
+        {
+          "id": "40260434",
+          "source": "MED",
+          "title": "Revelation of mechanisms associated with strengthening plant cold tolerance through using exogenous substances.",
+          "first_author": "Feng D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1478692",
+          "pmid": "40260434"
+        },
+        {
+          "id": "33958696",
+          "source": "MED",
+          "title": "Determination and dietary risk assessment of 284 pesticide residues in local fruit cultivars in Shanghai, China.",
+          "first_author": "Zhang Y",
+          "pub_year": "2021",
+          "doi": "10.1038/s41598-021-89204-5",
+          "pmid": "33958696"
+        },
+        {
+          "id": "36003318",
+          "source": "MED",
+          "title": "Wool Wax Extraction From Washing Effluent and Effect on Olea europea Germination and Growth.",
+          "first_author": "Aissani N",
+          "pub_year": "2022",
+          "doi": "10.1177/15593258221121202",
+          "pmid": "36003318"
+        },
+        {
+          "id": "35265396",
+          "source": "MED",
+          "title": "Growth regulators promote soybean productivity: a review.",
+          "first_author": "Amoanimaa-Dede H",
+          "pub_year": "2022",
+          "doi": "10.7717/peerj.12556",
+          "pmid": "35265396"
+        },
+        {
+          "id": "32784605",
+          "source": "MED",
+          "title": "Rapid Multi-Residue Detection Methods for Pesticides and Veterinary Drugs.",
+          "first_author": "Jia M",
+          "pub_year": "2020",
+          "doi": "10.3390/molecules25163590",
+          "pmid": "32784605"
+        },
+        {
+          "id": "36421153",
+          "source": "MED",
+          "title": "A Comprehensive Review on Upconversion Nanomaterials-Based Fluorescent Sensor for Environment, Biology, Food and Medicine Applications.",
+          "first_author": "Jiang W",
+          "pub_year": "2022",
+          "doi": "10.3390/bios12111036",
+          "pmid": "36421153"
+        },
+        {
+          "id": "39408411",
+          "source": "MED",
+          "title": "Hazardous Materials from Threats to Safety: Molecularly Imprinted Polymers as Versatile Safeguarding Platforms.",
+          "first_author": "Gavrila AM",
+          "pub_year": "2024",
+          "doi": "10.3390/polym16192699",
+          "pmid": "39408411"
+        },
+        {
+          "id": "38202769",
+          "source": "MED",
+          "title": "Polymeric Materials in Speciation Analysis Based on Solid-Phase Extraction.",
+          "first_author": "Dakova I",
+          "pub_year": "2023",
+          "doi": "10.3390/molecules29010187",
+          "pmid": "38202769"
+        },
+        {
+          "id": "31480617",
+          "source": "MED",
+          "title": "Polyamine Induction in Postharvest Banana Fruits in Response to NO Donor SNP Occurs via l-Arginine Mediated Pathway and Not via Competitive Diversion of S-Adenosyl-l-Methionine.",
+          "first_author": "Lokesh V",
+          "pub_year": "2019",
+          "doi": "10.3390/antiox8090358",
+          "pmid": "31480617"
+        },
+        {
+          "id": "11522613",
+          "source": "MED",
+          "title": "NO-induced relaxation of labouring and non-labouring human myometrium is not mediated by cyclic GMP.",
+          "first_author": "Buxton IL",
+          "pub_year": "2001",
+          "doi": "10.1038/sj.bjp.0704226",
+          "pmid": "11522613"
+        },
+        {
+          "id": "PMC7463038",
+          "source": "PMC",
+          "title": "Abstracts TPS",
+          "first_author": null,
+          "pub_year": "2019",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "PMC7123364",
+          "source": "PMC",
+          "title": "Volume 6 Indexes",
+          "first_author": "Zhou J",
+          "pub_year": "2010",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "16558029",
+          "source": "MED",
+          "title": "Characteristics of cytophilic antibody in the mouse.",
+          "first_author": "Brown GL",
+          "pub_year": "1971",
+          "doi": "10.1128/iai.3.5.637-641.1971",
+          "pmid": "16558029"
+        },
+        {
+          "id": "16345183",
+          "source": "MED",
+          "title": "Receptor site on clover and alfalfa roots for Rhizobium.",
+          "first_author": "Dazzo FB",
+          "pub_year": "1977",
+          "doi": "10.1128/aem.33.1.132-136.1977",
+          "pmid": "16345183"
+        },
+        {
+          "id": "55100",
+          "source": "MED",
+          "title": "Cross-reactive antigens and lectin as determinants of symbiotic specificity in the Rhizobium-clover association.",
+          "first_author": "Dazzo FB",
+          "pub_year": "1975",
+          "doi": "10.1128/am.30.6.1017-1033.1975",
+          "pmid": "55100"
+        },
+        {
+          "id": "PMC7148975",
+          "source": "PMC",
+          "title": "Cumulative general subject index volumes 1-30",
+          "first_author": null,
+          "pub_year": "2005",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "8354183",
+          "source": "MED",
+          "title": "The fifth plot of the Carcinogenic Potency Database: results of animal bioassays published in the general literature through 1988 and by the National Toxicology Program through 1989.",
+          "first_author": "Gold LS",
+          "pub_year": "1993",
+          "doi": "10.1289/ehp.9310065",
+          "pmid": "8354183"
+        },
+        {
+          "id": "8741772",
+          "source": "MED",
+          "title": "Sixth plot of the carcinogenic potency database: results of animal bioassays published in the General Literature 1989 to 1990 and by the National Toxicology Program 1990 to 1993.",
+          "first_author": "Gold LS",
+          "pub_year": "1995",
+          "doi": "10.1289/ehp.95103s83",
+          "pmid": "8741772"
+        }
+      ]
+    },
+    {
+      "query": "(diethyl aminoethyl hexanoate OR DA-6) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1151986",
+      "source": "PPR",
+      "title": "Nano-emulsion of Garlic Oil Extracts: Development, Characterization and Nematicidal Efficacy against Meloidogyne incognita on Tomato",
+      "first_author": "Radwan MA",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-8612767/v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

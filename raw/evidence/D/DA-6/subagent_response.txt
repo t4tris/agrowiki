@@ -1,0 +1,269 @@
+Исследование завершено. Все данные собраны и проверены: PubChem (CID 14795463, CAS 10369-83-2 — заданный 20546-01-0 PubChem не подтверждает), PubMed/Europe PMC/OpenAlex по всем трём культурам, DOI проверены через Crossref. Итоговый отчёт по контракту v1.5:
+
+```json
+{
+  "contract_version": "1.5",
+  "substance": {
+    "code": "DA-6",
+    "csv_name": "Diethylaminoethyl hexanoate",
+    "queried_name": "diethyl aminoethyl hexanoate"
+  },
+  "searches": {
+    "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "pubmed_general", "europepmc_tomato", "europepmc_cucumber", "europepmc_strawberry", "openalex", "pubchem", "crossref"],
+    "failed": [],
+    "queries_used": [
+      "(\"diethyl aminoethyl hexanoate\"[Title/Abstract] OR \"DA-6\"[Title/Abstract]) AND (tomato OR \"Solanum lycopersicum\")",
+      "(\"diethyl aminoethyl hexanoate\"[Title/Abstract] OR \"DA-6\"[Title/Abstract]) AND (cucumber OR \"Cucumis sativus\")",
+      "(\"diethyl aminoethyl hexanoate\"[Title/Abstract] OR \"DA-6\"[Title/Abstract]) AND (strawberry OR \"Fragaria\")",
+      "(\"diethyl aminoethyl hexanoate\"[Title/Abstract] OR \"DA-6\"[Title/Abstract] OR \"diethylaminoethyl hexanoate\"[Title/Abstract])",
+      "TITLE_ABS:\"diethyl aminoethyl hexanoate\" AND TITLE_ABS:tomato",
+      "TITLE_ABS:\"DA-6\" AND (tomato OR lycopersicum)",
+      "TITLE_ABS:\"diethyl aminoethyl hexanoate\" AND (cucumber OR sativus)",
+      "TITLE_ABS:\"DA-6\" AND (cucumber OR sativus)",
+      "TITLE_ABS:\"diethyl aminoethyl hexanoate\" AND (strawberry OR fragaria)",
+      "TITLE_ABS:\"DA-6\" AND (strawberry OR fragaria)",
+      "OpenAlex: diethyl aminoethyl hexanoate cucumber / \"DA-6\" strawberry foliar / \"DA-6\" tomato seedlings / diethyl aminoethyl hexanoate Cucumis",
+      "PubChem: name lookup + synonyms + RegistryID (CID 14795463)"
+    ],
+    "fallback_tries": [
+      {"query": "(\"diethyl aminoethyl hexanoate\"[Title/Abstract] OR \"DA-6\"[Title/Abstract]) AND (cucumber OR \"Cucumis sativus\")", "results": 0},
+      {"query": "TITLE_ABS:\"diethyl aminoethyl hexanoate\" AND (cucumber OR sativus)", "results": 0},
+      {"query": "TITLE_ABS:\"DA-6\" AND (cucumber OR sativus)", "results": 0},
+      {"query": "OpenAlex: diethyl aminoethyl hexanoate cucumber / diethyl aminoethyl hexanoate Cucumis (прямых работ по Cucumis sativus нет)", "results": 0}
+    ]
+  },
+  "identity": {
+    "cas": "10369-83-2",
+    "cid": "14795463",
+    "formula": "C12H25NO2",
+    "iupac": "2-(diethylamino)ethyl hexanoate",
+    "class_confirmed": true,
+    "class_evidence": ["CID:14795463", "PMID:33613581", "DOI:10.1007/s10535-011-0190-8"],
+    "synonyms": ["Diethyl aminoethyl hexanoate", "2-(Diethylamino)ethyl caproate", "Hexanoic acid, 2-(diethylamino)ethyl ester", "DA-6", "DTA-6", "HKL-4", "Anxianzhi"],
+    "synonyms_ru": ["ДА-6", "диэтиламиноэтилгексаноат", "2-(диэтиламино)этилгексаноат"],
+    "molar_mass_g_mol": 215.33,
+    "notes": "CAS 20546-01-0 (указан в задании, широко цитируется в китайской литературе) PubChem НЕ подтверждает (404/NotFound); PubChem CID 14795463 даёт CAS 10369-83-2 как единственный registry-идентификатор. Молярная масса 215.33 г/моль подтверждена PubChem (C12H25NO2)."
+  },
+  "mode_of_action": {
+    "summary": "Синтетический регулятор роста (биостимулятор) широкого действия: стимулирует фотосинтез (синтез хлорофилла через конверсию ALA→PBG и активность ALAD, активность Rubisco/FDPase, фотохимическую активность ФСII: Fv/Fm, ΦPS2, qP), азотный обмен и гормональный баланс (регуляция эндогенных цитокининов, поддержание АБК, индукция CBF-генов), активирует антиоксидантную защиту (SOD, POD, CAT, APX) и осмотическую регуляцию (пролин, растворимые сахара, белки), повышая устойчивость к абиотическим стрессам (низкие температуры, засуха, засоление, Cd, Al).",
+    "evidence": ["PMID:33613581", "DOI:10.3389/fpls.2020.599111", "DOI:10.1007/s10535-011-0190-8", "DOI:10.1186/s12870-019-1925-5", "DOI:10.1093/jxb/ery247", "DOI:10.1016/j.ecoenv.2021.113048"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 1, "europe_pmc": 1, "culture_mentioned": 1},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Фолиарная обработка DA-6 10 mg/L (2 раза/день, 3 дня, стадия 4 листьев) повышает устойчивость томата к стрессу низких ночных температур: активация генов синтеза хлорофилла и фотосистем, рост фотосинтетической активности, регуляция эндогенных цитокининов, стабилизация хлоропластов, снижение окислительного повреждения, поддержание АБК и индукция CBF-генов.",
+          "context": "Рассада томата, стресс низких ночных температур (LNT), тепличный опыт",
+          "dosage_normalized": {"original": "10 mg/L фолиарно, 2×/день 3 дня", "ppm_equivalent": 10, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "рассада, 4 листа", "bbch_stages": [], "temperature_range": "LNT-стресс (ночные низкие температуры)", "formulation": "водный раствор, фолиарно"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"pmid": "33613581", "year": 2021, "verified": true, "paper_type": "trial", "doi": "10.3389/fpls.2020.599111", "oa_url": null}
+          ],
+          "quote": "exogenous DA-6 activates the expression of chlorophyll synthesis and photosystem-related genes, and results in higher photosynthetic activity and chlorophyll production"
+        },
+        {
+          "type": "effect",
+          "value": "При Cd-стрессе 10 mg/L DA-6 увеличивает биомассу корней, стеблей, листьев и побегов; 10-20 mg/L повышают содержание хлорофилла b и общего хлорофилла, активность SOD и POD; 30-40 mg/L не дают эффекта или ингибируют рост. Все концентрации (10-40 mg/L) снижают активность CAT, повышают содержание растворимого белка, снижают Cd в корнях и повышают его в стеблях/листьях/побегах.",
+          "context": "Вегетационный (пот) опыт, рассада томата, кадмиевый стресс",
+          "dosage_normalized": {"original": "0, 10, 20, 30, 40 mg/L", "ppm_equivalent": 10, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов; оптимум 10 mg/L"},
+          "conditions": {"stage": "рассада", "bbch_stages": [], "temperature_range": "", "formulation": "водный раствор (полив/внесение в субстрат)"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"doi": "10.1002/ep.13627", "year": 2021, "verified": true, "paper_type": "trial", "pmid": null, "oa_url": null}
+          ],
+          "quote": "A DA-6 concentration of 10 mg/L increased the biomass of roots, stems, leaves, and shoots, while the other concentrations either had no significant effects or inhibited the growth of tomato seedlings"
+        },
+        {
+          "type": "effect",
+          "value": "При Cd-стрессе фолиарный DA-6 20 mg/L значимо повышает содержание фосфора в корнях (+41.5%) и стеблях (+12.8%); 10 mg/L повышает содержание калия в корнях (+25.4%), стеблях (+10.0%) и побегах (+5.8%) — улучшение минерального питания.",
+          "context": "Пот опыт, сорт 'Zhongza 9', CdCl2 50 мкмоль/л в питательном растворе",
+          "dosage_normalized": {"original": "0, 10, 20, 30, 40 mg/L фолиарно", "ppm_equivalent": 20, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "рассада", "bbch_stages": [], "temperature_range": "", "formulation": "фолиарное опрыскивание"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"doi": "10.1051/e3sconf/202016502003", "year": 2020, "verified": true, "paper_type": "conference", "pmid": null, "oa_url": "https://www.e3s-conferences.org/articles/e3sconf/pdf/2020/25/e3sconf_caes2020_02003.pdf"}
+          ],
+          "quote": "when the DA-6 concentration was 20 mg/L, the phosphorus content in the root and stem of tomato seedlings increased significantly, which were 41.5% and 12.8% higher than the control"
+        },
+        {
+          "type": "effect",
+          "value": "Обработка DA-6 20-40 mg/L повышает холодостойкость рассады томата: снижается отношение свободной/связанной воды, возрастают содержание хлорофилла и активность SOD, POD, APX, содержание растворимых сахаров и белка; содержание MDA снижается на 25.8-34.6%.",
+          "context": "Рассада томата, холодовой стресс",
+          "dosage_normalized": {"original": "20-40 mg/L", "ppm_equivalent": 30, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "рассада", "bbch_stages": [], "temperature_range": "холодовой стресс", "formulation": "водный раствор"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"source_type": "openalex", "id": "OpenAlex:W2378948574", "year": 2007, "verified": true, "verification_method": "openalex_api", "paper_type": "regional_journal", "doi": null, "pmid": null, "oa_url": null}
+          ],
+          "quote": "applications of 20-40 mg·L(-1) hexanoic acid 2-(diethylamino) ethyl ester (DA-6) could efficiently enhance cold resistance in tomato seedlings"
+        }
+      ],
+      "gap": "Нет полевых опытов по урожайности и качеству плодов томата: все работы — стресс-физиология рассады (низкие температуры, кадмий). Данные по товарному урожаю отсутствуют.",
+      "related_evidence": []
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 0},
+      "claims": [],
+      "gap": "Нет данных о применении DA-6 на огурце (Cucumis sativus): PubMed, Europe PMC и OpenAlex не дают ни одной работы по веществу на этой культуре, включая запросы с синонимами и без указания культуры.",
+      "related_evidence": [
+        {"pmid": null, "year": 2026, "claim": "Замачивание семян DA-6 (0.5-2 ммоль/л) улучшает прорастание дыни 'Baishami' (Cucumis melo L.) при NaCl-стрессе: 0.5 ммоль/л повышает всхожесть на 21.28% и потенциал прорастания на 148.81% (POD/CAT ↑, MDA ↓)", "note": "дыня Cucumis melo — ближайший культивируемый родственник огурца; метод — замачивание семян, а не фолиарная обработка"},
+        {"pmid": null, "year": 2025, "claim": "Замачивание семян сладкой дыни (Cucumis melo) в DA-6 20-360 мг/л: 60 мг/л значимо повышает всхожесть, 180 мг/л — высоту растений и ширину листа, 360 мг/л — толщину стебля", "note": "Cucumis melo; эффект зависит от концентрации"},
+        {"pmid": null, "year": 2025, "claim": "Среди биостимуляторов (альгинат, гуматы, DA-6, брассинолид) DA-6 10 мг/л лучше всего стимулировал рост зародышевого корня и гипокотиля дыни при NaCl-стрессе (95.0 и 11.8 мм соответственно)", "note": "Cucumis melo; оптимальная концентрация DA-6 10 мг/л"},
+        {"pmid": null, "year": 2024, "claim": "DTA-6 (=DA-6) в комбинации с 5-ALA и азотом смягчает NaCl-стресс у проростков риса, стимулируя фотосинтез и углеродный обмен", "note": "рис — вне фокусных культур"}
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 1, "europe_pmc": 1, "culture_mentioned": 1},
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Фолиарное опрыскивание DA-6 20 и 30 mg/L поздней осенью значимо повышает чистую скорость фотосинтеза, содержание хлорофилла a и b, активность SOD и CAT, снижает содержание активных форм кислорода и MDA; увеличивает среднюю сухую массу листа, сухую массу побега и корня; отношение корень/побег на 29.9% и 29.3% выше контроля. Концентрация 10 mg/L значимых эффектов не даёт.",
+          "context": "Рассада клубники сорт 'French 3', поздняя осень, поле/теплица",
+          "dosage_normalized": {"original": "10, 20, 30 mg/L фолиарно", "ppm_equivalent": 20, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов; оптимум 20-30 mg/L, 10 mg/L неэффективна"},
+          "conditions": {"stage": "рассада, поздняя осень", "bbch_stages": [], "temperature_range": "позднеосенние условия", "formulation": "фолиарное опрыскивание"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"pmid": "18333446", "year": 2007, "verified": true, "paper_type": "regional_journal", "doi": null, "oa_url": null}
+          ],
+          "quote": "foliar spraying DA-6 of 20 and 30 mg x L(-1) increased the net photosynthetic rate, chlorophyll a and b contents, and SOD and CAT activities significantly, and decreased the reactive oxygen and MDA contents"
+        },
+        {
+          "type": "effect",
+          "value": "Претретмент DA-6 10/20/40 мг/дм³ (мг/л) повышает холодоустойчивость рассады клубники: сохраняются активности SOD, CAT и APX при холодовом стрессе, снижается продукция O2⁻ и H2O2 и перекисное окисление липидов; ускоряется накопление пролина; повышаются Fv/Fm, ΦPS2, qP и чистая скорость фотосинтеза, снижается NPQ.",
+          "context": "Рассада клубники (Fragaria × ananassa), холодовой стресс и отогрев",
+          "dosage_normalized": {"original": "0, 10, 20, 40 mg/dm³ претретмент", "ppm_equivalent": 20, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов; 1 mg/dm³ ≈ 1 mg/L"},
+          "conditions": {"stage": "рассада", "bbch_stages": [], "temperature_range": "холодовой стресс (chilling) и отогрев", "formulation": "претретмент водным раствором"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"doi": "10.1007/s10535-011-0190-8", "year": 2011, "verified": true, "paper_type": "trial", "pmid": null, "oa_url": "http://bp.ueb.cas.cz/doi/10.1007/s10535-011-0190-8.pdf"}
+          ],
+          "quote": "DA-6 pretreatment increases maximum quantum yield of photosystem 2 (Fv/Fm), actual photochemical efficiency of photosystem 2 (ΦPS2), photochemical quenching coefficient (qP) and net photosynthetic rate (PN)"
+        },
+        {
+          "type": "effect",
+          "value": "Фолиарное опрыскивание DA-6 20 mg/L за месяц до сбора урожая повышает содержание хлорофилла в листьях клубники 'Sweet Charlie' (+18% в молодых листьях, +5% в развёрнутых): увеличиваются предшественники хлорофилла PBG и уропорфириноген III, снижается ALA, повышается активность ключевого фермента ALAD (конверсия ALA→PBG).",
+          "context": "Тепличная клубника 'Sweet Charlie', за месяц до сбора ягод",
+          "dosage_normalized": {"original": "20 mg/L фолиарно", "ppm_equivalent": 20, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "за месяц до сбора плодов", "bbch_stages": [], "temperature_range": "теплица", "formulation": "фолиарное опрыскивание"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"source_type": "openalex", "id": "OpenAlex:W2373243300", "year": 2012, "verified": true, "verification_method": "openalex_api", "paper_type": "regional_journal", "doi": null, "pmid": null, "oa_url": null}
+          ],
+          "quote": "DA-6 significantly increased the contents of chlorophyll intermediate products of porphobilinogen (PBG) and uroporphyrinogen (Urogen III), but decreased the chlorophyll precursor of 5-aminolevulinic acid (ALA)"
+        },
+        {
+          "type": "effect",
+          "value": "Фолиарный DA-6 20 mg/L при разной освещённости (100/70/50% солнечного света) повышает у клубники 'Sweet Charlie' скорость фотосинтеза Pn, устьичную проводимость Gs, транспирацию Tr и активности Rubisco, FDPase, SOD, CAT и APX, снижая продукцию O2⁻; эффект наиболее выражен при 50% освещённости.",
+          "context": "Рассада клубники 'Sweet Charlie' при затенении 50-100% света",
+          "dosage_normalized": {"original": "20 mg/L фолиарно", "ppm_equivalent": 20, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "рассада", "bbch_stages": [], "temperature_range": "", "formulation": "фолиарное опрыскивание", "light_sensitivity": true},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"source_type": "openalex", "id": "OpenAlex:W2379311815", "year": 2011, "verified": true, "verification_method": "openalex_api", "paper_type": "regional_journal", "doi": null, "pmid": null, "oa_url": null}
+          ],
+          "quote": "foliar spraying of DA-6 increased the leaf Pn, Gs, Tr and activities of Rubisco, FDPase, SOD, CAT and APX, but reduced the O2- production rate"
+        },
+        {
+          "type": "effect",
+          "value": "Опрыскивание DA-6 10 и 20 mg/L после цветения повышает у клубники чистую скорость фотосинтеза (+7.6% и +16.4% через 14 дней), содержание хлорофилла, реакции Хилла, фотофосфорилирование, активность Mg²⁺-АТФазы и Rubisco (+7.9% и +16.9%); обработка 40 mg/L СНИЖАЕТ скорость фотосинтеза, содержание хлорофилла, фотохимические реакции и активность Rubisco.",
+          "context": "Клубника (Fragaria × ananassa cv. Sleva), после цветения, 14 дней после обработки",
+          "dosage_normalized": {"original": "10, 20, 40 mg/L фолиарно", "ppm_equivalent": 20, "molar_mass_used_g_mol": 215.33, "conversion_source": "PubChem CID 14795463", "note": "ppm ≈ mg/L для водных растворов; 40 mg/L ингибирует"},
+          "conditions": {"stage": "после цветения", "bbch_stages": ["BBCH 61-69"], "temperature_range": "", "formulation": "фолиарное опрыскивание"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [
+            {"source_type": "openalex", "id": "OpenAlex:W2369737323", "year": 2008, "verified": true, "verification_method": "openalex_api", "paper_type": "regional_journal", "doi": null, "pmid": null, "oa_url": null}
+          ],
+          "quote": "The 40 mg·L-1 DA-6 treatment decreased the net photosynthetic rate, chlorophyll content, photochemical reaction and Rubisco activities"
+        }
+      ],
+      "gap": "Нет полевых данных по урожайности ягод и товарному качеству: все работы (2007-2012, региональные журналы) изучают физиологию листьев/рассады (фотосинтез, антиоксиданты, холодоустойчивость).",
+      "related_evidence": []
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "ED50/TD50 и стойкость в почве в литературе не найдены. Дозозависимый эффект: концентрации ≥40 mg/L в отдельных опытах подавляли фотосинтез и рост (клубника, 40 mg/L: W2369737323; томат при Cd-стрессе, 30-40 mg/L: DOI 10.1002/ep.13627)."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null
+  },
+  "contraindications": [],
+  "conflicts": [
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "Apply 10-50 ppm foliar spray",
+      "literature_summary": "Эффективный диапазон подтверждён для 10-30 ppm; верхняя граница CSV-диапазона (40-50 ppm) рискованна: 40 mg/L у клубники снижала Pn, хлорофилл, фотохимические реакции и Rubisco (W2369737323), а у томата при Cd-стрессе 30-40 mg/L не давали эффекта или ингибировали рост (DOI 10.1002/ep.13627).",
+      "severity": "medium",
+      "sources": ["OpenAlex:W2369737323", "DOI:10.1002/ep.13627"]
+    },
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "Apply 10-50 ppm foliar spray",
+      "literature_summary": "Нижняя граница CSV-диапазона (10 ppm) на клубнике (осенняя обработка) значимых эффектов не давала — эффект наблюдался от 20-30 mg/L (PMID 18333446); на томате 10 mg/L была оптимальной (PMID 33613581). Чувствительность к концентрации зависит от культуры и фазы.",
+      "severity": "low",
+      "sources": ["PMID:18333446", "PMID:33613581"]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "CSV-заявка «10-50 ppm фолиарно → устойчивость к стрессу и рост» подтверждена на 2 из 3 культур: томат (4 работы: LNT-, Cd- и холодовой стресс, оптимум 10-20 mg/L) и клубника (5 работ: фотосинтез, хлорофилл, холодоустойчивость, рост, оптимум 10-30 mg/L; 40 mg/L ингибирует). Огурец — no_data (0 работ в PubMed/Europe PMC/OpenAlex; ближайшие — дыня Cucumis melo). Верхняя граница CSV-диапазона (40-50 ppm) литературой не поддерживается (ингибирование). Все работы — стресс-физиология рассады/листьев, полевых опытов по урожайности нет."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family biostimulants_extracts подтверждён: DA-6 — синтетический биостимулятор/регулятор роста (CSV class: Biostimulant; литература: 'synthetic/novel plant growth regulator'). mechanism growth_regulation подтверждён (ростовые и физиологические эффекты, гормональная регуляция — цитокинины, АБК); выраженная стресс-протекторная компонента (холод, засуха, соль, Cd) реализуется через фотосинтез и антиоксидантную защиту, что не требует смены основного слага — secondary: photosynthesis_enhancement, cytokinin_signaling."
+  },
+  "sources_index": [
+    "PMID:33613581", "DOI:10.3389/fpls.2020.599111", "DOI:10.1002/ep.13627",
+    "DOI:10.1051/e3sconf/202016502003", "OpenAlex:W2378948574",
+    "PMID:18333446", "DOI:10.1007/s10535-011-0190-8", "OpenAlex:W2373243300",
+    "OpenAlex:W2379311815", "OpenAlex:W2369737323",
+    "DOI:10.21273/hortsci19560-26", "DOI:10.2478/fhort-2025-0018",
+    "DOI:10.2478/fhort-2025-0026", "DOI:10.3390/metabo14030142"
+  ]
+}
+```
+
+Краткие комментарии к отчёту:
+
+1. **Идентичность:** PubChem подтверждает CID 14795463, C12H25NO2, 215.33 г/моль. CAS из задания (20546-01-0) PubChem **не подтверждает** — у CID зарегистрирован CAS **10369-83-2** (указан в `identity.notes`; 20546-01-0 широко цитируется в китайской литературе).
+2. **Томат — found_verified (4 работы):** Front Plant Sci 2021 (PMID 33613581, доза 10 mg/L из полного текста), Environmental Progress & Sustainable Energy 2021 (Cd-стресс, оптимум 10 мг/л), E3S Web of Conferences 2020 (P/K-питание при Cd), китайский журнал 2007 (холодостойкость 20-40 мг/л).
+3. **Клубника — found_verified (5 работ):** PMID 18333446 (10/20/30 мг/л осенью — прямое попадание в CSV-диапазон), Biologia Plantarum 2011 (DOI, холодоустойчивость), 3 китайские работы (J. China Agric. Univ. 2011/2012, 2008) — все с прочитанными аннотациями, цитируются через OpenAlex ID.
+4. **Огурец — no_data честно:** PubMed 0, Europe PMC 0, OpenAlex 0 прямых работ по Cucumis sativus. В `related_evidence` — 3 работы по дыне *Cucumis melo* (ближайший родственник; замачивание семян 0.5-2 мМ / 20-360 мг/л) + рис (DTA-6).
+5. **Конфликты:** верхняя граница CSV (40-50 ppm) ингибирует фотосинтез/рост (severity medium); нижняя граница 10 ppm неэффективна на клубнике (severity low).
+6. **Europe PMC работал** в этой среде — `searches.failed: []`, fallback оркестратору не нужен. Все 6 DOI проверены через Crossref, оба PMID — через esummary/efetch.
+7. **Вердикт:** `partial` / evidence `moderate` — 2/3 культуры валидированы, но нет полевых данных по урожаю и есть дозовая оговорка. Таксономия `biostimulants_extracts`/`growth_regulation` подтверждена без правок.

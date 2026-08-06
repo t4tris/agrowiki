@@ -184,6 +184,7 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - **`paper_type`** расширен: `+ conference, regional_journal`.
 - **L1-верификация новых типов:** openalex → OpenAlex API (work резолвится); url_verified → HTTP 200; isbn → контрольная цифра ISBN-10/13; label → только с `verified: true` и `verification_method: manual_read` (название работы без идентификатора).
 - **`phi_mrl.required_for` УДАЛЁН из схемы** (служебная строка попадала в карточки) — вместо него: если есть реальные PHI/MRL-факты → `phi_mrl.source` с фактическим источником; иначе null.
+- **`verification_method: manual_read_pending` ЗАПРЕЩЁН в source отчётов сабагентов** (это пометка ОРКЕСТРАТОРА для OpenAlex-недоступности, не сабагента; L1 это проверяет). Если OpenAlex API недоступен — сабагент помечает в `searches.failed`, оркестратор повторяет и при неудаче помечает источник в карточке/артефакте.
 - **Retry-ответы:** повторный запуск сабагента сохраняется как `search_<код>_<дата>_rev2.json` (supersedes) — НЕ коммитить `subagent_response_retry.txt` как артефакт поиска.
 ```json
 {

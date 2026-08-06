@@ -186,6 +186,11 @@ def main(path):
                 vm = s.get('verification_method')
                 if vm is not None and vm not in VERIF_METHODS:
                     errors.append(f'crops.{crop}.claims source verification_method невалиден: {vm}')
+                # manual_read_pending — пометка ОРКЕСТРАТОРА (OpenAlex API недоступен),
+                # в source отчётов сабагентов запрещена (ревью part 5)
+                if vm == 'manual_read_pending':
+                    errors.append(f'crops.{crop}.claims source verification_method=manual_read_pending '
+                                  f'запрещён в отчёте сабагента — пометка оркестратора (в карточке/артефакте)')
                 if s.get('paper_type') is not None and s.get('paper_type') not in PAPER_TYPES:
                     errors.append(f'crops.{crop}.claims source paper_type невалиден: {s.get("paper_type")}')
                 # label — самое слабое: только с verified:true и manual_read
