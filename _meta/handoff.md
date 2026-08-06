@@ -1,7 +1,7 @@
 ---
 type: handoff
-created: 2026-08-04
-from_session: "Пилот валидации → подготовка к Фазе 3"
+created: 2026-08-06
+from_session: "Стиль-гайд v2.3 + реализация ревью 6.5/10 → подготовка к Фазе 3"
 contract_version: 1.4
 ---
 
@@ -20,6 +20,8 @@ contract_version: 1.4
 | `_meta/session_report_2026-08-04_part2.md` | **Отчёт для внешнего аудита** (часть 2: ревью + пилот Фазы 3, 5 коммитов) |
 | `_meta/session_report_2026-08-04_part3.md` | **Отчёт для внешнего аудита** (часть 3: ревью part 2, 1 коммит) |
 | `_meta/session_report_2026-08-06.md` | **Отчёт для внешнего аудита** (2026-08-06: анализ, merge, таксономия 7 семейств, SDD-контекст, стиль-гайд v2 — 4 коммита + незакоммиченная работа) |
+| `_meta/session_report_2026-08-06_part2.md` | **Отчёт для внешнего аудита** (реализация ревью 6.5/10: коммит, STYLE_MIGRATE, smoke_test, bootstrap-защита, EOL) |
+| `_meta/sdd_openspec_context.md` | Контекст для SDD-переосмысления (OpenSpec-брейншторм, актуализирован 2026-08-06) |
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
 | `AGENTS.md` | Схема вики, контракт отчёта **v1.4**, правила честности 1–14, L1–L4 |
 | `README.md` | **Человекочитаемый хаб проекта** (этот README) |
@@ -32,45 +34,52 @@ contract_version: 1.4
 | `_scripts/fallback_europepmc.py` | Europe PMC fallback оркестратора (SRC:PPR) → `orchestrator_fallback_*.json` |
 | `_scripts/gen_taxonomy.py` | Таксономия (9 категорий + 29 семейств + 15 механизмов); `--refresh` для пересчёта |
 | `_scripts/gen_synonyms.py` | `raw/normalization/synonyms.json` из aliases карточек (267 веществ) |
-| `_scripts/bootstrap.py` | Черновики из CSV (**по умолчанию — только карточки**; `--full` перезаписывает служебные файлы!) |
+| `_scripts/bootstrap.py` | Черновики из CSV (**по умолчанию — только карточки**; `--full` перезаписывает служебные файлы!; `--dry-run` для проверки; автозапуск gen_taxonomy) |
+| `_scripts/smoke_test.py` | Целостность после массовых операций (exit 0 = ок): дубли, запрещённые поля, старые секции/баннеры, таксономия |
+| `.gitattributes` | EOL-политика: md/json/csv — CRLF, py — LF |
 | `raw/evidence/{A,C,G,I,M,P,S,T}/…/search_*.json` | 12 артефактов (5 пилот v1.2 + 5 v1.4 + fallback'и) |
-| `Vault/wiki/substances/*.md` | **11 валидированных карточек** + 254 черновика (265 страниц; MeJA→Methyl Jasmonate, TRIA→Triacontanol) |
+| `Vault/wiki/substances/*.md` | **11 валидированных карточек** (все на стиль-гайде v2.3) + 254 черновика (265 страниц; MeJA→Methyl Jasmonate, TRIA→Triacontanol) |
 
 ---
 
-## 🟢 Статус проекта (на 2026-08-04, конец дня)
+## 🟢 Статус проекта (на 2026-08-06, конец дня)
 
-**Конвейер работает и прошёл 3 цикла внешнего аудита** (все рекомендации выполнены).
-Контракт — **v1.4** (включая `taxonomy_check`, `supersedes`, авто-retry, PHI/REI-правило 14).
+**Конвейер работает и прошёл 4 цикла внешнего аудита** (ревью 2026-08-06, оценка 6.5/10 —
+реализовано в тот же день). Контракт — **v1.4**; стиль-гайд карточек **v2.3** «конечные факты»;
+все 11 валидированных карточек мигрированы на новую схему (эталон — IBA.md).
 
 ### Валидировано: 11 / 265 страниц (267 кодов CSV — 2 пары объединены: MeJA→Methyl Jasmonate, TRIA→Triacontanol)
 
 | Вещество | Статус | Evidence | Ключевой вывод |
 |---|---|---|---|
-| GA3 | partial | moderate | Механизм усов подтверждён; дозировки CSV не верифицированы; +PPR 1188729 (fallback) |
+| GA3 | partial | moderate | Механизм усов подтверждён; дозировки CSV не верифицированы; +PPR 1188729 |
 | IBA | corrected | moderate | CSV 100–1000 ppm на 2–3 порядка выше литературы |
 | Triacontanol (+TRIA) | partial | moderate | CSV 0.05–0.2 ppm ниже рабочих 0.5–1 ppm |
 | Artemisinin | insufficient_data | weak | Обе CSV-заявки не подтверждены |
-| Chitosan (+COS/CHOS) | partial | strong | Механизм подтверждён 21 аннотацией; CSV-протоколы нет |
-| **Paclobutrazol** | partial | strong | Дозы 25–200 мг/л (CSV 75–300 не верифицированы); **MRL EU 0.01\* LOD получен**; taxonomy correction |
+| Chitosan | partial | strong | Механизм подтверждён 21 аннотацией; CSV-протоколы нет |
+| Chitooligosaccharides | partial | strong | COS/CHOS: 50 мг/л при холоде огурца; защита от мучнистой росы томата |
+| **Paclobutrazol** | partial | strong | Дозы 25–200 мг/л (CSV 75–300 не верифицированы); **MRL EU 0.01\* LOD получен** |
 | **Methyl Jasmonate** | corrected | strong | Эффективные 5.6–112 ppm; ⚠️ антракноз клубники; летучесть |
 | **Glycine Betaine** | partial | moderate | 117–586 ppm подтверждены; засуха «все культуры» слабо |
 | **Proline** | partial | moderate | Фолиарно клубника +23–32%; **seed priming = insufficient_data** (очередь скачивания) |
 | **Silicon** | corrected | strong | Дозы 30–75 мг Si/л; taxonomy: mechanism → antioxidant_defense |
 
-### Инфраструктура (сделано за сессию)
-- Реструктуризация: служебный слой вне vault; GitHub remote (`main`)
-- Таксономия: 9 категорий + 29 семейств + 15 механизмов (267 карточек с `class_family`/`mechanism`)
-- `synonyms.json` (267 веществ), авто-retry в extract_report, L1 v1.4, fallback Europe PMC (4 вещества)
-- Дубликаты (8) разрешены; заявки CSV — в таблице «Валидация CSV-заявок» (поле `application_csv` удалено в схеме v2.2)
-- PHI/REI — практический блокер (правило 14); **MRL Paclobutrazol собран** (EU 0.01\* LOD, Codex нет)
-- Навык `.github/copilot-skills/session-audit-report/` — репорты для аудита по стандарту
+### Инфраструктура (сделано к 2026-08-06)
+- Стиль-гайд v2.3 «конечные факты»: таблица «Валидация CSV-заявок», «Научные данные по культурам»,
+  frontmatter −7 полей-зеркал; все 11 валидированных карточек мигрированы (STYLE_MIGRATE ✅)
+- Таксономия: 9 категорий (+SHELF_LIFE) + 29 семейств (7 пестицидных, acaricides) + 15 механизмов
+- `smoke_test.py` (целостность), `bootstrap.py --dry-run` + автозапуск gen_taxonomy, `.gitattributes` (EOL)
+- `synonyms.json` (265 веществ), авто-retry в extract_report, L1 v1.4, fallback Europe PMC
+- Дубликаты (8) разрешены; PHI/REI — правило 14; **MRL Paclobutrazol собран** (EU 0.01\* LOD, Codex нет)
+- Навык `.github/copilot-skills/session-audit-report/` + 4 цикла аудита (репорты в `_meta/`)
+- SDD-контекст для OpenSpec-переосмысления (`_meta/sdd_openspec_context.md`); Vault/raw/ — gitignored
 
 ---
 
 ## 🎯 Следующие шаги (Фаза 3)
 
 ### 0. Перед стартом — НЕ нужно (закрыто в этой сессии)
+- ✅ STYLE_MIGRATE: 11 карточек на стиль-гайд v2.3 (эталон IBA.md); smoke_test — OK
 - ✅ Europe PMC fallback для GA3/Triacontanol/Chitosan/Silicon — выполнен (orchestrator_fallback)
 - ✅ Дубликаты (8) — разрешены; ✅ заявки CSV — в таблице валидации (v2.2)
 - ✅ PHI/MRL Paclobutrazol — собран (EU 0.01\* LOD); PHI/REI — очередь на этикетки (papers_to_fetch)
@@ -84,9 +93,9 @@ contract_version: 1.4
 3. L1: `python _scripts/l1_check.py raw/evidence/{A-Z}/<код>/search_*.json` (требует v1.4).
 4. При `searches.failed` europepmc → `python _scripts/fallback_europepmc.py <код> "<имя>" "<запросы>"`.
 5. Применить `taxonomy_check.corrections` (если есть) → карточка + `gen_taxonomy.py --refresh` при изменении маппинга.
-6. Написать карточку (frontmatter + «Валидация CSV-заявок» + «Научные данные по культурам» + toxicity + 📅 PHI/REI/MRL + ограничения + источники).
+6. Написать карточку **строго по стиль-гайду v2.3** (AGENTS.md): frontmatter (18 полей) + «Валидация CSV-заявок» (одна заявка = одна строка) + «Научные данные по культурам» (методы применения) + toxicity + 📅 PHI/REI/MRL + ограничения + источники. Без баннеров, процесса поиска, дублей.
 7. Обновить `task_queue.md` ([x] + RETRY-строки), `validation.md` + проверить `Vault/index.md`, `log.md`, обновить `synonyms.json` (`gen_synonyms.py`).
-8. Коммит + push.
+8. `python _scripts/smoke_test.py` (exit 0 = ок) → коммит + push.
 
 ### 2. Рекомендуемый следующий пакет (10 веществ, все HIGH)
 **Kinetin, 6-BAP, Thidiazuron, PIX, Uniconazole, Ethephon, S-ABA, Trinexapac-ethyl, Chlormequat Chloride, Zeatin** — цитокинины/ретарданты, пересечения с GA3/Paclobutrazol. Для PIX/Uniconazole — PHI/REI (этикетки, см. papers_to_fetch.md).
@@ -96,6 +105,7 @@ contract_version: 1.4
 - **PHI_REI**: Uniconazole, PIX (этикетки)
 - **AUDIT_TAXONOMY-20**: отдельный батч taxonomy_check **до Фазы 4** (синтезы)
 - **MIGRATE v1.2→v1.4**: при Lint-перепроверке пилотных карточек (2026-09-04)
+- **SDD-сессия**: брейншторм OpenSpec по `_meta/sdd_openspec_context.md` (отложено до Фазы 5)
 
 ---
 
@@ -118,6 +128,8 @@ contract_version: 1.4
 - Не использовать Sci-Hub (нарушение авторских прав) — только Unpaywall/PMC/DOAJ/OA/Web Clipper.
 - Параллельность: 5–10 сабагентов за раз; **2 из 5 могут вернуть пустой ответ** → авто-retry в `extract_report.py` (exit 2).
 - `bootstrap.py` без флагов = только карточки; `--full` перезаписывает index/task_queue/validation/log/README (требует подтверждения).
+- **НЕ запускать `bootstrap.py` для проверки синтаксиса/«посмотреть»** — он перезаписывает unverified-черновики (регрессия 2026-08-06). Проверка: `--dry-run` или `py_compile`; после генерации — `smoke_test.py`.
+- **EOL:** `.gitattributes` (md CRLF / py LF); после правок — нормализация + `git add --renormalize .`; файлы писать через Python с явной кодировкой, НЕ через Add-Content (ANSI).
 
 ---
 
@@ -127,4 +139,5 @@ contract_version: 1.4
 - Не подставлять данные другой культуры при `no_data`.
 - Не оставлять null-заглушки в `contraindications`/`conflicts` — пустой массив `[]`.
 - **Не выдумывать waiting periods (PHI/REI)** — не найдено → `unknown` (правило 14).
-- Не запускать `bootstrap.py --full` без необходимости (перезаписывает ручные правки).
+- Не запускать `bootstrap.py --full` без необходимости (перезаписывает ручные правки); для проверки — `--dry-run`.
+- Не писать карточки по старой схеме (баннеры, «Применение (CSV)», Corrected Dosages, Противоречия, crop_evidence, found_verified в заголовках) — только стиль-гайд v2.3; `smoke_test.py` это проверяет.
