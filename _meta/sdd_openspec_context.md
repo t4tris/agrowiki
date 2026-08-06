@@ -7,7 +7,9 @@
 >
 > **Читать вместе с:** `AGENTS.md` (текущая схема/конституция), `_meta/plan.md` (мастер-план),
 > `log.md` (хронология всех решений), `task_queue.md` (долги), `README.md` (человеческий хаб).
-> Дата: 2026-08-06. Проект прожил 3 сессии разработки и 3 цикла внешнего аудита.
+> Дата: 2026-08-06. Проект прожил 4 сессии разработки и 4 цикла внешнего аудита (последний —
+> ревью 2026-08-06, оценка 6.5/10, реализовано в тот же день). Стиль-гайд карточек v2.3,
+> схема стабилизирована; 11 валидированных карточек — эталон новой структуры.
 
 ---
 
@@ -44,7 +46,8 @@ LLM выступает программистом-исследователем, 
 - **Масштаб:** 267 веществ × 3 культуры. Оценка: 80–120 ч ≈ 30–40 сессий по 2–3 ч,
   пакетами 10–20 веществ (5–10 сабагентов параллельно).
 - **Прогресс на 2026-08-06:** 11 валидированных карточек из 267 (~4%): 7 partial, 3 corrected,
-  1 insufficient_data. Очередь: HIGH 38 / MEDIUM 133 / LOW 83.
+  1 insufficient_data. Очередь: HIGH 38 / MEDIUM 133 / LOW 83. Стиль-гайд карточек v2.3
+  («конечные факты»), 9 категорий применения, smoke-тест конвейера (`smoke_test.py`).
 
 **Кто потребители системы:**
 - Человек (Obsidian: чтение карточек, дашборды, ревью конфликтов, скачивание статей);
@@ -93,15 +96,16 @@ f:\agrowiki\
 ├── task_queue.md        — очередь VALIDATE + TECHNICAL DEBT + RETRY LOG
 ├── validation.md        — трекер для LLM (Dataview в нём не рендерится!)
 ├── _meta/               — plan.md, handoff.md, session_report_*.md, этот документ
-├── _scripts/            — 7 Python-скриптов (см. 3.2)
+├── _scripts/            — 8 Python-скриптов (см. 3.2)
 ├── .secrets/            — API-ключи (в git НЕ попадает)
+├── .gitattributes       — EOL-политика: md/json/csv CRLF, py LF (аудит 2026-08-06)
 ├── raw/                 — CSV, evidence/{A-Z}/<код>/, sources/, normalization/synonyms.json
 └── Vault/               — Obsidian vault (только контент)
     ├── index.md         — каталог + живой дашборд (Dataview)
     ├── raw/             — рабочая папка пользователя: черновики sources (gitignored!)
     └── wiki/
         ├── substances/  — 265 страниц (267 кодов; 2 пары объединены)
-        ├── categories/  — 8 категорий применения
+        ├── categories/  — 9 категорий применения (вкл. SHELF_LIFE — вне CSV, расширение 2026-08-06)
         ├── classes/     — 29 семейств хим. классов (вкл. 7 пестицидных)
         ├── mechanisms/  — 15 механизмов действия
         ├── crops/       — 3 культуры-хаба
@@ -112,14 +116,16 @@ f:\agrowiki\
 
 **Карточка вещества** (`Vault/wiki/substances/<код>.md`, type: substance):
 - frontmatter: code, name_en, cas, formula, class, class_family, mechanism, action_category,
-  application_csv, efficacy_csv, validation_status (unverified|verified|corrected|partial|
-  insufficient_data|conflicting), evidence_level (strong|moderate|weak|unverified),
-  last_checked, next_review, sources[], notes[], crops{томат/огурец/клубника:
-  found_verified|found_unverified|no_data}, aliases[], aliases_ru[], eppo_code,
-  regulatory_status, consensus_score, toxicity_window{}, phi_mrl{}, fallback_status.
-- Секции: Идентичность → Механизм действия → Применение (CSV) → crop_evidence по 3 культурам →
-  ⚠️ Corrected Dosages (таблица CSV→исправлено→условия→источник) → ⚠️ Toxicity Window →
-  📅 PHI и MRL → Противоречия → Противопоказания → Источники.
+  efficacy_csv, validation_status (unverified|verified|corrected|partial|insufficient_data|
+  conflicting), evidence_level (strong|moderate|weak|unverified), last_checked, next_review,
+  notes[], crops{томат/огурец/клубника: found_verified|found_unverified|no_data}, aliases[],
+  aliases_ru[], fallback_status. (Поля-зеркала секций и null-заглушки удалены в v2.2:
+  application_csv, sources, toxicity_window, phi_mrl, eppo_code, regulatory_status, consensus_score.)
+- Секции: Идентичность → Механизм действия → ⚠️ Валидация CSV-заявок (единая таблица
+  «CSV-заявка | Вердикт ✅⚠️❌⚪ | Уточнение | Условия | Severity | Источники») → Научные данные
+  по культурам (факты с МЕТОДОМ применения) → ⚠️ Toxicity Window → 📅 PHI и MRL →
+  ⚠️ Ограничения и противопоказания (не-CSV) → Источники.
+  Секций «Применение (CSV)», «Corrected Dosages», «Противоречия», «crop_evidence» больше НЕТ.
 
 **Артефакт поиска** (`raw/evidence/{A-Z}/<код>/search_*.json`) — JSON по контракту v1.4:
 substance, searches (performed/failed/queries_used/fallback_tries), identity (CAS/CID/формула/
@@ -133,17 +139,18 @@ mechanism_confirmed/corrections[]), sources_index.
 (`- [ ] VALIDATE: <код> × 3 культуры` + секции приоритетов/долгов), frontmatter-конвенции
 карточек, synonyms.json (реестр: код → csv_name/name_en/aliases/aliases_ru).
 
-### 3.2. Скрипты конвейера (7 шт., Python, urllib без внешних зависимостей)
+### 3.2. Скрипты конвейера (8 шт., Python, urllib без внешних зависимостей)
 
 | Скрипт | Назначение | Известные недостатки |
 |---|---|---|
-| `bootstrap.py` | Черновики карточек из CSV | `--full` перезаписывает служебные файлы (опасно); пути захардкожены |
+| `bootstrap.py` | Черновики карточек из CSV; `--dry-run` для проверки; MERGED_CODES SKIP; автозапуск gen_taxonomy | `--full` перезаписывает служебные файлы (опасно); пути захардкожены; перезаписывает unverified-черновики (существовавшие ручные правки теряются) |
 | `extract_report.py` | Извлечение JSON из ответа сабагента (raw_decode на каждой `{`), авто-retry до 3 файлов, exit 0/2 | Зависит от того, что сабагент вернёт JSON в финальном сообщении |
 | `l1_check.py` | L1: схема v1.4 + type-check + taxonomy_check + supersedes + PMID esummary + DOI Crossref | Нет unit-тестов |
 | `fallback_europepmc.py` | Europe PMC SRC:PPR запросы оркестратором (у сабагентов IPv6-блок) | Только для одного вещества за запуск |
-| `gen_taxonomy.py` | 8 категорий/29 семейств/15 механизмов; OVERRIDES, FAMILY_OVERRIDES, `--refresh` | Маппинг в коде, а не в данных |
+| `gen_taxonomy.py` | 9 категорий/29 семейств/15 механизмов; OVERRIDES, FAMILY_OVERRIDES, `--refresh`; шаблон категорий — `contains(action_category, …)` (мульти-категории) | Маппинг в коде, а не в данных |
 | `gen_synonyms.py` | synonyms.json из aliases карточек | Перезапись вручную после каждой валидации |
 | `digest.py` | Компактный дайджест отчётов | Редко используется |
+| `smoke_test.py` | Целостность после массовых операций: дубли кодов, запрещённые поля, старые секции/баннеры у валидированных, таксономия у всех (exit 0 = ок) | Нет unit-тестов для отдельных функций |
 
 ### 3.3. Конвейер валидации (ядро работы)
 
@@ -153,9 +160,9 @@ CSV-строка + текущая таксономия карточки
   → JSON в финальном сообщении → extract_report.py → raw/evidence/.../search_*.json
   → (Europe PMC недоступен у сабагента? → fallback_europepmc.py оркестратором)
   → L1 (схема+PMID+DOI) → L2 (перекрёстные противоречия) → L3 (человек: conflicting)
-  → карточка (frontmatter + секции) + taxonomy_check.corrections
+  → карточка (frontmatter + секции по стиль-гайду v2.3) + taxonomy_check.corrections
   → task_queue.md / validation.md / Vault/index.md / log.md / synonyms.json
-  → git commit + push
+  → smoke_test.py (целостность) → git commit + push
 ```
 
 4 уровня проверки: **L1** автопроверка схемы/PMID/DOI · **L2** перекрёстная непротиворечивость ·
@@ -213,18 +220,25 @@ CSV-строка + текущая таксономия карточки
 - Культурные синонимы обязательны в fallback-запросах (Fragaria × ananassa, Solanum lycopersicum…).
 
 ### 4.4. Инженерные грабли
-- **EOL:** репозиторий CRLF; скрипты и редакторы, пишущие LF, создают «фантомные» diff;
-  regex `^...$` съедает `\r`. Правило: писать файлы Python-ом с явной кодировкой/EOL.
+- **EOL:** репозиторий CRLF для md/json/csv, LF для py (`.gitattributes`, аудит 2026-08-06);
+  но edit-инструменты и Obsidian периодически пишут LF → «фантомные» diff; regex `^...$`
+  съедал `\r` при `--refresh` (исправлено). Правило: писать файлы Python-ом с явной
+  кодировкой/EOL, после массовых правок — нормализация + `smoke_test.py`.
 - **Консоль cp1252:** вывод кириллицы — кракозябры (косметика), но Add-Content в log.md
   записал ANSI и потерял символы — журнал дописывать только Python-ом.
+- **Регрессия bootstrap (2026-08-06):** проверочный запуск без `--dry-run` пересоздал
+  объединённые карточки (MeJA/TRIA) и стёр таксономию у 256 черновиков → защита:
+  `--dry-run`, MERGED_CODES SKIP, автозапуск gen_taxonomy, `smoke_test.py`.
+- **Dataview-категории:** `action_category = "X"` не работал для мульти-категорий
+  (Chitosan: 3 значения) → `contains(action_category, "X")` во всех страницах (2026-08-06).
 - Пути захардкожены (`f:\agrowiki\...`) — скрипты не переносимы.
-- Нет unit-тестов ни одного скрипта; L1-проверки менялись вручную под новые правила.
+- Нет unit-тестов (кроме smoke_test); L1-проверки менялись вручную под новые правила.
 - Синхронизация дашбордов (validation.md ↔ Vault/index.md) — ручная, легко рассинхронизировать.
 - Dataview не рендерится ВНЕ vault (validation.md в корне — «мёртвый» дашборд, живой — index.md).
 - Obsidian-плагины: workspace/graph/community-plugins.json — в .gitignore (community-plugins
   оставлен в git), коды плагинов переустанавливаются.
-- Дубли страниц возникали при переименованиях/объединениях (MeJA draft) — нужны проверки
-  «сирот» и битых ссылок (Lint).
+- Дубли страниц возникали при переименованиях/объединениях (MeJA draft) и остатки
+  шаблонов после миграции (двойной «## Источники» у Glycine Betaine) — ловится smoke-тестом.
 - Терминология: акарициды ≠ митициды (рус. термин — акарициды, от Acari; митицид — англ. калька).
 
 ---
@@ -241,6 +255,10 @@ CSV-строка + текущая таксономия карточки
 7. **Реструктуризация:** служебный слой вне vault — Obsidian Graph/Cmd+O не засоряется.
 8. **Внешние аудиты каждые N коммитов** — контракт и правила эволюционируют осознанно.
 9. **Честные статусы** (`no_data`, `insufficient_data`, `unknown` для PHI) — доверие к базе.
+10. **Стиль-гайд v2.3 «карточка = конечные факты»** — единая таблица валидации CSV-заявок,
+    секции без процесса поиска; 11/11 валидированных карточек мигрированы.
+11. **smoke_test.py** — целостность конвейера после массовых операций (exit 0 = ок).
+12. **EOL-политика `.gitattributes`** — CRLF/LF разведены по типам файлов.
 
 ---
 
@@ -250,14 +268,16 @@ CSV-строка + текущая таксономия карточки
 |---|---|---|
 | 1 | Контракт сабагента хрупок: JSON в финальном сообщении, retry-механика, дрейф версий | `AGENTS.md` контракт, `extract_report.py` |
 | 2 | AGENTS.md = «конституция» на 300 строк: правила разбросаны, часть устарела | AGENTS.md, log.md (эволюция) |
-| 3 | Скрипты: захардкоженные пути, нет тестов, магические числа, ручная синхронизация дашбордов | `_scripts/*.py` |
-| 4 | Пропускная способность: 11/267 за 3 сессии; критерии готовности размыты | task_queue.md, handoff.md |
+| 3 | Скрипты: захардкоженные пути, нет unit-тестов (есть только smoke_test), магические числа, ручная синхронизация дашбордов | `_scripts/*.py` |
+| 4 | Пропускная способность: 11/267 за 4 сессии; критерии готовности размыты | task_queue.md, handoff.md |
 | 5 | Модель данных: дублирование фактов (search_*.json ↔ facts_*.md ↔ карточка); нет схемы БД | raw/evidence, карточки |
 | 6 | Миграция: 5 пилотных карточек v1.2, старые артефакты, synonyms.json ручная регенерация | task_queue (MIGRATE, SYNONYMS) |
 | 7 | Человеко-зависимые задачи (скачивание статей, этикетки PHI/REI, ревью conflicting) без явного SLA | papers_to_fetch.md, TECHNICAL DEBT |
 | 8 | Отсутствие метрик качества валидации (что значит «хорошая карточка»?) | карточки, session_report |
 | 9 | Фаза 4 (syntheses/Query) не начата — спека нужна заранее | plan.md |
 | 10 | Окружение/развёртывание не описано (Python версия, зависимости, сетевые ограничения) | plan.md, handoff.md |
+| 11 | Ручная миграция стиля: 11 карточек приведены к v2.3 вручную (STYLE_MIGRATE); инструмента нет — новые карточки обязаны сразу писаться по v2.3 | AGENTS.md, IBA.md (эталон) |
+| 12 | Категории вне CSV (SHELF_LIFE) назначаются вручную по фактам — источник категорий не формализован (CSV + расширения) | gen_taxonomy.py CATS |
 
 ---
 
@@ -336,13 +356,18 @@ openspec/
 - **Сабагент** — stateless research-агент, возвращающий JSON по контракту.
 - **Оркестратор** — главный агент сессии: извлекает артефакты, гоняет L1, пишет карточки.
 - **L1–L4** — уровни проверки (автосхема/PMID/DOI → перекрёстная → человек → Lint).
-- **crop_evidence** — секция карточки с доказательствами по культурам.
-- **Corrected Dosages** — таблица «CSV → исправлено → условия → источник».
+- **Научные данные по культурам** (бывш. crop_evidence) — секция карточки с доказательствами
+  по культурам, каждый факт с МЕТОДОМ применения (in vitro/полевой/биотест…).
+- **Валидация CSV-заявок** (бывш. Corrected Dosages + Противоречия) — единая таблица
+  «CSV-заявка → вердикт ✅⚠️❌⚪ → уточнение → условия → severity → источники»;
+  одна CSV-заявка = одна строка; вердикты CSV — только в этой таблице.
 - **PHI/REI/MRL** — срок ожидания до уборки / срок выхода на работы / максимальный остаток.
 - **BBCH** — шкала фенофаз (BBCH 61 = 10% цветков открыто, BBCH 73 = зелёная ягода).
 - **PPR** — препринт (bioRxiv/medRxiv/Research Square и т.п.), не strong-доказательство.
 - **SRC:PPR** — фильтр Europe PMC для препринтов.
 - **Vibecode** — разработка без явных спецификаций, итеративным промптингом (как сделан проект сейчас).
+- **SHELF_LIFE** — категория «Хранение и лёжкость» (9-я, вне CSV, расширение схемы 2026-08-06).
+- **Стиль-гайд v2.3** — текущий стандарт карточек (конечные факты, без баннеров/процесса поиска).
 
 ---
 
@@ -357,8 +382,10 @@ openspec/
 | `task_queue.md` | Очередь, TECHNICAL DEBT, RETRY LOG |
 | `README.md` | Человеческий хаб проекта |
 | `Vault/index.md` | Дашборд (Dataview), ожидаемый UX |
-| `Vault/wiki/substances/IBA.md` и `Methyl Jasmonate.md` | Эталонные валидированные карточки |
+| `Vault/wiki/substances/IBA.md` и `Methyl Jasmonate.md` | Эталонные валидированные карточки (стиль-гайд v2.3) |
 | `raw/evidence/I/IBA/search_IBA_2026-08-04.json` | Реальный артефакт контракта v1.2 |
 | `raw/evidence/M/Methyl Jasmonate/search_MethylJasmonate_2026-08-04.json` | Артефакт v1.4 |
 | `_scripts/l1_check.py`, `extract_report.py` | Реальная схема и механика проверок |
+| `_scripts/smoke_test.py` | Целостность карточек после массовых операций (exit 0 = ок) |
+| `_meta/session_report_2026-08-06*.md` | Репорты аудита: 4 цикла, реализация ревью 6.5/10 |
 | `.github/copilot-skills/session-audit-report/SKILL.md` | Стандарт репортов для аудита |
