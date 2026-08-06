@@ -15,3 +15,6 @@ Vault/.obsidian/graph.json
 Vault/.obsidian/community-plugins.json
 # Плагины Obsidian (код переустанавливается из Community Plugins; community-plugins.json остаётся в git)
 Vault/.obsidian/plugins/
+
+# Рабочая папка пользователя: черновики будущих sources (редактируются в Obsidian), вне конвейера
+Vault/raw/

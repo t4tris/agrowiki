@@ -18,3 +18,6 @@ FROM "wiki/substances"
 WHERE contains(class_family, "fungicides")
 SORT validation_status ASC
 ```
+
+## Связанные пестицидные семейства
+- [[fungicides|Фунгициды]] · [[insecticides|Инсектициды]] · [[herbicides|Гербициды]] · [[nematicides|Нематоциды]] · [[acaricides|Акарициды]] · [[antibacterials|Антибактериальные]] · [[antivirals|Противовирусные]]

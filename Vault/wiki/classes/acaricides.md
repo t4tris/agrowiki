@@ -1,13 +1,14 @@
 ---
 type: class
-name: Митициды (акарициды)
+name: Акарициды (митициды)
 class_csv: []
 substances: []
 ---
 
-# Класс: Митициды (акарициды)
+# Класс: Акарициды (митициды)
 
-Средства против растительноядных клещей. В CSV веществ нет — семейство создано для полноты классификации пестицидов.
+Средства против растительноядных клещей (отряд Acari). «Митициды» — англ. синоним (miticide).
+В CSV веществ нет — семейство создано для полноты классификации пестицидов.
 
 CSV-классы семейства: .
 
@@ -15,7 +16,7 @@ CSV-классы семейства: .
 ```dataview
 TABLE class AS "Класс (CSV)", efficacy_csv AS "Эффективность", validation_status AS "Статус"
 FROM "wiki/substances"
-WHERE contains(class_family, "miticides")
+WHERE contains(class_family, "acaricides")
 SORT validation_status ASC
 ```
 

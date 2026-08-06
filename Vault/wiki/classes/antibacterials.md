@@ -20,4 +20,4 @@ SORT validation_status ASC
 ```
 
 ## Связанные пестицидные семейства
-- [[fungicides|Фунгициды]] · [[insecticides|Инсектициды]] · [[herbicides|Гербициды]] · [[nematicides|Нематоциды]] · [[miticides|Митициды]] · [[antibacterials|Антибактериальные]] · [[antivirals|Противовирусные]]
+- [[fungicides|Фунгициды]] · [[insecticides|Инсектициды]] · [[herbicides|Гербициды]] · [[nematicides|Нематоциды]] · [[acaricides|Акарициды]] · [[antibacterials|Антибактериальные]] · [[antivirals|Противовирусные]]

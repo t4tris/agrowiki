@@ -78,7 +78,7 @@ DEFAULT_MECHANISM = {
     'gasotransmitters': 'gas_signaling', 'voc_volatiles': 'jasmonate_sar_defense',
     'sar_signals_elicitors': 'jasmonate_sar_defense', 'fungicides': 'pesticide_action',
     'insecticides': 'pesticide_action', 'herbicides': 'pesticide_action',
-    'nematicides': 'pesticide_action', 'miticides': 'pesticide_action',
+    'nematicides': 'pesticide_action', 'acaricides': 'pesticide_action',
     'antibacterials': 'pesticide_action', 'antivirals': 'pesticide_action',
     'biostimulants_extracts': 'elicitor_immunity',
     'elements_minerals': 'nutrition_metabolism',
@@ -116,6 +116,7 @@ MOA_RULES = [
     ('herbicid', 'pesticide_action'), ('weed control', 'pesticide_action'),
     ('antibacteri', 'pesticide_action'), ('bactericid', 'pesticide_action'),
     ('antivir', 'pesticide_action'), ('viruc', 'pesticide_action'),
+    ('acar', 'pesticide_action'), ('miticid', 'pesticide_action'),
     ('disinfect', 'pesticide_action'), ('sanitizer', 'pesticide_action'),
     ('glycolysis inhibitor', 'pesticide_action'), ('metabolic inhibitor', 'pesticide_action'),
     ('seed sanitizer', 'pesticide_action'),
@@ -253,9 +254,9 @@ FAMILIES = [
     ('nematicides', 'Нематоциды', [],
      'Средства против нематод. В CSV: артемизинин (MoA «Nematicidal agent») — заявка не подтверждена '
      'валидацией (insufficient_data).'),
-    ('miticides', 'Митициды (акарициды)', [],
-     'Средства против растительноядных клещей. В CSV веществ нет — семейство создано для полноты '
-     'классификации пестицидов.'),
+    ('acaricides', 'Акарициды (митициды)', [],
+     'Средства против растительноядных клещей (отряд Acari). «Митициды» — англ. синоним (miticide). '
+     'В CSV веществ нет — семейство создано для полноты классификации пестицидов.'),
     ('antibacterials', 'Антибактериальные', ['Polymeric guanidine', 'Oxidant'],
      'Бактерициды и дезинфектанты: полимерные гуанидины (PHMG), активный хлор (HOCl, гипохлорит натрия).'),
     ('antivirals', 'Противовирусные', [],
@@ -316,7 +317,7 @@ MECHANISMS = [
      'укоренение, прорастание и стрессоустойчивость.'),
     ('pesticide_action', 'Пестицидное действие',
      'Средства защиты растений: фунгициды (триазолы, стробилурины, бензимидазолы), инсектициды '
-     '(неоникотиноиды), гербициды, нематоциды, митициды, антибактериальные и противовирусные: '
+     '(неоникотиноиды), гербициды, нематоциды, акарициды, антибактериальные и противовирусные: '
      'прямое подавление патогенов, вредителей и сорняков.'),
 ]
 

@@ -42,6 +42,7 @@ f:\agrowiki\
 ├── _meta/               ← plan.md, handoff.md, session_report_*.md (для аудитов)
 └── Vault/               ← Obsidian vault (только контент)
     ├── index.md         ← каталог + дашборд статусов (Dataview)
+    ├── raw/             ← рабочая папка: черновики будущих sources (в Obsidian, в .gitignore)
     └── wiki/
         ├── substances/  ← 265 страниц (267 кодов CSV, 2 пары объединены)
         ├── categories/  ← 8 категорий применения
