@@ -1,0 +1,554 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Trinexapac-ethyl",
+    "csv_name": "trinexapac-ethyl"
+  },
+  "searches": [
+    {
+      "query": "(trinexapac-ethyl) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 25,
+      "results": [
+        {
+          "id": "36897474",
+          "source": "MED",
+          "title": "The effects of heading time on yield performance and HvGAMYB expression in spring barley subjected to drought.",
+          "first_author": "Ogrodowicz P",
+          "pub_year": "2023",
+          "doi": "10.1007/s13353-023-00755-x",
+          "pmid": "36897474"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "39707167",
+          "source": "MED",
+          "title": "Foliar application of nano-silicon enhances drought tolerance rate of pot marigold (Calendula officinalis L.) by regulation of abscisic acid signaling.",
+          "first_author": "Eghlima G",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05986-6",
+          "pmid": "39707167"
+        },
+        {
+          "id": "40164968",
+          "source": "MED",
+          "title": "Exploring the multifaceted dynamics of flowering time regulation in field crops: Insight and intervention approaches.",
+          "first_author": "Naik YD",
+          "pub_year": "2025",
+          "doi": "10.1002/tpg2.70017",
+          "pmid": "40164968"
+        },
+        {
+          "id": "38186607",
+          "source": "MED",
+          "title": "Humic acids enhance salt stress tolerance associated with pyrroline 5-carboxylate synthetase gene expression and hormonal alteration in perennial ryegrass (<i>Lolium perenne</i> L.).",
+          "first_author": "Meng Q",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1272987",
+          "pmid": "38186607"
+        },
+        {
+          "id": "35736716",
+          "source": "MED",
+          "title": "Environmentally Friendly Wheat Farming: Biological and Economic Efficiency of Three Treatments to Control Fungal Diseases in Winter Wheat (<i>Triticum aestivum</i> L.) under Field Conditions.",
+          "first_author": "Rebouh NY",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11121566",
+          "pmid": "35736716"
+        },
+        {
+          "id": "35736943",
+          "source": "MED",
+          "title": "Exposure Routes and Health Risks Associated with Pesticide Application.",
+          "first_author": "Tudi M",
+          "pub_year": "2022",
+          "doi": "10.3390/toxics10060335",
+          "pmid": "35736943"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "31088021",
+          "source": "MED",
+          "title": "Nematicide effects on non-target nematodes in bermudagrass.",
+          "first_author": "Waldo BD",
+          "pub_year": "2019",
+          "doi": "10.21307/jofnem-2019-009",
+          "pmid": "31088021"
+        },
+        {
+          "id": "27457585",
+          "source": "MED",
+          "title": "Gibberellin-Regulation and Genetic Variations in Leaf Elongation for Tall Fescue in Association with Differential Gene Expression Controlling Cell Expansion.",
+          "first_author": "Xu Q",
+          "pub_year": "2016",
+          "doi": "10.1038/srep30258",
+          "pmid": "27457585"
+        },
+        {
+          "id": "32625920",
+          "source": "MED",
+          "title": "Review of the existing maximum residue levels for mandipropamid according to Article 12 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5284",
+          "pmid": "32625920"
+        },
+        {
+          "id": "34429776",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position for the 52nd Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6766",
+          "pmid": "34429776"
+        },
+        {
+          "id": "32125825",
+          "source": "MED",
+          "title": "Nanocarriers for the Delivery of Medical, Veterinary, and Agricultural Active Ingredients.",
+          "first_author": "Chariou PL",
+          "pub_year": "2020",
+          "doi": "10.1021/acsnano.0c00173",
+          "pmid": "32125825"
+        },
+        {
+          "id": "29616065",
+          "source": "MED",
+          "title": "The Variable Effect of Polyploidization on the Phenotype in <i>Escallonia</i>.",
+          "first_author": "Denaeghel HER",
+          "pub_year": "2018",
+          "doi": "10.3389/fpls.2018.00354",
+          "pmid": "29616065"
+        },
+        {
+          "id": "32874271",
+          "source": "MED",
+          "title": "The 2018 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2020",
+          "doi": "10.2903/j.efsa.2020.6057",
+          "pmid": "32874271"
+        },
+        {
+          "id": "32626398",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 51st Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2019",
+          "doi": "10.2903/j.efsa.2019.5797",
+          "pmid": "32626398"
+        },
+        {
+          "id": "32625983",
+          "source": "MED",
+          "title": "The 2016 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5348",
+          "pmid": "32625983"
+        },
+        {
+          "id": "32625953",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 50th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5306",
+          "pmid": "32625953"
+        },
+        {
+          "id": "27763546",
+          "source": "MED",
+          "title": "Drought-Responsive Mechanisms in Plant Leaves Revealed by Proteomics.",
+          "first_author": "Wang X",
+          "pub_year": "2016",
+          "doi": "10.3390/ijms17101706",
+          "pmid": "27763546"
+        },
+        {
+          "id": "34466160",
+          "source": "MED",
+          "title": "Reasoned opinion on the joint review of maximum residue levels (MRLs) for fosetyl, disodium phosphonate and potassium phosphonates according to Articles 12 and 43 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6782",
+          "pmid": "34466160"
+        },
+        {
+          "id": "37122284",
+          "source": "MED",
+          "title": "The 2021 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.7939",
+          "pmid": "37122284"
+        },
+        {
+          "id": "PMC2620510",
+          "source": "PMC",
+          "title": "Society of Nematologists 40th Annual Meeting Salt Lake City, Utah 25–29 August 2001",
+          "first_author": null,
+          "pub_year": "2001",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "32625927",
+          "source": "MED",
+          "title": "Scientific opinion on pesticides in foods for infants and young children.",
+          "first_author": "EFSA Panel on Plant Protection Products and their Residues (PPR)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5286",
+          "pmid": "32625927"
+        },
+        {
+          "id": "42125384",
+          "source": "MED",
+          "title": "The 2011 European Union Report on Pesticide Residues in Food.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2014",
+          "doi": "10.2903/j.efsa.2014.3694",
+          "pmid": "42125384"
+        },
+        {
+          "id": "42005779",
+          "source": "MED",
+          "title": "2008 Annual Report on Pesticide Residues according to Article 32 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2010",
+          "doi": "10.2903/j.efsa.2010.1646",
+          "pmid": "42005779"
+        }
+      ]
+    },
+    {
+      "query": "(trinexapac-ethyl) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(trinexapac-ethyl) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 17,
+      "results": [
+        {
+          "id": "39707167",
+          "source": "MED",
+          "title": "Foliar application of nano-silicon enhances drought tolerance rate of pot marigold (Calendula officinalis L.) by regulation of abscisic acid signaling.",
+          "first_author": "Eghlima G",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05986-6",
+          "pmid": "39707167"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "40164968",
+          "source": "MED",
+          "title": "Exploring the multifaceted dynamics of flowering time regulation in field crops: Insight and intervention approaches.",
+          "first_author": "Naik YD",
+          "pub_year": "2025",
+          "doi": "10.1002/tpg2.70017",
+          "pmid": "40164968"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "35736943",
+          "source": "MED",
+          "title": "Exposure Routes and Health Risks Associated with Pesticide Application.",
+          "first_author": "Tudi M",
+          "pub_year": "2022",
+          "doi": "10.3390/toxics10060335",
+          "pmid": "35736943"
+        },
+        {
+          "id": "32625802",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for fosetyl-Al in tree nuts, pome fruit, peach and potato.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5161",
+          "pmid": "32625802"
+        },
+        {
+          "id": "32125825",
+          "source": "MED",
+          "title": "Nanocarriers for the Delivery of Medical, Veterinary, and Agricultural Active Ingredients.",
+          "first_author": "Chariou PL",
+          "pub_year": "2020",
+          "doi": "10.1021/acsnano.0c00173",
+          "pmid": "32125825"
+        },
+        {
+          "id": "32625920",
+          "source": "MED",
+          "title": "Review of the existing maximum residue levels for mandipropamid according to Article 12 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5284",
+          "pmid": "32625920"
+        },
+        {
+          "id": "34429776",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position for the 52nd Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6766",
+          "pmid": "34429776"
+        },
+        {
+          "id": "32874271",
+          "source": "MED",
+          "title": "The 2018 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2020",
+          "doi": "10.2903/j.efsa.2020.6057",
+          "pmid": "32874271"
+        },
+        {
+          "id": "32625953",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 50th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5306",
+          "pmid": "32625953"
+        },
+        {
+          "id": "34466160",
+          "source": "MED",
+          "title": "Reasoned opinion on the joint review of maximum residue levels (MRLs) for fosetyl, disodium phosphonate and potassium phosphonates according to Articles 12 and 43 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6782",
+          "pmid": "34466160"
+        },
+        {
+          "id": "42005779",
+          "source": "MED",
+          "title": "2008 Annual Report on Pesticide Residues according to Article 32 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2010",
+          "doi": "10.2903/j.efsa.2010.1646",
+          "pmid": "42005779"
+        },
+        {
+          "id": "37122284",
+          "source": "MED",
+          "title": "The 2021 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.7939",
+          "pmid": "37122284"
+        },
+        {
+          "id": "32626398",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 51st Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2019",
+          "doi": "10.2903/j.efsa.2019.5797",
+          "pmid": "32626398"
+        },
+        {
+          "id": "42125384",
+          "source": "MED",
+          "title": "The 2011 European Union Report on Pesticide Residues in Food.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2014",
+          "doi": "10.2903/j.efsa.2014.3694",
+          "pmid": "42125384"
+        },
+        {
+          "id": "PMC2620510",
+          "source": "PMC",
+          "title": "Society of Nematologists 40th Annual Meeting Salt Lake City, Utah 25–29 August 2001",
+          "first_author": null,
+          "pub_year": "2001",
+          "doi": null,
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(trinexapac-ethyl) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(trinexapac-ethyl) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 13,
+      "results": [
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "40949541",
+          "source": "MED",
+          "title": "Validating the contributions of stem and root traits to barley lodging in western Canada.",
+          "first_author": "Taylor MW",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1547207",
+          "pmid": "40949541"
+        },
+        {
+          "id": "40164968",
+          "source": "MED",
+          "title": "Exploring the multifaceted dynamics of flowering time regulation in field crops: Insight and intervention approaches.",
+          "first_author": "Naik YD",
+          "pub_year": "2025",
+          "doi": "10.1002/tpg2.70017",
+          "pmid": "40164968"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "34429776",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position for the 52nd Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6766",
+          "pmid": "34429776"
+        },
+        {
+          "id": "34466160",
+          "source": "MED",
+          "title": "Reasoned opinion on the joint review of maximum residue levels (MRLs) for fosetyl, disodium phosphonate and potassium phosphonates according to Articles 12 and 43 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6782",
+          "pmid": "34466160"
+        },
+        {
+          "id": "32625983",
+          "source": "MED",
+          "title": "The 2016 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5348",
+          "pmid": "32625983"
+        },
+        {
+          "id": "42125373",
+          "source": "MED",
+          "title": "Statement on the dietary risk assessment for proposed temporary maximum residue levels (t-MRLs) for fosetyl-Al in certain crops.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2014",
+          "doi": "10.2903/j.efsa.2014.3695",
+          "pmid": "42125373"
+        },
+        {
+          "id": "32626361",
+          "source": "MED",
+          "title": "The 2017 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2019",
+          "doi": "10.2903/j.efsa.2019.5743",
+          "pmid": "32626361"
+        },
+        {
+          "id": "32626398",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 51st Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2019",
+          "doi": "10.2903/j.efsa.2019.5797",
+          "pmid": "32626398"
+        },
+        {
+          "id": "32625953",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 50th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5306",
+          "pmid": "32625953"
+        },
+        {
+          "id": "42125384",
+          "source": "MED",
+          "title": "The 2011 European Union Report on Pesticide Residues in Food.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2014",
+          "doi": "10.2903/j.efsa.2014.3694",
+          "pmid": "42125384"
+        },
+        {
+          "id": "42005779",
+          "source": "MED",
+          "title": "2008 Annual Report on Pesticide Residues according to Article 32 of Regulation (EC) No 396/2005.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2010",
+          "doi": "10.2903/j.efsa.2010.1646",
+          "pmid": "42005779"
+        }
+      ]
+    },
+    {
+      "query": "(trinexapac-ethyl) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [],
+  "notes": []
+}

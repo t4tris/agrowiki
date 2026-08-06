@@ -1,0 +1,297 @@
+I have gathered comprehensive data. Let me compile the final JSON report.
+
+**Summary of findings:**
+
+**Identity:** CID 27982, C2H6ClO3P, MW 144.49 g/mol, IUPAC 2-chloroethylphosphonic acid. Class confirmed: ethylene releaser.
+
+**Tomato (found_verified):**
+- PMID 41028696 (2025, trial): 100 ppm ethephon accelerated ripening from 20 days to 4 days in S. lycopersicum — directly supports CSV ripening claim. DOI 10.1007/978-1-0716-4650-2_4
+- PMID 34217838 (2021, trial): exogenous ethephon (CEPA) reduced growth via central metabolism/cell wall — relevant context (high dose inhibits growth). DOI 10.1016/j.jplph.2021.153460
+- PMID 25886396 (2015, mechanistic): ethephon mediates leaf senescence (sweet potato, but tomato LeAspP homology). DOI 10.1016/j.jplph.2015.03.009
+
+**Cucumber (found_verified):**
+- PMID 20605252 (2010, trial): ethephon alleviated salt-stress inhibition of seed germination in cucumber. DOI 10.1016/j.jplph.2010.03.018
+- PMID 38125485 (2023, trial): ethephon applied at 0/150/300 ppm affected pigments (TCC/TFC) in cucumber fruit. DOI 10.1016/j.heliyon.2023.e22564
+- PMID 16658222 (1972, trial): ethephon affects sex expression/phytohormones in cucumber. DOI 10.1104/pp.50.5.585
+- PMID 32292654 (2020): adventitious rooting. DOI 10.7717/peerj.8896
+
+**Strawberry (found_verified):**
+- PMID 20355099 (2010, trial): ethephon accelerated anthocyanin accumulation, sugar, PAL, beta-galactosidase; repressed chlorophyll. DOI 10.1002/jsfa.3868
+- PMID 26662403 (2015, trial): ethephon influenced anthocyanins, phenolics, sugars, vitamin C. DOI 10.4238/2015.December.7.23
+- PMID 33933955 (2021, trial): ethephon at large green stage repressed anthocyanin biosynthesis (F. chiloensis). DOI 10.1016/j.foodchem.2021.129913
+- PMID 32754175 (2020, trial): ethephon affected mass/diameter/length/firmness but not rate of ripening or color on plant-attached fruit. DOI 10.3389/fpls.2020.00995
+- PMID 27717444 (2016, trial): ethephon altered cell wall metabolism. DOI 10.1093/jxb/erw152 (need to verify — actually from PubMed it was listed, let me use the PMID)
+
+**CSV dosage conflict:** 7 mmol/L = ~1011 ppm (via MW 144.49), while CSV also states 25-50 ppm. The literature uses 100 ppm (tomato), 150-300 ppm (cucumber). So the CSV's 7 mmol/L (~1011 ppm) is far above the 25-50 ppm also cited and above typical literature doses. This is a notable conflict.
+
+**ppm conversion:** 7 mmol/L × 144.49 mg/mmol = 1011.4 mg/L ≈ 1011 ppm.
+
+Let me produce the final JSON report.
+
+```json
+{
+  "contract_version": "1.4",
+  "substance": {"code": "Ethephon", "csv_name": "Ethephon", "queried_name": "ethephon"},
+  "searches": {
+    "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "pubchem"],
+    "failed": [
+      {"endpoint": "crossref", "reason": "network timeout/blocked in subagent environment", "query": "DOI verification via api.crossref.org", "retry_by_orchestrator": false},
+      {"endpoint": "openalex", "reason": "network timeout/blocked in subagent environment", "query": "ethephon dosage ripening searches", "retry_by_orchestrator": false},
+      {"endpoint": "europepmc", "reason": "IPv6 blocked", "query": "ethephon AND (tomato|strawberry|cucumber)", "retry_by_orchestrator": true}
+    ],
+    "queries_used": [
+      "(ethephon[Title/Abstract]) AND (tomato[Title/Abstract])",
+      "(ethephon[Title/Abstract]) AND (cucumber[Title/Abstract])",
+      "(ethephon[Title/Abstract]) AND (strawberry[Title/Abstract])",
+      "PubChem name=ethephon"
+    ],
+    "fallback_tries": []
+  },
+  "identity": {
+    "cas": "16672-87-0",
+    "cid": "27982",
+    "formula": "C2H6ClO3P",
+    "iupac": "2-chloroethylphosphonic acid",
+    "class_confirmed": true,
+    "class_evidence": ["PMID:34217838", "PMID:20355099", "PMID:27717444"],
+    "synonyms": ["Ethephon", "Ethrel", "2-chloroethylphosphonic acid", "ethephone", "CEPA"],
+    "synonyms_ru": ["Этефон", "Этрел"],
+    "molar_mass_g_mol": 144.49,
+    "notes": "CAS 16672-87-0 подтверждён через PubChem RegistryID; CID 27982. Этилен-релизер: распадается с высвобождением этилена. Synonym Ethrel (коммерческий препарат, 240 g/L a.i.)."
+  },
+  "mode_of_action": {
+    "summary": "Этефон (2-хлорэтилфосфоновая кислота) — синтетический этилен-релизер: в растительных тканях при pH>4 химически разлагается с высвобождением этилена, который активирует этилен-сигнальный путь (ethylene signaling), регулирующий созревание, опадение, половую дифференциацию и стрессовые ответы.",
+    "evidence": ["PMID:34217838", "PMID:20355099", "PMID:20605252"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 30, "europe_pmc": 0, "culture_mentioned": 30},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "100 ppm ethephon ускоряет созревание плодов томата с 20 дней до 4 дней",
+          "context": "Обработка плодов Solanum lycopersicum L. этиленом (этефон 100 ppm) ускоряет процесс созревания; контроль цвета по L*, a*, b*; потеря массы при 23°C/80% влажности.",
+          "dosage_normalized": {"original": "100 ppm ethephon", "ppm_equivalent": 100, "molar_mass_used_g_mol": 144.49, "conversion_source": "указано в работе как ppm", "note": "ppm ≈ mg/L для водных растворов; доза близка к верхней границе CSV 25-50 ppm (выше)"},
+          "conditions": {"stage": "плоды на созревание", "bbch_stages": [], "temperature_range": "23°C", "formulation": "этефон (Ethrel)"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "41028696", "year": 2025, "verified": true, "paper_type": "trial", "doi": "10.1007/978-1-0716-4650-2_4", "oa_url": null}],
+          "quote": "Employing a 100 ppm ethephon (an ethylene source) concentration, a notable acceleration of the ripening process occurs, shortening the usual 20-day period to only 4 days."
+        },
+        {
+          "type": "effect",
+          "value": "Экзогенный этилен подавляет рост томата (снижение биомассы, фотосинтеза, накопление лигнина/целлюлозы)",
+          "context": "Обработка CEPA (этефон) томата вызывает тройной ответ, снижение сухой массы побегов и корней, числа листьев, фотосинтеза и устьичной проводимости; накопление клеточных стенок и фенолов.",
+          "dosage_normalized": {"original": "CEPA (этефон) — концентрация не детализирована", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "фенотипический ответ на экзогенный этилен"},
+          "conditions": {"stage": "вегетативный рост", "bbch_stages": [], "temperature_range": null, "formulation": "CEPA (2-хлорэтилфосфоновая кислота)"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "34217838", "year": 2021, "verified": true, "paper_type": "trial", "doi": "10.1016/j.jplph.2021.153460", "oa_url": null}],
+          "quote": "CEPA-treated plants were characterized by growth inhibition, as revealed by significant reductions in both shoot and root dry weights... exogenous ethylene disrupts plant growth and leaf structure."
+        }
+      ],
+      "gap": "Нет данных о применении этефона методом fruit dip 7 mmol/L именно на томате; литература описывает 100 ppm для ускорения созревания плодов.",
+      "related_evidence": [
+        {"pmid": "25886396", "year": 2015, "claim": "Этефон опосредует сенесценс листьев (SPAP1 аспартат-протеаза, гомологична томатной LeAspP)", "note": "работа на батате, но затрагивает томатный гомолог LeAspP"}
+      ]
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 19, "europe_pmc": 0, "culture_mentioned": 19},
+      "claims": [
+        {
+          "type": "method",
+          "value": "Этефон снимает ингибирование прорастания семян огурца при солевом стрессе (200 mM NaCl)",
+          "context": "Прорастание семян Cucumis sativus подавлено солевым стрессом; ACC и этефон ослабляют это ингибирование, но мало влияют на рост корешка.",
+          "dosage_normalized": {"original": "этефон (концентрация не детализирована)", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "обработка семян"},
+          "conditions": {"stage": "прорастание семян", "bbch_stages": [], "temperature_range": null, "formulation": "этефон", "stress": "200 mM NaCl"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "20605252", "year": 2010, "verified": true, "paper_type": "trial", "doi": "10.1016/j.jplph.2010.03.018", "oa_url": null}],
+          "quote": "Seed germination was markedly inhibited by salt stress, and this effect was alleviated by ACC and Ethephon."
+        },
+        {
+          "type": "dosage",
+          "value": "Этефон 150 и 300 ppm влияет на содержание пигментов (TCC, TFC) в плодах огурца",
+          "context": "Сорта 'Mars', 'Vanesa', 'Roberto' обрабатывали этефоном 0/150/300 ppm; оценка точности предсказания общего каротиноидов и флавоноидов.",
+          "dosage_normalized": {"original": "150 и 300 ppm ethephon", "ppm_equivalent": 150, "molar_mass_used_g_mol": 144.49, "conversion_source": "указано в работе как ppm", "note": "ppm ≈ mg/L; дозы выше CSV 25-50 ppm"},
+          "conditions": {"stage": "плодоношение", "bbch_stages": [], "temperature_range": null, "formulation": "этефон"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "38125485", "year": 2023, "verified": true, "paper_type": "trial", "doi": "10.1016/j.heliyon.2023.e22564", "oa_url": null}],
+          "quote": "ethephon was applied at different concentrations of 0 ppm, 150 ppm, and 300 ppm."
+        },
+        {
+          "type": "effect",
+          "value": "Этефон изменяет половую дифференциацию и уровень фитогормонов огурца",
+          "context": "Обработка этефоном снижает уровень гиббереллинов и ауксинов, повышает АБК; влияет на женскую тенденцию пола у монoecious и гиноecious огурцов.",
+          "dosage_normalized": {"original": "этефон (2-хлорэтилфосфоновая кислота)", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "классический эффект этилена на пол"},
+          "conditions": {"stage": "вегетативное развитие", "bbch_stages": [], "temperature_range": null, "formulation": "этефон"},
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "16658222", "year": 1972, "verified": true, "paper_type": "trial", "doi": "10.1104/pp.50.5.585", "oa_url": null}],
+          "quote": "Application of Ethephon induced a rise in abscisic acid... The possibility of interrelationship between gibberellin, auxin, ethylene, and abscisic acid on sex expression are discussed."
+        }
+      ],
+      "gap": "Нет литературы о созревании/окраске плодов огурца методом fruit dip 7 mmol/L; основные данные касаются прорастания, пигментов и половой дифференциации.",
+      "related_evidence": [
+        {"pmid": "32292654", "year": 2020, "claim": "Этилен участвует в адвентивном корнеобразовании огурца, индуцированном водородом", "note": "механистическая работа, не про созревание"},
+        {"pmid": "34419567", "year": 2021, "claim": "ACS-гены (этилен-биосинтез) отвечают на экзогенный этефон при половой дифференциации", "note": "работа на дыне и арбузе, ACS-семейство изучено на огурце"}
+      ]
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 15, "europe_pmc": 0, "culture_mentioned": 15},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Этефон ускоряет накопление антоцианов, сахаров и активность PAL, подавляет хлорофилл в плодах клубники",
+          "context": "Плоды Fragaria × ananassa (белая стадия) обработаны этефоном: ускорены антоцианы, общий сахар, PAL и бета-галактозидаза; подавлены хлорофилл, эндо-1,4-бета-глюканаза и бета-ксилозидаза.",
+          "dosage_normalized": {"original": "этефон (этилен-релизер)", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "концентрация не детализирована"},
+          "conditions": {"stage": "белая стадия плода", "bbch_stages": [], "temperature_range": null, "formulation": "этефон (Этрел)"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "20355099", "year": 2010, "verified": true, "paper_type": "trial", "doi": "10.1002/jsfa.3868", "oa_url": null}],
+          "quote": "Some aspects of ripening were accelerated (anthocyanin accumulation, total sugar content and increment of PAL and beta-galactosidase activities), while others were repressed (chlorophyll levels...)."
+        },
+        {
+          "type": "effect",
+          "value": "Этефон влияет на фитохимический профиль (антоцианы, фенолы, сахара, витамин C) клубники",
+          "context": "Полевые и послеуборочные обработки этефоном сорта 'Camino Real' влияли на экспрессию FaERF2/FaACO1 и фитохимический профиль на разных стадиях развития.",
+          "dosage_normalized": {"original": "этефон (экзогенный)", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "концентрация не детализирована"},
+          "conditions": {"stage": "разные стадии развития/послеуборочный", "bbch_stages": [], "temperature_range": null, "formulation": "этефон"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "26662403", "year": 2015, "verified": true, "paper_type": "trial", "doi": "10.4238/2015.December.7.23", "oa_url": null}],
+          "quote": "ethephon significantly influenced the phytochemical profile of sugars, anthocyanins, phenolic compounds, and vitamin C contents... ethylene regulates the phenylpropanoid maturation pathway in strawberry fruit."
+        },
+        {
+          "type": "effect",
+          "value": "Этефон на ранней (immature) стадии подавляет биосинтез антоцианов и усиливает лигнинизацию",
+          "context": "Плоды Fragaria chiloensis (крупная зелёная стадия) обработаны этефоном: ингибирование биосинтеза антоцианов, снижение экспрессии генов антоциан-биосинтеза; стимуляция лигнина и FcPOD27.",
+          "dosage_normalized": {"original": "этефон (этилен)", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "in vitro система созревания"},
+          "conditions": {"stage": "крупная зелёная стадия", "bbch_stages": [], "temperature_range": null, "formulation": "этефон"},
+          "relevance": "directly_contradicts",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "33933955", "year": 2021, "verified": true, "paper_type": "trial", "doi": "10.1016/j.foodchem.2021.129913", "oa_url": null}],
+          "quote": "Fruits of Fragaria chiloensis treated with ethephon at the large green developmental stage showed inhibition of anthocyanin biosynthesis and downregulation of essential anthocyanin biosynthesis genes."
+        },
+        {
+          "type": "effect",
+          "value": "Этефон не влияет на скорость созревания и окраску, но меняет массу/диаметр/длину/твёрдость плодов на растении",
+          "context": "Плоды 'Albion' на растении обработаны этефоном на 4 стадиях: не влиял на скорость созревания, цвет, кислотность, растворимые сухие вещества, фенолы, сахара; затрагивал массу, диаметр, длину, твёрдость.",
+          "dosage_normalized": {"original": "этефон (дип плодов)", "ppm_equivalent": null, "molar_mass_used_g_mol": 144.49, "conversion_source": null, "note": "метод дипа — близок к CSV fruit dip"},
+          "conditions": {"stage": "4 стадии развития на растении", "bbch_stages": [], "temperature_range": null, "formulation": "этефон, дип"},
+          "relevance": "directly_contradicts",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": "32754175", "year": 2020, "verified": true, "paper_type": "trial", "doi": "10.3389/fpls.2020.00995", "oa_url": null}],
+          "quote": "Treatments did not affect the rate of ripening nor fruit color... Ethephon affected fruit mass, diameter, length, firmness."
+        }
+      ],
+      "gap": "Эффект этефона на созревание/антоцианы клубники противоречив и зависит от стадии развития (ранняя стадия подавляет антоцианы, поздняя ускоряет); метод fruit dip 7 mmol/L не описан.",
+      "related_evidence": [
+        {"pmid": "27717444", "year": 2016, "claim": "Этефон изменяет метаболизм клеточных стенок клубники (гемицеллюлозы, целлюлоза, пектины)", "note": "механистическая работа по метаболизму клеточных стенок"},
+        {"pmid": "35400460", "year": 2022, "claim": "Экзогенный этилен контролирует созревание ягод", "note": "работа на винограде (Vitis), не входит в фокусные культуры"}
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "Только из литературы: этефон — этилен-релизер, разлагается в растительных тканях с высвобождением этилена; специфические ED50/TD50/показатели стойкости в почве по целевым культурам в найденной литературе не приводились."
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества; для пестицидов/ретардантов PHI/REI — справочно, не блокер, в карточке лаконично"
+  },
+  "contraindications": [
+    {
+      "condition": "Высокие дозы этилена/этефона подавляют вегетативный рост томата (снижение биомассы, фотосинтеза)",
+      "effect": "Ингибирование роста, снижение числа листьев, накопление лигнина/целлюлозы, метаболический стресс",
+      "severity": "medium",
+      "sources": ["PMID:34217838"]
+    },
+    {
+      "condition": "Применение этефона на ранней (immature) стадии клубники",
+      "effect": "Подавление биосинтеза антоцианов и усиление лигнинизации плодов",
+      "severity": "medium",
+      "sources": ["PMID:33933955"]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "Fruit dip 7 mmol/L or 25-50 ppm",
+      "literature_summary": "7 mmol/L этефона ≈ 1011 ppm (при молярной массе 144.49 г/моль), что на порядок выше второго значения 25-50 ppm и выше литературных доз (100 ppm томат; 150-300 ppm огурец). Диапазон 25-50 ppm частично подтверждается литературой (100 ppm томат — близко), но 7 mmol/L (~1011 ppm) не подтверждается и выглядит завышенным.",
+      "severity": "high",
+      "sources": ["PMID:41028696", "PMID:38125485"]
+    },
+    {
+      "csv_field": "Expected_Result",
+      "csv_value": "Promote strawberry red-coloring and softening, partially rescue anthocyanin biosynthesis",
+      "literature_summary": "Эффект этефона на антоцианы клубники зависит от стадии: на белой/поздней стадии ускоряет накопление антоцианов (PMID:20355099, PMID:26662403), но на ранней (immature) стадии подавляет их биосинтез (PMID:33933955); на плодах на растении не влияет на скорость созревания и окраску (PMID:32754175).",
+      "severity": "medium",
+      "sources": ["PMID:20355099", "PMID:26662403", "PMID:33933955", "PMID:32754175"]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "strong",
+    "status_suggested": "corrected",
+    "reason": "Таксономия (этилен-релизер, ethylene signaling) подтверждена. Эффект ускорения созревания томата (100 ppm) и влияние на антоцианы клубники подтверждены рецензированной литературой. Требуется коррекция дозировки: 7 mmol/L ≈ 1011 ppm не подтверждается и противоречит диапазону 25-50 ppm; эффект на клубнику стадие-зависим."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family 'ethylene' (этилен-релизер) и mechanism 'ethylene_signaling' подтверждены литературой: этефон разлагается с высвобождением этилена, активирующего этилен-сигнальный путь."
+  },
+  "sources_index": [
+    "PMID:41028696",
+    "PMID:34217838",
+    "PMID:25886396",
+    "PMID:20605252",
+    "PMID:38125485",
+    "PMID:16658222",
+    "PMID:32292654",
+    "PMID:20355099",
+    "PMID:26662403",
+    "PMID:33933955",
+    "PMID:32754175",
+    "PMID:27717444"
+  ]
+}
+```
+
+---
+
+## Итоговый отчёт
+
+Я собрал научную литературу по **Ethephon** для трёх фокусных культур. Ключевые выводы:
+
+**Идентичность (подтверждена):** CID 27982, C2H6ClO3P, MW 144.49 г/моль, IUPAC 2-chloroethylphosphonic acid. CAS 16672-87-0. Таксономия `ethylene` / `ethylene_signaling` **подтверждена** — этефон это этилен-релизер.
+
+**Культуры:**
+- 🍅 **Томат** (`found_verified`): 100 ppm этефона ускоряет созревание с 20 до 4 дней (PMID 41028696) — напрямую поддерживает CSV-заявку на созревание.
+- 🥒 **Огурец** (`found_verified`): этефон снимает солевой стресс при прорастании (PMID 20605252), влияет на пигменты при 150-300 ppm (PMID 38125485), половую дифференциацию (PMID 16658222). Нет данных именно по созреванию плодов методом fruit dip.
+- 🍓 **Клубника** (`found_verified`): эффект на антоцианы **стадие-зависим** — ускоряет на белой стадии (PMID 20355099, 26662403), но подавляет на immature стадии (PMID 33933955) и не влияет на окраску на растении (PMID 32754175).
+
+**Критичный конфликт дозировки (severity high):** CSV заявляет `fruit dip 7 mmol/L` ≈ **1011 ppm** (при MW 144.49), что на порядок выше второго значения 25-50 ppm и выше литературных доз (100 ppm томат, 150-300 ppm огурец). Диапазон 25-50 ppm частично подтверждается, но 7 mmol/L — нет. → `status_suggested: corrected`.
+
+**Среда:** Crossref и OpenAlex были недоступны (таймаут/блок) — помечены в `searches.failed`; Europe PMC помечен для retry оркестратором (IPv6). DOI взяты авторитетно из PubMed `ELocationID`.

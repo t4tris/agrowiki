@@ -1,0 +1,196 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Trinexapac-ethyl",
+    "csv_name": "Trinexapac",
+    "queried_name": "trinexapac-ethyl"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "openalex_solanum",
+      "openalex_cucumis",
+      "openalex_fragaria",
+      "europepmc_tomato",
+      "europepmc_cucumber",
+      "europepmc_strawberry",
+      "pubchem"
+    ],
+    "failed": [],
+    "queries_used": [
+      "(trinexapac-ethyl) AND tomato",
+      "(trinexapac-ethyl) AND cucumber",
+      "(trinexapac-ethyl) AND strawberry",
+      "trinexapac-ethyl solanum",
+      "trinexapac-ethyl cucumis",
+      "trinexapac-ethyl fragaria",
+      "trinexapac-ethyl tomato",
+      "trinexapac-ethyl strawberry"
+    ],
+    "fallback_tries": [
+      {
+        "query": "trinexapac-ethyl strawberry fragaria growth regulator",
+        "results": 0
+      },
+      {
+        "query": "trinexapac-ethyl AND (fragaria OR strawberry)",
+        "results": 5
+      },
+      {
+        "query": "trinexapac-ethyl AND (cucumis OR cucumber)",
+        "results": 7
+      }
+    ]
+  },
+  "identity": {
+    "cas": "95266-40-3",
+    "cid": "92421",
+    "formula": "C13H16O5",
+    "iupac": "ethyl 4-[cyclopropyl(hydroxy)methylidene]-3,5-dioxocyclohexane-1-carboxylate",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PubChem CID 92421"
+    ],
+    "synonyms": [
+      "Trinexapac-ethyl",
+      "Cimectacarb",
+      "Moddus",
+      "Primo",
+      "Primo Maxx",
+      "PALISADE",
+      "CGA-163935",
+      "4-(Cyclopropyl-alpha-hydroxymethylene)-3,5-dioxocyclohexanecarboxylic acid ethyl ester"
+    ],
+    "synonyms_ru": [
+      "Тринексапак-этил"
+    ],
+    "molar_mass_g_mol": 252.26,
+    "notes": "Ацилциклогександионовый ретардант (GA-ингибитор). Коды CSV: Trinexapac-ethyl."
+  },
+  "mode_of_action": {
+    "summary": "Trinexapac-ethyl — ингибитор биосинтеза гиббереллинов (GA), ацилциклогександион, блокирующий поздние этапы GA-биосинтеза, что ведёт к сокращению удлинения стебля и междоузлий.",
+    "evidence": [
+      "DOI:10.1002/9781119312994.apr0541"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 0,
+        "europe_pmc": 0,
+        "culture_mentioned": 1
+      },
+      "claims": [],
+      "gap": "Нет верифицируемых публикаций (с PMID/DOI) по trinexapac-ethyl на томате; работа Figueiredo 2015 без PMID/DOI (см. related_evidence).",
+      "related_evidence": [
+        {
+          "pmid": null,
+          "year": 2012,
+          "claim": "Селективность тринексапак-этила к культурным видам при сносе с сахарного тростника; томат в выборке отсутствует",
+          "note": "DOI:10.1590/s0103-90162012000300004"
+        },
+        {
+          "pmid": null,
+          "year": 2015,
+          "claim": "Поведение индетерминантного томата в присутствии регулятора роста trinexapac — контроль длины междоузлий, увеличение диаметра стебля; при возрастании дозы снижение урожайности и массы плодов",
+          "note": "OpenAlex W1790097572 (Figueiredo et al. 2015); DOI и PMID отсутствуют — работа не включена в claims (требование L1)"
+        }
+      ]
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 0,
+        "europe_pmc": 0,
+        "culture_mentioned": 0
+      },
+      "claims": [],
+      "gap": "Нет данных о применении тринексапак-этила на огурце в найденной литературе.",
+      "related_evidence": [
+        {
+          "pmid": null,
+          "year": 2021,
+          "claim": "Проксокадион-кальций (другой GA-ингибитор) влияет на рост и урожайность огурца",
+          "note": "DOI:10.17576/jsm-2021-5008-01"
+        }
+      ]
+    },
+    "strawberry": {
+      "status": "no_data",
+      "search_stats": {
+        "pubmed": 0,
+        "europe_pmc": 0,
+        "culture_mentioned": 0
+      },
+      "claims": [],
+      "gap": "Нет данных о применении тринексапак-этила на клубнике в найденной литературе.",
+      "related_evidence": [
+        {
+          "pmid": null,
+          "year": 2019,
+          "claim": "Паклобутразол и проксокадион-кальций (GA-ингибиторы) влияют на вегетативные и репродуктивные характеристики клубники",
+          "note": "DOI:10.29252/jcpp.9.2.1"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "только из литературы; конкретных значений ED50/TD50 по тринексапак-этилу в найденной литературе нет"
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества; PHI/REI — справочно, не блокер"
+  },
+  "contraindications": [
+    {
+      "condition": "Индетерминантный томат при возрастающих дозах",
+      "effect": "Снижение урожайности, средней массы плода, доли крупных/средних плодов при превышении дозы",
+      "severity": "medium",
+      "sources": [
+        "OpenAlex:W1790097572"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "csv_field": "Application_Method_Dosage",
+      "csv_value": "100-400 ppm foliar spray",
+      "literature_summary": "Прямое полевое исследование на томате подтверждает контроль длины междоузлий, но конкретный диапазон доз не приведён в аннотации; при возрастании дозы отмечено снижение урожайности и массы плодов",
+      "severity": "low",
+      "sources": [
+        "OpenAlex:W1790097572"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "weak",
+    "status_suggested": "insufficient_data",
+    "reason": "Механизм (ингибитор биосинтеза ГК) и класс (synthetic growth regulator) подтверждены (PMID:15012200, PMID:34608958). Но ни по одной фокусной культуре нет верифицируемых публикаций с PMID/DOI: единственная работа по томату (Figueiredo 2015) без PMID/DOI; по огурцу и клубнике данных нет. CSV-заявка (100-400 ppm фолиар, контроль междоузлий) не может быть подтверждена/опровергнута на фокусных культурах."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family synthetic_growth_regulators и mechanism gibberellin_action подтверждены: тринексапак-этил — синтетический ретардант, ингибитор биосинтеза гиббереллинов."
+  },
+  "sources_index": [
+    "OpenAlex:W1790097572",
+    "DOI:10.1002/9781119312994.apr0541",
+    "DOI:10.1590/s0103-90162012000300004",
+    "DOI:10.17576/jsm-2021-5008-01",
+    "DOI:10.29252/jcpp.9.2.1"
+  ],
+  "supersedes": "search_Trinexapac-ethyl_2026-08-06.json"
+}

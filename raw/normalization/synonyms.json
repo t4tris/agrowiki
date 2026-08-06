@@ -120,8 +120,22 @@
         "6-Benzylaminopurine"
       ],
       "name_en": "6-Benzylaminopurine",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "6-benzylaminopurine",
+        "6-benzyladenine",
+        "N6-benzyladenine",
+        "benzyladenine",
+        "BAP",
+        "6-BA",
+        "6-(benzylamino)purine",
+        "Cytokinin B"
+      ],
+      "aliases_ru": [
+        "6-бензиламинопурин",
+        "6-бензиладенин",
+        "БАП",
+        "бензиладенин"
+      ]
     },
     "ABA + Sucrose": {
       "csv_name": [
@@ -469,8 +483,22 @@
         "CCC"
       ],
       "name_en": "CCC",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Chlormequat chloride",
+        "Chlorocholine chloride",
+        "CCC",
+        "Cycocel",
+        "Cycogan",
+        "(2-Chloroethyl)trimethylammonium chloride",
+        "Retacel",
+        "Stabilan",
+        "Lihocin"
+      ],
+      "aliases_ru": [
+        "Хлормекват хлорид",
+        "ЦЦЦ",
+        "Хлорхолинхлорид"
+      ]
     },
     "Chlorogenic acid": {
       "csv_name": [
@@ -701,8 +729,17 @@
         "Ethephon"
       ],
       "name_en": "Ethephon",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Ethephon",
+        "Ethrel",
+        "2-chloroethylphosphonic acid",
+        "ethephone",
+        "CEPA"
+      ],
+      "aliases_ru": [
+        "Этефон",
+        "Этрел"
+      ]
     },
     "Ethychlozate": {
       "csv_name": [
@@ -1732,8 +1769,18 @@
         "S-Abscisic acid"
       ],
       "name_en": "S-Abscisic acid",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "(S)-abscisic acid",
+        "S-(+)-abscisic acid",
+        "(+)-abscisic acid",
+        "Dormin",
+        "natural abscisic acid"
+      ],
+      "aliases_ru": [
+        "S-абсцизовая кислота",
+        "АБК",
+        "природная абсцизовая кислота"
+      ]
     },
     "STS": {
       "csv_name": [
@@ -2130,8 +2177,18 @@
         "Trinexapac"
       ],
       "name_en": "Trinexapac",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "Trinexapac-ethyl",
+        "Cimectacarb",
+        "Moddus",
+        "Primo",
+        "Primo Maxx",
+        "PALISADE",
+        "CGA-163935"
+      ],
+      "aliases_ru": [
+        "Тринексапак-этил"
+      ]
     },
     "Tryptophan": {
       "csv_name": [
@@ -2260,8 +2317,18 @@
         "Trans-zeatin"
       ],
       "name_en": "Trans-zeatin",
-      "aliases": [],
-      "aliases_ru": []
+      "aliases": [
+        "trans-Zeatin",
+        "Zeatin",
+        "(E)-Zeatin",
+        "Zeatine",
+        "N6-(4-Hydroxyisopentenyl)adenine",
+        "t-zeatin"
+      ],
+      "aliases_ru": [
+        "Зеатин",
+        "транс-зеатин"
+      ]
     },
     "p-Coumaric acid": {
       "csv_name": [

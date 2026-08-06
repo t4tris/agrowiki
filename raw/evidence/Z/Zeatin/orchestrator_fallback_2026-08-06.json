@@ -1,0 +1,1143 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Zeatin",
+    "csv_name": "trans-zeatin"
+  },
+  "searches": [
+    {
+      "query": "(zeatin OR trans-zeatin) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 2223,
+      "results": [
+        {
+          "id": "42286862",
+          "source": "MED",
+          "title": "Diet and microbiome shape small-molecule cytokinin pools in mammals.",
+          "first_author": "Othman EM",
+          "pub_year": "2026",
+          "doi": "10.1080/19490976.2026.2679497",
+          "pmid": "42286862"
+        },
+        {
+          "id": "41520340",
+          "source": "MED",
+          "title": "Protocol for generating and selecting transgenic tomato lines through Agrobacterium tumefaciens-mediated transformation.",
+          "first_author": "Mountourakis F",
+          "pub_year": "2026",
+          "doi": "10.1016/j.xpro.2025.104322",
+          "pmid": "41520340"
+        },
+        {
+          "id": "42131741",
+          "source": "MED",
+          "title": "Trichome formation in &lt;i&gt;Nicotiana benthamiana&lt;/i&gt; is induced by certain &lt;i&gt;Agrobacterium tumefaciens&lt;/i&gt; strains.",
+          "first_author": "Chen J",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1762747",
+          "pmid": "42131741"
+        },
+        {
+          "id": "41820412",
+          "source": "MED",
+          "title": "Hormone variation in Robinia pseudoacacia L. (Fabaceae) leaves during gall formation by Oblongoides robiniae (Haldeman) (Diptera: Cecidomyiidae).",
+          "first_author": "Staszak AM",
+          "pub_year": "2026",
+          "doi": "10.1038/s41598-026-38156-9",
+          "pmid": "41820412"
+        },
+        {
+          "id": "41514496",
+          "source": "MED",
+          "title": "Chemically Induced Resistance to Pathogen Infection in Arabidopsis by Cytokinin (Trans-Zeatin) and an Aromatic Cytokinin Arabinoside.",
+          "first_author": "Hönig M",
+          "pub_year": "2026",
+          "doi": "10.1111/mpp.70200",
+          "pmid": "41514496"
+        },
+        {
+          "id": "42075373",
+          "source": "MED",
+          "title": "&lt;i&gt;Cytokinin Oxidase/Dehydrogenase 1&lt;/i&gt; (&lt;i&gt;FvCKX1&lt;/i&gt;) Coordinates Receptacle Growth and Achene Maturation in Strawberry.",
+          "first_author": "Tian Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081171",
+          "pmid": "42075373"
+        },
+        {
+          "id": "41632434",
+          "source": "MED",
+          "title": "The non-catalytic binding of auxin, cytokinin and salicylic acid by tomato Phi class glutathione transferases: insights from computational modelling.",
+          "first_author": "Hajnal ÁB",
+          "pub_year": "2026",
+          "doi": "10.1007/s11103-026-01681-2",
+          "pmid": "41632434"
+        },
+        {
+          "id": "PPR1085187",
+          "source": "PPR",
+          "title": "Effects of AMF on the Physiological Responses and Root Organic Acid Secretion of Tomato (<em>Solanum lycopersicum</em>) Under Cadmium Stress",
+          "first_author": "Zhang D",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202509.1192.v1",
+          "pmid": null
+        },
+        {
+          "id": "IND609287184",
+          "source": "AGR",
+          "title": "Exogenous application of acetoin promotes tomato seedling growth and alters the transcriptome profile",
+          "first_author": "Song Y",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41714960",
+          "source": "MED",
+          "title": "MsDREB2A modulates alfalfa growth by regulating MsCRE1 involved in cytokinin biosynthesis.",
+          "first_author": "Kuang Q",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08342-y",
+          "pmid": "41714960"
+        },
+        {
+          "id": "40700013",
+          "source": "MED",
+          "title": "Protocol for Agrobacterium-mediated transformation of tomato and flow cytometry-based ploidy confirmation.",
+          "first_author": "Wang Y",
+          "pub_year": "2025",
+          "doi": "10.1016/j.xpro.2025.103959",
+          "pmid": "40700013"
+        },
+        {
+          "id": "41375227",
+          "source": "MED",
+          "title": "Dynamic Hormonal Networks in Flax During &lt;i&gt;Fusarium oxysporum&lt;/i&gt; Infection and Their Regulation by Spermidine.",
+          "first_author": "Augustyniak B",
+          "pub_year": "2025",
+          "doi": "10.3390/molecules30234631",
+          "pmid": "41375227"
+        },
+        {
+          "id": "41375329",
+          "source": "MED",
+          "title": "Comprehensive Analysis of Boron-Induced Changes in Cell Expansion and Phytohormone During Early Ovary Development in Pear (&lt;i&gt;Pyrus sinkiangensis&lt;/i&gt; Yu).",
+          "first_author": "Chen J",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14233619",
+          "pmid": "41375329"
+        },
+        {
+          "id": "41724927",
+          "source": "MED",
+          "title": "Melatonin pre-treatment mitigates cadmium toxicity in maize seedlings by regulating hydrological status, physio-biochemical, and hormonal responses.",
+          "first_author": "Khan A",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08427-8",
+          "pmid": "41724927"
+        },
+        {
+          "id": "41649659",
+          "source": "MED",
+          "title": "Synergistic role of GhGCS1 in cotton root development and verticillium wilt resistance.",
+          "first_author": "Wang Q",
+          "pub_year": "2026",
+          "doi": "10.1007/s44154-026-00293-6",
+          "pmid": "41649659"
+        },
+        {
+          "id": "42029775",
+          "source": "MED",
+          "title": "Fulvic Acid Suppresses Excessive Cytokinin Biosynthesis to Reduce ROS Content and thus Decrease Na&lt;sup&gt;+&lt;/sup&gt; Accumulation and Toxicity, Enhancing Salt Tolerance in Rice.",
+          "first_author": "Zhu Y",
+          "pub_year": "2026",
+          "doi": "10.1186/s12284-026-00912-w",
+          "pmid": "42029775"
+        },
+        {
+          "id": "41683094",
+          "source": "MED",
+          "title": "Non-Targeted Metabolomics Analysis Reveals the Inhibition Mechanism of Ozone Treatment on Postharvest Blue Mold in &lt;i&gt;Angelica sinensis&lt;/i&gt;.",
+          "first_author": "Xi J",
+          "pub_year": "2026",
+          "doi": "10.3390/foods15030493",
+          "pmid": "41683094"
+        },
+        {
+          "id": "41239213",
+          "source": "MED",
+          "title": "Genome-wide characterization of the UDP-glycosyltransferases (UGT) family and functional analysis of VcUGT160 involved in dihydrozeatin glycosylation during blueberry fruits development.",
+          "first_author": "Wang Y",
+          "pub_year": "2025",
+          "doi": "10.1186/s12864-025-12267-5",
+          "pmid": "41239213"
+        },
+        {
+          "id": "41440023",
+          "source": "MED",
+          "title": "Impact of the &lt;i&gt;etr1-1&lt;/i&gt; Mutation, Impairing Ethylene Sensitivity, on Hormonal Status and Growth of &lt;i&gt;Arabidopsis thaliana&lt;/i&gt; Under Salinity Stress.",
+          "first_author": "Sevostyanova A",
+          "pub_year": "2025",
+          "doi": "10.3390/cells14242003",
+          "pmid": "41440023"
+        },
+        {
+          "id": "41295317",
+          "source": "MED",
+          "title": "Metabolomic Profiling of Commercial Tomato Puree by One-Shot Mass Spectrometry-Based Analysis: A Qualitative Perspective.",
+          "first_author": "Lamonaca A",
+          "pub_year": "2025",
+          "doi": "10.3390/metabo15110732",
+          "pmid": "41295317"
+        },
+        {
+          "id": "41096694",
+          "source": "MED",
+          "title": "Involvement of Ethylene in Adventitious Root Formation of Red-Stalked Rhubarb In Vitro.",
+          "first_author": "Wojtania A",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26199429",
+          "pmid": "41096694"
+        },
+        {
+          "id": "41190173",
+          "source": "MED",
+          "title": "Genome editing approaches to harness cytokinin-salicylic acid crosstalk for plant protection.",
+          "first_author": "Naseem M",
+          "pub_year": "2025",
+          "doi": "10.3389/fgeed.2025.1687599",
+          "pmid": "41190173"
+        },
+        {
+          "id": "42273211",
+          "source": "MED",
+          "title": "Screening of plant immune elicitors and their control effects on tomato yellow leaf curl virus disease.",
+          "first_author": "Wang D",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1834029",
+          "pmid": "42273211"
+        },
+        {
+          "id": "42111726",
+          "source": "MED",
+          "title": "Editorial: Interplay of plant volatiles in enhancing immunity and sustainable pest management.",
+          "first_author": "Sobhy IS",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1847766",
+          "pmid": "42111726"
+        },
+        {
+          "id": "42205911",
+          "source": "MED",
+          "title": "Arbuscular Mycorrhizal Fungi Inoculation Mediated Changes in Phytohormones Under Drought Stress.",
+          "first_author": "Chandrasekaran M",
+          "pub_year": "2026",
+          "doi": "10.1080/12298093.2026.2670137",
+          "pmid": "42205911"
+        }
+      ]
+    },
+    {
+      "query": "(zeatin OR trans-zeatin) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 19,
+      "results": [
+        {
+          "id": "PPR1085187",
+          "source": "PPR",
+          "title": "Effects of AMF on the Physiological Responses and Root Organic Acid Secretion of Tomato (<em>Solanum lycopersicum</em>) Under Cadmium Stress",
+          "first_author": "Zhang D",
+          "pub_year": "2025",
+          "doi": "10.20944/preprints202509.1192.v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1274149",
+          "source": "PPR",
+          "title": "A tonoplast cytokinin riboside transporter gates intracellular hormone availability at the root–microbe interface",
+          "first_author": "Plíhal O",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-10153965/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR1245087",
+          "source": "PPR",
+          "title": "A tonoplast cytokinin riboside transporter gates intracellular hormone availability at the root–microbe interface",
+          "first_author": "Hudeček M",
+          "pub_year": "2026",
+          "doi": "10.64898/2026.05.31.727005",
+          "pmid": null
+        },
+        {
+          "id": "PPR1013368",
+          "source": "PPR",
+          "title": "Effect of plant tissue culture parameters on the ploidy level of  <i>Physalis grisea, Solanum lycopersicum</i>  , and  <i>Solanum prinophyllum</i>  regenerants",
+          "first_author": "Swartwood K",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.05.01.651681",
+          "pmid": null
+        },
+        {
+          "id": "PPR986670",
+          "source": "PPR",
+          "title": "Micro-Mel and Mini-Mel short life cycle dwarf lines with  <i>Solanum anguivi</i>  introgressions as the first model varieties for eggplant research and breeding",
+          "first_author": "Martínez-López M",
+          "pub_year": "2025",
+          "doi": "10.1101/2025.03.07.642017",
+          "pmid": null
+        },
+        {
+          "id": "PPR838222",
+          "source": "PPR",
+          "title": "Transcriptomic analysis revealed that multiple metabolic pathways involved in the synergy response to salt stress induced by exogenous GABA at different stages in tomato plants",
+          "first_author": "Wu X",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4200820/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR196010",
+          "source": "PPR",
+          "title": "MiRNA expression profiling and zeatin dynamic changes in a new model system of  <i>in vivo</i>  indirect regeneration of tomato",
+          "first_author": "Cao H",
+          "pub_year": "2020",
+          "doi": "10.1101/2020.08.03.234013",
+          "pmid": null
+        },
+        {
+          "id": "PPR743201",
+          "source": "PPR",
+          "title": "Modification of Genes Expression of Tomato Plants through Foliar Flavonoids Application in Relation to Enhanced Growth",
+          "first_author": "Martinez-Alonso A",
+          "pub_year": "2023",
+          "doi": "10.20944/preprints202310.0983.v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR713218",
+          "source": "PPR",
+          "title": "Effective transformation of wild tomato species Solanum pimpinellifolium mediated by Agrobacterium tumefaciens",
+          "first_author": "Xu M",
+          "pub_year": "2023",
+          "doi": "10.21203/rs.3.rs-2805472/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR473256",
+          "source": "PPR",
+          "title": "Establishment of a DNA-free genome editing and protoplast regeneration method in cultivated tomato (Solanum lycopersicum)",
+          "first_author": "Liu Y",
+          "pub_year": "2022",
+          "doi": "10.21203/rs.3.rs-1433979/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR415373",
+          "source": "PPR",
+          "title": "Genome-Wide Identification of Tomato Golden 2-Like Transcription Factors and Abiotic Stress Related Members Screening",
+          "first_author": "Wang Z",
+          "pub_year": "2021",
+          "doi": "10.21203/rs.3.rs-1007193/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR276819",
+          "source": "PPR",
+          "title": "Tomato roots sense horizontal/vertical mechanical impedance and divergently modulate root/shoot metabolome",
+          "first_author": "Kumari A",
+          "pub_year": "2021",
+          "doi": "10.1101/2021.02.01.429093",
+          "pmid": null
+        },
+        {
+          "id": "PPR164013",
+          "source": "PPR",
+          "title": "Mutations in Tomato ACC Synthase2 Uncover Its Role in Development beside Fruit Ripening",
+          "first_author": "Sharma K",
+          "pub_year": "2020",
+          "doi": "10.1101/2020.05.12.090431",
+          "pmid": null
+        },
+        {
+          "id": "PPR594302",
+          "source": "PPR",
+          "title": "Ketocarotenoid production in tomato triggers metabolic reprogramming and cellular adaptation: The quest for homeostasis?",
+          "first_author": "Nogueira M",
+          "pub_year": "2023",
+          "doi": "10.1101/2023.01.09.523254",
+          "pmid": null
+        },
+        {
+          "id": "PPR859289",
+          "source": "PPR",
+          "title": "Transcriptome analysis reveals candidate genes and provides insights in resistance to European canker in apple",
+          "first_author": "Karlström A",
+          "pub_year": "2024",
+          "doi": "10.21203/rs.3.rs-4423688/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR13741",
+          "source": "PPR",
+          "title": "N-1-naphthylphthalamic acid stimulates tomato hypocotyl elongation, elevates ethylene levels and alters metabolic homeostasis",
+          "first_author": "Nongmaithem S",
+          "pub_year": "2018",
+          "doi": "10.1101/311159",
+          "pmid": null
+        },
+        {
+          "id": "PPR59025",
+          "source": "PPR",
+          "title": "Efficient and reproducible somatic embryogenesis and micro propagation in tomato via novel structures -Rhizoid Tubers",
+          "first_author": "Saeed W",
+          "pub_year": "2018",
+          "doi": "10.1101/446286",
+          "pmid": null
+        },
+        {
+          "id": "PPR20354",
+          "source": "PPR",
+          "title": "Modification of plant regeneration medium decreases the time for recovery of Solanum lycopersicum cultivar M82 stable transgenic lines",
+          "first_author": "Gupta S",
+          "pub_year": "2016",
+          "doi": "10.1101/046839",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(zeatin OR trans-zeatin) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 735,
+      "results": [
+        {
+          "id": "42131741",
+          "source": "MED",
+          "title": "Trichome formation in &lt;i&gt;Nicotiana benthamiana&lt;/i&gt; is induced by certain &lt;i&gt;Agrobacterium tumefaciens&lt;/i&gt; strains.",
+          "first_author": "Chen J",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1762747",
+          "pmid": "42131741"
+        },
+        {
+          "id": "40805698",
+          "source": "MED",
+          "title": "A Water Solution from the Seeds, Seedlings and Young Plants of the Corn Cockle (&lt;i&gt;Agrostemma githago&lt;/i&gt;) Showed Plant-Growth Regulator Efficiency.",
+          "first_author": "Ambrožič-Dolinšek J",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14152349",
+          "pmid": "40805698"
+        },
+        {
+          "id": "39375519",
+          "source": "MED",
+          "title": "Cytokinin-related genes regulate cucumber fruit pedicel length.",
+          "first_author": "Yane S",
+          "pub_year": "2024",
+          "doi": "10.1038/s41598-024-75186-7",
+          "pmid": "39375519"
+        },
+        {
+          "id": "41888673",
+          "source": "MED",
+          "title": "Physiological and transcriptome analyses for revealing the mechanism of adventitious root formation in Camellia luteoflora.",
+          "first_author": "Wu G",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08627-2",
+          "pmid": "41888673"
+        },
+        {
+          "id": "41299223",
+          "source": "MED",
+          "title": "Exploring the role of BpPIN3 in hormonal regulation and branching morphogenesis of Betula pendula.",
+          "first_author": "Chen K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07771-5",
+          "pmid": "41299223"
+        },
+        {
+          "id": "41726326",
+          "source": "MED",
+          "title": "Integrated multiomics analysis reveals the molecular mechanism of light intensity-enhanced healing in cotyledon-less splice grafted watermelon.",
+          "first_author": "Abouseif Y",
+          "pub_year": "2026",
+          "doi": "10.1093/hr/uhaf293",
+          "pmid": "41726326"
+        },
+        {
+          "id": "40801598",
+          "source": "MED",
+          "title": "Cu&lt;sup&gt;2+&lt;/sup&gt; and Zn&lt;sup&gt;2+&lt;/sup&gt; Ions Affecting Biochemical Paths and DNA Methylation of Rye (&lt;i&gt;Secale cereale&lt;/i&gt; L.) Anther Culture Influencing Plant Regeneration Efficiency.",
+          "first_author": "Dynkowska WM",
+          "pub_year": "2025",
+          "doi": "10.3390/cells14151167",
+          "pmid": "40801598"
+        },
+        {
+          "id": "41901409",
+          "source": "MED",
+          "title": "The Role of Endogenous Hormones in Regulating Early Development of Stone Fruit.",
+          "first_author": "Zhang S",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15060890",
+          "pmid": "41901409"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "41257558",
+          "source": "MED",
+          "title": "RNA sequencing and histology analysis provide insights into the formation of hollow fruits in cucumber.",
+          "first_author": "Zhou G",
+          "pub_year": "2025",
+          "doi": "10.1186/s12864-025-12253-x",
+          "pmid": "41257558"
+        },
+        {
+          "id": "42051032",
+          "source": "MED",
+          "title": "Untargeted Metabolomics Coupled With Machine Learning Unravels Crop-Specific Versus Generalized Effects of Biostimulants in Cucumber, Pepper, and Tomato.",
+          "first_author": "Salehi H",
+          "pub_year": "2026",
+          "doi": "10.1111/ppl.70904",
+          "pmid": "42051032"
+        },
+        {
+          "id": "41769268",
+          "source": "MED",
+          "title": "Multi-omics analysis reveals the regulatory role of &lt;i&gt;CsGA20OX1&lt;/i&gt; in GA-mediated parthenocarpy of cucumber.",
+          "first_author": "Meng S",
+          "pub_year": "2026",
+          "doi": "10.1007/s11032-026-01635-y",
+          "pmid": "41769268"
+        },
+        {
+          "id": "40949577",
+          "source": "MED",
+          "title": "Distinct gene reprogramming in rosetted and symptomless shoots from the same mature rose plants infected with rose rosette virus.",
+          "first_author": "Mutethia R",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1635660",
+          "pmid": "40949577"
+        },
+        {
+          "id": "41977762",
+          "source": "MED",
+          "title": "&lt;i&gt;Paraburkholderia&lt;/i&gt; Mediates Salt Stress Alleviation in Cucumber Seedlings.",
+          "first_author": "Jia X",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15071104",
+          "pmid": "41977762"
+        },
+        {
+          "id": "41249935",
+          "source": "MED",
+          "title": "The role of ACS genes in sex differentiation of Siraitia grosvenorii revealed by comparative transcriptomic analysis.",
+          "first_author": "Mo C",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07359-z",
+          "pmid": "41249935"
+        },
+        {
+          "id": "40200143",
+          "source": "MED",
+          "title": "Comprehensive analysis of transcriptome and metabolome identified the key gene networks regulating fruit length in melon.",
+          "first_author": "Wang Q",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06332-0",
+          "pmid": "40200143"
+        },
+        {
+          "id": "42293003",
+          "source": "MED",
+          "title": "Molecular mechanisms of plant freezing tolerance: from cold signal perception to adaptive responses.",
+          "first_author": "Wei M",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1850456",
+          "pmid": "42293003"
+        },
+        {
+          "id": "40452414",
+          "source": "MED",
+          "title": "Comparative RNA sequencing-based transcriptome profiling of Quercur robur: specific sets of genes involved in taproot and lateral roots emergence.",
+          "first_author": "Kościelniak P",
+          "pub_year": "2025",
+          "doi": "10.1093/treephys/tpaf067",
+          "pmid": "40452414"
+        },
+        {
+          "id": "39289599",
+          "source": "MED",
+          "title": "Gibberellin 2-oxidase 1(CsGA2ox1) involved gibberellin biosynthesis regulates sprouting time in camellia sinensis.",
+          "first_author": "Qiu Z",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05589-1",
+          "pmid": "39289599"
+        },
+        {
+          "id": "39558286",
+          "source": "MED",
+          "title": "Comparative transcriptomic and hormonal analyses reveal potential regulation networks of adventitious root formation in Metasequoia glyptostroboides Hu et Cheng.",
+          "first_author": "Xiong Y",
+          "pub_year": "2024",
+          "doi": "10.1186/s12864-024-10989-6",
+          "pmid": "39558286"
+        },
+        {
+          "id": "41358339",
+          "source": "MED",
+          "title": "Conserved regions upstream of &lt;i&gt;BRC1B&lt;/i&gt; regulate bud dormancy in tomato.",
+          "first_author": "Hatinoğlu G",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1702139",
+          "pmid": "41358339"
+        },
+        {
+          "id": "40508389",
+          "source": "MED",
+          "title": "Hormonal and Transcriptomic Insights into Inflorescence Stalk Elongation in Oil Palm.",
+          "first_author": "Shi P",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14111715",
+          "pmid": "40508389"
+        },
+        {
+          "id": "41728190",
+          "source": "MED",
+          "title": "Transcriptomic and hormonal dynamics in relation to adventitious rooting of two parental &lt;i&gt;Petunia&lt;/i&gt; species highlight a coordinated activation of the jasmonate and auxin pathways and an important role of upper-shoot-derived auxin influx.",
+          "first_author": "Jurenic I",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1707238",
+          "pmid": "41728190"
+        },
+        {
+          "id": "40453337",
+          "source": "MED",
+          "title": "A viral movement protein mediates host volatile biosynthesis to co-attract vectors and non-vectors and enhances viral infection.",
+          "first_author": "Li S",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1551362",
+          "pmid": "40453337"
+        }
+      ]
+    },
+    {
+      "query": "(zeatin OR trans-zeatin) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 3,
+      "results": [
+        {
+          "id": "PPR1237873",
+          "source": "PPR",
+          "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+          "first_author": "Wang M",
+          "pub_year": "2026",
+          "doi": "10.21203/rs.3.rs-9579147/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR479843",
+          "source": "PPR",
+          "title": "High endogenous phytohormone concentrations are present in cucumber fruit apoplasts",
+          "first_author": "Kojima K.",
+          "pub_year": "2022",
+          "doi": "10.21203/rs.3.rs-1259508/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR946663",
+          "source": "PPR",
+          "title": "Optimizing Cucumber Fruit Metabolomics under Elevated CO<sub>2</sub> and High-Temperature Stress in Protected Horticulture",
+          "first_author": "Du X",
+          "pub_year": "2024",
+          "doi": "10.20944/preprints202411.1977.v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(zeatin OR trans-zeatin) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 524,
+      "results": [
+        {
+          "id": "42075373",
+          "source": "MED",
+          "title": "&lt;i&gt;Cytokinin Oxidase/Dehydrogenase 1&lt;/i&gt; (&lt;i&gt;FvCKX1&lt;/i&gt;) Coordinates Receptacle Growth and Achene Maturation in Strawberry.",
+          "first_author": "Tian Y",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15081171",
+          "pmid": "42075373"
+        },
+        {
+          "id": "IND609218105",
+          "source": "AGR",
+          "title": "Relationship Between in Endogenous Phytohormones and Iron Nutrition in Strawberry (Fragaria vesca ssp. semperflorens)",
+          "first_author": "Sönmez F",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41724927",
+          "source": "MED",
+          "title": "Melatonin pre-treatment mitigates cadmium toxicity in maize seedlings by regulating hydrological status, physio-biochemical, and hormonal responses.",
+          "first_author": "Khan A",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08427-8",
+          "pmid": "41724927"
+        },
+        {
+          "id": "40362299",
+          "source": "MED",
+          "title": "Thidiazuron Enhances Strawberry Shoot Multiplication by Regulating Hormone Signal Transduction Pathways.",
+          "first_author": "Wang F",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26094060",
+          "pmid": "40362299"
+        },
+        {
+          "id": "42137215",
+          "source": "MED",
+          "title": "Selection and validation of suitable reference genes for qPCR expression analysis in young &lt;i&gt;in vitro&lt;/i&gt; grown kohlrabi under cytokinin and sucrose treatments.",
+          "first_author": "Tomić A",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1820839",
+          "pmid": "42137215"
+        },
+        {
+          "id": "40677761",
+          "source": "MED",
+          "title": "Overexpression of housekeeping gene &lt;i&gt;FveIPT2&lt;/i&gt; enhances anthocyanin and terpenoid accumulation in strawberry fruits with minimal impact on plant growth and development.",
+          "first_author": "Gan L",
+          "pub_year": "2025",
+          "doi": "10.1093/hr/uhaf130",
+          "pmid": "40677761"
+        },
+        {
+          "id": "40949577",
+          "source": "MED",
+          "title": "Distinct gene reprogramming in rosetted and symptomless shoots from the same mature rose plants infected with rose rosette virus.",
+          "first_author": "Mutethia R",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1635660",
+          "pmid": "40949577"
+        },
+        {
+          "id": "42122889",
+          "source": "MED",
+          "title": "Algal Growth Regulators: Releasing Plant Hormones for Sustainable Horticulture.",
+          "first_author": "Ben Hammouda I",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15091397",
+          "pmid": "42122889"
+        },
+        {
+          "id": "38905729",
+          "source": "MED",
+          "title": "Physiological and molecular responses of strawberry plants to Cd stress.",
+          "first_author": "Song Q",
+          "pub_year": "2024",
+          "doi": "10.1016/j.plaphy.2024.108800",
+          "pmid": "38905729"
+        },
+        {
+          "id": "40282428",
+          "source": "MED",
+          "title": "Physiological and Transcriptomic Analyses Unveil the Preservation Mechanism of &lt;i&gt;Streptomyces albulus&lt;/i&gt; Ah11601 Fermentation Broth on 'Shine Muscat' Grapes.",
+          "first_author": "Lv CT",
+          "pub_year": "2025",
+          "doi": "10.3390/genes16040468",
+          "pmid": "40282428"
+        },
+        {
+          "id": "41704791",
+          "source": "MED",
+          "title": "Plant hormones and membrane transporters: integrating nutrient uptake, ion homeostasis, and stress responses through hormonal cross-talk.",
+          "first_author": "Faizan M",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1699212",
+          "pmid": "41704791"
+        },
+        {
+          "id": "41266985",
+          "source": "MED",
+          "title": "Insights into double sigmoid pattern during Chinese cherry fruit development through comparative physiological and transcriptomic profiles.",
+          "first_author": "Wang Y",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07535-1",
+          "pmid": "41266985"
+        },
+        {
+          "id": "40958762",
+          "source": "MED",
+          "title": "Glucuronoyl Esterase of Pathogenic Phanerochaete carnosa Induces Immune Responses in Aspen Independently of Its Enzymatic Activity.",
+          "first_author": "Donev EN",
+          "pub_year": "2026",
+          "doi": "10.1111/pbi.70357",
+          "pmid": "40958762"
+        },
+        {
+          "id": "40244385",
+          "source": "MED",
+          "title": "Agronomic and Metabolic Responses of &lt;i&gt;Citrus clementina&lt;/i&gt; to Long-Term Irrigation with Saline Reclaimed Water as Abiotic Factor.",
+          "first_author": "Auñón-Calles D",
+          "pub_year": "2025",
+          "doi": "10.3390/ijms26073450",
+          "pmid": "40244385"
+        },
+        {
+          "id": "42293003",
+          "source": "MED",
+          "title": "Molecular mechanisms of plant freezing tolerance: from cold signal perception to adaptive responses.",
+          "first_author": "Wei M",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1850456",
+          "pmid": "42293003"
+        },
+        {
+          "id": "39204677",
+          "source": "MED",
+          "title": "Transcriptomic and Physiological Analyses for the Role of Hormones and Sugar in Axillary Bud Development of Wild Strawberry Stolon.",
+          "first_author": "Lan G",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13162241",
+          "pmid": "39204677"
+        },
+        {
+          "id": "38474012",
+          "source": "MED",
+          "title": "Changes in Phytohormones and Transcriptomic Reprogramming in Strawberry Leaves under Different Light Qualities.",
+          "first_author": "Li P",
+          "pub_year": "2024",
+          "doi": "10.3390/ijms25052765",
+          "pmid": "38474012"
+        },
+        {
+          "id": "40666675",
+          "source": "MED",
+          "title": "Two DNA-binding One Zinc Finger transcription factors, MdCDOF3 and MdDOF3.6, accelerate leaf senescence by activating &lt;i&gt;cytokinin oxidase MdCKX7&lt;/i&gt; in response to sorbitol signaling in apple.",
+          "first_author": "Zhang WJ",
+          "pub_year": "2025",
+          "doi": "10.1093/hr/uhaf120",
+          "pmid": "40666675"
+        },
+        {
+          "id": "41019748",
+          "source": "MED",
+          "title": "Analysis of endogenous hormones and transcriptomes involved in &lt;i&gt;in vitro&lt;/i&gt; shoot apical dormancy during adventitious root formation in tree peony.",
+          "first_author": "Yang Y",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1610747",
+          "pmid": "41019748"
+        },
+        {
+          "id": "38674487",
+          "source": "MED",
+          "title": "Integrative Metabolomic and Transcriptomic Analysis Elucidates That the Mechanism of Phytohormones Regulates Floral Bud Development in Alfalfa.",
+          "first_author": "Huang X",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13081078",
+          "pmid": "38674487"
+        },
+        {
+          "id": "37960026",
+          "source": "MED",
+          "title": "The Role of Cytokinins during the Development of Strawberry Flowers and Receptacles.",
+          "first_author": "Pérez-Rojas M",
+          "pub_year": "2023",
+          "doi": "10.3390/plants12213672",
+          "pmid": "37960026"
+        },
+        {
+          "id": "42113081",
+          "source": "MED",
+          "title": "Molecular mechanisms of plant hormones and sugars regulates strawberry fruit development and ripening.",
+          "first_author": "Pinto CA",
+          "pub_year": "2026",
+          "doi": "10.1007/s11103-026-01714-w",
+          "pmid": "42113081"
+        },
+        {
+          "id": "41019734",
+          "source": "MED",
+          "title": "Integrated metabolomic and transcriptomic analysis elucidates transcriptional regulation of flavonoid biosynthesis in differentially pigmented honeysuckle (&lt;i&gt;Lonicera japonica&lt;/i&gt;) varieties.",
+          "first_author": "Liao H",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1636028",
+          "pmid": "41019734"
+        },
+        {
+          "id": "41181079",
+          "source": "MED",
+          "title": "&lt;i&gt;Methylobacterium&lt;/i&gt; as a key symbiont in plant-microbe interactions: Its ecological and agricultural significance.",
+          "first_author": "Grossi CEM",
+          "pub_year": "2025",
+          "doi": "10.5511/plantbiotechnology.25.0309a",
+          "pmid": "41181079"
+        },
+        {
+          "id": "41868789",
+          "source": "MED",
+          "title": "Transcriptome analysis reveals heat stress-responsive genes in octoploid strawberry seedlings and expression pattern analysis of &lt;i&gt;FaHSF&lt;/i&gt; gene family under heat stress.",
+          "first_author": "Li B",
+          "pub_year": "2026",
+          "doi": "10.7717/peerj.20932",
+          "pmid": "41868789"
+        }
+      ]
+    },
+    {
+      "query": "(zeatin OR trans-zeatin) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR723140",
+          "source": "PPR",
+          "title": "Nutritional Composition, Health Benefits and Processing of Coconut (Cocos Nucifera) as an Industrial Underutilised Nut - A Scoping Review",
+          "first_author": "N AA",
+          "pub_year": "2023",
+          "doi": "10.2139/ssrn.4555239",
+          "pmid": null
+        }
+      ]
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1085187",
+      "source": "PPR",
+      "title": "Effects of AMF on the Physiological Responses and Root Organic Acid Secretion of Tomato (<em>Solanum lycopersicum</em>) Under Cadmium Stress",
+      "first_author": "Zhang D",
+      "pub_year": "2025",
+      "doi": "10.20944/preprints202509.1192.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1237873",
+      "source": "PPR",
+      "title": "Transcriptome and Metabolome Analysis Reveals that Heterocyclic Amide Compounds Promote Growth in Tomato and Cucumber by Modulating Endogenous Hormones ​",
+      "first_author": "Wang M",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-9579147/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1274149",
+      "source": "PPR",
+      "title": "A tonoplast cytokinin riboside transporter gates intracellular hormone availability at the root–microbe interface",
+      "first_author": "Plíhal O",
+      "pub_year": "2026",
+      "doi": "10.21203/rs.3.rs-10153965/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR1245087",
+      "source": "PPR",
+      "title": "A tonoplast cytokinin riboside transporter gates intracellular hormone availability at the root–microbe interface",
+      "first_author": "Hudeček M",
+      "pub_year": "2026",
+      "doi": "10.64898/2026.05.31.727005",
+      "pmid": null
+    },
+    {
+      "id": "PPR1013368",
+      "source": "PPR",
+      "title": "Effect of plant tissue culture parameters on the ploidy level of  <i>Physalis grisea, Solanum lycopersicum</i>  , and  <i>Solanum prinophyllum</i>  regenerants",
+      "first_author": "Swartwood K",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.05.01.651681",
+      "pmid": null
+    },
+    {
+      "id": "PPR986670",
+      "source": "PPR",
+      "title": "Micro-Mel and Mini-Mel short life cycle dwarf lines with  <i>Solanum anguivi</i>  introgressions as the first model varieties for eggplant research and breeding",
+      "first_author": "Martínez-López M",
+      "pub_year": "2025",
+      "doi": "10.1101/2025.03.07.642017",
+      "pmid": null
+    },
+    {
+      "id": "PPR838222",
+      "source": "PPR",
+      "title": "Transcriptomic analysis revealed that multiple metabolic pathways involved in the synergy response to salt stress induced by exogenous GABA at different stages in tomato plants",
+      "first_author": "Wu X",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-4200820/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR196010",
+      "source": "PPR",
+      "title": "MiRNA expression profiling and zeatin dynamic changes in a new model system of  <i>in vivo</i>  indirect regeneration of tomato",
+      "first_author": "Cao H",
+      "pub_year": "2020",
+      "doi": "10.1101/2020.08.03.234013",
+      "pmid": null
+    },
+    {
+      "id": "PPR743201",
+      "source": "PPR",
+      "title": "Modification of Genes Expression of Tomato Plants through Foliar Flavonoids Application in Relation to Enhanced Growth",
+      "first_author": "Martinez-Alonso A",
+      "pub_year": "2023",
+      "doi": "10.20944/preprints202310.0983.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR713218",
+      "source": "PPR",
+      "title": "Effective transformation of wild tomato species Solanum pimpinellifolium mediated by Agrobacterium tumefaciens",
+      "first_author": "Xu M",
+      "pub_year": "2023",
+      "doi": "10.21203/rs.3.rs-2805472/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR473256",
+      "source": "PPR",
+      "title": "Establishment of a DNA-free genome editing and protoplast regeneration method in cultivated tomato (Solanum lycopersicum)",
+      "first_author": "Liu Y",
+      "pub_year": "2022",
+      "doi": "10.21203/rs.3.rs-1433979/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR415373",
+      "source": "PPR",
+      "title": "Genome-Wide Identification of Tomato Golden 2-Like Transcription Factors and Abiotic Stress Related Members Screening",
+      "first_author": "Wang Z",
+      "pub_year": "2021",
+      "doi": "10.21203/rs.3.rs-1007193/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR276819",
+      "source": "PPR",
+      "title": "Tomato roots sense horizontal/vertical mechanical impedance and divergently modulate root/shoot metabolome",
+      "first_author": "Kumari A",
+      "pub_year": "2021",
+      "doi": "10.1101/2021.02.01.429093",
+      "pmid": null
+    },
+    {
+      "id": "PPR164013",
+      "source": "PPR",
+      "title": "Mutations in Tomato ACC Synthase2 Uncover Its Role in Development beside Fruit Ripening",
+      "first_author": "Sharma K",
+      "pub_year": "2020",
+      "doi": "10.1101/2020.05.12.090431",
+      "pmid": null
+    },
+    {
+      "id": "PPR594302",
+      "source": "PPR",
+      "title": "Ketocarotenoid production in tomato triggers metabolic reprogramming and cellular adaptation: The quest for homeostasis?",
+      "first_author": "Nogueira M",
+      "pub_year": "2023",
+      "doi": "10.1101/2023.01.09.523254",
+      "pmid": null
+    },
+    {
+      "id": "PPR859289",
+      "source": "PPR",
+      "title": "Transcriptome analysis reveals candidate genes and provides insights in resistance to European canker in apple",
+      "first_author": "Karlström A",
+      "pub_year": "2024",
+      "doi": "10.21203/rs.3.rs-4423688/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR13741",
+      "source": "PPR",
+      "title": "N-1-naphthylphthalamic acid stimulates tomato hypocotyl elongation, elevates ethylene levels and alters metabolic homeostasis",
+      "first_author": "Nongmaithem S",
+      "pub_year": "2018",
+      "doi": "10.1101/311159",
+      "pmid": null
+    },
+    {
+      "id": "PPR59025",
+      "source": "PPR",
+      "title": "Efficient and reproducible somatic embryogenesis and micro propagation in tomato via novel structures -Rhizoid Tubers",
+      "first_author": "Saeed W",
+      "pub_year": "2018",
+      "doi": "10.1101/446286",
+      "pmid": null
+    },
+    {
+      "id": "PPR20354",
+      "source": "PPR",
+      "title": "Modification of plant regeneration medium decreases the time for recovery of Solanum lycopersicum cultivar M82 stable transgenic lines",
+      "first_author": "Gupta S",
+      "pub_year": "2016",
+      "doi": "10.1101/046839",
+      "pmid": null
+    },
+    {
+      "id": "PPR479843",
+      "source": "PPR",
+      "title": "High endogenous phytohormone concentrations are present in cucumber fruit apoplasts",
+      "first_author": "Kojima K.",
+      "pub_year": "2022",
+      "doi": "10.21203/rs.3.rs-1259508/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR946663",
+      "source": "PPR",
+      "title": "Optimizing Cucumber Fruit Metabolomics under Elevated CO<sub>2</sub> and High-Temperature Stress in Protected Horticulture",
+      "first_author": "Du X",
+      "pub_year": "2024",
+      "doi": "10.20944/preprints202411.1977.v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR723140",
+      "source": "PPR",
+      "title": "Nutritional Composition, Health Benefits and Processing of Coconut (Cocos Nucifera) as an Industrial Underutilised Nut - A Scoping Review",
+      "first_author": "N AA",
+      "pub_year": "2023",
+      "doi": "10.2139/ssrn.4555239",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

@@ -5,17 +5,17 @@ last_updated: 2026-08-06
 
 # Task Queue
 
-## 🔴 HIGH PRIORITY (33)
+## 🔴 HIGH PRIORITY (28)
 - [ ] VALIDATE: 1-MCP × 3 культуры
 - [ ] VALIDATE: 4-CPA × 3 культуры
 - [x] VALIDATE: 6-BAP × 3 культуры → [[wiki/substances/6-BAP]] (partial/strong, 2026-08-06)
 - [ ] VALIDATE: BNOA × 3 культуры
 - [ ] VALIDATE: Carbendazim × 3 культуры
-- [ ] VALIDATE: Chlormequat Chloride × 3 культуры
+- [x] VALIDATE: Chlormequat Chloride × 3 культуры → [[wiki/substances/Chlormequat Chloride]] (partial/moderate, 2026-08-06)
 - [ ] VALIDATE: Cyanamide × 3 культуры
 - [ ] VALIDATE: DA-6 × 3 культуры
 - [ ] VALIDATE: DMSO × 3 культуры
-- [ ] VALIDATE: Ethephon × 3 культуры
+- [x] VALIDATE: Ethephon × 3 культуры → [[wiki/substances/Ethephon]] (corrected/strong, 2026-08-06)
 - [ ] VALIDATE: Ethylene × 3 культуры
 - [ ] VALIDATE: Fulvic Acid × 3 культуры
 - [ ] VALIDATE: GA1 × 3 культуры
@@ -39,7 +39,7 @@ last_updated: 2026-08-06
 - [x] VALIDATE: Proline × 3 культуры → [[wiki/substances/Proline]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Propiconazole × 3 культуры
 - [ ] VALIDATE: Pyraclostrobin × 3 культуры
-- [ ] VALIDATE: S-ABA × 3 культуры
+- [x] VALIDATE: S-ABA × 3 культуры → [[wiki/substances/S-ABA]] (verified/moderate, 2026-08-06)
 - [ ] VALIDATE: STS × 3 культуры
 - [x] VALIDATE: Silicon × 3 культуры → [[wiki/substances/Silicon]] (corrected/strong, 2026-08-04)
 - [ ] VALIDATE: Tebuconazole × 3 культуры
@@ -48,9 +48,9 @@ last_updated: 2026-08-06
 - [ ] VALIDATE: Thiophanate-methyl × 3 культуры
 - [x] VALIDATE: Triacontanol × 3 культуры → [[wiki/substances/Triacontanol]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Trifloxystrobin × 3 культуры
-- [ ] VALIDATE: Trinexapac-ethyl × 3 культуры
+- [x] VALIDATE: Trinexapac-ethyl × 3 культуры → [[wiki/substances/Trinexapac-ethyl]] (insufficient_data/weak, 2026-08-06)
 - [x] VALIDATE: Uniconazole × 3 культуры → [[wiki/substances/Uniconazole]] (corrected/moderate, 2026-08-06)
-- [ ] VALIDATE: Zeatin × 3 культуры
+- [x] VALIDATE: Zeatin × 3 культуры → [[wiki/substances/Zeatin]] (partial/moderate, 2026-08-06)
 
 ## 🟡 MEDIUM PRIORITY (133)
 - [ ] VALIDATE: 2,4-D × 3 культуры

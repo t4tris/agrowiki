@@ -1,0 +1,754 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Chlormequat Chloride",
+    "csv_name": "chlormequat"
+  },
+  "searches": [
+    {
+      "query": "(chlormequat) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 97,
+      "results": [
+        {
+          "id": "PPR1134233",
+          "source": "PPR",
+          "title": "Impact of hormonal priming on crop growth, yield and seed quality in tomato (Solanum lycopersicum L.) cv. PKM 1",
+          "first_author": "Satheeshkumar P",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7693556/v1",
+          "pmid": null
+        },
+        {
+          "id": "41226164",
+          "source": "MED",
+          "title": "New Chlormequat-Based Ionic Liquids as Plant Resistance Inducers.",
+          "first_author": "Kukawka R",
+          "pub_year": "2025",
+          "doi": "10.3390/molecules30214203",
+          "pmid": "41226164"
+        },
+        {
+          "id": "40770428",
+          "source": "MED",
+          "title": "Gibberellin-induced parthenocarpy in fruits of a prickly pear mutant.",
+          "first_author": "Ramakrishnan R",
+          "pub_year": "2025",
+          "doi": "10.1007/s00299-025-03568-w",
+          "pmid": "40770428"
+        },
+        {
+          "id": "41304593",
+          "source": "MED",
+          "title": "Comparative Transcriptome Analysis Provides Insight into the Effect of 6-BA on Flower Development and Flowering in &lt;i&gt;Bougainvillea&lt;/i&gt;.",
+          "first_author": "Lin X",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14223442",
+          "pmid": "41304593"
+        },
+        {
+          "id": "39485912",
+          "source": "MED",
+          "title": "Fast and simple fluorometric measurement of phloem loading exposes auxin-dependent regulation of Arabidopsis sucrose transporter AtSUC2.",
+          "first_author": "Ren Y",
+          "pub_year": "2024",
+          "doi": "10.1111/tpj.17110",
+          "pmid": "39485912"
+        },
+        {
+          "id": "38774114",
+          "source": "MED",
+          "title": "Assessment of fall-back MRLs for revoked CXLs previously implemented in the EU legislation and review of the JMPR evaluation of the toxicological data related to pyrasulfotole, pyraziflumid, spiropidion and tetraniliprole.",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8693",
+          "pmid": "38774114"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "38050377",
+          "source": "MED",
+          "title": "Pure biochemicals and nanomaterials as next generation biostimulants for sustainable agriculture under abiotic stress - recent advances and future scope.",
+          "first_author": "Bhatla SC",
+          "pub_year": "2023",
+          "doi": "10.1080/15592324.2023.2290336",
+          "pmid": "38050377"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "37255950",
+          "source": "MED",
+          "title": "Low-Temperature Cleanup Followed by Dispersive Solid-Phase Extraction for Determination of Nine Polar Plant Growth Regulators in Herbal Matrices Using Liquid Chromatography-Tandem Mass Spectrometry.",
+          "first_author": "Hu Q",
+          "pub_year": "2023",
+          "doi": "10.1007/s10337-023-04254-3",
+          "pmid": "37255950"
+        },
+        {
+          "id": "39329932",
+          "source": "MED",
+          "title": "The Diterpene Isopimaric Acid Modulates the Phytohormone Pathway to Promote <i>Oryza sativa</i> L. Rice Seedling Growth.",
+          "first_author": "Huang J",
+          "pub_year": "2024",
+          "doi": "10.3390/cimb46090580",
+          "pmid": "39329932"
+        },
+        {
+          "id": "36753361",
+          "source": "MED",
+          "title": "Analysis of highly polar pesticides in foods by LC-MS/MS.",
+          "first_author": "Liao WR",
+          "pub_year": "2022",
+          "doi": "10.38212/2224-6614.3420",
+          "pmid": "36753361"
+        },
+        {
+          "id": "36899076",
+          "source": "MED",
+          "title": "Growth changes of tomato seedlings responding to sodium salt of α-naphthalene acetic acid and potassium salt of fulvic acid.",
+          "first_author": "Ren M",
+          "pub_year": "2023",
+          "doi": "10.1038/s41598-023-31023-x",
+          "pmid": "36899076"
+        },
+        {
+          "id": "40361552",
+          "source": "MED",
+          "title": "A Review of Pesticide Residues in Pears: Current Status, Dissipation Pattern and Detection Methods.",
+          "first_author": "Zhang L",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14091470",
+          "pmid": "40361552"
+        },
+        {
+          "id": "40853778",
+          "source": "MED",
+          "title": "Duckweeds: Model organisms for research on plant sterols and steroids.",
+          "first_author": "Klein J",
+          "pub_year": "2026",
+          "doi": "10.1111/plb.70095",
+          "pmid": "40853778"
+        },
+        {
+          "id": "37654440",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 54th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.8111",
+          "pmid": "37654440"
+        },
+        {
+          "id": "37893672",
+          "source": "MED",
+          "title": "Effects of Agricultural Intensification on Mediterranean Diets: A Narrative Review.",
+          "first_author": "Hasanaliyeva G",
+          "pub_year": "2023",
+          "doi": "10.3390/foods12203779",
+          "pmid": "37893672"
+        },
+        {
+          "id": "35161406",
+          "source": "MED",
+          "title": "Paclobutrazol Improves the Quality of Tomato Seedlings to Be Resistant to <i>Alternaria solani</i> Blight Disease: Biochemical and Histological Perspectives.",
+          "first_author": "Shalaby TA",
+          "pub_year": "2022",
+          "doi": "10.3390/plants11030425",
+          "pmid": "35161406"
+        },
+        {
+          "id": "39987374",
+          "source": "MED",
+          "title": "The effect of broadcast struvite fertilization on element soil content and microbial activity changes in winter wheat cultivation in southwest Poland.",
+          "first_author": "Ramut R",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-90384-7",
+          "pmid": "39987374"
+        },
+        {
+          "id": "37628095",
+          "source": "MED",
+          "title": "SERS with Flexible β-CD@AuNP/PTFE Substrates for In Situ Detection and Identification of PAH Residues on Fruit and Vegetable Surfaces Combined with Lightweight Network.",
+          "first_author": "Qiu M",
+          "pub_year": "2023",
+          "doi": "10.3390/foods12163096",
+          "pmid": "37628095"
+        },
+        {
+          "id": "37377807",
+          "source": "MED",
+          "title": "Plant protection from virus: a review of different approaches.",
+          "first_author": "Anikina I",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1163270",
+          "pmid": "37377807"
+        },
+        {
+          "id": "38188979",
+          "source": "MED",
+          "title": "Effect of choline amino acid ionic liquids on maize seed germination and endogenous plant hormone levels.",
+          "first_author": "Chen X",
+          "pub_year": "2024",
+          "doi": "10.1039/d3ra07433a",
+          "pmid": "38188979"
+        },
+        {
+          "id": "40371318",
+          "source": "MED",
+          "title": "The 2023 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9398",
+          "pmid": "40371318"
+        },
+        {
+          "id": "36684413",
+          "source": "MED",
+          "title": "Pesticide Residues and Unauthorized Dyes as Adulteration Markers in Chilli Pepper and Tomato.",
+          "first_author": "Essuman EK",
+          "pub_year": "2023",
+          "doi": "10.1155/2023/5337150",
+          "pmid": "36684413"
+        }
+      ]
+    },
+    {
+      "query": "(chlormequat) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "PPR1134233",
+          "source": "PPR",
+          "title": "Impact of hormonal priming on crop growth, yield and seed quality in tomato (Solanum lycopersicum L.) cv. PKM 1",
+          "first_author": "Satheeshkumar P",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-7693556/v1",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(chlormequat) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 49,
+      "results": [
+        {
+          "id": "41829225",
+          "source": "MED",
+          "title": "A New Matrix Certified Reference Material for Measurement of Chlormequat Chloride and 2,4-Dichlorophenoxyacetic Acid Residues in Cucumber.",
+          "first_author": "Li L",
+          "pub_year": "2026",
+          "doi": "10.3390/foods15050952",
+          "pmid": "41829225"
+        },
+        {
+          "id": "PMC12984568",
+          "source": "PMC",
+          "title": "A New Matrix Certified Reference Material for Measurement of Chlormequat Chloride and 2,4-Dichlorophenoxyacetic Acid Residues in Cucumber",
+          "first_author": null,
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "42022162",
+          "source": "MED",
+          "title": "Assessment of fall-back MRLs for revoked CXLs previously implemented in the EU legislation.",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2026",
+          "doi": "10.2903/j.efsa.2026.10058",
+          "pmid": "42022162"
+        },
+        {
+          "id": "40136965",
+          "source": "MED",
+          "title": "Comprehensive Raman Fingerprinting and Machine Learning-Based Classification of 14 Pesticides Using a 785 nm Custom Raman Instrument.",
+          "first_author": "Yüce M",
+          "pub_year": "2025",
+          "doi": "10.3390/bios15030168",
+          "pmid": "40136965"
+        },
+        {
+          "id": "38774114",
+          "source": "MED",
+          "title": "Assessment of fall-back MRLs for revoked CXLs previously implemented in the EU legislation and review of the JMPR evaluation of the toxicological data related to pyrasulfotole, pyraziflumid, spiropidion and tetraniliprole.",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8693",
+          "pmid": "38774114"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "40770428",
+          "source": "MED",
+          "title": "Gibberellin-induced parthenocarpy in fruits of a prickly pear mutant.",
+          "first_author": "Ramakrishnan R",
+          "pub_year": "2025",
+          "doi": "10.1007/s00299-025-03568-w",
+          "pmid": "40770428"
+        },
+        {
+          "id": "38978692",
+          "source": "MED",
+          "title": "Risk assessment of multiple pesticide residues in <i>Agrocybe aegerita</i>: Based on a 3-year monitoring survey.",
+          "first_author": "Yao Q",
+          "pub_year": "2024",
+          "doi": "10.1016/j.fochx.2024.101323",
+          "pmid": "38978692"
+        },
+        {
+          "id": "40347234",
+          "source": "MED",
+          "title": "Epigenetic regulation of histone methyltransferase SUV39H1 on the expression of recombinant protein in CHO cells.",
+          "first_author": "Yang LL",
+          "pub_year": "2025",
+          "doi": "10.1007/s00253-025-13509-y",
+          "pmid": "40347234"
+        },
+        {
+          "id": "40361552",
+          "source": "MED",
+          "title": "A Review of Pesticide Residues in Pears: Current Status, Dissipation Pattern and Detection Methods.",
+          "first_author": "Zhang L",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14091470",
+          "pmid": "40361552"
+        },
+        {
+          "id": "38050377",
+          "source": "MED",
+          "title": "Pure biochemicals and nanomaterials as next generation biostimulants for sustainable agriculture under abiotic stress - recent advances and future scope.",
+          "first_author": "Bhatla SC",
+          "pub_year": "2023",
+          "doi": "10.1080/15592324.2023.2290336",
+          "pmid": "38050377"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "40371318",
+          "source": "MED",
+          "title": "The 2023 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9398",
+          "pmid": "40371318"
+        },
+        {
+          "id": "37654440",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 54th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.8111",
+          "pmid": "37654440"
+        },
+        {
+          "id": "39410075",
+          "source": "MED",
+          "title": "Enhanced Surveillance of >1100 Pesticides and Natural Toxins in Food: Harnessing the Capabilities of LC-HRMS for Reliable Identification and Quantification.",
+          "first_author": "Bessaire T",
+          "pub_year": "2024",
+          "doi": "10.3390/foods13193040",
+          "pmid": "39410075"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "37377807",
+          "source": "MED",
+          "title": "Plant protection from virus: a review of different approaches.",
+          "first_author": "Anikina I",
+          "pub_year": "2023",
+          "doi": "10.3389/fpls.2023.1163270",
+          "pmid": "37377807"
+        },
+        {
+          "id": "40673397",
+          "source": "MED",
+          "title": "Supramolecular chemistry for optical detection and delivery applications in living plants.",
+          "first_author": "Balli MV",
+          "pub_year": "2025",
+          "doi": "10.1039/d4cs00500g",
+          "pmid": "40673397"
+        },
+        {
+          "id": "31284415",
+          "source": "MED",
+          "title": "Comprehensive Transcriptome Reveals an Opposite Regulatory Effect of Plant Growth Retardants in Controlling Seedling Overgrowth between Roots and Shoots.",
+          "first_author": "Ji Y",
+          "pub_year": "2019",
+          "doi": "10.3390/ijms20133307",
+          "pmid": "31284415"
+        },
+        {
+          "id": "32625953",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 50th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5306",
+          "pmid": "32625953"
+        },
+        {
+          "id": "33747230",
+          "source": "MED",
+          "title": "Setting of an import tolerance for potassium phosphonates in blueberries.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6478",
+          "pmid": "33747230"
+        },
+        {
+          "id": "36778152",
+          "source": "MED",
+          "title": "Prohexadione calcium enhances rice growth and tillering under NaCl stress.",
+          "first_author": "Zhang R",
+          "pub_year": "2023",
+          "doi": "10.7717/peerj.14804",
+          "pmid": "36778152"
+        },
+        {
+          "id": "PMC11843168",
+          "source": "PMC",
+          "title": "Review of the methodology used for the assessment of the short‐term (acute) dietary exposure to pesticide residues in food (IESTI methodology)",
+          "first_author": null,
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "40343122",
+          "source": "MED",
+          "title": "Advances in cotton harvesting aids.",
+          "first_author": "Xie Z",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1570251",
+          "pmid": "40343122"
+        },
+        {
+          "id": "35614331",
+          "source": "MED",
+          "title": "Belgian endive-derived biostimulants promote shoot and root growth in vitro.",
+          "first_author": "Ogunsanya HY",
+          "pub_year": "2022",
+          "doi": "10.1038/s41598-022-12815-z",
+          "pmid": "35614331"
+        }
+      ]
+    },
+    {
+      "query": "(chlormequat) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(chlormequat) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 54,
+      "results": [
+        {
+          "id": "41186503",
+          "source": "MED",
+          "title": "A case report of fatal chlormequat poisoning: Identification of potential additional mechanism of toxicity.",
+          "first_author": "Čečrle M",
+          "pub_year": "2025",
+          "doi": "10.1177/00368504251386979",
+          "pmid": "41186503"
+        },
+        {
+          "id": "36466575",
+          "source": "MED",
+          "title": "Impacts of plant growth regulators in strawberry plant: A review.",
+          "first_author": "Katel S",
+          "pub_year": "2022",
+          "doi": "10.1016/j.heliyon.2022.e11959",
+          "pmid": "36466575"
+        },
+        {
+          "id": "36981080",
+          "source": "MED",
+          "title": "Comparative Metabolomic Analysis of the Nutritional Aspects from Ten Cultivars of the Strawberry Fruit.",
+          "first_author": "Wang X",
+          "pub_year": "2023",
+          "doi": "10.3390/foods12061153",
+          "pmid": "36981080"
+        },
+        {
+          "id": "41098305",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 56th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9640",
+          "pmid": "41098305"
+        },
+        {
+          "id": "38774114",
+          "source": "MED",
+          "title": "Assessment of fall-back MRLs for revoked CXLs previously implemented in the EU legislation and review of the JMPR evaluation of the toxicological data related to pyrasulfotole, pyraziflumid, spiropidion and tetraniliprole.",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8693",
+          "pmid": "38774114"
+        },
+        {
+          "id": "31755653",
+          "source": "MED",
+          "title": "Simultaneous determination of multiclass plant growth regulators in fruits using the quick, easy, cheap, effective, rugged, and safe method and ultra-high performance liquid chromatography-tandem mass spectrometry.",
+          "first_author": "Xu X",
+          "pub_year": "2020",
+          "doi": "10.1002/jssc.201900771",
+          "pmid": "31755653"
+        },
+        {
+          "id": "36753361",
+          "source": "MED",
+          "title": "Analysis of highly polar pesticides in foods by LC-MS/MS.",
+          "first_author": "Liao WR",
+          "pub_year": "2022",
+          "doi": "10.38212/2224-6614.3420",
+          "pmid": "36753361"
+        },
+        {
+          "id": "40361552",
+          "source": "MED",
+          "title": "A Review of Pesticide Residues in Pears: Current Status, Dissipation Pattern and Detection Methods.",
+          "first_author": "Zhang L",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14091470",
+          "pmid": "40361552"
+        },
+        {
+          "id": "39737410",
+          "source": "MED",
+          "title": "Effect of salt stress on different tiller positions in rice and the regulatory effect of prohexadione calcium.",
+          "first_author": "Zhang R",
+          "pub_year": "2024",
+          "doi": "10.7717/peerj.18357",
+          "pmid": "39737410"
+        },
+        {
+          "id": "40371318",
+          "source": "MED",
+          "title": "The 2023 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9398",
+          "pmid": "40371318"
+        },
+        {
+          "id": "40949541",
+          "source": "MED",
+          "title": "Validating the contributions of stem and root traits to barley lodging in western Canada.",
+          "first_author": "Taylor MW",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1547207",
+          "pmid": "40949541"
+        },
+        {
+          "id": "41323260",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue level for dodine in grapes.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9757",
+          "pmid": "41323260"
+        },
+        {
+          "id": "37654440",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 54th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "EFSA (European Food Safety Authority).",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.8111",
+          "pmid": "37654440"
+        },
+        {
+          "id": "39410075",
+          "source": "MED",
+          "title": "Enhanced Surveillance of >1100 Pesticides and Natural Toxins in Food: Harnessing the Capabilities of LC-HRMS for Reliable Identification and Quantification.",
+          "first_author": "Bessaire T",
+          "pub_year": "2024",
+          "doi": "10.3390/foods13193040",
+          "pmid": "39410075"
+        },
+        {
+          "id": "41215465",
+          "source": "MED",
+          "title": "The optimization of crop response to climatic stress through modulation of plant stress response mechanisms. Opportunities for biostimulants and plant hormones to meet climate challenges.",
+          "first_author": "Li J",
+          "pub_year": "2026",
+          "doi": "10.1111/nph.70701",
+          "pmid": "41215465"
+        },
+        {
+          "id": "34661117",
+          "source": "MED",
+          "title": "Induction of defence-related proteins by selected plant growth regulators and biocontrol agents against guava root knot nematode, <i>Meloidogyne enterolobii</i>.",
+          "first_author": "Ashokkumar N",
+          "pub_year": "2021",
+          "doi": "10.21307/jofnem-2021-081",
+          "pmid": "34661117"
+        },
+        {
+          "id": "38655191",
+          "source": "MED",
+          "title": "The 2022 European Union report on pesticide residues in food.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2024",
+          "doi": "10.2903/j.efsa.2024.8753",
+          "pmid": "38655191"
+        },
+        {
+          "id": "34194576",
+          "source": "MED",
+          "title": "Modification of the existing MRLs for potassium phosphonates in lemons, limes and mandarins and in herbal infusions from leaves and herbs.",
+          "first_author": "EFSA (European Food Safety Authority)",
+          "pub_year": "2021",
+          "doi": "10.2903/j.efsa.2021.6673",
+          "pmid": "34194576"
+        },
+        {
+          "id": "34199388",
+          "source": "MED",
+          "title": "Evaluation of Dissipation Behavior, Residues, and Dietary Risk Assessment of Fludioxonil in Cherry via QuEChERS Using HPLC-MS/MS Technique.",
+          "first_author": "Yao S",
+          "pub_year": "2021",
+          "doi": "10.3390/molecules26113344",
+          "pmid": "34199388"
+        },
+        {
+          "id": "42125093",
+          "source": "MED",
+          "title": "Reasoned opinion on the modification of the existing MRLs for chlormequat in pears, cereals and commodities of animal origin.",
+          "first_author": "European Food Safety Authority.",
+          "pub_year": "2014",
+          "doi": "10.2903/j.efsa.2014.3544",
+          "pmid": "42125093"
+        },
+        {
+          "id": "32625953",
+          "source": "MED",
+          "title": "Scientific support for preparing an EU position in the 50th Session of the Codex Committee on Pesticide Residues (CCPR).",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2018",
+          "doi": "10.2903/j.efsa.2018.5306",
+          "pmid": "32625953"
+        },
+        {
+          "id": "PMC11843168",
+          "source": "PMC",
+          "title": "Review of the methodology used for the assessment of the short‐term (acute) dietary exposure to pesticide residues in food (IESTI methodology)",
+          "first_author": null,
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "35079291",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for fosetyl/phosphonic acid in apricots, cherries and plums resulting from the use of potassium phosphonates.",
+          "first_author": "EFSA (European Food Safety Authority)",
+          "pub_year": "2022",
+          "doi": "10.2903/j.efsa.2022.7106",
+          "pmid": "35079291"
+        },
+        {
+          "id": "37583943",
+          "source": "MED",
+          "title": "Modification of the existing maximum residue levels for difenoconazole in wheat and rye.",
+          "first_author": "European Food Safety Authority (EFSA)",
+          "pub_year": "2023",
+          "doi": "10.2903/j.efsa.2023.8207",
+          "pmid": "37583943"
+        },
+        {
+          "id": "39958986",
+          "source": "MED",
+          "title": "Statement on the update of maximum residue levels (MRLs) for copper compounds in light of the EFSA scientific opinion on the re-evaluation of the health-based guidance values (HBGVs) and exposure assessment from all sources.",
+          "first_author": "European Food Safety Authority (EFSA).",
+          "pub_year": "2025",
+          "doi": "10.2903/j.efsa.2025.9271",
+          "pmid": "39958986"
+        }
+      ]
+    },
+    {
+      "query": "(chlormequat) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1134233",
+      "source": "PPR",
+      "title": "Impact of hormonal priming on crop growth, yield and seed quality in tomato (Solanum lycopersicum L.) cv. PKM 1",
+      "first_author": "Satheeshkumar P",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-7693556/v1",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

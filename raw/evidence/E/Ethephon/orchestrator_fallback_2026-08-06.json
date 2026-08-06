@@ -1,0 +1,772 @@
+{
+  "type": "orchestrator_fallback",
+  "created": "2026-08-06",
+  "orchestrator": "main agent (VS Code)",
+  "reason": "europepmc blocked in subagent env (IPv6 NAT64)",
+  "substance": {
+    "code": "Ethephon",
+    "csv_name": "ethephon"
+  },
+  "searches": [
+    {
+      "query": "(ethephon) AND tomato",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 958,
+      "results": [
+        {
+          "id": "41778276",
+          "source": "MED",
+          "title": "Tomato activates ethylene signaling to maintain &lt;i&gt;pathogenesis-related genes&lt;/i&gt; expression for conferring bacterial wilt resistance.",
+          "first_author": "Cai W",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1753391",
+          "pmid": "41778276"
+        },
+        {
+          "id": "41154029",
+          "source": "MED",
+          "title": "Ethephon Treatment Enhanced Postharvest Litchi Fruit Resistance to &lt;i&gt;Peronophythora litchii&lt;/i&gt; by Strengthening Antioxidant Capacity and Defense Systems.",
+          "first_author": "Zhu D",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14203493",
+          "pmid": "41154029"
+        },
+        {
+          "id": "PMC13300513",
+          "source": "PMC",
+          "title": "Genome-Wide Identification and Characterization of NAC Transcription Factors in Avocado (Persea americana): Expression Analysis During Fruit Development",
+          "first_author": null,
+          "pub_year": "2026",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41987040",
+          "source": "MED",
+          "title": "Genome-wide analysis of AP2/ERF gene family in Camellia oleifera and its potential roles in ethylene-induced fruit abscission.",
+          "first_author": "Yi J",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08731-3",
+          "pmid": "41987040"
+        },
+        {
+          "id": "42030538",
+          "source": "MED",
+          "title": "Molecular Module FcERF71-FcDREB1 of Fig Represses Fruit Softening via &lt;i&gt;FcPL7&lt;/i&gt; and &lt;i&gt;FcPG12&lt;/i&gt;.",
+          "first_author": "Fan Z",
+          "pub_year": "2026",
+          "doi": "10.1021/acs.jafc.5c17383",
+          "pmid": "42030538"
+        },
+        {
+          "id": "41854246",
+          "source": "MED",
+          "title": "Analytical Method for Detecting Herbicides, Plant Growth Regulators, and Fungicides in Agricultural Commodities: Single-Laboratory Validation.",
+          "first_author": "Dhanshetty M",
+          "pub_year": "2026",
+          "doi": "10.1093/jaoacint/qsag016",
+          "pmid": "41854246"
+        },
+        {
+          "id": "41246562",
+          "source": "MED",
+          "title": "Gaseous chlorine dioxide improves Keitt mango quality during postharvest ripening: enhancing sugar accumulation, terpenoid biosynthesis, and storage performance.",
+          "first_author": "Tian M",
+          "pub_year": "2025",
+          "doi": "10.1016/j.fochms.2025.100318",
+          "pmid": "41246562"
+        },
+        {
+          "id": "41712060",
+          "source": "MED",
+          "title": "Integrated proteomic and phosphoproteomic analysis reveals the MAPK cascade as a key regulator of ethylene-induced latex production in Hevea brasiliensis.",
+          "first_author": "Yang L",
+          "pub_year": "2026",
+          "doi": "10.1007/s44154-026-00290-9",
+          "pmid": "41712060"
+        },
+        {
+          "id": "41783097",
+          "source": "MED",
+          "title": "Physiological and transcriptomic analyses provide new insights into the effects of 1-MCP and ethephon treatments on apricot fruit during storage.",
+          "first_author": "Sun X.",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1744757",
+          "pmid": "41783097"
+        },
+        {
+          "id": "42278223",
+          "source": "MED",
+          "title": "Temperature Dominates Light in Regulating Lycopene During a Critical Period in Postharvest Tomato Fruit.",
+          "first_author": "Chen J",
+          "pub_year": "2026",
+          "doi": "10.3390/ijms27114690",
+          "pmid": "42278223"
+        },
+        {
+          "id": "41258267",
+          "source": "MED",
+          "title": "Role of growth regulators on fruit splitting and nutritional status of Daisy Mandarin in subtropical conditions.",
+          "first_author": "Kaur K",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-24540-4",
+          "pmid": "41258267"
+        },
+        {
+          "id": "41640034",
+          "source": "MED",
+          "title": "Sex-specific ethylene responses drive floral sexual plasticity in Cannabis sativa.",
+          "first_author": "Monthony AS",
+          "pub_year": "2026",
+          "doi": "10.1111/tpj.70721",
+          "pmid": "41640034"
+        },
+        {
+          "id": "40474063",
+          "source": "MED",
+          "title": "Ethylene-releasing plant growth regulators promote ripening initiation by stimulating sugar, acid and anthocyanin metabolism in blueberry (Vaccinium ashei).",
+          "first_author": "Acharya TP",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06799-x",
+          "pmid": "40474063"
+        },
+        {
+          "id": "40408359",
+          "source": "MED",
+          "title": "Genome-wide identification and characterization of Ethylene-Insensitive 3 (EIN3/EIL) gene family in Camellia oleifera.",
+          "first_author": "Huang S",
+          "pub_year": "2025",
+          "doi": "10.1371/journal.pone.0324651",
+          "pmid": "40408359"
+        },
+        {
+          "id": "41121710",
+          "source": "MED",
+          "title": "Transcription Factor FcrNAC22 Regulates Chlorophyll Catabolic Genes to Accelerate De-Greening in Kumquat Fruit.",
+          "first_author": "Shen X",
+          "pub_year": "2026",
+          "doi": "10.1111/pce.70249",
+          "pmid": "41121710"
+        },
+        {
+          "id": "40941801",
+          "source": "MED",
+          "title": "Ethylene-Mediated Drought Tolerance in the Critically Endangered &lt;i&gt;Artocarpus nanchuanensis&lt;/i&gt;: Insights from Physiological and Transcriptomic Analyses.",
+          "first_author": "Zhang Z",
+          "pub_year": "2025",
+          "doi": "10.3390/plants14172636",
+          "pmid": "40941801"
+        },
+        {
+          "id": "42292950",
+          "source": "MED",
+          "title": "A SlERF4-SlTPP1 module enhances drought tolerance in tomato by increasing the root/shoot ratio.",
+          "first_author": "Wang H",
+          "pub_year": "2026",
+          "doi": "10.1093/hr/uhag070",
+          "pmid": "42292950"
+        },
+        {
+          "id": "42131739",
+          "source": "MED",
+          "title": "SlBL4 is involved in leaf polarity development in tomato.",
+          "first_author": "Hu N",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1765515",
+          "pmid": "42131739"
+        },
+        {
+          "id": "40209051",
+          "source": "MED",
+          "title": "ERF100 regulated by ERF28 and NOR controls pectate lyase 7, modulating fig (Ficus carica L.) fruit softening.",
+          "first_author": "Fan Z",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70085",
+          "pmid": "40209051"
+        },
+        {
+          "id": "40587418",
+          "source": "MED",
+          "title": "A comprehensive model of tomato fruit ripening regulation by the transcription factors NOR-like1, NAC-NOR, and MADS-RIN.",
+          "first_author": "Aprilyanto V",
+          "pub_year": "2025",
+          "doi": "10.1093/plphys/kiaf291",
+          "pmid": "40587418"
+        },
+        {
+          "id": "40925875",
+          "source": "MED",
+          "title": "Auxin Gradients Determine Reproductive Development in Pea (Pisum sativum).",
+          "first_author": "Adihetty DD",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70497",
+          "pmid": "40925875"
+        },
+        {
+          "id": "40428402",
+          "source": "MED",
+          "title": "Genome-Wide Identification of the <i>Polygalacturonase</i> Gene Family and Its Potential Association with Abscission Zone in <i>Capsicum annuum</i> L.",
+          "first_author": "He L",
+          "pub_year": "2025",
+          "doi": "10.3390/genes16050579",
+          "pmid": "40428402"
+        },
+        {
+          "id": "42265984",
+          "source": "MED",
+          "title": "Postharvest preservation of fruits and vegetables by light-emitting diodes.",
+          "first_author": "Vijeev A",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2684157",
+          "pmid": "42265984"
+        },
+        {
+          "id": "41777391",
+          "source": "MED",
+          "title": "At the breaking point: developmental and molecular insights into &lt;i&gt;Physalis grisea&lt;/i&gt; fruit abscission.",
+          "first_author": "Tomaszewski E",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1733427",
+          "pmid": "41777391"
+        },
+        {
+          "id": "41588326",
+          "source": "MED",
+          "title": "Genome-wide identification of ethylene receptor protein-coding gene families in wheat and their regulated expression during development and under multiple abiotic stresses.",
+          "first_author": "Koramutla MK",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08177-7",
+          "pmid": "41588326"
+        }
+      ]
+    },
+    {
+      "query": "(ethephon) AND tomato AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    },
+    {
+      "query": "(ethephon) AND cucumber",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 304,
+      "results": [
+        {
+          "id": "IND609300170",
+          "source": "AGR",
+          "title": "Effect of foliar application of plant growth regulators on expression of flowering genes in cucumber (Cucumis sativus L.)",
+          "first_author": "Kaur H",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41821679",
+          "source": "MED",
+          "title": "Unraveling the mystery of auxin-promoting femaleness in cucurbits.",
+          "first_author": "Xiaofeng L",
+          "pub_year": "2026",
+          "doi": "10.1093/hr/uhaf354",
+          "pmid": "41821679"
+        },
+        {
+          "id": "41937787",
+          "source": "MED",
+          "title": "Partial substitution of nitrogen fertilizer by Chinese milk vetch with different improvement measures achieves a win-win for rice productivity and environmental benefits.",
+          "first_author": "Han S",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1762787",
+          "pmid": "41937787"
+        },
+        {
+          "id": "41154029",
+          "source": "MED",
+          "title": "Ethephon Treatment Enhanced Postharvest Litchi Fruit Resistance to &lt;i&gt;Peronophythora litchii&lt;/i&gt; by Strengthening Antioxidant Capacity and Defense Systems.",
+          "first_author": "Zhu D",
+          "pub_year": "2025",
+          "doi": "10.3390/foods14203493",
+          "pmid": "41154029"
+        },
+        {
+          "id": "41854246",
+          "source": "MED",
+          "title": "Analytical Method for Detecting Herbicides, Plant Growth Regulators, and Fungicides in Agricultural Commodities: Single-Laboratory Validation.",
+          "first_author": "Dhanshetty M",
+          "pub_year": "2026",
+          "doi": "10.1093/jaoacint/qsag016",
+          "pmid": "41854246"
+        },
+        {
+          "id": "41249935",
+          "source": "MED",
+          "title": "The role of ACS genes in sex differentiation of Siraitia grosvenorii revealed by comparative transcriptomic analysis.",
+          "first_author": "Mo C",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07359-z",
+          "pmid": "41249935"
+        },
+        {
+          "id": "41387738",
+          "source": "MED",
+          "title": "Ethylene promotes branch formation but inhibits tendril development in cucumber.",
+          "first_author": "Zhang X",
+          "pub_year": "2025",
+          "doi": "10.1038/s41467-025-67444-7",
+          "pmid": "41387738"
+        },
+        {
+          "id": "PPR1049228",
+          "source": "PPR",
+          "title": "Genetic basis of downy mildew resistance in cucumber: Identification of candidate genes and ethylene-mediated defense mechanism",
+          "first_author": "Anarjan MB",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-6706016/v1",
+          "pmid": null
+        },
+        {
+          "id": "42280679",
+          "source": "MED",
+          "title": "Hermaphroditism in &lt;i&gt;Cannabis sativa&lt;/i&gt; L.: Impacts, Inducers, and Industry Implications.",
+          "first_author": "Richards CD",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15111643",
+          "pmid": "42280679"
+        },
+        {
+          "id": "40685427",
+          "source": "MED",
+          "title": "Analysis of several anionic polar pesticides in food of plant and animal origin using QuPPe extraction and CE-MS/MS determination.",
+          "first_author": "Schäfer AK",
+          "pub_year": "2025",
+          "doi": "10.1007/s00216-025-05990-1",
+          "pmid": "40685427"
+        },
+        {
+          "id": "40693302",
+          "source": "MED",
+          "title": "An Ethylene-Response Factor LlERF092 Coordinates With LlETO1 to Improve Thermotolerance by Activating LlMBF1c in Lily.",
+          "first_author": "Xiang J",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70269",
+          "pmid": "40693302"
+        },
+        {
+          "id": "38125485",
+          "source": "MED",
+          "title": "Comparison of color spectrophotometer and Vis/NIR spectroscopy on assessing natural pigments of cucumber applied with different ethephon concentrations.",
+          "first_author": "Kusumiyati K",
+          "pub_year": "2023",
+          "doi": "10.1016/j.heliyon.2023.e22564",
+          "pmid": "38125485"
+        },
+        {
+          "id": "IND608571382",
+          "source": "AGR",
+          "title": "Comparison of color spectrophotometer and Vis/NIR spectroscopy on assessing natural pigments of cucumber applied with different ethephon concentrations",
+          "first_author": "Kusumiyati K",
+          "pub_year": "2023",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41645507",
+          "source": "MED",
+          "title": "Rice ethylene receptors OsERS1/2 function as Ca&lt;sup&gt;2+&lt;/sup&gt;-permeable channels mediating calcium-dependent antagonism of ethylene-induced root growth inhibition.",
+          "first_author": "Ye Z",
+          "pub_year": "2026",
+          "doi": "10.1016/j.xplc.2026.101753",
+          "pmid": "41645507"
+        },
+        {
+          "id": "41392061",
+          "source": "MED",
+          "title": "Genome-wide characterization of WD40 repeat proteins in cucumber reveals their functional roles in stress response and parthenocarpy.",
+          "first_author": "Zhang T",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-31502-3",
+          "pmid": "41392061"
+        },
+        {
+          "id": "38236308",
+          "source": "MED",
+          "title": "Overexpression of cucumber CYP82D47 enhances resistance to powdery mildew and Fusarium oxysporum f. sp. cucumerinum.",
+          "first_author": "Wang HY",
+          "pub_year": "2024",
+          "doi": "10.1007/s10142-024-01287-1",
+          "pmid": "38236308"
+        },
+        {
+          "id": "41688921",
+          "source": "MED",
+          "title": "Integrative transcriptomic and metabolomic analyses reveal mechanisms underlying calcium-induced enhancement of female flower production in Cucumis sativus L.",
+          "first_author": "Wang C",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08338-8",
+          "pmid": "41688921"
+        },
+        {
+          "id": "38896239",
+          "source": "MED",
+          "title": "Analysis of highly polar anionic pesticides in food of plant and animal origin by ion chromatography and tandem mass spectrometry with emphasis on addressing adverse effects caused by matrix co-extractives.",
+          "first_author": "Schäfer AK",
+          "pub_year": "2024",
+          "doi": "10.1007/s00216-024-05389-4",
+          "pmid": "38896239"
+        },
+        {
+          "id": "39407143",
+          "source": "MED",
+          "title": "Enhancing the medicinal properties and phytochemical content of bitter melon (Momordica charantia L.) through elicitation with brassinosteroid, ethrel, and carrageenan.",
+          "first_author": "Mohkami Z",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05688-z",
+          "pmid": "39407143"
+        },
+        {
+          "id": "40622842",
+          "source": "MED",
+          "title": "Co-domestication of cold tolerance and female flower is determined by CsEIN2 in cucumber.",
+          "first_author": "Li C",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70195",
+          "pmid": "40622842"
+        },
+        {
+          "id": "41122222",
+          "source": "MED",
+          "title": "Cm&lt;i&gt;SGT1&lt;/i&gt;, Transcriptionally Regulated by CmWRKY21 and CmWRKY31, Improves Powdery Mildew Resistance in &lt;i&gt;Cucurbita moschata&lt;/i&gt;.",
+          "first_author": "Guo WL",
+          "pub_year": "2025",
+          "doi": "10.1002/pld3.70112",
+          "pmid": "41122222"
+        },
+        {
+          "id": "41016936",
+          "source": "MED",
+          "title": "Prohexadione calcium boosts pepper stem rigidity: coordinated regulation of hormonal crosstalk and lignin deposition drives xylem reinforcement.",
+          "first_author": "Xia K",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-07255-6",
+          "pmid": "41016936"
+        },
+        {
+          "id": "41292399",
+          "source": "MED",
+          "title": "Role of Polyamines in Mitigating Salinity Stress in Ornamental and Food Crops.",
+          "first_author": "Mohammadi Alagoz S",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70649",
+          "pmid": "41292399"
+        },
+        {
+          "id": "40925875",
+          "source": "MED",
+          "title": "Auxin Gradients Determine Reproductive Development in Pea (Pisum sativum).",
+          "first_author": "Adihetty DD",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70497",
+          "pmid": "40925875"
+        },
+        {
+          "id": "40343119",
+          "source": "MED",
+          "title": "Identification and characterization of Csa-miR159s and their expression patterns under different abiotic stresses in cucumber (&lt;i&gt;Cucumis sativus&lt;/i&gt; L.).",
+          "first_author": "Zhao Z",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1518406",
+          "pmid": "40343119"
+        }
+      ]
+    },
+    {
+      "query": "(ethephon) AND cucumber AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 2,
+      "results": [
+        {
+          "id": "PPR1049228",
+          "source": "PPR",
+          "title": "Genetic basis of downy mildew resistance in cucumber: Identification of candidate genes and ethylene-mediated defense mechanism",
+          "first_author": "Anarjan MB",
+          "pub_year": "2025",
+          "doi": "10.21203/rs.3.rs-6706016/v1",
+          "pmid": null
+        },
+        {
+          "id": "PPR182548",
+          "source": "PPR",
+          "title": "Transcriptome analysis reveals ethylene-mediated defense responses to Fusarium oxysporum f. sp. cucumerinum infection in Cucumis sativus L.",
+          "first_author": "Dong J",
+          "pub_year": "2020",
+          "doi": "10.21203/rs.2.21765/v5",
+          "pmid": null
+        }
+      ]
+    },
+    {
+      "query": "(ethephon) AND strawberry",
+      "engine": "europepmc",
+      "preprint_filter": false,
+      "total": 299,
+      "results": [
+        {
+          "id": "41854246",
+          "source": "MED",
+          "title": "Analytical Method for Detecting Herbicides, Plant Growth Regulators, and Fungicides in Agricultural Commodities: Single-Laboratory Validation.",
+          "first_author": "Dhanshetty M",
+          "pub_year": "2026",
+          "doi": "10.1093/jaoacint/qsag016",
+          "pmid": "41854246"
+        },
+        {
+          "id": "41258267",
+          "source": "MED",
+          "title": "Role of growth regulators on fruit splitting and nutritional status of Daisy Mandarin in subtropical conditions.",
+          "first_author": "Kaur K",
+          "pub_year": "2025",
+          "doi": "10.1038/s41598-025-24540-4",
+          "pmid": "41258267"
+        },
+        {
+          "id": "42113081",
+          "source": "MED",
+          "title": "Molecular mechanisms of plant hormones and sugars regulates strawberry fruit development and ripening.",
+          "first_author": "Pinto CA",
+          "pub_year": "2026",
+          "doi": "10.1007/s11103-026-01714-w",
+          "pmid": "42113081"
+        },
+        {
+          "id": "IND609282561",
+          "source": "AGR",
+          "title": "Analysis of several anionic polar pesticides in food of plant and animal origin using QuPPe extraction and CE-MS/MS determination",
+          "first_author": "Schäfer AK",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "41783097",
+          "source": "MED",
+          "title": "Physiological and transcriptomic analyses provide new insights into the effects of 1-MCP and ethephon treatments on apricot fruit during storage.",
+          "first_author": "Sun X.",
+          "pub_year": "2026",
+          "doi": "10.3389/fpls.2026.1744757",
+          "pmid": "41783097"
+        },
+        {
+          "id": "40685427",
+          "source": "MED",
+          "title": "Analysis of several anionic polar pesticides in food of plant and animal origin using QuPPe extraction and CE-MS/MS determination.",
+          "first_author": "Schäfer AK",
+          "pub_year": "2025",
+          "doi": "10.1007/s00216-025-05990-1",
+          "pmid": "40685427"
+        },
+        {
+          "id": "40408359",
+          "source": "MED",
+          "title": "Genome-wide identification and characterization of Ethylene-Insensitive 3 (EIN3/EIL) gene family in Camellia oleifera.",
+          "first_author": "Huang S",
+          "pub_year": "2025",
+          "doi": "10.1371/journal.pone.0324651",
+          "pmid": "40408359"
+        },
+        {
+          "id": "IND608827635",
+          "source": "AGR",
+          "title": "Determination of ethephon residues in fruits using fluorescent covalent organic framework-based nanomaterials",
+          "first_author": "Zhang Z",
+          "pub_year": "2025",
+          "doi": null,
+          "pmid": null
+        },
+        {
+          "id": "40474063",
+          "source": "MED",
+          "title": "Ethylene-releasing plant growth regulators promote ripening initiation by stimulating sugar, acid and anthocyanin metabolism in blueberry (Vaccinium ashei).",
+          "first_author": "Acharya TP",
+          "pub_year": "2025",
+          "doi": "10.1186/s12870-025-06799-x",
+          "pmid": "40474063"
+        },
+        {
+          "id": "40458554",
+          "source": "MED",
+          "title": "Regulation of fruit quality formation in strawberry: from omics to biotechnology.",
+          "first_author": "Wang ZY",
+          "pub_year": "2025",
+          "doi": "10.7717/peerj.19497",
+          "pmid": "40458554"
+        },
+        {
+          "id": "38674530",
+          "source": "MED",
+          "title": "Analysis of Ethylene Signal Regulating Sucrose Metabolism in Strawberry Fruits Based on RNA-seq.",
+          "first_author": "Yu JQ",
+          "pub_year": "2024",
+          "doi": "10.3390/plants13081121",
+          "pmid": "38674530"
+        },
+        {
+          "id": "42265984",
+          "source": "MED",
+          "title": "Postharvest preservation of fruits and vegetables by light-emitting diodes.",
+          "first_author": "Vijeev A",
+          "pub_year": "2026",
+          "doi": "10.1080/15592324.2026.2684157",
+          "pmid": "42265984"
+        },
+        {
+          "id": "38760720",
+          "source": "MED",
+          "title": "Ethylene promotes fruit ripening initiation by downregulating photosynthesis, enhancing abscisic acid and suppressing jasmonic acid in blueberry (Vaccinium ashei).",
+          "first_author": "Wang YW",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-05106-4",
+          "pmid": "38760720"
+        },
+        {
+          "id": "40209051",
+          "source": "MED",
+          "title": "ERF100 regulated by ERF28 and NOR controls pectate lyase 7, modulating fig (Ficus carica L.) fruit softening.",
+          "first_author": "Fan Z",
+          "pub_year": "2025",
+          "doi": "10.1111/pbi.70085",
+          "pmid": "40209051"
+        },
+        {
+          "id": "40428402",
+          "source": "MED",
+          "title": "Genome-Wide Identification of the <i>Polygalacturonase</i> Gene Family and Its Potential Association with Abscission Zone in <i>Capsicum annuum</i> L.",
+          "first_author": "He L",
+          "pub_year": "2025",
+          "doi": "10.3390/genes16050579",
+          "pmid": "40428402"
+        },
+        {
+          "id": "40666674",
+          "source": "MED",
+          "title": "Blueberry ripening mechanism: a systematic review of physiological and molecular evidence.",
+          "first_author": "Zapien-Macias JM",
+          "pub_year": "2025",
+          "doi": "10.1093/hr/uhaf126",
+          "pmid": "40666674"
+        },
+        {
+          "id": "40909898",
+          "source": "MED",
+          "title": "A meta-analysis and systematic review of plant growth regulator use in blueberry production.",
+          "first_author": "Dick D",
+          "pub_year": "2025",
+          "doi": "10.3389/fpls.2025.1632855",
+          "pmid": "40909898"
+        },
+        {
+          "id": "40126255",
+          "source": "MED",
+          "title": "Potential Residual Pesticide Consumption: A Stratified Analysis of Brazilian Families.",
+          "first_author": "Leite YL",
+          "pub_year": "2025",
+          "doi": "10.3390/jox15020037",
+          "pmid": "40126255"
+        },
+        {
+          "id": "38896239",
+          "source": "MED",
+          "title": "Analysis of highly polar anionic pesticides in food of plant and animal origin by ion chromatography and tandem mass spectrometry with emphasis on addressing adverse effects caused by matrix co-extractives.",
+          "first_author": "Schäfer AK",
+          "pub_year": "2024",
+          "doi": "10.1007/s00216-024-05389-4",
+          "pmid": "38896239"
+        },
+        {
+          "id": "38262956",
+          "source": "MED",
+          "title": "Genome-wide identification of MAPK family in papaya (Carica papaya) and their involvement in fruit postharvest ripening.",
+          "first_author": "Zhu S",
+          "pub_year": "2024",
+          "doi": "10.1186/s12870-024-04742-0",
+          "pmid": "38262956"
+        },
+        {
+          "id": "40925875",
+          "source": "MED",
+          "title": "Auxin Gradients Determine Reproductive Development in Pea (Pisum sativum).",
+          "first_author": "Adihetty DD",
+          "pub_year": "2025",
+          "doi": "10.1111/ppl.70497",
+          "pmid": "40925875"
+        },
+        {
+          "id": "38736445",
+          "source": "MED",
+          "title": "Ethylene biosynthesis and signal transduction during ripening and softening in non-climacteric fruits: an overview.",
+          "first_author": "Liu M",
+          "pub_year": "2024",
+          "doi": "10.3389/fpls.2024.1368692",
+          "pmid": "38736445"
+        },
+        {
+          "id": "41963792",
+          "source": "MED",
+          "title": "Unveiling the TGA gene family in Qingke (Hordeum vulgare L. var. nudum) and the role of HvnTGA2 in host-pathogen interaction.",
+          "first_author": "Wang S",
+          "pub_year": "2026",
+          "doi": "10.1186/s12870-026-08656-x",
+          "pmid": "41963792"
+        },
+        {
+          "id": "38138962",
+          "source": "MED",
+          "title": "Integrative Analysis of Metabolome and Transcriptome Provides Insights into the Mechanism of Flower Induction in Pineapple (<i>Ananas comosus</i> (L.) Merr.) by Ethephon.",
+          "first_author": "Lin W",
+          "pub_year": "2023",
+          "doi": "10.3390/ijms242417133",
+          "pmid": "38138962"
+        },
+        {
+          "id": "41515113",
+          "source": "MED",
+          "title": "MeJA-Induced Plant Disease Resistance: A Review.",
+          "first_author": "Xiao L",
+          "pub_year": "2026",
+          "doi": "10.3390/plants15010169",
+          "pmid": "41515113"
+        }
+      ]
+    },
+    {
+      "query": "(ethephon) AND strawberry AND SRC:PPR",
+      "engine": "europepmc",
+      "preprint_filter": true,
+      "total": 0,
+      "results": []
+    }
+  ],
+  "preprints_relevant": [
+    {
+      "id": "PPR1049228",
+      "source": "PPR",
+      "title": "Genetic basis of downy mildew resistance in cucumber: Identification of candidate genes and ethylene-mediated defense mechanism",
+      "first_author": "Anarjan MB",
+      "pub_year": "2025",
+      "doi": "10.21203/rs.3.rs-6706016/v1",
+      "pmid": null
+    },
+    {
+      "id": "PPR182548",
+      "source": "PPR",
+      "title": "Transcriptome analysis reveals ethylene-mediated defense responses to Fusarium oxysporum f. sp. cucumerinum infection in Cucumis sativus L.",
+      "first_author": "Dong J",
+      "pub_year": "2020",
+      "doi": "10.21203/rs.2.21765/v5",
+      "pmid": null
+    }
+  ],
+  "notes": []
+}

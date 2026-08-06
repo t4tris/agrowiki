@@ -1,0 +1,231 @@
+Cleanup done. I have all the data I need to compile the report. Let me finalize my findings.
+
+**Research summary:**
+
+**Identity** (PubChem CID 92421): CAS 95266-40-3, C13H16O5, MW 252.26, IUPAC ethyl 4-[cyclopropyl(hydroxy)methylidene]-3,5-dioxocyclohexane-1-carboxylate. Synonyms: Trinexapac-ethyl, Cimectacarb, Moddus, Primo, Primo Maxx, PALISADE, CGA-163935.
+
+**Mode of action**: GA biosynthesis inhibitor (acylcyclohexanedione). Confirmed.
+
+**Tomato** (Figueiredo et al. 2015, OpenAlex W1790097572 — full abstract verified): Indeterminate tomato cv. Debora Plus with increasing trinexapac-ethyl doses → reduced plant size via shortened internode distance and between-truss distance, increased stem diameter; but at increasing doses reduced productivity, average fruit weight, % large/medium fruit, increased % small fruit. No effect on trusses/plant, soluble solids, titratable acidity, pH. Directly supports CSV "controlled internode length" but with yield trade-off.
+
+**Cucumber**: no direct trinexapac-ethyl study. Related: prohexadione-calcium on cucumber (different GA inhibitor).
+
+**Strawberry**: no direct trinexapac-ethyl study. Related: paclobutrazol/prohexadione on strawberry.
+
+**MRL/PHI**: Codex/EU residue reports mention trinexapac-ethyl but no specific verified values from abstracts. Leave null.
+
+Now I'll compile the JSON report per contract v1.4.
+
+```json
+{
+  "contract_version": "1.4",
+  "substance": {"code": "Trinexapac-ethyl", "csv_name": "Trinexapac", "queried_name": "trinexapac-ethyl"},
+  "searches": {
+    "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "openalex_solanum", "openalex_cucumis", "openalex_fragaria", "europepmc_tomato", "europepmc_cucumber", "europepmc_strawberry", "pubchem"],
+    "failed": [],
+    "queries_used": ["(trinexapac-ethyl) AND tomato", "(trinexapac-ethyl) AND cucumber", "(trinexapac-ethyl) AND strawberry", "trinexapac-ethyl solanum", "trinexapac-ethyl cucumis", "trinexapac-ethyl fragaria", "trinexapac-ethyl tomato", "trinexapac-ethyl strawberry"],
+    "fallback_tries": [{"query": "trinexapac-ethyl strawberry fragaria growth regulator", "results": 0}, {"query": "trinexapac-ethyl AND (fragaria OR strawberry)", "results": 5}, {"query": "trinexapac-ethyl AND (cucumis OR cucumber)", "results": 7}]
+  },
+  "identity": {
+    "cas": "95266-40-3",
+    "cid": "92421",
+    "formula": "C13H16O5",
+    "iupac": "ethyl 4-[cyclopropyl(hydroxy)methylidene]-3,5-dioxocyclohexane-1-carboxylate",
+    "class_confirmed": true,
+    "class_evidence": ["PubChem CID 92421"],
+    "synonyms": ["Trinexapac-ethyl", "Cimectacarb", "Moddus", "Primo", "Primo Maxx", "PALISADE", "CGA-163935", "4-(Cyclopropyl-alpha-hydroxymethylene)-3,5-dioxocyclohexanecarboxylic acid ethyl ester"],
+    "synonyms_ru": ["Тринексапак-этил"],
+    "molar_mass_g_mol": 252.26,
+    "notes": "Ацилциклогександионовый ретардант (GA-ингибитор). Коды CSV: Trinexapac-ethyl."
+  },
+  "mode_of_action": {
+    "summary": "Trinexapac-ethyl — ингибитор биосинтеза гиббереллинов (GA), ацилциклогександион, блокирующий поздние этапы GA-биосинтеза, что ведёт к сокращению удлинения стебля и междоузлий.",
+    "evidence": ["DOI:10.1002/9781119312994.apr0541"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 1},
+      "claims": [{
+        "type": "effect",
+        "value": "Сокращение длины междоузлий и расстояния между кистями, увеличение диаметра стебля у индетерминантного томата",
+        "context": "Полевой опыт, индетерминантный томат cv. Debora Plus, возрастающие дозы этил-тринексапака (ET), оценка агрономических и послеуборочных характеристик",
+        "dosage_normalized": {"original": "возрастающие дозы ET (дозы в аннотации не указаны)", "ppm_equivalent": null, "molar_mass_used_g_mol": 252.26, "conversion_source": "PubChem CID 92421", "note": "конкретные дозы в аннотации не приведены"},
+        "conditions": {"stage": "вегетативный рост/плодоношение", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарная обработка"},
+        "relevance": "directly_supports",
+        "evidence_quality": "direct_abstract",
+        "stats": {"n_studies": 1},
+        "sources": [{"pmid": null, "year": 2015, "verified": true, "paper_type": "trial", "doi": null, "oa_url": "https://openalex.org/W1790097572"}],
+        "quote": "Trinexapac-Ethyl reduced the size of the plant by shortening the distance between node and between curls of tomatoes, and helped to increase the diameter of the stem of the plant."
+      }, {
+        "type": "effect",
+        "value": "Снижение продуктивности, средней массы плода и доли крупных/средних плодов при возрастании дозы; рост доли мелких плодов",
+        "context": "Тот же полевой опыт cv. Debora Plus; возрастающие дозы ET",
+        "dosage_normalized": {"original": "возрастающие дозы ET", "ppm_equivalent": null, "molar_mass_used_g_mol": 252.26, "conversion_source": "PubChem CID 92421", "note": "дозы в аннотации не указаны"},
+        "conditions": {"stage": "плодоношение", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарная обработка"},
+        "relevance": "directly_supports",
+        "evidence_quality": "direct_abstract",
+        "stats": {"n_studies": 1},
+        "sources": [{"pmid": null, "year": 2015, "verified": true, "paper_type": "trial", "doi": null, "oa_url": "https://openalex.org/W1790097572"}],
+        "quote": "the increase dose of ET led to reduced productivity, average fruit weight and percentage of large and medium-sized fruit, and accordingly increased the percentage of small fruit produced."
+      }],
+      "gap": "Есть одно прямое полевое исследование (Figueiredo et al. 2015) на индетерминантном томате, подтверждающее контроль длины междоузлий. Дозы в аннотации не приведены, поэтому конкретный диапазон 100–400 ppm по этой работе не подтверждён.",
+      "related_evidence": [{"pmid": null, "year": 2012, "claim": "Селективность тринексапак-этила к культурным видам при сносе с сахарного тростника; томат в выборке отсутствует", "note": "DOI:10.1590/s0103-90162012000300004"}]
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 0},
+      "claims": [],
+      "gap": "Нет данных о применении тринексапак-этила на огурце в найденной литературе.",
+      "related_evidence": [{"pmid": null, "year": 2021, "claim": "Проксокадион-кальций (другой GA-ингибитор) влияет на рост и урожайность огурца", "note": "DOI:10.17576/jsm-2021-5008-01"}]
+    },
+    "strawberry": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 0},
+      "claims": [],
+      "gap": "Нет данных о применении тринексапак-этила на клубнике в найденной литературе.",
+      "related_evidence": [{"pmid": null, "year": 2019, "claim": "Паклобутразол и проксокадион-кальций (GA-ингибиторы) влияют на вегетативные и репродуктивные характеристики клубники", "note": "DOI:10.29252/jcpp.9.2.1"}]
+    }
+  },
+  "toxicity_window": {"ED50_ppm": null, "TD50_ppm": null, "therapeutic_index": null, "soil_persistence": null, "notes": "только из литературы; конкретных значений ED50/TD50 по тринексапак-этилу в найденной литературе нет"},
+  "phi_mrl": {"PHI_days": null, "MRL_EU_mg_kg": null, "MRL_USA_mg_kg": null, "MRL_Codex_mg_kg": null, "source": null, "required_for": "HIGH-efficacy вещества; PHI/REI — справочно, не блокер"},
+  "contraindications": [{"condition": "Индетерминантный томат при возрастающих дозах", "effect": "Снижение урожайности, средней массы плода, доли крупных/средних плодов при превышении дозы", "severity": "medium", "sources": ["OpenAlex:W1790097572"]}],
+  "conflicts": [{"csv_field": "Application_Method_Dosage", "csv_value": "100-400 ppm foliar spray", "literature_summary": "Прямое полевое исследование на томате подтверждает контроль длины междоузлий, но конкретный диапазон доз не приведён в аннотации; при возрастании дозы отмечено снижение урожайности и массы плодов", "severity": "low", "sources": ["OpenAlex:W1790097572"]}],
+  "verdict": {
+    "evidence_level": "weak",
+    "status_suggested": "partial",
+    "reason": "Подтверждён механизм (GA-ингибитор) и контроль длины междоузлий на томате (1 прямое полевое исследование), но нет данных по огурцу и клубнике; конкретный диапазон 100–400 ppm не верифицирован по аннотации."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family synthetic_growth_regulators и mechanism gibberellin_action подтверждены: тринексапак-этил — синтетический ретардант, ингибитор биосинтеза гиббереллинов."
+  },
+  "sources_index": ["OpenAlex:W1790097572", "DOI:10.1002/9781119312994.apr0541", "DOI:10.1590/s0103-90162012000300004", "DOI:10.17576/jsm-2021-5008-01", "DOI:10.29252/jcpp.9.2.1"]
+}
+```
+
+## Отчёт сабагента
+
+Вот структурированный JSON-отчёт по контракту v1.4 для **Trinexapac-ethyl** по трём фокусным культурам.
+
+```json
+{
+  "contract_version": "1.4",
+  "substance": {"code": "Trinexapac-ethyl", "csv_name": "Trinexapac", "queried_name": "trinexapac-ethyl"},
+  "searches": {
+    "performed": ["pubmed_tomato", "pubmed_cucumber", "pubmed_strawberry", "openalex_solanum", "openalex_cucumis", "openalex_fragaria", "europepmc_tomato", "europepmc_cucumber", "europepmc_strawberry", "pubchem"],
+    "failed": [],
+    "queries_used": ["(trinexapac-ethyl) AND tomato", "(trinexapac-ethyl) AND cucumber", "(trinexapac-ethyl) AND strawberry", "trinexapac-ethyl solanum", "trinexapac-ethyl cucumis", "trinexapac-ethyl fragaria", "trinexapac-ethyl tomato", "trinexapac-ethyl strawberry"],
+    "fallback_tries": [{"query": "trinexapac-ethyl strawberry fragaria growth regulator", "results": 0}, {"query": "trinexapac-ethyl AND (fragaria OR strawberry)", "results": 5}, {"query": "trinexapac-ethyl AND (cucumis OR cucumber)", "results": 7}]
+  },
+  "identity": {
+    "cas": "95266-40-3",
+    "cid": "92421",
+    "formula": "C13H16O5",
+    "iupac": "ethyl 4-[cyclopropyl(hydroxy)methylidene]-3,5-dioxocyclohexane-1-carboxylate",
+    "class_confirmed": true,
+    "class_evidence": ["PubChem CID 92421"],
+    "synonyms": ["Trinexapac-ethyl", "Cimectacarb", "Moddus", "Primo", "Primo Maxx", "PALISADE", "CGA-163935", "4-(Cyclopropyl-alpha-hydroxymethylene)-3,5-dioxocyclohexanecarboxylic acid ethyl ester"],
+    "synonyms_ru": ["Тринексапак-этил"],
+    "molar_mass_g_mol": 252.26,
+    "notes": "Ацилциклогександионовый ретардант (ингибитор биосинтеза гиббереллинов)."
+  },
+  "mode_of_action": {
+    "summary": "Trinexapac-ethyl — ингибитор биосинтеза гиббереллинов (GA), ацилциклогександион, блокирующий поздние этапы GA-биосинтеза, что приводит к сокращению удлинения стебля и междоузлий.",
+    "evidence": ["DOI:10.1002/9781119312994.apr0541"],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 1},
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Сокращение длины междоузлий и расстояния между кистями, увеличение диаметра стебля у индетерминантного томата",
+          "context": "Полевой опыт, индетерминантный томат cv. Debora Plus, возрастающие дозы этил-тринексапака (ET)",
+          "dosage_normalized": {"original": "возрастающие дозы ET (в аннотации не указаны)", "ppm_equivalent": null, "molar_mass_used_g_mol": 252.26, "conversion_source": "PubChem CID 92421", "note": "ppm ≈ mg/L для водных растворов"},
+          "conditions": {"stage": "вегетативный рост/плодоношение", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарная обработка"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": null, "year": 2015, "verified": true, "paper_type": "trial", "doi": null, "oa_url": "https://openalex.org/W1790097572"}],
+          "quote": "Trinexapac-Ethyl reduced the size of the plant by shortening the distance between node and between curls of tomatoes, and helped to increase the diameter of the stem of the plant."
+        },
+        {
+          "type": "effect",
+          "value": "Снижение продуктивности, средней массы плода и доли крупных/средних плодов при возрастании дозы; рост доли мелких плодов",
+          "context": "Тот же полевой опыт cv. Debora Plus; возрастающие дозы ET",
+          "dosage_normalized": {"original": "возрастающие дозы ET", "ppm_equivalent": null, "molar_mass_used_g_mol": 252.26, "conversion_source": "PubChem CID 92421", "note": "дозы в аннотации не указаны"},
+          "conditions": {"stage": "плодоношение", "bbch_stages": [], "temperature_range": null, "formulation": "фолиарная обработка"},
+          "relevance": "directly_supports",
+          "evidence_quality": "direct_abstract",
+          "stats": {"n_studies": 1},
+          "sources": [{"pmid": null, "year": 2015, "verified": true, "paper_type": "trial", "doi": null, "oa_url": "https://openalex.org/W1790097572"}],
+          "quote": "the increase dose of ET led to reduced productivity, average fruit weight and percentage of large and medium-sized fruit, and accordingly increased the percentage of small fruit produced."
+        }
+      ],
+      "gap": "Одно прямое полевое исследование (Figueiredo et al. 2015) на индетерминантном томате подтверждает контроль длины междоузлий. Конкретные дозы в аннотации не приведены, поэтому диапазон 100–400 ppm по этой работе не верифицирован.",
+      "related_evidence": [{"pmid": null, "year": 2012, "claim": "Селективность тринексапак-этила к культурным видам при сносе с сахарного тростника; томат в выборке отсутствует", "note": "DOI:10.1590/s0103-90162012000300004"}]
+    },
+    "cucumber": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 0},
+      "claims": [],
+      "gap": "Нет данных о применении тринексапак-этила на огурце в найденной литературе.",
+      "related_evidence": [{"pmid": null, "year": 2021, "claim": "Проксокадион-кальций (другой GA-ингибитор) влияет на рост и урожайность огурца", "note": "DOI:10.17576/jsm-2021-5008-01"}]
+    },
+    "strawberry": {
+      "status": "no_data",
+      "search_stats": {"pubmed": 0, "europe_pmc": 0, "culture_mentioned": 0},
+      "claims": [],
+      "gap": "Нет данных о применении тринексапак-этила на клубнике в найденной литературе.",
+      "related_evidence": [{"pmid": null, "year": 2019, "claim": "Паклобутразол и проксокадион-кальций (GA-ингибиторы) влияют на вегетативные и репродуктивные характеристики клубники", "note": "DOI:10.29252/jcpp.9.2.1"}]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "только из литературы; конкретных значений ED50/TD50 по тринексапак-этилу в найденной литературе нет"
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества; PHI/REI — справочно, не блокер"
+  },
+  "contraindications": [
+    {"condition": "Индетерминантный томат при возрастающих дозах", "effect": "Снижение урожайности, средней массы плода, доли крупных/средних плодов при превышении дозы", "severity": "medium", "sources": ["OpenAlex:W1790097572"]}
+  ],
+  "conflicts": [
+    {"csv_field": "Application_Method_Dosage", "csv_value": "100-400 ppm foliar spray", "literature_summary": "Прямое полевое исследование на томате подтверждает контроль длины междоузлий, но конкретный диапазон доз не приведён в аннотации; при возрастании дозы отмечено снижение урожайности и массы плодов", "severity": "low", "sources": ["OpenAlex:W1790097572"]}
+  ],
+  "verdict": {
+    "evidence_level": "weak",
+    "status_suggested": "partial",
+    "reason": "Подтверждён механизм (GA-ингибитор) и контроль длины междоузлий на томате (1 прямое полевое исследование), но нет данных по огурцу и клубнике; конкретный диапазон 100–400 ppm не верифицирован по аннотации."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family synthetic_growth_regulators и mechanism gibberellin_action подтверждены: тринексапак-этил — синтетический ретардант, ингибитор биосинтеза гиббереллинов."
+  },
+  "sources_index": ["OpenAlex:W1790097572", "DOI:10.1002/9781119312994.apr0541", "DOI:10.1590/s0103-90162012000300004", "DOI:10.17576/jsm-2021-5008-01", "DOI:10.29252/jcpp.9.2.1"]
+}
+```
+
+**Ключевые выводы:**
+- **Томат** — `found_verified`: 1 прямое полевое исследование (Figueiredo et al. 2015) подтверждает контроль длины междоузлий (CSV-заявка), но фиксирует снижение урожайности/массы плодов при возрастании дозы.
+- **Огурец и клубника** — `no_data`: прямых исследований тринексапак-этила не найдено; только близкие GA-ингибиторы (проксокадион-кальций, паклобутразол) как related evidence.
+- **Таксономия** — `class_family` и `mechanism` подтверждены без исправлений.
+- **Вердикт**: `partial`, evidence_level `weak` — механизм и эффект на томате подтверждены, но дозовый диапазон 100–400 ppm не верифицирован, культуры огурец/клубника без данных.
+
+Примечание: в среде терминала наблюдались помехи от параллельных задач (очередь устаревших команд), но все целевые запросы выполнены успешно; Europe PMC был доступен, поэтому `searches.failed` пуст.

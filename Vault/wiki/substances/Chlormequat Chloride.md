@@ -2,58 +2,74 @@
 type: substance
 code: Chlormequat Chloride
 name_en: CCC
-cas: 
-formula: 
+cas: "999-81-5"
+formula: C5H13Cl2N
 class: Quaternary ammonium
 class_family: synthetic_growth_regulators
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 efficacy_csv: HIGH
-validation_status: unverified
-evidence_level: unverified
-last_checked: 
-next_review: 
+validation_status: partial
+evidence_level: moderate
+last_checked: 2026-08-06
+next_review: 2026-11-06
 notes: []
 crops:
-  tomato: no_data
-  cucumber: no_data
-  strawberry: no_data
-aliases: []
-aliases_ru: []
+  tomato: found_verified
+  cucumber: found_verified
+  strawberry: found_verified
+aliases: ["Chlormequat chloride", "Chlorocholine chloride", "CCC", "Cycocel", "Cycogan", "(2-Chloroethyl)trimethylammonium chloride", "Retacel", "Stabilan", "Lihocin"]
+aliases_ru: ["Хлормекват хлорид", "ЦЦЦ", "Хлорхолинхлорид"]
 ---
 
 # Chlormequat Chloride — CCC
 
-> ⚠️ Черновик из CSV. Статус: `unverified`. Валидация по культурам (томат/огурец/клубника) — впереди.
-
 ## Идентичность
-<!-- CAS, формула, класс — проверить через PubChem -->
+- **CAS:** 999-81-5 (CID 13836)
+- **Формула:** C5H13Cl2N · **Молярная масса:** 158.07 г/моль
+- **Класс:** Quaternary ammonium (четвертичная аммониевая соль, ретардант)
 
 ## Механизм действия
-GA biosynthesis inhibitor
+Синтетический ретардант, ингибирующий биосинтез гиббереллинов (GA): подавляет экспрессию генов GA-биосинтеза и снижает эндогенное содержание GA, что уменьшает высоту растения и контролирует перерастание рассады (PMID 31284415, 24435302).
+
+## Научные данные по культурам
+
+Литература охватывает методы: опрыскивание рассады, обработка семян, контроль высоты.
+
+### 🍅 Томат (Solanum lycopersicum)
+- **Контроль высоты рассады:** CCC 300 мг/л до и после инокуляции вирусом TYLCV смягчает симптомы и улучшает фотосинтез (PMID 40364383)
+- **Механизм:** CCC и паклобутразол подавляют гены GA-биосинтеза и снижают эндогенное содержание GA, контролируя перерастание рассады (PMID 31284415)
+- **Контроль высоты пересадочной рассады** хлормекватом, даминозидом и этефоном (DOI 10.21273/jashs.104.3.342)
+- **Нет данных** об ускорении антезиса и созревания на ~10 дней при 250–500 ppm
+
+### 🥒 Огурец (Cucumis sativus)
+- **Гиббереллины:** обработка семян CCC не снижает, а сохраняет/повышает общее содержание эндогенных GA, изменяя распределение между свободными и связанными формами (PMID 24435302)
+- **Половая дифференциация:** CCC не влияет на экспрессию пола огурца, в отличие от Ethrel и этилена (PMID 16657476)
+- **Нет данных** об ускорении созревания плодов
+
+### 🍓 Клубника (Fragaria × ananassa)
+- **Контроль высоты:** хлормекват эффективен в контроле высоты растения земляники (PMID 36466575, обзор)
+- **Урожайность:** отклик на хлормекват (и паклобутразол) в сочетании с удобрением (DOI 10.1016/0304-4238(88)90073-8)
+- **Нет данных** об ускорении антезиса и созревания на ~10 дней
 
 ## ⚠️ Валидация CSV-заявок
 | CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| Lodging prevention: 250-500 ppm once in the second half of June, at the beginning of creeping stem emergence (early July), at a rate of one liter of the spray solution per 10 square meters enhanced anthesis and fruit ripening by about 10 days | ⚪ Нет данных | — | — | — | — |
-
-## Научные данные по культурам
-<!-- После валидации: методы применения, дозировки и эффекты по каждой культуре с PMID/DOI -->
-
-### 🍅 Томат (Solanum lycopersicum)
-<!-- нет данных по культуре -->
-
-### 🥒 Огурец (Cucumis sativus)
-<!-- нет данных по культуре -->
-
-### 🍓 Клубника (Fragaria × ananassa)
-<!-- нет данных по культуре -->
+| Доза: 250–500 ppm однократно в конце июня | ⚪ Нет данных | В литературе подтверждён контроль высоты рассады (300 мг/л томат), но не схема «250–500 ppm однократно» | — | medium | PMID 40364383 |
+| Эффект: ускорение антезиса и созревания на ~10 дней | ❌ Не подтверждён | Эффект ускорения созревания не задокументирован в литературе по фокусным культурам; подтверждено только действие ретарданта (контроль высоты) | — | medium | PMID 40364383, 31284415, 36466575 |
 
 ## ⚠️ Toxicity Window
-<!-- ED50/TD50/therapeutic index/стойкость в почве — только из литературы -->
+**Нет данных.**
 
 ## 📅 PHI и MRL
-<!-- PHI, MRL EU/USA/Codex; отсутствуют → «Нет данных.» -->
+**Нет данных.**
 
 ## Источники
-<!-- PMID / DOI / URL -->
+- [PMID 40364383](https://pubmed.ncbi.nlm.nih.gov/40364383/) — CCC 300 мг/л, рассада томата, TYLCV (2025)
+- [PMID 31284415](https://pubmed.ncbi.nlm.nih.gov/31284415/) — CCC и паклобутразол, GA-биосинтез томата (2019)
+- [PMID 24435302](https://pubmed.ncbi.nlm.nih.gov/24435302/) — CCC, гиббереллины огурца (1975)
+- [PMID 16657476](https://pubmed.ncbi.nlm.nih.gov/16657476/) — CCC, пол огурца (1970)
+- [PMID 36466575](https://pubmed.ncbi.nlm.nih.gov/36466575/) — хлормекват, контроль высоты земляники (2022)
+- [DOI 10.21273/jashs.104.3.342](https://doi.org/10.21273/jashs.104.3.342) — контроль высоты рассады томата (1979)
+- [DOI 10.1016/0304-4238(88)90073-8](https://doi.org/10.1016/0304-4238(88)90073-8) — хлормекват, урожайность земляники (1988)
+- Артефакт: [search_Chlormequat Chloride_2026-08-06.json](../../../raw/evidence/C/Chlormequat Chloride/search_Chlormequat Chloride_2026-08-06.json)

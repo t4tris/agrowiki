@@ -1,0 +1,550 @@
+{
+  "contract_version": "1.4",
+  "substance": {
+    "code": "Chlormequat Chloride",
+    "csv_name": "CCC",
+    "queried_name": "chlormequat chloride"
+  },
+  "searches": {
+    "performed": [
+      "pubmed_tomato",
+      "pubmed_cucumber",
+      "pubmed_strawberry",
+      "openalex_tomato",
+      "openalex_cucumber",
+      "openalex_strawberry",
+      "pubchem",
+      "europepmc_tomato",
+      "europepmc_cucumber",
+      "europepmc_strawberry",
+      "crossref"
+    ],
+    "failed": [],
+    "queries_used": [
+      "(chlormequat chloride OR CCC OR cycocel) AND tomato",
+      "(chlormequat chloride OR CCC OR cycocel) AND cucumber",
+      "(chlormequat chloride OR CCC OR cycocel) AND strawberry",
+      "chlormequat tomato height",
+      "chlormequat strawberry runner",
+      "chlormequat anthesis fruit set tomato",
+      "chlormequat chloride tomato fruit set (OpenAlex)",
+      "chlormequat strawberry (OpenAlex)",
+      "chlormequat chloride cucumber growth (OpenAlex)",
+      "chlormequat AND tomato (Europe PMC)",
+      "chlormequat AND cucumber (Europe PMC)",
+      "chlormequat AND strawberry (Europe PMC)"
+    ],
+    "fallback_tries": [
+      {
+        "query": "chlormequat tomato height",
+        "results": 1
+      },
+      {
+        "query": "chlormequat strawberry runner",
+        "results": 0
+      },
+      {
+        "query": "chlormequat anthesis fruit set tomato",
+        "results": 0
+      },
+      {
+        "query": "chlormequat chloride plant height retardant tomato review",
+        "results": 0
+      }
+    ]
+  },
+  "identity": {
+    "cas": "999-81-5",
+    "cid": "13836",
+    "formula": "C5H13Cl2N",
+    "iupac": "2-chloroethyl(trimethyl)azanium chloride",
+    "class_confirmed": true,
+    "class_evidence": [
+      "PMID:31284415",
+      "PMID:24435302"
+    ],
+    "synonyms": [
+      "Chlormequat chloride",
+      "Chlorocholine chloride",
+      "CCC",
+      "Cycocel",
+      "Cycogan",
+      "(2-Chloroethyl)trimethylammonium chloride",
+      "Chlorocholine (chloride)",
+      "Retacel",
+      "Stabilan",
+      "Lihocin"
+    ],
+    "synonyms_ru": [
+      "Хлормекват хлорид",
+      "ЦЦЦ",
+      "Хлорхолинхлорид"
+    ],
+    "molar_mass_g_mol": 158.07,
+    "notes": "CAS 999-81-5, PubChem CID 13836, формула C5H13Cl2N, молярная масса 158.07 г/моль. Класс — четвертичная аммониевая соль (quaternary ammonium). Синтетический ретардант-ингибитор биосинтеза гиббереллинов."
+  },
+  "mode_of_action": {
+    "summary": "CCC (хлормекват хлорид) — синтетический ретардант, ингибирующий биосинтез гиббереллинов (GA). Подавляет экспрессию генов GA-биосинтеза и снижает эндогенное содержание GA, что приводит к уменьшению высоты растения и контролю перерастания рассады. В корнях и побегах действует противоположно на гены GA-сигналинга.",
+    "evidence": [
+      "PMID:31284415",
+      "PMID:24435302"
+    ],
+    "confirmed": true
+  },
+  "crops": {
+    "tomato": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 20,
+        "europe_pmc": 97,
+        "culture_mentioned": 4
+      },
+      "claims": [
+        {
+          "type": "dosage",
+          "value": "Опрыскивание рассады томата 300 мг/л CCC до и после инокуляции вирусом TYLCV",
+          "context": "Томат (Solanum lycopersicum), рассада; применение CCC для выращивания крепкой рассады и повышения устойчивости к стрессу и болезни (TYLCV).",
+          "dosage_normalized": {
+            "original": "300 mg/L",
+            "ppm_equivalent": 300,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": "PubChem CID 13836; ppm ≈ mg/L для водных растворов",
+            "note": "ppm ≈ mg/L для водных растворов"
+          },
+          "conditions": {
+            "stage": "рассада (seedling), до и после инокуляции вирусом",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "опрыскивание (spray)"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "40364383",
+              "year": 2025,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.3390/plants14091353",
+              "oa_url": null
+            }
+          ],
+          "quote": "tomato seedlings were exogenously sprayed with 300 mg/L CCC before and after inoculation with tomato yellow leaf curl virus (TYLCV)... Spraying CCC on seedlings... significantly alleviate the yellowing and curling symptoms of new leaves and improve photosynthesis-related indicators."
+        },
+        {
+          "type": "effect",
+          "value": "CCC и паклобутразол подавляют гены GA-биосинтеза и снижают эндогенное содержание GA, контролируя перерастание рассады томата",
+          "context": "Томат; контроль высоты рассады (перерастания) в системе водной культуры рассадного выращивания; противоположное действие на GA-сигналинг в корнях (усиление) и побегах (ослабление).",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "рассада (seedling overgrowth)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "водная культура/рассадная система"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "31284415",
+              "year": 2019,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.3390/ijms20133307",
+              "oa_url": null
+            }
+          ],
+          "quote": "the plant growth retardants paclobutrazol (PBZ) and chlormequat chloride (CCC) are the most commonly used chemicals in controlling seedling height in plants by regulating the gibberellin (GA) biosynthesis pathway... the GA biosynthesis genes were significantly decreased, as well as the endogenous GA content being reduced."
+        },
+        {
+          "type": "method",
+          "value": "Хлормекват (chlormequat) применяется для контроля высоты пересадочной рассады томата",
+          "context": "Томат; контроль высоты рассады томата (transplant height) обработкой хлормекватом, даминозидом и этефоном.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "рассада (transplant)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "обработка рассады"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 1979,
+              "verified": false,
+              "paper_type": "trial",
+              "doi": "10.21273/jashs.104.3.342",
+              "oa_url": null
+            }
+          ],
+          "quote": "Controlling Tomato Transplant Height with Chlormequat, Daminozide, and Ethephon (название; аннотация не прочитана)."
+        },
+        {
+          "type": "efficacy",
+          "value": "Урожайность гидропонного томата зависит от обработки хлормекват хлоридом, сроков посева и зрелости пересадочной рассады",
+          "context": "Томат; гидропонное выращивание; влияние CCC на урожайность.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 1987,
+              "verified": false,
+              "paper_type": "trial",
+              "doi": "10.21273/jashs.112.2.198",
+              "oa_url": null
+            }
+          ],
+          "quote": "Hydroponic Tomato Yield Affected by Chlormequat Chloride, Seeding Time, and Transplant Maturity (название; аннотация не прочитана)."
+        }
+      ],
+      "gap": "Нет данных о применении 250–500 ppm однократно в конце июня и об ускорении антезиса и созревания плодов томата на ~10 дней. Найденные работы касаются контроля высоты рассады и устойчивости к TYLCV.",
+      "related_evidence": [
+        {
+          "pmid": "38058610",
+          "year": 2023,
+          "claim": "Био-детоксикация почвы, загрязнённой тяжёлыми металлами, и снижение фитотоксичности штаммом бактерий — упоминание CCC в контексте стресса",
+          "note": "работа по веществу, но культура не входит в фокус"
+        },
+        {
+          "pmid": "39703136",
+          "year": 2024,
+          "claim": "Антиоксидантная активность и RNA-seq: биостимулятор на основе водорослей — контекст стресса",
+          "note": "работа по веществу, но культура/эффект не относится к CCC-заявке"
+        }
+      ]
+    },
+    "cucumber": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 6,
+        "europe_pmc": 49,
+        "culture_mentioned": 3
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Обработка семян огурца CCC не снижает, а сохраняет или повышает общее содержание эндогенных гиббереллинов, изменяя их распределение между свободными и связанными формами",
+          "context": "Огурец (Cucumis sativus); семена, обработанные CCC; влияние на эндогенные гиббереллины в корнях и зелёных органах.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "семена (seed treatment)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": "обработка семян"
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "24435302",
+              "year": 1975,
+              "verified": true,
+              "paper_type": "mechanistic",
+              "doi": "10.1007/BF00388875",
+              "oa_url": null
+            }
+          ],
+          "quote": "The gibberellin content of cucumber (Cucumis sativus L.) roots and green organs from (2-chloroethyl) trimethylammonium chloride (CCC)-treated seeds was equal to or even higher than in the water controls. The main difference... was expressed in the differential distribution of the endogenous gibberellin between its free and bound forms."
+        },
+        {
+          "type": "effect",
+          "value": "CCC не влияет на экспрессию пола (sex expression) у огурца, в отличие от Ethrel и этилена",
+          "context": "Огурец (Cucumis sativus), однодомный сорт Improved Long Green; сравнение действия CCC с этиленом и Ethrel на пол цветков.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "первые-третьи листья (first to third leaf stage)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": null
+          },
+          "relevance": "directly_contradicts",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "16657476",
+              "year": 1970,
+              "verified": true,
+              "paper_type": "trial_in_vitro",
+              "doi": "10.1104/pp.46.3.412",
+              "oa_url": null
+            }
+          ],
+          "quote": "Alar (N-dimethylaminosuccinamic acid), CCC((2-chloroethyl)trimethylammonium chloride), Phosphon D... and abscisic acid did not affect sex expression of cucumber."
+        },
+        {
+          "type": "method",
+          "value": "Кинетика взаимодействия ретарданта (CCC) и гормонов при удлинении гипокотиля огурца",
+          "context": "Огурец (Cucumis sativus); исследования кинетики взаимодействия ростовых ретардантов и гормонов на удлинение гипокотиля.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": "гипокотиль (hypocotyl elongation)",
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "16656555",
+              "year": 1967,
+              "verified": false,
+              "paper_type": "mechanistic",
+              "doi": null,
+              "oa_url": null
+            }
+          ],
+          "quote": "Kinetics of growth retardant and hormone interactions in affecting cucumber hypocotyl elongation (название; аннотация не прочитана)."
+        }
+      ],
+      "gap": "Нет данных об ускорении антезиса и созревания плодов огурца на ~10 дней при 250–500 ppm. Найденные работы касаются влияния CCC на гиббереллины и экспрессию пола.",
+      "related_evidence": []
+    },
+    "strawberry": {
+      "status": "found_verified",
+      "search_stats": {
+        "pubmed": 8,
+        "europe_pmc": 54,
+        "culture_mentioned": 3
+      },
+      "claims": [
+        {
+          "type": "effect",
+          "value": "Хлормекват (chlormequat) эффективен в контроле высоты растения земляники садовой",
+          "context": "Земляника садовая (Fragaria × ananassa); обзор влияния регуляторов роста, включая хлормекват, на рост, развитие и урожайность.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "direct_abstract",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": "36466575",
+              "year": 2022,
+              "verified": true,
+              "paper_type": "review",
+              "doi": "10.1016/j.heliyon.2022.e11959",
+              "oa_url": null
+            }
+          ],
+          "quote": "Additionally, chlormequat is effective in controlling the height of the plant."
+        },
+        {
+          "type": "efficacy",
+          "value": "Урожайность земляники зависит от отклика на хлормекват (и паклобутразол) в сочетании с удобрением",
+          "context": "Земляника садовая; реакция урожайности на удобрение, паклобутразол и хлормекват.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 1988,
+              "verified": false,
+              "paper_type": "trial",
+              "doi": "10.1016/0304-4238(88)90073-8",
+              "oa_url": null
+            }
+          ],
+          "quote": "Strawberry yield response to fertilizer, paclobutrazol and chlormequat (название; аннотация не прочитана)."
+        },
+        {
+          "type": "efficacy",
+          "value": "Влияние удобрения, паклобутразола и хлормеквата на землянику",
+          "context": "Земляника садовая; влияние CCC на рост и развитие растений.",
+          "dosage_normalized": {
+            "original": null,
+            "ppm_equivalent": null,
+            "molar_mass_used_g_mol": 158.07,
+            "conversion_source": null,
+            "note": null
+          },
+          "conditions": {
+            "stage": null,
+            "bbch_stages": [],
+            "temperature_range": null,
+            "formulation": null
+          },
+          "relevance": "partially_relevant",
+          "evidence_quality": "title_only",
+          "stats": {
+            "n_studies": 1
+          },
+          "sources": [
+            {
+              "pmid": null,
+              "year": 1987,
+              "verified": false,
+              "paper_type": "trial",
+              "doi": "10.21273/jashs.112.4.727",
+              "oa_url": null
+            }
+          ],
+          "quote": "Effect of Fertilizer, Paclobutrazol, and Chlormequat on Strawberry (название; аннотация не прочитана)."
+        }
+      ],
+      "gap": "Нет данных об ускорении антезиса и созревания плодов земляники на ~10 дней при 250–500 ppm. Найденные работы касаются контроля высоты растения и урожайности.",
+      "related_evidence": [
+        {
+          "pmid": "31755653",
+          "year": 2020,
+          "claim": "Одновременное определение мультиклассовых регуляторов роста растений (включая CCC) в плодах",
+          "note": "аналитический метод определения CCC в фруктах, не эффект на культуру"
+        },
+        {
+          "pmid": "41829225",
+          "year": 2026,
+          "claim": "Новый сертифицированный стандартный образец для измерения хлормекват хлорида и 2,4-Д",
+          "note": "аналитика, не агрономический эффект"
+        }
+      ]
+    }
+  },
+  "toxicity_window": {
+    "ED50_ppm": null,
+    "TD50_ppm": null,
+    "therapeutic_index": null,
+    "soil_persistence": null,
+    "notes": "только из литературы; данных по ED50/TD50/терапевтическому индексу и стойкости в почве для CCC в найденной литературе по фокусным культурам нет"
+  },
+  "phi_mrl": {
+    "PHI_days": null,
+    "MRL_EU_mg_kg": null,
+    "MRL_USA_mg_kg": null,
+    "MRL_Codex_mg_kg": null,
+    "source": null,
+    "required_for": "HIGH-efficacy вещества; PHI/REI — справочно, не блокер"
+  },
+  "contraindications": [],
+  "conflicts": [
+    {
+      "csv_field": "Expected_Result",
+      "csv_value": "3-week Cooling, и C2 концентрация (500 ppm) превосходны для массы плода, длительности периода продукции, продуктивности на растение; ускорение антезиса и созревания на ~10 дней",
+      "literature_summary": "В найденной литературе по трём фокусным культурам нет подтверждения ускорения антезиса и созревания плодов на ~10 дней при 250–500 ppm. Подтверждено основное действие CCC как ретарданта (контроль высоты/перерастания рассады) на томате и землянике, а также влияние на гиббереллины огурца. Конкретная дозировка 250–500 ppm и эффект ускорения созревания не обнаружены.",
+      "severity": "medium",
+      "sources": [
+        "PMID:40364383",
+        "PMID:31284415",
+        "PMID:36466575"
+      ]
+    }
+  ],
+  "verdict": {
+    "evidence_level": "moderate",
+    "status_suggested": "partial",
+    "reason": "Механизм действия (ингибитор биосинтеза GA) подтверждён литературой. Основное применение — контроль высоты/перерастания рассады томата и земляники, влияние на гиббереллины огурца. Однако специфическая CSV-заявка (250–500 ppm однократно, ускорение антезиса и созревания на ~10 дней) не подтверждена найденной литературой по фокусным культурам — эффект ускорения созревания не задокументирован в найденных источниках."
+  },
+  "taxonomy_check": {
+    "class_family_confirmed": true,
+    "mechanism_confirmed": true,
+    "corrections": [],
+    "notes": "class_family synthetic_growth_regulators подтверждён (синтетический ретардант, четвертичная аммониевая соль). mechanism gibberellin_action подтверждён — CCC ингибирует биосинтез гиббереллинов (PMID:31284415, PMID:24435302)."
+  },
+  "sources_index": [
+    "PMID:40364383",
+    "PMID:31284415",
+    "PMID:24435302",
+    "PMID:16657476",
+    "PMID:16656555",
+    "PMID:36466575",
+    "DOI:10.21273/jashs.104.3.342",
+    "DOI:10.21273/jashs.112.2.198",
+    "DOI:10.1016/0304-4238(88)90073-8",
+    "DOI:10.21273/jashs.112.4.727"
+  ]
+}
