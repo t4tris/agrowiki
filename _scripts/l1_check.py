@@ -85,6 +85,7 @@ def source_id(s):
 def main(path):
     d = json.load(open(path, encoding='utf-8'))
     errors = []
+    warnings = []
 
     # --- schema ---
     ver = d.get('contract_version')
@@ -165,6 +166,15 @@ def main(path):
         # v1.3: no_data-культуры должны иметь related_evidence
         if cv.get('status') == 'no_data' and not cv.get('related_evidence'):
             errors.append(f'crops.{crop}: status=no_data, но related_evidence пуст/отсутствует')
+        # v1.5 (ревью part 5): related_evidence с claim должен иметь идентификатор
+        # (pmid/doi/source_type+id) — warning, не блокер: данные без ID не верифицируемы
+        for re_i, re in enumerate(cv.get('related_evidence', [])):
+            if not isinstance(re, dict):
+                continue
+            rid = re.get('pmid') or re.get('doi') or (re.get('source_type') and re.get('id'))
+            if not rid and re.get('claim'):
+                warnings.append(f'crops.{crop}.related_evidence[{re_i}]: claim без идентификатора '
+                                f'(pmid/doi/source_type+id) — данные не верифицируемы, указать DOI/OpenAlex ID')
         for c in cv.get('claims', []):
             if c.get('type') not in CLAIM_TYPES:
                 errors.append(f'crops.{crop}.claims type невалиден: {c.get("type")}')
@@ -335,6 +345,10 @@ def main(path):
 
     # --- Вывод ---
     print()
+    if warnings:
+        print(f'⚠️ WARNINGS ({len(warnings)}):')
+        for w in warnings:
+            print('  -', w)
     if errors:
         print('L1: ОШИБКИ:')
         for e in errors:
