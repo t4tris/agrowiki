@@ -9,13 +9,13 @@ class_family: synthetic_growth_regulators
 mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 efficacy_csv: HIGH
-validation_status: insufficient_data
+validation_status: partial
 evidence_level: weak
 last_checked: 2026-08-06
 next_review: 2026-11-06
 notes: []
 crops:
-  tomato: no_data
+  tomato: found_unverified
   cucumber: no_data
   strawberry: no_data
 aliases: ["Trinexapac-ethyl", "Cimectacarb", "Moddus", "Primo", "Primo Maxx", "PALISADE", "CGA-163935"]
@@ -34,10 +34,12 @@ aliases_ru: ["Тринексапак-этил"]
 
 ## Научные данные по культурам
 
-Литература охватывает методы: — (нет верифицируемых публикаций с PMID/DOI по фокусным культурам).
+Литература охватывает методы: полевая фолиарная обработка (томат).
 
 ### 🍅 Томат (Solanum lycopersicum)
-- **Нет данных** о применении trinexapac-ethyl на томате с верифицируемыми PMID/DOI; единственная работа (Figueiredo 2015, контроль длины междоузлий) не имеет PMID/DOI
+- **Контроль роста:** фолиарная обработка trinexapac-ethyl сокращает размер растения индетерминантного томата (cv. Debora Plus), уменьшая расстояние между узлами и кистями, и увеличивает диаметр стебля (OpenAlex W1790097572, Figueiredo et al. 2015)
+- **Обратная сторона дозы:** при возрастании дозы ET снижается продуктивность, средняя масса плода и доля крупных/средних плодов; растёт доля мелких плодов (OpenAlex W1790097572, Figueiredo et al. 2015)
+- **Нет данных** о верифицируемых PMID/DOI-работах; единственная полевая работа (Figueiredo 2015) не имеет DOI/PMID, но реально прочитана (`verified: true`)
 
 ### 🥒 Огурец (Cucumis sativus)
 - **Нет данных** о применении trinexapac-ethyl на огурце; найденные работы по огурцу относятся к другим ПГР (Prohexadione, Ethephon)
@@ -48,8 +50,8 @@ aliases_ru: ["Тринексапак-этил"]
 ## ⚠️ Валидация CSV-заявок
 | CSV-заявка | Вердикт | Уточнение | Условия | Severity | Источники |
 |---|---|---|---|---|---|
-| Доза: 100–400 ppm foliar spray | ⚪ Нет данных | Не может быть подтверждена/опровергнута — нет литературы по фокусным культурам | — | — | — |
-| Эффект: controlled internode length | ⚪ Нет данных | Механизм (GA-ингибитор) подтверждён, но по фокусным культурам верифицируемых данных нет | — | — | — |
+| Доза: 100–400 ppm foliar spray | ⚪ Нет данных | Конкретный диапазон 100–400 ppm в работе Figueiredo 2015 не указан (только «возрастающие дозы ET») | — | — | OpenAlex W1790097572 |
+| Эффект: controlled internode length | ⚠️ Частично | Подтверждено полевым опытом на томате (cv. Debora Plus): сокращение расстояния между узлами и кистями, увеличение диаметра стебля; при возрастании дозы — снижение продуктивности и массы плодов | Томат, фолиарная обработка | medium | OpenAlex W1790097572 |
 
 ## ⚠️ Toxicity Window
 **Нет данных.** (Остатки trinexapac acid наблюдались на листьях риса до 15 дней после опрыскивания; в зерне ниже LOQ — PMID 39633074.)

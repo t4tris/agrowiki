@@ -48,7 +48,7 @@ last_updated: 2026-08-06
 - [ ] VALIDATE: Thiophanate-methyl × 3 культуры
 - [x] VALIDATE: Triacontanol × 3 культуры → [[wiki/substances/Triacontanol]] (partial/moderate, 2026-08-04)
 - [ ] VALIDATE: Trifloxystrobin × 3 культуры
-- [x] VALIDATE: Trinexapac-ethyl × 3 культуры → [[wiki/substances/Trinexapac-ethyl]] (insufficient_data/weak, 2026-08-06)
+- [x] VALIDATE: Trinexapac-ethyl × 3 культуры → [[wiki/substances/Trinexapac-ethyl]] (partial/weak, 2026-08-06)
 - [x] VALIDATE: Uniconazole × 3 культуры → [[wiki/substances/Uniconazole]] (corrected/moderate, 2026-08-06)
 - [x] VALIDATE: Zeatin × 3 культуры → [[wiki/substances/Zeatin]] (partial/moderate, 2026-08-06)
 
