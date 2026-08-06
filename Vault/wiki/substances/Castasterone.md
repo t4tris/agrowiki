@@ -5,6 +5,8 @@ name_en: Castasterone
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: brassinosteroid_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

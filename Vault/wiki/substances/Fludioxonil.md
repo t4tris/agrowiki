@@ -5,6 +5,8 @@ name_en: Fludioxonil
 cas: 
 formula: 
 class: Phenylpyrrole fungicide
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

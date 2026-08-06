@@ -5,6 +5,8 @@ name_en: Vanadium (VOSO4)
 cas: 
 formula: 
 class: Beneficial element
+class_family: elements_minerals
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

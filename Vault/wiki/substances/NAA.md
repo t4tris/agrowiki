@@ -5,6 +5,8 @@ name_en: Naphthaleneacetic Acid
 cas: 
 formula: 
 class: Synthetic auxin
+class_family: auxins
+mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

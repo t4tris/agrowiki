@@ -5,6 +5,8 @@ name_en: Silver thiosulfate
 cas: 
 formula: 
 class: Ethylene inhibitor
+class_family: ethylene
+mechanism: ethylene_signaling
 action_category: GROWTH_REGULATION
 efficacy_csv: HIGH
 validation_status: unverified

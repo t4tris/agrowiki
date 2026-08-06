@@ -5,6 +5,8 @@ name_en: L-Malic acid
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

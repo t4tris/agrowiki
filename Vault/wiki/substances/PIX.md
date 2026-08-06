@@ -5,6 +5,8 @@ name_en: Mepiquat chloride
 cas: 
 formula: 
 class: GA inhibitor
+class_family: gibberellins
+mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 efficacy_csv: HIGH
 validation_status: unverified

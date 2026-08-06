@@ -5,6 +5,8 @@ name_en: 22,23,24-Trisepibrassinolide
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: aba_stress_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: Fulvic acid
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

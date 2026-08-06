@@ -5,6 +5,8 @@ name_en: Meta-topolin
 cas: 
 formula: 
 class: Synthetic cytokinin
+class_family: cytokinins
+mechanism: cytokinin_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

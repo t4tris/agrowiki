@@ -5,6 +5,8 @@ name_en: Sodium hydrosulfide (NaHS)
 cas: 
 formula: 
 class: Sulfide salt
+class_family: gasotransmitters
+mechanism: gas_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

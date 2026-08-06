@@ -5,6 +5,8 @@ name_en: Chelated titanium
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: photosynthesis_enhancement
 action_category: SOIL_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: 3-Chlorophenoxyacetic acid
 cas: 
 formula: 
 class: Auxin
+class_family: auxins
+mechanism: auxin_signaling
 action_category: GROWTH_REGULATION
 efficacy_csv: MEDIUM
 validation_status: unverified

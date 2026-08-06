@@ -5,6 +5,8 @@ name_en: Ancymidol
 cas: 
 formula: 
 class: Pyrimidine
+class_family: synthetic_growth_regulators
+mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 efficacy_csv: MEDIUM
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: Artichoke extract
 cas: 
 formula: 
 class: Polyphenol
+class_family: phenolics_polyphenols
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

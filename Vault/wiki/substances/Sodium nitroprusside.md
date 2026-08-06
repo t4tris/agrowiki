@@ -5,6 +5,8 @@ name_en: Sodium nitroprusside (SNP)
 cas: 
 formula: 
 class: Iron nitrosyl complex
+class_family: gasotransmitters
+mechanism: gas_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

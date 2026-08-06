@@ -5,6 +5,8 @@ name_en: Pyraclostrobin
 cas: 
 formula: 
 class: Strobilurin fungicide
+class_family: fungicides
+mechanism: ethylene_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

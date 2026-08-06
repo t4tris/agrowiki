@@ -5,6 +5,8 @@ name_en: Cholecalciferol (D3)
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: Arachidonic acid
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: elicitor_immunity
 action_category: SOIL_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

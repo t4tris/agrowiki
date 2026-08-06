@@ -5,6 +5,8 @@ name_en: MeSA
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

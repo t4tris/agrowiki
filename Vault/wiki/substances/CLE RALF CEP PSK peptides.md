@@ -5,6 +5,8 @@ name_en: CLE/RALF/CEP/PSK peptides
 cas: 
 formula: 
 class: Peptide
+class_family: peptides_proteins
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

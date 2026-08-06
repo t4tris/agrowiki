@@ -5,6 +5,8 @@ name_en: Nickel (NiCl2)
 cas: 
 formula: 
 class: Beneficial element
+class_family: elements_minerals
+mechanism: nutrition_metabolism
 action_category: SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

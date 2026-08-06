@@ -5,6 +5,8 @@ name_en: Serine
 cas: 
 formula: 
 class: Amino Acid
+class_family: amino_acids_polyamines
+mechanism: aba_stress_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: N-Phenylphthalamic acid
 cas: 
 formula: 
 class: Auxin transport inhibitor
+class_family: auxins
+mechanism: auxin_signaling
 action_category: ROOT_DEVELOPMENT
 efficacy_csv: LOW
 validation_status: unverified

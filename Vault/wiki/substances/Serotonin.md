@@ -5,6 +5,8 @@ name_en: Serotonin (5-HT)
 cas: 
 formula: 
 class: Indolamine derivative
+class_family: indolamines
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION, SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

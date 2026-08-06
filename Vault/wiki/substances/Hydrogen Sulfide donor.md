@@ -5,6 +5,8 @@ name_en: NaHS
 cas: 
 formula: 
 class: Gasotransmitter
+class_family: gasotransmitters
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

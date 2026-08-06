@@ -5,6 +5,8 @@ name_en: Tebuconazole
 cas: 
 formula: 
 class: Triazole fungicide
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

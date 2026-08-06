@@ -5,6 +5,8 @@ name_en: 2-Naphthoxyacetic acid
 cas: 
 formula: 
 class: Auxin
+class_family: auxins
+mechanism: auxin_signaling
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: HIGH
 validation_status: unverified

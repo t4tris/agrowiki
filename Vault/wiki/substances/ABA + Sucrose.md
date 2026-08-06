@@ -5,6 +5,8 @@ name_en: Abscisic Acid + Sucrose
 cas: 
 formula: 
 class: Plant hormone + disaccharide
+class_family: sar_signals_elicitors
+mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

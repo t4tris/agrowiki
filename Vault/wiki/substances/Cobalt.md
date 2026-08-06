@@ -5,6 +5,8 @@ name_en: Cobalt (CoO NPs)
 cas: 
 formula: 
 class: Beneficial element
+class_family: elements_minerals
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

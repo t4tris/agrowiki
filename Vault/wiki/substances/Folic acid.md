@@ -5,6 +5,8 @@ name_en: Folic Acid (B9)
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

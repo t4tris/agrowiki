@@ -5,6 +5,8 @@ name_en: Methionine
 cas: 
 formula: 
 class: Amino Acid
+class_family: amino_acids_polyamines
+mechanism: ethylene_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

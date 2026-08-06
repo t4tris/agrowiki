@@ -5,6 +5,8 @@ name_en: Fuberidazole
 cas: 
 formula: 
 class: Benzimidazole fungicide
+class_family: fungicides
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

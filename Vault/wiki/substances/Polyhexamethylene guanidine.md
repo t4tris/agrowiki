@@ -5,6 +5,8 @@ name_en: Polyhexamethylene guanidine (PHMG)
 cas: 
 formula: 
 class: Polymeric guanidine
+class_family: antibacterials
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

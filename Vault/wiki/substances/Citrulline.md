@@ -5,6 +5,8 @@ name_en: Citrulline
 cas: 
 formula: 
 class: Related
+class_family: other
+mechanism: osmoprotection
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

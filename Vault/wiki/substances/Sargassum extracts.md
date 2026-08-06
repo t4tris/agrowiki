@@ -5,6 +5,8 @@ name_en: Sargassum extract
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

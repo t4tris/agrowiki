@@ -5,6 +5,8 @@ name_en: Trans-zeatin
 cas: 
 formula: 
 class: Cytokinin
+class_family: cytokinins
+mechanism: cytokinin_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: HypSys peptides
 cas: 
 formula: 
 class: Peptide
+class_family: peptides_proteins
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

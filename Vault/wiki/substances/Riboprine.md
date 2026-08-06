@@ -5,6 +5,8 @@ name_en: 6-(3,3-Dimethylallylaminopurine) riboside
 cas: 
 formula: 
 class: Cytokinin analog
+class_family: cytokinins
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

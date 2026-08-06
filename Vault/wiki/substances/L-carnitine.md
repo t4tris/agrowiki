@@ -5,6 +5,8 @@ name_en: L-carnitine
 cas: 
 formula: 
 class: Related
+class_family: other
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

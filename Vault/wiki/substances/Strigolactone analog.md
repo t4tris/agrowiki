@@ -5,6 +5,8 @@ name_en: rac-GR24
 cas: 
 formula: 
 class: Strigolactone
+class_family: aba_strigolactones_karrikins
+mechanism: growth_regulation
 action_category: ROOT_DEVELOPMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

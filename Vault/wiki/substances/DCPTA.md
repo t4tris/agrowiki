@@ -5,6 +5,8 @@ name_en: DCPTA
 cas: 
 formula: 
 class: Synthetic tertiary amine
+class_family: synthetic_growth_regulators
+mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

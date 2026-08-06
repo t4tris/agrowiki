@@ -5,6 +5,8 @@ name_en: 5-Aminolevulinic Acid
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

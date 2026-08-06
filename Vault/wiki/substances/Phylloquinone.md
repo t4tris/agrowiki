@@ -5,6 +5,8 @@ name_en: Phylloquinone (K1)
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

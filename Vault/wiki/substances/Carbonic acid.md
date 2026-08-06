@@ -5,6 +5,8 @@ name_en: Carbonic acid (H2CO3)
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: photosynthesis_enhancement
 action_category: FOLIAR_APPLICATION, SOIL_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: Vitamin C
 cas: 
 formula: 
 class: Vitamin
+class_family: vitamins_cofactors
+mechanism: antioxidant_defense
 action_category: SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

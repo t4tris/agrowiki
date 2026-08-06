@@ -5,6 +5,8 @@ name_en: L-Tryptophan
 cas: 
 formula: 
 class: Amino acid
+class_family: amino_acids_polyamines
+mechanism: auxin_signaling
 action_category: SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

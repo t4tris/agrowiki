@@ -5,6 +5,8 @@ name_en: 14-Hydroxylated brassinosteroid
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: brassinosteroid_signaling
 action_category: GROWTH_REGULATION
 efficacy_csv: LOW
 validation_status: unverified

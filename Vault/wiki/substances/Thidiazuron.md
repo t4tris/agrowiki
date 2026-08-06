@@ -5,6 +5,8 @@ name_en: TDZ
 cas: 
 formula: 
 class: Phenylurea cytokinin
+class_family: cytokinins
+mechanism: cytokinin_signaling
 action_category: GROWTH_REGULATION
 efficacy_csv: HIGH
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: Diethylaminoethyl hexanoate
 cas: 
 formula: 
 class: Biostimulant
+class_family: biostimulants_extracts
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

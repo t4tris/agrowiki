@@ -5,6 +5,8 @@ name_en: Thiamethoxam
 cas: 
 formula: 
 class: Neonicotinoid
+class_family: insecticides
+mechanism: pesticide_action
 action_category: SEED_TREATMENT
 efficacy_csv: LOW
 validation_status: unverified

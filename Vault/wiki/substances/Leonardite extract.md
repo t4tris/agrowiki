@@ -5,6 +5,8 @@ name_en: Humic substances
 cas: 
 formula: 
 class: Natural biostimulant
+class_family: biostimulants_extracts
+mechanism: elicitor_immunity
 action_category: SOIL_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

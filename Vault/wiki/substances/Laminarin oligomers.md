@@ -5,6 +5,8 @@ name_en: Laminarin oligosaccharides
 cas: 
 formula: 
 class: Marine biostimulant
+class_family: biostimulants_extracts
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

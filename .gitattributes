@@ -1,0 +1,6 @@
+# EOL-политика репозитория (аудит 2026-08-06)
+# Markdown/JSON/CSV — CRLF (Windows, Obsidian); Python — LF (стандарт).
+# После изменения этого файла: git add --renormalize .
+* text=auto eol=crlf
+*.py text=auto eol=lf
+*.sh text=auto eol=lf

@@ -5,6 +5,8 @@ name_en: Phenylacetic acid
 cas: 
 formula: 
 class: Auxin-like
+class_family: auxins
+mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

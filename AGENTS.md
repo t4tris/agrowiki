@@ -335,6 +335,19 @@ Frontmatter: `type: synthesis`, `question`, `substances: []`, `crops: []`, `crea
 - PHI/MRL: EU Pesticides Database (efsa.europa.eu, браузер + Web Clipper), OpenFoodTox (EFSA, датасет), Codex MRLs
 - Ключи (опционально, в .secrets/api_keys.env): Semantic Scholar (x-api-key), Consensus (x-api-key), ChemSpider RSC, EPPO token.
 
+## Эксплуатация скриптов (аудит 2026-08-06)
+- **НЕ запускать `bootstrap.py` «просто посмотреть»/для проверки синтаксиса** — он ПЕРЕЗАПИСЫВАЕТ
+  unverified-черновики (регрессия 2026-08-06: пересоздал объединённые карточки MeJA/TRIA и стёр
+  таксономию). Проверка: `python -m py_compile _scripts/bootstrap.py` или `bootstrap.py --dry-run`
+  (ничего не пишет, показывает CREATE/REWRITE/SKIP). Реальный запуск — только для перегенерации
+  черновиков; после него bootstrap сам вызывает `gen_taxonomy.py` (заполняет class_family/mechanism).
+- **Smoke-тест:** после любых массовых операций с карточками `python _scripts/smoke_test.py`
+  (exit 0 = ок): проверяет отсутствие дублей кодов, запрещённых полей frontmatter, старых секций
+  и баннеров у валидированных карточек, наличие таксономии у всех.
+- **EOL:** репозиторий CRLF для md/json/csv, LF для .py (`.gitattributes`); после изменения
+  `.gitattributes` — `git add --renormalize .`; файлы писать через Python с явной кодировкой/EOL,
+  НЕ через Add-Content (пишет ANSI).
+
 ## Приоритеты и расписание
 1 сессия = пакет 10–20 веществ (5–10 сабагентов параллельно) → карточки → трекер.
 Оценка: 80–120 ч ≈ 30–40 сессий по 2–3 ч. HIGH ≈ 3–5 сессий.

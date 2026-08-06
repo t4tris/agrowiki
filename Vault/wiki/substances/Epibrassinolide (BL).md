@@ -5,6 +5,8 @@ name_en: Epibrassinolide (BL)
 cas: 
 formula: 
 class: Brassinosteroid
+class_family: brassinosteroids
+mechanism: brassinosteroid_signaling
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: LOW
 validation_status: unverified

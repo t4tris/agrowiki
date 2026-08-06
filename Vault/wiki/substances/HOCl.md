@@ -5,6 +5,8 @@ name_en: Hypochlorous acid
 cas: 
 formula: 
 class: Oxidant
+class_family: antibacterials
+mechanism: pesticide_action
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: Spermidine
 cas: 
 formula: 
 class: Polyamine
+class_family: amino_acids_polyamines
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

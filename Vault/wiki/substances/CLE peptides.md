@@ -5,6 +5,8 @@ name_en: CLAVATA3/ESR peptides
 cas: 
 formula: 
 class: Peptide hormone
+class_family: peptides_proteins
+mechanism: growth_regulation
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

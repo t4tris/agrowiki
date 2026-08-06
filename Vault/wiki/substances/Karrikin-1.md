@@ -5,6 +5,8 @@ name_en: KAR1
 cas: 
 formula: 
 class: Karrikin
+class_family: aba_strigolactones_karrikins
+mechanism: growth_regulation
 action_category: SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

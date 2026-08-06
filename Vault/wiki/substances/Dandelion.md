@@ -5,6 +5,8 @@ name_en: Dandelion extract
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

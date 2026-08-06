@@ -5,6 +5,8 @@ name_en: Sodium 4-nitrophenolate
 cas: 
 formula: 
 class: Nitrophenolate
+class_family: synthetic_growth_regulators
+mechanism: aba_stress_signaling
 action_category: SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

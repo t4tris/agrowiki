@@ -5,6 +5,8 @@ name_en: Z-3-hexenol
 cas: 
 formula: 
 class: VOC
+class_family: voc_volatiles
+mechanism: jasmonate_sar_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

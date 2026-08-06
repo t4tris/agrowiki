@@ -5,6 +5,8 @@ name_en: Milk whey
 cas: 
 formula: 
 class: Organic byproduct
+class_family: biostimulants_extracts
+mechanism: nutrition_metabolism
 action_category: SOIL_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

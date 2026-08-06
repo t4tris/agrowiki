@@ -5,6 +5,8 @@ name_en: Nanoparticles
 cas: 
 formula: 
 class: Metal / metal-oxide nanoparticles
+class_family: elements_minerals
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

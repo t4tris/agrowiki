@@ -9,6 +9,8 @@ import argparse
 import csv
 import os
 import re
+import subprocess
+import sys
 from collections import defaultdict
 
 # Коды CSV, объединённые в карточки-каноны (dedup/merge, см. log.md) — карточек не имеют,
@@ -56,6 +58,9 @@ def main():
                         help='подтвердить --full без интерактивного prompt')
     parser.add_argument('--force', action='store_true',
                         help='перегенерировать и не-unverified карточки (по умолчанию они пропускаются)')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='ничего не писать: вывести, что было бы сделано (использовать вместо запуска '
+                             'для проверки! скрипт ПЕРЕЗАПИСЫВАЕТ unverified-черновики)')
     args = parser.parse_args()
 
     with open(CSV, encoding='utf-8-sig') as f:
@@ -156,8 +161,18 @@ aliases_ru: []
             if re.search(r'^validation_status:\s*(?!unverified)\S', existing, re.M):
                 print(f'SKIP (статус != unverified): {code}')
                 continue
+        if args.dry_run:
+            action = 'REWRITE' if os.path.exists(card_path) else 'CREATE'
+            print(f'[{action}] {code}')
+            continue
         with open(card_path, 'w', encoding='utf-8') as f:
             f.write(page)
+
+    # bootstrap не пишет class_family/mechanism — их добавляет gen_taxonomy;
+    # запускать после каждой генерации черновиков, иначе таксономия теряется
+    if not args.dry_run:
+        gt = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gen_taxonomy.py')
+        subprocess.run([sys.executable, gt], check=False)
 
     if not args.full:
         print(f'DONE (cards only, default): substances={len(codes)}')

@@ -5,6 +5,8 @@ name_en: Oxalic acid
 cas: 
 formula: 
 class: Organic Acid
+class_family: organic_acids
+mechanism: nutrition_metabolism
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

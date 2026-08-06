@@ -5,6 +5,8 @@ name_en: Ethylene gas
 cas: 
 formula: 
 class: Ethylene
+class_family: ethylene
+mechanism: ethylene_signaling
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: HIGH
 validation_status: unverified

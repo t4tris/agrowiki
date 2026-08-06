@@ -5,6 +5,8 @@ name_en: Chlorogenic acid
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: antioxidant_defense
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

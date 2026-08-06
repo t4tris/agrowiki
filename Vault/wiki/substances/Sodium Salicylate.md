@@ -5,6 +5,8 @@ name_en: Sodium salicylate
 cas: 
 formula: 
 class: Phenolic
+class_family: phenolics_polyphenols
+mechanism: elicitor_immunity
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified

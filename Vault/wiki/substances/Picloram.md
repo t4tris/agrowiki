@@ -5,6 +5,8 @@ name_en: Picloram
 cas: 
 formula: 
 class: Synthetic auxin
+class_family: herbicides
+mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: LOW
 validation_status: unverified

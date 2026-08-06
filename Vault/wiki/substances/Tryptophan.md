@@ -5,6 +5,8 @@ name_en: L-Tryptophan
 cas: 
 formula: 
 class: Amino Acid
+class_family: amino_acids_polyamines
+mechanism: nutrition_metabolism
 action_category: ROOT_DEVELOPMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

@@ -5,6 +5,8 @@ name_en: 5-Azacytidine (AZA)
 cas: 
 formula: 
 class: Nucleoside analog
+class_family: synthetic_growth_regulators
+mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

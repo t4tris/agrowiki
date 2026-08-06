@@ -5,6 +5,8 @@ name_en: Hexanal
 cas: 
 formula: 
 class: Aldehyde
+class_family: terpenoids_saponins_lipids
+mechanism: growth_regulation
 action_category: FRUIT_MANAGEMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

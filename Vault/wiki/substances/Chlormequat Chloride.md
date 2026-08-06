@@ -5,6 +5,8 @@ name_en: CCC
 cas: 
 formula: 
 class: Quaternary ammonium
+class_family: synthetic_growth_regulators
+mechanism: gibberellin_action
 action_category: GROWTH_REGULATION
 efficacy_csv: HIGH
 validation_status: unverified

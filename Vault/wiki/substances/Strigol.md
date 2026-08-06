@@ -5,6 +5,8 @@ name_en: Strigol
 cas: 
 formula: 
 class: Strigolactone
+class_family: aba_strigolactones_karrikins
+mechanism: auxin_signaling
 action_category: ROOT_DEVELOPMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

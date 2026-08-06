@@ -5,6 +5,8 @@ name_en: SNP/GSNO
 cas: 
 formula: 
 class: Gasotransmitter
+class_family: gasotransmitters
+mechanism: gas_signaling
 action_category: SEED_TREATMENT
 efficacy_csv: MEDIUM
 validation_status: unverified

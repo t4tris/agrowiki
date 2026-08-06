@@ -5,6 +5,8 @@ name_en: Maleic hydrazide
 cas: 
 formula: 
 class: Diazine; Growth inhibitor
+class_family: synthetic_growth_regulators
+mechanism: growth_regulation
 action_category: GROWTH_REGULATION, SOIL_APPLICATION
 efficacy_csv: HIGH
 validation_status: unverified

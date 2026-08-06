@@ -5,6 +5,8 @@ name_en: MCPB
 cas: 
 formula: 
 class: Synthetic auxin
+class_family: herbicides
+mechanism: auxin_signaling
 action_category: FOLIAR_APPLICATION
 efficacy_csv: MEDIUM
 validation_status: unverified
