@@ -19,6 +19,7 @@ contract_version: 1.4
 | `_meta/session_report_2026-08-04.md` | **Отчёт для внешнего аудита** (часть 1: инфраструктура, 10 коммитов) |
 | `_meta/session_report_2026-08-04_part2.md` | **Отчёт для внешнего аудита** (часть 2: ревью + пилот Фазы 3, 5 коммитов) |
 | `_meta/session_report_2026-08-04_part3.md` | **Отчёт для внешнего аудита** (часть 3: ревью part 2, 1 коммит) |
+| `_meta/session_report_2026-08-06.md` | **Отчёт для внешнего аудита** (2026-08-06: анализ, merge, таксономия 7 семейств, SDD-контекст, стиль-гайд v2 — 4 коммита + незакоммиченная работа) |
 | `_meta/handoff.md` | **Этот файл** — состояние и следующие шаги |
 | `AGENTS.md` | Схема вики, контракт отчёта **v1.4**, правила честности 1–14, L1–L4 |
 | `README.md` | **Человекочитаемый хаб проекта** (этот README) |
@@ -61,7 +62,7 @@ contract_version: 1.4
 - Реструктуризация: служебный слой вне vault; GitHub remote (`main`)
 - Таксономия: 8 категорий + 29 семейств + 15 механизмов (267 карточек с `class_family`/`mechanism`)
 - `synonyms.json` (267 веществ), авто-retry в extract_report, L1 v1.4, fallback Europe PMC (4 вещества)
-- Дубликаты (8) разрешены; `application_csv` заполнен у 100% карточек
+- Дубликаты (8) разрешены; заявки CSV — в таблице «Валидация CSV-заявок» (поле `application_csv` удалено в схеме v2.2)
 - PHI/REI — практический блокер (правило 14); **MRL Paclobutrazol собран** (EU 0.01\* LOD, Codex нет)
 - Навык `.github/copilot-skills/session-audit-report/` — репорты для аудита по стандарту
 
@@ -71,7 +72,7 @@ contract_version: 1.4
 
 ### 0. Перед стартом — НЕ нужно (закрыто в этой сессии)
 - ✅ Europe PMC fallback для GA3/Triacontanol/Chitosan/Silicon — выполнен (orchestrator_fallback)
-- ✅ Дубликаты (8) — разрешены; ✅ application_csv — 100%
+- ✅ Дубликаты (8) — разрешены; ✅ заявки CSV — в таблице валидации (v2.2)
 - ✅ PHI/MRL Paclobutrazol — собран (EU 0.01\* LOD); PHI/REI — очередь на этикетки (papers_to_fetch)
 
 ### 1. Полный цикл валидации
@@ -83,7 +84,7 @@ contract_version: 1.4
 3. L1: `python _scripts/l1_check.py raw/evidence/{A-Z}/<код>/search_*.json` (требует v1.4).
 4. При `searches.failed` europepmc → `python _scripts/fallback_europepmc.py <код> "<имя>" "<запросы>"`.
 5. Применить `taxonomy_check.corrections` (если есть) → карточка + `gen_taxonomy.py --refresh` при изменении маппинга.
-6. Написать карточку (frontmatter + crop_evidence + corrected_dosages + toxicity + 📅 PHI/REI/MRL + противоречия + источники).
+6. Написать карточку (frontmatter + «Валидация CSV-заявок» + «Научные данные по культурам» + toxicity + 📅 PHI/REI/MRL + ограничения + источники).
 7. Обновить `task_queue.md` ([x] + RETRY-строки), `validation.md` + проверить `Vault/index.md`, `log.md`, обновить `synonyms.json` (`gen_synonyms.py`).
 8. Коммит + push.
 
